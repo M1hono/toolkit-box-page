@@ -21062,5 +21062,309 @@
     ],
     "charType": "npc",
     "dialogCount": 0
+  },
+  "npc_2004_Alty": {
+    "charId": "npc_2004_Alty",
+    "validVariants": [
+      "npc_2004_Alty#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2001_Aya_1": {
+    "charId": "npc_2001_Aya_1",
+    "validVariants": [
+      "npc_2001_Aya_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2003_Frost_1": {
+    "charId": "npc_2003_Frost_1",
+    "validVariants": [
+      "npc_2003_Frost_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2002_Dan_1": {
+    "charId": "npc_2002_Dan_1",
+    "validVariants": [
+      "npc_2002_Dan_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2002_Dan_rock": {
+    "charId": "npc_2002_Dan_rock",
+    "validVariants": [
+      "npc_2002_Dan_rock#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2003_Frost_rock": {
+    "charId": "npc_2003_Frost_rock",
+    "validVariants": [
+      "npc_2003_Frost_rock#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2001_Aya_rock": {
+    "charId": "npc_2001_Aya_rock",
+    "validVariants": [
+      "npc_2001_Aya_rock#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "npc_2004_Alty_rock": {
+    "charId": "npc_2004_Alty_rock",
+    "validVariants": [
+      "npc_2004_Alty_rock#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_NPC_017_3": {
+    "charId": "avg_NPC_017_3",
+    "validVariants": [
+      "avg_NPC_017_3#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "char_254_Shamare_1": {
+    "charId": "char_254_Shamare_1",
+    "validVariants": [
+      "char_254_Shamare_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "char_362_Saga": {
+    "charId": "char_362_Saga",
+    "validVariants": [
+      "char_362_Saga#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "char_264_Mountain_1": {
+    "charId": "char_264_Mountain_1",
+    "validVariants": [
+      "char_264_Mountain_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "char_214_Kafka_1": {
+    "charId": "char_214_Kafka_1",
+    "validVariants": [
+      "char_214_Kafka_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "char_440_Pinecone": {
+    "charId": "char_440_Pinecone",
+    "validVariants": [
+      "char_440_Pinecone#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "avg_1012_skadiSP_1": {
+    "charId": "avg_1012_skadiSP_1",
+    "validVariants": [
+      "avg_1012_skadiSP_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_274_Astesia_1": {
+    "charId": "avg_274_Astesia_1",
+    "validVariants": [
+      "avg_274_Astesia_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "char_259_Jessica_1": {
+    "charId": "char_259_Jessica_1",
+    "validVariants": [
+      "char_259_Jessica_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "avg_4145_Ulpia_1": {
+    "charId": "avg_4145_Ulpia_1",
+    "validVariants": [
+      "avg_4145_Ulpia_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "char_240_Vanilla_1": {
+    "charId": "char_240_Vanilla_1",
+    "validVariants": [
+      "char_240_Vanilla_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "char_1507_Mephisto_1": {
+    "charId": "char_1507_Mephisto_1",
+    "validVariants": [
+      "char_1507_Mephisto_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "$ill_amiya_normal": {
+    "charId": "$ill_amiya_normal",
+    "validVariants": [
+      "$ill_amiya_normal#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "char_1508_Faust_1": {
+    "charId": "char_1508_Faust_1",
+    "validVariants": [
+      "char_1508_Faust_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "avg_NPC_178": {
+    "charId": "avg_NPC_178",
+    "validVariants": [
+      "avg_NPC_178#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_NPC_460_1": {
+    "charId": "avg_NPC_460_1",
+    "validVariants": [
+      "avg_NPC_460_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_NPC_459_1": {
+    "charId": "avg_NPC_459_1",
+    "validVariants": [
+      "avg_NPC_459_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "AVG_char_501_Durin_1": {
+    "charId": "AVG_char_501_Durin_1",
+    "validVariants": [
+      "AVG_char_501_Durin_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "char_336_Scene_1": {
+    "charId": "char_336_Scene_1",
+    "validVariants": [
+      "char_336_Scene_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "avg_502_Yato_1": {
+    "charId": "avg_502_Yato_1",
+    "validVariants": [
+      "avg_502_Yato_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "char_373_Leonhardt_1": {
+    "charId": "char_373_Leonhardt_1",
+    "validVariants": [
+      "char_373_Leonhardt_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
+  },
+  "avg_NPC_462_1": {
+    "charId": "avg_NPC_462_1",
+    "validVariants": [
+      "avg_NPC_462_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_NPC_189": {
+    "charId": "avg_NPC_189",
+    "validVariants": [
+      "avg_NPC_189#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_NPC_187": {
+    "charId": "avg_NPC_187",
+    "validVariants": [
+      "avg_NPC_187#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_293_1": {
+    "charId": "avg_npc_293_1",
+    "validVariants": [
+      "avg_npc_293_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_291": {
+    "charId": "avg_npc_291",
+    "validVariants": [
+      "avg_npc_291#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4066_highmo_1": {
+    "charId": "avg_4066_highmo_1",
+    "validVariants": [
+      "avg_4066_highmo_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_437_mizukisummer_1": {
+    "charId": "avg_437_mizukisummer_1",
+    "validVariants": [
+      "avg_437_mizukisummer_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_610_1": {
+    "charId": "avg_npc_610_1",
+    "validVariants": [
+      "avg_npc_610_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_1200_1": {
+    "charId": "avg_npc_1200_1",
+    "validVariants": [
+      "avg_npc_1200_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
   }
 }
