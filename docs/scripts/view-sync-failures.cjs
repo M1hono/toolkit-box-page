@@ -15,7 +15,7 @@ const UPLOADED_LOG = path.resolve(LOGS_DIR, 'uploaded.json');
  */
 function analyzeFailures() {
     if (!fs.existsSync(FAILURES_LOG)) {
-        console.log('✅ No failure log found - all syncs successful!');
+        console.log('No failure log found - all syncs successful!');
         return;
     }
     
@@ -24,15 +24,15 @@ function analyzeFailures() {
         ? JSON.parse(fs.readFileSync(UPLOADED_LOG, 'utf8'))
         : {};
     
-    console.log('📊 R2 Sync Status Report');
+    console.log('R2 Sync Status Report');
     console.log('========================');
-    console.log(`📅 Last Update: ${new Date(failures.lastUpdate).toLocaleString()}`);
-    console.log(`✅ Successfully Uploaded: ${Object.keys(uploaded).length} files`);
-    console.log(`❌ Download Failures: ${failures.downloadFailures.length}`);
-    console.log(`❌ Upload Failures: ${failures.uploadFailures.length}`);
+    console.log(`Last Update: ${new Date(failures.lastUpdate).toLocaleString()}`);
+    console.log(`Successfully Uploaded: ${Object.keys(uploaded).length} files`);
+    console.log(`Download Failures: ${failures.downloadFailures.length}`);
+    console.log(`Upload Failures: ${failures.uploadFailures.length}`);
     
     if (failures.downloadFailures.length > 0) {
-        console.log('\n📥 Download Failures:');
+        console.log('\nDownload Failures:');
         failures.downloadFailures.slice(0, 10).forEach((failure, index) => {
             const date = new Date(failure.timestamp).toLocaleString();
             console.log(`   ${index + 1}. ${failure.url} (${date})`);
@@ -43,7 +43,7 @@ function analyzeFailures() {
     }
     
     if (failures.uploadFailures.length > 0) {
-        console.log('\n📤 Upload Failures:');
+        console.log('\nUpload Failures:');
         failures.uploadFailures.slice(0, 10).forEach((failure, index) => {
             const date = new Date(failure.timestamp).toLocaleString();
             console.log(`   ${index + 1}. ${failure.key} (${date})`);
@@ -53,7 +53,7 @@ function analyzeFailures() {
         }
     }
     
-    console.log('\n💡 Troubleshooting Tips:');
+    console.log('\nTroubleshooting Tips:');
     console.log('   - Download failures: Check source URLs and network connectivity');
     console.log('   - Upload failures: Verify R2 credentials and bucket permissions');
     console.log('   - Use --force-reset in workflow to retry all failed uploads');

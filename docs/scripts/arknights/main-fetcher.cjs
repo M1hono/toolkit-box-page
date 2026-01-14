@@ -18,21 +18,21 @@ const PROJECT_CONFIG = require('../project-config.cjs');
  * @param {Object} options - Execution flags and session parameters
  */
 async function syncLanguage(langCode, options = {}) {
-    console.log(`🚀 Starting character data processing for: ${langCode}`);
+    console.log(`Starting character data processing for: ${langCode}`);
     
     const storyDir = getTargetStoryDir(langCode);
     const storyFiles = getAllStoryFilesFromDir(storyDir);
     
     if (storyFiles.length === 0) {
-        console.warn(`⚠️  No story files found for ${langCode} in ${storyDir}. Skipping.`);
+        console.warn(`WARNING: No story files found for ${langCode} in ${storyDir}. Skipping.`);
         return;
     }
     
-    console.log(`📖 Processing ${storyFiles.length} story files for ${langCode}...`);
+    console.log(`Processing ${storyFiles.length} story files for ${langCode}...`);
     
     const allCharacters = await runParsingWorkers(langCode, storyFiles, options);
     
-    console.log(`👥 Found ${allCharacters.size} characters in stories.`);
+    console.log(`Found ${allCharacters.size} characters in stories.`);
     
     const scanState = loadScanState();
     const mergedCharacters = await generateVariants(allCharacters, allCharacters, scanState, options);

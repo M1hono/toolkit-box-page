@@ -41,7 +41,8 @@ This software is proprietary and all rights are reserved. See LICENSE file for d
 ## API Data Usage
 
 While the software code is proprietary, all game data accessed through public APIs (Atlas Academy API for FGO, ArknightsAssets repository, etc.) remains free to use under their respective licenses. This project only provides tools to process such data and does not claim ownership of any game assets or API data.
-And the Data and API files provided through public resources is also free to use and welcomed to ask for any helps as I could.
+
+And the Data and API files provided through page service is also free to use and welcomed to ask for any helps as I could.
 
 ## Development
 

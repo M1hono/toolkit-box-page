@@ -2,26 +2,16 @@ name: Sync Arknights Story Data
 
 on:
     schedule:
-        # 每天UTC 2点 (北京时间10点) 运行，避开主任务高峰期
         - cron: "0 2 * * *"
     workflow_dispatch:
         inputs:
-            sync_method:
-                description: "选择同步方法"
-                required: true
-                default: "auto"
-                type: choice
-                options:
-                    - "auto"
-                    - "git"
-                    - "api"
             clean_first:
-                description: "清理现有数据"
+                description: "Clean existing data before sync"
                 required: false
                 default: true
                 type: boolean
             dry_run:
-                description: "预览模式（不实际下载）"
+                description: "Preview mode (no actual download)"
                 required: false
                 default: false
                 type: boolean
@@ -39,7 +29,6 @@ jobs:
         timeout-minutes: 30
         outputs:
             data-updated: ${{ steps.check-changes.outputs.changed }}
-            sync-method: ${{ steps.sync-result.outputs.method }}
             file-count: ${{ steps.sync-result.outputs.file-count }}
 
         steps:
@@ -58,62 +47,46 @@ jobs:
               working-directory: docs
               run: yarn install --frozen-lockfile
 
-            - name: Setup Git for sparse-checkout
+            - name: Setup Git
               run: |
                   git config --global user.email "action@github.com"
                   git config --global user.name "GitHub Action"
-                  echo "📋 Git 配置完成，支持 sparse-checkout"
+                  echo "Git configuration complete"
 
             - name: Sync Story Data
               id: sync-result
               working-directory: docs
               run: |
-                  echo "📚 开始同步明日方舟故事数据..."
-                  echo "⚙️ 配置参数:"
-                  echo "  - 同步方法: ${{ inputs.sync_method || 'auto' }}"
-                  echo "  - 清理现有数据: ${{ inputs.clean_first || 'true' }}"
-                  echo "  - 预览模式: ${{ inputs.dry_run || 'false' }}"
+                  echo "Starting Arknights story data synchronization..."
+                  echo "Configuration:"
+                  echo "  - Clean existing data: ${{ inputs.clean_first || 'true' }}"
+                  echo "  - Preview mode: ${{ inputs.dry_run || 'false' }}"
 
-                  # 构建命令参数
                   ARGS=""
 
                   if [ "${{ inputs.dry_run }}" = "true" ]; then
                     ARGS="$ARGS --dry-run"
-                    echo "🧪 使用预览模式"
+                    echo "Using preview mode"
                   fi
 
                   if [ "${{ inputs.clean_first }}" = "false" ]; then
                     ARGS="$ARGS --no-clean"
-                    echo "📁 保留现有数据"
+                    echo "Preserving existing data"
                   fi
 
-                  # 运行同步脚本
-                  echo "🚀 执行命令: node scripts/arknights/syncStoryData.js $ARGS"
+                  echo "Executing: node scripts/arknights/syncStoryData.cjs $ARGS"
 
-                  # 捕获同步结果
-                  if node scripts/arknights/syncStoryData.js $ARGS > sync_output.log 2>&1; then
-                    echo "✅ 故事数据同步成功"
+                  if node scripts/arknights/syncStoryData.cjs $ARGS > sync_output.log 2>&1; then
+                    echo "Story data sync successful"
                     
-                    # 提取同步信息（如果可能）
-                    if grep -q "Git同步完成" sync_output.log; then
-                      echo "method=git-sparse-checkout" >> $GITHUB_OUTPUT
-                      FILE_COUNT=$(grep -o "共同步 [0-9]* 个文件" sync_output.log | grep -o "[0-9]*" || echo "unknown")
-                      echo "file-count=$FILE_COUNT" >> $GITHUB_OUTPUT
-                    elif grep -q "API同步完成" sync_output.log; then
-                      echo "method=github-api" >> $GITHUB_OUTPUT
-                      FILE_COUNT=$(grep -o "成功: [0-9]*" sync_output.log | grep -o "[0-9]*" || echo "unknown")
-                      echo "file-count=$FILE_COUNT" >> $GITHUB_OUTPUT
-                    else
-                      echo "method=unknown" >> $GITHUB_OUTPUT
-                      echo "file-count=unknown" >> $GITHUB_OUTPUT
-                    fi
+                    FILE_COUNT=$(grep -o "synced: [0-9]* files" sync_output.log | grep -o "[0-9]*" | head -1 || echo "unknown")
+                    echo "file-count=$FILE_COUNT" >> $GITHUB_OUTPUT
                     
-                    # 显示同步输出
-                    echo "📋 同步详情:"
+                    echo "Sync details:"
                     cat sync_output.log
                   else
-                    echo "❌ 故事数据同步失败"
-                    echo "📋 错误详情:"
+                    echo "Story data sync failed"
+                    echo "Error details:"
                     cat sync_output.log
                     exit 1
                   fi
@@ -122,16 +95,15 @@ jobs:
               id: check-changes
               if: inputs.dry_run != 'true'
               run: |
-                  if git diff --quiet HEAD -- docs/src/public/data/arknights/story/; then
+                  if git diff --quiet HEAD -- docs/src/public/data/; then
                     echo "changed=false" >> $GITHUB_OUTPUT
-                    echo "📊 故事数据没有变化"
+                    echo "Story data unchanged"
                   else
                     echo "changed=true" >> $GITHUB_OUTPUT
-                    echo "📊 故事数据已更新"
+                    echo "Story data updated"
                     
-                    # 显示变化统计
-                    echo "📈 变化统计:"
-                    git diff --stat HEAD -- docs/src/public/data/arknights/story/
+                    echo "Change statistics:"
+                    git diff --stat HEAD -- docs/src/public/data/
                   fi
 
             - name: Upload sync report
@@ -139,9 +111,7 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: story-sync-report-${{ github.run_number }}
-                  path: |
-                      docs/logs/story-sync-report.json
-                      docs/sync_output.log
+                  path: docs/sync_output.log
                   retention-days: 7
 
             - name: Commit story data changes
@@ -149,62 +119,52 @@ jobs:
               run: |
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
-                  git add docs/src/public/data/arknights/story/
+                  git add docs/src/public/data/
 
-                  # 生成详细的提交信息
-                  COMMIT_MSG="📚 更新明日方舟故事数据 $(date '+%Y-%m-%d %H:%M:%S')"
+                  COMMIT_MSG="Update Arknights story data $(date '+%Y-%m-%d %H:%M:%S')"
 
-                  # 添加同步方法信息
-                  if [ "${{ steps.sync-result.outputs.method }}" != "unknown" ]; then
-                    COMMIT_MSG="$COMMIT_MSG"$'\n\n'"🔧 同步方法: ${{ steps.sync-result.outputs.method }}"
-                  fi
-
-                  # 添加文件数量信息
                   if [ "${{ steps.sync-result.outputs.file-count }}" != "unknown" ]; then
-                    COMMIT_MSG="$COMMIT_MSG"$'\n'"📊 文件数量: ${{ steps.sync-result.outputs.file-count }}"
+                    COMMIT_MSG="$COMMIT_MSG"$'\n'"File count: ${{ steps.sync-result.outputs.file-count }}"
                   fi
 
-                  # 添加变化统计
                   ADDED=$(git diff --cached --numstat | awk '{sum+=$1} END {print sum+0}')
                   DELETED=$(git diff --cached --numstat | awk '{sum+=$2} END {print sum+0}')
-                  COMMIT_MSG="$COMMIT_MSG"$'\n'"📈 变化: +$ADDED/-$DELETED 行"
+                  COMMIT_MSG="$COMMIT_MSG"$'\n'"Changes: +$ADDED/-$DELETED lines"
 
-                   git commit -m "$COMMIT_MSG"
-                   
-                   # 处理可能的推送冲突
-                   echo "🔄 推送故事数据更新..."
-                   for i in {1..3}; do
-                     if git push; then
-                       echo "✅ 推送成功"
-                       break
-                     else
-                       echo "⚠️ 推送失败，尝试拉取并重新推送 (尝试 $i/3)"
-                       git pull --rebase origin main
-                       if [ $? -eq 0 ]; then
-                         echo "📥 成功拉取远程更改"
-                       else
-                         echo "❌ 拉取失败，跳过此次推送"
-                         exit 1
-                       fi
-                     fi
-                   done
- 
-                   echo "✅ 故事数据变化已提交到仓库"
+                  git commit -m "$COMMIT_MSG"
+                  
+                  echo "Pushing story data updates..."
+                  for i in {1..3}; do
+                    if git push; then
+                      echo "Push successful"
+                      break
+                    else
+                      echo "Push failed, retrying ($i/3)"
+                      git pull --rebase origin main
+                      if [ $? -eq 0 ]; then
+                        echo "Successfully pulled remote changes"
+                      else
+                        echo "Pull failed, skipping push"
+                        exit 1
+                      fi
+                    fi
+                  done
+
+                  echo "Story data changes committed to repository"
 
             - name: Summary
               if: always()
               run: |
-                  echo "📋 故事数据同步摘要"
-                  echo "===================="
-                  echo "🔧 同步方法: ${{ steps.sync-result.outputs.method || 'unknown' }}"
-                  echo "📊 文件数量: ${{ steps.sync-result.outputs.file-count || 'unknown' }}"
-                  echo "📈 数据更新: ${{ steps.check-changes.outputs.changed || 'skipped (dry-run)' }}"
-                  echo "⏱️ 运行时间: $(date '+%Y-%m-%d %H:%M:%S')"
+                  echo "Story Data Sync Summary"
+                  echo "======================"
+                  echo "File count: ${{ steps.sync-result.outputs.file-count || 'unknown' }}"
+                  echo "Data updated: ${{ steps.check-changes.outputs.changed || 'skipped (dry-run)' }}"
+                  echo "Run time: $(date '+%Y-%m-%d %H:%M:%S')"
 
                   if [ "${{ inputs.dry_run }}" = "true" ]; then
-                    echo "🧪 预览模式：未实际修改数据"
+                    echo "Preview mode: No actual data modification"
                   elif [ "${{ steps.check-changes.outputs.changed }}" = "true" ]; then
-                    echo "✅ 故事数据已成功同步并提交"
+                    echo "Story data successfully synced and committed"
                   else
-                    echo "ℹ️ 故事数据无变化"
+                    echo "Story data unchanged"
                   fi
