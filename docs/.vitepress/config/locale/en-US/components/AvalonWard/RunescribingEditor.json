@@ -1,0 +1,23 @@
+{
+    "title": "Rune Scribing Editor",
+    "instructions": "Click on the lines to toggle them on/off.",
+    "labelsClickTolerance": "Click Tolerance",
+    "labelsTier": "Tier",
+    "labelsOutputItem": "Output Item",
+    "labelsRequiredFaction": "Required Faction",
+    "sectionsHorizontal": "Horizontal",
+    "sectionsVertical": "Vertical",
+    "sectionsRecipeConfiguration": "Recipe Configuration",
+    "sectionsCodeOutput": "Code Output",
+    "labelsDecimal": "Decimal",
+    "labelsBinary": "Binary",
+    "actionsClearGrid": "Clear Grid",
+    "actionsFillGrid": "Fill Grid",
+    "actionsCopy": "Copy",
+    "actionsCopyJson": "Copy JSON Code",
+    "actionsCopyKubejs": "Copy KubeJS Code",
+    "formatsJson": "JSON",
+    "formatsKubejs": "KubeJS",
+    "placeholdersOutputItem": "e.g. minecraft:acacia_boat",
+    "placeholdersRequiredFaction": "e.g. mna:none"
+}

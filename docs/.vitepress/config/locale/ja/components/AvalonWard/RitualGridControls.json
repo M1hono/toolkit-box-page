@@ -1,0 +1,11 @@
+{
+    "gridSize": "グリッドサイズ",
+    "maxSize": "最大サイズ",
+    "lockSize": "サイズをロック",
+    "locked": "サイズロック済み",
+    "pattern": "パターン",
+    "displayPattern": "パターンを表示",
+    "reagents": "試薬",
+    "showKeys": "キーを表示",
+    "randomizeRunes": "ルーンをランダム化"
+}

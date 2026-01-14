@@ -1,0 +1,57 @@
+[
+    {
+        "name": "fgo-features",
+        "color": "#646cff",
+        "darkColor": "#747bff",
+        "snippets": [
+            "FGO character portrait diff processing",
+            "Smart face detection & cropping",
+            "Batch download & packaging",
+            "Multi-language character data"
+        ]
+    },
+    {
+        "name": "arknights-features",
+        "color": "#4fc08d",
+        "darkColor": "#42b883",
+        "snippets": [
+            "Arknights character extraction",
+            "Story text data synchronization",
+            "Multi-language name mapping",
+            "Real-time preview & batch processing"
+        ]
+    },
+    {
+        "name": "minecraft-tools",
+        "color": "#f7df1e",
+        "darkColor": "#f0d91d",
+        "snippets": [
+            "JSON resource pack translator",
+            "Auto guidebook generator",
+            "Ritual config & command generator",
+            "Visual rune editor"
+        ]
+    },
+    {
+        "name": "core-features",
+        "color": "#dc2626",
+        "darkColor": "#f87171",
+        "snippets": [
+            "OpenCV image processing",
+            "Real-time canvas rendering",
+            "Drag-to-crop intelligent selection",
+            "Responsive modern layout"
+        ]
+    },
+    {
+        "name": "developer-experience",
+        "color": "#7c3aed",
+        "darkColor": "#a78bfa",
+        "snippets": [
+            "Vue 3 + Vuetify components",
+            "TypeScript type safety",
+            "Modular composables",
+            "Complete i18n support"
+        ]
+    }
+]

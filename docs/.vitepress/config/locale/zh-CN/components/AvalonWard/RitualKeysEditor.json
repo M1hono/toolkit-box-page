@@ -1,0 +1,10 @@
+{
+    "reagentKeys": "试剂按键",
+    "noKeys": "未定义按键。请先在网格中添加试剂。",
+    "itemIdPlaceholder": "物品ID（必填）",
+    "optional": "可选",
+    "consume": "消耗",
+    "dynamic": "动态",
+    "dynamicSource": "动态源",
+    "manualReturn": "手动返回"
+}

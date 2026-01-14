@@ -1,0 +1,8 @@
+{
+    "translationEntries": "翻訳エントリ",
+    "itemsPerPage": "ページあたりのアイテム数",
+    "pageInfo": "{total}ページ中{current}ページ",
+    "noEntries": "一致するエントリが見つかりません。ファイルをインポートするか、フィルターをクリアしてください。",
+    "edit": "編集",
+    "delete": "削除"
+}

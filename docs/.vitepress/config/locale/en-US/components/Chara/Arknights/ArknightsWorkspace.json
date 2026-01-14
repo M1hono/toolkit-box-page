@@ -1,0 +1,15 @@
+{
+    "detectFace": "Detect Face",
+    "reset": "Reset",
+    "download": "Download Full",
+    "copy": "Copy Full",
+    "batch": "Batch",
+    "downloadCrop": "Download Crop",
+    "copyCrop": "Copy Crop",
+    "loading": "Loading...",
+    "noSelection": "No character selected",
+    "noImage": "No image",
+    "bgColor": "Background",
+    "preview": "Preview",
+    "allNames": "All Names:"
+}

@@ -1,0 +1,6462 @@
+[
+  {
+    "id": 100100,
+    "name": "アルトリア・ペンドラゴン",
+    "originalName": "アルトリア・ペンドラゴン",
+    "ruby": "アルトリア・ペンドラゴン",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "saber"
+    ]
+  },
+  {
+    "id": 100200,
+    "name": "アルトリア・ペンドラゴン〔オルタ〕",
+    "originalName": "アルトリア・ペンドラゴン〔オルタ〕",
+    "ruby": "アルトリア・ペンドラゴン〔オルタ〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 100300,
+    "name": "アルトリア・ペンドラゴン〔リリィ〕",
+    "originalName": "アルトリア・ペンドラゴン〔リリィ〕",
+    "ruby": "アルトリア・ペンドラゴン〔リリィ〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン〔リリィ〕",
+      "アルトリア・ペンドラゴン〔リリィ〕",
+      "アルトリア・ペンドラゴン〔リリィ〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 100500,
+    "name": "ネロ・クラウディウス",
+    "originalName": "ネロ・クラウディウス",
+    "ruby": "ネロ・クラウディウス",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ネロ・クラウディウス",
+      "ネロ・クラウディウス",
+      "ネロ・クラウディウス",
+      "saber"
+    ]
+  },
+  {
+    "id": 100600,
+    "name": "ネロ・クラウディウス〔ブライド〕",
+    "originalName": "ネロ・クラウディウス〔ブライド〕",
+    "ruby": "ネロ・クラウディウス〔ブライド〕",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "ネロ・クラウディウス〔ブライド〕",
+      "ネロ・クラウディウス〔ブライド〕",
+      "ネロ・クラウディウス〔ブライド〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 100700,
+    "name": "ガウェイン",
+    "originalName": "ガウェイン",
+    "ruby": "ガウェイン",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ガウェイン",
+      "ガウェイン",
+      "ガウェイン",
+      "saber"
+    ]
+  },
+  {
+    "id": 100800,
+    "name": "ジークフリート",
+    "originalName": "ジークフリート",
+    "ruby": "ジークフリート",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ジークフリート",
+      "ジークフリート",
+      "ジークフリート",
+      "saber"
+    ]
+  },
+  {
+    "id": 100900,
+    "name": "モードレッド",
+    "originalName": "モードレッド",
+    "ruby": "モードレッド",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "モードレッド",
+      "モードレッド",
+      "モードレッド",
+      "saber"
+    ]
+  },
+  {
+    "id": 101000,
+    "name": "エリザベート・バートリー〔ブレイブ〕",
+    "originalName": "エリザベート・バートリー〔ブレイブ〕",
+    "ruby": "エリザベート・バートリー〔ブレイブ〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "エリザベート・バートリー〔ブレイブ〕",
+      "エリザベート・バートリー〔ブレイブ〕",
+      "エリザベート・バートリー〔ブレイブ〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 101200,
+    "name": "ベディヴィエール",
+    "originalName": "ベディヴィエール",
+    "ruby": "ベディヴィエール",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "ベディヴィエール",
+      "ベディヴィエール",
+      "ベディヴィエール",
+      "saber"
+    ]
+  },
+  {
+    "id": 101300,
+    "name": "ガイウス・ユリウス・カエサル",
+    "originalName": "ガイウス・ユリウス・カエサル",
+    "ruby": "ガイウス・ユリウス・カエサル",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "ガイウス・ユリウス・カエサル",
+      "ガイウス・ユリウス・カエサル",
+      "ガイウス・ユリウス・カエサル",
+      "saber"
+    ]
+  },
+  {
+    "id": 101400,
+    "name": "フェルグス・マック・ロイ",
+    "originalName": "フェルグス・マック・ロイ",
+    "ruby": "フェルグス・マック・ロイ",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "フェルグス・マック・ロイ",
+      "フェルグス・マック・ロイ",
+      "フェルグス・マック・ロイ",
+      "saber"
+    ]
+  },
+  {
+    "id": 101700,
+    "name": "宮本武蔵",
+    "originalName": "宮本武蔵",
+    "ruby": "ミヤモトムサシ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "宮本武蔵",
+      "宮本武蔵",
+      "ミヤモトムサシ",
+      "saber"
+    ]
+  },
+  {
+    "id": 101800,
+    "name": "アルテラ",
+    "originalName": "アルテラ",
+    "ruby": "アルテラ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "アルテラ",
+      "アルテラ",
+      "アルテラ",
+      "saber"
+    ]
+  },
+  {
+    "id": 101900,
+    "name": "ラーマ",
+    "originalName": "ラーマ",
+    "ruby": "ラーマ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ラーマ",
+      "ラーマ",
+      "ラーマ",
+      "saber"
+    ]
+  },
+  {
+    "id": 102000,
+    "name": "ランスロット",
+    "originalName": "ランスロット",
+    "ruby": "ランスロット",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ランスロット",
+      "ランスロット",
+      "ランスロット",
+      "saber"
+    ]
+  },
+  {
+    "id": 102200,
+    "name": "ジル・ド・レェ",
+    "originalName": "ジル・ド・レェ",
+    "ruby": "ジル・ド・レェ",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "ジル・ド・レェ",
+      "ジル・ド・レェ",
+      "ジル・ド・レェ",
+      "saber"
+    ]
+  },
+  {
+    "id": 102600,
+    "name": "シュヴァリエ・デオン",
+    "originalName": "シュヴァリエ・デオン",
+    "ruby": "シュヴァリエ・デオン",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "シュヴァリエ・デオン",
+      "シュヴァリエ・デオン",
+      "シュヴァリエ・デオン",
+      "saber"
+    ]
+  },
+  {
+    "id": 102700,
+    "name": "沖田総司",
+    "originalName": "沖田総司",
+    "ruby": "オキタソウジ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "沖田総司",
+      "沖田総司",
+      "オキタソウジ",
+      "saber"
+    ]
+  },
+  {
+    "id": 102800,
+    "name": "両儀式",
+    "originalName": "両儀式",
+    "ruby": "リョウギシキ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "両儀式",
+      "両儀式",
+      "リョウギシキ",
+      "saber"
+    ]
+  },
+  {
+    "id": 102900,
+    "name": "アーサー・ペンドラゴン〔プロトタイプ〕",
+    "originalName": "アーサー・ペンドラゴン〔プロトタイプ〕",
+    "ruby": "アーサー・ペンドラゴン〔プロトタイプ〕",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "アーサー・ペンドラゴン〔プロトタイプ〕",
+      "アーサー・ペンドラゴン〔プロトタイプ〕",
+      "アーサー・ペンドラゴン〔プロトタイプ〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 103000,
+    "name": "鈴鹿御前",
+    "originalName": "鈴鹿御前",
+    "ruby": "スズカゴゼン",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "鈴鹿御前",
+      "鈴鹿御前",
+      "スズカゴゼン",
+      "saber"
+    ]
+  },
+  {
+    "id": 103100,
+    "name": "フランケンシュタイン",
+    "originalName": "フランケンシュタイン",
+    "ruby": "フランケンシュタイン",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "フランケンシュタイン",
+      "フランケンシュタイン",
+      "フランケンシュタイン",
+      "saber"
+    ]
+  },
+  {
+    "id": 103200,
+    "name": "柳生但馬守宗矩",
+    "originalName": "柳生但馬守宗矩",
+    "ruby": "ヤギュウタジマノカミムネノリ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "柳生但馬守宗矩",
+      "柳生但馬守宗矩",
+      "ヤギュウタジマノカミムネノリ",
+      "saber"
+    ]
+  },
+  {
+    "id": 103300,
+    "name": "シグルド",
+    "originalName": "シグルド",
+    "ruby": "シグルド",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "シグルド",
+      "シグルド",
+      "シグルド",
+      "saber"
+    ]
+  },
+  {
+    "id": 103400,
+    "name": "女王メイヴ",
+    "originalName": "女王メイヴ",
+    "ruby": "ジョオウメイヴ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "女王メイヴ",
+      "女王メイヴ",
+      "ジョオウメイヴ",
+      "saber"
+    ]
+  },
+  {
+    "id": 103500,
+    "name": "ディルムッド・オディナ",
+    "originalName": "ディルムッド・オディナ",
+    "ruby": "ディルムッド・オディナ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ディルムッド・オディナ",
+      "ディルムッド・オディナ",
+      "ディルムッド・オディナ",
+      "saber"
+    ]
+  },
+  {
+    "id": 103600,
+    "name": "蘭陵王",
+    "originalName": "蘭陵王",
+    "ruby": "ランリョウオウ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "蘭陵王",
+      "蘭陵王",
+      "ランリョウオウ",
+      "saber"
+    ]
+  },
+  {
+    "id": 103700,
+    "name": "紅閻魔",
+    "originalName": "紅閻魔",
+    "ruby": "ベニエンマ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "紅閻魔",
+      "紅閻魔",
+      "ベニエンマ",
+      "saber"
+    ]
+  },
+  {
+    "id": 103800,
+    "name": "イアソン",
+    "originalName": "イアソン",
+    "ruby": "イアソン",
+    "className": "saber",
+    "rarity": 1,
+    "searchTerms": [
+      "イアソン",
+      "イアソン",
+      "イアソン",
+      "saber"
+    ]
+  },
+  {
+    "id": 103900,
+    "name": "ラクシュミー・バーイー",
+    "originalName": "ラクシュミー・バーイー",
+    "ruby": "ラクシュミー・バーイー",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ラクシュミー・バーイー",
+      "ラクシュミー・バーイー",
+      "ラクシュミー・バーイー",
+      "saber"
+    ]
+  },
+  {
+    "id": 104000,
+    "name": "葛飾北斎",
+    "originalName": "葛飾北斎",
+    "ruby": "カツシカホクサイ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "葛飾北斎",
+      "葛飾北斎",
+      "カツシカホクサイ",
+      "saber"
+    ]
+  },
+  {
+    "id": 104100,
+    "name": "アストルフォ",
+    "originalName": "アストルフォ",
+    "ruby": "アストルフォ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "アストルフォ",
+      "アストルフォ",
+      "アストルフォ",
+      "saber"
+    ]
+  },
+  {
+    "id": 104200,
+    "name": "ディオスクロイ",
+    "originalName": "ディオスクロイ",
+    "ruby": "ディオスクロイ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "ディオスクロイ",
+      "ディオスクロイ",
+      "ディオスクロイ",
+      "saber"
+    ]
+  },
+  {
+    "id": 104300,
+    "name": "ローラン",
+    "originalName": "ローラン",
+    "ruby": "ローラン",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ローラン",
+      "ローラン",
+      "ローラン",
+      "saber"
+    ]
+  },
+  {
+    "id": 104400,
+    "name": "斎藤一",
+    "originalName": "斎藤一",
+    "ruby": "サイトウ・ハジメ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "斎藤一",
+      "斎藤一",
+      "サイトウ・ハジメ",
+      "saber"
+    ]
+  },
+  {
+    "id": 104500,
+    "name": "巴御前",
+    "originalName": "巴御前",
+    "ruby": "トモエゴゼン",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "巴御前",
+      "巴御前",
+      "トモエゴゼン",
+      "saber"
+    ]
+  },
+  {
+    "id": 104600,
+    "name": "伊吹童子",
+    "originalName": "伊吹童子",
+    "ruby": "イブキドウジ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "伊吹童子",
+      "伊吹童子",
+      "イブキドウジ",
+      "saber"
+    ]
+  },
+  {
+    "id": 104700,
+    "name": "渡辺綱",
+    "originalName": "渡辺綱",
+    "ruby": "ワタナベノツナ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "渡辺綱",
+      "渡辺綱",
+      "ワタナベノツナ",
+      "saber"
+    ]
+  },
+  {
+    "id": 104800,
+    "name": "カルナ〔サンタ〕",
+    "originalName": "カルナ〔サンタ〕",
+    "ruby": "カルナ〔サンタ〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "カルナ〔サンタ〕",
+      "カルナ〔サンタ〕",
+      "カルナ〔サンタ〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 104900,
+    "name": "千子村正",
+    "originalName": "千子村正",
+    "ruby": "センジムラマサ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "千子村正",
+      "千子村正",
+      "センジムラマサ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105000,
+    "name": "バーゲスト",
+    "originalName": "バーゲスト",
+    "ruby": "バーゲスト",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "バーゲスト",
+      "バーゲスト",
+      "バーゲスト",
+      "saber"
+    ]
+  },
+  {
+    "id": 105100,
+    "name": "沖田総司〔オルタ〕",
+    "originalName": "沖田総司〔オルタ〕",
+    "ruby": "オキタソウジ・オルタ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "沖田総司〔オルタ〕",
+      "沖田総司〔オルタ〕",
+      "オキタソウジ・オルタ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105200,
+    "name": "シャルルマーニュ",
+    "originalName": "シャルルマーニュ",
+    "ruby": "シャルルマーニュ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "シャルルマーニュ",
+      "シャルルマーニュ",
+      "シャルルマーニュ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105300,
+    "name": "徴姉妹",
+    "originalName": "徴姉妹",
+    "ruby": "チョウシマイ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "徴姉妹",
+      "徴姉妹",
+      "チョウシマイ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105400,
+    "name": "ガレス",
+    "originalName": "ガレス",
+    "ruby": "ガレス",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "ガレス",
+      "ガレス",
+      "ガレス",
+      "saber"
+    ]
+  },
+  {
+    "id": 105500,
+    "name": "山南敬助",
+    "originalName": "山南敬助",
+    "ruby": "ヤマナミケイスケ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "山南敬助",
+      "山南敬助",
+      "ヤマナミケイスケ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105600,
+    "name": "メドゥーサ",
+    "originalName": "メドゥーサ",
+    "ruby": "メドゥーサ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "メドゥーサ",
+      "メドゥーサ",
+      "メドゥーサ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105700,
+    "name": "セタンタ",
+    "originalName": "セタンタ",
+    "ruby": "セタンタ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "セタンタ",
+      "セタンタ",
+      "セタンタ",
+      "saber"
+    ]
+  },
+  {
+    "id": 105800,
+    "name": "テセウス",
+    "originalName": "テセウス",
+    "ruby": "テセウス",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "テセウス",
+      "テセウス",
+      "テセウス",
+      "saber"
+    ]
+  },
+  {
+    "id": 105900,
+    "name": "ヤマトタケル",
+    "originalName": "ヤマトタケル",
+    "ruby": "ヤマトタケル",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "ヤマトタケル",
+      "ヤマトタケル",
+      "ヤマトタケル",
+      "saber"
+    ]
+  },
+  {
+    "id": 106000,
+    "name": "宮本伊織",
+    "originalName": "宮本伊織",
+    "ruby": "ミヤモトイオリ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "宮本伊織",
+      "宮本伊織",
+      "ミヤモトイオリ",
+      "saber"
+    ]
+  },
+  {
+    "id": 106100,
+    "name": "リチャードⅠ世",
+    "originalName": "リチャードⅠ世",
+    "ruby": "リチャードイッセイ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "リチャードⅰ世",
+      "リチャードⅰ世",
+      "リチャードイッセイ",
+      "saber"
+    ]
+  },
+  {
+    "id": 106200,
+    "name": "黒姫",
+    "originalName": "黒姫",
+    "ruby": "クロヒメ",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "黒姫",
+      "黒姫",
+      "クロヒメ",
+      "saber"
+    ]
+  },
+  {
+    "id": 106300,
+    "name": "パッションリップ",
+    "originalName": "パッションリップ",
+    "ruby": "パッションリップ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "パッションリップ",
+      "パッションリップ",
+      "パッションリップ",
+      "saber"
+    ]
+  },
+  {
+    "id": 106400,
+    "name": "近藤勇",
+    "originalName": "近藤勇",
+    "ruby": "コンドウイサミ",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "近藤勇",
+      "近藤勇",
+      "コンドウイサミ",
+      "saber"
+    ]
+  },
+  {
+    "id": 106500,
+    "name": "ロード・ログレス",
+    "originalName": "ロード・ログレス",
+    "ruby": "ロード・ログレス",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "ロード・ログレス",
+      "ロード・ログレス",
+      "ロード・ログレス",
+      "saber"
+    ]
+  },
+  {
+    "id": 200100,
+    "name": "エミヤ",
+    "originalName": "エミヤ",
+    "ruby": "エミヤ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "エミヤ",
+      "エミヤ",
+      "エミヤ",
+      "archer"
+    ]
+  },
+  {
+    "id": 200200,
+    "name": "ギルガメッシュ",
+    "originalName": "ギルガメッシュ",
+    "ruby": "ギルガメッシュ",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ギルガメッシュ",
+      "ギルガメッシュ",
+      "ギルガメッシュ",
+      "archer"
+    ]
+  },
+  {
+    "id": 200300,
+    "name": "ロビンフッド",
+    "originalName": "ロビンフッド",
+    "ruby": "ロビンフッド",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "ロビンフッド",
+      "ロビンフッド",
+      "ロビンフッド",
+      "archer"
+    ]
+  },
+  {
+    "id": 200500,
+    "name": "アタランテ",
+    "originalName": "アタランテ",
+    "ruby": "アタランテ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "アタランテ",
+      "アタランテ",
+      "アタランテ",
+      "archer"
+    ]
+  },
+  {
+    "id": 200600,
+    "name": "ダビデ",
+    "originalName": "ダビデ",
+    "ruby": "ダビデ",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "ダビデ",
+      "ダビデ",
+      "ダビデ",
+      "archer"
+    ]
+  },
+  {
+    "id": 200800,
+    "name": "トリスタン",
+    "originalName": "トリスタン",
+    "ruby": "トリスタン",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "トリスタン",
+      "トリスタン",
+      "トリスタン",
+      "archer"
+    ]
+  },
+  {
+    "id": 200900,
+    "name": "オリオン",
+    "originalName": "オリオン",
+    "ruby": "オリオン",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "オリオン",
+      "オリオン",
+      "オリオン",
+      "archer"
+    ]
+  },
+  {
+    "id": 201000,
+    "name": "ビリー・ザ・キッド",
+    "originalName": "ビリー・ザ・キッド",
+    "ruby": "ビリー・ザ・キッド",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "ビリー・ザ・キッド",
+      "ビリー・ザ・キッド",
+      "ビリー・ザ・キッド",
+      "archer"
+    ]
+  },
+  {
+    "id": 201100,
+    "name": "ニコラ・テスラ",
+    "originalName": "ニコラ・テスラ",
+    "ruby": "ニコラ・テスラ",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ニコラ・テスラ",
+      "ニコラ・テスラ",
+      "ニコラ・テスラ",
+      "archer"
+    ]
+  },
+  {
+    "id": 201200,
+    "name": "エウリュアレ",
+    "originalName": "エウリュアレ",
+    "ruby": "エウリュアレ",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "エウリュアレ",
+      "エウリュアレ",
+      "エウリュアレ",
+      "archer"
+    ]
+  },
+  {
+    "id": 201300,
+    "name": "アーラシュ",
+    "originalName": "アーラシュ",
+    "ruby": "アーラシュ",
+    "className": "archer",
+    "rarity": 1,
+    "searchTerms": [
+      "アーラシュ",
+      "アーラシュ",
+      "アーラシュ",
+      "archer"
+    ]
+  },
+  {
+    "id": 201400,
+    "name": "俵藤太",
+    "originalName": "俵藤太",
+    "ruby": "タワラトウタ",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "俵藤太",
+      "俵藤太",
+      "タワラトウタ",
+      "archer"
+    ]
+  },
+  {
+    "id": 201500,
+    "name": "アルジュナ",
+    "originalName": "アルジュナ",
+    "ruby": "アルジュナ",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "アルジュナ",
+      "アルジュナ",
+      "アルジュナ",
+      "archer"
+    ]
+  },
+  {
+    "id": 201600,
+    "name": "エミヤ〔オルタ〕",
+    "originalName": "エミヤ〔オルタ〕",
+    "ruby": "エミヤ〔オルタ〕",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "エミヤ〔オルタ〕",
+      "エミヤ〔オルタ〕",
+      "エミヤ〔オルタ〕",
+      "archer"
+    ]
+  },
+  {
+    "id": 201800,
+    "name": "子ギル",
+    "originalName": "子ギル",
+    "ruby": "コギル",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "子ギル",
+      "子ギル",
+      "コギル",
+      "archer"
+    ]
+  },
+  {
+    "id": 202000,
+    "name": "イシュタル",
+    "originalName": "イシュタル",
+    "ruby": "イシュタル",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "イシュタル",
+      "イシュタル",
+      "イシュタル",
+      "archer"
+    ]
+  },
+  {
+    "id": 202100,
+    "name": "巴御前",
+    "originalName": "巴御前",
+    "ruby": "トモエゴゼン",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "巴御前",
+      "巴御前",
+      "トモエゴゼン",
+      "archer"
+    ]
+  },
+  {
+    "id": 202200,
+    "name": "アルテラ・ザ・サン〔タ〕",
+    "originalName": "アルテラ・ザ・サン〔タ〕",
+    "ruby": "アルテラ・ザ・サンタ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "アルテラ・ザ・サン〔タ〕",
+      "アルテラ・ザ・サン〔タ〕",
+      "アルテラ・ザ・サンタ",
+      "archer"
+    ]
+  },
+  {
+    "id": 202300,
+    "name": "ジェームズ・モリアーティ",
+    "originalName": "ジェームズ・モリアーティ",
+    "ruby": "ジェームズ・モリアーティ",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ジェームズ・モリアーティ",
+      "ジェームズ・モリアーティ",
+      "ジェームズ・モリアーティ",
+      "archer"
+    ]
+  },
+  {
+    "id": 202400,
+    "name": "織田信長",
+    "originalName": "織田信長",
+    "ruby": "オダノブナガ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "織田信長",
+      "織田信長",
+      "オダノブナガ",
+      "archer"
+    ]
+  },
+  {
+    "id": 202500,
+    "name": "アン・ボニー＆メアリー・リード",
+    "originalName": "アン・ボニー＆メアリー・リード",
+    "ruby": "アン・ボニー＆メアリー・リード",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "アン・ボニー＆メアリー・リード",
+      "アン・ボニー＆メアリー・リード",
+      "アン・ボニー＆メアリー・リード",
+      "archer"
+    ]
+  },
+  {
+    "id": 202600,
+    "name": "アルトリア・ペンドラゴン",
+    "originalName": "アルトリア・ペンドラゴン",
+    "ruby": "アルトリア・ペンドラゴン",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "archer"
+    ]
+  },
+  {
+    "id": 202700,
+    "name": "クロエ・フォン・アインツベルン",
+    "originalName": "クロエ・フォン・アインツベルン",
+    "ruby": "クロエ・フォン・アインツベルン",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "クロエ・フォン・アインツベルン",
+      "クロエ・フォン・アインツベルン",
+      "クロエ・フォン・アインツベルン",
+      "archer"
+    ]
+  },
+  {
+    "id": 202800,
+    "name": "エレナ・ブラヴァツキー",
+    "originalName": "エレナ・ブラヴァツキー",
+    "ruby": "エレナ・ブラヴァツキー",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "エレナ・ブラヴァツキー",
+      "エレナ・ブラヴァツキー",
+      "エレナ・ブラヴァツキー",
+      "archer"
+    ]
+  },
+  {
+    "id": 202900,
+    "name": "浅上藤乃",
+    "originalName": "浅上藤乃",
+    "ruby": "アサガミフジノ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "浅上藤乃",
+      "浅上藤乃",
+      "アサガミフジノ",
+      "archer"
+    ]
+  },
+  {
+    "id": 203000,
+    "name": "ケイローン",
+    "originalName": "ケイローン",
+    "ruby": "ケイローン",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "ケイローン",
+      "ケイローン",
+      "ケイローン",
+      "archer"
+    ]
+  },
+  {
+    "id": 203100,
+    "name": "ナポレオン",
+    "originalName": "ナポレオン",
+    "ruby": "ナポレオン",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ナポレオン",
+      "ナポレオン",
+      "ナポレオン",
+      "archer"
+    ]
+  },
+  {
+    "id": 203200,
+    "name": "ジャンヌ・ダルク",
+    "originalName": "ジャンヌ・ダルク",
+    "ruby": "ジャンヌ・ダルク",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ジャンヌ・ダルク",
+      "ジャンヌ・ダルク",
+      "ジャンヌ・ダルク",
+      "archer"
+    ]
+  },
+  {
+    "id": 203300,
+    "name": "アシュヴァッターマン",
+    "originalName": "アシュヴァッターマン",
+    "ruby": "アシュヴァッターマン",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "アシュヴァッターマン",
+      "アシュヴァッターマン",
+      "アシュヴァッターマン",
+      "archer"
+    ]
+  },
+  {
+    "id": 203400,
+    "name": "ウィリアム・テル",
+    "originalName": "ウィリアム・テル",
+    "ruby": "ウィリアム・テル",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "ウィリアム・テル",
+      "ウィリアム・テル",
+      "ウィリアム・テル",
+      "archer"
+    ]
+  },
+  {
+    "id": 203500,
+    "name": "パリス",
+    "originalName": "パリス",
+    "ruby": "パリス",
+    "className": "archer",
+    "rarity": 2,
+    "searchTerms": [
+      "パリス",
+      "パリス",
+      "パリス",
+      "archer"
+    ]
+  },
+  {
+    "id": 203600,
+    "name": "刑部姫",
+    "originalName": "刑部姫",
+    "ruby": "オサカベヒメ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "刑部姫",
+      "刑部姫",
+      "オサカベヒメ",
+      "archer"
+    ]
+  },
+  {
+    "id": 203700,
+    "name": "カラミティ・ジェーン",
+    "originalName": "カラミティ・ジェーン",
+    "ruby": "カラミティ・ジェーン",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "カラミティ・ジェーン",
+      "カラミティ・ジェーン",
+      "カラミティ・ジェーン",
+      "archer"
+    ]
+  },
+  {
+    "id": 203800,
+    "name": "超人オリオン",
+    "originalName": "超人オリオン",
+    "ruby": "チョウジンオリオン",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "超人オリオン",
+      "超人オリオン",
+      "チョウジンオリオン",
+      "archer"
+    ]
+  },
+  {
+    "id": 203900,
+    "name": "ナイチンゲール〔サンタ〕",
+    "originalName": "ナイチンゲール〔サンタ〕",
+    "ruby": "ナイチンゲール〔サンタ〕",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "ナイチンゲール〔サンタ〕",
+      "ナイチンゲール〔サンタ〕",
+      "ナイチンゲール〔サンタ〕",
+      "archer"
+    ]
+  },
+  {
+    "id": 204000,
+    "name": "清少納言",
+    "originalName": "清少納言",
+    "ruby": "セイショウナゴン",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "清少納言",
+      "清少納言",
+      "セイショウナゴン",
+      "archer"
+    ]
+  },
+  {
+    "id": 204100,
+    "name": "織田信勝",
+    "originalName": "織田信勝",
+    "ruby": "オダ・ノブカツ",
+    "className": "archer",
+    "rarity": 1,
+    "searchTerms": [
+      "織田信勝",
+      "織田信勝",
+      "オダ・ノブカツ",
+      "archer"
+    ]
+  },
+  {
+    "id": 204200,
+    "name": "イリヤスフィール・フォン・アインツベルン",
+    "originalName": "イリヤスフィール・フォン・アインツベルン",
+    "ruby": "イリヤスフィール",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "イリヤスフィール・フォン・アインツベルン",
+      "イリヤスフィール・フォン・アインツベルン",
+      "イリヤスフィール",
+      "archer"
+    ]
+  },
+  {
+    "id": 204300,
+    "name": "バーヴァン・シー",
+    "originalName": "バーヴァン・シー",
+    "ruby": "バーヴァン・シー",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "バーヴァン・シー",
+      "バーヴァン・シー",
+      "バーヴァン・シー",
+      "archer"
+    ]
+  },
+  {
+    "id": 204400,
+    "name": "アナスタシア＆ヴィイ",
+    "originalName": "アナスタシア＆ヴィイ",
+    "ruby": "アナスタシア＆ヴィイ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "アナスタシア＆ヴィイ",
+      "アナスタシア＆ヴィイ",
+      "アナスタシア＆ヴィイ",
+      "archer"
+    ]
+  },
+  {
+    "id": 204500,
+    "name": "ゼノビア",
+    "originalName": "ゼノビア",
+    "ruby": "ゼノビア",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "ゼノビア",
+      "ゼノビア",
+      "ゼノビア",
+      "archer"
+    ]
+  },
+  {
+    "id": 204600,
+    "name": "源為朝",
+    "originalName": "源為朝",
+    "ruby": "ミナモトノタメトモ",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "源為朝",
+      "源為朝",
+      "ミナモトノタメトモ",
+      "archer"
+    ]
+  },
+  {
+    "id": 204700,
+    "name": "高杉晋作",
+    "originalName": "高杉晋作",
+    "ruby": "タカスギシンサク",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "高杉晋作",
+      "高杉晋作",
+      "タカスギシンサク",
+      "archer"
+    ]
+  },
+  {
+    "id": 204800,
+    "name": "ドゥルガー",
+    "originalName": "ドゥルガー",
+    "ruby": "ドゥルガー",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ドゥルガー",
+      "ドゥルガー",
+      "ドゥルガー",
+      "archer"
+    ]
+  },
+  {
+    "id": 204900,
+    "name": "ＵＤＫ－バーゲスト",
+    "originalName": "ＵＤＫ－バーゲスト",
+    "ruby": "バーゲスト",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "ｕｄｋ－バーゲスト",
+      "ｕｄｋ－バーゲスト",
+      "バーゲスト",
+      "archer"
+    ]
+  },
+  {
+    "id": 205000,
+    "name": "プトレマイオス",
+    "originalName": "プトレマイオス",
+    "ruby": "プトレマイオス",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "プトレマイオス",
+      "プトレマイオス",
+      "プトレマイオス",
+      "archer"
+    ]
+  },
+  {
+    "id": 205100,
+    "name": "杉谷善住坊",
+    "originalName": "杉谷善住坊",
+    "ruby": "スギタニゼンジュウボウ",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "杉谷善住坊",
+      "杉谷善住坊",
+      "スギタニゼンジュウボウ",
+      "archer"
+    ]
+  },
+  {
+    "id": 205200,
+    "name": "雑賀孫一",
+    "originalName": "雑賀孫一",
+    "ruby": "サイカマゴイチ",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "雑賀孫一",
+      "雑賀孫一",
+      "サイカマゴイチ",
+      "archer"
+    ]
+  },
+  {
+    "id": 205300,
+    "name": "ツタンカーメン",
+    "originalName": "ツタンカーメン",
+    "ruby": "ツタンカーメン",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ツタンカーメン",
+      "ツタンカーメン",
+      "ツタンカーメン",
+      "archer"
+    ]
+  },
+  {
+    "id": 205400,
+    "name": "ラーヴァ／ティアマト",
+    "originalName": "ラーヴァ／ティアマト",
+    "ruby": "ラーヴァ／ティアマト",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ラーヴァ／ティアマト",
+      "ラーヴァ／ティアマト",
+      "ラーヴァ／ティアマト",
+      "archer"
+    ]
+  },
+  {
+    "id": 300100,
+    "name": "クー・フーリン",
+    "originalName": "クー・フーリン",
+    "ruby": "クー・フーリン",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "クー・フーリン",
+      "クー・フーリン",
+      "クー・フーリン",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300200,
+    "name": "ディルムッド・オディナ",
+    "originalName": "ディルムッド・オディナ",
+    "ruby": "ディルムッド・オディナ",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "ディルムッド・オディナ",
+      "ディルムッド・オディナ",
+      "ディルムッド・オディナ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300300,
+    "name": "ヴラド三世〔EXTRA〕",
+    "originalName": "ヴラド三世〔EXTRA〕",
+    "ruby": "ヴラド三世〔EXTRA〕",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ヴラド三世〔extra〕",
+      "ヴラド三世〔extra〕",
+      "ヴラド三世〔extra〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300400,
+    "name": "カルナ",
+    "originalName": "カルナ",
+    "ruby": "カルナ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "カルナ",
+      "カルナ",
+      "カルナ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300500,
+    "name": "エリザベート・バートリー",
+    "originalName": "エリザベート・バートリー",
+    "ruby": "エリザベート・バートリー",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "エリザベート・バートリー",
+      "エリザベート・バートリー",
+      "エリザベート・バートリー",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300600,
+    "name": "武蔵坊弁慶",
+    "originalName": "武蔵坊弁慶",
+    "ruby": "ムサシボウベンケイ",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "武蔵坊弁慶",
+      "武蔵坊弁慶",
+      "ムサシボウベンケイ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300700,
+    "name": "クー・フーリン〔プロトタイプ〕",
+    "originalName": "クー・フーリン〔プロトタイプ〕",
+    "ruby": "クー・フーリン〔プロトタイプ〕",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "クー・フーリン〔プロトタイプ〕",
+      "クー・フーリン〔プロトタイプ〕",
+      "クー・フーリン〔プロトタイプ〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300800,
+    "name": "エルキドゥ",
+    "originalName": "エルキドゥ",
+    "ruby": "エルキドゥ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "エルキドゥ",
+      "エルキドゥ",
+      "エルキドゥ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300900,
+    "name": "レオニダス一世",
+    "originalName": "レオニダス一世",
+    "ruby": "レオニダスイッセイ",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "レオニダス一世",
+      "レオニダス一世",
+      "レオニダスイッセイ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301000,
+    "name": "ロムルス",
+    "originalName": "ロムルス",
+    "ruby": "ロムルス",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "ロムルス",
+      "ロムルス",
+      "ロムルス",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301100,
+    "name": "フィン・マックール",
+    "originalName": "フィン・マックール",
+    "ruby": "フィン・マックール",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "フィン・マックール",
+      "フィン・マックール",
+      "フィン・マックール",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301200,
+    "name": "ブリュンヒルデ",
+    "originalName": "ブリュンヒルデ",
+    "ruby": "ブリュンヒルデ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ブリュンヒルデ",
+      "ブリュンヒルデ",
+      "ブリュンヒルデ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301300,
+    "name": "スカサハ",
+    "originalName": "スカサハ",
+    "ruby": "スカサハ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "スカサハ",
+      "スカサハ",
+      "スカサハ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301400,
+    "name": "宝蔵院胤舜",
+    "originalName": "宝蔵院胤舜",
+    "ruby": "ホウゾウインインシュン",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "宝蔵院胤舜",
+      "宝蔵院胤舜",
+      "ホウゾウインインシュン",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301600,
+    "name": "ヘクトール",
+    "originalName": "ヘクトール",
+    "ruby": "ヘクトール",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "ヘクトール",
+      "ヘクトール",
+      "ヘクトール",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301700,
+    "name": "李書文",
+    "originalName": "李書文",
+    "ruby": "リ・ショブン",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "李書文",
+      "李書文",
+      "リ・ショブン",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301900,
+    "name": "アルトリア・ペンドラゴン〔オルタ〕",
+    "originalName": "アルトリア・ペンドラゴン〔オルタ〕",
+    "ruby": "アルトリア・ペンドラゴン〔オルタ〕",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302000,
+    "name": "アルトリア・ペンドラゴン",
+    "originalName": "アルトリア・ペンドラゴン",
+    "ruby": "アルトリア・ペンドラゴン",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302400,
+    "name": "玉藻の前",
+    "originalName": "玉藻の前",
+    "ruby": "タマモノマエ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "玉藻の前",
+      "玉藻の前",
+      "タマモノマエ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302500,
+    "name": "清姫",
+    "originalName": "清姫",
+    "ruby": "キヨヒメ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "清姫",
+      "清姫",
+      "キヨヒメ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302600,
+    "name": "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+    "originalName": "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+    "ruby": "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+      "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+      "ジャンヌ・ダルク・オルタ・サンタ・リリィ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302700,
+    "name": "メドゥーサ",
+    "originalName": "メドゥーサ",
+    "ruby": "メドゥーサ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "メドゥーサ",
+      "メドゥーサ",
+      "メドゥーサ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302800,
+    "name": "ジャガーマン",
+    "originalName": "ジャガーマン",
+    "ruby": "ジャガーマン",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "ジャガーマン",
+      "ジャガーマン",
+      "ジャガーマン",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302900,
+    "name": "源頼光",
+    "originalName": "源頼光",
+    "ruby": "ミナモトノライコウ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "源頼光",
+      "源頼光",
+      "ミナモトノライコウ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303000,
+    "name": "パールヴァティー",
+    "originalName": "パールヴァティー",
+    "ruby": "パールヴァティー",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "パールヴァティー",
+      "パールヴァティー",
+      "パールヴァティー",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303100,
+    "name": "哪吒",
+    "originalName": "哪吒",
+    "ruby": "ナタ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "哪吒",
+      "哪吒",
+      "ナタ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303200,
+    "name": "エレシュキガル",
+    "originalName": "エレシュキガル",
+    "ruby": "エレシュキガル",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "エレシュキガル",
+      "エレシュキガル",
+      "エレシュキガル",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303300,
+    "name": "ワルキューレ",
+    "originalName": "ワルキューレ",
+    "ruby": "ワルキューレ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ワルキューレ",
+      "ワルキューレ",
+      "ワルキューレ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303400,
+    "name": "茨木童子",
+    "originalName": "茨木童子",
+    "ruby": "イバラキドウジ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "茨木童子",
+      "茨木童子",
+      "イバラキドウジ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303500,
+    "name": "秦良玉",
+    "originalName": "秦良玉",
+    "ruby": "シン・リョウギョク",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "秦良玉",
+      "秦良玉",
+      "シン・リョウギョク",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303600,
+    "name": "ブラダマンテ",
+    "originalName": "ブラダマンテ",
+    "ruby": "ブラダマンテ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ブラダマンテ",
+      "ブラダマンテ",
+      "ブラダマンテ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303800,
+    "name": "長尾景虎",
+    "originalName": "長尾景虎",
+    "ruby": "ナガオ・カゲトラ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "長尾景虎",
+      "長尾景虎",
+      "ナガオ・カゲトラ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303900,
+    "name": "ガレス",
+    "originalName": "ガレス",
+    "ruby": "ガレス",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "ガレス",
+      "ガレス",
+      "ガレス",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304000,
+    "name": "謎のアルターエゴ・Λ",
+    "originalName": "謎のアルターエゴ・Λ",
+    "ruby": "ナゾノアルターエゴ・Λ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "謎のアルターエゴ・λ",
+      "謎のアルターエゴ・λ",
+      "ナゾノアルターエゴ・λ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304100,
+    "name": "カイニス",
+    "originalName": "カイニス",
+    "ruby": "カイニス",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "カイニス",
+      "カイニス",
+      "カイニス",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304200,
+    "name": "ロムルス＝クィリヌス",
+    "originalName": "ロムルス＝クィリヌス",
+    "ruby": "ロムルス＝クィリヌス",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ロムルス＝クィリヌス",
+      "ロムルス＝クィリヌス",
+      "ロムルス＝クィリヌス",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304300,
+    "name": "宇津見エリセ",
+    "originalName": "宇津見エリセ",
+    "ruby": "ウツミエリセ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "宇津見エリセ",
+      "宇津見エリセ",
+      "ウツミエリセ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304400,
+    "name": "虞美人",
+    "originalName": "虞美人",
+    "ruby": "グ・ビジン",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "虞美人",
+      "虞美人",
+      "グ・ビジン",
+      "lancer",
+      "暗匿者209",
+      "虞"
+    ]
+  },
+  {
+    "id": 304600,
+    "name": "ヴリトラ",
+    "originalName": "ヴリトラ",
+    "ruby": "ヴリトラ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ヴリトラ",
+      "ヴリトラ",
+      "ヴリトラ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304700,
+    "name": "パーシヴァル",
+    "originalName": "パーシヴァル",
+    "ruby": "パーシヴァル",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "パーシヴァル",
+      "パーシヴァル",
+      "パーシヴァル",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304800,
+    "name": "メリュジーヌ",
+    "originalName": "メリュジーヌ",
+    "ruby": "メリュジーヌ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "メリュジーヌ",
+      "メリュジーヌ",
+      "メリュジーヌ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304900,
+    "name": "メアリー・アニング",
+    "originalName": "メアリー・アニング",
+    "ruby": "メアリー・アニング",
+    "className": "lancer",
+    "rarity": 1,
+    "searchTerms": [
+      "メアリー・アニング",
+      "メアリー・アニング",
+      "メアリー・アニング",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305000,
+    "name": "坂本龍馬",
+    "originalName": "坂本龍馬",
+    "ruby": "サカモトリョウマ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "坂本龍馬",
+      "坂本龍馬",
+      "サカモトリョウマ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305100,
+    "name": "ドン・キホーテ",
+    "originalName": "ドン・キホーテ",
+    "ruby": "ドン・キホーテ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ドン・キホーテ",
+      "ドン・キホーテ",
+      "ドン・キホーテ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305300,
+    "name": "ブリトマート",
+    "originalName": "ブリトマート",
+    "ruby": "ブリトマート",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ブリトマート",
+      "ブリトマート",
+      "ブリトマート",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305400,
+    "name": "ビーマ",
+    "originalName": "ビーマ",
+    "ruby": "ビーマ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ビーマ",
+      "ビーマ",
+      "ビーマ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305500,
+    "name": "ドブルイニャ・ニキチッチ",
+    "originalName": "ドブルイニャ・ニキチッチ",
+    "ruby": "ドブルイニャ・ニキチッチ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ドブルイニャ・ニキチッチ",
+      "ドブルイニャ・ニキチッチ",
+      "ドブルイニャ・ニキチッチ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305600,
+    "name": "ヴァン・ゴッホ〔マイナー〕",
+    "originalName": "ヴァン・ゴッホ〔マイナー〕",
+    "ruby": "ヴァン・ゴッホ〔マイナー〕",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ヴァン・ゴッホ〔マイナー〕",
+      "ヴァン・ゴッホ〔マイナー〕",
+      "ヴァン・ゴッホ〔マイナー〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305700,
+    "name": "ビショーネ",
+    "originalName": "ビショーネ",
+    "ruby": "ビショーネ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ビショーネ",
+      "ビショーネ",
+      "ビショーネ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305800,
+    "name": "アショカ王",
+    "originalName": "アショカ王",
+    "ruby": "アショカオウ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "アショカ王",
+      "アショカ王",
+      "アショカオウ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305900,
+    "name": "インドラ",
+    "originalName": "インドラ",
+    "ruby": "インドラ",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "インドラ",
+      "インドラ",
+      "インドラ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 306000,
+    "name": "美遊・エーデルフェルト",
+    "originalName": "美遊・エーデルフェルト",
+    "ruby": "ミユ・エーデルフェルト",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "美遊・エーデルフェルト",
+      "美遊・エーデルフェルト",
+      "ミユ・エーデルフェルト",
+      "lancer"
+    ]
+  },
+  {
+    "id": 306100,
+    "name": "原田左之助",
+    "originalName": "原田左之助",
+    "ruby": "ハラダサノスケ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "原田左之助",
+      "原田左之助",
+      "ハラダサノスケ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 306200,
+    "name": "エリザベート・バートリー",
+    "originalName": "エリザベート・バートリー",
+    "ruby": "エリザベート・バートリー",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "エリザベート・バートリー",
+      "エリザベート・バートリー",
+      "エリザベート・バートリー",
+      "lancer"
+    ]
+  },
+  {
+    "id": 400100,
+    "name": "メドゥーサ",
+    "originalName": "メドゥーサ",
+    "ruby": "メドゥーサ",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "メドゥーサ",
+      "メドゥーサ",
+      "メドゥーサ",
+      "rider"
+    ]
+  },
+  {
+    "id": 400200,
+    "name": "イスカンダル",
+    "originalName": "イスカンダル",
+    "ruby": "イスカンダル",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "イスカンダル",
+      "イスカンダル",
+      "イスカンダル",
+      "rider"
+    ]
+  },
+  {
+    "id": 400300,
+    "name": "フランシス・ドレイク",
+    "originalName": "フランシス・ドレイク",
+    "ruby": "フランシス・ドレイク",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "フランシス・ドレイク",
+      "フランシス・ドレイク",
+      "フランシス・ドレイク",
+      "rider"
+    ]
+  },
+  {
+    "id": 400400,
+    "name": "アストルフォ",
+    "originalName": "アストルフォ",
+    "ruby": "アストルフォ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "アストルフォ",
+      "アストルフォ",
+      "アストルフォ",
+      "rider"
+    ]
+  },
+  {
+    "id": 400600,
+    "name": "ゲオルギウス",
+    "originalName": "ゲオルギウス",
+    "ruby": "ゲオルギウス",
+    "className": "rider",
+    "rarity": 2,
+    "searchTerms": [
+      "ゲオルギウス",
+      "ゲオルギウス",
+      "ゲオルギウス",
+      "rider"
+    ]
+  },
+  {
+    "id": 400800,
+    "name": "エドワード・ティーチ",
+    "originalName": "エドワード・ティーチ",
+    "ruby": "エドワード・ティーチ",
+    "className": "rider",
+    "rarity": 2,
+    "searchTerms": [
+      "エドワード・ティーチ",
+      "エドワード・ティーチ",
+      "エドワード・ティーチ",
+      "rider"
+    ]
+  },
+  {
+    "id": 400900,
+    "name": "アン・ボニー＆メアリー・リード",
+    "originalName": "アン・ボニー＆メアリー・リード",
+    "ruby": "アン・ボニー＆メアリー・リード",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "アン・ボニー＆メアリー・リード",
+      "アン・ボニー＆メアリー・リード",
+      "アン・ボニー＆メアリー・リード",
+      "rider"
+    ]
+  },
+  {
+    "id": 401100,
+    "name": "ブーディカ",
+    "originalName": "ブーディカ",
+    "ruby": "ブーディカ",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "ブーディカ",
+      "ブーディカ",
+      "ブーディカ",
+      "rider"
+    ]
+  },
+  {
+    "id": 401200,
+    "name": "オジマンディアス",
+    "originalName": "オジマンディアス",
+    "ruby": "オジマンディアス",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "オジマンディアス",
+      "オジマンディアス",
+      "オジマンディアス",
+      "rider"
+    ]
+  },
+  {
+    "id": 401300,
+    "name": "女王メイヴ",
+    "originalName": "女王メイヴ",
+    "ruby": "ジョオウメイヴ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "女王メイヴ",
+      "女王メイヴ",
+      "ジョオウメイヴ",
+      "rider"
+    ]
+  },
+  {
+    "id": 401400,
+    "name": "牛若丸",
+    "originalName": "牛若丸",
+    "ruby": "ウシワカマル",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "牛若丸",
+      "牛若丸",
+      "ウシワカマル",
+      "rider"
+    ]
+  },
+  {
+    "id": 401500,
+    "name": "アレキサンダー",
+    "originalName": "アレキサンダー",
+    "ruby": "アレキサンダー",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "アレキサンダー",
+      "アレキサンダー",
+      "アレキサンダー",
+      "rider"
+    ]
+  },
+  {
+    "id": 401700,
+    "name": "マリー・アントワネット",
+    "originalName": "マリー・アントワネット",
+    "ruby": "マリー・アントワネット",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "マリー・アントワネット",
+      "マリー・アントワネット",
+      "マリー・アントワネット",
+      "rider"
+    ]
+  },
+  {
+    "id": 401800,
+    "name": "ケツァル・コアトル",
+    "originalName": "ケツァル・コアトル",
+    "ruby": "ケツァル・コアトル",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "ケツァル・コアトル",
+      "ケツァル・コアトル",
+      "ケツァル・コアトル",
+      "rider"
+    ]
+  },
+  {
+    "id": 401900,
+    "name": "マルタ",
+    "originalName": "マルタ",
+    "ruby": "マルタ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "マルタ",
+      "マルタ",
+      "マルタ",
+      "rider"
+    ]
+  },
+  {
+    "id": 402200,
+    "name": "アルトリア・ペンドラゴン〔サンタオルタ〕",
+    "originalName": "アルトリア・ペンドラゴン〔サンタオルタ〕",
+    "ruby": "アルトリア・ペンドラゴン〔サンタオルタ〕",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン〔サンタオルタ〕",
+      "アルトリア・ペンドラゴン〔サンタオルタ〕",
+      "アルトリア・ペンドラゴン〔サンタオルタ〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 402300,
+    "name": "坂田金時",
+    "originalName": "坂田金時",
+    "ruby": "サカタキントキ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "坂田金時",
+      "坂田金時",
+      "サカタキントキ",
+      "rider"
+    ]
+  },
+  {
+    "id": 402400,
+    "name": "モードレッド",
+    "originalName": "モードレッド",
+    "ruby": "モードレッド",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "モードレッド",
+      "モードレッド",
+      "モードレッド",
+      "rider"
+    ]
+  },
+  {
+    "id": 402500,
+    "name": "クリストファー・コロンブス",
+    "originalName": "クリストファー・コロンブス",
+    "ruby": "クリストファー・コロンブス",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "クリストファー・コロンブス",
+      "クリストファー・コロンブス",
+      "クリストファー・コロンブス",
+      "rider"
+    ]
+  },
+  {
+    "id": 402600,
+    "name": "イシュタル",
+    "originalName": "イシュタル",
+    "ruby": "イシュタル",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "イシュタル",
+      "イシュタル",
+      "イシュタル",
+      "rider"
+    ]
+  },
+  {
+    "id": 402700,
+    "name": "アルトリア・ペンドラゴン〔オルタ〕",
+    "originalName": "アルトリア・ペンドラゴン〔オルタ〕",
+    "ruby": "アルトリア・ペンドラゴン〔オルタ〕",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "アルトリア・ペンドラゴン〔オルタ〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 402800,
+    "name": "イヴァン雷帝",
+    "originalName": "イヴァン雷帝",
+    "ruby": "イヴァンライテイ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "イヴァン雷帝",
+      "イヴァン雷帝",
+      "イヴァンライテイ",
+      "rider"
+    ]
+  },
+  {
+    "id": 402900,
+    "name": "アキレウス",
+    "originalName": "アキレウス",
+    "ruby": "アキレウス",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "アキレウス",
+      "アキレウス",
+      "アキレウス",
+      "rider"
+    ]
+  },
+  {
+    "id": 403000,
+    "name": "坂本龍馬",
+    "originalName": "坂本龍馬",
+    "ruby": "サカモトリョウマ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "坂本龍馬",
+      "坂本龍馬",
+      "サカモトリョウマ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403100,
+    "name": "赤兎馬",
+    "originalName": "赤兎馬",
+    "ruby": "セキトバ",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "赤兎馬",
+      "赤兎馬",
+      "セキトバ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403200,
+    "name": "司馬懿〔ライネス〕",
+    "originalName": "司馬懿〔ライネス〕",
+    "ruby": "シバイ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "司馬懿〔ライネス〕",
+      "司馬懿〔ライネス〕",
+      "シバイ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403400,
+    "name": "バーソロミュー・ロバーツ",
+    "originalName": "バーソロミュー・ロバーツ",
+    "ruby": "バーソロミュー・ロバーツ",
+    "className": "rider",
+    "rarity": 1,
+    "searchTerms": [
+      "バーソロミュー・ロバーツ",
+      "バーソロミュー・ロバーツ",
+      "バーソロミュー・ロバーツ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403500,
+    "name": "レオナルド・ダ・ヴィンチ",
+    "originalName": "レオナルド・ダ・ヴィンチ",
+    "ruby": "レオナルド・ダ・ヴィンチ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "レオナルド・ダ・ヴィンチ",
+      "レオナルド・ダ・ヴィンチ",
+      "レオナルド・ダ・ヴィンチ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403600,
+    "name": "カーミラ",
+    "originalName": "カーミラ",
+    "ruby": "カーミラ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "カーミラ",
+      "カーミラ",
+      "カーミラ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403700,
+    "name": "ネモ",
+    "originalName": "ネモ",
+    "ruby": "ネモ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "ネモ",
+      "ネモ",
+      "ネモ",
+      "rider"
+    ]
+  },
+  {
+    "id": 403800,
+    "name": "オデュッセウス",
+    "originalName": "オデュッセウス",
+    "ruby": "オデュッセウス",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "オデュッセウス",
+      "オデュッセウス",
+      "オデュッセウス",
+      "rider"
+    ]
+  },
+  {
+    "id": 403900,
+    "name": "マンドリカルド",
+    "originalName": "マンドリカルド",
+    "ruby": "マンドリカルド",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "マンドリカルド",
+      "マンドリカルド",
+      "マンドリカルド",
+      "rider"
+    ]
+  },
+  {
+    "id": 404000,
+    "name": "エウロペ",
+    "originalName": "エウロペ",
+    "ruby": "エウロペ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "エウロペ",
+      "エウロペ",
+      "エウロペ",
+      "rider"
+    ]
+  },
+  {
+    "id": 404100,
+    "name": "紫式部",
+    "originalName": "紫式部",
+    "ruby": "ムラサキ・シキブ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "紫式部",
+      "紫式部",
+      "ムラサキ・シキブ",
+      "rider"
+    ]
+  },
+  {
+    "id": 404200,
+    "name": "ハベトロット",
+    "originalName": "ハベトロット",
+    "ruby": "ハベトロット",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "ハベトロット",
+      "ハベトロット",
+      "ハベトロット",
+      "rider"
+    ]
+  },
+  {
+    "id": 404300,
+    "name": "太公望",
+    "originalName": "太公望",
+    "ruby": "タイコウボウ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "太公望",
+      "太公望",
+      "タイコウボウ",
+      "rider"
+    ]
+  },
+  {
+    "id": 404400,
+    "name": "ドブルイニャ・ニキチッチ",
+    "originalName": "ドブルイニャ・ニキチッチ",
+    "ruby": "ドブルイニャ・ニキチッチ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "ドブルイニャ・ニキチッチ",
+      "ドブルイニャ・ニキチッチ",
+      "ドブルイニャ・ニキチッチ",
+      "rider"
+    ]
+  },
+  {
+    "id": 404500,
+    "name": "カイニス",
+    "originalName": "カイニス",
+    "ruby": "カイニス",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "カイニス",
+      "カイニス",
+      "カイニス",
+      "rider"
+    ]
+  },
+  {
+    "id": 404600,
+    "name": "エリザベート・バートリー〔シンデレラ〕",
+    "originalName": "エリザベート・バートリー〔シンデレラ〕",
+    "ruby": "エリザベート・バートリー〔シンデレラ〕",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "エリザベート・バートリー〔シンデレラ〕",
+      "エリザベート・バートリー〔シンデレラ〕",
+      "エリザベート・バートリー〔シンデレラ〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 404700,
+    "name": "コンスタンティノス11世",
+    "originalName": "コンスタンティノス11世",
+    "ruby": "コンスタンティノスジュウイッセイ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "コンスタンティノス11世",
+      "コンスタンティノス11世",
+      "コンスタンティノスジュウイッセイ",
+      "rider"
+    ]
+  },
+  {
+    "id": 404800,
+    "name": "曲亭馬琴",
+    "originalName": "曲亭馬琴",
+    "ruby": "キョクテイバキン",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "曲亭馬琴",
+      "曲亭馬琴",
+      "キョクテイバキン",
+      "rider"
+    ]
+  },
+  {
+    "id": 404900,
+    "name": "黄飛虎",
+    "originalName": "黄飛虎",
+    "ruby": "コウヒコ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "黄飛虎",
+      "黄飛虎",
+      "コウヒコ",
+      "rider"
+    ]
+  },
+  {
+    "id": 405000,
+    "name": "鈴鹿御前〔サマバケ〕",
+    "originalName": "鈴鹿御前〔サマバケ〕",
+    "ruby": "スズカゴゼン・サマバケ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "鈴鹿御前〔サマバケ〕",
+      "鈴鹿御前〔サマバケ〕",
+      "スズカゴゼン・サマバケ",
+      "rider"
+    ]
+  },
+  {
+    "id": 405200,
+    "name": "武田晴信",
+    "originalName": "武田晴信",
+    "ruby": "タケダハルノブ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "武田晴信",
+      "武田晴信",
+      "タケダハルノブ",
+      "rider"
+    ]
+  },
+  {
+    "id": 405300,
+    "name": "ネモ〔サンタ〕",
+    "originalName": "ネモ〔サンタ〕",
+    "ruby": "ネモ〔サンタ〕",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "ネモ〔サンタ〕",
+      "ネモ〔サンタ〕",
+      "ネモ〔サンタ〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 405500,
+    "name": "アンドロメダ",
+    "originalName": "アンドロメダ",
+    "ruby": "アンドロメダ",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "アンドロメダ",
+      "アンドロメダ",
+      "アンドロメダ",
+      "rider"
+    ]
+  },
+  {
+    "id": 405700,
+    "name": "ネモ／ノア",
+    "originalName": "ネモ／ノア",
+    "ruby": "ネモ／ノア",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "ネモ／ノア",
+      "ネモ／ノア",
+      "ネモ／ノア",
+      "rider"
+    ]
+  },
+  {
+    "id": 405800,
+    "name": "クリームヒルト",
+    "originalName": "クリームヒルト",
+    "ruby": "クリームヒルト",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "クリームヒルト",
+      "クリームヒルト",
+      "クリームヒルト",
+      "rider"
+    ]
+  },
+  {
+    "id": 500100,
+    "name": "メディア",
+    "originalName": "メディア",
+    "ruby": "メディア",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "メディア",
+      "メディア",
+      "メディア",
+      "caster"
+    ]
+  },
+  {
+    "id": 500200,
+    "name": "ジル・ド・レェ",
+    "originalName": "ジル・ド・レェ",
+    "ruby": "ジル・ド・レェ",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "ジル・ド・レェ",
+      "ジル・ド・レェ",
+      "ジル・ド・レェ",
+      "caster"
+    ]
+  },
+  {
+    "id": 500300,
+    "name": "玉藻の前",
+    "originalName": "玉藻の前",
+    "ruby": "タマモノマエ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "玉藻の前",
+      "玉藻の前",
+      "タマモノマエ",
+      "caster"
+    ]
+  },
+  {
+    "id": 500400,
+    "name": "ナーサリー・ライム",
+    "originalName": "ナーサリー・ライム",
+    "ruby": "ナーサリー・ライム",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "ナーサリー・ライム",
+      "ナーサリー・ライム",
+      "ナーサリー・ライム",
+      "caster"
+    ]
+  },
+  {
+    "id": 500500,
+    "name": "ハンス・クリスチャン・アンデルセン",
+    "originalName": "ハンス・クリスチャン・アンデルセン",
+    "ruby": "ハンス・クリスチャン・アンデルセン",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "ハンス・クリスチャン・アンデルセン",
+      "ハンス・クリスチャン・アンデルセン",
+      "ハンス・クリスチャン・アンデルセン",
+      "caster"
+    ]
+  },
+  {
+    "id": 500700,
+    "name": "ウィリアム・シェイクスピア",
+    "originalName": "ウィリアム・シェイクスピア",
+    "ruby": "ウィリアム・シェイクスピア",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "ウィリアム・シェイクスピア",
+      "ウィリアム・シェイクスピア",
+      "ウィリアム・シェイクスピア",
+      "caster"
+    ]
+  },
+  {
+    "id": 500800,
+    "name": "マーリン",
+    "originalName": "マーリン",
+    "ruby": "マーリン",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "マーリン",
+      "マーリン",
+      "マーリン",
+      "caster"
+    ]
+  },
+  {
+    "id": 500900,
+    "name": "レオナルド・ダ・ヴィンチ",
+    "originalName": "レオナルド・ダ・ヴィンチ",
+    "ruby": "レオナルド・ダ・ヴィンチ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "レオナルド・ダ・ヴィンチ",
+      "レオナルド・ダ・ヴィンチ",
+      "レオナルド・ダ・ヴィンチ",
+      "caster"
+    ]
+  },
+  {
+    "id": 501000,
+    "name": "ヴァン・ホーエンハイム・パラケルスス",
+    "originalName": "ヴァン・ホーエンハイム・パラケルスス",
+    "ruby": "ヴァン・ホーエンハイム・パラケルスス",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "ヴァン・ホーエンハイム・パラケルスス",
+      "ヴァン・ホーエンハイム・パラケルスス",
+      "ヴァン・ホーエンハイム・パラケルスス",
+      "caster"
+    ]
+  },
+  {
+    "id": 501100,
+    "name": "チャールズ・バベッジ",
+    "originalName": "チャールズ・バベッジ",
+    "ruby": "チャールズ・バベッジ",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "チャールズ・バベッジ",
+      "チャールズ・バベッジ",
+      "チャールズ・バベッジ",
+      "caster"
+    ]
+  },
+  {
+    "id": 501200,
+    "name": "ニトクリス",
+    "originalName": "ニトクリス",
+    "ruby": "ニトクリス",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "ニトクリス",
+      "ニトクリス",
+      "ニトクリス",
+      "caster"
+    ]
+  },
+  {
+    "id": 501400,
+    "name": "メフィストフェレス",
+    "originalName": "メフィストフェレス",
+    "ruby": "メフィストフェレス",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "メフィストフェレス",
+      "メフィストフェレス",
+      "メフィストフェレス",
+      "caster"
+    ]
+  },
+  {
+    "id": 501500,
+    "name": "ヴォルフガング・アマデウス・モーツァルト",
+    "originalName": "ヴォルフガング・アマデウス・モーツァルト",
+    "ruby": "ヴォルフガング・アマデウス・モーツァルト",
+    "className": "caster",
+    "rarity": 1,
+    "searchTerms": [
+      "ヴォルフガング・アマデウス・モーツァルト",
+      "ヴォルフガング・アマデウス・モーツァルト",
+      "ヴォルフガング・アマデウス・モーツァルト",
+      "caster"
+    ]
+  },
+  {
+    "id": 501600,
+    "name": "ジェロニモ",
+    "originalName": "ジェロニモ",
+    "ruby": "ジェロニモ",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "ジェロニモ",
+      "ジェロニモ",
+      "ジェロニモ",
+      "caster"
+    ]
+  },
+  {
+    "id": 501700,
+    "name": "メディア〔リリィ〕",
+    "originalName": "メディア〔リリィ〕",
+    "ruby": "メディア〔リリィ〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "メディア〔リリィ〕",
+      "メディア〔リリィ〕",
+      "メディア〔リリィ〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 501800,
+    "name": "ギルガメッシュ",
+    "originalName": "ギルガメッシュ",
+    "ruby": "ギルガメッシュ",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "ギルガメッシュ",
+      "ギルガメッシュ",
+      "ギルガメッシュ",
+      "caster"
+    ]
+  },
+  {
+    "id": 501900,
+    "name": "諸葛孔明〔エルメロイⅡ世〕",
+    "originalName": "諸葛孔明〔エルメロイⅡ世〕",
+    "ruby": "ショカツコウメイ〔ロードエルメロイニセイ〕",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "諸葛孔明〔エルメロイⅱ世〕",
+      "諸葛孔明〔エルメロイⅱ世〕",
+      "ショカツコウメイ〔ロードエルメロイニセイ〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 502000,
+    "name": "アイリスフィール〔天の衣〕",
+    "originalName": "アイリスフィール〔天の衣〕",
+    "ruby": "アイリスフィール〔テンノコロモ〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "アイリスフィール〔天の衣〕",
+      "アイリスフィール〔天の衣〕",
+      "アイリスフィール〔テンノコロモ〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 502100,
+    "name": "クー・フーリン",
+    "originalName": "クー・フーリン",
+    "ruby": "クー・フーリン",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "クー・フーリン",
+      "クー・フーリン",
+      "クー・フーリン",
+      "caster"
+    ]
+  },
+  {
+    "id": 502200,
+    "name": "玄奘三蔵",
+    "originalName": "玄奘三蔵",
+    "ruby": "ゲンジョウサンゾウ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "玄奘三蔵",
+      "玄奘三蔵",
+      "ゲンジョウサンゾウ",
+      "caster"
+    ]
+  },
+  {
+    "id": 502300,
+    "name": "エレナ・ブラヴァツキー",
+    "originalName": "エレナ・ブラヴァツキー",
+    "ruby": "エレナ・ブラヴァツキー",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "エレナ・ブラヴァツキー",
+      "エレナ・ブラヴァツキー",
+      "エレナ・ブラヴァツキー",
+      "caster"
+    ]
+  },
+  {
+    "id": 502500,
+    "name": "トーマス・エジソン",
+    "originalName": "トーマス・エジソン",
+    "ruby": "トーマス・エジソン",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "トーマス・エジソン",
+      "トーマス・エジソン",
+      "トーマス・エジソン",
+      "caster"
+    ]
+  },
+  {
+    "id": 502600,
+    "name": "エリザベート・バートリー〔ハロウィン〕",
+    "originalName": "エリザベート・バートリー〔ハロウィン〕",
+    "ruby": "エリザベート・バートリー〔ハロウィン〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "エリザベート・バートリー〔ハロウィン〕",
+      "エリザベート・バートリー〔ハロウィン〕",
+      "エリザベート・バートリー〔ハロウィン〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 502700,
+    "name": "マリー・アントワネット",
+    "originalName": "マリー・アントワネット",
+    "ruby": "マリー・アントワネット",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "マリー・アントワネット",
+      "マリー・アントワネット",
+      "マリー・アントワネット",
+      "caster"
+    ]
+  },
+  {
+    "id": 502800,
+    "name": "イリヤスフィール・フォン・アインツベルン",
+    "originalName": "イリヤスフィール・フォン・アインツベルン",
+    "ruby": "イリヤスフィール・フォン・アインツベルン",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "イリヤスフィール・フォン・アインツベルン",
+      "イリヤスフィール・フォン・アインツベルン",
+      "イリヤスフィール・フォン・アインツベルン",
+      "caster"
+    ]
+  },
+  {
+    "id": 503000,
+    "name": "シェヘラザード",
+    "originalName": "シェヘラザード",
+    "ruby": "シェヘラザード",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "シェヘラザード",
+      "シェヘラザード",
+      "シェヘラザード",
+      "caster"
+    ]
+  },
+  {
+    "id": 503200,
+    "name": "ネロ・クラウディウス",
+    "originalName": "ネロ・クラウディウス",
+    "ruby": "ネロ・クラウディウス",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "ネロ・クラウディウス",
+      "ネロ・クラウディウス",
+      "ネロ・クラウディウス",
+      "caster"
+    ]
+  },
+  {
+    "id": 503300,
+    "name": "キルケー",
+    "originalName": "キルケー",
+    "ruby": "キルケー",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "キルケー",
+      "キルケー",
+      "キルケー",
+      "caster"
+    ]
+  },
+  {
+    "id": 503400,
+    "name": "シバの女王",
+    "originalName": "シバの女王",
+    "ruby": "シバノジョウオウ",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "シバの女王",
+      "シバの女王",
+      "シバノジョウオウ",
+      "caster"
+    ]
+  },
+  {
+    "id": 503500,
+    "name": "アナスタシア",
+    "originalName": "アナスタシア",
+    "ruby": "アナスタシア",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "アナスタシア",
+      "アナスタシア",
+      "アナスタシア",
+      "caster"
+    ]
+  },
+  {
+    "id": 503600,
+    "name": "アヴィケブロン",
+    "originalName": "アヴィケブロン",
+    "ruby": "アヴィケブロン",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "アヴィケブロン",
+      "アヴィケブロン",
+      "アヴィケブロン",
+      "caster"
+    ]
+  },
+  {
+    "id": 503800,
+    "name": "ジーク",
+    "originalName": "ジーク",
+    "ruby": "ジーク",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "ジーク",
+      "ジーク",
+      "ジーク",
+      "caster"
+    ]
+  },
+  {
+    "id": 503900,
+    "name": "スカサハ＝スカディ",
+    "originalName": "スカサハ＝スカディ",
+    "ruby": "スカサハ＝スカディ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "スカサハ＝スカディ",
+      "スカサハ＝スカディ",
+      "スカサハ＝スカディ",
+      "caster"
+    ]
+  },
+  {
+    "id": 504000,
+    "name": "酒呑童子",
+    "originalName": "酒呑童子",
+    "ruby": "シュテンドウジ",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "酒呑童子",
+      "酒呑童子",
+      "シュテンドウジ",
+      "caster"
+    ]
+  },
+  {
+    "id": 504100,
+    "name": "美遊・エーデルフェルト",
+    "originalName": "美遊・エーデルフェルト",
+    "ruby": "ミユ・エーデルフェルト",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "美遊・エーデルフェルト",
+      "美遊・エーデルフェルト",
+      "ミユ・エーデルフェルト",
+      "caster"
+    ]
+  },
+  {
+    "id": 504200,
+    "name": "紫式部",
+    "originalName": "紫式部",
+    "ruby": "ムラサキ・シキブ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "紫式部",
+      "紫式部",
+      "ムラサキ・シキブ",
+      "caster"
+    ]
+  },
+  {
+    "id": 504300,
+    "name": "アスクレピオス",
+    "originalName": "アスクレピオス",
+    "ruby": "アスクレピオス",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "アスクレピオス",
+      "アスクレピオス",
+      "アスクレピオス",
+      "caster"
+    ]
+  },
+  {
+    "id": 504400,
+    "name": "陳宮",
+    "originalName": "陳宮",
+    "ruby": "チンキュウ",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "陳宮",
+      "陳宮",
+      "チンキュウ",
+      "caster"
+    ]
+  },
+  {
+    "id": 504500,
+    "name": "アルトリア・キャスター",
+    "originalName": "アルトリア・キャスター",
+    "ruby": "アルトリア・キャスター",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・キャスター",
+      "アルトリア・キャスター",
+      "アルトリア・キャスター",
+      "caster"
+    ]
+  },
+  {
+    "id": 504600,
+    "name": "ミス・クレーン",
+    "originalName": "ミス・クレーン",
+    "ruby": "ミス・クレーン",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "ミス・クレーン",
+      "ミス・クレーン",
+      "ミス・クレーン",
+      "caster"
+    ]
+  },
+  {
+    "id": 504700,
+    "name": "大黒天",
+    "originalName": "大黒天",
+    "ruby": "ダイコクテン",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "大黒天",
+      "大黒天",
+      "ダイコクテン",
+      "caster"
+    ]
+  },
+  {
+    "id": 504800,
+    "name": "シャルロット・コルデー",
+    "originalName": "シャルロット・コルデー",
+    "ruby": "シャルロット・コルデー",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "シャルロット・コルデー",
+      "シャルロット・コルデー",
+      "シャルロット・コルデー",
+      "caster"
+    ]
+  },
+  {
+    "id": 504900,
+    "name": "出雲阿国",
+    "originalName": "出雲阿国",
+    "ruby": "イズモノオクニ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "出雲阿国",
+      "出雲阿国",
+      "イズモノオクニ",
+      "caster"
+    ]
+  },
+  {
+    "id": 505000,
+    "name": "マルタ〔サンタ〕",
+    "originalName": "マルタ〔サンタ〕",
+    "ruby": "マルタ〔サンタ〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "マルタ〔サンタ〕",
+      "マルタ〔サンタ〕",
+      "マルタ〔サンタ〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 505100,
+    "name": "張角",
+    "originalName": "張角",
+    "ruby": "チョウカク",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "張角",
+      "張角",
+      "チョウカク",
+      "caster"
+    ]
+  },
+  {
+    "id": 505200,
+    "name": "武則天",
+    "originalName": "武則天",
+    "ruby": "ブソクテン",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "武則天",
+      "武則天",
+      "ブソクテン",
+      "caster"
+    ]
+  },
+  {
+    "id": 505300,
+    "name": "雨の魔女トネリコ",
+    "originalName": "雨の魔女トネリコ",
+    "ruby": "トネリコ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "雨の魔女トネリコ",
+      "雨の魔女トネリコ",
+      "トネリコ",
+      "caster"
+    ]
+  },
+  {
+    "id": 505400,
+    "name": "由井正雪",
+    "originalName": "由井正雪",
+    "ruby": "ユイショウセツ",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "由井正雪",
+      "由井正雪",
+      "ユイショウセツ",
+      "caster"
+    ]
+  },
+  {
+    "id": 505500,
+    "name": "久遠寺有珠",
+    "originalName": "久遠寺有珠",
+    "ruby": "クオンジアリス",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "久遠寺有珠",
+      "久遠寺有珠",
+      "クオンジアリス",
+      "caster"
+    ]
+  },
+  {
+    "id": 505800,
+    "name": "小野小町",
+    "originalName": "小野小町",
+    "ruby": "オノノコマチ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "小野小町",
+      "小野小町",
+      "オノノコマチ",
+      "caster"
+    ]
+  },
+  {
+    "id": 600100,
+    "name": "佐々木小次郎",
+    "originalName": "佐々木小次郎",
+    "ruby": "ササキコジロウ",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "佐々木小次郎",
+      "佐々木小次郎",
+      "ササキコジロウ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600200,
+    "name": "呪腕のハサン",
+    "originalName": "呪腕のハサン",
+    "ruby": "ジュワンノハサン",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "呪腕のハサン",
+      "呪腕のハサン",
+      "ジュワンノハサン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600300,
+    "name": "百貌のハサン",
+    "originalName": "百貌のハサン",
+    "ruby": "ヒャクボウノハサン",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "百貌のハサン",
+      "百貌のハサン",
+      "ヒャクボウノハサン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600500,
+    "name": "ジャック・ザ・リッパー",
+    "originalName": "ジャック・ザ・リッパー",
+    "ruby": "ジャック・ザ・リッパー",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "ジャック・ザ・リッパー",
+      "ジャック・ザ・リッパー",
+      "ジャック・ザ・リッパー",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600700,
+    "name": "ヘンリー・ジキル＆ハイド",
+    "originalName": "ヘンリー・ジキル＆ハイド",
+    "ruby": "ヘンリー・ジキル＆ハイド",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "ヘンリー・ジキル＆ハイド",
+      "ヘンリー・ジキル＆ハイド",
+      "ヘンリー・ジキル＆ハイド",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600800,
+    "name": "クレオパトラ",
+    "originalName": "クレオパトラ",
+    "ruby": "クレオパトラ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "クレオパトラ",
+      "クレオパトラ",
+      "クレオパトラ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600900,
+    "name": "静謐のハサン",
+    "originalName": "静謐のハサン",
+    "ruby": "セイヒツノハサン",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "静謐のハサン",
+      "静謐のハサン",
+      "セイヒツノハサン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601000,
+    "name": "ステンノ",
+    "originalName": "ステンノ",
+    "ruby": "ステンノ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ステンノ",
+      "ステンノ",
+      "ステンノ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601100,
+    "name": "荊軻",
+    "originalName": "荊軻",
+    "ruby": "ケイカ",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "荊軻",
+      "荊軻",
+      "ケイカ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601200,
+    "name": "シャルル＝アンリ・サンソン",
+    "originalName": "シャルル＝アンリ・サンソン",
+    "ruby": "シャルル＝アンリ・サンソン",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "シャルル＝アンリ・サンソン",
+      "シャルル＝アンリ・サンソン",
+      "シャルル＝アンリ・サンソン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601300,
+    "name": "ファントム・オブ・ジ・オペラ",
+    "originalName": "ファントム・オブ・ジ・オペラ",
+    "ruby": "ファントム・オブ・ジ・オペラ",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "ファントム・オブ・ジ・オペラ",
+      "ファントム・オブ・ジ・オペラ",
+      "ファントム・オブ・ジ・オペラ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601400,
+    "name": "マタ・ハリ",
+    "originalName": "マタ・ハリ",
+    "ruby": "マタ・ハリ",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "マタ・ハリ",
+      "マタ・ハリ",
+      "マタ・ハリ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601500,
+    "name": "エミヤ〔アサシン〕",
+    "originalName": "エミヤ〔アサシン〕",
+    "ruby": "エミヤ〔アサシン〕",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "エミヤ〔アサシン〕",
+      "エミヤ〔アサシン〕",
+      "エミヤ〔アサシン〕",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601700,
+    "name": "カーミラ",
+    "originalName": "カーミラ",
+    "ruby": "カーミラ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "カーミラ",
+      "カーミラ",
+      "カーミラ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601800,
+    "name": "謎のヒロインX",
+    "originalName": "謎のヒロインX",
+    "ruby": "ナゾノヒロインX",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "謎のヒロインx",
+      "謎のヒロインx",
+      "ナゾノヒロインx",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601900,
+    "name": "風魔小太郎",
+    "originalName": "風魔小太郎",
+    "ruby": "フウマコタロウ",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "風魔小太郎",
+      "風魔小太郎",
+      "フウマコタロウ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602100,
+    "name": "酒呑童子",
+    "originalName": "酒呑童子",
+    "ruby": "シュテンドウジ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "酒呑童子",
+      "酒呑童子",
+      "シュテンドウジ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602300,
+    "name": "両儀式",
+    "originalName": "両儀式",
+    "ruby": "リョウギシキ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "両儀式",
+      "両儀式",
+      "リョウギシキ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602400,
+    "name": "スカサハ",
+    "originalName": "スカサハ",
+    "ruby": "スカサハ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "スカサハ",
+      "スカサハ",
+      "スカサハ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602500,
+    "name": "“山の翁”",
+    "originalName": "“山の翁”",
+    "ruby": "ヤマノオキナ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "“山の翁”",
+      "“山の翁”",
+      "ヤマノオキナ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602600,
+    "name": "燕青",
+    "originalName": "燕青",
+    "ruby": "エンセイ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "燕青",
+      "燕青",
+      "エンセイ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602700,
+    "name": "武則天",
+    "originalName": "武則天",
+    "ruby": "ブソクテン",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "武則天",
+      "武則天",
+      "ブソクテン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602800,
+    "name": "ニトクリス",
+    "originalName": "ニトクリス",
+    "ruby": "ニトクリス",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ニトクリス",
+      "ニトクリス",
+      "ニトクリス",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602900,
+    "name": "望月千代女",
+    "originalName": "望月千代女",
+    "ruby": "モチヅキチヨメ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "望月千代女",
+      "望月千代女",
+      "モチヅキチヨメ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603000,
+    "name": "加藤段蔵",
+    "originalName": "加藤段蔵",
+    "ruby": "カトウダンゾウ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "加藤段蔵",
+      "加藤段蔵",
+      "カトウダンゾウ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603100,
+    "name": "刑部姫",
+    "originalName": "刑部姫",
+    "ruby": "オサカベヒメ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "刑部姫",
+      "刑部姫",
+      "オサカベヒメ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603200,
+    "name": "セミラミス",
+    "originalName": "セミラミス",
+    "ruby": "セミラミス",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "セミラミス",
+      "セミラミス",
+      "セミラミス",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603300,
+    "name": "岡田以蔵",
+    "originalName": "岡田以蔵",
+    "ruby": "オカダイゾウ",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "岡田以蔵",
+      "岡田以蔵",
+      "オカダイゾウ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603400,
+    "name": "牛若丸",
+    "originalName": "牛若丸",
+    "ruby": "ウシワカマル",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "牛若丸",
+      "牛若丸",
+      "ウシワカマル",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603500,
+    "name": "虞美人",
+    "originalName": "虞美人",
+    "ruby": "グ・ビジン",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "虞美人",
+      "虞美人",
+      "グ・ビジン",
+      "assassin",
+      "暗匿者209",
+      "虞"
+    ]
+  },
+  {
+    "id": 603600,
+    "name": "李書文",
+    "originalName": "李書文",
+    "ruby": "リ・ショブン",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "李書文",
+      "李書文",
+      "リ・ショブン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603700,
+    "name": "カーマ",
+    "originalName": "カーマ",
+    "ruby": "カーマ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "カーマ",
+      "カーマ",
+      "カーマ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603800,
+    "name": "シャルロット・コルデー",
+    "originalName": "シャルロット・コルデー",
+    "ruby": "シャルロット・コルデー",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "シャルロット・コルデー",
+      "シャルロット・コルデー",
+      "シャルロット・コルデー",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603900,
+    "name": "グレイ",
+    "originalName": "グレイ",
+    "ruby": "グレイ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "グレイ",
+      "グレイ",
+      "グレイ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604000,
+    "name": "沖田総司",
+    "originalName": "沖田総司",
+    "ruby": "オキタソウジ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "沖田総司",
+      "沖田総司",
+      "オキタソウジ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604100,
+    "name": "鬼一法眼",
+    "originalName": "鬼一法眼",
+    "ruby": "キイチホウゲン",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "鬼一法眼",
+      "鬼一法眼",
+      "キイチホウゲン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604200,
+    "name": "光のコヤンスカヤ",
+    "originalName": "光のコヤンスカヤ",
+    "ruby": "ヒカリノコヤンスカヤ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "光のコヤンスカヤ",
+      "光のコヤンスカヤ",
+      "ヒカリノコヤンスカヤ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604300,
+    "name": "オルトリンデ",
+    "originalName": "オルトリンデ",
+    "ruby": "オルトリンデ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "オルトリンデ",
+      "オルトリンデ",
+      "オルトリンデ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604400,
+    "name": "ヒルド",
+    "originalName": "ヒルド",
+    "ruby": "ヒルド",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ヒルド",
+      "ヒルド",
+      "ヒルド",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604500,
+    "name": "スルーズ",
+    "originalName": "スルーズ",
+    "ruby": "スルーズ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "スルーズ",
+      "スルーズ",
+      "スルーズ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604600,
+    "name": "呼延灼",
+    "originalName": "呼延灼",
+    "ruby": "コエンシャク",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "呼延灼",
+      "呼延灼",
+      "コエンシャク",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604700,
+    "name": "テスカトリポカ",
+    "originalName": "テスカトリポカ",
+    "ruby": "テスカトリポカ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "テスカトリポカ",
+      "テスカトリポカ",
+      "テスカトリポカ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604800,
+    "name": "ロクスタ",
+    "originalName": "ロクスタ",
+    "ruby": "ロクスタ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ロクスタ",
+      "ロクスタ",
+      "ロクスタ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604900,
+    "name": "果心居士",
+    "originalName": "果心居士",
+    "ruby": "カシンコジ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "果心居士",
+      "果心居士",
+      "カシンコジ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 605000,
+    "name": "耀星のハサン",
+    "originalName": "耀星のハサン",
+    "ruby": "ヨウセイノハサン",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "耀星のハサン",
+      "耀星のハサン",
+      "ヨウセイノハサン",
+      "assassin"
+    ]
+  },
+  {
+    "id": 605100,
+    "name": "河上彦斎",
+    "originalName": "河上彦斎",
+    "ruby": "カワカミゲンサイ",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "河上彦斎",
+      "河上彦斎",
+      "カワカミゲンサイ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 700100,
+    "name": "ヘラクレス",
+    "originalName": "ヘラクレス",
+    "ruby": "ヘラクレス",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ヘラクレス",
+      "ヘラクレス",
+      "ヘラクレス",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700200,
+    "name": "ランスロット",
+    "originalName": "ランスロット",
+    "ruby": "ランスロット",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ランスロット",
+      "ランスロット",
+      "ランスロット",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700300,
+    "name": "呂布奉先",
+    "originalName": "呂布奉先",
+    "ruby": "リョフホウセン",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "呂布奉先",
+      "呂布奉先",
+      "リョフホウセン",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700400,
+    "name": "フランケンシュタイン",
+    "originalName": "フランケンシュタイン",
+    "ruby": "フランケンシュタイン",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "フランケンシュタイン",
+      "フランケンシュタイン",
+      "フランケンシュタイン",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700500,
+    "name": "スパルタクス",
+    "originalName": "スパルタクス",
+    "ruby": "スパルタクス",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "スパルタクス",
+      "スパルタクス",
+      "スパルタクス",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700600,
+    "name": "坂田金時",
+    "originalName": "坂田金時",
+    "ruby": "サカタキントキ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "坂田金時",
+      "坂田金時",
+      "サカタキントキ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700700,
+    "name": "ヴラド三世",
+    "originalName": "ヴラド三世",
+    "ruby": "ヴラドサンセイ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "ヴラド三世",
+      "ヴラド三世",
+      "ヴラドサンセイ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700800,
+    "name": "ベオウルフ",
+    "originalName": "ベオウルフ",
+    "ruby": "ベオウルフ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ベオウルフ",
+      "ベオウルフ",
+      "ベオウルフ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700900,
+    "name": "アステリオス",
+    "originalName": "アステリオス",
+    "ruby": "アステリオス",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "アステリオス",
+      "アステリオス",
+      "アステリオス",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701000,
+    "name": "カリギュラ",
+    "originalName": "カリギュラ",
+    "ruby": "カリギュラ",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "カリギュラ",
+      "カリギュラ",
+      "カリギュラ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701100,
+    "name": "ダレイオス三世",
+    "originalName": "ダレイオス三世",
+    "ruby": "ダレイオスサンセイ",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "ダレイオス三世",
+      "ダレイオス三世",
+      "ダレイオスサンセイ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701300,
+    "name": "清姫",
+    "originalName": "清姫",
+    "ruby": "キヨヒメ",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "清姫",
+      "清姫",
+      "キヨヒメ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701400,
+    "name": "ナイチンゲール",
+    "originalName": "ナイチンゲール",
+    "ruby": "ナイチンゲール",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "ナイチンゲール",
+      "ナイチンゲール",
+      "ナイチンゲール",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701500,
+    "name": "エイリーク・ブラッドアクス",
+    "originalName": "エイリーク・ブラッドアクス",
+    "ruby": "エイリーク・ブラッドアクス",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "エイリーク・ブラッドアクス",
+      "エイリーク・ブラッドアクス",
+      "エイリーク・ブラッドアクス",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701600,
+    "name": "タマモキャット",
+    "originalName": "タマモキャット",
+    "ruby": "タマモキャット",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "タマモキャット",
+      "タマモキャット",
+      "タマモキャット",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702000,
+    "name": "クー・フーリン〔オルタ〕",
+    "originalName": "クー・フーリン〔オルタ〕",
+    "ruby": "クー・フーリン〔オルタ〕",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "クー・フーリン〔オルタ〕",
+      "クー・フーリン〔オルタ〕",
+      "クー・フーリン〔オルタ〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702200,
+    "name": "茨木童子",
+    "originalName": "茨木童子",
+    "ruby": "イバラキドウジ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "茨木童子",
+      "茨木童子",
+      "イバラキドウジ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702300,
+    "name": "源頼光",
+    "originalName": "源頼光",
+    "ruby": "ミナモトノライコウ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "源頼光",
+      "源頼光",
+      "ミナモトノライコウ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702400,
+    "name": "謎のヒロインX〔オルタ〕",
+    "originalName": "謎のヒロインX〔オルタ〕",
+    "ruby": "ナゾノヒロインエックス〔オルタ〕",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "謎のヒロインx〔オルタ〕",
+      "謎のヒロインx〔オルタ〕",
+      "ナゾノヒロインエックス〔オルタ〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702500,
+    "name": "土方歳三",
+    "originalName": "土方歳三",
+    "ruby": "ヒジカタトシゾウ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "土方歳三",
+      "土方歳三",
+      "ヒジカタトシゾウ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702600,
+    "name": "茶々",
+    "originalName": "茶々",
+    "ruby": "チャチャ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "茶々",
+      "茶々",
+      "チャチャ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702700,
+    "name": "ペンテシレイア",
+    "originalName": "ペンテシレイア",
+    "ruby": "ペンテシレイア",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ペンテシレイア",
+      "ペンテシレイア",
+      "ペンテシレイア",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702800,
+    "name": "ポール・バニヤン",
+    "originalName": "ポール・バニヤン",
+    "ruby": "ポール・バニヤン",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "ポール・バニヤン",
+      "ポール・バニヤン",
+      "ポール・バニヤン",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702900,
+    "name": "織田信長",
+    "originalName": "織田信長",
+    "ruby": "オダノブナガ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "織田信長",
+      "織田信長",
+      "オダノブナガ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703000,
+    "name": "アタランテ〔オルタ〕",
+    "originalName": "アタランテ〔オルタ〕",
+    "ruby": "アタランテ〔オルタ〕",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "アタランテ〔オルタ〕",
+      "アタランテ〔オルタ〕",
+      "アタランテ〔オルタ〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703100,
+    "name": "ジャンヌ・ダルク〔オルタ〕",
+    "originalName": "ジャンヌ・ダルク〔オルタ〕",
+    "ruby": "ジャンヌ・ダルク〔オルタ〕",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ジャンヌ・ダルク〔オルタ〕",
+      "ジャンヌ・ダルク〔オルタ〕",
+      "ジャンヌ・ダルク〔オルタ〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703200,
+    "name": "項羽",
+    "originalName": "項羽",
+    "ruby": "コウウ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "項羽",
+      "項羽",
+      "コウウ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703300,
+    "name": "アルジュナ〔オルタ〕",
+    "originalName": "アルジュナ〔オルタ〕",
+    "ruby": "アルジュナ・オルタ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "アルジュナ〔オルタ〕",
+      "アルジュナ〔オルタ〕",
+      "アルジュナ・オルタ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703400,
+    "name": "サロメ",
+    "originalName": "サロメ",
+    "ruby": "サロメ",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "サロメ",
+      "サロメ",
+      "サロメ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703500,
+    "name": "森長可",
+    "originalName": "森長可",
+    "ruby": "モリ・ナガヨシ",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "森長可",
+      "森長可",
+      "モリ・ナガヨシ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703600,
+    "name": "宮本武蔵",
+    "originalName": "宮本武蔵",
+    "ruby": "ミヤモトムサシ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "宮本武蔵",
+      "宮本武蔵",
+      "ミヤモトムサシ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703700,
+    "name": "鬼女紅葉",
+    "originalName": "鬼女紅葉",
+    "ruby": "キジョコウヨウ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "鬼女紅葉",
+      "鬼女紅葉",
+      "キジョコウヨウ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703800,
+    "name": "ブリュンヒルデ",
+    "originalName": "ブリュンヒルデ",
+    "ruby": "ブリュンヒルデ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ブリュンヒルデ",
+      "ブリュンヒルデ",
+      "ブリュンヒルデ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703900,
+    "name": "ガラテア",
+    "originalName": "ガラテア",
+    "ruby": "ガラテア",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "ガラテア",
+      "ガラテア",
+      "ガラテア",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704000,
+    "name": "モルガン",
+    "originalName": "モルガン",
+    "ruby": "モルガン",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "モルガン",
+      "モルガン",
+      "モルガン",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704100,
+    "name": "清少納言",
+    "originalName": "清少納言",
+    "ruby": "セイショウナゴン",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "清少納言",
+      "清少納言",
+      "セイショウナゴン",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704200,
+    "name": "クリームヒルト",
+    "originalName": "クリームヒルト",
+    "ruby": "クリームヒルト",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "クリームヒルト",
+      "クリームヒルト",
+      "クリームヒルト",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704300,
+    "name": "伊吹童子",
+    "originalName": "伊吹童子",
+    "ruby": "イブキドウジ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "伊吹童子",
+      "伊吹童子",
+      "イブキドウジ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704400,
+    "name": "千利休",
+    "originalName": "千利休",
+    "ruby": "センノリキュウ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "千利休",
+      "千利休",
+      "センノリキュウ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704600,
+    "name": "ドゥリーヨダナ",
+    "originalName": "ドゥリーヨダナ",
+    "ruby": "ドゥリーヨダナ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ドゥリーヨダナ",
+      "ドゥリーヨダナ",
+      "ドゥリーヨダナ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704700,
+    "name": "アルトリア・キャスター",
+    "originalName": "アルトリア・キャスター",
+    "ruby": "アルトリア・キャスター",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・キャスター",
+      "アルトリア・キャスター",
+      "アルトリア・キャスター",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704800,
+    "name": "永倉新八",
+    "originalName": "永倉新八",
+    "ruby": "ナガクラシンパチ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "永倉新八",
+      "永倉新八",
+      "ナガクラシンパチ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704900,
+    "name": "静希草十郎",
+    "originalName": "静希草十郎",
+    "ruby": "シズキソウジュウロウ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "静希草十郎",
+      "静希草十郎",
+      "シズキソウジュウロウ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 705000,
+    "name": "ロウヒ",
+    "originalName": "ロウヒ",
+    "ruby": "ロウヒ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "ロウヒ",
+      "ロウヒ",
+      "ロウヒ",
+      "berserker"
+    ]
+  },
+  {
+    "id": 705100,
+    "name": "リリス",
+    "originalName": "リリス",
+    "ruby": "リリス",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "リリス",
+      "リリス",
+      "リリス",
+      "berserker"
+    ]
+  },
+  {
+    "id": 705200,
+    "name": "呼延灼",
+    "originalName": "呼延灼",
+    "ruby": "コエンシャク",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "呼延灼",
+      "呼延灼",
+      "コエンシャク",
+      "berserker"
+    ]
+  },
+  {
+    "id": 800100,
+    "name": "マシュ・キリエライト",
+    "originalName": "マシュ・キリエライト",
+    "ruby": "マシュ・キリエライト",
+    "className": "shielder",
+    "rarity": 4,
+    "searchTerms": [
+      "マシュ・キリエライト",
+      "マシュ・キリエライト",
+      "マシュ・キリエライト",
+      "shielder"
+    ]
+  },
+  {
+    "id": 900100,
+    "name": "ジャンヌ・ダルク",
+    "originalName": "ジャンヌ・ダルク",
+    "ruby": "ジャンヌ・ダルク",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "ジャンヌ・ダルク",
+      "ジャンヌ・ダルク",
+      "ジャンヌ・ダルク",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900200,
+    "name": "天草四郎",
+    "originalName": "天草四郎",
+    "ruby": "アマクサシロウ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "天草四郎",
+      "天草四郎",
+      "アマクサシロウ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900400,
+    "name": "マルタ",
+    "originalName": "マルタ",
+    "ruby": "マルタ",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "マルタ",
+      "マルタ",
+      "マルタ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900500,
+    "name": "シャーロック・ホームズ",
+    "originalName": "シャーロック・ホームズ",
+    "ruby": "シャーロック・ホームズ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "シャーロック・ホームズ",
+      "シャーロック・ホームズ",
+      "シャーロック・ホームズ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900600,
+    "name": "始皇帝",
+    "originalName": "始皇帝",
+    "ruby": "シコウテイ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "始皇帝",
+      "始皇帝",
+      "シコウテイ",
+      "ruler",
+      "统治者227",
+      "政"
+    ]
+  },
+  {
+    "id": 900700,
+    "name": "ケツァル・コアトル〔サンバ／サンタ〕",
+    "originalName": "ケツァル・コアトル〔サンバ／サンタ〕",
+    "ruby": "ケツァル・コアトル〔サンバ／サンタ〕",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "ケツァル・コアトル〔サンバ／サンタ〕",
+      "ケツァル・コアトル〔サンバ／サンタ〕",
+      "ケツァル・コアトル〔サンバ／サンタ〕",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900800,
+    "name": "アストライア",
+    "originalName": "アストライア",
+    "ruby": "アストライア",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "アストライア",
+      "アストライア",
+      "アストライア",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900900,
+    "name": "アルトリア・ペンドラゴン",
+    "originalName": "アルトリア・ペンドラゴン",
+    "ruby": "アルトリア・ペンドラゴン",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "アルトリア・ペンドラゴン",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901000,
+    "name": "卑弥呼",
+    "originalName": "卑弥呼",
+    "ruby": "ヒミコ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "卑弥呼",
+      "卑弥呼",
+      "ヒミコ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901100,
+    "name": "アムール〔カレン〕",
+    "originalName": "アムール〔カレン〕",
+    "ruby": "アムール〔カレン〕",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "アムール〔カレン〕",
+      "アムール〔カレン〕",
+      "アムール〔カレン〕",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901200,
+    "name": "レオナルド・ダ・ヴィンチ",
+    "originalName": "レオナルド・ダ・ヴィンチ",
+    "ruby": "レオナルド・ダ・ヴィンチ",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "レオナルド・ダ・ヴィンチ",
+      "レオナルド・ダ・ヴィンチ",
+      "レオナルド・ダ・ヴィンチ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901300,
+    "name": "ジェームズ・モリアーティ",
+    "originalName": "ジェームズ・モリアーティ",
+    "ruby": "ジェームズ・モリアーティ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "ジェームズ・モリアーティ",
+      "ジェームズ・モリアーティ",
+      "ジェームズ・モリアーティ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901400,
+    "name": "スカサハ＝スカディ",
+    "originalName": "スカサハ＝スカディ",
+    "ruby": "スカサハ＝スカディ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "スカサハ＝スカディ",
+      "スカサハ＝スカディ",
+      "スカサハ＝スカディ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901500,
+    "name": "壱与",
+    "originalName": "壱与",
+    "ruby": "イヨ",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "壱与",
+      "壱与",
+      "イヨ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901600,
+    "name": "女教皇ヨハンナ",
+    "originalName": "女教皇ヨハンナ",
+    "ruby": "オンナキョウコウヨハンナ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "女教皇ヨハンナ",
+      "女教皇ヨハンナ",
+      "オンナキョウコウヨハンナ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901700,
+    "name": "メリュジーヌ",
+    "originalName": "メリュジーヌ",
+    "ruby": "メリュジーヌ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "メリュジーヌ",
+      "メリュジーヌ",
+      "メリュジーヌ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901800,
+    "name": "上杉謙信",
+    "originalName": "上杉謙信",
+    "ruby": "ウエスギケンシン",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "上杉謙信",
+      "上杉謙信",
+      "ウエスギケンシン",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901900,
+    "name": "メタトロン・ジャンヌ",
+    "originalName": "メタトロン・ジャンヌ",
+    "ruby": "メタトロン・ジャンヌ",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "メタトロン・ジャンヌ",
+      "メタトロン・ジャンヌ",
+      "メタトロン・ジャンヌ",
+      "ruler"
+    ]
+  },
+  {
+    "id": 1000100,
+    "name": "パッションリップ",
+    "originalName": "パッションリップ",
+    "ruby": "パッションリップ",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "パッションリップ",
+      "パッションリップ",
+      "パッションリップ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000200,
+    "name": "メルトリリス",
+    "originalName": "メルトリリス",
+    "ruby": "メルトリリス",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "メルトリリス",
+      "メルトリリス",
+      "メルトリリス",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000300,
+    "name": "殺生院キアラ",
+    "originalName": "殺生院キアラ",
+    "ruby": "セッショウインキアラ",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "殺生院キアラ",
+      "殺生院キアラ",
+      "セッショウインキアラ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000400,
+    "name": "メカエリチャン",
+    "originalName": "メカエリチャン",
+    "ruby": "メカエリチャン",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "メカエリチャン",
+      "メカエリチャン",
+      "メカエリチャン",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000500,
+    "name": "メカエリチャンⅡ号機",
+    "originalName": "メカエリチャンⅡ号機",
+    "ruby": "メカエリチャンニゴウキ",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "メカエリチャンⅱ号機",
+      "メカエリチャンⅱ号機",
+      "メカエリチャンニゴウキ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000700,
+    "name": "沖田総司〔オルタ〕",
+    "originalName": "沖田総司〔オルタ〕",
+    "ruby": "オキタソウジ・オルタ",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "沖田総司〔オルタ〕",
+      "沖田総司〔オルタ〕",
+      "オキタソウジ・オルタ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000800,
+    "name": "シトナイ",
+    "originalName": "シトナイ",
+    "ruby": "シトナイ",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "シトナイ",
+      "シトナイ",
+      "シトナイ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000900,
+    "name": "キングプロテア",
+    "originalName": "キングプロテア",
+    "ruby": "キングプロテア",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "キングプロテア",
+      "キングプロテア",
+      "キングプロテア",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001000,
+    "name": "蘆屋道満",
+    "originalName": "蘆屋道満",
+    "ruby": "アシヤドウマン",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "蘆屋道満",
+      "蘆屋道満",
+      "アシヤドウマン",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001100,
+    "name": "マナナン・マク・リール〔バゼット〕",
+    "originalName": "マナナン・マク・リール〔バゼット〕",
+    "ruby": "マナナン・マク・リール〔バゼット〕",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "マナナン・マク・リール〔バゼット〕",
+      "マナナン・マク・リール〔バゼット〕",
+      "マナナン・マク・リール〔バゼット〕",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001200,
+    "name": "太歳星君",
+    "originalName": "太歳星君",
+    "ruby": "タイサイセイクン",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "太歳星君",
+      "太歳星君",
+      "タイサイセイクン",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001300,
+    "name": "スーパーバニヤン",
+    "originalName": "スーパーバニヤン",
+    "ruby": "スーパーバニヤン",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "スーパーバニヤン",
+      "スーパーバニヤン",
+      "スーパーバニヤン",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001400,
+    "name": "徐福",
+    "originalName": "徐福",
+    "ruby": "ジョフク",
+    "className": "alterEgo",
+    "rarity": 3,
+    "searchTerms": [
+      "徐福",
+      "徐福",
+      "ジョフク",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001500,
+    "name": "言峰綺礼",
+    "originalName": "言峰綺礼",
+    "ruby": "コトミネキレイ",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "言峰綺礼",
+      "言峰綺礼",
+      "コトミネキレイ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001600,
+    "name": "ラーヴァ／ティアマト",
+    "originalName": "ラーヴァ／ティアマト",
+    "ruby": "ラーヴァ／ティアマト",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "ラーヴァ／ティアマト",
+      "ラーヴァ／ティアマト",
+      "ラーヴァ／ティアマト",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001700,
+    "name": "ひびき＆千鍵",
+    "originalName": "ひびき＆千鍵",
+    "ruby": "ヒビキ＆チカギ",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "ひびき＆千鍵",
+      "ひびき＆千鍵",
+      "ヒビキ＆チカギ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001800,
+    "name": "カズラドロップ",
+    "originalName": "カズラドロップ",
+    "ruby": "カズラドロップ",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "カズラドロップ",
+      "カズラドロップ",
+      "カズラドロップ",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001900,
+    "name": "ジュネス・クレーン",
+    "originalName": "ジュネス・クレーン",
+    "ruby": "ジュネス・クレーン",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "ジュネス・クレーン",
+      "ジュネス・クレーン",
+      "ジュネス・クレーン",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1100100,
+    "name": "アンリマユ",
+    "originalName": "アンリマユ",
+    "ruby": "アンリマユ",
+    "className": "avenger",
+    "rarity": 0,
+    "searchTerms": [
+      "アンリマユ",
+      "アンリマユ",
+      "アンリマユ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100200,
+    "name": "巌窟王",
+    "originalName": "巌窟王",
+    "ruby": "ガンクツオウ",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "巌窟王",
+      "巌窟王",
+      "ガンクツオウ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100300,
+    "name": "ジャンヌ・ダルク〔オルタ〕",
+    "originalName": "ジャンヌ・ダルク〔オルタ〕",
+    "ruby": "ジャンヌ・ダルク〔オルタ〕",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "ジャンヌ・ダルク〔オルタ〕",
+      "ジャンヌ・ダルク〔オルタ〕",
+      "ジャンヌ・ダルク〔オルタ〕",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100400,
+    "name": "ゴルゴーン",
+    "originalName": "ゴルゴーン",
+    "ruby": "ゴルゴーン",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "ゴルゴーン",
+      "ゴルゴーン",
+      "ゴルゴーン",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100500,
+    "name": "ヘシアン・ロボ",
+    "originalName": "ヘシアン・ロボ",
+    "ruby": "ヘシアン・ロボ",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "ヘシアン・ロボ",
+      "ヘシアン・ロボ",
+      "ヘシアン・ロボ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100600,
+    "name": "アントニオ・サリエリ",
+    "originalName": "アントニオ・サリエリ",
+    "ruby": "アントニオ・サリエリ",
+    "className": "avenger",
+    "rarity": 3,
+    "searchTerms": [
+      "アントニオ・サリエリ",
+      "アントニオ・サリエリ",
+      "アントニオ・サリエリ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100700,
+    "name": "魔王信長",
+    "originalName": "魔王信長",
+    "ruby": "マオウノブナガ",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "魔王信長",
+      "魔王信長",
+      "マオウノブナガ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100900,
+    "name": "スペース・イシュタル",
+    "originalName": "スペース・イシュタル",
+    "ruby": "スペース・イシュタル",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "スペース・イシュタル",
+      "スペース・イシュタル",
+      "スペース・イシュタル",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101000,
+    "name": "平景清",
+    "originalName": "平景清",
+    "ruby": "タイラノカゲキヨ",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "平景清",
+      "平景清",
+      "タイラノカゲキヨ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101100,
+    "name": "カーマ",
+    "originalName": "カーマ",
+    "ruby": "カーマ",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "カーマ",
+      "カーマ",
+      "カーマ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101200,
+    "name": "謎の蘭丸X",
+    "originalName": "謎の蘭丸X",
+    "ruby": "ナゾノランマルエックス",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "謎の蘭丸x",
+      "謎の蘭丸x",
+      "ナゾノランマルエックス",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101300,
+    "name": "マリー・アントワネット〔オルタ〕",
+    "originalName": "マリー・アントワネット〔オルタ〕",
+    "ruby": "マリー・アントワネット〔オルタ〕",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "マリー・アントワネット〔オルタ〕",
+      "マリー・アントワネット〔オルタ〕",
+      "マリー・アントワネット〔オルタ〕",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101400,
+    "name": "宇津見エリセ",
+    "originalName": "宇津見エリセ",
+    "ruby": "ウツミエリセ",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "宇津見エリセ",
+      "宇津見エリセ",
+      "ウツミエリセ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101500,
+    "name": "ニトクリス〔オルタ〕",
+    "originalName": "ニトクリス〔オルタ〕",
+    "ruby": "ニトクリス・オルタ",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "ニトクリス〔オルタ〕",
+      "ニトクリス〔オルタ〕",
+      "ニトクリス・オルタ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101600,
+    "name": "クロエ・フォン・アインツベルン",
+    "originalName": "クロエ・フォン・アインツベルン",
+    "ruby": "クロエ・フォン・アインツベルン",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "クロエ・フォン・アインツベルン",
+      "クロエ・フォン・アインツベルン",
+      "クロエ・フォン・アインツベルン",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101700,
+    "name": "巌窟王　モンテ・クリスト",
+    "originalName": "巌窟王　モンテ・クリスト",
+    "ruby": "ガンクツオウ　モンテ・クリスト",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "巌窟王　モンテ・クリスト",
+      "巌窟王　モンテ・クリスト",
+      "ガンクツオウ　モンテ・クリスト",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101800,
+    "name": "源頼光／丑御前",
+    "originalName": "源頼光／丑御前",
+    "ruby": "ミナモトノライコウ／ウシゴゼン",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "源頼光／丑御前",
+      "源頼光／丑御前",
+      "ミナモトノライコウ／ウシゴゼン",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101900,
+    "name": "徐福",
+    "originalName": "徐福",
+    "ruby": "ジョフク",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "徐福",
+      "徐福",
+      "ジョフク",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1102100,
+    "name": "藤堂平助",
+    "originalName": "藤堂平助",
+    "ruby": "トウドウヘイスケ",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "藤堂平助",
+      "藤堂平助",
+      "トウドウヘイスケ",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1102200,
+    "name": "終わりのエリザベート",
+    "originalName": "終わりのエリザベート",
+    "ruby": "オワリノエリザベート",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "終わりのエリザベート",
+      "終わりのエリザベート",
+      "オワリノエリザベート",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1700100,
+    "name": "ソロモン",
+    "originalName": "ソロモン",
+    "ruby": "ソロモン",
+    "className": "loreGrandCaster",
+    "rarity": 5,
+    "searchTerms": [
+      "ソロモン",
+      "ソロモン",
+      "ソロモン",
+      "loregrandcaster"
+    ]
+  },
+  {
+    "id": 2300100,
+    "name": "ＢＢ",
+    "originalName": "ＢＢ",
+    "ruby": "ＢＢ",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ｂｂ",
+      "ｂｂ",
+      "ｂｂ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300200,
+    "name": "ＢＢ",
+    "originalName": "ＢＢ",
+    "ruby": "ＢＢ",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ｂｂ",
+      "ｂｂ",
+      "ｂｂ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300300,
+    "name": "ジナコ＝カリギリ",
+    "originalName": "ジナコ＝カリギリ",
+    "ruby": "ジナコ＝カリギリ",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ジナコ＝カリギリ",
+      "ジナコ＝カリギリ",
+      "ジナコ＝カリギリ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300400,
+    "name": "殺生院キアラ",
+    "originalName": "殺生院キアラ",
+    "ruby": "セッショウインキアラ",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "殺生院キアラ",
+      "殺生院キアラ",
+      "セッショウインキアラ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300500,
+    "name": "アーキタイプ：アース",
+    "originalName": "アーキタイプ：アース",
+    "ruby": "アーキタイプ：アース",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "アーキタイプ：アース",
+      "アーキタイプ：アース",
+      "アーキタイプ：アース",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300600,
+    "name": "ＢＢドバイ",
+    "originalName": "ＢＢドバイ",
+    "ruby": "ＢＢドバイ",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ｂｂドバイ",
+      "ｂｂドバイ",
+      "ｂｂドバイ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300700,
+    "name": "岸波白野",
+    "originalName": "岸波白野",
+    "ruby": "キシナミハクノ",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "岸波白野",
+      "岸波白野",
+      "キシナミハクノ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300800,
+    "name": "岸波白野",
+    "originalName": "岸波白野",
+    "ruby": "キシナミハクノ",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "岸波白野",
+      "岸波白野",
+      "キシナミハクノ",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300900,
+    "name": "謎の代行者C.I.E.L",
+    "originalName": "謎の代行者C.I.E.L",
+    "ruby": "ナゾノダイコウシャシエル",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "謎の代行者c.i.e.l",
+      "謎の代行者c.i.e.l",
+      "ナゾノダイコウシャシエル",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2301000,
+    "name": "テノチティトラン",
+    "originalName": "テノチティトラン",
+    "ruby": "テノチティトラン",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "テノチティトラン",
+      "テノチティトラン",
+      "テノチティトラン",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2301100,
+    "name": "玉兎",
+    "originalName": "玉兎",
+    "ruby": "ギョクト",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "玉兎",
+      "玉兎",
+      "ギョクト",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2500100,
+    "name": "アビゲイル・ウィリアムズ",
+    "originalName": "アビゲイル・ウィリアムズ",
+    "ruby": "アビゲイル・ウィリアムズ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "アビゲイル・ウィリアムズ",
+      "アビゲイル・ウィリアムズ",
+      "アビゲイル・ウィリアムズ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500200,
+    "name": "葛飾北斎",
+    "originalName": "葛飾北斎",
+    "ruby": "カツシカホクサイ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "葛飾北斎",
+      "葛飾北斎",
+      "カツシカホクサイ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500300,
+    "name": "謎のヒロインXX",
+    "originalName": "謎のヒロインXX",
+    "ruby": "ナゾノヒロインXX",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "謎のヒロインxx",
+      "謎のヒロインxx",
+      "ナゾノヒロインxx",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500400,
+    "name": "楊貴妃",
+    "originalName": "楊貴妃",
+    "ruby": "ヨウキヒ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "楊貴妃",
+      "楊貴妃",
+      "ヨウキヒ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500500,
+    "name": "ボイジャー",
+    "originalName": "ボイジャー",
+    "ruby": "ボイジャー",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "ボイジャー",
+      "ボイジャー",
+      "ボイジャー",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500600,
+    "name": "ヴァン・ゴッホ",
+    "originalName": "ヴァン・ゴッホ",
+    "ruby": "ヴァン・ゴッホ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "ヴァン・ゴッホ",
+      "ヴァン・ゴッホ",
+      "ヴァン・ゴッホ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500700,
+    "name": "アビゲイル・ウィリアムズ〔夏〕",
+    "originalName": "アビゲイル・ウィリアムズ〔夏〕",
+    "ruby": "アビゲイル・ウィリアムズ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "アビゲイル・ウィリアムズ〔夏〕",
+      "アビゲイル・ウィリアムズ〔夏〕",
+      "アビゲイル・ウィリアムズ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500800,
+    "name": "謎のアイドルX〔オルタ〕",
+    "originalName": "謎のアイドルX〔オルタ〕",
+    "ruby": "ナゾノアイドルエックスオルタ",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "謎のアイドルx〔オルタ〕",
+      "謎のアイドルx〔オルタ〕",
+      "ナゾノアイドルエックスオルタ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500900,
+    "name": "闇のコヤンスカヤ",
+    "originalName": "闇のコヤンスカヤ",
+    "ruby": "ヤミノコヤンスカヤ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "闇のコヤンスカヤ",
+      "闇のコヤンスカヤ",
+      "ヤミノコヤンスカヤ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501000,
+    "name": "ジャック・ド・モレー",
+    "originalName": "ジャック・ド・モレー",
+    "ruby": "ジャック・ド・モレー",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "ジャック・ド・モレー",
+      "ジャック・ド・モレー",
+      "ジャック・ド・モレー",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501100,
+    "name": "ククルカン",
+    "originalName": "ククルカン",
+    "ruby": "ククルカン",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "ククルカン",
+      "ククルカン",
+      "ククルカン",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501200,
+    "name": "ノクナレア・ヤラアーンドゥ",
+    "originalName": "ノクナレア・ヤラアーンドゥ",
+    "ruby": "ノクナレア・ヤラアーンドゥ",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "ノクナレア・ヤラアーンドゥ",
+      "ノクナレア・ヤラアーンドゥ",
+      "ノクナレア・ヤラアーンドゥ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501300,
+    "name": "ワンジナ",
+    "originalName": "ワンジナ",
+    "ruby": "ワンジナ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "ワンジナ",
+      "ワンジナ",
+      "ワンジナ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501400,
+    "name": "蒼崎青子",
+    "originalName": "蒼崎青子",
+    "ruby": "アオザキアオコ",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "蒼崎青子",
+      "蒼崎青子",
+      "アオザキアオコ",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501600,
+    "name": "謎のヒロインXX〔オルタ〕",
+    "originalName": "謎のヒロインXX〔オルタ〕",
+    "ruby": "ナゾノヒロインダブルエックス〔オルタ〕",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "謎のヒロインxx〔オルタ〕",
+      "謎のヒロインxx〔オルタ〕",
+      "ナゾノヒロインダブルエックス〔オルタ〕",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2800100,
+    "name": "オベロン",
+    "originalName": "オベロン",
+    "ruby": "オベロン",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "オベロン",
+      "オベロン",
+      "オベロン",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800200,
+    "name": "ヘファイスティオン",
+    "originalName": "ヘファイスティオン",
+    "ruby": "ヘファイスティオン",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "ヘファイスティオン",
+      "ヘファイスティオン",
+      "ヘファイスティオン",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800300,
+    "name": "レディ・アヴァロン",
+    "originalName": "レディ・アヴァロン",
+    "ruby": "レディ・アヴァロン",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "レディ・アヴァロン",
+      "レディ・アヴァロン",
+      "レディ・アヴァロン",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800400,
+    "name": "九紋竜エリザ",
+    "originalName": "九紋竜エリザ",
+    "ruby": "クモンリュウエリザ",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "九紋竜エリザ",
+      "九紋竜エリザ",
+      "クモンリュウエリザ",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800500,
+    "name": "テノチティトラン",
+    "originalName": "テノチティトラン",
+    "ruby": "テノチティトラン",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "テノチティトラン",
+      "テノチティトラン",
+      "テノチティトラン",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800600,
+    "name": "ケット・クー・ミコケル",
+    "originalName": "ケット・クー・ミコケル",
+    "ruby": "バーヴァン・シー",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "ケット・クー・ミコケル",
+      "ケット・クー・ミコケル",
+      "バーヴァン・シー",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800700,
+    "name": "アレッサンドロ・ディ・カリオストロ",
+    "originalName": "アレッサンドロ・ディ・カリオストロ",
+    "ruby": "アレッサンドロ・ディ・カリオストロ",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "アレッサンドロ・ディ・カリオストロ",
+      "アレッサンドロ・ディ・カリオストロ",
+      "アレッサンドロ・ディ・カリオストロ",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800800,
+    "name": "アビゲイル・ウィリアムズ〔サンタ〕",
+    "originalName": "アビゲイル・ウィリアムズ〔サンタ〕",
+    "ruby": "アビゲイル・ウィリアムズ〔サンタ〕",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "アビゲイル・ウィリアムズ〔サンタ〕",
+      "アビゲイル・ウィリアムズ〔サンタ〕",
+      "アビゲイル・ウィリアムズ〔サンタ〕",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800900,
+    "name": "ファンタズムーン",
+    "originalName": "ファンタズムーン",
+    "ruby": "ファンタズムーン",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "ファンタズムーン",
+      "ファンタズムーン",
+      "ファンタズムーン",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2801000,
+    "name": "ダンテ・アリギエーリ",
+    "originalName": "ダンテ・アリギエーリ",
+    "ruby": "ダンテ・アリギエーリ",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "ダンテ・アリギエーリ",
+      "ダンテ・アリギエーリ",
+      "ダンテ・アリギエーリ",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2801100,
+    "name": "テュフォン・エフェメロス",
+    "originalName": "テュフォン・エフェメロス",
+    "ruby": "テュフォン・エフェメロス",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "テュフォン・エフェメロス",
+      "テュフォン・エフェメロス",
+      "テュフォン・エフェメロス",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2801200,
+    "name": "ソロモン",
+    "originalName": "ソロモン",
+    "ruby": "ソロモン",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "ソロモン",
+      "ソロモン",
+      "ソロモン",
+      "pretender"
+    ]
+  },
+  {
+    "id": 3300100,
+    "name": "ソドムズビースト／ドラコー",
+    "originalName": "ソドムズビースト／ドラコー",
+    "ruby": "ソドムズビースト／ドラコー",
+    "className": "beast",
+    "rarity": 5,
+    "searchTerms": [
+      "ソドムズビースト／ドラコー",
+      "ソドムズビースト／ドラコー",
+      "ソドムズビースト／ドラコー",
+      "beast"
+    ]
+  },
+  {
+    "id": 3300200,
+    "name": "エレシュキガル",
+    "originalName": "エレシュキガル",
+    "ruby": "エレシュキガル",
+    "className": "beastEresh",
+    "rarity": 5,
+    "searchTerms": [
+      "エレシュキガル",
+      "エレシュキガル",
+      "エレシュキガル",
+      "beasteresh"
+    ]
+  },
+  {
+    "id": 4000100,
+    "name": "Ｕ－オルガマリー",
+    "originalName": "Ｕ－オルガマリー",
+    "ruby": "ユーオルガマリー",
+    "className": "unBeastOlgaMarie",
+    "rarity": 5,
+    "searchTerms": [
+      "ｕ－オルガマリー",
+      "ｕ－オルガマリー",
+      "ユーオルガマリー",
+      "unbeastolgamarie"
+    ]
+  },
+  {
+    "id": 9935400,
+    "name": "ティアマト",
+    "originalName": "ティアマト",
+    "ruby": "ティアマト",
+    "className": "beastII",
+    "rarity": 5,
+    "searchTerms": [
+      "ティアマト",
+      "ティアマト",
+      "ティアマト",
+      "beastii"
+    ]
+  },
+  {
+    "id": 9935500,
+    "name": "ゲーティア",
+    "originalName": "ゲーティア",
+    "ruby": "ゲーティア",
+    "className": "beastI",
+    "rarity": 5,
+    "searchTerms": [
+      "ゲーティア",
+      "ゲーティア",
+      "ゲーティア",
+      "beasti"
+    ]
+  },
+  {
+    "id": 9935530,
+    "name": "ソロモン",
+    "originalName": "ソロモン",
+    "ruby": "ソロモン",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "ソロモン",
+      "ソロモン",
+      "ソロモン",
+      "caster"
+    ]
+  },
+  {
+    "id": 9939130,
+    "name": "ビーストⅢ／Ｒ",
+    "originalName": "ビーストⅢ／Ｒ",
+    "ruby": "ビーストⅢ／Ｒ",
+    "className": "beastIIIR",
+    "rarity": 5,
+    "searchTerms": [
+      "ビーストⅲ／ｒ",
+      "ビーストⅲ／ｒ",
+      "ビーストⅲ／ｒ",
+      "beastiiir"
+    ]
+  },
+  {
+    "id": 9941730,
+    "name": "ビーストⅢ／L",
+    "originalName": "ビーストⅢ／L",
+    "ruby": "ビーストⅢ／L",
+    "className": "beastIIIL",
+    "rarity": 5,
+    "searchTerms": [
+      "ビーストⅲ／l",
+      "ビーストⅲ／l",
+      "ビーストⅲ／l",
+      "beastiiil"
+    ]
+  },
+  {
+    "id": 9943610,
+    "name": "ビーストⅣ",
+    "originalName": "ビーストⅣ",
+    "ruby": "-",
+    "className": "beastIV",
+    "rarity": 5,
+    "searchTerms": [
+      "ビーストⅳ",
+      "ビーストⅳ",
+      "-",
+      "beastiv"
+    ]
+  },
+  {
+    "id": 9945590,
+    "name": "Ｅ－フレアマリー",
+    "originalName": "Ｅ－フレアマリー",
+    "ruby": "-",
+    "className": "uOlgaMarieFlareCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "ｅ－フレアマリー",
+      "ｅ－フレアマリー",
+      "-",
+      "uolgamarieflarecollection"
+    ]
+  },
+  {
+    "id": 9945600,
+    "name": "Ｅ－アクアマリー",
+    "originalName": "Ｅ－アクアマリー",
+    "ruby": "-",
+    "className": "uOlgaMarieAquaCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "ｅ－アクアマリー",
+      "ｅ－アクアマリー",
+      "-",
+      "uolgamarieaquacollection"
+    ]
+  },
+  {
+    "id": 9946280,
+    "name": "Ｅ－グランマリー",
+    "originalName": "Ｅ－グランマリー",
+    "ruby": "-",
+    "className": "uOlgaMarieGrandCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "ｅ－グランマリー",
+      "ｅ－グランマリー",
+      "-",
+      "uolgamariegrandcollection"
+    ]
+  },
+  {
+    "id": 9946760,
+    "name": "Ｅ－ステラマリー",
+    "originalName": "Ｅ－ステラマリー",
+    "ruby": "-",
+    "className": "uOlgaMarieStellarCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "ｅ－ステラマリー",
+      "ｅ－ステラマリー",
+      "-",
+      "uolgamariestellarcollection"
+    ]
+  },
+  {
+    "id": 9947530,
+    "name": "マリス・カルデアス",
+    "originalName": "マリス・カルデアス",
+    "ruby": "-",
+    "className": "beastVII",
+    "rarity": 0,
+    "searchTerms": [
+      "マリス・カルデアス",
+      "マリス・カルデアス",
+      "-",
+      "beastvii"
+    ]
+  }
+]

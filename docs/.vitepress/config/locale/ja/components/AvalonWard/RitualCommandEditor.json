@@ -1,0 +1,5 @@
+{
+    "command": "コマンド",
+    "optional": "オプション",
+    "commandPlaceholder": "リチュアル完了時に実行するコマンドを入力"
+}

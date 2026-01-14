@@ -1,0 +1,10 @@
+{
+    "entriesList": "エントリ一覧",
+    "filterEntries": "エントリをフィルター",
+    "showUntranslatedOnly": "未翻訳のみ表示",
+    "newEntryId": "新規エントリID",
+    "newEntryPlaceholder": "一意のエントリIDを入力",
+    "createEntry": "エントリを作成",
+    "noEntries": "エントリが見つかりません。上記で最初のエントリを作成してください。",
+    "itemsPerPage": "ページあたりのアイテム数"
+}

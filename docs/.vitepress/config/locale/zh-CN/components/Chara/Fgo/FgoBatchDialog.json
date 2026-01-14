@@ -1,0 +1,9 @@
+{
+    "title": "批量下载",
+    "description": "选择所有变体的下载类型",
+    "batchCropped": "裁剪选区",
+    "batchCroppedDesc": "使用当前选择区域下载",
+    "batchFull": "完整图片",
+    "batchFullDesc": "下载完整的差分图片",
+    "cancel": "取消"
+}

@@ -1,0 +1,11 @@
+{
+    "gridSize": "网格大小",
+    "maxSize": "最大尺寸",
+    "lockSize": "锁定尺寸",
+    "locked": "尺寸已锁定",
+    "pattern": "图案",
+    "displayPattern": "显示图案",
+    "reagents": "试剂",
+    "showKeys": "显示按键",
+    "randomizeRunes": "随机化符文"
+}

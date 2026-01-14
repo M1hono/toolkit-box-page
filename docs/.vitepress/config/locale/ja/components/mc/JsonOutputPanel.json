@@ -1,0 +1,6 @@
+{
+    "jsonOutput": "JSON出力",
+    "generateJson": "JSONを生成",
+    "downloadJson": "JSONをダウンロード",
+    "noOutput": "JSONを生成すると、ここに出力が表示されます"
+}

@@ -1,0 +1,20 @@
+{
+    "appTitle": "FGO Character Portrait Extractor",
+    "appSubtitle": "Extract character portraits with diff processing and intelligent cropping",
+    "searchPlaceholder": "Search character name...",
+    "uploadImage": "Upload Image",
+    "welcomeTitle": "Select a character to begin",
+    "welcomeDescription": "Search for a character or upload an image",
+    "loading": "Loading...",
+    "imageSelection": "Image",
+    "aspectRatio": "Aspect Ratio",
+    "selection": "Selection",
+    "preview": "Preview",
+    "prevDiff": "Prev",
+    "nextDiff": "Next",
+    "bgColor": "Background",
+    "save": "Save",
+    "batch": "Batch",
+    "detectFace": "Detect Face",
+    "onlineOnly": "Online Only"
+}

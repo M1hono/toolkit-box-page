@@ -1,0 +1,13 @@
+{
+    "untranslatedEntries": "未翻訳エントリ",
+    "allTranslated": "すべて翻訳済み！",
+    "translationComplete": "すべてのエントリが正常に翻訳されました。",
+    "itemsPerPage": "ページあたりのアイテム数",
+    "totalEntries": "総エントリ数",
+    "missingTranslationFor": "翻訳が不足：",
+    "category": "カテゴリ",
+    "tier": "ティア",
+    "sections": "セクション",
+    "startTranslating": "開始",
+    "createFromSource": "コピー＆編集"
+}

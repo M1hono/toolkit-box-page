@@ -1,0 +1,10 @@
+{
+    "entriesList": "Entries List",
+    "filterEntries": "Filter entries",
+    "showUntranslatedOnly": "Show untranslated only",
+    "newEntryId": "New Entry ID",
+    "newEntryPlaceholder": "Enter unique entry ID",
+    "createEntry": "Create Entry",
+    "noEntries": "No entries found. Create your first entry above.",
+    "itemsPerPage": "Items per page"
+}

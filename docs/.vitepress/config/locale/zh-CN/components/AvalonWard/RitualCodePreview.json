@@ -1,0 +1,6 @@
+{
+    "outputFormat": "输出格式",
+    "copyCode": "复制代码",
+    "lockSizeToSeeOutput": "锁定尺寸并配置仪式以查看输出。",
+    "validationError": "配置无效。确保图案至少有一个非零值，且所有按键都有定义的物品。"
+}

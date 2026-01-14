@@ -1,0 +1,12 @@
+{
+    "parameters": "参数",
+    "tier": "等级",
+    "innerColor": "内部颜色",
+    "outerColor": "外部颜色", 
+    "beamColor": "光束颜色",
+    "createdItem": "创建物品",
+    "createdItemPlaceholder": "例如: minecraft:diamond",
+    "connectBeam": "连接光束",
+    "displayIndexes": "显示索引",
+    "kittable": "可套件化"
+}

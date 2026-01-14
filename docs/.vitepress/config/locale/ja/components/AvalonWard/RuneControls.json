@@ -1,0 +1,16 @@
+{
+    "clearGrid": "グリッドをクリア",
+    "fillGrid": "グリッドを埋める",
+    "horizontal": "水平",
+    "vertical": "垂直",
+    "decimal": "10進数",
+    "binary": "2進数",
+    "recipeConfiguration": "レシピ設定",
+    "outputItem": "出力アイテム",
+    "outputItemPlaceholder": "例：minecraft:acacia_boat",
+    "tier": "ティア",
+    "requiredFaction": "必要な派閥",
+    "requiredFactionPlaceholder": "例：mna:none",
+    "codeOutput": "コード出力",
+    "copyCode": "コピー"
+}

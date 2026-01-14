@@ -1,0 +1,11 @@
+{
+    "gridSize": "Grid Size",
+    "maxSize": "Max Size",
+    "lockSize": "Lock Size",
+    "locked": "Size Locked",
+    "pattern": "Pattern",
+    "displayPattern": "Display Pattern",
+    "reagents": "Reagents",
+    "showKeys": "Show Keys",
+    "randomizeRunes": "Randomize Runes"
+}

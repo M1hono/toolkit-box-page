@@ -1,0 +1,11 @@
+{
+    "available": "利用可能：{amount}",
+    "empty": "請求データがありません。",
+    "income": "収入：{amount}",
+    "incomeSource": "収入源",
+    "loading": "請求を処理中...",
+    "operator": "操作者：{name}",
+    "outlay": "支出：{amount}",
+    "outlayTarget": "支出先",
+    "transactionContent": "取引内容"
+}

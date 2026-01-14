@@ -1,0 +1,19 @@
+{
+    "clearSelection": "クリア",
+    "list": "リスト",
+    "loadingError": "タグデータの読み込みに失敗しました。もう一度お試しください。",
+    "loadingTagData": "タグデータを読み込み中...",
+    "matchingTags": "一致するタグ",
+    "morePages": "他{count}件",
+    "noMatchingPages": "選択したタグに一致するページがありません。",
+    "noMatchingPagesHint": "タグを削除すると、より多くの結果が表示されます。",
+    "noTagsFound": "タグが見つかりません。",
+    "pageTitle": "タグ",
+    "pages": "ページ",
+    "retry": "再試行",
+    "searchPlaceholder": "タグを検索...",
+    "selectedTags": "タグ付きページ：",
+    "tagCloud": "クラウド",
+    "totalPages": "総ページ数",
+    "totalTags": "総タグ数"
+}

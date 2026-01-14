@@ -1,0 +1,5672 @@
+[
+  {
+    "id": 100100,
+    "name": "Altria Pendragon",
+    "originalName": "Altria Pendragon",
+    "ruby": "Altria Pendragon",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "altria pendragon",
+      "altria pendragon",
+      "altria pendragon",
+      "saber"
+    ]
+  },
+  {
+    "id": 100200,
+    "name": "Altria Pendragon (Alter)",
+    "originalName": "Altria Pendragon (Alter)",
+    "ruby": "Altria Pendragon (Alter)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "altria pendragon (alter)",
+      "altria pendragon (alter)",
+      "altria pendragon (alter)",
+      "saber"
+    ]
+  },
+  {
+    "id": 100300,
+    "name": "Altria Pendragon (Lily)",
+    "originalName": "Altria Pendragon (Lily)",
+    "ruby": "Altria Pendragon (Lily)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "altria pendragon (lily)",
+      "altria pendragon (lily)",
+      "altria pendragon (lily)",
+      "saber"
+    ]
+  },
+  {
+    "id": 100500,
+    "name": "Nero Claudius",
+    "originalName": "Nero Claudius",
+    "ruby": "Nero Claudius",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "nero claudius",
+      "nero claudius",
+      "nero claudius",
+      "saber"
+    ]
+  },
+  {
+    "id": 100600,
+    "name": "Nero Claudius (Bride)",
+    "originalName": "Nero Claudius (Bride)",
+    "ruby": "Nero Claudius (Bride)",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "nero claudius (bride)",
+      "nero claudius (bride)",
+      "nero claudius (bride)",
+      "saber"
+    ]
+  },
+  {
+    "id": 100700,
+    "name": "Gawain",
+    "originalName": "Gawain",
+    "ruby": "Gawain",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "gawain",
+      "gawain",
+      "gawain",
+      "saber"
+    ]
+  },
+  {
+    "id": 100800,
+    "name": "Siegfried",
+    "originalName": "Siegfried",
+    "ruby": "Siegfried",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "siegfried",
+      "siegfried",
+      "siegfried",
+      "saber"
+    ]
+  },
+  {
+    "id": 100900,
+    "name": "Mordred",
+    "originalName": "Mordred",
+    "ruby": "Mordred",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "mordred",
+      "mordred",
+      "mordred",
+      "saber"
+    ]
+  },
+  {
+    "id": 101000,
+    "name": "Elisabeth Báthory (Brave)",
+    "originalName": "Elisabeth Báthory (Brave)",
+    "ruby": "Elisabeth Báthory (Brave)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "elisabeth báthory (brave)",
+      "elisabeth báthory (brave)",
+      "elisabeth báthory (brave)",
+      "saber"
+    ]
+  },
+  {
+    "id": 101200,
+    "name": "Bedivere",
+    "originalName": "Bedivere",
+    "ruby": "Bedivere",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "bedivere",
+      "bedivere",
+      "bedivere",
+      "saber"
+    ]
+  },
+  {
+    "id": 101300,
+    "name": "Gaius Julius Caesar",
+    "originalName": "Gaius Julius Caesar",
+    "ruby": "Gaius Julius Caesar",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "gaius julius caesar",
+      "gaius julius caesar",
+      "gaius julius caesar",
+      "saber"
+    ]
+  },
+  {
+    "id": 101400,
+    "name": "Fergus mac Róich",
+    "originalName": "Fergus mac Róich",
+    "ruby": "Fergus mac Róich",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "fergus mac róich",
+      "fergus mac róich",
+      "fergus mac róich",
+      "saber"
+    ]
+  },
+  {
+    "id": 101700,
+    "name": "Miyamoto Musashi",
+    "originalName": "Miyamoto Musashi",
+    "ruby": "Miyamoto Musashi",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "miyamoto musashi",
+      "miyamoto musashi",
+      "miyamoto musashi",
+      "saber"
+    ]
+  },
+  {
+    "id": 101800,
+    "name": "Altera",
+    "originalName": "Altera",
+    "ruby": "Altera",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "altera",
+      "altera",
+      "altera",
+      "saber"
+    ]
+  },
+  {
+    "id": 101900,
+    "name": "Rama",
+    "originalName": "Rama",
+    "ruby": "Rama",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "rama",
+      "rama",
+      "rama",
+      "saber"
+    ]
+  },
+  {
+    "id": 102000,
+    "name": "Lancelot",
+    "originalName": "Lancelot",
+    "ruby": "Lancelot",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "lancelot",
+      "lancelot",
+      "lancelot",
+      "saber"
+    ]
+  },
+  {
+    "id": 102200,
+    "name": "Gilles de Rais",
+    "originalName": "Gilles de Rais",
+    "ruby": "Gilles de Rais",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "gilles de rais",
+      "gilles de rais",
+      "gilles de rais",
+      "saber"
+    ]
+  },
+  {
+    "id": 102600,
+    "name": "Chevalier d'Eon",
+    "originalName": "Chevalier d'Eon",
+    "ruby": "Chevalier d'Eon",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "chevalier d'eon",
+      "chevalier d'eon",
+      "chevalier d'eon",
+      "saber"
+    ]
+  },
+  {
+    "id": 102700,
+    "name": "Okita Souji",
+    "originalName": "Okita Souji",
+    "ruby": "Okita Souji",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "okita souji",
+      "okita souji",
+      "okita souji",
+      "saber"
+    ]
+  },
+  {
+    "id": 102800,
+    "name": "Ryougi Shiki (Saber)",
+    "originalName": "Ryougi Shiki (Saber)",
+    "ruby": "Ryougi Shiki (Saber)",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "ryougi shiki (saber)",
+      "ryougi shiki (saber)",
+      "ryougi shiki (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 102900,
+    "name": "Arthur Pendragon (Prototype)",
+    "originalName": "Arthur Pendragon (Prototype)",
+    "ruby": "Arthur Pendragon (Prototype)",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "arthur pendragon (prototype)",
+      "arthur pendragon (prototype)",
+      "arthur pendragon (prototype)",
+      "saber"
+    ]
+  },
+  {
+    "id": 103000,
+    "name": "Suzuka Gozen",
+    "originalName": "Suzuka Gozen",
+    "ruby": "Suzuka Gozen",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "suzuka gozen",
+      "suzuka gozen",
+      "suzuka gozen",
+      "saber"
+    ]
+  },
+  {
+    "id": 103100,
+    "name": "Frankenstein (Saber)",
+    "originalName": "Frankenstein (Saber)",
+    "ruby": "Frankenstein (Saber)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "frankenstein (saber)",
+      "frankenstein (saber)",
+      "frankenstein (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 103200,
+    "name": "Yagyu Tajima-no-kami Munenori",
+    "originalName": "Yagyu Tajima-no-kami Munenori",
+    "ruby": "Yagyu Tajima-no-kami Munenori",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "yagyu tajima-no-kami munenori",
+      "yagyu tajima-no-kami munenori",
+      "yagyu tajima-no-kami munenori",
+      "saber"
+    ]
+  },
+  {
+    "id": 103300,
+    "name": "Sigurd",
+    "originalName": "Sigurd",
+    "ruby": "Sigurd",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "sigurd",
+      "sigurd",
+      "sigurd",
+      "saber"
+    ]
+  },
+  {
+    "id": 103400,
+    "name": "Medb (Saber)",
+    "originalName": "Medb (Saber)",
+    "ruby": "Medb (Saber)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "medb (saber)",
+      "medb (saber)",
+      "medb (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 103500,
+    "name": "Diarmuid Ua Duibhne",
+    "originalName": "Diarmuid Ua Duibhne",
+    "ruby": "Diarmuid Ua Duibhne",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "diarmuid ua duibhne",
+      "diarmuid ua duibhne",
+      "diarmuid ua duibhne",
+      "saber"
+    ]
+  },
+  {
+    "id": 103600,
+    "name": "Prince of Lan Ling",
+    "originalName": "Prince of Lan Ling",
+    "ruby": "Prince of Lan Ling",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "prince of lan ling",
+      "prince of lan ling",
+      "prince of lan ling",
+      "saber"
+    ]
+  },
+  {
+    "id": 103700,
+    "name": "Beni-Enma",
+    "originalName": "Beni-Enma",
+    "ruby": "Beni-Enma",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "beni-enma",
+      "beni-enma",
+      "beni-enma",
+      "saber"
+    ]
+  },
+  {
+    "id": 103800,
+    "name": "Jason",
+    "originalName": "Jason",
+    "ruby": "Jason",
+    "className": "saber",
+    "rarity": 1,
+    "searchTerms": [
+      "jason",
+      "jason",
+      "jason",
+      "saber"
+    ]
+  },
+  {
+    "id": 103900,
+    "name": "Lakshmi Bai",
+    "originalName": "Lakshmi Bai",
+    "ruby": "Lakshmi Bai",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "lakshmi bai",
+      "lakshmi bai",
+      "lakshmi bai",
+      "saber"
+    ]
+  },
+  {
+    "id": 104000,
+    "name": "Katsushika Hokusai (Saber)",
+    "originalName": "Katsushika Hokusai (Saber)",
+    "ruby": "Katsushika Hokusai (Saber)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "katsushika hokusai (saber)",
+      "katsushika hokusai (saber)",
+      "katsushika hokusai (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 104100,
+    "name": "Astolfo (Saber)",
+    "originalName": "Astolfo (Saber)",
+    "ruby": "Astolfo (Saber)",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "astolfo (saber)",
+      "astolfo (saber)",
+      "astolfo (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 104200,
+    "name": "Dioscuri",
+    "originalName": "Dioscuri",
+    "ruby": "Dioscuri",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "dioscuri",
+      "dioscuri",
+      "dioscuri",
+      "saber"
+    ]
+  },
+  {
+    "id": 104300,
+    "name": "Roland",
+    "originalName": "Roland",
+    "ruby": "Roland",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "roland",
+      "roland",
+      "roland",
+      "saber"
+    ]
+  },
+  {
+    "id": 104400,
+    "name": "Saito Hajime",
+    "originalName": "Saito Hajime",
+    "ruby": "Saito Hajime",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "saito hajime",
+      "saito hajime",
+      "saito hajime",
+      "saber"
+    ]
+  },
+  {
+    "id": 104500,
+    "name": "Tomoe Gozen (Saber)",
+    "originalName": "Tomoe Gozen (Saber)",
+    "ruby": "Tomoe Gozen",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "tomoe gozen (saber)",
+      "tomoe gozen (saber)",
+      "tomoe gozen",
+      "saber"
+    ]
+  },
+  {
+    "id": 104600,
+    "name": "Ibuki-Douji",
+    "originalName": "Ibuki-Douji",
+    "ruby": "Ibuki-Douji",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "ibuki-douji",
+      "ibuki-douji",
+      "ibuki-douji",
+      "saber"
+    ]
+  },
+  {
+    "id": 104700,
+    "name": "Watanabe-no-Tsuna",
+    "originalName": "Watanabe-no-Tsuna",
+    "ruby": "Watanabe-no-Tsuna",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "watanabe-no-tsuna",
+      "watanabe-no-tsuna",
+      "watanabe-no-tsuna",
+      "saber"
+    ]
+  },
+  {
+    "id": 104800,
+    "name": "Karna (Santa)",
+    "originalName": "Karna (Santa)",
+    "ruby": "Karna (Santa)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "karna (santa)",
+      "karna (santa)",
+      "karna (santa)",
+      "saber"
+    ]
+  },
+  {
+    "id": 104900,
+    "name": "Senji Muramasa",
+    "originalName": "Senji Muramasa",
+    "ruby": "Senji Muramasa",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "senji muramasa",
+      "senji muramasa",
+      "senji muramasa",
+      "saber"
+    ]
+  },
+  {
+    "id": 105000,
+    "name": "Barghest",
+    "originalName": "Barghest",
+    "ruby": "Barghest",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "barghest",
+      "barghest",
+      "barghest",
+      "saber"
+    ]
+  },
+  {
+    "id": 105100,
+    "name": "Okita Souji Alter (Saber)",
+    "originalName": "Okita Souji Alter (Saber)",
+    "ruby": "Okita Souji Alter (Saber)",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "okita souji alter (saber)",
+      "okita souji alter (saber)",
+      "okita souji alter (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 105200,
+    "name": "Charlemagne",
+    "originalName": "Charlemagne",
+    "ruby": "Charlemagne",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "charlemagne",
+      "charlemagne",
+      "charlemagne",
+      "saber"
+    ]
+  },
+  {
+    "id": 105300,
+    "name": "Hai Bà Trưng",
+    "originalName": "Hai Bà Trưng",
+    "ruby": "Hai Bà Trưng",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "hai bà trưng",
+      "hai bà trưng",
+      "hai bà trưng",
+      "saber"
+    ]
+  },
+  {
+    "id": 105400,
+    "name": "Gareth (Saber)",
+    "originalName": "Gareth (Saber)",
+    "ruby": "Gareth (Saber)",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "gareth (saber)",
+      "gareth (saber)",
+      "gareth (saber)",
+      "saber"
+    ]
+  },
+  {
+    "id": 105500,
+    "name": "Yamanami Keisuke",
+    "originalName": "Yamanami Keisuke",
+    "ruby": "Yamanami Keisuke",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "yamanami keisuke",
+      "yamanami keisuke",
+      "yamanami keisuke",
+      "saber"
+    ]
+  },
+  {
+    "id": 105600,
+    "name": "Medusa",
+    "originalName": "Medusa",
+    "ruby": "Medusa",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "medusa",
+      "medusa",
+      "medusa",
+      "saber"
+    ]
+  },
+  {
+    "id": 105700,
+    "name": "Sétanta",
+    "originalName": "Sétanta",
+    "ruby": "Sétanta",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "sétanta",
+      "sétanta",
+      "sétanta",
+      "saber"
+    ]
+  },
+  {
+    "id": 105800,
+    "name": "Thēseus",
+    "originalName": "Thēseus",
+    "ruby": "Thēseus",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "thēseus",
+      "thēseus",
+      "thēseus",
+      "saber"
+    ]
+  },
+  {
+    "id": 105900,
+    "name": "Yamato Takeru",
+    "originalName": "Yamato Takeru",
+    "ruby": "Yamato Takeru",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "yamato takeru",
+      "yamato takeru",
+      "yamato takeru",
+      "saber"
+    ]
+  },
+  {
+    "id": 106000,
+    "name": "Miyamoto Iori",
+    "originalName": "Miyamoto Iori",
+    "ruby": "Miyamoto Iori",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "miyamoto iori",
+      "miyamoto iori",
+      "miyamoto iori",
+      "saber"
+    ]
+  },
+  {
+    "id": 200100,
+    "name": "Emiya",
+    "originalName": "Emiya",
+    "ruby": "Emiya",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "emiya",
+      "emiya",
+      "emiya",
+      "archer"
+    ]
+  },
+  {
+    "id": 200200,
+    "name": "Gilgamesh",
+    "originalName": "Gilgamesh",
+    "ruby": "Gilgamesh",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "gilgamesh",
+      "gilgamesh",
+      "gilgamesh",
+      "archer"
+    ]
+  },
+  {
+    "id": 200300,
+    "name": "Robin Hood",
+    "originalName": "Robin Hood",
+    "ruby": "Robin Hood",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "robin hood",
+      "robin hood",
+      "robin hood",
+      "archer"
+    ]
+  },
+  {
+    "id": 200500,
+    "name": "Atalante",
+    "originalName": "Atalante",
+    "ruby": "Atalante",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "atalante",
+      "atalante",
+      "atalante",
+      "archer"
+    ]
+  },
+  {
+    "id": 200600,
+    "name": "David",
+    "originalName": "David",
+    "ruby": "David",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "david",
+      "david",
+      "david",
+      "archer"
+    ]
+  },
+  {
+    "id": 200800,
+    "name": "Tristan",
+    "originalName": "Tristan",
+    "ruby": "Tristan",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "tristan",
+      "tristan",
+      "tristan",
+      "archer"
+    ]
+  },
+  {
+    "id": 200900,
+    "name": "Orion",
+    "originalName": "Orion",
+    "ruby": "Orion",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "orion",
+      "orion",
+      "orion",
+      "archer"
+    ]
+  },
+  {
+    "id": 201000,
+    "name": "Billy the Kid",
+    "originalName": "Billy the Kid",
+    "ruby": "Billy the Kid",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "billy the kid",
+      "billy the kid",
+      "billy the kid",
+      "archer"
+    ]
+  },
+  {
+    "id": 201100,
+    "name": "Nikola Tesla",
+    "originalName": "Nikola Tesla",
+    "ruby": "Nikola Tesla",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "nikola tesla",
+      "nikola tesla",
+      "nikola tesla",
+      "archer"
+    ]
+  },
+  {
+    "id": 201200,
+    "name": "Euryale",
+    "originalName": "Euryale",
+    "ruby": "Euryale",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "euryale",
+      "euryale",
+      "euryale",
+      "archer"
+    ]
+  },
+  {
+    "id": 201300,
+    "name": "Arash",
+    "originalName": "Arash",
+    "ruby": "Arash",
+    "className": "archer",
+    "rarity": 1,
+    "searchTerms": [
+      "arash",
+      "arash",
+      "arash",
+      "archer"
+    ]
+  },
+  {
+    "id": 201400,
+    "name": "Tawara Touta",
+    "originalName": "Tawara Touta",
+    "ruby": "Tawara Touta",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "tawara touta",
+      "tawara touta",
+      "tawara touta",
+      "archer"
+    ]
+  },
+  {
+    "id": 201500,
+    "name": "Arjuna",
+    "originalName": "Arjuna",
+    "ruby": "Arjuna",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "arjuna",
+      "arjuna",
+      "arjuna",
+      "archer"
+    ]
+  },
+  {
+    "id": 201600,
+    "name": "Emiya (Alter)",
+    "originalName": "Emiya (Alter)",
+    "ruby": "Emiya (Alter)",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "emiya (alter)",
+      "emiya (alter)",
+      "emiya (alter)",
+      "archer"
+    ]
+  },
+  {
+    "id": 201800,
+    "name": "Gilgamesh (Child)",
+    "originalName": "Gilgamesh (Child)",
+    "ruby": "Gilgamesh (Child)",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "gilgamesh (child)",
+      "gilgamesh (child)",
+      "gilgamesh (child)",
+      "archer"
+    ]
+  },
+  {
+    "id": 202000,
+    "name": "Ishtar",
+    "originalName": "Ishtar",
+    "ruby": "Ishtar",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ishtar",
+      "ishtar",
+      "ishtar",
+      "archer"
+    ]
+  },
+  {
+    "id": 202100,
+    "name": "Tomoe Gozen",
+    "originalName": "Tomoe Gozen",
+    "ruby": "Tomoe Gozen",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "tomoe gozen",
+      "tomoe gozen",
+      "tomoe gozen",
+      "archer"
+    ]
+  },
+  {
+    "id": 202200,
+    "name": "Attila the San(ta)",
+    "originalName": "Attila the San(ta)",
+    "ruby": "Attila The San(ta)",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "attila the san(ta)",
+      "attila the san(ta)",
+      "attila the san(ta)",
+      "archer"
+    ]
+  },
+  {
+    "id": 202300,
+    "name": "James Moriarty",
+    "originalName": "James Moriarty",
+    "ruby": "James Moriarty",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "james moriarty",
+      "james moriarty",
+      "james moriarty",
+      "archer"
+    ]
+  },
+  {
+    "id": 202400,
+    "name": "Oda Nobunaga",
+    "originalName": "Oda Nobunaga",
+    "ruby": "Oda Nobunaga",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "oda nobunaga",
+      "oda nobunaga",
+      "oda nobunaga",
+      "archer"
+    ]
+  },
+  {
+    "id": 202500,
+    "name": "Anne Bonny & Mary Read (Archer)",
+    "originalName": "Anne Bonny & Mary Read (Archer)",
+    "ruby": "Anne Bonny & Mary Read (Archer)",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "anne bonny & mary read (archer)",
+      "anne bonny & mary read (archer)",
+      "anne bonny & mary read (archer)",
+      "archer"
+    ]
+  },
+  {
+    "id": 202600,
+    "name": "Altria Pendragon (Archer)",
+    "originalName": "Altria Pendragon (Archer)",
+    "ruby": "Altria Pendragon (Archer)",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "altria pendragon (archer)",
+      "altria pendragon (archer)",
+      "altria pendragon (archer)",
+      "archer"
+    ]
+  },
+  {
+    "id": 202700,
+    "name": "Chloe von Einzbern",
+    "originalName": "Chloe von Einzbern",
+    "ruby": "Chloe von Einzbern",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "chloe von einzbern",
+      "chloe von einzbern",
+      "chloe von einzbern",
+      "archer"
+    ]
+  },
+  {
+    "id": 202800,
+    "name": "Helena Blavatsky (Archer)",
+    "originalName": "Helena Blavatsky (Archer)",
+    "ruby": "Helena Blavatsky (Archer)",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "helena blavatsky (archer)",
+      "helena blavatsky (archer)",
+      "helena blavatsky (archer)",
+      "archer"
+    ]
+  },
+  {
+    "id": 202900,
+    "name": "Asagami Fujino",
+    "originalName": "Asagami Fujino",
+    "ruby": "Asagami Fujino",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "asagami fujino",
+      "asagami fujino",
+      "asagami fujino",
+      "archer"
+    ]
+  },
+  {
+    "id": 203000,
+    "name": "Chiron",
+    "originalName": "Chiron",
+    "ruby": "Chiron",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "chiron",
+      "chiron",
+      "chiron",
+      "archer"
+    ]
+  },
+  {
+    "id": 203100,
+    "name": "Napoleon",
+    "originalName": "Napoleon",
+    "ruby": "Napoleon",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "napoleon",
+      "napoleon",
+      "napoleon",
+      "archer"
+    ]
+  },
+  {
+    "id": 203200,
+    "name": "Jeanne d'Arc (Archer)",
+    "originalName": "Jeanne d'Arc (Archer)",
+    "ruby": "Jeanne d'Arc (Archer)",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "jeanne d'arc (archer)",
+      "jeanne d'arc (archer)",
+      "jeanne d'arc (archer)",
+      "archer"
+    ]
+  },
+  {
+    "id": 203300,
+    "name": "Aśvatthāman",
+    "originalName": "Aśvatthāman",
+    "ruby": "Aśvatthāman",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "aśvatthāman",
+      "aśvatthāman",
+      "aśvatthāman",
+      "archer"
+    ]
+  },
+  {
+    "id": 203400,
+    "name": "William Tell",
+    "originalName": "William Tell",
+    "ruby": "William Tell",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "william tell",
+      "william tell",
+      "william tell",
+      "archer"
+    ]
+  },
+  {
+    "id": 203500,
+    "name": "Paris",
+    "originalName": "Paris",
+    "ruby": "Paris",
+    "className": "archer",
+    "rarity": 2,
+    "searchTerms": [
+      "paris",
+      "paris",
+      "paris",
+      "archer"
+    ]
+  },
+  {
+    "id": 203600,
+    "name": "Osakabehime (Archer)",
+    "originalName": "Osakabehime (Archer)",
+    "ruby": "Osakabehime (Archer)",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "osakabehime (archer)",
+      "osakabehime (archer)",
+      "osakabehime (archer)",
+      "archer"
+    ]
+  },
+  {
+    "id": 203700,
+    "name": "Calamity Jane",
+    "originalName": "Calamity Jane",
+    "ruby": "Calamity Jane",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "calamity jane",
+      "calamity jane",
+      "calamity jane",
+      "archer"
+    ]
+  },
+  {
+    "id": 203800,
+    "name": "Super Orion",
+    "originalName": "Super Orion",
+    "ruby": "Super Orion",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "super orion",
+      "super orion",
+      "super orion",
+      "archer"
+    ]
+  },
+  {
+    "id": 203900,
+    "name": "Florence Nightingale (Santa)",
+    "originalName": "Florence Nightingale (Santa)",
+    "ruby": "Florence Nightingale (Santa)",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "florence nightingale (santa)",
+      "florence nightingale (santa)",
+      "florence nightingale (santa)",
+      "archer"
+    ]
+  },
+  {
+    "id": 204000,
+    "name": "Sei Shounagon",
+    "originalName": "Sei Shounagon",
+    "ruby": "Sei Shounagon",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "sei shounagon",
+      "sei shounagon",
+      "sei shounagon",
+      "archer"
+    ]
+  },
+  {
+    "id": 204100,
+    "name": "Oda Nobukatsu",
+    "originalName": "Oda Nobukatsu",
+    "ruby": "Oda Nobukatsu",
+    "className": "archer",
+    "rarity": 1,
+    "searchTerms": [
+      "oda nobukatsu",
+      "oda nobukatsu",
+      "oda nobukatsu",
+      "archer"
+    ]
+  },
+  {
+    "id": 204200,
+    "name": "Illyasviel von Einzbern (Archer)",
+    "originalName": "Illyasviel von Einzbern (Archer)",
+    "ruby": "Illyasviel",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "illyasviel von einzbern (archer)",
+      "illyasviel von einzbern (archer)",
+      "illyasviel",
+      "archer"
+    ]
+  },
+  {
+    "id": 204300,
+    "name": "Baobhan Sith",
+    "originalName": "Baobhan Sith",
+    "ruby": "Baobhan Sith",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "baobhan sith",
+      "baobhan sith",
+      "baobhan sith",
+      "archer"
+    ]
+  },
+  {
+    "id": 204400,
+    "name": "Anastasia & Viy",
+    "originalName": "Anastasia & Viy",
+    "ruby": "Anastasia & Viy",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "anastasia & viy",
+      "anastasia & viy",
+      "anastasia & viy",
+      "archer"
+    ]
+  },
+  {
+    "id": 204500,
+    "name": "Zenobia",
+    "originalName": "Zenobia",
+    "ruby": "Zenobia",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "zenobia",
+      "zenobia",
+      "zenobia",
+      "archer"
+    ]
+  },
+  {
+    "id": 204600,
+    "name": "Minamoto-no-Tametomo",
+    "originalName": "Minamoto-no-Tametomo",
+    "ruby": "Minamoto-no-Tametomo",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "minamoto-no-tametomo",
+      "minamoto-no-tametomo",
+      "minamoto-no-tametomo",
+      "archer"
+    ]
+  },
+  {
+    "id": 204700,
+    "name": "Takasugi Shinsaku",
+    "originalName": "Takasugi Shinsaku",
+    "ruby": "Takasugi Shinsaku",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "takasugi shinsaku",
+      "takasugi shinsaku",
+      "takasugi shinsaku",
+      "archer"
+    ]
+  },
+  {
+    "id": 204800,
+    "name": "Durgā",
+    "originalName": "Durgā",
+    "ruby": "Durgā",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "durgā",
+      "durgā",
+      "durgā",
+      "archer"
+    ]
+  },
+  {
+    "id": 204900,
+    "name": "UDK-Barghest",
+    "originalName": "UDK-Barghest",
+    "ruby": "Barghest",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "udk-barghest",
+      "udk-barghest",
+      "barghest",
+      "archer"
+    ]
+  },
+  {
+    "id": 205000,
+    "name": "Ptolemaîos",
+    "originalName": "Ptolemaîos",
+    "ruby": "Ptolemaîos",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "ptolemaîos",
+      "ptolemaîos",
+      "ptolemaîos",
+      "archer"
+    ]
+  },
+  {
+    "id": 205100,
+    "name": "Sugitani Zenjubou",
+    "originalName": "Sugitani Zenjubou",
+    "ruby": "Sugitani Zenjubou",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "sugitani zenjubou",
+      "sugitani zenjubou",
+      "sugitani zenjubou",
+      "archer"
+    ]
+  },
+  {
+    "id": 205200,
+    "name": "Saika Magoichi",
+    "originalName": "Saika Magoichi",
+    "ruby": "Saika Magoichi",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "saika magoichi",
+      "saika magoichi",
+      "saika magoichi",
+      "archer"
+    ]
+  },
+  {
+    "id": 300100,
+    "name": "Cú Chulainn",
+    "originalName": "Cú Chulainn",
+    "ruby": "Cú Chulainn",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "cú chulainn",
+      "cú chulainn",
+      "cú chulainn",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300200,
+    "name": "Diarmuid Ua Duibhne",
+    "originalName": "Diarmuid Ua Duibhne",
+    "ruby": "Diarmuid Ua Duibhne",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "diarmuid ua duibhne",
+      "diarmuid ua duibhne",
+      "diarmuid ua duibhne",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300300,
+    "name": "Vlad III (EXTRA)",
+    "originalName": "Vlad III (EXTRA)",
+    "ruby": "Vlad III (EXTRA)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "vlad iii (extra)",
+      "vlad iii (extra)",
+      "vlad iii (extra)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300400,
+    "name": "Karna",
+    "originalName": "Karna",
+    "ruby": "Karna",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "karna",
+      "karna",
+      "karna",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300500,
+    "name": "Elisabeth Báthory",
+    "originalName": "Elisabeth Báthory",
+    "ruby": "Elisabeth Báthory",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "elisabeth báthory",
+      "elisabeth báthory",
+      "elisabeth báthory",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300600,
+    "name": "Musashibou Benkei",
+    "originalName": "Musashibou Benkei",
+    "ruby": "Musashibou Benkei",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "musashibou benkei",
+      "musashibou benkei",
+      "musashibou benkei",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300700,
+    "name": "Cú Chulainn (Prototype)",
+    "originalName": "Cú Chulainn (Prototype)",
+    "ruby": "Cú Chulainn (Prototype)",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "cú chulainn (prototype)",
+      "cú chulainn (prototype)",
+      "cú chulainn (prototype)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300800,
+    "name": "Enkidu",
+    "originalName": "Enkidu",
+    "ruby": "Enkidu",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "enkidu",
+      "enkidu",
+      "enkidu",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300900,
+    "name": "Leonidas I",
+    "originalName": "Leonidas I",
+    "ruby": "Leonidas I",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "leonidas i",
+      "leonidas i",
+      "leonidas i",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301000,
+    "name": "Romulus",
+    "originalName": "Romulus",
+    "ruby": "Romulus",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "romulus",
+      "romulus",
+      "romulus",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301100,
+    "name": "Fionn mac Cumhaill",
+    "originalName": "Fionn mac Cumhaill",
+    "ruby": "Fionn mac Cumhaill",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "fionn mac cumhaill",
+      "fionn mac cumhaill",
+      "fionn mac cumhaill",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301200,
+    "name": "Brynhild",
+    "originalName": "Brynhild",
+    "ruby": "Brynhild",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "brynhild",
+      "brynhild",
+      "brynhild",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301300,
+    "name": "Scáthach",
+    "originalName": "Scáthach",
+    "ruby": "Scáthach",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "scáthach",
+      "scáthach",
+      "scáthach",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301400,
+    "name": "Houzouin Inshun",
+    "originalName": "Houzouin Inshun",
+    "ruby": "Houzouin Inshun",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "houzouin inshun",
+      "houzouin inshun",
+      "houzouin inshun",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301600,
+    "name": "Hektor",
+    "originalName": "Hektor",
+    "ruby": "Hektor",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "hektor",
+      "hektor",
+      "hektor",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301700,
+    "name": "Li Shuwen",
+    "originalName": "Li Shuwen",
+    "ruby": "Li Shuwen",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "li shuwen",
+      "li shuwen",
+      "li shuwen",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301900,
+    "name": "Altria Pendragon (Alter)",
+    "originalName": "Altria Pendragon (Alter)",
+    "ruby": "Altria Pendragon (Alter)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "altria pendragon (alter)",
+      "altria pendragon (alter)",
+      "altria pendragon (alter)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302000,
+    "name": "Altria Pendragon (Lancer)",
+    "originalName": "Altria Pendragon (Lancer)",
+    "ruby": "Altria Pendragon (Lancer)",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "altria pendragon (lancer)",
+      "altria pendragon (lancer)",
+      "altria pendragon (lancer)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302400,
+    "name": "Tamamo-no-Mae (Lancer)",
+    "originalName": "Tamamo-no-Mae (Lancer)",
+    "ruby": "Tamamo-no-Mae (Lancer)",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "tamamo-no-mae (lancer)",
+      "tamamo-no-mae (lancer)",
+      "tamamo-no-mae (lancer)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302500,
+    "name": "Kiyohime (Lancer)",
+    "originalName": "Kiyohime (Lancer)",
+    "ruby": "Kiyohime (Lancer)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "kiyohime (lancer)",
+      "kiyohime (lancer)",
+      "kiyohime (lancer)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302600,
+    "name": "Jeanne d'Arc Alter Santa Lily",
+    "originalName": "Jeanne d'Arc Alter Santa Lily",
+    "ruby": "Jeanne d'Arc Alter Santa Lily",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "jeanne d'arc alter santa lily",
+      "jeanne d'arc alter santa lily",
+      "jeanne d'arc alter santa lily",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302700,
+    "name": "Medusa",
+    "originalName": "Medusa",
+    "ruby": "Medusa",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "medusa",
+      "medusa",
+      "medusa",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302800,
+    "name": "Jaguar Warrior",
+    "originalName": "Jaguar Warrior",
+    "ruby": "Jaguar Warrior",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "jaguar warrior",
+      "jaguar warrior",
+      "jaguar warrior",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302900,
+    "name": "Minamoto-no-Raikou (Lancer)",
+    "originalName": "Minamoto-no-Raikou (Lancer)",
+    "ruby": "Minamoto-no-Raikou (Lancer)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "minamoto-no-raikou (lancer)",
+      "minamoto-no-raikou (lancer)",
+      "minamoto-no-raikou (lancer)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303000,
+    "name": "Pārvatī",
+    "originalName": "Pārvatī",
+    "ruby": "Pārvatī",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "pārvatī",
+      "pārvatī",
+      "pārvatī",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303100,
+    "name": "Nezha",
+    "originalName": "Nezha",
+    "ruby": "Nezha",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "nezha",
+      "nezha",
+      "nezha",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303200,
+    "name": "Ereshkigal",
+    "originalName": "Ereshkigal",
+    "ruby": "Ereshkigal",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ereshkigal",
+      "ereshkigal",
+      "ereshkigal",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303300,
+    "name": "Valkyrie",
+    "originalName": "Valkyrie",
+    "ruby": "Valkyrie",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "valkyrie",
+      "valkyrie",
+      "valkyrie",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303400,
+    "name": "Ibaraki-Douji (Lancer)",
+    "originalName": "Ibaraki-Douji (Lancer)",
+    "ruby": "Ibaraki-Douji (Lancer)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "ibaraki-douji (lancer)",
+      "ibaraki-douji (lancer)",
+      "ibaraki-douji (lancer)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303500,
+    "name": "Qin Liangyu",
+    "originalName": "Qin Liangyu",
+    "ruby": "Qin Liangyu",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "qin liangyu",
+      "qin liangyu",
+      "qin liangyu",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303600,
+    "name": "Bradamante",
+    "originalName": "Bradamante",
+    "ruby": "Bradamante",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "bradamante",
+      "bradamante",
+      "bradamante",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303800,
+    "name": "Nagao Kagetora",
+    "originalName": "Nagao Kagetora",
+    "ruby": "Nagao Kagetora",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "nagao kagetora",
+      "nagao kagetora",
+      "nagao kagetora",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303900,
+    "name": "Gareth",
+    "originalName": "Gareth",
+    "ruby": "Gareth",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "gareth",
+      "gareth",
+      "gareth",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304000,
+    "name": "Mysterious Alter Ego Λ",
+    "originalName": "Mysterious Alter Ego Λ",
+    "ruby": "Mysterious Alter Ego Λ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "mysterious alter ego λ",
+      "mysterious alter ego λ",
+      "mysterious alter ego λ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304100,
+    "name": "Caenis",
+    "originalName": "Caenis",
+    "ruby": "Caenis",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "caenis",
+      "caenis",
+      "caenis",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304200,
+    "name": "Romulus=Quirinus",
+    "originalName": "Romulus=Quirinus",
+    "ruby": "Romulus=Quirinus",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "romulus=quirinus",
+      "romulus=quirinus",
+      "romulus=quirinus",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304300,
+    "name": "Utsumi Erice",
+    "originalName": "Utsumi Erice",
+    "ruby": "Utsumi Erice",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "utsumi erice",
+      "utsumi erice",
+      "utsumi erice",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304400,
+    "name": "Yu Mei-ren (Lancer)",
+    "originalName": "Yu Mei-ren (Lancer)",
+    "ruby": "Yu Mei-ren",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "yu mei-ren (lancer)",
+      "yu mei-ren (lancer)",
+      "yu mei-ren",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304600,
+    "name": "Vritra",
+    "originalName": "Vritra",
+    "ruby": "Vritra",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "vritra",
+      "vritra",
+      "vritra",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304700,
+    "name": "Percival",
+    "originalName": "Percival",
+    "ruby": "Percival",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "percival",
+      "percival",
+      "percival",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304800,
+    "name": "Mélusine",
+    "originalName": "Mélusine",
+    "ruby": "Mélusine",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "mélusine",
+      "mélusine",
+      "mélusine",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304900,
+    "name": "Mary Anning",
+    "originalName": "Mary Anning",
+    "ruby": "Mary Anning",
+    "className": "lancer",
+    "rarity": 1,
+    "searchTerms": [
+      "mary anning",
+      "mary anning",
+      "mary anning",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305000,
+    "name": "Sakamoto Ryouma (Lancer)",
+    "originalName": "Sakamoto Ryouma (Lancer)",
+    "ruby": "Sakamoto Ryouma",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "sakamoto ryouma (lancer)",
+      "sakamoto ryouma (lancer)",
+      "sakamoto ryouma",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305100,
+    "name": "Don Quixote",
+    "originalName": "Don Quixote",
+    "ruby": "Don Quixote",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "don quixote",
+      "don quixote",
+      "don quixote",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305300,
+    "name": "Britomart",
+    "originalName": "Britomart",
+    "ruby": "Britomart",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "britomart",
+      "britomart",
+      "britomart",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305400,
+    "name": "Bhīma",
+    "originalName": "Bhīma",
+    "ruby": "Bhīma",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "bhīma",
+      "bhīma",
+      "bhīma",
+      "lancer"
+    ]
+  },
+  {
+    "id": 400100,
+    "name": "Medusa",
+    "originalName": "Medusa",
+    "ruby": "Medusa",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "medusa",
+      "medusa",
+      "medusa",
+      "rider"
+    ]
+  },
+  {
+    "id": 400200,
+    "name": "Iskandar",
+    "originalName": "Iskandar",
+    "ruby": "Iskandar",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "iskandar",
+      "iskandar",
+      "iskandar",
+      "rider"
+    ]
+  },
+  {
+    "id": 400300,
+    "name": "Francis Drake",
+    "originalName": "Francis Drake",
+    "ruby": "Francis Drake",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "francis drake",
+      "francis drake",
+      "francis drake",
+      "rider"
+    ]
+  },
+  {
+    "id": 400400,
+    "name": "Astolfo",
+    "originalName": "Astolfo",
+    "ruby": "Astolfo",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "astolfo",
+      "astolfo",
+      "astolfo",
+      "rider"
+    ]
+  },
+  {
+    "id": 400600,
+    "name": "Georgios",
+    "originalName": "Georgios",
+    "ruby": "Georgios",
+    "className": "rider",
+    "rarity": 2,
+    "searchTerms": [
+      "georgios",
+      "georgios",
+      "georgios",
+      "rider"
+    ]
+  },
+  {
+    "id": 400800,
+    "name": "Edward Teach",
+    "originalName": "Edward Teach",
+    "ruby": "Edward Teach",
+    "className": "rider",
+    "rarity": 2,
+    "searchTerms": [
+      "edward teach",
+      "edward teach",
+      "edward teach",
+      "rider"
+    ]
+  },
+  {
+    "id": 400900,
+    "name": "Anne Bonny & Mary Read",
+    "originalName": "Anne Bonny & Mary Read",
+    "ruby": "Anne Bonny & Mary Read",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "anne bonny & mary read",
+      "anne bonny & mary read",
+      "anne bonny & mary read",
+      "rider"
+    ]
+  },
+  {
+    "id": 401100,
+    "name": "Boudica",
+    "originalName": "Boudica",
+    "ruby": "Boudica",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "boudica",
+      "boudica",
+      "boudica",
+      "rider"
+    ]
+  },
+  {
+    "id": 401200,
+    "name": "Ozymandias",
+    "originalName": "Ozymandias",
+    "ruby": "Ozymandias",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "ozymandias",
+      "ozymandias",
+      "ozymandias",
+      "rider"
+    ]
+  },
+  {
+    "id": 401300,
+    "name": "Queen Medb",
+    "originalName": "Queen Medb",
+    "ruby": "Queen Medb",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "queen medb",
+      "queen medb",
+      "queen medb",
+      "rider"
+    ]
+  },
+  {
+    "id": 401400,
+    "name": "Ushiwakamaru",
+    "originalName": "Ushiwakamaru",
+    "ruby": "Ushiwakamaru",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "ushiwakamaru",
+      "ushiwakamaru",
+      "ushiwakamaru",
+      "rider"
+    ]
+  },
+  {
+    "id": 401500,
+    "name": "Alexander",
+    "originalName": "Alexander",
+    "ruby": "Alexander",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "alexander",
+      "alexander",
+      "alexander",
+      "rider"
+    ]
+  },
+  {
+    "id": 401700,
+    "name": "Marie Antoinette",
+    "originalName": "Marie Antoinette",
+    "ruby": "Marie Antoinette",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "marie antoinette",
+      "marie antoinette",
+      "marie antoinette",
+      "rider"
+    ]
+  },
+  {
+    "id": 401800,
+    "name": "Quetzalcoatl",
+    "originalName": "Quetzalcoatl",
+    "ruby": "Quetzalcoatl",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "quetzalcoatl",
+      "quetzalcoatl",
+      "quetzalcoatl",
+      "rider"
+    ]
+  },
+  {
+    "id": 401900,
+    "name": "Martha",
+    "originalName": "Martha",
+    "ruby": "Martha",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "martha",
+      "martha",
+      "martha",
+      "rider"
+    ]
+  },
+  {
+    "id": 402200,
+    "name": "Altria Pendragon (Santa Alter)",
+    "originalName": "Altria Pendragon (Santa Alter)",
+    "ruby": "Altria Pendragon (Santa Alter)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "altria pendragon (santa alter)",
+      "altria pendragon (santa alter)",
+      "altria pendragon (santa alter)",
+      "rider"
+    ]
+  },
+  {
+    "id": 402300,
+    "name": "Sakata Kintoki (Rider)",
+    "originalName": "Sakata Kintoki (Rider)",
+    "ruby": "Sakata Kintoki (Rider)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "sakata kintoki (rider)",
+      "sakata kintoki (rider)",
+      "sakata kintoki (rider)",
+      "rider"
+    ]
+  },
+  {
+    "id": 402400,
+    "name": "Mordred (Rider)",
+    "originalName": "Mordred (Rider)",
+    "ruby": "Mordred",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "mordred (rider)",
+      "mordred (rider)",
+      "mordred",
+      "rider"
+    ]
+  },
+  {
+    "id": 402500,
+    "name": "Christopher Columbus",
+    "originalName": "Christopher Columbus",
+    "ruby": "Christopher Columbus",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "christopher columbus",
+      "christopher columbus",
+      "christopher columbus",
+      "rider"
+    ]
+  },
+  {
+    "id": 402600,
+    "name": "Ishtar (Rider)",
+    "originalName": "Ishtar (Rider)",
+    "ruby": "Ishtar (Rider)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "ishtar (rider)",
+      "ishtar (rider)",
+      "ishtar (rider)",
+      "rider"
+    ]
+  },
+  {
+    "id": 402700,
+    "name": "Altria Pendragon Alter (Rider)",
+    "originalName": "Altria Pendragon Alter (Rider)",
+    "ruby": "Altria Pendragon Alter (Rider)",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "altria pendragon alter (rider)",
+      "altria pendragon alter (rider)",
+      "altria pendragon alter (rider)",
+      "rider"
+    ]
+  },
+  {
+    "id": 402800,
+    "name": "Ivan the Terrible",
+    "originalName": "Ivan the Terrible",
+    "ruby": "Ivan the Terrible",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "ivan the terrible",
+      "ivan the terrible",
+      "ivan the terrible",
+      "rider"
+    ]
+  },
+  {
+    "id": 402900,
+    "name": "Achilles",
+    "originalName": "Achilles",
+    "ruby": "Achilles",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "achilles",
+      "achilles",
+      "achilles",
+      "rider"
+    ]
+  },
+  {
+    "id": 403000,
+    "name": "Sakamoto Ryouma",
+    "originalName": "Sakamoto Ryouma",
+    "ruby": "Sakamoto Ryouma",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "sakamoto ryouma",
+      "sakamoto ryouma",
+      "sakamoto ryouma",
+      "rider"
+    ]
+  },
+  {
+    "id": 403100,
+    "name": "Red Hare",
+    "originalName": "Red Hare",
+    "ruby": "Red Hare",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "red hare",
+      "red hare",
+      "red hare",
+      "rider"
+    ]
+  },
+  {
+    "id": 403200,
+    "name": "Sima Yi (Reines)",
+    "originalName": "Sima Yi (Reines)",
+    "ruby": "Sima Yi",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "sima yi (reines)",
+      "sima yi (reines)",
+      "sima yi",
+      "rider"
+    ]
+  },
+  {
+    "id": 403400,
+    "name": "Bartholomew Roberts",
+    "originalName": "Bartholomew Roberts",
+    "ruby": "Bartholomew Roberts",
+    "className": "rider",
+    "rarity": 1,
+    "searchTerms": [
+      "bartholomew roberts",
+      "bartholomew roberts",
+      "bartholomew roberts",
+      "rider"
+    ]
+  },
+  {
+    "id": 403500,
+    "name": "Leonardo da Vinci",
+    "originalName": "Leonardo da Vinci",
+    "ruby": "Leonardo da Vinci",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "leonardo da vinci",
+      "leonardo da vinci",
+      "leonardo da vinci",
+      "rider"
+    ]
+  },
+  {
+    "id": 403600,
+    "name": "Carmilla (Rider)",
+    "originalName": "Carmilla (Rider)",
+    "ruby": "Carmilla (Rider)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "carmilla (rider)",
+      "carmilla (rider)",
+      "carmilla (rider)",
+      "rider"
+    ]
+  },
+  {
+    "id": 403700,
+    "name": "Nemo",
+    "originalName": "Nemo",
+    "ruby": "Nemo",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "nemo",
+      "nemo",
+      "nemo",
+      "rider"
+    ]
+  },
+  {
+    "id": 403800,
+    "name": "Odysseus",
+    "originalName": "Odysseus",
+    "ruby": "Odysseus",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "odysseus",
+      "odysseus",
+      "odysseus",
+      "rider"
+    ]
+  },
+  {
+    "id": 403900,
+    "name": "Mandricardo",
+    "originalName": "Mandricardo",
+    "ruby": "Mandricardo",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "mandricardo",
+      "mandricardo",
+      "mandricardo",
+      "rider"
+    ]
+  },
+  {
+    "id": 404000,
+    "name": "Europa",
+    "originalName": "Europa",
+    "ruby": "Europa",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "europa",
+      "europa",
+      "europa",
+      "rider"
+    ]
+  },
+  {
+    "id": 404100,
+    "name": "Murasaki Shikibu (Rider)",
+    "originalName": "Murasaki Shikibu (Rider)",
+    "ruby": "Murasaki Shikibu",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "murasaki shikibu (rider)",
+      "murasaki shikibu (rider)",
+      "murasaki shikibu",
+      "rider"
+    ]
+  },
+  {
+    "id": 404200,
+    "name": "Habetrot",
+    "originalName": "Habetrot",
+    "ruby": "Habetrot",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "habetrot",
+      "habetrot",
+      "habetrot",
+      "rider"
+    ]
+  },
+  {
+    "id": 404300,
+    "name": "Taigong Wang",
+    "originalName": "Taigong Wang",
+    "ruby": "Taigong Wang",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "taigong wang",
+      "taigong wang",
+      "taigong wang",
+      "rider"
+    ]
+  },
+  {
+    "id": 404400,
+    "name": "Dobrynya Nikitich",
+    "originalName": "Dobrynya Nikitich",
+    "ruby": "Dobrynya Nikitich",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "dobrynya nikitich",
+      "dobrynya nikitich",
+      "dobrynya nikitich",
+      "rider"
+    ]
+  },
+  {
+    "id": 404500,
+    "name": "Caenis (Rider)",
+    "originalName": "Caenis (Rider)",
+    "ruby": "Caenis (Rider)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "caenis (rider)",
+      "caenis (rider)",
+      "caenis (rider)",
+      "rider"
+    ]
+  },
+  {
+    "id": 404600,
+    "name": "Elisabeth Báthory (Cinderella)",
+    "originalName": "Elisabeth Báthory (Cinderella)",
+    "ruby": "Elisabeth Báthory (Cinderella)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "elisabeth báthory (cinderella)",
+      "elisabeth báthory (cinderella)",
+      "elisabeth báthory (cinderella)",
+      "rider"
+    ]
+  },
+  {
+    "id": 404700,
+    "name": "Kōnstantînos XI",
+    "originalName": "Kōnstantînos XI",
+    "ruby": "Kōnstantînos XI",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "kōnstantînos xi",
+      "kōnstantînos xi",
+      "kōnstantînos xi",
+      "rider"
+    ]
+  },
+  {
+    "id": 404800,
+    "name": "Kyokutei Bakin",
+    "originalName": "Kyokutei Bakin",
+    "ruby": "Kyokutei Bakin",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "kyokutei bakin",
+      "kyokutei bakin",
+      "kyokutei bakin",
+      "rider"
+    ]
+  },
+  {
+    "id": 404900,
+    "name": "Huang Feihu",
+    "originalName": "Huang Feihu",
+    "ruby": "Huang Feihu",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "huang feihu",
+      "huang feihu",
+      "huang feihu",
+      "rider"
+    ]
+  },
+  {
+    "id": 405000,
+    "name": "Suzuka Gozen (Vacay)",
+    "originalName": "Suzuka Gozen (Vacay)",
+    "ruby": "Suzuka Gozen Vacay",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "suzuka gozen (vacay)",
+      "suzuka gozen (vacay)",
+      "suzuka gozen vacay",
+      "rider"
+    ]
+  },
+  {
+    "id": 405200,
+    "name": "Takeda Harunobu",
+    "originalName": "Takeda Harunobu",
+    "ruby": "Takeda Harunobu",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "takeda harunobu",
+      "takeda harunobu",
+      "takeda harunobu",
+      "rider"
+    ]
+  },
+  {
+    "id": 405300,
+    "name": "Nemo (Santa)",
+    "originalName": "Nemo (Santa)",
+    "ruby": "Nemo (Santa)",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "nemo (santa)",
+      "nemo (santa)",
+      "nemo (santa)",
+      "rider"
+    ]
+  },
+  {
+    "id": 500100,
+    "name": "Medea",
+    "originalName": "Medea",
+    "ruby": "Medea",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "medea",
+      "medea",
+      "medea",
+      "caster"
+    ]
+  },
+  {
+    "id": 500200,
+    "name": "Gilles de Rais",
+    "originalName": "Gilles de Rais",
+    "ruby": "Gilles de Rais",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "gilles de rais",
+      "gilles de rais",
+      "gilles de rais",
+      "caster"
+    ]
+  },
+  {
+    "id": 500300,
+    "name": "Tamamo-no-Mae",
+    "originalName": "Tamamo-no-Mae",
+    "ruby": "Tamamo-no-Mae",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "tamamo-no-mae",
+      "tamamo-no-mae",
+      "tamamo-no-mae",
+      "caster"
+    ]
+  },
+  {
+    "id": 500400,
+    "name": "Nursery Rhyme",
+    "originalName": "Nursery Rhyme",
+    "ruby": "Nursery Rhyme",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "nursery rhyme",
+      "nursery rhyme",
+      "nursery rhyme",
+      "caster"
+    ]
+  },
+  {
+    "id": 500500,
+    "name": "Hans Christian Andersen",
+    "originalName": "Hans Christian Andersen",
+    "ruby": "Hans Christian Andersen",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "hans christian andersen",
+      "hans christian andersen",
+      "hans christian andersen",
+      "caster"
+    ]
+  },
+  {
+    "id": 500700,
+    "name": "William Shakespeare",
+    "originalName": "William Shakespeare",
+    "ruby": "William Shakespeare",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "william shakespeare",
+      "william shakespeare",
+      "william shakespeare",
+      "caster"
+    ]
+  },
+  {
+    "id": 500800,
+    "name": "Merlin",
+    "originalName": "Merlin",
+    "ruby": "Merlin",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "merlin",
+      "merlin",
+      "merlin",
+      "caster"
+    ]
+  },
+  {
+    "id": 500900,
+    "name": "Leonardo da Vinci",
+    "originalName": "Leonardo da Vinci",
+    "ruby": "Leonardo da Vinci",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "leonardo da vinci",
+      "leonardo da vinci",
+      "leonardo da vinci",
+      "caster"
+    ]
+  },
+  {
+    "id": 501000,
+    "name": "Paracelsus von Hohenheim",
+    "originalName": "Paracelsus von Hohenheim",
+    "ruby": "Paracelsus von Hohenheim",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "paracelsus von hohenheim",
+      "paracelsus von hohenheim",
+      "paracelsus von hohenheim",
+      "caster"
+    ]
+  },
+  {
+    "id": 501100,
+    "name": "Charles Babbage",
+    "originalName": "Charles Babbage",
+    "ruby": "Charles Babbage",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "charles babbage",
+      "charles babbage",
+      "charles babbage",
+      "caster"
+    ]
+  },
+  {
+    "id": 501200,
+    "name": "Nitocris",
+    "originalName": "Nitocris",
+    "ruby": "Nitocris",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "nitocris",
+      "nitocris",
+      "nitocris",
+      "caster"
+    ]
+  },
+  {
+    "id": 501400,
+    "name": "Mephistopheles",
+    "originalName": "Mephistopheles",
+    "ruby": "Mephistopheles",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "mephistopheles",
+      "mephistopheles",
+      "mephistopheles",
+      "caster"
+    ]
+  },
+  {
+    "id": 501500,
+    "name": "Wolfgang Amadeus Mozart",
+    "originalName": "Wolfgang Amadeus Mozart",
+    "ruby": "Wolfgang Amadeus Mozart",
+    "className": "caster",
+    "rarity": 1,
+    "searchTerms": [
+      "wolfgang amadeus mozart",
+      "wolfgang amadeus mozart",
+      "wolfgang amadeus mozart",
+      "caster"
+    ]
+  },
+  {
+    "id": 501600,
+    "name": "Geronimo",
+    "originalName": "Geronimo",
+    "ruby": "Geronimo",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "geronimo",
+      "geronimo",
+      "geronimo",
+      "caster"
+    ]
+  },
+  {
+    "id": 501700,
+    "name": "Medea (Lily)",
+    "originalName": "Medea (Lily)",
+    "ruby": "Medea (Lily)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "medea (lily)",
+      "medea (lily)",
+      "medea (lily)",
+      "caster"
+    ]
+  },
+  {
+    "id": 501800,
+    "name": "Gilgamesh",
+    "originalName": "Gilgamesh",
+    "ruby": "Gilgamesh",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "gilgamesh",
+      "gilgamesh",
+      "gilgamesh",
+      "caster"
+    ]
+  },
+  {
+    "id": 501900,
+    "name": "Zhuge Liang (Lord El-Melloi II)",
+    "originalName": "Zhuge Liang (Lord El-Melloi II)",
+    "ruby": "Zhuge Liang (Lord El-Melloi II)",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "zhuge liang (lord el-melloi ii)",
+      "zhuge liang (lord el-melloi ii)",
+      "zhuge liang (lord el-melloi ii)",
+      "caster"
+    ]
+  },
+  {
+    "id": 502000,
+    "name": "Irisviel (Holy Grail)",
+    "originalName": "Irisviel (Holy Grail)",
+    "ruby": "Irisviel (Holy Grail)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "irisviel (holy grail)",
+      "irisviel (holy grail)",
+      "irisviel (holy grail)",
+      "caster"
+    ]
+  },
+  {
+    "id": 502100,
+    "name": "Cú Chulainn",
+    "originalName": "Cú Chulainn",
+    "ruby": "Cú Chulainn",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "cú chulainn",
+      "cú chulainn",
+      "cú chulainn",
+      "caster"
+    ]
+  },
+  {
+    "id": 502200,
+    "name": "Xuanzang Sanzang",
+    "originalName": "Xuanzang Sanzang",
+    "ruby": "Xuanzang Sanzang",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "xuanzang sanzang",
+      "xuanzang sanzang",
+      "xuanzang sanzang",
+      "caster"
+    ]
+  },
+  {
+    "id": 502300,
+    "name": "Helena Blavatsky",
+    "originalName": "Helena Blavatsky",
+    "ruby": "Helena Blavatsky",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "helena blavatsky",
+      "helena blavatsky",
+      "helena blavatsky",
+      "caster"
+    ]
+  },
+  {
+    "id": 502500,
+    "name": "Thomas Edison",
+    "originalName": "Thomas Edison",
+    "ruby": "Thomas Edison",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "thomas edison",
+      "thomas edison",
+      "thomas edison",
+      "caster"
+    ]
+  },
+  {
+    "id": 502600,
+    "name": "Elisabeth Báthory (Halloween)",
+    "originalName": "Elisabeth Báthory (Halloween)",
+    "ruby": "Elisabeth Báthory (Halloween)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "elisabeth báthory (halloween)",
+      "elisabeth báthory (halloween)",
+      "elisabeth báthory (halloween)",
+      "caster"
+    ]
+  },
+  {
+    "id": 502700,
+    "name": "Marie Antoinette (Caster)",
+    "originalName": "Marie Antoinette (Caster)",
+    "ruby": "Marie Antoinette",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "marie antoinette (caster)",
+      "marie antoinette (caster)",
+      "marie antoinette",
+      "caster"
+    ]
+  },
+  {
+    "id": 502800,
+    "name": "Illyasviel von Einzbern",
+    "originalName": "Illyasviel von Einzbern",
+    "ruby": "Illyasviel von Einzbern",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "illyasviel von einzbern",
+      "illyasviel von einzbern",
+      "illyasviel von einzbern",
+      "caster"
+    ]
+  },
+  {
+    "id": 503000,
+    "name": "Scheherazade",
+    "originalName": "Scheherazade",
+    "ruby": "Scheherazade",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "scheherazade",
+      "scheherazade",
+      "scheherazade",
+      "caster"
+    ]
+  },
+  {
+    "id": 503200,
+    "name": "Nero Claudius (Caster)",
+    "originalName": "Nero Claudius (Caster)",
+    "ruby": "Nero Claudius (Caster)",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "nero claudius (caster)",
+      "nero claudius (caster)",
+      "nero claudius (caster)",
+      "caster"
+    ]
+  },
+  {
+    "id": 503300,
+    "name": "Circe",
+    "originalName": "Circe",
+    "ruby": "Circe",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "circe",
+      "circe",
+      "circe",
+      "caster"
+    ]
+  },
+  {
+    "id": 503400,
+    "name": "Queen of Sheba",
+    "originalName": "Queen of Sheba",
+    "ruby": "Queen of Sheba",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "queen of sheba",
+      "queen of sheba",
+      "queen of sheba",
+      "caster"
+    ]
+  },
+  {
+    "id": 503500,
+    "name": "Anastasia",
+    "originalName": "Anastasia",
+    "ruby": "Anastasia",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "anastasia",
+      "anastasia",
+      "anastasia",
+      "caster"
+    ]
+  },
+  {
+    "id": 503600,
+    "name": "Avicebron",
+    "originalName": "Avicebron",
+    "ruby": "Avicebron",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "avicebron",
+      "avicebron",
+      "avicebron",
+      "caster"
+    ]
+  },
+  {
+    "id": 503800,
+    "name": "Sieg",
+    "originalName": "Sieg",
+    "ruby": "Sieg",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "sieg",
+      "sieg",
+      "sieg",
+      "caster"
+    ]
+  },
+  {
+    "id": 503900,
+    "name": "Scáthach-Skadi",
+    "originalName": "Scáthach-Skadi",
+    "ruby": "Scáthach-Skadi",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "scáthach-skadi",
+      "scáthach-skadi",
+      "scáthach-skadi",
+      "caster"
+    ]
+  },
+  {
+    "id": 504000,
+    "name": "Shuten-Douji (Caster)",
+    "originalName": "Shuten-Douji (Caster)",
+    "ruby": "Shuten-Douji (Caster)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "shuten-douji (caster)",
+      "shuten-douji (caster)",
+      "shuten-douji (caster)",
+      "caster"
+    ]
+  },
+  {
+    "id": 504100,
+    "name": "Miyu Edelfelt",
+    "originalName": "Miyu Edelfelt",
+    "ruby": "Miyu Edelfelt",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "miyu edelfelt",
+      "miyu edelfelt",
+      "miyu edelfelt",
+      "caster"
+    ]
+  },
+  {
+    "id": 504200,
+    "name": "Murasaki Shikibu",
+    "originalName": "Murasaki Shikibu",
+    "ruby": "Murasaki Shikibu",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "murasaki shikibu",
+      "murasaki shikibu",
+      "murasaki shikibu",
+      "caster"
+    ]
+  },
+  {
+    "id": 504300,
+    "name": "Asclepius",
+    "originalName": "Asclepius",
+    "ruby": "Asclepius",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "asclepius",
+      "asclepius",
+      "asclepius",
+      "caster"
+    ]
+  },
+  {
+    "id": 504400,
+    "name": "Chen Gong",
+    "originalName": "Chen Gong",
+    "ruby": "Chen Gong",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "chen gong",
+      "chen gong",
+      "chen gong",
+      "caster"
+    ]
+  },
+  {
+    "id": 504500,
+    "name": "Altria Caster",
+    "originalName": "Altria Caster",
+    "ruby": "Altria Caster",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "altria caster",
+      "altria caster",
+      "altria caster",
+      "caster"
+    ]
+  },
+  {
+    "id": 504600,
+    "name": "Miss Crane",
+    "originalName": "Miss Crane",
+    "ruby": "Miss Crane",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "miss crane",
+      "miss crane",
+      "miss crane",
+      "caster"
+    ]
+  },
+  {
+    "id": 504700,
+    "name": "Daikokuten",
+    "originalName": "Daikokuten",
+    "ruby": "Daikokuten",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "daikokuten",
+      "daikokuten",
+      "daikokuten",
+      "caster"
+    ]
+  },
+  {
+    "id": 504800,
+    "name": "Charlotte Corday (Caster)",
+    "originalName": "Charlotte Corday (Caster)",
+    "ruby": "Charlotte Corday (Caster)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "charlotte corday (caster)",
+      "charlotte corday (caster)",
+      "charlotte corday (caster)",
+      "caster"
+    ]
+  },
+  {
+    "id": 504900,
+    "name": "Izumo-no-Okuni",
+    "originalName": "Izumo-no-Okuni",
+    "ruby": "Izumo-no-Okuni",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "izumo-no-okuni",
+      "izumo-no-okuni",
+      "izumo-no-okuni",
+      "caster"
+    ]
+  },
+  {
+    "id": 505000,
+    "name": "Martha (Santa)",
+    "originalName": "Martha (Santa)",
+    "ruby": "Martha (Santa)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "martha (santa)",
+      "martha (santa)",
+      "martha (santa)",
+      "caster"
+    ]
+  },
+  {
+    "id": 505100,
+    "name": "Zhang Jue",
+    "originalName": "Zhang Jue",
+    "ruby": "Zhang Jue",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "zhang jue",
+      "zhang jue",
+      "zhang jue",
+      "caster"
+    ]
+  },
+  {
+    "id": 505200,
+    "name": "Wu Zetian (Caster)",
+    "originalName": "Wu Zetian (Caster)",
+    "ruby": "Wu Zetian (Caster)",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "wu zetian (caster)",
+      "wu zetian (caster)",
+      "wu zetian (caster)",
+      "caster"
+    ]
+  },
+  {
+    "id": 505300,
+    "name": "Aesc the Rain Witch",
+    "originalName": "Aesc the Rain Witch",
+    "ruby": "Aesc",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "aesc the rain witch",
+      "aesc the rain witch",
+      "aesc",
+      "caster"
+    ]
+  },
+  {
+    "id": 505400,
+    "name": "Yui Shousetsu",
+    "originalName": "Yui Shousetsu",
+    "ruby": "Yui Shousetsu",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "yui shousetsu",
+      "yui shousetsu",
+      "yui shousetsu",
+      "caster"
+    ]
+  },
+  {
+    "id": 600100,
+    "name": "Sasaki Kojirou",
+    "originalName": "Sasaki Kojirou",
+    "ruby": "Sasaki Kojirou",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "sasaki kojirou",
+      "sasaki kojirou",
+      "sasaki kojirou",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600200,
+    "name": "Hassan of the Cursed Arm",
+    "originalName": "Hassan of the Cursed Arm",
+    "ruby": "Hassan of the Cursed Arm",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "hassan of the cursed arm",
+      "hassan of the cursed arm",
+      "hassan of the cursed arm",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600300,
+    "name": "Hassan of the Hundred Personas",
+    "originalName": "Hassan of the Hundred Personas",
+    "ruby": "Hassan of the Hundred Personas",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "hassan of the hundred personas",
+      "hassan of the hundred personas",
+      "hassan of the hundred personas",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600500,
+    "name": "Jack the Ripper",
+    "originalName": "Jack the Ripper",
+    "ruby": "Jack the Ripper",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "jack the ripper",
+      "jack the ripper",
+      "jack the ripper",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600700,
+    "name": "Henry Jekyll & Hyde",
+    "originalName": "Henry Jekyll & Hyde",
+    "ruby": "Henry Jekyll & Hyde",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "henry jekyll & hyde",
+      "henry jekyll & hyde",
+      "henry jekyll & hyde",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600800,
+    "name": "Cleopatra",
+    "originalName": "Cleopatra",
+    "ruby": "Cleopatra",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "cleopatra",
+      "cleopatra",
+      "cleopatra",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600900,
+    "name": "Hassan of the Serenity",
+    "originalName": "Hassan of the Serenity",
+    "ruby": "Hassan of the Serenity",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "hassan of the serenity",
+      "hassan of the serenity",
+      "hassan of the serenity",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601000,
+    "name": "Stheno",
+    "originalName": "Stheno",
+    "ruby": "Stheno",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "stheno",
+      "stheno",
+      "stheno",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601100,
+    "name": "Jing Ke",
+    "originalName": "Jing Ke",
+    "ruby": "Jing Ke",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "jing ke",
+      "jing ke",
+      "jing ke",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601200,
+    "name": "Charles-Henri Sanson",
+    "originalName": "Charles-Henri Sanson",
+    "ruby": "Charles-Henri Sanson",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "charles-henri sanson",
+      "charles-henri sanson",
+      "charles-henri sanson",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601300,
+    "name": "Phantom of the Opera",
+    "originalName": "Phantom of the Opera",
+    "ruby": "Phantom of the Opera",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "phantom of the opera",
+      "phantom of the opera",
+      "phantom of the opera",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601400,
+    "name": "Mata Hari",
+    "originalName": "Mata Hari",
+    "ruby": "Mata Hari",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "mata hari",
+      "mata hari",
+      "mata hari",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601500,
+    "name": "Emiya (Assassin)",
+    "originalName": "Emiya (Assassin)",
+    "ruby": "Emiya (Assassin)",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "emiya (assassin)",
+      "emiya (assassin)",
+      "emiya (assassin)",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601700,
+    "name": "Carmilla",
+    "originalName": "Carmilla",
+    "ruby": "Carmilla",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "carmilla",
+      "carmilla",
+      "carmilla",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601800,
+    "name": "Mysterious Heroine X",
+    "originalName": "Mysterious Heroine X",
+    "ruby": "Mysterious Heroine X",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "mysterious heroine x",
+      "mysterious heroine x",
+      "mysterious heroine x",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601900,
+    "name": "Fuuma \"Evil-wind\" Kotarou",
+    "originalName": "Fuuma \"Evil-wind\" Kotarou",
+    "ruby": "Fuuma \"Evil-wind\" Kotarou",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "fuuma \"evil-wind\" kotarou",
+      "fuuma \"evil-wind\" kotarou",
+      "fuuma \"evil-wind\" kotarou",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602100,
+    "name": "Shuten-Douji",
+    "originalName": "Shuten-Douji",
+    "ruby": "Shuten-Douji",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "shuten-douji",
+      "shuten-douji",
+      "shuten-douji",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602300,
+    "name": "Ryougi Shiki (Assassin)",
+    "originalName": "Ryougi Shiki (Assassin)",
+    "ruby": "Ryougi Shiki (Assassin)",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ryougi shiki (assassin)",
+      "ryougi shiki (assassin)",
+      "ryougi shiki (assassin)",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602400,
+    "name": "Scáthach (Assassin)",
+    "originalName": "Scáthach (Assassin)",
+    "ruby": "Scáthach (Assassin)",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "scáthach (assassin)",
+      "scáthach (assassin)",
+      "scáthach (assassin)",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602500,
+    "name": "\"First Hassan\"",
+    "originalName": "\"First Hassan\"",
+    "ruby": "First Hassan",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "\"first hassan\"",
+      "\"first hassan\"",
+      "first hassan",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602600,
+    "name": "Yan Qing",
+    "originalName": "Yan Qing",
+    "ruby": "Yan Qing",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "yan qing",
+      "yan qing",
+      "yan qing",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602700,
+    "name": "Wu Zetian",
+    "originalName": "Wu Zetian",
+    "ruby": "Wu Zetian",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "wu zetian",
+      "wu zetian",
+      "wu zetian",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602800,
+    "name": "Nitocris (Assassin)",
+    "originalName": "Nitocris (Assassin)",
+    "ruby": "Nitocris (Assassin)",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "nitocris (assassin)",
+      "nitocris (assassin)",
+      "nitocris (assassin)",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602900,
+    "name": "Mochizuki Chiyome",
+    "originalName": "Mochizuki Chiyome",
+    "ruby": "Mochizuki Chiyome",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "mochizuki chiyome",
+      "mochizuki chiyome",
+      "mochizuki chiyome",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603000,
+    "name": "Katou \"Black Kite\" Danzo",
+    "originalName": "Katou \"Black Kite\" Danzo",
+    "ruby": "Katou \"Black Kite\" Danzo",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "katou \"black kite\" danzo",
+      "katou \"black kite\" danzo",
+      "katou \"black kite\" danzo",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603100,
+    "name": "Osakabehime",
+    "originalName": "Osakabehime",
+    "ruby": "Osakabehime",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "osakabehime",
+      "osakabehime",
+      "osakabehime",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603200,
+    "name": "Semiramis",
+    "originalName": "Semiramis",
+    "ruby": "Semiramis",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "semiramis",
+      "semiramis",
+      "semiramis",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603300,
+    "name": "Okada Izo",
+    "originalName": "Okada Izo",
+    "ruby": "Okada Izo",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "okada izo",
+      "okada izo",
+      "okada izo",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603400,
+    "name": "Ushiwakamaru (Assassin)",
+    "originalName": "Ushiwakamaru (Assassin)",
+    "ruby": "Ushiwakamaru",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ushiwakamaru (assassin)",
+      "ushiwakamaru (assassin)",
+      "ushiwakamaru",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603500,
+    "name": "Yu Mei-ren",
+    "originalName": "Yu Mei-ren",
+    "ruby": "Yu Mei-ren",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "yu mei-ren",
+      "yu mei-ren",
+      "yu mei-ren",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603600,
+    "name": "Li Shuwen",
+    "originalName": "Li Shuwen",
+    "ruby": "Li Shuwen",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "li shuwen",
+      "li shuwen",
+      "li shuwen",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603700,
+    "name": "Kama",
+    "originalName": "Kama",
+    "ruby": "Kama",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "kama",
+      "kama",
+      "kama",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603800,
+    "name": "Charlotte Corday",
+    "originalName": "Charlotte Corday",
+    "ruby": "Charlotte Corday",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "charlotte corday",
+      "charlotte corday",
+      "charlotte corday",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603900,
+    "name": "Gray",
+    "originalName": "Gray",
+    "ruby": "Gray",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "gray",
+      "gray",
+      "gray",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604000,
+    "name": "Okita Souji (Assassin)",
+    "originalName": "Okita Souji (Assassin)",
+    "ruby": "Okita Souji (Assassin)",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "okita souji (assassin)",
+      "okita souji (assassin)",
+      "okita souji (assassin)",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604100,
+    "name": "Kiichi Hogen",
+    "originalName": "Kiichi Hogen",
+    "ruby": "Kiichi Hogen",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "kiichi hogen",
+      "kiichi hogen",
+      "kiichi hogen",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604200,
+    "name": "Koyanskaya of Light",
+    "originalName": "Koyanskaya of Light",
+    "ruby": "Koyanskaya of Light",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "koyanskaya of light",
+      "koyanskaya of light",
+      "koyanskaya of light",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604300,
+    "name": "Ortlinde",
+    "originalName": "Ortlinde",
+    "ruby": "Ortlinde",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "ortlinde",
+      "ortlinde",
+      "ortlinde",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604400,
+    "name": "Hildr",
+    "originalName": "Hildr",
+    "ruby": "Hildr",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "hildr",
+      "hildr",
+      "hildr",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604500,
+    "name": "Thrúd",
+    "originalName": "Thrúd",
+    "ruby": "Thrúd",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "thrúd",
+      "thrúd",
+      "thrúd",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604600,
+    "name": "Huyan Zhuo",
+    "originalName": "Huyan Zhuo",
+    "ruby": "Huyan Zhuo",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "huyan zhuo",
+      "huyan zhuo",
+      "huyan zhuo",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604700,
+    "name": "Tezcatlipoca",
+    "originalName": "Tezcatlipoca",
+    "ruby": "Tezcatlipoca",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "tezcatlipoca",
+      "tezcatlipoca",
+      "tezcatlipoca",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604800,
+    "name": "Locusta",
+    "originalName": "Locusta",
+    "ruby": "Locusta",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "locusta",
+      "locusta",
+      "locusta",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604900,
+    "name": "Kashin Koji",
+    "originalName": "Kashin Koji",
+    "ruby": "Kashin Koji",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "kashin koji",
+      "kashin koji",
+      "kashin koji",
+      "assassin"
+    ]
+  },
+  {
+    "id": 700100,
+    "name": "Heracles",
+    "originalName": "Heracles",
+    "ruby": "Heracles",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "heracles",
+      "heracles",
+      "heracles",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700200,
+    "name": "Lancelot",
+    "originalName": "Lancelot",
+    "ruby": "Lancelot",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "lancelot",
+      "lancelot",
+      "lancelot",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700300,
+    "name": "Lu Bu Fengxian",
+    "originalName": "Lu Bu Fengxian",
+    "ruby": "Lu Bu Fengxian",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "lu bu fengxian",
+      "lu bu fengxian",
+      "lu bu fengxian",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700400,
+    "name": "Frankenstein",
+    "originalName": "Frankenstein",
+    "ruby": "Frankenstein",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "frankenstein",
+      "frankenstein",
+      "frankenstein",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700500,
+    "name": "Spartacus",
+    "originalName": "Spartacus",
+    "ruby": "Spartacus",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "spartacus",
+      "spartacus",
+      "spartacus",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700600,
+    "name": "Sakata Kintoki",
+    "originalName": "Sakata Kintoki",
+    "ruby": "Sakata Kintoki",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "sakata kintoki",
+      "sakata kintoki",
+      "sakata kintoki",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700700,
+    "name": "Vlad III",
+    "originalName": "Vlad III",
+    "ruby": "Vlad III",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "vlad iii",
+      "vlad iii",
+      "vlad iii",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700800,
+    "name": "Beowulf",
+    "originalName": "Beowulf",
+    "ruby": "Beowulf",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "beowulf",
+      "beowulf",
+      "beowulf",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700900,
+    "name": "Asterios",
+    "originalName": "Asterios",
+    "ruby": "Asterios",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "asterios",
+      "asterios",
+      "asterios",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701000,
+    "name": "Caligula",
+    "originalName": "Caligula",
+    "ruby": "Caligula",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "caligula",
+      "caligula",
+      "caligula",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701100,
+    "name": "Darius III",
+    "originalName": "Darius III",
+    "ruby": "Darius III",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "darius iii",
+      "darius iii",
+      "darius iii",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701300,
+    "name": "Kiyohime",
+    "originalName": "Kiyohime",
+    "ruby": "Kiyohime",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "kiyohime",
+      "kiyohime",
+      "kiyohime",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701400,
+    "name": "Florence Nightingale",
+    "originalName": "Florence Nightingale",
+    "ruby": "Florence Nightingale",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "florence nightingale",
+      "florence nightingale",
+      "florence nightingale",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701500,
+    "name": "Eric Bloodaxe",
+    "originalName": "Eric Bloodaxe",
+    "ruby": "Eric Bloodaxe",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "eric bloodaxe",
+      "eric bloodaxe",
+      "eric bloodaxe",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701600,
+    "name": "Tamamo Cat",
+    "originalName": "Tamamo Cat",
+    "ruby": "Tamamo Cat",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "tamamo cat",
+      "tamamo cat",
+      "tamamo cat",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702000,
+    "name": "Cú Chulainn (Alter)",
+    "originalName": "Cú Chulainn (Alter)",
+    "ruby": "Cú Chulainn (Alter)",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "cú chulainn (alter)",
+      "cú chulainn (alter)",
+      "cú chulainn (alter)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702200,
+    "name": "Ibaraki-Douji",
+    "originalName": "Ibaraki-Douji",
+    "ruby": "Ibaraki-Douji",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "ibaraki-douji",
+      "ibaraki-douji",
+      "ibaraki-douji",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702300,
+    "name": "Minamoto-no-Raikou",
+    "originalName": "Minamoto-no-Raikou",
+    "ruby": "Minamoto-no-Raikou",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "minamoto-no-raikou",
+      "minamoto-no-raikou",
+      "minamoto-no-raikou",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702400,
+    "name": "Mysterious Heroine X (Alter)",
+    "originalName": "Mysterious Heroine X (Alter)",
+    "ruby": "Mysterious Heroine X (Alter)",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "mysterious heroine x (alter)",
+      "mysterious heroine x (alter)",
+      "mysterious heroine x (alter)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702500,
+    "name": "Hijikata Toshizo",
+    "originalName": "Hijikata Toshizo",
+    "ruby": "Hijikata Toshizo",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "hijikata toshizo",
+      "hijikata toshizo",
+      "hijikata toshizo",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702600,
+    "name": "Chacha",
+    "originalName": "Chacha",
+    "ruby": "Chacha",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "chacha",
+      "chacha",
+      "chacha",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702700,
+    "name": "Penthesilea",
+    "originalName": "Penthesilea",
+    "ruby": "Penthesilea",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "penthesilea",
+      "penthesilea",
+      "penthesilea",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702800,
+    "name": "Paul Bunyan",
+    "originalName": "Paul Bunyan",
+    "ruby": "Paul Bunyan",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "paul bunyan",
+      "paul bunyan",
+      "paul bunyan",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702900,
+    "name": "Oda Nobunaga (Berserker)",
+    "originalName": "Oda Nobunaga (Berserker)",
+    "ruby": "Oda Nobunaga (Berserker)",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "oda nobunaga (berserker)",
+      "oda nobunaga (berserker)",
+      "oda nobunaga (berserker)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703000,
+    "name": "Atalante (Alter)",
+    "originalName": "Atalante (Alter)",
+    "ruby": "Atalante (Alter)",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "atalante (alter)",
+      "atalante (alter)",
+      "atalante (alter)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703100,
+    "name": "Jeanne d'Arc Alter (Berserker)",
+    "originalName": "Jeanne d'Arc Alter (Berserker)",
+    "ruby": "Jeanne d'Arc Alter (Berserker)",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "jeanne d'arc alter (berserker)",
+      "jeanne d'arc alter (berserker)",
+      "jeanne d'arc alter (berserker)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703200,
+    "name": "Xiang Yu",
+    "originalName": "Xiang Yu",
+    "ruby": "Xiang Yu",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "xiang yu",
+      "xiang yu",
+      "xiang yu",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703300,
+    "name": "Arjuna (Alter)",
+    "originalName": "Arjuna (Alter)",
+    "ruby": "Arjuna (Alter)",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "arjuna (alter)",
+      "arjuna (alter)",
+      "arjuna (alter)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703400,
+    "name": "Salome",
+    "originalName": "Salome",
+    "ruby": "Salome",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "salome",
+      "salome",
+      "salome",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703500,
+    "name": "Mori Nagayoshi",
+    "originalName": "Mori Nagayoshi",
+    "ruby": "Mori Nagayoshi",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "mori nagayoshi",
+      "mori nagayoshi",
+      "mori nagayoshi",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703600,
+    "name": "Miyamoto Musashi (Berserker)",
+    "originalName": "Miyamoto Musashi (Berserker)",
+    "ruby": "Miyamoto Musashi (Berserker)",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "miyamoto musashi (berserker)",
+      "miyamoto musashi (berserker)",
+      "miyamoto musashi (berserker)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703700,
+    "name": "Kijyo Koyo",
+    "originalName": "Kijyo Koyo",
+    "ruby": "Kijyo Koyo",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "kijyo koyo",
+      "kijyo koyo",
+      "kijyo koyo",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703800,
+    "name": "Brynhild (Berserker)",
+    "originalName": "Brynhild (Berserker)",
+    "ruby": "Brynhild",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "brynhild (berserker)",
+      "brynhild (berserker)",
+      "brynhild",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703900,
+    "name": "Galatea",
+    "originalName": "Galatea",
+    "ruby": "Galatea",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "galatea",
+      "galatea",
+      "galatea",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704000,
+    "name": "Morgan",
+    "originalName": "Morgan",
+    "ruby": "Morgan",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "morgan",
+      "morgan",
+      "morgan",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704100,
+    "name": "Sei Shounagon (Berserker)",
+    "originalName": "Sei Shounagon (Berserker)",
+    "ruby": "Sei Shounagon (Berserker)",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "sei shounagon (berserker)",
+      "sei shounagon (berserker)",
+      "sei shounagon (berserker)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704200,
+    "name": "Kriemhild",
+    "originalName": "Kriemhild",
+    "ruby": "Kriemhild",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "kriemhild",
+      "kriemhild",
+      "kriemhild",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704300,
+    "name": "Ibuki-Douji (Berserker)",
+    "originalName": "Ibuki-Douji (Berserker)",
+    "ruby": "Ibuki-Douji (Berserker)",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "ibuki-douji (berserker)",
+      "ibuki-douji (berserker)",
+      "ibuki-douji (berserker)",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704400,
+    "name": "Sen-no-Rikyu",
+    "originalName": "Sen-no-Rikyu",
+    "ruby": "Sen-no-Rikyu",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "sen-no-rikyu",
+      "sen-no-rikyu",
+      "sen-no-rikyu",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704600,
+    "name": "Duryodhana",
+    "originalName": "Duryodhana",
+    "ruby": "Duryodhana",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "duryodhana",
+      "duryodhana",
+      "duryodhana",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704700,
+    "name": "Altria Caster",
+    "originalName": "Altria Caster",
+    "ruby": "Altria Caster",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "altria caster",
+      "altria caster",
+      "altria caster",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704800,
+    "name": "Nagakura Shinpachi",
+    "originalName": "Nagakura Shinpachi",
+    "ruby": "Nagakura Shinpachi",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "nagakura shinpachi",
+      "nagakura shinpachi",
+      "nagakura shinpachi",
+      "berserker"
+    ]
+  },
+  {
+    "id": 800100,
+    "name": "Mash Kyrielight",
+    "originalName": "Mash Kyrielight",
+    "ruby": "Mash Kyrielight",
+    "className": "shielder",
+    "rarity": 4,
+    "searchTerms": [
+      "mash kyrielight",
+      "mash kyrielight",
+      "mash kyrielight",
+      "shielder"
+    ]
+  },
+  {
+    "id": 900100,
+    "name": "Jeanne d'Arc",
+    "originalName": "Jeanne d'Arc",
+    "ruby": "Jeanne d'Arc",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "jeanne d'arc",
+      "jeanne d'arc",
+      "jeanne d'arc",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900200,
+    "name": "Amakusa Shirou",
+    "originalName": "Amakusa Shirou",
+    "ruby": "Amakusa Shirou",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "amakusa shirou",
+      "amakusa shirou",
+      "amakusa shirou",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900400,
+    "name": "Martha (Ruler)",
+    "originalName": "Martha (Ruler)",
+    "ruby": "Martha",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "martha (ruler)",
+      "martha (ruler)",
+      "martha",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900500,
+    "name": "Sherlock Holmes",
+    "originalName": "Sherlock Holmes",
+    "ruby": "Sherlock Holmes",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "sherlock holmes",
+      "sherlock holmes",
+      "sherlock holmes",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900600,
+    "name": "Qin Shi Huang",
+    "originalName": "Qin Shi Huang",
+    "ruby": "Qin Shi Huang",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "qin shi huang",
+      "qin shi huang",
+      "qin shi huang",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900700,
+    "name": "Quetzalcoatl (Samba/Santa)",
+    "originalName": "Quetzalcoatl (Samba/Santa)",
+    "ruby": "Quetzalcoatl (Samba/Santa)",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "quetzalcoatl (samba/santa)",
+      "quetzalcoatl (samba/santa)",
+      "quetzalcoatl (samba/santa)",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900800,
+    "name": "Astraea",
+    "originalName": "Astraea",
+    "ruby": "Astraea",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "astraea",
+      "astraea",
+      "astraea",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900900,
+    "name": "Altria Pendragon (Ruler)",
+    "originalName": "Altria Pendragon (Ruler)",
+    "ruby": "Altria Pendragon (Ruler)",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "altria pendragon (ruler)",
+      "altria pendragon (ruler)",
+      "altria pendragon (ruler)",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901000,
+    "name": "Himiko",
+    "originalName": "Himiko",
+    "ruby": "Himiko",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "himiko",
+      "himiko",
+      "himiko",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901100,
+    "name": "Amor (Caren)",
+    "originalName": "Amor (Caren)",
+    "ruby": "Amor (Caren)",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "amor (caren)",
+      "amor (caren)",
+      "amor (caren)",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901200,
+    "name": "Leonardo da Vinci (Ruler)",
+    "originalName": "Leonardo da Vinci (Ruler)",
+    "ruby": "Leonardo da Vinci (Ruler)",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "leonardo da vinci (ruler)",
+      "leonardo da vinci (ruler)",
+      "leonardo da vinci (ruler)",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901300,
+    "name": "James Moriarty",
+    "originalName": "James Moriarty",
+    "ruby": "James Moriarty",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "james moriarty",
+      "james moriarty",
+      "james moriarty",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901400,
+    "name": "Scáthach-Skadi (Ruler)",
+    "originalName": "Scáthach-Skadi (Ruler)",
+    "ruby": "Scáthach-Skadi (Ruler)",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "scáthach-skadi (ruler)",
+      "scáthach-skadi (ruler)",
+      "scáthach-skadi (ruler)",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901500,
+    "name": "Iyo",
+    "originalName": "Iyo",
+    "ruby": "Iyo",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "iyo",
+      "iyo",
+      "iyo",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901600,
+    "name": "Pope Johanna",
+    "originalName": "Pope Johanna",
+    "ruby": "Pope Johanna",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "pope johanna",
+      "pope johanna",
+      "pope johanna",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901700,
+    "name": "Mélusine",
+    "originalName": "Mélusine",
+    "ruby": "Mélusine",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "mélusine",
+      "mélusine",
+      "mélusine",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901800,
+    "name": "Uesugi Kenshin",
+    "originalName": "Uesugi Kenshin",
+    "ruby": "Uesugi Kenshin",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "uesugi kenshin",
+      "uesugi kenshin",
+      "uesugi kenshin",
+      "ruler"
+    ]
+  },
+  {
+    "id": 1000100,
+    "name": "Passionlip",
+    "originalName": "Passionlip",
+    "ruby": "Passionlip",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "passionlip",
+      "passionlip",
+      "passionlip",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000200,
+    "name": "Meltryllis",
+    "originalName": "Meltryllis",
+    "ruby": "Meltryllis",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "meltryllis",
+      "meltryllis",
+      "meltryllis",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000300,
+    "name": "Sessyoin Kiara",
+    "originalName": "Sessyoin Kiara",
+    "ruby": "Sessyoin Kiara",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "sessyoin kiara",
+      "sessyoin kiara",
+      "sessyoin kiara",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000400,
+    "name": "Mecha Eli-chan",
+    "originalName": "Mecha Eli-chan",
+    "ruby": "Mecha Eli-chan",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "mecha eli-chan",
+      "mecha eli-chan",
+      "mecha eli-chan",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000500,
+    "name": "Mecha Eli-chan Mk.II",
+    "originalName": "Mecha Eli-chan Mk.II",
+    "ruby": "Mecha Eli-chan Mk.II",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "mecha eli-chan mk.ii",
+      "mecha eli-chan mk.ii",
+      "mecha eli-chan mk.ii",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000700,
+    "name": "Okita Souji (Alter)",
+    "originalName": "Okita Souji (Alter)",
+    "ruby": "Okita Souji (Alter)",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "okita souji (alter)",
+      "okita souji (alter)",
+      "okita souji (alter)",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000800,
+    "name": "Sitonai",
+    "originalName": "Sitonai",
+    "ruby": "Sitonai",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "sitonai",
+      "sitonai",
+      "sitonai",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000900,
+    "name": "Kingprotea",
+    "originalName": "Kingprotea",
+    "ruby": "Kingprotea",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "kingprotea",
+      "kingprotea",
+      "kingprotea",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001000,
+    "name": "Ashiya Douman",
+    "originalName": "Ashiya Douman",
+    "ruby": "Ashiya Douman",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "ashiya douman",
+      "ashiya douman",
+      "ashiya douman",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001100,
+    "name": "Manannan mac Lir (Bazett)",
+    "originalName": "Manannan mac Lir (Bazett)",
+    "ruby": "Manannan mac Lir (Bazett)",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "manannan mac lir (bazett)",
+      "manannan mac lir (bazett)",
+      "manannan mac lir (bazett)",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001200,
+    "name": "Taisui Xingjun",
+    "originalName": "Taisui Xingjun",
+    "ruby": "Taisui Xingjun",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "taisui xingjun",
+      "taisui xingjun",
+      "taisui xingjun",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001300,
+    "name": "Super Bunyan",
+    "originalName": "Super Bunyan",
+    "ruby": "Super Bunyan",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "super bunyan",
+      "super bunyan",
+      "super bunyan",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001400,
+    "name": "Xu Fu",
+    "originalName": "Xu Fu",
+    "ruby": "Xu Fu",
+    "className": "alterEgo",
+    "rarity": 3,
+    "searchTerms": [
+      "xu fu",
+      "xu fu",
+      "xu fu",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001500,
+    "name": "Kotomine Kirei",
+    "originalName": "Kotomine Kirei",
+    "ruby": "Kotomine Kirei",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "kotomine kirei",
+      "kotomine kirei",
+      "kotomine kirei",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001600,
+    "name": "Larva/Tiamat",
+    "originalName": "Larva/Tiamat",
+    "ruby": "Larva/Tiamat",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "larva/tiamat",
+      "larva/tiamat",
+      "larva/tiamat",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1100100,
+    "name": "Aŋra Mainiiu",
+    "originalName": "Aŋra Mainiiu",
+    "ruby": "Aŋra Mainiiu",
+    "className": "avenger",
+    "rarity": 0,
+    "searchTerms": [
+      "aŋra mainiiu",
+      "aŋra mainiiu",
+      "aŋra mainiiu",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100200,
+    "name": "Edmond Dantès",
+    "originalName": "Edmond Dantès",
+    "ruby": "Edmond Dantès",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "edmond dantès",
+      "edmond dantès",
+      "edmond dantès",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100300,
+    "name": "Jeanne d'Arc (Alter)",
+    "originalName": "Jeanne d'Arc (Alter)",
+    "ruby": "Jeanne d'Arc (Alter)",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "jeanne d'arc (alter)",
+      "jeanne d'arc (alter)",
+      "jeanne d'arc (alter)",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100400,
+    "name": "Gorgon",
+    "originalName": "Gorgon",
+    "ruby": "Gorgon",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "gorgon",
+      "gorgon",
+      "gorgon",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100500,
+    "name": "Hessian Lobo",
+    "originalName": "Hessian Lobo",
+    "ruby": "Hessian Lobo",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "hessian lobo",
+      "hessian lobo",
+      "hessian lobo",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100600,
+    "name": "Antonio Salieri",
+    "originalName": "Antonio Salieri",
+    "ruby": "Antonio Salieri",
+    "className": "avenger",
+    "rarity": 3,
+    "searchTerms": [
+      "antonio salieri",
+      "antonio salieri",
+      "antonio salieri",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100700,
+    "name": "Demon King Nobunaga",
+    "originalName": "Demon King Nobunaga",
+    "ruby": "Demon King Nobunaga",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "demon king nobunaga",
+      "demon king nobunaga",
+      "demon king nobunaga",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100900,
+    "name": "Space Ishtar",
+    "originalName": "Space Ishtar",
+    "ruby": "Space Ishtar",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "space ishtar",
+      "space ishtar",
+      "space ishtar",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101000,
+    "name": "Taira-no-Kagekiyo",
+    "originalName": "Taira-no-Kagekiyo",
+    "ruby": "Taira-no-Kagekiyo",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "taira-no-kagekiyo",
+      "taira-no-kagekiyo",
+      "taira-no-kagekiyo",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101100,
+    "name": "Kama (Avenger)",
+    "originalName": "Kama (Avenger)",
+    "ruby": "Kama (Avenger)",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "kama (avenger)",
+      "kama (avenger)",
+      "kama (avenger)",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101200,
+    "name": "Mysterious Ranmaru X",
+    "originalName": "Mysterious Ranmaru X",
+    "ruby": "Mysterious Ranmaru X",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "mysterious ranmaru x",
+      "mysterious ranmaru x",
+      "mysterious ranmaru x",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101400,
+    "name": "Utsumi Erice (Avenger)",
+    "originalName": "Utsumi Erice (Avenger)",
+    "ruby": "Utsumi Erice (Avenger)",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "utsumi erice (avenger)",
+      "utsumi erice (avenger)",
+      "utsumi erice (avenger)",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101500,
+    "name": "Nitocris (Alter)",
+    "originalName": "Nitocris (Alter)",
+    "ruby": "Nitocris (Alter)",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "nitocris (alter)",
+      "nitocris (alter)",
+      "nitocris (alter)",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101600,
+    "name": "Chloe von Einzbern",
+    "originalName": "Chloe von Einzbern",
+    "ruby": "Chloe von Einzbern",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "chloe von einzbern",
+      "chloe von einzbern",
+      "chloe von einzbern",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101800,
+    "name": "Minamoto-no-Raikou/Ushi Gozen",
+    "originalName": "Minamoto-no-Raikou/Ushi Gozen",
+    "ruby": "Minamoto-no-Raikou/Ushi Gozen",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "minamoto-no-raikou/ushi gozen",
+      "minamoto-no-raikou/ushi gozen",
+      "minamoto-no-raikou/ushi gozen",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1700100,
+    "name": "Solomon",
+    "originalName": "Solomon",
+    "ruby": "Solomon",
+    "className": "loreGrandCaster",
+    "rarity": 5,
+    "searchTerms": [
+      "solomon",
+      "solomon",
+      "solomon",
+      "loregrandcaster"
+    ]
+  },
+  {
+    "id": 2300100,
+    "name": "BB",
+    "originalName": "BB",
+    "ruby": "BB",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "bb",
+      "bb",
+      "bb",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300200,
+    "name": "BB",
+    "originalName": "BB",
+    "ruby": "BB",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "bb",
+      "bb",
+      "bb",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300300,
+    "name": "Jinako Carigiri",
+    "originalName": "Jinako Carigiri",
+    "ruby": "Jinako Carigiri",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "jinako carigiri",
+      "jinako carigiri",
+      "jinako carigiri",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300400,
+    "name": "Sessyoin Kiara (Moon Cancer)",
+    "originalName": "Sessyoin Kiara (Moon Cancer)",
+    "ruby": "Sessyoin Kiara",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "sessyoin kiara (moon cancer)",
+      "sessyoin kiara (moon cancer)",
+      "sessyoin kiara",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300500,
+    "name": "Archetype: EARTH",
+    "originalName": "Archetype: EARTH",
+    "ruby": "Archetype: EARTH",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "archetype: earth",
+      "archetype: earth",
+      "archetype: earth",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2500100,
+    "name": "Abigail Williams",
+    "originalName": "Abigail Williams",
+    "ruby": "Abigail Williams",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "abigail williams",
+      "abigail williams",
+      "abigail williams",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500200,
+    "name": "Katsushika Hokusai",
+    "originalName": "Katsushika Hokusai",
+    "ruby": "Katsushika Hokusai",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "katsushika hokusai",
+      "katsushika hokusai",
+      "katsushika hokusai",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500300,
+    "name": "Mysterious Heroine XX",
+    "originalName": "Mysterious Heroine XX",
+    "ruby": "Mysterious Heroine XX",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "mysterious heroine xx",
+      "mysterious heroine xx",
+      "mysterious heroine xx",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500400,
+    "name": "Yang Guifei",
+    "originalName": "Yang Guifei",
+    "ruby": "Yang Guifei",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "yang guifei",
+      "yang guifei",
+      "yang guifei",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500500,
+    "name": "Voyager",
+    "originalName": "Voyager",
+    "ruby": "Voyager",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "voyager",
+      "voyager",
+      "voyager",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500600,
+    "name": "Van Gogh",
+    "originalName": "Van Gogh",
+    "ruby": "Van Gogh",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "van gogh",
+      "van gogh",
+      "van gogh",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500700,
+    "name": "Abigail Williams (Summer)",
+    "originalName": "Abigail Williams (Summer)",
+    "ruby": "Abigail Williams",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "abigail williams (summer)",
+      "abigail williams (summer)",
+      "abigail williams",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500800,
+    "name": "Mysterious Idol X (Alter)",
+    "originalName": "Mysterious Idol X (Alter)",
+    "ruby": "Mysterious Idol X (Alter)",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "mysterious idol x (alter)",
+      "mysterious idol x (alter)",
+      "mysterious idol x (alter)",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500900,
+    "name": "Koyanskaya of Dark",
+    "originalName": "Koyanskaya of Dark",
+    "ruby": "Koyanskaya of Dark",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "koyanskaya of dark",
+      "koyanskaya of dark",
+      "koyanskaya of dark",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501000,
+    "name": "Jacques de Molay",
+    "originalName": "Jacques de Molay",
+    "ruby": "Jacques de Molay",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "jacques de molay",
+      "jacques de molay",
+      "jacques de molay",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501100,
+    "name": "Kukulcan",
+    "originalName": "Kukulcan",
+    "ruby": "Kukulcan",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "kukulcan",
+      "kukulcan",
+      "kukulcan",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501200,
+    "name": "Cnoc na Riabh Yaraändoo",
+    "originalName": "Cnoc na Riabh Yaraändoo",
+    "ruby": "Cnoc na Riabh Yaraändoo",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "cnoc na riabh yaraändoo",
+      "cnoc na riabh yaraändoo",
+      "cnoc na riabh yaraändoo",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501300,
+    "name": "Wandjina",
+    "originalName": "Wandjina",
+    "ruby": "Wandjina",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "wandjina",
+      "wandjina",
+      "wandjina",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2800100,
+    "name": "Oberon",
+    "originalName": "Oberon",
+    "ruby": "Oberon",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "oberon",
+      "oberon",
+      "oberon",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800200,
+    "name": "Hephaistíon",
+    "originalName": "Hephaistíon",
+    "ruby": "Hephaistíon",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "hephaistíon",
+      "hephaistíon",
+      "hephaistíon",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800300,
+    "name": "Lady Avalon",
+    "originalName": "Lady Avalon",
+    "ruby": "Lady Avalon",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "lady avalon",
+      "lady avalon",
+      "lady avalon",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800400,
+    "name": "Elisa the Nine-Tattooed Dragon",
+    "originalName": "Elisa the Nine-Tattooed Dragon",
+    "ruby": "Elisa the Nine-Tattooed Dragon",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "elisa the nine-tattooed dragon",
+      "elisa the nine-tattooed dragon",
+      "elisa the nine-tattooed dragon",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800500,
+    "name": "Tenochtitlan",
+    "originalName": "Tenochtitlan",
+    "ruby": "Tenochtitlan",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "tenochtitlan",
+      "tenochtitlan",
+      "tenochtitlan",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800600,
+    "name": "Cait Cú MikoCer",
+    "originalName": "Cait Cú MikoCer",
+    "ruby": "Baobhan Sith",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "cait cú mikocer",
+      "cait cú mikocer",
+      "baobhan sith",
+      "pretender"
+    ]
+  },
+  {
+    "id": 3300100,
+    "name": "Sodom's Beast/Draco",
+    "originalName": "Sodom's Beast/Draco",
+    "ruby": "Sodom's Beast/Draco",
+    "className": "beast",
+    "rarity": 5,
+    "searchTerms": [
+      "sodom's beast/draco",
+      "sodom's beast/draco",
+      "sodom's beast/draco",
+      "beast"
+    ]
+  },
+  {
+    "id": 9935400,
+    "name": "Tiamat",
+    "originalName": "Tiamat",
+    "ruby": "Tiamat",
+    "className": "beastII",
+    "rarity": 5,
+    "searchTerms": [
+      "tiamat",
+      "tiamat",
+      "tiamat",
+      "beastii"
+    ]
+  },
+  {
+    "id": 9935500,
+    "name": "Goetia",
+    "originalName": "Goetia",
+    "ruby": "Goetia",
+    "className": "beastI",
+    "rarity": 5,
+    "searchTerms": [
+      "goetia",
+      "goetia",
+      "goetia",
+      "beasti"
+    ]
+  },
+  {
+    "id": 9935530,
+    "name": "Solomon",
+    "originalName": "Solomon",
+    "ruby": "Solomon",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "solomon",
+      "solomon",
+      "solomon",
+      "caster"
+    ]
+  },
+  {
+    "id": 9939130,
+    "name": "Beast III/R",
+    "originalName": "Beast III/R",
+    "ruby": "Beast III/R",
+    "className": "beastIIIR",
+    "rarity": 5,
+    "searchTerms": [
+      "beast iii/r",
+      "beast iii/r",
+      "beast iii/r",
+      "beastiiir"
+    ]
+  },
+  {
+    "id": 9941730,
+    "name": "Beast III/L",
+    "originalName": "Beast III/L",
+    "ruby": "Beast III/L",
+    "className": "beastIIIL",
+    "rarity": 5,
+    "searchTerms": [
+      "beast iii/l",
+      "beast iii/l",
+      "beast iii/l",
+      "beastiiil"
+    ]
+  },
+  {
+    "id": 9943610,
+    "name": "Beast IV",
+    "originalName": "Beast IV",
+    "ruby": "-",
+    "className": "beastIV",
+    "rarity": 5,
+    "searchTerms": [
+      "beast iv",
+      "beast iv",
+      "-",
+      "beastiv"
+    ]
+  }
+]

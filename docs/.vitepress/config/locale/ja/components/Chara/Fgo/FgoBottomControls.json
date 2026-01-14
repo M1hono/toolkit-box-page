@@ -1,0 +1,13 @@
+{
+    "background": "背景",
+    "bgHint": "プレビュー/エクスポートに適用",
+    "preview": "プレビュー",
+    "actions": "アクション",
+    "prev": "前へ",
+    "next": "次へ",
+    "save": "保存",
+    "copy": "コピー",
+    "batch": "一括",
+    "detectFace": "顔検出",
+    "onlineOnly": "オンラインのみ"
+}

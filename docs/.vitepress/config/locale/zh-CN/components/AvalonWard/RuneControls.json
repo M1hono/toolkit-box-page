@@ -1,0 +1,16 @@
+{
+    "clearGrid": "清空网格",
+    "fillGrid": "填满网格",
+    "horizontal": "水平",
+    "vertical": "垂直",
+    "decimal": "十进制",
+    "binary": "二进制",
+    "recipeConfiguration": "配方配置",
+    "outputItem": "输出物品",
+    "outputItemPlaceholder": "例如: minecraft:acacia_boat",
+    "tier": "等级",
+    "requiredFaction": "所需阵营",
+    "requiredFactionPlaceholder": "例如: mna:none",
+    "codeOutput": "代码输出",
+    "copyCode": "复制"
+}

@@ -1,0 +1,15 @@
+{
+    "settings": "設定",
+    "sourceFile": "ソースファイル",
+    "targetFile": "ターゲットファイル",
+    "sourceFileHint": "元の言語ファイル（例：en_us.json）",
+    "targetFileHint": "翻訳ファイル（例：zh_cn.json）",
+    "totalEntries": "合計",
+    "translated": "翻訳済み",
+    "untranslated": "未翻訳",
+    "customCategories": "カテゴリ",
+    "newCategory": "新しいカテゴリ",
+    "newCategoryPlaceholder": "カテゴリ名を入力",
+    "defaultCategory": "デフォルト",
+    "customCategory": "カスタム"
+}

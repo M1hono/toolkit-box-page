@@ -1,0 +1,13 @@
+{
+    "settings": "设置",
+    "sourceFile": "源文件",
+    "targetFile": "目标文件",
+    "sourceFileHint": "原始语言文件 (例如: en_us.json)",
+    "targetFileHint": "翻译文件 (例如: zh_cn.json)",
+    "totalEntries": "总数",
+    "translated": "已翻译",
+    "untranslated": "未翻译",
+    "customCategories": "自定义分类",
+    "newCategory": "新分类",
+    "newCategoryPlaceholder": "输入分类名称"
+}

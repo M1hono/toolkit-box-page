@@ -1,0 +1,12 @@
+{
+    "actualDamage": "実ダメージ",
+    "armorPoints": "防具値",
+    "armorToughness": "防具強度",
+    "bedrockEdition": "統合版",
+    "damageReduction": "ダメージ軽減（%）",
+    "incomingDamage": "受けるダメージ",
+    "javaEdition": "Java版",
+    "maxArmorPoints": "最大防具値",
+    "maxDamage": "最大ダメージ",
+    "minDamage": "最小ダメージ"
+}

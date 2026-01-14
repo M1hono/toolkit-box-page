@@ -1,0 +1,402 @@
+name: Main Data Pipeline
+
+on:
+    push:
+        branches: [main]
+    schedule:
+        # Run 6 times daily (every 4 hours)
+        - cron: "0 0 * * *" # UTC 0:00
+        - cron: "0 4 * * *" # UTC 4:00  
+        - cron: "0 8 * * *" # UTC 8:00
+        - cron: "0 12 * * *" # UTC 12:00
+        - cron: "0 16 * * *" # UTC 16:00
+        - cron: "0 20 * * *" # UTC 20:00
+    workflow_dispatch:
+        inputs:
+            task_priority:
+                description: "Select task to execute"
+                required: true
+                default: "all"
+                type: choice
+                options:
+                    - "story-only"
+                    - "arknights-only"
+                    - "fgo-only"
+                    - "r2-only"
+                    - "build-only"
+                    - "all"
+            check_images:
+                description: "Check Arknights image variants"
+                required: false
+                default: true
+                type: boolean
+
+permissions:
+    contents: write
+    pages: write
+    id-token: write
+
+concurrency:
+    group: "main-pipeline"
+    cancel-in-progress: true
+
+jobs:
+    # Data sync job
+    sync-data:
+        if: ${{ inputs.task_priority == 'story-only' || inputs.task_priority == 'arknights-only' || inputs.task_priority == 'fgo-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
+        runs-on: ubuntu-latest
+        timeout-minutes: 45
+        outputs:
+            data-updated: ${{ steps.check-changes.outputs.changed }}
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "yarn"
+                  cache-dependency-path: docs/yarn.lock
+
+            - name: Install dependencies
+              working-directory: docs
+              run: yarn install --frozen-lockfile
+
+            - name: Sync Arknights Story Data
+              if: ${{ inputs.task_priority == 'story-only' || inputs.task_priority == 'arknights-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
+              working-directory: docs
+              run: |
+                  echo "📚 Starting Arknights story data sync..."
+                  yarn data:story
+                  echo "✅ Arknights story data sync complete"
+
+            - name: Update Arknights Character Data
+              if: ${{ inputs.task_priority == 'arknights-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
+              working-directory: docs
+              run: |
+                  echo "🚀 Starting Arknights character data update..."
+                  yarn data:arknights
+                  echo "✅ Arknights character data update complete"
+
+            - name: Update FGO Data
+              if: ${{ inputs.task_priority == 'fgo-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
+              working-directory: docs
+              run: |
+                  echo "🚀 Starting FGO data update..."
+                  yarn data:fgo
+                  echo "✅ FGO data update complete"
+
+            - name: Check for data changes (exclude story files)
+              id: check-changes
+              run: |
+                  # Check for changes excluding story directories
+                  git add docs/src/public/data/
+                  git reset docs/src/public/data/*/arknights/story/
+                  git reset docs/src/public/data/**/story/
+                  
+                  if git diff --cached --quiet; then
+                    echo "changed=false" >> $GITHUB_OUTPUT
+                    echo "📊 No data changes detected (story files excluded)"
+                  else
+                    echo "changed=true" >> $GITHUB_OUTPUT
+                    echo "📊 Data changes detected (story files excluded)"
+                    git diff --cached --name-only
+                  fi
+
+            - name: Commit data changes (exclude story files)
+              if: steps.check-changes.outputs.changed == 'true'
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+                  
+                  # Add all data changes except story files
+                  git add docs/src/public/data/
+                  git reset docs/src/public/data/*/arknights/story/
+                  git reset docs/src/public/data/**/story/
+                  
+                  git commit -m "🤖 Update game data $(date '+%Y-%m-%d %H:%M:%S')"
+
+                  echo "🔄 Pushing data updates..."
+                  for i in {1..3}; do
+                    if git push; then
+                      echo "✅ Push successful"
+                      break
+                    else
+                      echo "⚠️ Push failed, retrying ($i/3)"
+                      git pull --rebase origin main
+                      if [ $? -ne 0 ]; then
+                        echo "❌ Rebase failed, skipping push"
+                        exit 1
+                      fi
+                    fi
+                  done
+
+    # R2 image sync job
+    sync-r2:
+        if: ${{ ((needs.sync-data.outputs.data-updated == 'true' && (inputs.task_priority == 'arknights-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule')) || inputs.task_priority == 'r2-only') && !failure() }}
+        needs: [sync-data]
+        runs-on: ubuntu-latest
+        timeout-minutes: 120
+
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "yarn"
+                  cache-dependency-path: docs/yarn.lock
+
+            - name: Install dependencies
+              working-directory: docs
+              run: yarn install --frozen-lockfile
+
+            - name: Sync images to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "🚀 Starting R2 image sync..."
+                  echo "📝 Config: Upload with cache cleanup, tracking in uploaded.json"
+                  yarn r2:sync
+                  echo "✅ R2 image sync complete"
+
+            - name: Commit R2 sync logs
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+
+                  if [ -f "docs/.vitepress/logs/uploaded.json" ] || [ -f "docs/.vitepress/logs/r2-sync-failures.json" ]; then
+                    git add docs/.vitepress/logs/
+                    
+                    if ! git diff --cached --quiet; then
+                      git commit -m "📤 Update R2 sync logs $(date '+%Y-%m-%d %H:%M:%S')"
+                      
+                      echo "🔄 Pushing R2 sync logs..."
+                      for i in {1..3}; do
+                        if git push; then
+                          echo "✅ R2 logs pushed successfully"
+                          break
+                        else
+                          echo "⚠️ Push failed, retrying ($i/3)"
+                          git pull --rebase origin main
+                          if [ $? -ne 0 ]; then
+                            echo "❌ Rebase failed, skipping push"
+                            break
+                          fi
+                        fi
+                      done
+                    else
+                      echo "📊 No R2 sync log changes"
+                    fi
+                  else
+                    echo "📄 No R2 sync log files found"
+                  fi
+
+            - name: Upload R2 sync artifacts
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: r2-sync-logs-${{ github.run_number }}
+                  path: docs/.vitepress/logs/
+                  retention-days: 7
+
+    # Deployment configuration job
+    config:
+        if: ${{ inputs.task_priority == 'build-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
+        needs: [sync-data, sync-r2]
+        runs-on: ubuntu-latest
+        outputs:
+            deployment-type: ${{ steps.config.outputs.deployment-type }}
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "yarn"
+                  cache-dependency-path: docs/yarn.lock
+
+            - name: Install dependencies
+              working-directory: docs
+              run: yarn install --frozen-lockfile
+
+            - name: Read deployment config
+              id: config
+              working-directory: docs
+              run: |
+                  # Extract deployment type from project-config.ts
+                  DEPLOYMENT_TYPE=$(node -e "
+                    const fs = require('fs');
+                    const content = fs.readFileSync('.vitepress/config/project-config.ts', 'utf8');
+                    const match = content.match(/deployment:\s*\{[\s\S]*?type:\s*['\"]([^'\"]+)['\"][\s\S]*?\}/);
+                    console.log(match ? match[1] : 'github-pages');
+                  ")
+                  echo "deployment-type=$DEPLOYMENT_TYPE" >> $GITHUB_OUTPUT
+
+    # Build the site
+    build:
+        needs: config
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+              with:
+                  fetch-depth: 0
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "yarn"
+                  cache-dependency-path: docs/yarn.lock
+
+            - name: Install dependencies
+              working-directory: docs
+              run: yarn install --frozen-lockfile
+
+            - name: Build with VitePress
+              working-directory: docs
+              run: yarn build
+
+            - name: Upload build artifact
+              uses: actions/upload-artifact@v4
+              with:
+                  name: vitepress-dist
+                  path: docs/.vitepress/dist
+                  retention-days: 1
+
+    # Deploy to GitHub Pages
+    deploy-github:
+        if: needs.config.outputs.deployment-type == 'github-pages'
+        needs: [config, build]
+        runs-on: ubuntu-latest
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+        steps:
+            - name: Setup Pages
+              uses: actions/configure-pages@v4
+
+            - name: Download build artifact
+              uses: actions/download-artifact@v4
+              with:
+                  name: vitepress-dist
+                  path: ./dist
+
+            - name: Upload Pages artifact
+              uses: actions/upload-pages-artifact@v3
+              with:
+                  path: ./dist
+
+            - name: Deploy to GitHub Pages
+              id: deployment
+              uses: actions/deploy-pages@v4
+
+    # Deploy to server via SSH
+    deploy-server:
+        if: needs.config.outputs.deployment-type == 'server'
+        needs: [config, build]
+        runs-on: ubuntu-latest
+        steps:
+            - name: Download build artifact
+              uses: actions/download-artifact@v4
+              with:
+                  name: vitepress-dist
+                  path: ./dist
+
+            - name: Deploy to server via SSH
+              uses: appleboy/ssh-action@v1.0.3
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USERNAME }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  port: ${{ secrets.SSH_PORT || 22 }}
+                  script: |
+                      # Clean and create remote directory
+                      rm -rf ${{ secrets.REMOTE_PATH }}/*
+                      mkdir -p ${{ secrets.REMOTE_PATH }}
+
+            - name: Copy files to server
+              uses: appleboy/scp-action@v0.1.7
+              with:
+                  host: ${{ secrets.SSH_HOST }}
+                  username: ${{ secrets.SSH_USERNAME }}
+                  key: ${{ secrets.SSH_PRIVATE_KEY }}
+                  port: ${{ secrets.SSH_PORT || 22 }}
+                  source: "./dist/*"
+                  target: ${{ secrets.REMOTE_PATH }}
+                  strip_components: 1
+
+    # Deploy with custom commands
+    deploy-custom:
+        if: needs.config.outputs.deployment-type == 'custom'
+        needs: [config, build]
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "20"
+                  cache: "yarn"
+                  cache-dependency-path: docs/yarn.lock
+
+            - name: Install dependencies
+              working-directory: docs
+              run: yarn install --frozen-lockfile
+
+            - name: Download build artifact
+              uses: actions/download-artifact@v4
+              with:
+                  name: vitepress-dist
+                  path: ./docs/.vitepress/dist
+
+            - name: Read deployment commands
+              id: commands
+              working-directory: docs
+              run: |
+                  # Extract deployment commands from project-config.ts
+                  DEPLOY_CMD=$(node -e "
+                    const fs = require('fs');
+                    const content = fs.readFileSync('.vitepress/config/project-config.ts', 'utf8');
+                    const match = content.match(/deployCommand:\s*['\"]([^'\"]*)['\"]/) || ['', ''];
+                    console.log(match[1]);
+                  ")
+                  POST_DEPLOY_CMD=$(node -e "
+                    const fs = require('fs');
+                    const content = fs.readFileSync('.vitepress/config/project-config.ts', 'utf8');
+                    const match = content.match(/postDeployCommand:\s*['\"]([^'\"]*)['\"]/) || ['', ''];
+                    console.log(match[1]);
+                  ")
+                  echo "deploy-command=$DEPLOY_CMD" >> $GITHUB_OUTPUT
+                  echo "post-deploy-command=$POST_DEPLOY_CMD" >> $GITHUB_OUTPUT
+
+            - name: Run custom deployment
+              working-directory: docs
+              run: |
+                  # Run deploy command if specified
+                  if [ -n "${{ steps.commands.outputs.deploy-command }}" ]; then
+                    echo "Executing deploy command..."
+                    ${{ steps.commands.outputs.deploy-command }}
+                  fi
+                  
+                  # Run post-deploy command if specified
+                  if [ -n "${{ steps.commands.outputs.post-deploy-command }}" ]; then
+                    echo "Executing post-deploy command..."
+                    ${{ steps.commands.outputs.post-deploy-command }}
+                  fi

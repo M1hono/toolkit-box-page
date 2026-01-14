@@ -1,0 +1,6 @@
+{
+    "lastUpdated": "最終更新：{date}",
+    "pageViews": "ページビュー：{count}",
+    "readingTime": "読了時間：{time}分",
+    "wordCount": "文字数：{count}文字"
+}

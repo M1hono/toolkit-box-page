@@ -1,0 +1,6 @@
+{
+    "outputFormat": "Output Format",
+    "copyCode": "Copy Code",
+    "lockSizeToSeeOutput": "Lock size and configure the ritual to see output.",
+    "validationError": "Invalid configuration. Ensure pattern has at least one non-zero value and all keys have an item defined."
+}

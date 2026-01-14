@@ -1,0 +1,20 @@
+{
+    "appTitle": "明日方舟角色立绘提取器",
+    "appSubtitle": "从故事文件中提取角色立绘，支持智能裁剪和批量下载",
+    "welcomeTitle": "选择一个角色开始",
+    "welcomeDescription": "从左侧面板选择角色",
+    "loadingData": "加载中...",
+    "totalChars": "总计",
+    "filtered": "显示",
+    "characters": "角色列表",
+    "variants": "个变体",
+    "batchDownload": "批量下载",
+    "batchCrop": "批量裁剪",
+    "batchCropDesc": "使用当前选择区域下载所有变体",
+    "batchFull": "批量原图",
+    "batchFullDesc": "下载所有原始变体",
+    "cancel": "取消",
+    "batchProcessing": "处理中...",
+    "faceDetected": "已识别脸部",
+    "defaultSelection": "使用默认选区"
+}

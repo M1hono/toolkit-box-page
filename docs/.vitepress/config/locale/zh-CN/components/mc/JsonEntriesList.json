@@ -1,0 +1,8 @@
+{
+    "translationEntries": "翻译条目",
+    "itemsPerPage": "每页条目数",
+    "pageInfo": "第 {current} 页，共 {total} 页",
+    "noEntries": "未找到匹配条目。请导入文件或清除过滤器。",
+    "edit": "编辑",
+    "delete": "删除"
+}

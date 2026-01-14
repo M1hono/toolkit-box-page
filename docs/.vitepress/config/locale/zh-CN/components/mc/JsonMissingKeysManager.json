@@ -1,0 +1,10 @@
+{
+    "orphanedKeys": "孤立键值",
+    "hide": "隐藏",
+    "show": "显示",
+    "warningText": "发现 {count} 个孤立键值：这些键值存在于目标翻译中但不存在于源文件中。请考虑删除这些过时的翻译条目。",
+    "selectAll": "全选",
+    "deselectAll": "取消全选",
+    "deleteSelected": "删除选中",
+    "itemsPerPage": "每页条目数"
+}

@@ -1,0 +1,6050 @@
+[
+  {
+    "id": 100100,
+    "name": "阿尔托莉雅·潘德拉贡",
+    "originalName": "阿尔托莉雅·潘德拉贡",
+    "ruby": "阿尔托莉雅·潘德拉贡",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "saber"
+    ]
+  },
+  {
+    "id": 100200,
+    "name": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "originalName": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "ruby": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 100300,
+    "name": "阿尔托莉雅·潘德拉贡〔Lily〕",
+    "originalName": "阿尔托莉雅·潘德拉贡〔Lily〕",
+    "ruby": "阿尔托莉雅·潘德拉贡〔Lily〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡〔lily〕",
+      "阿尔托莉雅·潘德拉贡〔lily〕",
+      "阿尔托莉雅·潘德拉贡〔lily〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 100500,
+    "name": "尼禄·克劳狄乌斯",
+    "originalName": "尼禄·克劳狄乌斯",
+    "ruby": "尼禄·克劳狄乌斯",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "尼禄·克劳狄乌斯",
+      "尼禄·克劳狄乌斯",
+      "尼禄·克劳狄乌斯",
+      "saber"
+    ]
+  },
+  {
+    "id": 100600,
+    "name": "尼禄·克劳狄乌斯〔新娘〕",
+    "originalName": "尼禄·克劳狄乌斯〔新娘〕",
+    "ruby": "尼禄·克劳狄乌斯〔新娘〕",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "尼禄·克劳狄乌斯〔新娘〕",
+      "尼禄·克劳狄乌斯〔新娘〕",
+      "尼禄·克劳狄乌斯〔新娘〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 100700,
+    "name": "高文",
+    "originalName": "高文",
+    "ruby": "高文",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "高文",
+      "高文",
+      "高文",
+      "saber"
+    ]
+  },
+  {
+    "id": 100800,
+    "name": "齐格飞",
+    "originalName": "齐格飞",
+    "ruby": "齐格飞",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "齐格飞",
+      "齐格飞",
+      "齐格飞",
+      "saber"
+    ]
+  },
+  {
+    "id": 100900,
+    "name": "莫德雷德",
+    "originalName": "莫德雷德",
+    "ruby": "莫德雷德",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "莫德雷德",
+      "莫德雷德",
+      "莫德雷德",
+      "saber"
+    ]
+  },
+  {
+    "id": 101000,
+    "name": "伊丽莎白·巴托里〔勇者〕",
+    "originalName": "伊丽莎白·巴托里〔勇者〕",
+    "ruby": "伊丽莎白·巴托里〔勇者〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "伊丽莎白·巴托里〔勇者〕",
+      "伊丽莎白·巴托里〔勇者〕",
+      "伊丽莎白·巴托里〔勇者〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 101200,
+    "name": "贝德维尔",
+    "originalName": "贝德维尔",
+    "ruby": "贝德维尔",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "贝德维尔",
+      "贝德维尔",
+      "贝德维尔",
+      "saber"
+    ]
+  },
+  {
+    "id": 101300,
+    "name": "盖乌斯·尤利乌斯·恺撒",
+    "originalName": "盖乌斯·尤利乌斯·恺撒",
+    "ruby": "盖乌斯·尤利乌斯·恺撒",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "盖乌斯·尤利乌斯·恺撒",
+      "盖乌斯·尤利乌斯·恺撒",
+      "盖乌斯·尤利乌斯·恺撒",
+      "saber"
+    ]
+  },
+  {
+    "id": 101400,
+    "name": "弗格斯·马克·罗伊",
+    "originalName": "弗格斯·马克·罗伊",
+    "ruby": "弗格斯·马克·罗伊",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "弗格斯·马克·罗伊",
+      "弗格斯·马克·罗伊",
+      "弗格斯·马克·罗伊",
+      "saber"
+    ]
+  },
+  {
+    "id": 101700,
+    "name": "宫本武藏",
+    "originalName": "宫本武藏",
+    "ruby": "宫本武藏",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "宫本武藏",
+      "宫本武藏",
+      "宫本武藏",
+      "saber"
+    ]
+  },
+  {
+    "id": 101800,
+    "name": "阿蒂拉",
+    "originalName": "阿蒂拉",
+    "ruby": "阿蒂拉",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "阿蒂拉",
+      "阿蒂拉",
+      "阿蒂拉",
+      "saber"
+    ]
+  },
+  {
+    "id": 101900,
+    "name": "罗摩",
+    "originalName": "罗摩",
+    "ruby": "罗摩",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "罗摩",
+      "罗摩",
+      "罗摩",
+      "saber"
+    ]
+  },
+  {
+    "id": 102000,
+    "name": "兰斯洛特",
+    "originalName": "兰斯洛特",
+    "ruby": "兰斯洛特",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "兰斯洛特",
+      "兰斯洛特",
+      "兰斯洛特",
+      "saber"
+    ]
+  },
+  {
+    "id": 102200,
+    "name": "吉尔·德·雷",
+    "originalName": "吉尔·德·雷",
+    "ruby": "吉尔·德·雷",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "吉尔·德·雷",
+      "吉尔·德·雷",
+      "吉尔·德·雷",
+      "saber"
+    ]
+  },
+  {
+    "id": 102600,
+    "name": "骑士迪昂",
+    "originalName": "骑士迪昂",
+    "ruby": "骑士迪昂",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "骑士迪昂",
+      "骑士迪昂",
+      "骑士迪昂",
+      "saber"
+    ]
+  },
+  {
+    "id": 102700,
+    "name": "冲田总司",
+    "originalName": "冲田总司",
+    "ruby": "冲田总司",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "冲田总司",
+      "冲田总司",
+      "冲田总司",
+      "saber"
+    ]
+  },
+  {
+    "id": 102800,
+    "name": "两仪式",
+    "originalName": "两仪式",
+    "ruby": "两仪式",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "两仪式",
+      "两仪式",
+      "两仪式",
+      "saber"
+    ]
+  },
+  {
+    "id": 102900,
+    "name": "亚瑟·潘德拉贡〔Prototype〕",
+    "originalName": "亚瑟·潘德拉贡〔Prototype〕",
+    "ruby": "亚瑟·潘德拉贡〔Prototype〕",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "亚瑟·潘德拉贡〔prototype〕",
+      "亚瑟·潘德拉贡〔prototype〕",
+      "亚瑟·潘德拉贡〔prototype〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 103000,
+    "name": "铃鹿御前",
+    "originalName": "铃鹿御前",
+    "ruby": "铃鹿御前",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "铃鹿御前",
+      "铃鹿御前",
+      "铃鹿御前",
+      "saber"
+    ]
+  },
+  {
+    "id": 103100,
+    "name": "弗兰肯斯坦",
+    "originalName": "弗兰肯斯坦",
+    "ruby": "弗兰肯斯坦",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "弗兰肯斯坦",
+      "弗兰肯斯坦",
+      "弗兰肯斯坦",
+      "saber"
+    ]
+  },
+  {
+    "id": 103200,
+    "name": "柳生但马守宗矩",
+    "originalName": "柳生但马守宗矩",
+    "ruby": "柳生但马守宗矩",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "柳生但马守宗矩",
+      "柳生但马守宗矩",
+      "柳生但马守宗矩",
+      "saber"
+    ]
+  },
+  {
+    "id": 103300,
+    "name": "齐格鲁德",
+    "originalName": "齐格鲁德",
+    "ruby": "齐格鲁德",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "齐格鲁德",
+      "齐格鲁德",
+      "齐格鲁德",
+      "saber"
+    ]
+  },
+  {
+    "id": 103400,
+    "name": "女王梅芙",
+    "originalName": "女王梅芙",
+    "ruby": "女王梅芙",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "女王梅芙",
+      "女王梅芙",
+      "女王梅芙",
+      "saber"
+    ]
+  },
+  {
+    "id": 103500,
+    "name": "迪尔姆德·奥迪那",
+    "originalName": "迪尔姆德·奥迪那",
+    "ruby": "迪尔姆德·奥迪那",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "迪尔姆德·奥迪那",
+      "迪尔姆德·奥迪那",
+      "迪尔姆德·奥迪那",
+      "saber"
+    ]
+  },
+  {
+    "id": 103600,
+    "name": "兰陵王",
+    "originalName": "兰陵王",
+    "ruby": "兰陵王",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "兰陵王",
+      "兰陵王",
+      "兰陵王",
+      "saber"
+    ]
+  },
+  {
+    "id": 103700,
+    "name": "红阎魔",
+    "originalName": "红阎魔",
+    "ruby": "红阎魔",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "红阎魔",
+      "红阎魔",
+      "红阎魔",
+      "saber"
+    ]
+  },
+  {
+    "id": 103800,
+    "name": "伊阿宋",
+    "originalName": "伊阿宋",
+    "ruby": "伊阿宋",
+    "className": "saber",
+    "rarity": 1,
+    "searchTerms": [
+      "伊阿宋",
+      "伊阿宋",
+      "伊阿宋",
+      "saber"
+    ]
+  },
+  {
+    "id": 103900,
+    "name": "拉克什米·芭伊",
+    "originalName": "拉克什米·芭伊",
+    "ruby": "拉克什米·芭伊",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "拉克什米·芭伊",
+      "拉克什米·芭伊",
+      "拉克什米·芭伊",
+      "saber"
+    ]
+  },
+  {
+    "id": 104000,
+    "name": "葛饰北斋",
+    "originalName": "葛饰北斋",
+    "ruby": "葛饰北斋",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "葛饰北斋",
+      "葛饰北斋",
+      "葛饰北斋",
+      "saber"
+    ]
+  },
+  {
+    "id": 104100,
+    "name": "阿斯托尔福",
+    "originalName": "阿斯托尔福",
+    "ruby": "阿斯托尔福",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "阿斯托尔福",
+      "阿斯托尔福",
+      "阿斯托尔福",
+      "saber"
+    ]
+  },
+  {
+    "id": 104200,
+    "name": "狄俄斯库里",
+    "originalName": "狄俄斯库里",
+    "ruby": "狄俄斯库里",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "狄俄斯库里",
+      "狄俄斯库里",
+      "狄俄斯库里",
+      "saber"
+    ]
+  },
+  {
+    "id": 104300,
+    "name": "罗兰",
+    "originalName": "罗兰",
+    "ruby": "罗兰",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "罗兰",
+      "罗兰",
+      "罗兰",
+      "saber"
+    ]
+  },
+  {
+    "id": 104400,
+    "name": "斋藤一",
+    "originalName": "斋藤一",
+    "ruby": "斋藤一",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "斋藤一",
+      "斋藤一",
+      "斋藤一",
+      "saber"
+    ]
+  },
+  {
+    "id": 104500,
+    "name": "巴御前",
+    "originalName": "巴御前",
+    "ruby": "巴御前",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "巴御前",
+      "巴御前",
+      "巴御前",
+      "saber"
+    ]
+  },
+  {
+    "id": 104600,
+    "name": "伊吹童子",
+    "originalName": "伊吹童子",
+    "ruby": "伊吹童子",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "伊吹童子",
+      "伊吹童子",
+      "伊吹童子",
+      "saber"
+    ]
+  },
+  {
+    "id": 104700,
+    "name": "渡边纲",
+    "originalName": "渡边纲",
+    "ruby": "渡边纲",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "渡边纲",
+      "渡边纲",
+      "渡边纲",
+      "saber"
+    ]
+  },
+  {
+    "id": 104800,
+    "name": "迦尔纳〔圣诞〕",
+    "originalName": "迦尔纳〔圣诞〕",
+    "ruby": "迦尔纳〔圣诞〕",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "迦尔纳〔圣诞〕",
+      "迦尔纳〔圣诞〕",
+      "迦尔纳〔圣诞〕",
+      "saber"
+    ]
+  },
+  {
+    "id": 104900,
+    "name": "千子村正",
+    "originalName": "千子村正",
+    "ruby": "千子村正",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "千子村正",
+      "千子村正",
+      "千子村正",
+      "saber"
+    ]
+  },
+  {
+    "id": 105000,
+    "name": "巴格斯特",
+    "originalName": "巴格斯特",
+    "ruby": "巴格斯特",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "巴格斯特",
+      "巴格斯特",
+      "巴格斯特",
+      "saber"
+    ]
+  },
+  {
+    "id": 105100,
+    "name": "冲田总司〔Alter〕",
+    "originalName": "冲田总司〔Alter〕",
+    "ruby": "冲田总司·Alter",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "冲田总司〔alter〕",
+      "冲田总司〔alter〕",
+      "冲田总司·alter",
+      "saber"
+    ]
+  },
+  {
+    "id": 105200,
+    "name": "查理曼",
+    "originalName": "查理曼",
+    "ruby": "查理曼",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "查理曼",
+      "查理曼",
+      "查理曼",
+      "saber"
+    ]
+  },
+  {
+    "id": 105300,
+    "name": "征氏姐妹",
+    "originalName": "征氏姐妹",
+    "ruby": "征氏姐妹",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "征氏姐妹",
+      "征氏姐妹",
+      "征氏姐妹",
+      "saber"
+    ]
+  },
+  {
+    "id": 105400,
+    "name": "加雷斯",
+    "originalName": "加雷斯",
+    "ruby": "加雷斯",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "加雷斯",
+      "加雷斯",
+      "加雷斯",
+      "saber"
+    ]
+  },
+  {
+    "id": 105500,
+    "name": "山南敬助",
+    "originalName": "山南敬助",
+    "ruby": "山南敬助",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "山南敬助",
+      "山南敬助",
+      "山南敬助",
+      "saber"
+    ]
+  },
+  {
+    "id": 105600,
+    "name": "美杜莎",
+    "originalName": "美杜莎",
+    "ruby": "美杜莎",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "美杜莎",
+      "美杜莎",
+      "美杜莎",
+      "saber"
+    ]
+  },
+  {
+    "id": 105700,
+    "name": "瑟坦特",
+    "originalName": "瑟坦特",
+    "ruby": "瑟坦特",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "瑟坦特",
+      "瑟坦特",
+      "瑟坦特",
+      "saber"
+    ]
+  },
+  {
+    "id": 105800,
+    "name": "忒修斯",
+    "originalName": "忒修斯",
+    "ruby": "忒修斯",
+    "className": "saber",
+    "rarity": 3,
+    "searchTerms": [
+      "忒修斯",
+      "忒修斯",
+      "忒修斯",
+      "saber"
+    ]
+  },
+  {
+    "id": 105900,
+    "name": "大和武尊",
+    "originalName": "大和武尊",
+    "ruby": "大和武尊",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "大和武尊",
+      "大和武尊",
+      "大和武尊",
+      "saber"
+    ]
+  },
+  {
+    "id": 106000,
+    "name": "宫本伊织",
+    "originalName": "宫本伊织",
+    "ruby": "宫本伊织",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "宫本伊织",
+      "宫本伊织",
+      "宫本伊织",
+      "saber"
+    ]
+  },
+  {
+    "id": 106100,
+    "name": "理查一世",
+    "originalName": "理查一世",
+    "ruby": "理查一世",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "理查一世",
+      "理查一世",
+      "理查一世",
+      "saber"
+    ]
+  },
+  {
+    "id": 200100,
+    "name": "卫宫",
+    "originalName": "卫宫",
+    "ruby": "卫宫",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "卫宫",
+      "卫宫",
+      "卫宫",
+      "archer"
+    ]
+  },
+  {
+    "id": 200200,
+    "name": "吉尔伽美什",
+    "originalName": "吉尔伽美什",
+    "ruby": "吉尔伽美什",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "吉尔伽美什",
+      "吉尔伽美什",
+      "吉尔伽美什",
+      "archer"
+    ]
+  },
+  {
+    "id": 200300,
+    "name": "罗宾汉",
+    "originalName": "罗宾汉",
+    "ruby": "罗宾汉",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "罗宾汉",
+      "罗宾汉",
+      "罗宾汉",
+      "archer"
+    ]
+  },
+  {
+    "id": 200500,
+    "name": "阿塔兰忒",
+    "originalName": "阿塔兰忒",
+    "ruby": "阿塔兰忒",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "阿塔兰忒",
+      "阿塔兰忒",
+      "阿塔兰忒",
+      "archer"
+    ]
+  },
+  {
+    "id": 200600,
+    "name": "大卫",
+    "originalName": "大卫",
+    "ruby": "大卫",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "大卫",
+      "大卫",
+      "大卫",
+      "archer"
+    ]
+  },
+  {
+    "id": 200800,
+    "name": "崔斯坦",
+    "originalName": "崔斯坦",
+    "ruby": "崔斯坦",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "崔斯坦",
+      "崔斯坦",
+      "崔斯坦",
+      "archer"
+    ]
+  },
+  {
+    "id": 200900,
+    "name": "俄里翁",
+    "originalName": "俄里翁",
+    "ruby": "俄里翁",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "俄里翁",
+      "俄里翁",
+      "俄里翁",
+      "archer"
+    ]
+  },
+  {
+    "id": 201000,
+    "name": "比利小子",
+    "originalName": "比利小子",
+    "ruby": "比利小子",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "比利小子",
+      "比利小子",
+      "比利小子",
+      "archer"
+    ]
+  },
+  {
+    "id": 201100,
+    "name": "尼古拉·特斯拉",
+    "originalName": "尼古拉·特斯拉",
+    "ruby": "尼古拉·特斯拉",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "尼古拉·特斯拉",
+      "尼古拉·特斯拉",
+      "尼古拉·特斯拉",
+      "archer"
+    ]
+  },
+  {
+    "id": 201200,
+    "name": "尤瑞艾莉",
+    "originalName": "尤瑞艾莉",
+    "ruby": "尤瑞艾莉",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "尤瑞艾莉",
+      "尤瑞艾莉",
+      "尤瑞艾莉",
+      "archer"
+    ]
+  },
+  {
+    "id": 201300,
+    "name": "阿拉什",
+    "originalName": "阿拉什",
+    "ruby": "阿拉什",
+    "className": "archer",
+    "rarity": 1,
+    "searchTerms": [
+      "阿拉什",
+      "阿拉什",
+      "阿拉什",
+      "archer"
+    ]
+  },
+  {
+    "id": 201400,
+    "name": "俵藤太",
+    "originalName": "俵藤太",
+    "ruby": "俵藤太",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "俵藤太",
+      "俵藤太",
+      "俵藤太",
+      "archer"
+    ]
+  },
+  {
+    "id": 201500,
+    "name": "阿周那",
+    "originalName": "阿周那",
+    "ruby": "阿周那",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "阿周那",
+      "阿周那",
+      "阿周那",
+      "archer"
+    ]
+  },
+  {
+    "id": 201600,
+    "name": "卫宫〔Alter〕",
+    "originalName": "卫宫〔Alter〕",
+    "ruby": "卫宫〔Alter〕",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "卫宫〔alter〕",
+      "卫宫〔alter〕",
+      "卫宫〔alter〕",
+      "archer"
+    ]
+  },
+  {
+    "id": 201800,
+    "name": "幼吉尔",
+    "originalName": "幼吉尔",
+    "ruby": "幼吉尔",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "幼吉尔",
+      "幼吉尔",
+      "幼吉尔",
+      "archer"
+    ]
+  },
+  {
+    "id": 202000,
+    "name": "伊什塔尔",
+    "originalName": "伊什塔尔",
+    "ruby": "伊什塔尔",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "伊什塔尔",
+      "伊什塔尔",
+      "伊什塔尔",
+      "archer"
+    ]
+  },
+  {
+    "id": 202100,
+    "name": "巴御前",
+    "originalName": "巴御前",
+    "ruby": "巴御前",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "巴御前",
+      "巴御前",
+      "巴御前",
+      "archer"
+    ]
+  },
+  {
+    "id": 202200,
+    "name": "阿蒂拉·the·San〔ta〕",
+    "originalName": "阿蒂拉·the·San〔ta〕",
+    "ruby": "阿蒂拉·the·Santa",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "阿蒂拉·the·san〔ta〕",
+      "阿蒂拉·the·san〔ta〕",
+      "阿蒂拉·the·santa",
+      "archer"
+    ]
+  },
+  {
+    "id": 202300,
+    "name": "詹姆斯·莫里亚蒂",
+    "originalName": "詹姆斯·莫里亚蒂",
+    "ruby": "詹姆斯·莫里亚蒂",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "詹姆斯·莫里亚蒂",
+      "詹姆斯·莫里亚蒂",
+      "詹姆斯·莫里亚蒂",
+      "archer"
+    ]
+  },
+  {
+    "id": 202400,
+    "name": "织田信长",
+    "originalName": "织田信长",
+    "ruby": "织田信长",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "织田信长",
+      "织田信长",
+      "织田信长",
+      "archer"
+    ]
+  },
+  {
+    "id": 202500,
+    "name": "安妮·伯妮＆玛莉·瑞德",
+    "originalName": "安妮·伯妮＆玛莉·瑞德",
+    "ruby": "安妮·伯妮＆玛莉·瑞德",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "安妮·伯妮＆玛莉·瑞德",
+      "安妮·伯妮＆玛莉·瑞德",
+      "安妮·伯妮＆玛莉·瑞德",
+      "archer"
+    ]
+  },
+  {
+    "id": 202600,
+    "name": "阿尔托莉雅·潘德拉贡",
+    "originalName": "阿尔托莉雅·潘德拉贡",
+    "ruby": "阿尔托莉雅·潘德拉贡",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "archer"
+    ]
+  },
+  {
+    "id": 202700,
+    "name": "克洛伊·冯·爱因兹贝伦",
+    "originalName": "克洛伊·冯·爱因兹贝伦",
+    "ruby": "克洛伊·冯·爱因兹贝伦",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "克洛伊·冯·爱因兹贝伦",
+      "克洛伊·冯·爱因兹贝伦",
+      "克洛伊·冯·爱因兹贝伦",
+      "archer"
+    ]
+  },
+  {
+    "id": 202800,
+    "name": "海伦娜·布拉瓦茨基",
+    "originalName": "海伦娜·布拉瓦茨基",
+    "ruby": "海伦娜·布拉瓦茨基",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "海伦娜·布拉瓦茨基",
+      "海伦娜·布拉瓦茨基",
+      "海伦娜·布拉瓦茨基",
+      "archer"
+    ]
+  },
+  {
+    "id": 202900,
+    "name": "浅上藤乃",
+    "originalName": "浅上藤乃",
+    "ruby": "浅上藤乃",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "浅上藤乃",
+      "浅上藤乃",
+      "浅上藤乃",
+      "archer"
+    ]
+  },
+  {
+    "id": 203000,
+    "name": "喀戎",
+    "originalName": "喀戎",
+    "ruby": "喀戎",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "喀戎",
+      "喀戎",
+      "喀戎",
+      "archer"
+    ]
+  },
+  {
+    "id": 203100,
+    "name": "拿破仑",
+    "originalName": "拿破仑",
+    "ruby": "拿破仑",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "拿破仑",
+      "拿破仑",
+      "拿破仑",
+      "archer"
+    ]
+  },
+  {
+    "id": 203200,
+    "name": "贞德",
+    "originalName": "贞德",
+    "ruby": "贞德",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "贞德",
+      "贞德",
+      "贞德",
+      "archer"
+    ]
+  },
+  {
+    "id": 203300,
+    "name": "马嘶",
+    "originalName": "马嘶",
+    "ruby": "马嘶",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "马嘶",
+      "马嘶",
+      "马嘶",
+      "archer"
+    ]
+  },
+  {
+    "id": 203400,
+    "name": "威廉·退尔",
+    "originalName": "威廉·退尔",
+    "ruby": "威廉·退尔",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "威廉·退尔",
+      "威廉·退尔",
+      "威廉·退尔",
+      "archer"
+    ]
+  },
+  {
+    "id": 203500,
+    "name": "帕里斯",
+    "originalName": "帕里斯",
+    "ruby": "帕里斯",
+    "className": "archer",
+    "rarity": 2,
+    "searchTerms": [
+      "帕里斯",
+      "帕里斯",
+      "帕里斯",
+      "archer"
+    ]
+  },
+  {
+    "id": 203600,
+    "name": "刑部姬",
+    "originalName": "刑部姬",
+    "ruby": "刑部姬",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "刑部姬",
+      "刑部姬",
+      "刑部姬",
+      "archer"
+    ]
+  },
+  {
+    "id": 203700,
+    "name": "灾星简",
+    "originalName": "灾星简",
+    "ruby": "灾星简",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "灾星简",
+      "灾星简",
+      "灾星简",
+      "archer"
+    ]
+  },
+  {
+    "id": 203800,
+    "name": "超人俄里翁",
+    "originalName": "超人俄里翁",
+    "ruby": "超人俄里翁",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "超人俄里翁",
+      "超人俄里翁",
+      "超人俄里翁",
+      "archer"
+    ]
+  },
+  {
+    "id": 203900,
+    "name": "南丁格尔〔圣诞〕",
+    "originalName": "南丁格尔〔圣诞〕",
+    "ruby": "南丁格尔〔圣诞〕",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "南丁格尔〔圣诞〕",
+      "南丁格尔〔圣诞〕",
+      "南丁格尔〔圣诞〕",
+      "archer"
+    ]
+  },
+  {
+    "id": 204000,
+    "name": "清少纳言",
+    "originalName": "清少纳言",
+    "ruby": "清少纳言",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "清少纳言",
+      "清少纳言",
+      "清少纳言",
+      "archer"
+    ]
+  },
+  {
+    "id": 204100,
+    "name": "织田信胜",
+    "originalName": "织田信胜",
+    "ruby": "织田信胜",
+    "className": "archer",
+    "rarity": 1,
+    "searchTerms": [
+      "织田信胜",
+      "织田信胜",
+      "织田信胜",
+      "archer"
+    ]
+  },
+  {
+    "id": 204200,
+    "name": "伊莉雅丝菲尔·冯·爱因兹贝伦",
+    "originalName": "伊莉雅丝菲尔·冯·爱因兹贝伦",
+    "ruby": "伊莉雅丝菲尔",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "伊莉雅丝菲尔·冯·爱因兹贝伦",
+      "伊莉雅丝菲尔·冯·爱因兹贝伦",
+      "伊莉雅丝菲尔",
+      "archer"
+    ]
+  },
+  {
+    "id": 204300,
+    "name": "芭万·希",
+    "originalName": "芭万·希",
+    "ruby": "芭万·希",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "芭万·希",
+      "芭万·希",
+      "芭万·希",
+      "archer"
+    ]
+  },
+  {
+    "id": 204400,
+    "name": "阿纳斯塔西娅＆维",
+    "originalName": "阿纳斯塔西娅＆维",
+    "ruby": "阿纳斯塔西娅＆维",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "阿纳斯塔西娅＆维",
+      "阿纳斯塔西娅＆维",
+      "阿纳斯塔西娅＆维",
+      "archer"
+    ]
+  },
+  {
+    "id": 204500,
+    "name": "芝诺比阿",
+    "originalName": "芝诺比阿",
+    "ruby": "芝诺比阿",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "芝诺比阿",
+      "芝诺比阿",
+      "芝诺比阿",
+      "archer"
+    ]
+  },
+  {
+    "id": 204600,
+    "name": "源为朝",
+    "originalName": "源为朝",
+    "ruby": "源为朝",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "源为朝",
+      "源为朝",
+      "源为朝",
+      "archer"
+    ]
+  },
+  {
+    "id": 204700,
+    "name": "高杉晋作",
+    "originalName": "高杉晋作",
+    "ruby": "高杉晋作",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "高杉晋作",
+      "高杉晋作",
+      "高杉晋作",
+      "archer"
+    ]
+  },
+  {
+    "id": 204800,
+    "name": "杜尔伽",
+    "originalName": "杜尔伽",
+    "ruby": "杜尔伽",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "杜尔伽",
+      "杜尔伽",
+      "杜尔伽",
+      "archer"
+    ]
+  },
+  {
+    "id": 204900,
+    "name": "ＵＤＫ－巴格斯特",
+    "originalName": "ＵＤＫ－巴格斯特",
+    "ruby": "巴格斯特",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "ｕｄｋ－巴格斯特",
+      "ｕｄｋ－巴格斯特",
+      "巴格斯特",
+      "archer"
+    ]
+  },
+  {
+    "id": 205000,
+    "name": "托勒密",
+    "originalName": "托勒密",
+    "ruby": "托勒密",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "托勒密",
+      "托勒密",
+      "托勒密",
+      "archer"
+    ]
+  },
+  {
+    "id": 205100,
+    "name": "杉",
+    "originalName": "杉",
+    "ruby": "杉谷善住坊",
+    "className": "archer",
+    "rarity": 3,
+    "searchTerms": [
+      "杉",
+      "杉",
+      "杉谷善住坊",
+      "archer"
+    ]
+  },
+  {
+    "id": 205200,
+    "name": "杂贺孙一",
+    "originalName": "杂贺孙一",
+    "ruby": "杂贺孙一",
+    "className": "archer",
+    "rarity": 4,
+    "searchTerms": [
+      "杂贺孙一",
+      "杂贺孙一",
+      "杂贺孙一",
+      "archer"
+    ]
+  },
+  {
+    "id": 205300,
+    "name": "图坦卡蒙",
+    "originalName": "图坦卡蒙",
+    "ruby": "图坦卡蒙",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "图坦卡蒙",
+      "图坦卡蒙",
+      "图坦卡蒙",
+      "archer"
+    ]
+  },
+  {
+    "id": 300100,
+    "name": "库·丘林",
+    "originalName": "库·丘林",
+    "ruby": "库·丘林",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "库·丘林",
+      "库·丘林",
+      "库·丘林",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300200,
+    "name": "迪尔姆德·奥迪那",
+    "originalName": "迪尔姆德·奥迪那",
+    "ruby": "迪尔姆德·奥迪那",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "迪尔姆德·奥迪那",
+      "迪尔姆德·奥迪那",
+      "迪尔姆德·奥迪那",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300300,
+    "name": "弗拉德三世〔EXTRA〕",
+    "originalName": "弗拉德三世〔EXTRA〕",
+    "ruby": "弗拉德三世〔EXTRA〕",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "弗拉德三世〔extra〕",
+      "弗拉德三世〔extra〕",
+      "弗拉德三世〔extra〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300400,
+    "name": "迦尔纳",
+    "originalName": "迦尔纳",
+    "ruby": "迦尔纳",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "迦尔纳",
+      "迦尔纳",
+      "迦尔纳",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300500,
+    "name": "伊丽莎白·巴托里",
+    "originalName": "伊丽莎白·巴托里",
+    "ruby": "伊丽莎白·巴托里",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "伊丽莎白·巴托里",
+      "伊丽莎白·巴托里",
+      "伊丽莎白·巴托里",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300600,
+    "name": "武藏坊弁庆",
+    "originalName": "武藏坊弁庆",
+    "ruby": "武藏坊弁庆",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "武藏坊弁庆",
+      "武藏坊弁庆",
+      "武藏坊弁庆",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300700,
+    "name": "库·丘林〔Prototype〕",
+    "originalName": "库·丘林〔Prototype〕",
+    "ruby": "库·丘林〔Prototype〕",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "库·丘林〔prototype〕",
+      "库·丘林〔prototype〕",
+      "库·丘林〔prototype〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300800,
+    "name": "恩奇都",
+    "originalName": "恩奇都",
+    "ruby": "恩奇都",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "恩奇都",
+      "恩奇都",
+      "恩奇都",
+      "lancer"
+    ]
+  },
+  {
+    "id": 300900,
+    "name": "列奥尼达一世",
+    "originalName": "列奥尼达一世",
+    "ruby": "列奥尼达一世",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "列奥尼达一世",
+      "列奥尼达一世",
+      "列奥尼达一世",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301000,
+    "name": "罗穆路斯",
+    "originalName": "罗穆路斯",
+    "ruby": "罗穆路斯",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "罗穆路斯",
+      "罗穆路斯",
+      "罗穆路斯",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301100,
+    "name": "芬恩·麦克库尔",
+    "originalName": "芬恩·麦克库尔",
+    "ruby": "芬恩·麦克库尔",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "芬恩·麦克库尔",
+      "芬恩·麦克库尔",
+      "芬恩·麦克库尔",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301200,
+    "name": "布伦希尔德",
+    "originalName": "布伦希尔德",
+    "ruby": "布伦希尔德",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "布伦希尔德",
+      "布伦希尔德",
+      "布伦希尔德",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301300,
+    "name": "斯卡哈",
+    "originalName": "斯卡哈",
+    "ruby": "斯卡哈",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "斯卡哈",
+      "斯卡哈",
+      "斯卡哈",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301400,
+    "name": "宝藏院胤舜",
+    "originalName": "宝藏院胤舜",
+    "ruby": "宝藏院胤舜",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "宝藏院胤舜",
+      "宝藏院胤舜",
+      "宝藏院胤舜",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301600,
+    "name": "赫克托耳",
+    "originalName": "赫克托耳",
+    "ruby": "赫克托耳",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "赫克托耳",
+      "赫克托耳",
+      "赫克托耳",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301700,
+    "name": "李书文",
+    "originalName": "李书文",
+    "ruby": "李书文",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "李书文",
+      "李书文",
+      "李书文",
+      "lancer"
+    ]
+  },
+  {
+    "id": 301900,
+    "name": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "originalName": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "ruby": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302000,
+    "name": "阿尔托莉雅·潘德拉贡",
+    "originalName": "阿尔托莉雅·潘德拉贡",
+    "ruby": "阿尔托莉雅·潘德拉贡",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302400,
+    "name": "玉藻前",
+    "originalName": "玉藻前",
+    "ruby": "玉藻前",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "玉藻前",
+      "玉藻前",
+      "玉藻前",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302500,
+    "name": "清姬",
+    "originalName": "清姬",
+    "ruby": "清姬",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "清姬",
+      "清姬",
+      "清姬",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302600,
+    "name": "贞德·Alter·Santa·Lily",
+    "originalName": "贞德·Alter·Santa·Lily",
+    "ruby": "贞德·Alter·Santa·Lily",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "贞德·alter·santa·lily",
+      "贞德·alter·santa·lily",
+      "贞德·alter·santa·lily",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302700,
+    "name": "美杜莎",
+    "originalName": "美杜莎",
+    "ruby": "美杜莎",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "美杜莎",
+      "美杜莎",
+      "美杜莎",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302800,
+    "name": "豹人",
+    "originalName": "豹人",
+    "ruby": "豹人",
+    "className": "lancer",
+    "rarity": 3,
+    "searchTerms": [
+      "豹人",
+      "豹人",
+      "豹人",
+      "lancer"
+    ]
+  },
+  {
+    "id": 302900,
+    "name": "源赖光",
+    "originalName": "源赖光",
+    "ruby": "源赖光",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "源赖光",
+      "源赖光",
+      "源赖光",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303000,
+    "name": "帕尔瓦蒂",
+    "originalName": "帕尔瓦蒂",
+    "ruby": "帕尔瓦蒂",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "帕尔瓦蒂",
+      "帕尔瓦蒂",
+      "帕尔瓦蒂",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303100,
+    "name": "莲偶",
+    "originalName": "莲偶",
+    "ruby": "莲偶",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "莲偶",
+      "莲偶",
+      "莲偶",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303200,
+    "name": "埃列什基伽勒",
+    "originalName": "埃列什基伽勒",
+    "ruby": "埃列什基伽勒",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "埃列什基伽勒",
+      "埃列什基伽勒",
+      "埃列什基伽勒",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303300,
+    "name": "瓦尔基里",
+    "originalName": "瓦尔基里",
+    "ruby": "瓦尔基里",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "瓦尔基里",
+      "瓦尔基里",
+      "瓦尔基里",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303400,
+    "name": "茨木童子",
+    "originalName": "茨木童子",
+    "ruby": "茨木童子",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "茨木童子",
+      "茨木童子",
+      "茨木童子",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303500,
+    "name": "忠贞",
+    "originalName": "忠贞",
+    "ruby": "忠贞",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "忠贞",
+      "忠贞",
+      "忠贞",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303600,
+    "name": "布拉达曼特",
+    "originalName": "布拉达曼特",
+    "ruby": "布拉达曼特",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "布拉达曼特",
+      "布拉达曼特",
+      "布拉达曼特",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303800,
+    "name": "长尾景虎",
+    "originalName": "长尾景虎",
+    "ruby": "长尾景虎",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "长尾景虎",
+      "长尾景虎",
+      "长尾景虎",
+      "lancer"
+    ]
+  },
+  {
+    "id": 303900,
+    "name": "加雷斯",
+    "originalName": "加雷斯",
+    "ruby": "加雷斯",
+    "className": "lancer",
+    "rarity": 2,
+    "searchTerms": [
+      "加雷斯",
+      "加雷斯",
+      "加雷斯",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304000,
+    "name": "谜之Alterego·Λ",
+    "originalName": "谜之Alterego·Λ",
+    "ruby": "谜之Alterego·Λ",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "谜之alterego·λ",
+      "谜之alterego·λ",
+      "谜之alterego·λ",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304100,
+    "name": "凯妮斯",
+    "originalName": "凯妮斯",
+    "ruby": "凯妮斯",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "凯妮斯",
+      "凯妮斯",
+      "凯妮斯",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304200,
+    "name": "罗穆路斯·奎里努斯",
+    "originalName": "罗穆路斯·奎里努斯",
+    "ruby": "罗穆路斯·奎里努斯",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "罗穆路斯·奎里努斯",
+      "罗穆路斯·奎里努斯",
+      "罗穆路斯·奎里努斯",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304300,
+    "name": "宇津见绘里濑",
+    "originalName": "宇津见绘里濑",
+    "ruby": "宇津见绘里濑",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "宇津见绘里濑",
+      "宇津见绘里濑",
+      "宇津见绘里濑",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304400,
+    "name": "雏罂",
+    "originalName": "雏罂",
+    "ruby": "雏罂",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "雏罂",
+      "雏罂",
+      "雏罂",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304600,
+    "name": "弗栗多",
+    "originalName": "弗栗多",
+    "ruby": "弗栗多",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "弗栗多",
+      "弗栗多",
+      "弗栗多",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304700,
+    "name": "珀西瓦尔",
+    "originalName": "珀西瓦尔",
+    "ruby": "珀西瓦尔",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "珀西瓦尔",
+      "珀西瓦尔",
+      "珀西瓦尔",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304800,
+    "name": "梅柳齐娜",
+    "originalName": "梅柳齐娜",
+    "ruby": "梅柳齐娜",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "梅柳齐娜",
+      "梅柳齐娜",
+      "梅柳齐娜",
+      "lancer"
+    ]
+  },
+  {
+    "id": 304900,
+    "name": "玛丽·安宁",
+    "originalName": "玛丽·安宁",
+    "ruby": "玛丽·安宁",
+    "className": "lancer",
+    "rarity": 1,
+    "searchTerms": [
+      "玛丽·安宁",
+      "玛丽·安宁",
+      "玛丽·安宁",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305000,
+    "name": "坂本龙马",
+    "originalName": "坂本龙马",
+    "ruby": "坂本龙马",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "坂本龙马",
+      "坂本龙马",
+      "坂本龙马",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305100,
+    "name": "堂·吉诃德",
+    "originalName": "堂·吉诃德",
+    "ruby": "堂·吉诃德",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "堂·吉诃德",
+      "堂·吉诃德",
+      "堂·吉诃德",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305300,
+    "name": "布里托玛特",
+    "originalName": "布里托玛特",
+    "ruby": "布里托玛特",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "布里托玛特",
+      "布里托玛特",
+      "布里托玛特",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305400,
+    "name": "怖军",
+    "originalName": "怖军",
+    "ruby": "怖军",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "怖军",
+      "怖军",
+      "怖军",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305500,
+    "name": "多布雷尼亚·尼基季奇",
+    "originalName": "多布雷尼亚·尼基季奇",
+    "ruby": "多布雷尼亚·尼基季奇",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "多布雷尼亚·尼基季奇",
+      "多布雷尼亚·尼基季奇",
+      "多布雷尼亚·尼基季奇",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305600,
+    "name": "梵高〔矿工〕",
+    "originalName": "梵高〔矿工〕",
+    "ruby": "梵高〔矿工〕",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "梵高〔矿工〕",
+      "梵高〔矿工〕",
+      "梵高〔矿工〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 400100,
+    "name": "歌果",
+    "originalName": "歌果",
+    "ruby": "歌果",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "歌果",
+      "歌果",
+      "歌果",
+      "rider"
+    ]
+  },
+  {
+    "id": 400200,
+    "name": "伊斯坎达尔",
+    "originalName": "伊斯坎达尔",
+    "ruby": "伊斯坎达尔",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "伊斯坎达尔",
+      "伊斯坎达尔",
+      "伊斯坎达尔",
+      "rider"
+    ]
+  },
+  {
+    "id": 400300,
+    "name": "弗朗西斯·德雷克",
+    "originalName": "弗朗西斯·德雷克",
+    "ruby": "弗朗西斯·德雷克",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "弗朗西斯·德雷克",
+      "弗朗西斯·德雷克",
+      "弗朗西斯·德雷克",
+      "rider"
+    ]
+  },
+  {
+    "id": 400400,
+    "name": "阿斯托尔福",
+    "originalName": "阿斯托尔福",
+    "ruby": "阿斯托尔福",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "阿斯托尔福",
+      "阿斯托尔福",
+      "阿斯托尔福",
+      "rider"
+    ]
+  },
+  {
+    "id": 400600,
+    "name": "乔尔乔斯",
+    "originalName": "乔尔乔斯",
+    "ruby": "乔尔乔斯",
+    "className": "rider",
+    "rarity": 2,
+    "searchTerms": [
+      "乔尔乔斯",
+      "乔尔乔斯",
+      "乔尔乔斯",
+      "rider"
+    ]
+  },
+  {
+    "id": 400800,
+    "name": "爱迪·萨奇",
+    "originalName": "爱迪·萨奇",
+    "ruby": "爱迪·萨奇",
+    "className": "rider",
+    "rarity": 2,
+    "searchTerms": [
+      "爱迪·萨奇",
+      "爱迪·萨奇",
+      "爱迪·萨奇",
+      "rider"
+    ]
+  },
+  {
+    "id": 400900,
+    "name": "安妮·伯妮＆玛莉·瑞德",
+    "originalName": "安妮·伯妮＆玛莉·瑞德",
+    "ruby": "安妮·伯妮＆玛莉·瑞德",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "安妮·伯妮＆玛莉·瑞德",
+      "安妮·伯妮＆玛莉·瑞德",
+      "安妮·伯妮＆玛莉·瑞德",
+      "rider"
+    ]
+  },
+  {
+    "id": 401100,
+    "name": "布狄卡",
+    "originalName": "布狄卡",
+    "ruby": "布狄卡",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "布狄卡",
+      "布狄卡",
+      "布狄卡",
+      "rider"
+    ]
+  },
+  {
+    "id": 401200,
+    "name": "奥斯曼狄斯",
+    "originalName": "奥斯曼狄斯",
+    "ruby": "奥斯曼狄斯",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "奥斯曼狄斯",
+      "奥斯曼狄斯",
+      "奥斯曼狄斯",
+      "rider"
+    ]
+  },
+  {
+    "id": 401300,
+    "name": "女王梅芙",
+    "originalName": "女王梅芙",
+    "ruby": "女王梅芙",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "女王梅芙",
+      "女王梅芙",
+      "女王梅芙",
+      "rider"
+    ]
+  },
+  {
+    "id": 401400,
+    "name": "牛若丸",
+    "originalName": "牛若丸",
+    "ruby": "牛若丸",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "牛若丸",
+      "牛若丸",
+      "牛若丸",
+      "rider"
+    ]
+  },
+  {
+    "id": 401500,
+    "name": "亚历山大",
+    "originalName": "亚历山大",
+    "ruby": "亚历山大",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "亚历山大",
+      "亚历山大",
+      "亚历山大",
+      "rider"
+    ]
+  },
+  {
+    "id": 401700,
+    "name": "玛丽·安托瓦内特",
+    "originalName": "玛丽·安托瓦内特",
+    "ruby": "玛丽·安托瓦内特",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "玛丽·安托瓦内特",
+      "玛丽·安托瓦内特",
+      "玛丽·安托瓦内特",
+      "rider"
+    ]
+  },
+  {
+    "id": 401800,
+    "name": "魁札尔·科亚特尔",
+    "originalName": "魁札尔·科亚特尔",
+    "ruby": "魁札尔·科亚特尔",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "魁札尔·科亚特尔",
+      "魁札尔·科亚特尔",
+      "魁札尔·科亚特尔",
+      "rider"
+    ]
+  },
+  {
+    "id": 401900,
+    "name": "玛尔达",
+    "originalName": "玛尔达",
+    "ruby": "玛尔达",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "玛尔达",
+      "玛尔达",
+      "玛尔达",
+      "rider"
+    ]
+  },
+  {
+    "id": 402200,
+    "name": "阿尔托莉雅·潘德拉贡〔圣诞Alter〕",
+    "originalName": "阿尔托莉雅·潘德拉贡〔圣诞Alter〕",
+    "ruby": "阿尔托莉雅·潘德拉贡〔圣诞Alter〕",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡〔圣诞alter〕",
+      "阿尔托莉雅·潘德拉贡〔圣诞alter〕",
+      "阿尔托莉雅·潘德拉贡〔圣诞alter〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 402300,
+    "name": "坂田金时",
+    "originalName": "坂田金时",
+    "ruby": "坂田金时",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "坂田金时",
+      "坂田金时",
+      "坂田金时",
+      "rider"
+    ]
+  },
+  {
+    "id": 402400,
+    "name": "莫德雷德",
+    "originalName": "莫德雷德",
+    "ruby": "莫德雷德",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "莫德雷德",
+      "莫德雷德",
+      "莫德雷德",
+      "rider"
+    ]
+  },
+  {
+    "id": 402500,
+    "name": "克里斯托弗·哥伦布",
+    "originalName": "克里斯托弗·哥伦布",
+    "ruby": "克里斯托弗·哥伦布",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "克里斯托弗·哥伦布",
+      "克里斯托弗·哥伦布",
+      "克里斯托弗·哥伦布",
+      "rider"
+    ]
+  },
+  {
+    "id": 402600,
+    "name": "伊什塔尔",
+    "originalName": "伊什塔尔",
+    "ruby": "伊什塔尔",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "伊什塔尔",
+      "伊什塔尔",
+      "伊什塔尔",
+      "rider"
+    ]
+  },
+  {
+    "id": 402700,
+    "name": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "originalName": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "ruby": "阿尔托莉雅·潘德拉贡〔Alter〕",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "阿尔托莉雅·潘德拉贡〔alter〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 402800,
+    "name": "伊凡雷帝",
+    "originalName": "伊凡雷帝",
+    "ruby": "伊凡雷帝",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "伊凡雷帝",
+      "伊凡雷帝",
+      "伊凡雷帝",
+      "rider"
+    ]
+  },
+  {
+    "id": 402900,
+    "name": "阿喀琉斯",
+    "originalName": "阿喀琉斯",
+    "ruby": "阿喀琉斯",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "阿喀琉斯",
+      "阿喀琉斯",
+      "阿喀琉斯",
+      "rider"
+    ]
+  },
+  {
+    "id": 403000,
+    "name": "坂本龙马",
+    "originalName": "坂本龙马",
+    "ruby": "坂本龙马",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "坂本龙马",
+      "坂本龙马",
+      "坂本龙马",
+      "rider"
+    ]
+  },
+  {
+    "id": 403100,
+    "name": "丹驹",
+    "originalName": "丹驹",
+    "ruby": "丹驹",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "丹驹",
+      "丹驹",
+      "丹驹",
+      "rider"
+    ]
+  },
+  {
+    "id": 403200,
+    "name": "莱妮丝",
+    "originalName": "莱妮丝",
+    "ruby": "莱妮丝",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "莱妮丝",
+      "莱妮丝",
+      "莱妮丝",
+      "rider"
+    ]
+  },
+  {
+    "id": 403400,
+    "name": "巴沙洛缪·罗伯茨",
+    "originalName": "巴沙洛缪·罗伯茨",
+    "ruby": "巴沙洛缪·罗伯茨",
+    "className": "rider",
+    "rarity": 1,
+    "searchTerms": [
+      "巴沙洛缪·罗伯茨",
+      "巴沙洛缪·罗伯茨",
+      "巴沙洛缪·罗伯茨",
+      "rider"
+    ]
+  },
+  {
+    "id": 403500,
+    "name": "莱昂纳多·达·芬奇",
+    "originalName": "莱昂纳多·达·芬奇",
+    "ruby": "莱昂纳多·达·芬奇",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "莱昂纳多·达·芬奇",
+      "莱昂纳多·达·芬奇",
+      "莱昂纳多·达·芬奇",
+      "rider"
+    ]
+  },
+  {
+    "id": 403600,
+    "name": "卡米拉",
+    "originalName": "卡米拉",
+    "ruby": "卡米拉",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "卡米拉",
+      "卡米拉",
+      "卡米拉",
+      "rider"
+    ]
+  },
+  {
+    "id": 403700,
+    "name": "尼莫",
+    "originalName": "尼莫",
+    "ruby": "尼莫",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "尼莫",
+      "尼莫",
+      "尼莫",
+      "rider"
+    ]
+  },
+  {
+    "id": 403800,
+    "name": "奥德修斯",
+    "originalName": "奥德修斯",
+    "ruby": "奥德修斯",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "奥德修斯",
+      "奥德修斯",
+      "奥德修斯",
+      "rider"
+    ]
+  },
+  {
+    "id": 403900,
+    "name": "曼迪卡尔多",
+    "originalName": "曼迪卡尔多",
+    "ruby": "曼迪卡尔多",
+    "className": "rider",
+    "rarity": 3,
+    "searchTerms": [
+      "曼迪卡尔多",
+      "曼迪卡尔多",
+      "曼迪卡尔多",
+      "rider"
+    ]
+  },
+  {
+    "id": 404000,
+    "name": "欧罗巴",
+    "originalName": "欧罗巴",
+    "ruby": "欧罗巴",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "欧罗巴",
+      "欧罗巴",
+      "欧罗巴",
+      "rider"
+    ]
+  },
+  {
+    "id": 404100,
+    "name": "紫式部",
+    "originalName": "紫式部",
+    "ruby": "紫式部",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "紫式部",
+      "紫式部",
+      "紫式部",
+      "rider"
+    ]
+  },
+  {
+    "id": 404200,
+    "name": "哈贝特洛特",
+    "originalName": "哈贝特洛特",
+    "ruby": "哈贝特洛特",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "哈贝特洛特",
+      "哈贝特洛特",
+      "哈贝特洛特",
+      "rider"
+    ]
+  },
+  {
+    "id": 404300,
+    "name": "太公望",
+    "originalName": "太公望",
+    "ruby": "太公望",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "太公望",
+      "太公望",
+      "太公望",
+      "rider"
+    ]
+  },
+  {
+    "id": 404400,
+    "name": "多布雷尼亚·尼基季奇",
+    "originalName": "多布雷尼亚·尼基季奇",
+    "ruby": "多布雷尼亚·尼基季奇",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "多布雷尼亚·尼基季奇",
+      "多布雷尼亚·尼基季奇",
+      "多布雷尼亚·尼基季奇",
+      "rider"
+    ]
+  },
+  {
+    "id": 404500,
+    "name": "凯妮斯",
+    "originalName": "凯妮斯",
+    "ruby": "凯妮斯",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "凯妮斯",
+      "凯妮斯",
+      "凯妮斯",
+      "rider"
+    ]
+  },
+  {
+    "id": 404600,
+    "name": "伊丽莎白·巴托里〔灰姑娘〕",
+    "originalName": "伊丽莎白·巴托里〔灰姑娘〕",
+    "ruby": "伊丽莎白·巴托里〔灰姑娘〕",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "伊丽莎白·巴托里〔灰姑娘〕",
+      "伊丽莎白·巴托里〔灰姑娘〕",
+      "伊丽莎白·巴托里〔灰姑娘〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 404700,
+    "name": "君士坦丁十一世",
+    "originalName": "君士坦丁十一世",
+    "ruby": "君士坦丁十一世",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "君士坦丁十一世",
+      "君士坦丁十一世",
+      "君士坦丁十一世",
+      "rider"
+    ]
+  },
+  {
+    "id": 404800,
+    "name": "曲亭马琴",
+    "originalName": "曲亭马琴",
+    "ruby": "曲亭马琴",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "曲亭马琴",
+      "曲亭马琴",
+      "曲亭马琴",
+      "rider"
+    ]
+  },
+  {
+    "id": 404900,
+    "name": "黄飞虎",
+    "originalName": "黄飞虎",
+    "ruby": "黄飞虎",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "黄飞虎",
+      "黄飞虎",
+      "黄飞虎",
+      "rider"
+    ]
+  },
+  {
+    "id": 405000,
+    "name": "铃鹿御前〔暑假〕",
+    "originalName": "铃鹿御前〔暑假〕",
+    "ruby": "铃鹿御前·暑假",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "铃鹿御前〔暑假〕",
+      "铃鹿御前〔暑假〕",
+      "铃鹿御前·暑假",
+      "rider"
+    ]
+  },
+  {
+    "id": 405200,
+    "name": "武",
+    "originalName": "武",
+    "ruby": "武田晴信",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "武",
+      "武",
+      "武田晴信",
+      "rider"
+    ]
+  },
+  {
+    "id": 405300,
+    "name": "尼莫〔圣诞〕",
+    "originalName": "尼莫〔圣诞〕",
+    "ruby": "尼莫〔圣诞〕",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "尼莫〔圣诞〕",
+      "尼莫〔圣诞〕",
+      "尼莫〔圣诞〕",
+      "rider"
+    ]
+  },
+  {
+    "id": 405500,
+    "name": "安德洛墨达",
+    "originalName": "安德洛墨达",
+    "ruby": "安德洛墨达",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "安德洛墨达",
+      "安德洛墨达",
+      "安德洛墨达",
+      "rider"
+    ]
+  },
+  {
+    "id": 500100,
+    "name": "美狄亚",
+    "originalName": "美狄亚",
+    "ruby": "美狄亚",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "美狄亚",
+      "美狄亚",
+      "美狄亚",
+      "caster"
+    ]
+  },
+  {
+    "id": 500200,
+    "name": "吉尔·德·雷",
+    "originalName": "吉尔·德·雷",
+    "ruby": "吉尔·德·雷",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "吉尔·德·雷",
+      "吉尔·德·雷",
+      "吉尔·德·雷",
+      "caster"
+    ]
+  },
+  {
+    "id": 500300,
+    "name": "玉藻前",
+    "originalName": "玉藻前",
+    "ruby": "玉藻前",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "玉藻前",
+      "玉藻前",
+      "玉藻前",
+      "caster"
+    ]
+  },
+  {
+    "id": 500400,
+    "name": "童谣",
+    "originalName": "童谣",
+    "ruby": "童谣",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "童谣",
+      "童谣",
+      "童谣",
+      "caster"
+    ]
+  },
+  {
+    "id": 500500,
+    "name": "汉斯·克里斯蒂安·安徒生",
+    "originalName": "汉斯·克里斯蒂安·安徒生",
+    "ruby": "汉斯·克里斯蒂安·安徒生",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "汉斯·克里斯蒂安·安徒生",
+      "汉斯·克里斯蒂安·安徒生",
+      "汉斯·克里斯蒂安·安徒生",
+      "caster"
+    ]
+  },
+  {
+    "id": 500700,
+    "name": "威廉·莎士比亚",
+    "originalName": "威廉·莎士比亚",
+    "ruby": "威廉·莎士比亚",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "威廉·莎士比亚",
+      "威廉·莎士比亚",
+      "威廉·莎士比亚",
+      "caster"
+    ]
+  },
+  {
+    "id": 500800,
+    "name": "梅林",
+    "originalName": "梅林",
+    "ruby": "梅林",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "梅林",
+      "梅林",
+      "梅林",
+      "caster"
+    ]
+  },
+  {
+    "id": 500900,
+    "name": "莱昂纳多·达·芬奇",
+    "originalName": "莱昂纳多·达·芬奇",
+    "ruby": "莱昂纳多·达·芬奇",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "莱昂纳多·达·芬奇",
+      "莱昂纳多·达·芬奇",
+      "莱昂纳多·达·芬奇",
+      "caster"
+    ]
+  },
+  {
+    "id": 501000,
+    "name": "冯·霍恩海姆·帕拉塞尔苏斯",
+    "originalName": "冯·霍恩海姆·帕拉塞尔苏斯",
+    "ruby": "冯·霍恩海姆·帕拉塞尔苏斯",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "冯·霍恩海姆·帕拉塞尔苏斯",
+      "冯·霍恩海姆·帕拉塞尔苏斯",
+      "冯·霍恩海姆·帕拉塞尔苏斯",
+      "caster"
+    ]
+  },
+  {
+    "id": 501100,
+    "name": "查尔斯·巴贝奇",
+    "originalName": "查尔斯·巴贝奇",
+    "ruby": "查尔斯·巴贝奇",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "查尔斯·巴贝奇",
+      "查尔斯·巴贝奇",
+      "查尔斯·巴贝奇",
+      "caster"
+    ]
+  },
+  {
+    "id": 501200,
+    "name": "尼托克丽丝",
+    "originalName": "尼托克丽丝",
+    "ruby": "尼托克丽丝",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "尼托克丽丝",
+      "尼托克丽丝",
+      "尼托克丽丝",
+      "caster"
+    ]
+  },
+  {
+    "id": 501400,
+    "name": "梅菲斯托费勒斯",
+    "originalName": "梅菲斯托费勒斯",
+    "ruby": "梅菲斯托费勒斯",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "梅菲斯托费勒斯",
+      "梅菲斯托费勒斯",
+      "梅菲斯托费勒斯",
+      "caster"
+    ]
+  },
+  {
+    "id": 501500,
+    "name": "沃尔夫冈·阿马德乌斯·莫扎特",
+    "originalName": "沃尔夫冈·阿马德乌斯·莫扎特",
+    "ruby": "沃尔夫冈·阿马德乌斯·莫扎特",
+    "className": "caster",
+    "rarity": 1,
+    "searchTerms": [
+      "沃尔夫冈·阿马德乌斯·莫扎特",
+      "沃尔夫冈·阿马德乌斯·莫扎特",
+      "沃尔夫冈·阿马德乌斯·莫扎特",
+      "caster"
+    ]
+  },
+  {
+    "id": 501600,
+    "name": "杰罗尼莫",
+    "originalName": "杰罗尼莫",
+    "ruby": "杰罗尼莫",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "杰罗尼莫",
+      "杰罗尼莫",
+      "杰罗尼莫",
+      "caster"
+    ]
+  },
+  {
+    "id": 501700,
+    "name": "美狄亚〔Lily〕",
+    "originalName": "美狄亚〔Lily〕",
+    "ruby": "美狄亚〔Lily〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "美狄亚〔lily〕",
+      "美狄亚〔lily〕",
+      "美狄亚〔lily〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 501800,
+    "name": "吉尔伽美什",
+    "originalName": "吉尔伽美什",
+    "ruby": "吉尔伽美什",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "吉尔伽美什",
+      "吉尔伽美什",
+      "吉尔伽美什",
+      "caster"
+    ]
+  },
+  {
+    "id": 501900,
+    "name": "诸葛孔明〔埃尔梅罗Ⅱ世〕",
+    "originalName": "诸葛孔明〔埃尔梅罗Ⅱ世〕",
+    "ruby": "诸葛孔明〔埃尔梅罗Ⅱ世〕",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "诸葛孔明〔埃尔梅罗ⅱ世〕",
+      "诸葛孔明〔埃尔梅罗ⅱ世〕",
+      "诸葛孔明〔埃尔梅罗ⅱ世〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 502000,
+    "name": "爱丽丝菲尔〔天之衣〕",
+    "originalName": "爱丽丝菲尔〔天之衣〕",
+    "ruby": "爱丽丝菲尔〔天之衣〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "爱丽丝菲尔〔天之衣〕",
+      "爱丽丝菲尔〔天之衣〕",
+      "爱丽丝菲尔〔天之衣〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 502100,
+    "name": "库·丘林",
+    "originalName": "库·丘林",
+    "ruby": "库·丘林",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "库·丘林",
+      "库·丘林",
+      "库·丘林",
+      "caster"
+    ]
+  },
+  {
+    "id": 502200,
+    "name": "西行者",
+    "originalName": "西行者",
+    "ruby": "西行者",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "西行者",
+      "西行者",
+      "西行者",
+      "caster"
+    ]
+  },
+  {
+    "id": 502300,
+    "name": "海伦娜·布拉瓦茨基",
+    "originalName": "海伦娜·布拉瓦茨基",
+    "ruby": "海伦娜·布拉瓦茨基",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "海伦娜·布拉瓦茨基",
+      "海伦娜·布拉瓦茨基",
+      "海伦娜·布拉瓦茨基",
+      "caster"
+    ]
+  },
+  {
+    "id": 502500,
+    "name": "托马斯·爱迪生",
+    "originalName": "托马斯·爱迪生",
+    "ruby": "托马斯·爱迪生",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "托马斯·爱迪生",
+      "托马斯·爱迪生",
+      "托马斯·爱迪生",
+      "caster"
+    ]
+  },
+  {
+    "id": 502600,
+    "name": "伊丽莎白·巴托里〔万圣节〕",
+    "originalName": "伊丽莎白·巴托里〔万圣节〕",
+    "ruby": "伊丽莎白·巴托里〔万圣节〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "伊丽莎白·巴托里〔万圣节〕",
+      "伊丽莎白·巴托里〔万圣节〕",
+      "伊丽莎白·巴托里〔万圣节〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 502700,
+    "name": "玛丽·安托瓦内特",
+    "originalName": "玛丽·安托瓦内特",
+    "ruby": "玛丽·安托瓦内特",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "玛丽·安托瓦内特",
+      "玛丽·安托瓦内特",
+      "玛丽·安托瓦内特",
+      "caster"
+    ]
+  },
+  {
+    "id": 502800,
+    "name": "伊莉雅丝菲尔·冯·爱因兹贝伦",
+    "originalName": "伊莉雅丝菲尔·冯·爱因兹贝伦",
+    "ruby": "伊莉雅丝菲尔·冯·爱因兹贝伦",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "伊莉雅丝菲尔·冯·爱因兹贝伦",
+      "伊莉雅丝菲尔·冯·爱因兹贝伦",
+      "伊莉雅丝菲尔·冯·爱因兹贝伦",
+      "caster"
+    ]
+  },
+  {
+    "id": 503000,
+    "name": "山鲁佐德",
+    "originalName": "山鲁佐德",
+    "ruby": "山鲁佐德",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "山鲁佐德",
+      "山鲁佐德",
+      "山鲁佐德",
+      "caster"
+    ]
+  },
+  {
+    "id": 503200,
+    "name": "尼禄·克劳狄乌斯",
+    "originalName": "尼禄·克劳狄乌斯",
+    "ruby": "尼禄·克劳狄乌斯",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "尼禄·克劳狄乌斯",
+      "尼禄·克劳狄乌斯",
+      "尼禄·克劳狄乌斯",
+      "caster"
+    ]
+  },
+  {
+    "id": 503300,
+    "name": "喀耳刻",
+    "originalName": "喀耳刻",
+    "ruby": "喀耳刻",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "喀耳刻",
+      "喀耳刻",
+      "喀耳刻",
+      "caster"
+    ]
+  },
+  {
+    "id": 503400,
+    "name": "示巴女王",
+    "originalName": "示巴女王",
+    "ruby": "示巴女王",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "示巴女王",
+      "示巴女王",
+      "示巴女王",
+      "caster"
+    ]
+  },
+  {
+    "id": 503500,
+    "name": "阿纳斯塔西娅",
+    "originalName": "阿纳斯塔西娅",
+    "ruby": "阿纳斯塔西娅",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "阿纳斯塔西娅",
+      "阿纳斯塔西娅",
+      "阿纳斯塔西娅",
+      "caster"
+    ]
+  },
+  {
+    "id": 503600,
+    "name": "阿维斯布隆",
+    "originalName": "阿维斯布隆",
+    "ruby": "阿维斯布隆",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "阿维斯布隆",
+      "阿维斯布隆",
+      "阿维斯布隆",
+      "caster"
+    ]
+  },
+  {
+    "id": 503800,
+    "name": "齐格",
+    "originalName": "齐格",
+    "ruby": "齐格",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "齐格",
+      "齐格",
+      "齐格",
+      "caster"
+    ]
+  },
+  {
+    "id": 503900,
+    "name": "斯卡哈·斯卡蒂",
+    "originalName": "斯卡哈·斯卡蒂",
+    "ruby": "斯卡哈·斯卡蒂",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "斯卡哈·斯卡蒂",
+      "斯卡哈·斯卡蒂",
+      "斯卡哈·斯卡蒂",
+      "caster"
+    ]
+  },
+  {
+    "id": 504000,
+    "name": "酒吞童子",
+    "originalName": "酒吞童子",
+    "ruby": "酒吞童子",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "酒吞童子",
+      "酒吞童子",
+      "酒吞童子",
+      "caster"
+    ]
+  },
+  {
+    "id": 504100,
+    "name": "美游·艾德费尔特",
+    "originalName": "美游·艾德费尔特",
+    "ruby": "美游·艾德费尔特",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "美游·艾德费尔特",
+      "美游·艾德费尔特",
+      "美游·艾德费尔特",
+      "caster"
+    ]
+  },
+  {
+    "id": 504200,
+    "name": "紫式部",
+    "originalName": "紫式部",
+    "ruby": "紫式部",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "紫式部",
+      "紫式部",
+      "紫式部",
+      "caster"
+    ]
+  },
+  {
+    "id": 504300,
+    "name": "阿斯克勒庇俄斯",
+    "originalName": "阿斯克勒庇俄斯",
+    "ruby": "阿斯克勒庇俄斯",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "阿斯克勒庇俄斯",
+      "阿斯克勒庇俄斯",
+      "阿斯克勒庇俄斯",
+      "caster"
+    ]
+  },
+  {
+    "id": 504400,
+    "name": "陈宫",
+    "originalName": "陈宫",
+    "ruby": "陈宫",
+    "className": "caster",
+    "rarity": 2,
+    "searchTerms": [
+      "陈宫",
+      "陈宫",
+      "陈宫",
+      "caster"
+    ]
+  },
+  {
+    "id": 504500,
+    "name": "阿尔托莉雅·卡斯特",
+    "originalName": "阿尔托莉雅·卡斯特",
+    "ruby": "阿尔托莉雅·卡斯特",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·卡斯特",
+      "阿尔托莉雅·卡斯特",
+      "阿尔托莉雅·卡斯特",
+      "caster"
+    ]
+  },
+  {
+    "id": 504600,
+    "name": "克莱恩小姐",
+    "originalName": "克莱恩小姐",
+    "ruby": "克莱恩小姐",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "克莱恩小姐",
+      "克莱恩小姐",
+      "克莱恩小姐",
+      "caster"
+    ]
+  },
+  {
+    "id": 504700,
+    "name": "大黑天",
+    "originalName": "大黑天",
+    "ruby": "大黑天",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "大黑天",
+      "大黑天",
+      "大黑天",
+      "caster"
+    ]
+  },
+  {
+    "id": 504800,
+    "name": "夏洛特·科黛",
+    "originalName": "夏洛特·科黛",
+    "ruby": "夏洛特·科黛",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "夏洛特·科黛",
+      "夏洛特·科黛",
+      "夏洛特·科黛",
+      "caster"
+    ]
+  },
+  {
+    "id": 504900,
+    "name": "出云阿国",
+    "originalName": "出云阿国",
+    "ruby": "出云阿国",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "出云阿国",
+      "出云阿国",
+      "出云阿国",
+      "caster"
+    ]
+  },
+  {
+    "id": 505000,
+    "name": "玛尔达〔圣诞〕",
+    "originalName": "玛尔达〔圣诞〕",
+    "ruby": "玛尔达〔圣诞〕",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "玛尔达〔圣诞〕",
+      "玛尔达〔圣诞〕",
+      "玛尔达〔圣诞〕",
+      "caster"
+    ]
+  },
+  {
+    "id": 505100,
+    "name": "张角",
+    "originalName": "张角",
+    "ruby": "张角",
+    "className": "caster",
+    "rarity": 3,
+    "searchTerms": [
+      "张角",
+      "张角",
+      "张角",
+      "caster"
+    ]
+  },
+  {
+    "id": 505200,
+    "name": "周照",
+    "originalName": "周照",
+    "ruby": "周照",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "周照",
+      "周照",
+      "周照",
+      "caster"
+    ]
+  },
+  {
+    "id": 505300,
+    "name": "雨之魔女梣",
+    "originalName": "雨之魔女梣",
+    "ruby": "梣",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "雨之魔女梣",
+      "雨之魔女梣",
+      "梣",
+      "caster"
+    ]
+  },
+  {
+    "id": 505400,
+    "name": "由",
+    "originalName": "由",
+    "ruby": "由井正雪",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "由",
+      "由",
+      "由井正雪",
+      "caster"
+    ]
+  },
+  {
+    "id": 505500,
+    "name": "久远寺有珠",
+    "originalName": "久远寺有珠",
+    "ruby": "久远寺有珠",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "久远寺有珠",
+      "久远寺有珠",
+      "久远寺有珠",
+      "caster"
+    ]
+  },
+  {
+    "id": 600100,
+    "name": "佐佐木小次郎",
+    "originalName": "佐佐木小次郎",
+    "ruby": "佐佐木小次郎",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "佐佐木小次郎",
+      "佐佐木小次郎",
+      "佐佐木小次郎",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600200,
+    "name": "咒腕哈桑",
+    "originalName": "咒腕哈桑",
+    "ruby": "咒腕哈桑",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "咒腕哈桑",
+      "咒腕哈桑",
+      "咒腕哈桑",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600300,
+    "name": "百貌哈桑",
+    "originalName": "百貌哈桑",
+    "ruby": "百貌哈桑",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "百貌哈桑",
+      "百貌哈桑",
+      "百貌哈桑",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600500,
+    "name": "雾都弃子",
+    "originalName": "雾都弃子",
+    "ruby": "雾都弃子",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "雾都弃子",
+      "雾都弃子",
+      "雾都弃子",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600700,
+    "name": "亨利·杰基尔＆海德",
+    "originalName": "亨利·杰基尔＆海德",
+    "ruby": "亨利·杰基尔＆海德",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "亨利·杰基尔＆海德",
+      "亨利·杰基尔＆海德",
+      "亨利·杰基尔＆海德",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600800,
+    "name": "克娄巴特拉",
+    "originalName": "克娄巴特拉",
+    "ruby": "克娄巴特拉",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "克娄巴特拉",
+      "克娄巴特拉",
+      "克娄巴特拉",
+      "assassin"
+    ]
+  },
+  {
+    "id": 600900,
+    "name": "静谧哈桑",
+    "originalName": "静谧哈桑",
+    "ruby": "静谧哈桑",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "静谧哈桑",
+      "静谧哈桑",
+      "静谧哈桑",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601000,
+    "name": "斯忒诺",
+    "originalName": "斯忒诺",
+    "ruby": "斯忒诺",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "斯忒诺",
+      "斯忒诺",
+      "斯忒诺",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601100,
+    "name": "匕见",
+    "originalName": "匕见",
+    "ruby": "匕见",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "匕见",
+      "匕见",
+      "匕见",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601200,
+    "name": "夏尔·亨利·桑松",
+    "originalName": "夏尔·亨利·桑松",
+    "ruby": "夏尔·亨利·桑松",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "夏尔·亨利·桑松",
+      "夏尔·亨利·桑松",
+      "夏尔·亨利·桑松",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601300,
+    "name": "剧院魅影",
+    "originalName": "剧院魅影",
+    "ruby": "剧院魅影",
+    "className": "assassin",
+    "rarity": 2,
+    "searchTerms": [
+      "剧院魅影",
+      "剧院魅影",
+      "剧院魅影",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601400,
+    "name": "玛塔·哈丽",
+    "originalName": "玛塔·哈丽",
+    "ruby": "玛塔·哈丽",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "玛塔·哈丽",
+      "玛塔·哈丽",
+      "玛塔·哈丽",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601500,
+    "name": "卫宫〔Assassin〕",
+    "originalName": "卫宫〔Assassin〕",
+    "ruby": "卫宫〔Assassin〕",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "卫宫〔assassin〕",
+      "卫宫〔assassin〕",
+      "卫宫〔assassin〕",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601700,
+    "name": "卡米拉",
+    "originalName": "卡米拉",
+    "ruby": "卡米拉",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "卡米拉",
+      "卡米拉",
+      "卡米拉",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601800,
+    "name": "谜之女主角X",
+    "originalName": "谜之女主角X",
+    "ruby": "谜之女主角X",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "谜之女主角x",
+      "谜之女主角x",
+      "谜之女主角x",
+      "assassin"
+    ]
+  },
+  {
+    "id": 601900,
+    "name": "风魔小太郎",
+    "originalName": "风魔小太郎",
+    "ruby": "风魔小太郎",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "风魔小太郎",
+      "风魔小太郎",
+      "风魔小太郎",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602100,
+    "name": "酒吞童子",
+    "originalName": "酒吞童子",
+    "ruby": "酒吞童子",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "酒吞童子",
+      "酒吞童子",
+      "酒吞童子",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602300,
+    "name": "两仪式",
+    "originalName": "两仪式",
+    "ruby": "两仪式",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "两仪式",
+      "两仪式",
+      "两仪式",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602400,
+    "name": "斯卡哈",
+    "originalName": "斯卡哈",
+    "ruby": "斯卡哈",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "斯卡哈",
+      "斯卡哈",
+      "斯卡哈",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602500,
+    "name": "“山中老人”",
+    "originalName": "“山中老人”",
+    "ruby": "“山中老人”",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "“山中老人”",
+      "“山中老人”",
+      "“山中老人”",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602600,
+    "name": "燕青",
+    "originalName": "燕青",
+    "ruby": "燕青",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "燕青",
+      "燕青",
+      "燕青",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602700,
+    "name": "周照",
+    "originalName": "周照",
+    "ruby": "周照",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "周照",
+      "周照",
+      "周照",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602800,
+    "name": "尼托克丽丝",
+    "originalName": "尼托克丽丝",
+    "ruby": "尼托克丽丝",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "尼托克丽丝",
+      "尼托克丽丝",
+      "尼托克丽丝",
+      "assassin"
+    ]
+  },
+  {
+    "id": 602900,
+    "name": "望月千代女",
+    "originalName": "望月千代女",
+    "ruby": "望月千代女",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "望月千代女",
+      "望月千代女",
+      "望月千代女",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603000,
+    "name": "加藤段藏",
+    "originalName": "加藤段藏",
+    "ruby": "加藤段藏",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "加藤段藏",
+      "加藤段藏",
+      "加藤段藏",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603100,
+    "name": "刑部姬",
+    "originalName": "刑部姬",
+    "ruby": "刑部姬",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "刑部姬",
+      "刑部姬",
+      "刑部姬",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603200,
+    "name": "塞弥拉弥斯",
+    "originalName": "塞弥拉弥斯",
+    "ruby": "塞弥拉弥斯",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "塞弥拉弥斯",
+      "塞弥拉弥斯",
+      "塞弥拉弥斯",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603300,
+    "name": "冈田以藏",
+    "originalName": "冈田以藏",
+    "ruby": "冈田以藏",
+    "className": "assassin",
+    "rarity": 3,
+    "searchTerms": [
+      "冈田以藏",
+      "冈田以藏",
+      "冈田以藏",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603400,
+    "name": "牛若丸",
+    "originalName": "牛若丸",
+    "ruby": "牛若丸",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "牛若丸",
+      "牛若丸",
+      "牛若丸",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603500,
+    "name": "雏罂",
+    "originalName": "雏罂",
+    "ruby": "雏罂",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "雏罂",
+      "雏罂",
+      "雏罂",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603600,
+    "name": "李书文",
+    "originalName": "李书文",
+    "ruby": "李书文",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "李书文",
+      "李书文",
+      "李书文",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603700,
+    "name": "迦摩",
+    "originalName": "迦摩",
+    "ruby": "迦摩",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "迦摩",
+      "迦摩",
+      "迦摩",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603800,
+    "name": "夏洛特·科黛",
+    "originalName": "夏洛特·科黛",
+    "ruby": "夏洛特·科黛",
+    "className": "assassin",
+    "rarity": 1,
+    "searchTerms": [
+      "夏洛特·科黛",
+      "夏洛特·科黛",
+      "夏洛特·科黛",
+      "assassin"
+    ]
+  },
+  {
+    "id": 603900,
+    "name": "格蕾",
+    "originalName": "格蕾",
+    "ruby": "格蕾",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "格蕾",
+      "格蕾",
+      "格蕾",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604000,
+    "name": "冲田总司",
+    "originalName": "冲田总司",
+    "ruby": "冲田总司",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "冲田总司",
+      "冲田总司",
+      "冲田总司",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604100,
+    "name": "鬼一法眼",
+    "originalName": "鬼一法眼",
+    "ruby": "鬼一法眼",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "鬼一法眼",
+      "鬼一法眼",
+      "鬼一法眼",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604200,
+    "name": "光之高扬斯卡娅",
+    "originalName": "光之高扬斯卡娅",
+    "ruby": "光之高扬斯卡娅",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "光之高扬斯卡娅",
+      "光之高扬斯卡娅",
+      "光之高扬斯卡娅",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604300,
+    "name": "奥特琳德",
+    "originalName": "奥特琳德",
+    "ruby": "奥特琳德",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "奥特琳德",
+      "奥特琳德",
+      "奥特琳德",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604400,
+    "name": "希露德",
+    "originalName": "希露德",
+    "ruby": "希露德",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "希露德",
+      "希露德",
+      "希露德",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604500,
+    "name": "斯露德",
+    "originalName": "斯露德",
+    "ruby": "斯露德",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "斯露德",
+      "斯露德",
+      "斯露德",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604600,
+    "name": "吾绰",
+    "originalName": "吾绰",
+    "ruby": "吾绰",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "吾绰",
+      "吾绰",
+      "吾绰",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604700,
+    "name": "特斯卡特利波卡",
+    "originalName": "特斯卡特利波卡",
+    "ruby": "特斯卡特利波卡",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "特斯卡特利波卡",
+      "特斯卡特利波卡",
+      "特斯卡特利波卡",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604800,
+    "name": "洛库斯塔",
+    "originalName": "洛库斯塔",
+    "ruby": "洛库斯塔",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "洛库斯塔",
+      "洛库斯塔",
+      "洛库斯塔",
+      "assassin"
+    ]
+  },
+  {
+    "id": 604900,
+    "name": "果心居士",
+    "originalName": "果心居士",
+    "ruby": "果心居士",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "果心居士",
+      "果心居士",
+      "果心居士",
+      "assassin"
+    ]
+  },
+  {
+    "id": 605000,
+    "name": "耀星哈桑",
+    "originalName": "耀星哈桑",
+    "ruby": "耀星哈桑",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "耀星哈桑",
+      "耀星哈桑",
+      "耀星哈桑",
+      "assassin"
+    ]
+  },
+  {
+    "id": 700100,
+    "name": "赫拉克勒斯",
+    "originalName": "赫拉克勒斯",
+    "ruby": "赫拉克勒斯",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "赫拉克勒斯",
+      "赫拉克勒斯",
+      "赫拉克勒斯",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700200,
+    "name": "兰斯洛特",
+    "originalName": "兰斯洛特",
+    "ruby": "兰斯洛特",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "兰斯洛特",
+      "兰斯洛特",
+      "兰斯洛特",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700300,
+    "name": "虎狼",
+    "originalName": "虎狼",
+    "ruby": "虎狼",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "虎狼",
+      "虎狼",
+      "虎狼",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700400,
+    "name": "弗兰肯斯坦",
+    "originalName": "弗兰肯斯坦",
+    "ruby": "弗兰肯斯坦",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "弗兰肯斯坦",
+      "弗兰肯斯坦",
+      "弗兰肯斯坦",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700500,
+    "name": "斯巴达克斯",
+    "originalName": "斯巴达克斯",
+    "ruby": "斯巴达克斯",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "斯巴达克斯",
+      "斯巴达克斯",
+      "斯巴达克斯",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700600,
+    "name": "坂田金时",
+    "originalName": "坂田金时",
+    "ruby": "坂田金时",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "坂田金时",
+      "坂田金时",
+      "坂田金时",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700700,
+    "name": "弗拉德三世",
+    "originalName": "弗拉德三世",
+    "ruby": "弗拉德三世",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "弗拉德三世",
+      "弗拉德三世",
+      "弗拉德三世",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700800,
+    "name": "贝奥武夫",
+    "originalName": "贝奥武夫",
+    "ruby": "贝奥武夫",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "贝奥武夫",
+      "贝奥武夫",
+      "贝奥武夫",
+      "berserker"
+    ]
+  },
+  {
+    "id": 700900,
+    "name": "阿斯忒里俄斯",
+    "originalName": "阿斯忒里俄斯",
+    "ruby": "阿斯忒里俄斯",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "阿斯忒里俄斯",
+      "阿斯忒里俄斯",
+      "阿斯忒里俄斯",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701000,
+    "name": "卡利古拉",
+    "originalName": "卡利古拉",
+    "ruby": "卡利古拉",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "卡利古拉",
+      "卡利古拉",
+      "卡利古拉",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701100,
+    "name": "大流士三世",
+    "originalName": "大流士三世",
+    "ruby": "大流士三世",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "大流士三世",
+      "大流士三世",
+      "大流士三世",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701300,
+    "name": "清姬",
+    "originalName": "清姬",
+    "ruby": "清姬",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "清姬",
+      "清姬",
+      "清姬",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701400,
+    "name": "南丁格尔",
+    "originalName": "南丁格尔",
+    "ruby": "南丁格尔",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "南丁格尔",
+      "南丁格尔",
+      "南丁格尔",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701500,
+    "name": "血斧埃里克",
+    "originalName": "血斧埃里克",
+    "ruby": "血斧埃里克",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "血斧埃里克",
+      "血斧埃里克",
+      "血斧埃里克",
+      "berserker"
+    ]
+  },
+  {
+    "id": 701600,
+    "name": "玉藻猫",
+    "originalName": "玉藻猫",
+    "ruby": "玉藻猫",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "玉藻猫",
+      "玉藻猫",
+      "玉藻猫",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702000,
+    "name": "库·丘林〔Alter〕",
+    "originalName": "库·丘林〔Alter〕",
+    "ruby": "库·丘林〔Alter〕",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "库·丘林〔alter〕",
+      "库·丘林〔alter〕",
+      "库·丘林〔alter〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702200,
+    "name": "茨木童子",
+    "originalName": "茨木童子",
+    "ruby": "茨木童子",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "茨木童子",
+      "茨木童子",
+      "茨木童子",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702300,
+    "name": "源赖光",
+    "originalName": "源赖光",
+    "ruby": "源赖光",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "源赖光",
+      "源赖光",
+      "源赖光",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702400,
+    "name": "谜之女主角X〔Alter〕",
+    "originalName": "谜之女主角X〔Alter〕",
+    "ruby": "谜之女主角X〔Alter〕",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "谜之女主角x〔alter〕",
+      "谜之女主角x〔alter〕",
+      "谜之女主角x〔alter〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702500,
+    "name": "土方岁三",
+    "originalName": "土方岁三",
+    "ruby": "土方岁三",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "土方岁三",
+      "土方岁三",
+      "土方岁三",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702600,
+    "name": "茶茶",
+    "originalName": "茶茶",
+    "ruby": "茶茶",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "茶茶",
+      "茶茶",
+      "茶茶",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702700,
+    "name": "彭忒西勒亚",
+    "originalName": "彭忒西勒亚",
+    "ruby": "彭忒西勒亚",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "彭忒西勒亚",
+      "彭忒西勒亚",
+      "彭忒西勒亚",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702800,
+    "name": "保罗·班扬",
+    "originalName": "保罗·班扬",
+    "ruby": "保罗·班扬",
+    "className": "berserker",
+    "rarity": 1,
+    "searchTerms": [
+      "保罗·班扬",
+      "保罗·班扬",
+      "保罗·班扬",
+      "berserker"
+    ]
+  },
+  {
+    "id": 702900,
+    "name": "织田信长",
+    "originalName": "织田信长",
+    "ruby": "织田信长",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "织田信长",
+      "织田信长",
+      "织田信长",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703000,
+    "name": "阿塔兰忒〔Alter〕",
+    "originalName": "阿塔兰忒〔Alter〕",
+    "ruby": "阿塔兰忒〔Alter〕",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "阿塔兰忒〔alter〕",
+      "阿塔兰忒〔alter〕",
+      "阿塔兰忒〔alter〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703100,
+    "name": "贞德〔Alter〕",
+    "originalName": "贞德〔Alter〕",
+    "ruby": "贞德〔Alter〕",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "贞德〔alter〕",
+      "贞德〔alter〕",
+      "贞德〔alter〕",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703200,
+    "name": "重瞳",
+    "originalName": "重瞳",
+    "ruby": "重瞳",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "重瞳",
+      "重瞳",
+      "重瞳",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703300,
+    "name": "阿周那〔Alter〕",
+    "originalName": "阿周那〔Alter〕",
+    "ruby": "阿周那·Alter",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "阿周那〔alter〕",
+      "阿周那〔alter〕",
+      "阿周那·alter",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703400,
+    "name": "莎乐美",
+    "originalName": "莎乐美",
+    "ruby": "莎乐美",
+    "className": "berserker",
+    "rarity": 2,
+    "searchTerms": [
+      "莎乐美",
+      "莎乐美",
+      "莎乐美",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703500,
+    "name": "森长可",
+    "originalName": "森长可",
+    "ruby": "森长可",
+    "className": "berserker",
+    "rarity": 3,
+    "searchTerms": [
+      "森长可",
+      "森长可",
+      "森长可",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703600,
+    "name": "宫本武藏",
+    "originalName": "宫本武藏",
+    "ruby": "宫本武藏",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "宫本武藏",
+      "宫本武藏",
+      "宫本武藏",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703700,
+    "name": "鬼女红叶",
+    "originalName": "鬼女红叶",
+    "ruby": "鬼女红叶",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "鬼女红叶",
+      "鬼女红叶",
+      "鬼女红叶",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703800,
+    "name": "布伦希尔德",
+    "originalName": "布伦希尔德",
+    "ruby": "布伦希尔德",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "布伦希尔德",
+      "布伦希尔德",
+      "布伦希尔德",
+      "berserker"
+    ]
+  },
+  {
+    "id": 703900,
+    "name": "伽拉忒亚",
+    "originalName": "伽拉忒亚",
+    "ruby": "伽拉忒亚",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "伽拉忒亚",
+      "伽拉忒亚",
+      "伽拉忒亚",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704000,
+    "name": "摩根",
+    "originalName": "摩根",
+    "ruby": "摩根",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "摩根",
+      "摩根",
+      "摩根",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704100,
+    "name": "清少纳言",
+    "originalName": "清少纳言",
+    "ruby": "清少纳言",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "清少纳言",
+      "清少纳言",
+      "清少纳言",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704200,
+    "name": "克里姆希尔德",
+    "originalName": "克里姆希尔德",
+    "ruby": "克里姆希尔德",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "克里姆希尔德",
+      "克里姆希尔德",
+      "克里姆希尔德",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704300,
+    "name": "伊吹童子",
+    "originalName": "伊吹童子",
+    "ruby": "伊吹童子",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "伊吹童子",
+      "伊吹童子",
+      "伊吹童子",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704400,
+    "name": "千利休",
+    "originalName": "千利休",
+    "ruby": "千利休",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "千利休",
+      "千利休",
+      "千利休",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704600,
+    "name": "难敌",
+    "originalName": "难敌",
+    "ruby": "难敌",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "难敌",
+      "难敌",
+      "难敌",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704700,
+    "name": "阿尔托莉雅·卡斯特",
+    "originalName": "阿尔托莉雅·卡斯特",
+    "ruby": "阿尔托莉雅·卡斯特",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·卡斯特",
+      "阿尔托莉雅·卡斯特",
+      "阿尔托莉雅·卡斯特",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704800,
+    "name": "永仓新八",
+    "originalName": "永仓新八",
+    "ruby": "永仓新八",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "永仓新八",
+      "永仓新八",
+      "永仓新八",
+      "berserker"
+    ]
+  },
+  {
+    "id": 704900,
+    "name": "静",
+    "originalName": "静",
+    "ruby": "静希草十郎",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "静",
+      "静",
+      "静希草十郎",
+      "berserker"
+    ]
+  },
+  {
+    "id": 705000,
+    "name": "娄希",
+    "originalName": "娄希",
+    "ruby": "娄希",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "娄希",
+      "娄希",
+      "娄希",
+      "berserker"
+    ]
+  },
+  {
+    "id": 800100,
+    "name": "玛修·基列莱特",
+    "originalName": "玛修·基列莱特",
+    "ruby": "玛修·基列莱特",
+    "className": "shielder",
+    "rarity": 4,
+    "searchTerms": [
+      "玛修·基列莱特",
+      "玛修·基列莱特",
+      "玛修·基列莱特",
+      "shielder"
+    ]
+  },
+  {
+    "id": 900100,
+    "name": "贞德",
+    "originalName": "贞德",
+    "ruby": "贞德",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "贞德",
+      "贞德",
+      "贞德",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900200,
+    "name": "天草四郎",
+    "originalName": "天草四郎",
+    "ruby": "天草四郎",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "天草四郎",
+      "天草四郎",
+      "天草四郎",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900400,
+    "name": "玛尔达",
+    "originalName": "玛尔达",
+    "ruby": "玛尔达",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "玛尔达",
+      "玛尔达",
+      "玛尔达",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900500,
+    "name": "夏洛克·福尔摩斯",
+    "originalName": "夏洛克·福尔摩斯",
+    "ruby": "夏洛克·福尔摩斯",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "夏洛克·福尔摩斯",
+      "夏洛克·福尔摩斯",
+      "夏洛克·福尔摩斯",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900600,
+    "name": "祖政",
+    "originalName": "祖政",
+    "ruby": "祖政",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "祖政",
+      "祖政",
+      "祖政",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900700,
+    "name": "魁札尔·科亚特尔〔桑巴／圣诞〕",
+    "originalName": "魁札尔·科亚特尔〔桑巴／圣诞〕",
+    "ruby": "魁札尔·科亚特尔〔桑巴／圣诞〕",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "魁札尔·科亚特尔〔桑巴／圣诞〕",
+      "魁札尔·科亚特尔〔桑巴／圣诞〕",
+      "魁札尔·科亚特尔〔桑巴／圣诞〕",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900800,
+    "name": "阿斯特赖亚",
+    "originalName": "阿斯特赖亚",
+    "ruby": "阿斯特赖亚",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "阿斯特赖亚",
+      "阿斯特赖亚",
+      "阿斯特赖亚",
+      "ruler"
+    ]
+  },
+  {
+    "id": 900900,
+    "name": "阿尔托莉雅·潘德拉贡",
+    "originalName": "阿尔托莉雅·潘德拉贡",
+    "ruby": "阿尔托莉雅·潘德拉贡",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "阿尔托莉雅·潘德拉贡",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901000,
+    "name": "卑弥呼",
+    "originalName": "卑弥呼",
+    "ruby": "卑弥呼",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "卑弥呼",
+      "卑弥呼",
+      "卑弥呼",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901100,
+    "name": "阿摩耳〔卡莲〕",
+    "originalName": "阿摩耳〔卡莲〕",
+    "ruby": "阿摩耳〔卡莲〕",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "阿摩耳〔卡莲〕",
+      "阿摩耳〔卡莲〕",
+      "阿摩耳〔卡莲〕",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901200,
+    "name": "莱昂纳多·达·芬奇",
+    "originalName": "莱昂纳多·达·芬奇",
+    "ruby": "莱昂纳多·达·芬奇",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "莱昂纳多·达·芬奇",
+      "莱昂纳多·达·芬奇",
+      "莱昂纳多·达·芬奇",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901300,
+    "name": "詹姆斯·莫里亚蒂",
+    "originalName": "詹姆斯·莫里亚蒂",
+    "ruby": "詹姆斯·莫里亚蒂",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "詹姆斯·莫里亚蒂",
+      "詹姆斯·莫里亚蒂",
+      "詹姆斯·莫里亚蒂",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901400,
+    "name": "斯卡哈·斯卡蒂",
+    "originalName": "斯卡哈·斯卡蒂",
+    "ruby": "斯卡哈·斯卡蒂",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "斯卡哈·斯卡蒂",
+      "斯卡哈·斯卡蒂",
+      "斯卡哈·斯卡蒂",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901500,
+    "name": "壹与",
+    "originalName": "壹与",
+    "ruby": "壹与",
+    "className": "ruler",
+    "rarity": 4,
+    "searchTerms": [
+      "壹与",
+      "壹与",
+      "壹与",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901600,
+    "name": "女教皇若安",
+    "originalName": "女教皇若安",
+    "ruby": "女教皇若安",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "女教皇若安",
+      "女教皇若安",
+      "女教皇若安",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901700,
+    "name": "梅柳齐娜",
+    "originalName": "梅柳齐娜",
+    "ruby": "梅柳齐娜",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "梅柳齐娜",
+      "梅柳齐娜",
+      "梅柳齐娜",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901800,
+    "name": "上杉谦信",
+    "originalName": "上杉谦信",
+    "ruby": "上杉谦信",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "上杉谦信",
+      "上杉谦信",
+      "上杉谦信",
+      "ruler"
+    ]
+  },
+  {
+    "id": 1000100,
+    "name": "Passionlip",
+    "originalName": "Passionlip",
+    "ruby": "Passionlip",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "passionlip",
+      "passionlip",
+      "passionlip",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000200,
+    "name": "Meltryllis",
+    "originalName": "Meltryllis",
+    "ruby": "Meltryllis",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "meltryllis",
+      "meltryllis",
+      "meltryllis",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000300,
+    "name": "瞑生院祈荒",
+    "originalName": "瞑生院祈荒",
+    "ruby": "瞑生院祈荒",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "瞑生院祈荒",
+      "瞑生院祈荒",
+      "瞑生院祈荒",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000400,
+    "name": "机械伊丽亲",
+    "originalName": "机械伊丽亲",
+    "ruby": "机械伊丽亲",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "机械伊丽亲",
+      "机械伊丽亲",
+      "机械伊丽亲",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000500,
+    "name": "机械伊丽亲Ⅱ号机",
+    "originalName": "机械伊丽亲Ⅱ号机",
+    "ruby": "机械伊丽亲Ⅱ号机",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "机械伊丽亲ⅱ号机",
+      "机械伊丽亲ⅱ号机",
+      "机械伊丽亲ⅱ号机",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000700,
+    "name": "冲田总司〔Alter〕",
+    "originalName": "冲田总司〔Alter〕",
+    "ruby": "冲田总司〔Alter〕",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "冲田总司〔alter〕",
+      "冲田总司〔alter〕",
+      "冲田总司〔alter〕",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000800,
+    "name": "志度内",
+    "originalName": "志度内",
+    "ruby": "志度内",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "志度内",
+      "志度内",
+      "志度内",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1000900,
+    "name": "Kingprotea",
+    "originalName": "Kingprotea",
+    "ruby": "Kingprotea",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "kingprotea",
+      "kingprotea",
+      "kingprotea",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001000,
+    "name": "芦屋道满",
+    "originalName": "芦屋道满",
+    "ruby": "芦屋道满",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "芦屋道满",
+      "芦屋道满",
+      "芦屋道满",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001100,
+    "name": "马纳南·麦克·利尔〔巴泽特〕",
+    "originalName": "马纳南·麦克·利尔〔巴泽特〕",
+    "ruby": "马纳南·麦克·利尔〔巴泽特〕",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "马纳南·麦克·利尔〔巴泽特〕",
+      "马纳南·麦克·利尔〔巴泽特〕",
+      "马纳南·麦克·利尔〔巴泽特〕",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001200,
+    "name": "太岁星君",
+    "originalName": "太岁星君",
+    "ruby": "太岁星君",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "太岁星君",
+      "太岁星君",
+      "太岁星君",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001300,
+    "name": "超级班扬",
+    "originalName": "超级班扬",
+    "ruby": "超级班扬",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "超级班扬",
+      "超级班扬",
+      "超级班扬",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001400,
+    "name": "方巿",
+    "originalName": "方巿",
+    "ruby": "方巿",
+    "className": "alterEgo",
+    "rarity": 3,
+    "searchTerms": [
+      "方巿",
+      "方巿",
+      "方巿",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001500,
+    "name": "言峰绮礼",
+    "originalName": "言峰绮礼",
+    "ruby": "言峰绮礼",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "言峰绮礼",
+      "言峰绮礼",
+      "言峰绮礼",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001600,
+    "name": "幼体／提亚马特",
+    "originalName": "幼体／提亚马特",
+    "ruby": "幼体／提亚马特",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "幼体／提亚马特",
+      "幼体／提亚马特",
+      "幼体／提亚马特",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001700,
+    "name": "响＆千键",
+    "originalName": "响＆千键",
+    "ruby": "响＆千键",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "响＆千键",
+      "响＆千键",
+      "响＆千键",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1001800,
+    "name": "Kazuradrop",
+    "originalName": "Kazuradrop",
+    "ruby": "Kazuradrop",
+    "className": "alterEgo",
+    "rarity": 5,
+    "searchTerms": [
+      "kazuradrop",
+      "kazuradrop",
+      "kazuradrop",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1100100,
+    "name": "安哥拉曼纽",
+    "originalName": "安哥拉曼纽",
+    "ruby": "安哥拉曼纽",
+    "className": "avenger",
+    "rarity": 0,
+    "searchTerms": [
+      "安哥拉曼纽",
+      "安哥拉曼纽",
+      "安哥拉曼纽",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100200,
+    "name": "岩窟王",
+    "originalName": "岩窟王",
+    "ruby": "岩窟王",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "岩窟王",
+      "岩窟王",
+      "岩窟王",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100300,
+    "name": "贞德〔Alter〕",
+    "originalName": "贞德〔Alter〕",
+    "ruby": "贞德〔Alter〕",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "贞德〔alter〕",
+      "贞德〔alter〕",
+      "贞德〔alter〕",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100400,
+    "name": "戈耳工",
+    "originalName": "戈耳工",
+    "ruby": "戈耳工",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "戈耳工",
+      "戈耳工",
+      "戈耳工",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100500,
+    "name": "黑森·罗伯",
+    "originalName": "黑森·罗伯",
+    "ruby": "黑森·罗伯",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "黑森·罗伯",
+      "黑森·罗伯",
+      "黑森·罗伯",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100600,
+    "name": "安东尼奥·萨列里",
+    "originalName": "安东尼奥·萨列里",
+    "ruby": "安东尼奥·萨列里",
+    "className": "avenger",
+    "rarity": 3,
+    "searchTerms": [
+      "安东尼奥·萨列里",
+      "安东尼奥·萨列里",
+      "安东尼奥·萨列里",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100700,
+    "name": "魔王信长",
+    "originalName": "魔王信长",
+    "ruby": "魔王信长",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "魔王信长",
+      "魔王信长",
+      "魔王信长",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1100900,
+    "name": "太空伊什塔尔",
+    "originalName": "太空伊什塔尔",
+    "ruby": "太空伊什塔尔",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "太空伊什塔尔",
+      "太空伊什塔尔",
+      "太空伊什塔尔",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101000,
+    "name": "平景清",
+    "originalName": "平景清",
+    "ruby": "平景清",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "平景清",
+      "平景清",
+      "平景清",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101100,
+    "name": "迦摩",
+    "originalName": "迦摩",
+    "ruby": "迦摩",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "迦摩",
+      "迦摩",
+      "迦摩",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101200,
+    "name": "谜之兰丸X",
+    "originalName": "谜之兰丸X",
+    "ruby": "谜之兰丸X",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "谜之兰丸x",
+      "谜之兰丸x",
+      "谜之兰丸x",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101300,
+    "name": "玛丽·安托瓦内特〔Alter〕",
+    "originalName": "玛丽·安托瓦内特〔Alter〕",
+    "ruby": "玛丽·安托瓦内特〔Alter〕",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "玛丽·安托瓦内特〔alter〕",
+      "玛丽·安托瓦内特〔alter〕",
+      "玛丽·安托瓦内特〔alter〕",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101400,
+    "name": "宇津见绘里濑",
+    "originalName": "宇津见绘里濑",
+    "ruby": "宇津见绘里濑",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "宇津见绘里濑",
+      "宇津见绘里濑",
+      "宇津见绘里濑",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101500,
+    "name": "尼托克丽丝〔Alter〕",
+    "originalName": "尼托克丽丝〔Alter〕",
+    "ruby": "尼托克丽丝·Alter",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "尼托克丽丝〔alter〕",
+      "尼托克丽丝〔alter〕",
+      "尼托克丽丝·alter",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101600,
+    "name": "克洛伊·冯·爱因兹贝伦",
+    "originalName": "克洛伊·冯·爱因兹贝伦",
+    "ruby": "克洛伊·冯·爱因兹贝伦",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "克洛伊·冯·爱因兹贝伦",
+      "克洛伊·冯·爱因兹贝伦",
+      "克洛伊·冯·爱因兹贝伦",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101700,
+    "name": "岩窟王　基督山",
+    "originalName": "岩窟王　基督山",
+    "ruby": "岩窟王　基督山",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "岩窟王　基督山",
+      "岩窟王　基督山",
+      "岩窟王　基督山",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101800,
+    "name": "源赖光／丑御前",
+    "originalName": "源赖光／丑御前",
+    "ruby": "源赖光／丑御前",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "源赖光／丑御前",
+      "源赖光／丑御前",
+      "源赖光／丑御前",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101900,
+    "name": "方巿",
+    "originalName": "方巿",
+    "ruby": "方巿",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "方巿",
+      "方巿",
+      "方巿",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1700100,
+    "name": "所罗门",
+    "originalName": "所罗门",
+    "ruby": "所罗门",
+    "className": "loreGrandCaster",
+    "rarity": 5,
+    "searchTerms": [
+      "所罗门",
+      "所罗门",
+      "所罗门",
+      "loregrandcaster"
+    ]
+  },
+  {
+    "id": 2300100,
+    "name": "BB",
+    "originalName": "BB",
+    "ruby": "BB",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "bb",
+      "bb",
+      "bb",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300200,
+    "name": "BB",
+    "originalName": "BB",
+    "ruby": "BB",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "bb",
+      "bb",
+      "bb",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300300,
+    "name": "吉娜可·加里吉利",
+    "originalName": "吉娜可·加里吉利",
+    "ruby": "吉娜可·加里吉利",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "吉娜可·加里吉利",
+      "吉娜可·加里吉利",
+      "吉娜可·加里吉利",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300400,
+    "name": "瞑生院祈荒",
+    "originalName": "瞑生院祈荒",
+    "ruby": "瞑生院祈荒",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "瞑生院祈荒",
+      "瞑生院祈荒",
+      "瞑生院祈荒",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300500,
+    "name": "Archetype：Earth",
+    "originalName": "Archetype：Earth",
+    "ruby": "Archetype：Earth",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "archetype：earth",
+      "archetype：earth",
+      "archetype：earth",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300600,
+    "name": "ＢＢ迪拜",
+    "originalName": "ＢＢ迪拜",
+    "ruby": "ＢＢ迪拜",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "ｂｂ迪拜",
+      "ｂｂ迪拜",
+      "ｂｂ迪拜",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300700,
+    "name": "岸",
+    "originalName": "岸",
+    "ruby": "岸波白野",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "岸",
+      "岸",
+      "岸波白野",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300800,
+    "name": "岸",
+    "originalName": "岸",
+    "ruby": "岸波白野",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "岸",
+      "岸",
+      "岸波白野",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300900,
+    "name": "谜之代行者C.I.E.L",
+    "originalName": "谜之代行者C.I.E.L",
+    "ruby": "谜之代行者C.I.E.L",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "谜之代行者c.i.e.l",
+      "谜之代行者c.i.e.l",
+      "谜之代行者c.i.e.l",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2301000,
+    "name": "特诺奇蒂特兰",
+    "originalName": "特诺奇蒂特兰",
+    "ruby": "特诺奇蒂特兰",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "特诺奇蒂特兰",
+      "特诺奇蒂特兰",
+      "特诺奇蒂特兰",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2500100,
+    "name": "阿比盖尔·威廉姆斯",
+    "originalName": "阿比盖尔·威廉姆斯",
+    "ruby": "阿比盖尔·威廉姆斯",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "阿比盖尔·威廉姆斯",
+      "阿比盖尔·威廉姆斯",
+      "阿比盖尔·威廉姆斯",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500200,
+    "name": "葛饰北斋",
+    "originalName": "葛饰北斋",
+    "ruby": "葛饰北斋",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "葛饰北斋",
+      "葛饰北斋",
+      "葛饰北斋",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500300,
+    "name": "谜之女主角XX",
+    "originalName": "谜之女主角XX",
+    "ruby": "谜之女主角XX",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "谜之女主角xx",
+      "谜之女主角xx",
+      "谜之女主角xx",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500400,
+    "name": "琰女",
+    "originalName": "琰女",
+    "ruby": "琰女",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "琰女",
+      "琰女",
+      "琰女",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500500,
+    "name": "旅行者",
+    "originalName": "旅行者",
+    "ruby": "旅行者",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "旅行者",
+      "旅行者",
+      "旅行者",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500600,
+    "name": "梵高",
+    "originalName": "梵高",
+    "ruby": "梵高",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "梵高",
+      "梵高",
+      "梵高",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500700,
+    "name": "阿比盖尔·威廉姆斯〔夏〕",
+    "originalName": "阿比盖尔·威廉姆斯〔夏〕",
+    "ruby": "阿比盖尔·威廉姆斯",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "阿比盖尔·威廉姆斯〔夏〕",
+      "阿比盖尔·威廉姆斯〔夏〕",
+      "阿比盖尔·威廉姆斯",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500800,
+    "name": "谜之偶像X〔Alter〕",
+    "originalName": "谜之偶像X〔Alter〕",
+    "ruby": "谜之偶像X〔Alter〕",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "谜之偶像x〔alter〕",
+      "谜之偶像x〔alter〕",
+      "谜之偶像x〔alter〕",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2500900,
+    "name": "暗之高扬斯卡娅",
+    "originalName": "暗之高扬斯卡娅",
+    "ruby": "暗之高扬斯卡娅",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "暗之高扬斯卡娅",
+      "暗之高扬斯卡娅",
+      "暗之高扬斯卡娅",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501000,
+    "name": "雅克·德·莫莱",
+    "originalName": "雅克·德·莫莱",
+    "ruby": "雅克·德·莫莱",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "雅克·德·莫莱",
+      "雅克·德·莫莱",
+      "雅克·德·莫莱",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501100,
+    "name": "库库尔坎",
+    "originalName": "库库尔坎",
+    "ruby": "库库尔坎",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "库库尔坎",
+      "库库尔坎",
+      "库库尔坎",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501200,
+    "name": "诺克娜蕾·雅兰杜",
+    "originalName": "诺克娜蕾·雅兰杜",
+    "ruby": "诺克娜蕾·雅兰杜",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "诺克娜蕾·雅兰杜",
+      "诺克娜蕾·雅兰杜",
+      "诺克娜蕾·雅兰杜",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501300,
+    "name": "旺吉娜",
+    "originalName": "旺吉娜",
+    "ruby": "旺吉娜",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "旺吉娜",
+      "旺吉娜",
+      "旺吉娜",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501400,
+    "name": "苍崎青子",
+    "originalName": "苍崎青子",
+    "ruby": "苍崎青子",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "苍崎青子",
+      "苍崎青子",
+      "苍崎青子",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501600,
+    "name": "谜之女主角XX〔Alter〕",
+    "originalName": "谜之女主角XX〔Alter〕",
+    "ruby": "谜之女主角XX〔Alter〕",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "谜之女主角xx〔alter〕",
+      "谜之女主角xx〔alter〕",
+      "谜之女主角xx〔alter〕",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2800100,
+    "name": "奥伯龙",
+    "originalName": "奥伯龙",
+    "ruby": "奥伯龙",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "奥伯龙",
+      "奥伯龙",
+      "奥伯龙",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800200,
+    "name": "赫费斯提翁",
+    "originalName": "赫费斯提翁",
+    "ruby": "赫费斯提翁",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "赫费斯提翁",
+      "赫费斯提翁",
+      "赫费斯提翁",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800300,
+    "name": "阿瓦隆女士",
+    "originalName": "阿瓦隆女士",
+    "ruby": "阿瓦隆女士",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "阿瓦隆女士",
+      "阿瓦隆女士",
+      "阿瓦隆女士",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800400,
+    "name": "九纹龙伊丽莎",
+    "originalName": "九纹龙伊丽莎",
+    "ruby": "九纹龙伊丽莎",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "九纹龙伊丽莎",
+      "九纹龙伊丽莎",
+      "九纹龙伊丽莎",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800500,
+    "name": "特诺奇蒂特兰",
+    "originalName": "特诺奇蒂特兰",
+    "ruby": "特诺奇蒂特兰",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "特诺奇蒂特兰",
+      "特诺奇蒂特兰",
+      "特诺奇蒂特兰",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800600,
+    "name": "凯特·库·米可科尔",
+    "originalName": "凯特·库·米可科尔",
+    "ruby": "芭万·希",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "凯特·库·米可科尔",
+      "凯特·库·米可科尔",
+      "芭万·希",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800700,
+    "name": "亚历山德罗·迪·卡利奥斯特罗",
+    "originalName": "亚历山德罗·迪·卡利奥斯特罗",
+    "ruby": "亚历山德罗·迪·卡利奥斯特罗",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "亚历山德罗·迪·卡利奥斯特罗",
+      "亚历山德罗·迪·卡利奥斯特罗",
+      "亚历山德罗·迪·卡利奥斯特罗",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800800,
+    "name": "阿比盖尔·威廉姆斯〔圣诞〕",
+    "originalName": "阿比盖尔·威廉姆斯〔圣诞〕",
+    "ruby": "阿比盖尔·威廉姆斯〔圣诞〕",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "阿比盖尔·威廉姆斯〔圣诞〕",
+      "阿比盖尔·威廉姆斯〔圣诞〕",
+      "阿比盖尔·威廉姆斯〔圣诞〕",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800900,
+    "name": "Phantasmoon",
+    "originalName": "Phantasmoon",
+    "ruby": "Phantasmoon",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "phantasmoon",
+      "phantasmoon",
+      "phantasmoon",
+      "pretender"
+    ]
+  },
+  {
+    "id": 3300100,
+    "name": "所多玛之兽／德拉科",
+    "originalName": "所多玛之兽／德拉科",
+    "ruby": "所多玛之兽／德拉科",
+    "className": "beast",
+    "rarity": 5,
+    "searchTerms": [
+      "所多玛之兽／德拉科",
+      "所多玛之兽／德拉科",
+      "所多玛之兽／德拉科",
+      "beast"
+    ]
+  },
+  {
+    "id": 3300200,
+    "name": "埃列什基伽勒",
+    "originalName": "埃列什基伽勒",
+    "ruby": "埃列什基伽勒",
+    "className": "beastEresh",
+    "rarity": 5,
+    "searchTerms": [
+      "埃列什基伽勒",
+      "埃列什基伽勒",
+      "埃列什基伽勒",
+      "beasteresh"
+    ]
+  },
+  {
+    "id": 9935400,
+    "name": "提亚马特",
+    "originalName": "提亚马特",
+    "ruby": "提亚马特",
+    "className": "beastII",
+    "rarity": 5,
+    "searchTerms": [
+      "提亚马特",
+      "提亚马特",
+      "提亚马特",
+      "beastii"
+    ]
+  },
+  {
+    "id": 9935500,
+    "name": "盖提亚",
+    "originalName": "盖提亚",
+    "ruby": "盖提亚",
+    "className": "beastI",
+    "rarity": 5,
+    "searchTerms": [
+      "盖提亚",
+      "盖提亚",
+      "盖提亚",
+      "beasti"
+    ]
+  },
+  {
+    "id": 9935530,
+    "name": "所罗门",
+    "originalName": "所罗门",
+    "ruby": "所罗门",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "所罗门",
+      "所罗门",
+      "所罗门",
+      "caster"
+    ]
+  },
+  {
+    "id": 9939130,
+    "name": "BeastⅢ／R",
+    "originalName": "BeastⅢ／R",
+    "ruby": "BeastⅢ／R",
+    "className": "beastIIIR",
+    "rarity": 5,
+    "searchTerms": [
+      "beastⅲ／r",
+      "beastⅲ／r",
+      "beastⅲ／r",
+      "beastiiir"
+    ]
+  },
+  {
+    "id": 9941730,
+    "name": "BeastⅢ／L",
+    "originalName": "BeastⅢ／L",
+    "ruby": "BeastⅢ／L",
+    "className": "beastIIIL",
+    "rarity": 5,
+    "searchTerms": [
+      "beastⅲ／l",
+      "beastⅲ／l",
+      "beastⅲ／l",
+      "beastiiil"
+    ]
+  },
+  {
+    "id": 9943610,
+    "name": "Beast Ⅳ",
+    "originalName": "Beast Ⅳ",
+    "ruby": "-",
+    "className": "beastIV",
+    "rarity": 5,
+    "searchTerms": [
+      "beast ⅳ",
+      "beast ⅳ",
+      "-",
+      "beastiv"
+    ]
+  },
+  {
+    "id": 9945590,
+    "name": "Ｅ－火玛丽",
+    "originalName": "Ｅ－火玛丽",
+    "ruby": "-",
+    "className": "uOlgaMarieFlareCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "ｅ－火玛丽",
+      "ｅ－火玛丽",
+      "-",
+      "uolgamarieflarecollection"
+    ]
+  },
+  {
+    "id": 9945600,
+    "name": "Ｅ－水玛丽",
+    "originalName": "Ｅ－水玛丽",
+    "ruby": "-",
+    "className": "uOlgaMarieAquaCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "ｅ－水玛丽",
+      "ｅ－水玛丽",
+      "-",
+      "uolgamarieaquacollection"
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+{
+    "title": "Batch Download",
+    "description": "Choose download type for all variants",
+    "batchCropped": "Cropped Selection",
+    "batchCroppedDesc": "Download with current selection area",
+    "batchFull": "Full Images",
+    "batchFullDesc": "Download complete diff images",
+    "cancel": "Cancel"
+}

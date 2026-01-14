@@ -1,0 +1,10 @@
+{
+    "orphanedKeys": "Orphaned Keys",
+    "hide": "Hide",
+    "show": "Show",
+    "warningText": "Found {count} orphaned keys: These keys exist in the target translation but not in the source file. Consider removing these outdated translation entries.",
+    "selectAll": "Select All",
+    "deselectAll": "Deselect All",
+    "deleteSelected": "Delete Selected",
+    "itemsPerPage": "Items per page"
+}

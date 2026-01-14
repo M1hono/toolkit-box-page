@@ -1,0 +1,16 @@
+{
+    "imageSelection": "Image Selection",
+    "aspectRatio": "Aspect Ratio",
+    "manualSelection": "Manual Selection",
+    "width": "Width",
+    "height": "Height",
+    "preview": "Preview",
+    "actions": "Actions",
+    "prevDiff": "Previous",
+    "nextDiff": "Next",
+    "bgColor": "Background",
+    "save": "Save Selection",
+    "batch": "Batch Process",
+    "detectFace": "Detect Face",
+    "onlineOnly": "Online Only"
+}

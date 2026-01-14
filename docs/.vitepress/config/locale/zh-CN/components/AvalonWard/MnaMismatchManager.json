@@ -1,0 +1,16 @@
+{
+    "title": "翻译问题",
+    "untranslated": "未翻译",
+    "orphaned": "孤立条目",
+    "mismatches": "结构不匹配",
+    "allTranslated": "所有条目已翻译！",
+    "noOrphaned": "没有孤立条目",
+    "noMismatches": "没有结构不匹配",
+    "orphanedWarning": "这些条目存在于目标文件但不在源文件中。建议删除它们。",
+    "mismatchWarning": "这些条目在源文件和目标文件之间存在结构差异。",
+    "category": "分类",
+    "sections": "章节",
+    "createFromSource": "从源创建",
+    "delete": "删除",
+    "fix": "修复"
+}

@@ -1,0 +1,8 @@
+{
+    "title": "一括ダウンロード",
+    "batchCrop": "一括トリミング",
+    "batchCropDesc": "現在の選択範囲で全バリエーションをダウンロード",
+    "batchFull": "一括原画",
+    "batchFullDesc": "全バリエーションの原画をダウンロード",
+    "cancel": "キャンセル"
+}

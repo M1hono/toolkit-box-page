@@ -1,0 +1,131 @@
+/**
+ * @fileoverview Standard Layout Styles for All Components
+ * @description Consistent layout patterns with no gaps and proper alignment
+ */
+
+/* Standard Layout Grid */
+.main-layout {
+    display: grid;
+    gap: 0;
+    padding: 0 24px;
+    min-height: calc(100vh - 120px);
+    align-items: start;
+    width: 100%;
+}
+
+/* Panel Layout */
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-right: 16px;
+    width: 100%;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding-left: 16px;
+    height: fit-content;
+    position: sticky;
+    top: 24px;
+    width: 100%;
+}
+
+.panel-item {
+    width: 100%;
+}
+
+.flex-grow-1 {
+    flex: 1;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+    .main-layout {
+        grid-template-columns: 1fr !important;
+        padding: 0 16px;
+    }
+
+    .left-panel,
+    .right-panel {
+        padding: 0;
+        gap: 12px;
+        position: static;
+    }
+}
+
+/* Full Width Mode */
+.main-layout.full-width {
+    grid-template-columns: 1fr;
+}
+
+.main-layout.full-width .left-panel {
+    padding-right: 0;
+}
+
+/* Standard App Layout */
+.standard-layout-app {
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+:root.dark .standard-layout-app {
+    background-color: #1b1b1f;
+}
+
+/* Standard Container */
+.standard-container {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Standard Row */
+.standard-row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+/* Standard Card */
+.standard-card {
+    border: 1px solid #bdbdbd;
+    box-shadow: none !important;
+    border-radius: 12px !important;
+}
+
+.standard-card .standard-card {
+    border: 1px solid #e0e0e0;
+}
+
+/* Standard Title */
+.app-title {
+    color: #2c3e50;
+}
+
+:root.dark .app-title {
+    color: #e2e8f0;
+}
+
+/* Standard Divider */
+.theme-divider {
+    border-color: rgba(0, 0, 0, 0.12) !important;
+}
+
+:root.dark .theme-divider {
+    border-color: rgba(255, 255, 255, 0.12) !important;
+}
+
+/* Standard Form Elements */
+.standard-card,
+.v-sheet,
+.v-alert,
+.v-chip,
+.v-btn,
+.v-text-field .v-field,
+.v-textarea .v-field,
+.v-select .v-field,
+.v-file-input .v-field,
+.v-combobox .v-field {
+    border-radius: 12px !important;
+}

@@ -1,0 +1,5 @@
+{
+    "command": "Command",
+    "optional": "Optional",
+    "commandPlaceholder": "Enter command to execute on ritual completion"
+}

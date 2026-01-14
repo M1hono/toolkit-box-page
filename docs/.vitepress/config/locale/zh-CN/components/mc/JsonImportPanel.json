@@ -1,0 +1,16 @@
+{
+    "importFiles": "导入文件",
+    "sourceLanguageFile": "源语言文件",
+    "selectSourceFile": "选择源文件",
+    "sourceFileHelp": "导入原始语言文件（例如 en_us.json）作为翻译参考",
+    "targetLanguageFile": "目标语言文件",
+    "selectTargetFile": "选择目标文件",
+    "targetFileHelp": "导入你正在翻译的目标语言文件（例如 zh_cn.json）",
+    "translationStatus": "翻译状态",
+    "totalEntries": "总条目",
+    "translated": "已翻译",
+    "untranslated": "未翻译",
+    "fillAllFromSource": "从源文件填充全部",
+    "showUntranslatedOnly": "仅显示未翻译",
+    "showTranslationPanel": "显示翻译面板"
+}

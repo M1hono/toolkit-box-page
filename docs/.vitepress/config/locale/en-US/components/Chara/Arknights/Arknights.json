@@ -1,0 +1,20 @@
+{
+    "appTitle": "Arknights Character Portrait Extractor",
+    "appSubtitle": "Extract character portraits from story files with intelligent cropping and batch downloading",
+    "welcomeTitle": "Select a character to begin",
+    "welcomeDescription": "Choose a character from the left panel",
+    "loadingData": "Loading...",
+    "totalChars": "Total",
+    "filtered": "Showing",
+    "characters": "Characters",
+    "variants": "variants",
+    "batchDownload": "Batch Download",
+    "batchCrop": "Batch Crop",
+    "batchCropDesc": "Download all variants with current selection",
+    "batchFull": "Batch Full",
+    "batchFullDesc": "Download all original variants",
+    "cancel": "Cancel",
+    "batchProcessing": "Processing...",
+    "faceDetected": "Face detected",
+    "defaultSelection": "Using default selection"
+}

@@ -1,0 +1,22 @@
+{
+    "importFiles": "Import Files",
+    "sourceLanguageFile": "📖 Reference File (FROM)",
+    "selectSourceFile": "Upload Reference File",
+    "sourceFileHelp": "Original language file (e.g. en_us.json) - used as translation reference",
+    "sourceTooltip": "This is the original language file you want to translate FROM",
+    "sourceLoaded": "Reference loaded",
+    "targetLanguageFile": "🌍 Translation File (TO)", 
+    "selectTargetFile": "Upload Translation File",
+    "targetFileHelp": "Your translation file (e.g. zh_cn.json) - will be edited and updated",
+    "targetTooltip": "This is the language file you are translating TO",
+    "targetLoaded": "Translation loaded",
+    "importing": "Importing file...",
+    "complete": "Complete",
+    "translationStatus": "Translation Status",
+    "totalEntries": "Total Entries",
+    "translated": "Translated",
+    "untranslated": "Untranslated",
+    "fillAllFromSource": "Fill All From Source",
+    "showUntranslatedOnly": "Show Untranslated Only",
+    "showTranslationPanel": "Show Translation Panel"
+}

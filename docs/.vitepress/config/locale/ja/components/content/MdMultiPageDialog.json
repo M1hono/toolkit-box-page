@@ -1,0 +1,8 @@
+{
+    "closeButton": "閉じる",
+    "defaultText": "クリックして開く",
+    "defaultTitle": "マルチページダイアログ",
+    "nextButton": "次へ",
+    "pageIndicator": "{total}ページ中{current}ページ",
+    "prevButton": "前へ"
+}

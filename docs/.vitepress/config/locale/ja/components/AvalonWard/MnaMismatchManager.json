@@ -1,0 +1,7 @@
+{
+    "mismatchManager": "不一致マネージャー",
+    "noMismatches": "すべてのエントリが正しく同期されています！",
+    "createEntry": "エントリを作成",
+    "createFromSource": "ソースから作成",
+    "itemsPerPage": "ページあたりのアイテム数"
+}

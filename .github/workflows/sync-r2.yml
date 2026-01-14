@@ -1,0 +1,132 @@
+name: Sync Images to R2
+
+on:
+    workflow_dispatch:
+        inputs:
+            force_reset:
+                description: "Force reset upload logs (re-upload all files)"
+                required: false
+                default: false
+                type: boolean
+            clean_failures:
+                description: "Clean failure logs"
+                required: false
+                default: false
+                type: boolean
+
+jobs:
+    sync-to-r2:
+        runs-on: ubuntu-latest
+        timeout-minutes: 120
+
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+              with:
+                  token: ${{ secrets.GITHUB_TOKEN }}
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: "18"
+                  cache: "yarn"
+
+            - name: Install dependencies
+              working-directory: docs
+              run: yarn install --frozen-lockfile
+
+            - name: Clean up logs if requested
+              working-directory: docs
+              run: |
+                  if [ "${{ inputs.force_reset }}" = "true" ]; then
+                    echo "🔄 Force reset: Removing upload logs"
+                    rm -f .vitepress/logs/uploaded.json
+                  fi
+
+                  if [ "${{ inputs.clean_failures }}" = "true" ]; then
+                    echo "🧹 Cleaning failure logs"
+                    rm -f .vitepress/logs/r2-sync-failures.json
+                  fi
+
+            - name: Sync images to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "🚀 Starting R2 image sync..."
+                  echo "📝 Config: Upload with cache cleanup, tracking in uploaded.json"
+                  yarn r2:sync
+
+            - name: Upload sync logs
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: r2-sync-logs
+                  path: docs/.vitepress/logs/
+                  retention-days: 30
+
+            - name: Commit R2 sync logs
+              run: |
+                  git config --local user.email "action@github.com"
+                  git config --local user.name "GitHub Action"
+
+                  if [ -f "docs/.vitepress/logs/uploaded.json" ] || [ -f "docs/.vitepress/logs/r2-sync-failures.json" ]; then
+                    git add docs/.vitepress/logs/
+                    
+                    if ! git diff --cached --quiet; then
+                      git commit -m "📤 Update R2 sync logs (manual trigger) $(date '+%Y-%m-%d %H:%M:%S')"
+                      
+                      echo "🔄 Pushing R2 sync logs..."
+                      for i in {1..3}; do
+                        if git push; then
+                          echo "✅ R2 sync logs pushed successfully"
+                          break
+                        else
+                          echo "⚠️ Push failed, retrying ($i/3)"
+                          git pull --rebase origin main
+                          if [ $? -eq 0 ]; then
+                            echo "📥 Successfully pulled remote changes"
+                          else
+                            echo "❌ Pull failed, skipping push"
+                            break
+                          fi
+                        fi
+                      done
+                    else
+                      echo "📊 No R2 sync log changes"
+                    fi
+                  else
+                    echo "📄 No R2 sync log files found"
+                  fi
+
+            - name: Show sync summary
+              if: always()
+              working-directory: docs
+              run: |
+                  echo "📊 Sync Summary:"
+                  if [ -f ".vitepress/logs/uploaded.json" ]; then
+                    echo "📝 Upload log file size: $(du -h .vitepress/logs/uploaded.json | cut -f1)"
+                    if command -v jq &> /dev/null; then
+                      echo "📈 Uploaded files count: $(jq 'length' .vitepress/logs/uploaded.json)"
+                    else
+                      echo "📈 Upload log exists (jq not available for count)"
+                    fi
+                  else
+                    echo "📄 No upload log file found"
+                  fi
+
+                  if [ -f ".vitepress/logs/r2-sync-failures.json" ]; then
+                    echo "❌ Failure log exists, check artifacts"
+                    if command -v jq &> /dev/null; then
+                      echo "📋 Failure stats: $(jq '.downloadFailures | length' .vitepress/logs/r2-sync-failures.json) download failures, $(jq '.uploadFailures | length' .vitepress/logs/r2-sync-failures.json) upload failures"
+                    else
+                      echo "📋 Failure log exists (jq not available for details)"
+                    fi
+                  else
+                    echo "✅ No failure logs"
+                  fi
+
+                  echo "📋 R2 sync status report:"
+                  yarn r2:failures || echo "Cannot generate status report"

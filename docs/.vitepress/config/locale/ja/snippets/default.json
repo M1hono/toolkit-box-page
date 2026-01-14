@@ -1,0 +1,57 @@
+[
+    {
+        "name": "fgo-features",
+        "color": "#646cff",
+        "darkColor": "#747bff",
+        "snippets": [
+            "FGO キャラクター立ち絵差分処理",
+            "スマート顔検出と切り抜き",
+            "一括ダウンロードとパッケージ化",
+            "多言語キャラクターデータ対応"
+        ]
+    },
+    {
+        "name": "arknights-features",
+        "color": "#4fc08d",
+        "darkColor": "#42b883",
+        "snippets": [
+            "アークナイツキャラクター抽出",
+            "ストーリーテキストデータ同期",
+            "多言語名前マッピング",
+            "リアルタイムプレビューと一括処理"
+        ]
+    },
+    {
+        "name": "minecraft-tools",
+        "color": "#f7df1e",
+        "darkColor": "#f0d91d",
+        "snippets": [
+            "JSON リソースパック翻訳",
+            "自動ガイドブック生成器",
+            "儀式設定とコマンド生成器",
+            "ビジュアルルーン編集器"
+        ]
+    },
+    {
+        "name": "core-features",
+        "color": "#dc2626",
+        "darkColor": "#f87171",
+        "snippets": [
+            "OpenCV 画像処理",
+            "リアルタイムキャンバスレンダリング",
+            "ドラッグ切り抜きインテリジェント選択",
+            "レスポンシブモダンレイアウト"
+        ]
+    },
+    {
+        "name": "developer-experience",
+        "color": "#7c3aed",
+        "darkColor": "#a78bfa",
+        "snippets": [
+            "Vue 3 + Vuetify コンポーネント",
+            "TypeScript 型安全",
+            "モジュール化 Composables",
+            "完全な i18n サポート"
+        ]
+    }
+]

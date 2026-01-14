@@ -1,0 +1,23 @@
+{
+    "title": "ルーン刻印エディター",
+    "instructions": "線をクリックしてオン/オフを切り替えます。",
+    "labelsClickTolerance": "クリック許容範囲",
+    "labelsTier": "ティア",
+    "labelsOutputItem": "出力アイテム",
+    "labelsRequiredFaction": "必要な派閥",
+    "sectionsHorizontal": "水平",
+    "sectionsVertical": "垂直",
+    "sectionsRecipeConfiguration": "レシピ設定",
+    "sectionsCodeOutput": "コード出力",
+    "labelsDecimal": "10進数",
+    "labelsBinary": "2進数",
+    "actionsClearGrid": "グリッドをクリア",
+    "actionsFillGrid": "グリッドを埋める",
+    "actionsCopy": "コピー",
+    "actionsCopyJson": "JSONコードをコピー",
+    "actionsCopyKubejs": "KubeJSコードをコピー",
+    "formatsJson": "JSON",
+    "formatsKubejs": "KubeJS",
+    "placeholdersOutputItem": "例：minecraft:acacia_boat",
+    "placeholdersRequiredFaction": "例：mna:none"
+}

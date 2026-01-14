@@ -1,0 +1,12 @@
+{
+    "parameters": "パラメーター",
+    "tier": "ティア",
+    "innerColor": "内側の色",
+    "outerColor": "外側の色",
+    "beamColor": "ビームの色",
+    "createdItem": "生成アイテム",
+    "createdItemPlaceholder": "例：minecraft:diamond",
+    "connectBeam": "ビーム接続",
+    "displayIndexes": "インデックス表示",
+    "kittable": "キット可能"
+}

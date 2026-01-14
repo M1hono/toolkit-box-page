@@ -1,0 +1,11 @@
+{
+    "contributions": "回",
+    "contributors": "貢献者",
+    "githubError": "GitHub APIエラー。レート制限を超えた可能性があります。",
+    "loading": "貢献者を読み込み中...",
+    "noContributors": "貢献者が見つかりません",
+    "retry": "再試行",
+    "title": "貢献者",
+    "totalContributions": "総貢献数",
+    "viewProfile": "プロフィールを表示"
+}

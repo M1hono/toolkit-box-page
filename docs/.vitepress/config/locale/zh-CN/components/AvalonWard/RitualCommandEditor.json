@@ -1,0 +1,5 @@
+{
+    "command": "命令",
+    "optional": "可选",
+    "commandPlaceholder": "输入仪式完成时执行的命令"
+}

@@ -1,0 +1,15 @@
+{
+    "detectFace": "识别脸部",
+    "reset": "重置",
+    "download": "下载原图",
+    "copy": "复制原图",
+    "batch": "批量",
+    "downloadCrop": "下载裁剪",
+    "copyCrop": "复制裁剪",
+    "loading": "加载中...",
+    "noSelection": "未选择角色",
+    "noImage": "无图片",
+    "bgColor": "背景",
+    "preview": "预览",
+    "allNames": "全部名称："
+}

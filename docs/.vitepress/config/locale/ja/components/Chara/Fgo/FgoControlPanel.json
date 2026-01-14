@@ -1,0 +1,16 @@
+{
+    "imageSelection": "画像選択",
+    "aspectRatio": "アスペクト比",
+    "manualSelection": "手動選択",
+    "width": "幅",
+    "height": "高さ",
+    "preview": "プレビュー",
+    "actions": "操作",
+    "prevDiff": "前へ",
+    "nextDiff": "次へ",
+    "bgColor": "背景色",
+    "save": "選択範囲を保存",
+    "batch": "一括処理",
+    "detectFace": "顔認識",
+    "onlineOnly": "オンラインのみ"
+}

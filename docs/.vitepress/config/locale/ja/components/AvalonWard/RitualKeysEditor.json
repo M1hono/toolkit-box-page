@@ -1,0 +1,10 @@
+{
+    "reagentKeys": "試薬キー",
+    "noKeys": "キーが定義されていません。まずグリッドに試薬を追加してください。",
+    "itemIdPlaceholder": "アイテムID（必須）",
+    "optional": "オプション",
+    "consume": "消費",
+    "dynamic": "動的",
+    "dynamicSource": "動的ソース",
+    "manualReturn": "手動返却"
+}

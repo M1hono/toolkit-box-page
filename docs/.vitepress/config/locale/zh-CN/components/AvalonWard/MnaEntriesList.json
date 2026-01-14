@@ -1,0 +1,17 @@
+{
+    "entriesList": "条目列表",
+    "filterEntries": "筛选条目",
+    "showUntranslatedOnly": "仅显示未翻译",
+    "newEntryId": "新条目ID",
+    "newEntryPlaceholder": "输入唯一条目ID",
+    "createEntry": "创建条目",
+    "noEntries": "无条目",
+    "createFirstEntry": "在上方创建您的第一个条目。",
+    "itemsPerPage": "每页条目数",
+    "totalEntries": "个条目",
+    "category": "分类",
+    "tier": "等级",
+    "sections": "章节",
+    "edit": "编辑",
+    "delete": "删除"
+}

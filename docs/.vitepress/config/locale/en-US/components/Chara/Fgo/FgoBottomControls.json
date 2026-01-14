@@ -1,0 +1,13 @@
+{
+    "background": "Background",
+    "bgHint": "Applied to preview/export",
+    "preview": "Preview",
+    "actions": "Actions",
+    "prev": "Prev",
+    "next": "Next",
+    "save": "Save",
+    "copy": "Copy",
+    "batch": "Batch",
+    "detectFace": "Detect Face",
+    "onlineOnly": "Online Only"
+}

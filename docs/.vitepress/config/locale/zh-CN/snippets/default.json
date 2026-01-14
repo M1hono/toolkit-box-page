@@ -1,0 +1,57 @@
+[
+    {
+        "name": "fgo-features",
+        "color": "#646cff",
+        "darkColor": "#747bff",
+        "snippets": [
+            "FGO 角色立绘差分处理",
+            "智能人脸检测与裁剪",
+            "批量下载与打包",
+            "多语言角色数据支持"
+        ]
+    },
+    {
+        "name": "arknights-features",
+        "color": "#4fc08d",
+        "darkColor": "#42b883",
+        "snippets": [
+            "明日方舟角色立绘提取",
+            "剧情文本数据同步",
+            "多语言角色名称映射",
+            "实时预览与批量处理"
+        ]
+    },
+    {
+        "name": "minecraft-tools",
+        "color": "#f7df1e",
+        "darkColor": "#f0d91d",
+        "snippets": [
+            "JSON 资源包翻译",
+            "指南书自动生成",
+            "仪式配置与命令生成",
+            "符文可视化编辑器"
+        ]
+    },
+    {
+        "name": "core-features",
+        "color": "#dc2626",
+        "darkColor": "#f87171",
+        "snippets": [
+            "OpenCV 图像处理",
+            "Canvas 实时渲染",
+            "拖拽式智能裁剪",
+            "响应式现代布局"
+        ]
+    },
+    {
+        "name": "developer-experience",
+        "color": "#7c3aed",
+        "darkColor": "#a78bfa",
+        "snippets": [
+            "Vue 3 + Vuetify 组件",
+            "TypeScript 类型安全",
+            "模块化 Composables",
+            "完整的 i18n 支持"
+        ]
+    }
+]
