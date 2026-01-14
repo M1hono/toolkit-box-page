@@ -19099,5 +19099,373 @@
       "ユーネクテス"
     ],
     "displayName": "ユーネクテス"
+  },
+  "npc_2004_Alty": {
+    "speakerNames": [
+      "Alty",
+      "AUS"
+    ],
+    "searchNames": [
+      "Alty",
+      "AUS"
+    ],
+    "displayName": "Alty"
+  },
+  "npc_2001_Aya_1": {
+    "speakerNames": [
+      "Aya"
+    ],
+    "searchNames": [
+      "Aya"
+    ],
+    "displayName": "Aya"
+  },
+  "npc_2003_Frost_1": {
+    "speakerNames": [
+      "Frost",
+      "AUS"
+    ],
+    "searchNames": [
+      "Frost",
+      "AUS"
+    ],
+    "displayName": "Frost"
+  },
+  "npc_2002_Dan_1": {
+    "speakerNames": [
+      "Dan"
+    ],
+    "searchNames": [
+      "Dan"
+    ],
+    "displayName": "Dan"
+  },
+  "npc_2002_Dan_rock": {
+    "speakerNames": [
+      "Dan"
+    ],
+    "searchNames": [
+      "Dan"
+    ],
+    "displayName": "Dan"
+  },
+  "npc_2003_Frost_rock": {
+    "speakerNames": [
+      "Frost"
+    ],
+    "searchNames": [
+      "Frost"
+    ],
+    "displayName": "Frost"
+  },
+  "npc_2001_Aya_rock": {
+    "speakerNames": [
+      "Aya"
+    ],
+    "searchNames": [
+      "Aya"
+    ],
+    "displayName": "Aya"
+  },
+  "npc_2004_Alty_rock": {
+    "speakerNames": [
+      "Alty"
+    ],
+    "searchNames": [
+      "Alty"
+    ],
+    "displayName": "Alty"
+  },
+  "avg_NPC_017_3": {
+    "speakerNames": [
+      "D.D.D."
+    ],
+    "searchNames": [
+      "D.D.D."
+    ],
+    "displayName": "D.D.D."
+  },
+  "char_254_Shamare_1": {
+    "speakerNames": [
+      "シャマレ"
+    ],
+    "searchNames": [
+      "シャマレ"
+    ],
+    "displayName": "シャマレ"
+  },
+  "char_362_Saga": {
+    "speakerNames": [
+      "サガ"
+    ],
+    "searchNames": [
+      "サガ"
+    ],
+    "displayName": "サガ"
+  },
+  "char_264_Mountain_1": {
+    "speakerNames": [
+      "アンソニー",
+      "カフカ",
+      "マウンテン"
+    ],
+    "searchNames": [
+      "アンソニー",
+      "カフカ",
+      "マウンテン"
+    ],
+    "displayName": "アンソニー"
+  },
+  "char_214_Kafka_1": {
+    "speakerNames": [
+      "カフカ"
+    ],
+    "searchNames": [
+      "カフカ"
+    ],
+    "displayName": "カフカ"
+  },
+  "char_440_Pinecone": {
+    "speakerNames": [
+      "ミナ"
+    ],
+    "searchNames": [
+      "ミナ"
+    ],
+    "displayName": "ミナ"
+  },
+  "avg_1012_skadiSP_1": {
+    "speakerNames": [
+      "スカジ"
+    ],
+    "searchNames": [
+      "スカジ"
+    ],
+    "displayName": "スカジ"
+  },
+  "avg_274_Astesia_1": {
+    "speakerNames": [
+      "アステシア",
+      "アステシア？",
+      "アステジーニ",
+      "通りすがりのリーベリ"
+    ],
+    "searchNames": [
+      "アステシア",
+      "アステシア？",
+      "アステジーニ",
+      "通りすがりのリーベリ"
+    ],
+    "displayName": "アステシア"
+  },
+  "char_259_Jessica_1": {
+    "speakerNames": [
+      "ジェシカ"
+    ],
+    "searchNames": [
+      "ジェシカ"
+    ],
+    "displayName": "ジェシカ"
+  },
+  "avg_4145_Ulpia_1": {
+    "speakerNames": [
+      "ウルピアヌス"
+    ],
+    "searchNames": [
+      "ウルピアヌス"
+    ],
+    "displayName": "ウルピアヌス"
+  },
+  "char_240_Vanilla_1": {
+    "speakerNames": [
+      "バニラ"
+    ],
+    "searchNames": [
+      "バニラ"
+    ],
+    "displayName": "バニラ"
+  },
+  "char_1507_Mephisto_1": {
+    "speakerNames": [
+      "メフィスト"
+    ],
+    "searchNames": [
+      "メフィスト"
+    ],
+    "displayName": "メフィスト"
+  },
+  "$ill_amiya_normal": {
+    "speakerNames": [
+      "アーミヤ"
+    ],
+    "searchNames": [
+      "アーミヤ"
+    ],
+    "displayName": "アーミヤ"
+  },
+  "char_1508_Faust_1": {
+    "speakerNames": [
+      "ファウスト"
+    ],
+    "searchNames": [
+      "ファウスト"
+    ],
+    "displayName": "ファウスト"
+  },
+  "avg_NPC_178": {
+    "speakerNames": [
+      "画廊のオーナー",
+      "好奇心旺盛な客",
+      "神経質な村人",
+      "懐疑的な村人"
+    ],
+    "searchNames": [
+      "画廊のオーナー",
+      "好奇心旺盛な客",
+      "神経質な村人",
+      "懐疑的な村人"
+    ],
+    "displayName": "画廊のオーナー"
+  },
+  "avg_NPC_460_1": {
+    "speakerNames": [
+      "心配する町民",
+      "フェリペ"
+    ],
+    "searchNames": [
+      "心配する町民",
+      "フェリペ"
+    ],
+    "displayName": "心配する町民"
+  },
+  "avg_NPC_459_1": {
+    "speakerNames": [
+      "度胸のある町民"
+    ],
+    "searchNames": [
+      "度胸のある町民"
+    ],
+    "displayName": "度胸のある町民"
+  },
+  "AVG_char_501_Durin_1": {
+    "speakerNames": [
+      "ドゥリン"
+    ],
+    "searchNames": [
+      "ドゥリン"
+    ],
+    "displayName": "ドゥリン"
+  },
+  "char_336_Scene_1": {
+    "speakerNames": [
+      "シーン",
+      "クルース"
+    ],
+    "searchNames": [
+      "シーン",
+      "クルース"
+    ],
+    "displayName": "シーン"
+  },
+  "avg_502_Yato_1": {
+    "speakerNames": [
+      "ヤトウ"
+    ],
+    "searchNames": [
+      "ヤトウ"
+    ],
+    "displayName": "ヤトウ"
+  },
+  "char_373_Leonhardt_1": {
+    "speakerNames": [
+      "レオンハルト",
+      "プロヴァンス"
+    ],
+    "searchNames": [
+      "レオンハルト",
+      "プロヴァンス"
+    ],
+    "displayName": "レオンハルト"
+  },
+  "avg_NPC_462_1": {
+    "speakerNames": [
+      "親切な女性"
+    ],
+    "searchNames": [
+      "親切な女性"
+    ],
+    "displayName": "親切な女性"
+  },
+  "avg_NPC_189": {
+    "speakerNames": [
+      "警戒心の強い客"
+    ],
+    "searchNames": [
+      "警戒心の強い客"
+    ],
+    "displayName": "警戒心の強い客"
+  },
+  "avg_NPC_187": {
+    "speakerNames": [
+      "年配の村人"
+    ],
+    "searchNames": [
+      "年配の村人"
+    ],
+    "displayName": "年配の村人"
+  },
+  "avg_npc_293_1": {
+    "speakerNames": [
+      "ファントム"
+    ],
+    "searchNames": [
+      "ファントム"
+    ],
+    "displayName": "ファントム"
+  },
+  "avg_npc_291": {
+    "speakerNames": [
+      "「劇団の喉舌」"
+    ],
+    "searchNames": [
+      "「劇団の喉舌」"
+    ],
+    "displayName": "「劇団の喉舌」"
+  },
+  "avg_4066_highmo_1": {
+    "speakerNames": [
+      "ハイモア"
+    ],
+    "searchNames": [
+      "ハイモア"
+    ],
+    "displayName": "ハイモア"
+  },
+  "avg_437_mizukisummer_1": {
+    "speakerNames": [
+      "ミヅキ"
+    ],
+    "searchNames": [
+      "ミヅキ"
+    ],
+    "displayName": "ミヅキ"
+  },
+  "avg_npc_610_1": {
+    "speakerNames": [
+      "キケロ"
+    ],
+    "searchNames": [
+      "キケロ"
+    ],
+    "displayName": "キケロ"
+  },
+  "avg_npc_1200_1": {
+    "speakerNames": [
+      "ペペ"
+    ],
+    "searchNames": [
+      "ペペ"
+    ],
+    "displayName": "ペペ"
   }
 }

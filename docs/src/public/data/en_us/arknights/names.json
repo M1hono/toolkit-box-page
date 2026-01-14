@@ -19051,5 +19051,373 @@
       "Eunectes"
     ],
     "displayName": "Eunectes"
+  },
+  "npc_2004_Alty": {
+    "speakerNames": [
+      "Alty",
+      "AUS"
+    ],
+    "searchNames": [
+      "Alty",
+      "AUS"
+    ],
+    "displayName": "Alty"
+  },
+  "npc_2001_Aya_1": {
+    "speakerNames": [
+      "Aya"
+    ],
+    "searchNames": [
+      "Aya"
+    ],
+    "displayName": "Aya"
+  },
+  "npc_2003_Frost_1": {
+    "speakerNames": [
+      "Frost",
+      "AUS"
+    ],
+    "searchNames": [
+      "Frost",
+      "AUS"
+    ],
+    "displayName": "Frost"
+  },
+  "npc_2002_Dan_1": {
+    "speakerNames": [
+      "Dan"
+    ],
+    "searchNames": [
+      "Dan"
+    ],
+    "displayName": "Dan"
+  },
+  "npc_2002_Dan_rock": {
+    "speakerNames": [
+      "Dan"
+    ],
+    "searchNames": [
+      "Dan"
+    ],
+    "displayName": "Dan"
+  },
+  "npc_2003_Frost_rock": {
+    "speakerNames": [
+      "Frost"
+    ],
+    "searchNames": [
+      "Frost"
+    ],
+    "displayName": "Frost"
+  },
+  "npc_2001_Aya_rock": {
+    "speakerNames": [
+      "Aya"
+    ],
+    "searchNames": [
+      "Aya"
+    ],
+    "displayName": "Aya"
+  },
+  "npc_2004_Alty_rock": {
+    "speakerNames": [
+      "Alty"
+    ],
+    "searchNames": [
+      "Alty"
+    ],
+    "displayName": "Alty"
+  },
+  "avg_NPC_017_3": {
+    "speakerNames": [
+      "D.D.D."
+    ],
+    "searchNames": [
+      "D.D.D."
+    ],
+    "displayName": "D.D.D."
+  },
+  "char_254_Shamare_1": {
+    "speakerNames": [
+      "Shamare"
+    ],
+    "searchNames": [
+      "Shamare"
+    ],
+    "displayName": "Shamare"
+  },
+  "char_362_Saga": {
+    "speakerNames": [
+      "Saga"
+    ],
+    "searchNames": [
+      "Saga"
+    ],
+    "displayName": "Saga"
+  },
+  "char_264_Mountain_1": {
+    "speakerNames": [
+      "Anthony",
+      "Kafka",
+      "Mountain"
+    ],
+    "searchNames": [
+      "Anthony",
+      "Kafka",
+      "Mountain"
+    ],
+    "displayName": "Anthony"
+  },
+  "char_214_Kafka_1": {
+    "speakerNames": [
+      "Kafka"
+    ],
+    "searchNames": [
+      "Kafka"
+    ],
+    "displayName": "Kafka"
+  },
+  "char_440_Pinecone": {
+    "speakerNames": [
+      "Mina"
+    ],
+    "searchNames": [
+      "Mina"
+    ],
+    "displayName": "Mina"
+  },
+  "avg_1012_skadiSP_1": {
+    "speakerNames": [
+      "Skadi"
+    ],
+    "searchNames": [
+      "Skadi"
+    ],
+    "displayName": "Skadi"
+  },
+  "avg_274_Astesia_1": {
+    "speakerNames": [
+      "Astesia",
+      "Astesia?",
+      "Astgenne",
+      "Passerby Liberi"
+    ],
+    "searchNames": [
+      "Astesia",
+      "Astesia?",
+      "Astgenne",
+      "Passerby Liberi"
+    ],
+    "displayName": "Astesia"
+  },
+  "char_259_Jessica_1": {
+    "speakerNames": [
+      "Jessica"
+    ],
+    "searchNames": [
+      "Jessica"
+    ],
+    "displayName": "Jessica"
+  },
+  "avg_4145_Ulpia_1": {
+    "speakerNames": [
+      "Ulpianus"
+    ],
+    "searchNames": [
+      "Ulpianus"
+    ],
+    "displayName": "Ulpianus"
+  },
+  "char_240_Vanilla_1": {
+    "speakerNames": [
+      "Vanilla"
+    ],
+    "searchNames": [
+      "Vanilla"
+    ],
+    "displayName": "Vanilla"
+  },
+  "char_1507_Mephisto_1": {
+    "speakerNames": [
+      "Mephisto"
+    ],
+    "searchNames": [
+      "Mephisto"
+    ],
+    "displayName": "Mephisto"
+  },
+  "$ill_amiya_normal": {
+    "speakerNames": [
+      "Amiya"
+    ],
+    "searchNames": [
+      "Amiya"
+    ],
+    "displayName": "Amiya"
+  },
+  "char_1508_Faust_1": {
+    "speakerNames": [
+      "Faust"
+    ],
+    "searchNames": [
+      "Faust"
+    ],
+    "displayName": "Faust"
+  },
+  "avg_NPC_178": {
+    "speakerNames": [
+      "Art Shop Owner",
+      "Curious Customer",
+      "Tense Townsfolk",
+      "Skeptical Townsfolk"
+    ],
+    "searchNames": [
+      "Art Shop Owner",
+      "Curious Customer",
+      "Tense Townsfolk",
+      "Skeptical Townsfolk"
+    ],
+    "displayName": "Art Shop Owner"
+  },
+  "avg_NPC_460_1": {
+    "speakerNames": [
+      "Worried Townsfolk",
+      "Felipe"
+    ],
+    "searchNames": [
+      "Worried Townsfolk",
+      "Felipe"
+    ],
+    "displayName": "Worried Townsfolk"
+  },
+  "avg_NPC_459_1": {
+    "speakerNames": [
+      "Bold Townsfolk"
+    ],
+    "searchNames": [
+      "Bold Townsfolk"
+    ],
+    "displayName": "Bold Townsfolk"
+  },
+  "AVG_char_501_Durin_1": {
+    "speakerNames": [
+      "Durin"
+    ],
+    "searchNames": [
+      "Durin"
+    ],
+    "displayName": "Durin"
+  },
+  "char_336_Scene_1": {
+    "speakerNames": [
+      "Scene",
+      "Kroos"
+    ],
+    "searchNames": [
+      "Scene",
+      "Kroos"
+    ],
+    "displayName": "Scene"
+  },
+  "avg_502_Yato_1": {
+    "speakerNames": [
+      "Yato"
+    ],
+    "searchNames": [
+      "Yato"
+    ],
+    "displayName": "Yato"
+  },
+  "char_373_Leonhardt_1": {
+    "speakerNames": [
+      "Leonhardt",
+      "Provence"
+    ],
+    "searchNames": [
+      "Leonhardt",
+      "Provence"
+    ],
+    "displayName": "Leonhardt"
+  },
+  "avg_NPC_462_1": {
+    "speakerNames": [
+      "Friendly Woman"
+    ],
+    "searchNames": [
+      "Friendly Woman"
+    ],
+    "displayName": "Friendly Woman"
+  },
+  "avg_NPC_189": {
+    "speakerNames": [
+      "Cautious Customer"
+    ],
+    "searchNames": [
+      "Cautious Customer"
+    ],
+    "displayName": "Cautious Customer"
+  },
+  "avg_NPC_187": {
+    "speakerNames": [
+      "Old Townsfolk"
+    ],
+    "searchNames": [
+      "Old Townsfolk"
+    ],
+    "displayName": "Old Townsfolk"
+  },
+  "avg_npc_293_1": {
+    "speakerNames": [
+      "Phantom"
+    ],
+    "searchNames": [
+      "Phantom"
+    ],
+    "displayName": "Phantom"
+  },
+  "avg_npc_291": {
+    "speakerNames": [
+      "'Troupe Mouthpiece'"
+    ],
+    "searchNames": [
+      "'Troupe Mouthpiece'"
+    ],
+    "displayName": "'Troupe Mouthpiece'"
+  },
+  "avg_4066_highmo_1": {
+    "speakerNames": [
+      "Highmore"
+    ],
+    "searchNames": [
+      "Highmore"
+    ],
+    "displayName": "Highmore"
+  },
+  "avg_437_mizukisummer_1": {
+    "speakerNames": [
+      "Mizuki"
+    ],
+    "searchNames": [
+      "Mizuki"
+    ],
+    "displayName": "Mizuki"
+  },
+  "avg_npc_610_1": {
+    "speakerNames": [
+      "Cicero"
+    ],
+    "searchNames": [
+      "Cicero"
+    ],
+    "displayName": "Cicero"
+  },
+  "avg_npc_1200_1": {
+    "speakerNames": [
+      "Pepe"
+    ],
+    "searchNames": [
+      "Pepe"
+    ],
+    "displayName": "Pepe"
   }
 }
