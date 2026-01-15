@@ -156,13 +156,21 @@ function consolidateResults(results, langCode) {
     });
 
     // Bidirectional cleanup: Remove excluded names from speakerNames
+    let cleanupCount = 0;
     for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
         for (const charId of excludedCharIds) {
             if (langNames[charId] && langNames[charId].speakerNames) {
+                const before = langNames[charId].speakerNames.length;
                 langNames[charId].speakerNames = langNames[charId].speakerNames.filter(n => n !== name);
                 langNames[charId].searchNames = langNames[charId].speakerNames;
+                if (langNames[charId].speakerNames.length < before) {
+                    cleanupCount++;
+                }
             }
         }
+    }
+    if (cleanupCount > 0) {
+        console.log(`  Cleaned ${cleanupCount} speakerNames entries`);
     }
 
     saveGlobalCharacters(globalChars);

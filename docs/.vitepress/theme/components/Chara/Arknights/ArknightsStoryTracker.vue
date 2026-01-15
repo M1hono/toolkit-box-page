@@ -330,7 +330,8 @@ function getStoryIcon(path: string): string {
         // Extract chapter number from filename: level_main_15-10_beg → 15
         const match = filename.match(/(\d+)-\d+/);  // Match first number before dash
         if (match && match[1]) {
-            return `https://r2.m31ns.top/img/icons/main_${match[1]}.png`;
+            const chapterNum = parseInt(match[1], 10);  // Remove leading zeros
+            return `https://r2.m31ns.top/img/icons/main_${chapterNum}.png`;
         }
     }
     
