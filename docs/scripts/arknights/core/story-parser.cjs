@@ -3,9 +3,49 @@
  * @description Core parsing logic for extracting character IDs and names from story text
  */
 
+const fs = require('fs');
+const path = require('path');
 const { shouldExcludeMapping } = require('../arknights-exclude-config.cjs');
 const { shouldFilterSpecialName } = require('../arknights-special-config.cjs');
 const PROJECT_CONFIG = require('../../project-config.cjs');
+
+const langExcludeCache = {};
+
+/**
+ * Load language-specific exclude rules
+ * @param {string} langCode 
+ * @returns {Object}
+ */
+function loadLangExcludeRules(langCode) {
+    if (langExcludeCache[langCode]) return langExcludeCache[langCode];
+    
+    const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja' };
+    const configLang = langMap[langCode] || langCode;
+    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`);
+    
+    if (fs.existsSync(excludePath)) {
+        langExcludeCache[langCode] = JSON.parse(fs.readFileSync(excludePath, 'utf8'));
+    } else {
+        langExcludeCache[langCode] = {};
+    }
+    return langExcludeCache[langCode];
+}
+
+/**
+ * Check if mapping should be excluded (combines hardcoded + language-specific rules)
+ * @param {string} charId 
+ * @param {string} speakerName 
+ * @param {string} langCode 
+ * @returns {boolean}
+ */
+function shouldExcludeMappingFull(charId, speakerName, langCode) {
+    if (shouldExcludeMapping(charId, speakerName)) return true;
+    
+    const langRules = loadLangExcludeRules(langCode);
+    const excludeList = langRules[speakerName] || [];
+    const baseCharId = charId.split("#")[0];
+    return excludeList.includes(baseCharId) || excludeList.includes(charId);
+}
 
 function getBaseCharacterId(id) {
     if (!id) return "";
@@ -70,7 +110,7 @@ function parseStory(text, storyId, langCode = 'zh_CN') {
             const protag = getProtagonist();
             if (protag) {
                 const baseId = getBaseCharacterId(protag);
-                if (baseId && !shouldExcludeMapping(baseId, speaker)) {
+                if (baseId && !shouldExcludeMappingFull(baseId, speaker, langCode)) {
                     if (!stage.names[baseId]) stage.names[baseId] = new Set();
                     stage.names[baseId].add(speaker);
                 }
@@ -134,5 +174,7 @@ module.exports = {
     parseStory,
     normalizeRawId,
     shouldFilterName,
-    getBaseCharacterId
+    getBaseCharacterId,
+    shouldExcludeMappingFull,
+    loadLangExcludeRules
 };
