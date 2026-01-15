@@ -19352,5 +19352,34 @@
       "Pepe"
     ],
     "displayName": "Pepe"
+  },
+  "char_002_amiya_1": {
+    "speakerNames": [
+      "Amiya",
+      "Shining",
+      "Amiya?",
+      "Dobermann",
+      "Ace",
+      "Ch'en",
+      "Franka",
+      "Liskarm",
+      "W",
+      "Little Girl",
+      "Another Girl's Voice"
+    ],
+    "searchNames": [
+      "Amiya",
+      "Shining",
+      "Amiya?",
+      "Dobermann",
+      "Ace",
+      "Ch'en",
+      "Franka",
+      "Liskarm",
+      "W",
+      "Little Girl",
+      "Another Girl's Voice"
+    ],
+    "displayName": "Amiya"
   }
 }

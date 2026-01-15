@@ -21022,5 +21022,13 @@
     ],
     "charType": "npc",
     "dialogCount": 0
+  },
+  "char_002_amiya_1": {
+    "charId": "char_002_amiya_1",
+    "validVariants": [
+      "char_002_amiya_1#1$1"
+    ],
+    "charType": "operator",
+    "dialogCount": 0
   }
 }
