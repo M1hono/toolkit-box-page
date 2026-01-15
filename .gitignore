@@ -5,6 +5,9 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Exception: Allow VitePress logs directory for R2 sync tracking
+!docs/.vitepress/logs/
+
 # Runtime data
 pids
 *.pid
@@ -86,13 +89,6 @@ yarn-error.log*
 .Trashes
 ehthumbs.db
 Thumbs.db
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
 
 # Story data files - managed by workflow, not version controlled  
 docs/src/public/data/*/arknights/story/
