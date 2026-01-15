@@ -735,10 +735,30 @@
   },
   "char_002_amiya_1": {
     "speakerNames": [
-      "Amiya"
+      "Amiya",
+      "Shining",
+      "Amiya?",
+      "Dobermann",
+      "Ace",
+      "Ch'en",
+      "Franka",
+      "Liskarm",
+      "W",
+      "Little Girl",
+      "Another Girl's Voice"
     ],
     "searchNames": [
-      "Amiya"
+      "Amiya",
+      "Shining",
+      "Amiya?",
+      "Dobermann",
+      "Ace",
+      "Ch'en",
+      "Franka",
+      "Liskarm",
+      "W",
+      "Little Girl",
+      "Another Girl's Voice"
     ],
     "displayName": "Amiya"
   },
@@ -5509,10 +5529,12 @@
   },
   "char_214_kafka_1": {
     "speakerNames": [
-      "Kafka"
+      "Kafka",
+      "Jailer"
     ],
     "searchNames": [
-      "Kafka"
+      "Kafka",
+      "Jailer"
     ],
     "displayName": "Kafka"
   },
@@ -7755,12 +7777,28 @@
   },
   "avg_npc_459_1": {
     "speakerNames": [
-      "Bold Townsfolk"
+      "Male Townsperson",
+      "Cautious Townsperson",
+      "Nihilistic Townsperson",
+      "Alert Townsfolk",
+      "Blockading Townsfolk",
+      "Pursuing Townsfolk",
+      "Scoffing Passerby",
+      "Bold Townsfolk",
+      "Brave Villager"
     ],
     "searchNames": [
-      "Bold Townsfolk"
+      "Male Townsperson",
+      "Cautious Townsperson",
+      "Nihilistic Townsperson",
+      "Alert Townsfolk",
+      "Blockading Townsfolk",
+      "Pursuing Townsfolk",
+      "Scoffing Passerby",
+      "Bold Townsfolk",
+      "Brave Villager"
     ],
-    "displayName": "Bold Townsfolk"
+    "displayName": "Male Townsperson"
   },
   "avg_npc_453_1": {
     "speakerNames": [
@@ -7787,14 +7825,28 @@
   },
   "avg_npc_460_1": {
     "speakerNames": [
+      "Panicking Townsperson",
+      "Panicking Townsfolk",
+      "Terrified Townsperson",
+      "Tense Townsperson",
+      "Inquisition Clerk",
       "Worried Townsfolk",
+      "Young Priest",
+      "Panicky Villager",
       "Felipe"
     ],
     "searchNames": [
+      "Panicking Townsperson",
+      "Panicking Townsfolk",
+      "Terrified Townsperson",
+      "Tense Townsperson",
+      "Inquisition Clerk",
       "Worried Townsfolk",
+      "Young Priest",
+      "Panicky Villager",
       "Felipe"
     ],
-    "displayName": "Worried Townsfolk"
+    "displayName": "Panicking Townsperson"
   },
   "avg_npc_457_1": {
     "speakerNames": [
@@ -7917,12 +7969,24 @@
   },
   "avg_npc_462_1": {
     "speakerNames": [
+      "Fleeing Townsfolk",
+      "Indiscreet Townsfolk",
+      "Helping Townsfolk",
+      "Excitable Townsfolk",
+      "Friendly Villager",
+      "Villagers",
       "Friendly Woman"
     ],
     "searchNames": [
+      "Fleeing Townsfolk",
+      "Indiscreet Townsfolk",
+      "Helping Townsfolk",
+      "Excitable Townsfolk",
+      "Friendly Villager",
+      "Villagers",
       "Friendly Woman"
     ],
-    "displayName": "Friendly Woman"
+    "displayName": "Fleeing Townsfolk"
   },
   "npc_10002": {
     "speakerNames": [
@@ -8229,27 +8293,63 @@
   },
   "avg_npc_178": {
     "speakerNames": [
+      "Male Inhabitant",
+      "Another Male Inhabitant",
+      "Male Inhabitant A",
+      "Inhabitant",
+      "Aloof Passerby",
+      "'Iberian'",
       "Art Shop Owner",
+      "Local Messenger",
       "Curious Customer",
       "Tense Townsfolk",
       "Skeptical Townsfolk"
     ],
     "searchNames": [
+      "Male Inhabitant",
+      "Another Male Inhabitant",
+      "Male Inhabitant A",
+      "Inhabitant",
+      "Aloof Passerby",
+      "'Iberian'",
       "Art Shop Owner",
+      "Local Messenger",
       "Curious Customer",
       "Tense Townsfolk",
       "Skeptical Townsfolk"
     ],
-    "displayName": "Art Shop Owner"
+    "displayName": "Male Inhabitant"
   },
   "avg_npc_187": {
     "speakerNames": [
+      "Male Inhabitant B",
+      "Inhabitant",
+      "Panicked Inhabitant",
+      "Male Monastery Inhabitant",
+      "Townsfolk A",
+      "Male Resident",
+      "Honest Townsperson",
+      "Tottering Old Man",
+      "Anxious Townsperson",
+      "Hungry Townsfolk",
+      "Injured Townsfolk",
       "Old Townsfolk"
     ],
     "searchNames": [
+      "Male Inhabitant B",
+      "Inhabitant",
+      "Panicked Inhabitant",
+      "Male Monastery Inhabitant",
+      "Townsfolk A",
+      "Male Resident",
+      "Honest Townsperson",
+      "Tottering Old Man",
+      "Anxious Townsperson",
+      "Hungry Townsfolk",
+      "Injured Townsfolk",
       "Old Townsfolk"
     ],
-    "displayName": "Old Townsfolk"
+    "displayName": "Male Inhabitant B"
   },
   "avg_npc_180": {
     "speakerNames": [
@@ -8301,12 +8401,24 @@
   },
   "avg_npc_189": {
     "speakerNames": [
+      "Male Inhabitant D",
+      "Inhabitant",
+      "Monastery Inhabitant",
+      "Townsfolk B",
+      "Distressed Townsperson",
+      "Stoic Townsfolk",
       "Cautious Customer"
     ],
     "searchNames": [
+      "Male Inhabitant D",
+      "Inhabitant",
+      "Monastery Inhabitant",
+      "Townsfolk B",
+      "Distressed Townsperson",
+      "Stoic Townsfolk",
       "Cautious Customer"
     ],
-    "displayName": "Cautious Customer"
+    "displayName": "Male Inhabitant D"
   },
   "avg_npc_185": {
     "speakerNames": [
@@ -14928,10 +15040,12 @@
   },
   "avg_npc_017_3": {
     "speakerNames": [
-      "D.D.D."
+      "D.D.D.",
+      "Host"
     ],
     "searchNames": [
-      "D.D.D."
+      "D.D.D.",
+      "Host"
     ],
     "displayName": "D.D.D."
   },
@@ -19238,5 +19352,14 @@
       "Pepe"
     ],
     "displayName": "Pepe"
+  },
+  "$ill_amiya_normal": {
+    "speakerNames": [
+      "Amiya"
+    ],
+    "searchNames": [
+      "Amiya"
+    ],
+    "displayName": "Amiya"
   }
 }

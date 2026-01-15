@@ -21012,5 +21012,13 @@
     ],
     "charType": "npc",
     "dialogCount": 0
+  },
+  "$ill_amiya_normal": {
+    "charId": "$ill_amiya_normal",
+    "validVariants": [
+      "$ill_amiya_normal#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
   }
 }
