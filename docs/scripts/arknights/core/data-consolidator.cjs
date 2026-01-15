@@ -103,39 +103,6 @@ function consolidateResults(results, langCode) {
         }
     }
 
-    // Generate search index: name -> charId (or array of charIds if duplicate names exist)
-    const excludeRules = loadExcludeRules(langCode);
-    const searchIndex = {};
-    
-    for (const [id, data] of Object.entries(langNames)) {
-        const names = new Set();
-        if (data.displayName) names.add(data.displayName);
-        if (data.speakerNames) data.speakerNames.forEach(n => names.add(n));
-        if (data.searchNames) data.searchNames.forEach(n => names.add(n));
-        
-        for (const name of names) {
-            if (!name || name.trim() === "") continue;
-            
-            // Check exclude rules BEFORE applying combine
-            const excludeList = excludeRules[name] || [];
-            if (excludeList.includes(id)) {
-                continue;
-            }
-            
-            // Apply combine rules
-            const actualId = combineRules[id] || id;
-            
-            // Support multiple characters with the same name
-            if (!searchIndex[name]) {
-                searchIndex[name] = actualId;
-            } else if (typeof searchIndex[name] === 'string') {
-                searchIndex[name] = [searchIndex[name], actualId];
-            } else if (Array.isArray(searchIndex[name])) {
-                searchIndex[name].push(actualId);
-            }
-        }
-    }
-
     // Clean up: Remove source IDs that should be combined
     Object.keys(combineRules).forEach(sourceId => {
         const targetId = combineRules[sourceId];
@@ -155,7 +122,8 @@ function consolidateResults(results, langCode) {
         }
     });
 
-    // Bidirectional cleanup: Remove excluded names from speakerNames
+    // Bidirectional cleanup FIRST: Remove excluded names from speakerNames BEFORE search index generation
+    const excludeRules = loadExcludeRules(langCode);
     let cleanupCount = 0;
     for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
         for (const charId of excludedCharIds) {
@@ -170,7 +138,43 @@ function consolidateResults(results, langCode) {
         }
     }
     if (cleanupCount > 0) {
-        console.log(`  Cleaned ${cleanupCount} speakerNames entries`);
+        console.log(`  Cleaned ${cleanupCount} speakerNames entries via exclude rules`);
+    }
+
+    // Generate search index: name -> charId (after cleanup, so excluded entries won't appear)
+    const searchIndex = {};
+    
+    for (const [id, data] of Object.entries(langNames)) {
+        const names = new Set();
+        if (data.displayName) names.add(data.displayName);
+        if (data.speakerNames) data.speakerNames.forEach(n => names.add(n));
+        if (data.searchNames) data.searchNames.forEach(n => names.add(n));
+        
+        for (const name of names) {
+            if (!name || name.trim() === "") continue;
+            
+            // Double-check exclude rules (for names that might still appear in displayName)
+            const excludeList = excludeRules[name] || [];
+            if (excludeList.includes(id)) {
+                continue;
+            }
+            
+            // Apply combine rules
+            const actualId = combineRules[id] || id;
+            
+            // Support multiple characters with the same name (with deduplication)
+            if (!searchIndex[name]) {
+                searchIndex[name] = actualId;
+            } else if (typeof searchIndex[name] === 'string') {
+                if (searchIndex[name] !== actualId) {
+                    searchIndex[name] = [searchIndex[name], actualId];
+                }
+            } else if (Array.isArray(searchIndex[name])) {
+                if (!searchIndex[name].includes(actualId)) {
+                    searchIndex[name].push(actualId);
+                }
+            }
+        }
     }
 
     saveGlobalCharacters(globalChars);
