@@ -28,7 +28,15 @@ export function useArknightsFaceDetection() {
         canvasSize: CanvasSize,
         multiplier: number = 2.0
     ): SelectionRect | null {
-        const cropInfo = cropData.value[variant];
+        const normalizedVariant = variant.toLowerCase();
+        let cropInfo = cropData.value[normalizedVariant];
+        
+        if (!cropInfo) {
+            const lowerVariant = normalizedVariant.toLowerCase();
+            const key = Object.keys(cropData.value).find(k => k.toLowerCase() === lowerVariant);
+            if (key) cropInfo = cropData.value[key];
+        }
+
         if (!cropInfo) return null;
 
         const { x: cropX, y: cropY, s: scale } = cropInfo;

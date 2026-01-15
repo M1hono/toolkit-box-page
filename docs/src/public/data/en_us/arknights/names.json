@@ -735,30 +735,10 @@
   },
   "char_002_amiya_1": {
     "speakerNames": [
-      "Amiya",
-      "Shining",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
+      "Amiya"
     ],
     "searchNames": [
-      "Amiya",
-      "Shining",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
+      "Amiya"
     ],
     "displayName": "Amiya"
   },
@@ -5529,12 +5509,10 @@
   },
   "char_214_kafka_1": {
     "speakerNames": [
-      "Kafka",
-      "Jailer"
+      "Kafka"
     ],
     "searchNames": [
-      "Kafka",
-      "Jailer"
+      "Kafka"
     ],
     "displayName": "Kafka"
   },
@@ -7777,26 +7755,12 @@
   },
   "avg_npc_459_1": {
     "speakerNames": [
-      "Male Townsperson",
-      "Cautious Townsperson",
-      "Nihilistic Townsperson",
-      "Alert Townsfolk",
-      "Blockading Townsfolk",
-      "Pursuing Townsfolk",
-      "Scoffing Passerby",
-      "Brave Villager"
+      "Bold Townsfolk"
     ],
     "searchNames": [
-      "Male Townsperson",
-      "Cautious Townsperson",
-      "Nihilistic Townsperson",
-      "Alert Townsfolk",
-      "Blockading Townsfolk",
-      "Pursuing Townsfolk",
-      "Scoffing Passerby",
-      "Brave Villager"
+      "Bold Townsfolk"
     ],
-    "displayName": "Male Townsperson"
+    "displayName": "Bold Townsfolk"
   },
   "avg_npc_453_1": {
     "speakerNames": [
@@ -7823,24 +7787,14 @@
   },
   "avg_npc_460_1": {
     "speakerNames": [
-      "Panicking Townsperson",
-      "Panicking Townsfolk",
-      "Terrified Townsperson",
-      "Tense Townsperson",
-      "Inquisition Clerk",
-      "Young Priest",
-      "Panicky Villager"
+      "Worried Townsfolk",
+      "Felipe"
     ],
     "searchNames": [
-      "Panicking Townsperson",
-      "Panicking Townsfolk",
-      "Terrified Townsperson",
-      "Tense Townsperson",
-      "Inquisition Clerk",
-      "Young Priest",
-      "Panicky Villager"
+      "Worried Townsfolk",
+      "Felipe"
     ],
-    "displayName": "Panicking Townsperson"
+    "displayName": "Worried Townsfolk"
   },
   "avg_npc_457_1": {
     "speakerNames": [
@@ -7963,22 +7917,12 @@
   },
   "avg_npc_462_1": {
     "speakerNames": [
-      "Fleeing Townsfolk",
-      "Indiscreet Townsfolk",
-      "Helping Townsfolk",
-      "Excitable Townsfolk",
-      "Friendly Villager",
-      "Villagers"
+      "Friendly Woman"
     ],
     "searchNames": [
-      "Fleeing Townsfolk",
-      "Indiscreet Townsfolk",
-      "Helping Townsfolk",
-      "Excitable Townsfolk",
-      "Friendly Villager",
-      "Villagers"
+      "Friendly Woman"
     ],
-    "displayName": "Fleeing Townsfolk"
+    "displayName": "Friendly Woman"
   },
   "npc_10002": {
     "speakerNames": [
@@ -8285,53 +8229,27 @@
   },
   "avg_npc_178": {
     "speakerNames": [
-      "Male Inhabitant",
-      "Another Male Inhabitant",
-      "Male Inhabitant A",
-      "Inhabitant",
-      "Aloof Passerby",
-      "'Iberian'",
-      "Local Messenger"
+      "Art Shop Owner",
+      "Curious Customer",
+      "Tense Townsfolk",
+      "Skeptical Townsfolk"
     ],
     "searchNames": [
-      "Male Inhabitant",
-      "Another Male Inhabitant",
-      "Male Inhabitant A",
-      "Inhabitant",
-      "Aloof Passerby",
-      "'Iberian'",
-      "Local Messenger"
+      "Art Shop Owner",
+      "Curious Customer",
+      "Tense Townsfolk",
+      "Skeptical Townsfolk"
     ],
-    "displayName": "Male Inhabitant"
+    "displayName": "Art Shop Owner"
   },
   "avg_npc_187": {
     "speakerNames": [
-      "Male Inhabitant B",
-      "Inhabitant",
-      "Panicked Inhabitant",
-      "Male Monastery Inhabitant",
-      "Townsfolk A",
-      "Male Resident",
-      "Honest Townsperson",
-      "Tottering Old Man",
-      "Anxious Townsperson",
-      "Hungry Townsfolk",
-      "Injured Townsfolk"
+      "Old Townsfolk"
     ],
     "searchNames": [
-      "Male Inhabitant B",
-      "Inhabitant",
-      "Panicked Inhabitant",
-      "Male Monastery Inhabitant",
-      "Townsfolk A",
-      "Male Resident",
-      "Honest Townsperson",
-      "Tottering Old Man",
-      "Anxious Townsperson",
-      "Hungry Townsfolk",
-      "Injured Townsfolk"
+      "Old Townsfolk"
     ],
-    "displayName": "Male Inhabitant B"
+    "displayName": "Old Townsfolk"
   },
   "avg_npc_180": {
     "speakerNames": [
@@ -8383,22 +8301,12 @@
   },
   "avg_npc_189": {
     "speakerNames": [
-      "Male Inhabitant D",
-      "Inhabitant",
-      "Monastery Inhabitant",
-      "Townsfolk B",
-      "Distressed Townsperson",
-      "Stoic Townsfolk"
+      "Cautious Customer"
     ],
     "searchNames": [
-      "Male Inhabitant D",
-      "Inhabitant",
-      "Monastery Inhabitant",
-      "Townsfolk B",
-      "Distressed Townsperson",
-      "Stoic Townsfolk"
+      "Cautious Customer"
     ],
-    "displayName": "Male Inhabitant D"
+    "displayName": "Cautious Customer"
   },
   "avg_npc_185": {
     "speakerNames": [
@@ -15020,12 +14928,12 @@
   },
   "avg_npc_017_3": {
     "speakerNames": [
-      "Host"
+      "D.D.D."
     ],
     "searchNames": [
-      "Host"
+      "D.D.D."
     ],
-    "displayName": "Host"
+    "displayName": "D.D.D."
   },
   "char_007_closre_1": {
     "speakerNames": [
@@ -19052,7 +18960,7 @@
     ],
     "displayName": "Eunectes"
   },
-  "npc_2004_Alty": {
+  "npc_2004_alty": {
     "speakerNames": [
       "Alty",
       "AUS"
@@ -19063,7 +18971,7 @@
     ],
     "displayName": "Alty"
   },
-  "npc_2001_Aya_1": {
+  "npc_2001_aya_1": {
     "speakerNames": [
       "Aya"
     ],
@@ -19072,7 +18980,7 @@
     ],
     "displayName": "Aya"
   },
-  "npc_2003_Frost_1": {
+  "npc_2003_frost_1": {
     "speakerNames": [
       "Frost",
       "AUS"
@@ -19083,7 +18991,7 @@
     ],
     "displayName": "Frost"
   },
-  "npc_2002_Dan_1": {
+  "npc_2002_dan_1": {
     "speakerNames": [
       "Dan"
     ],
@@ -19092,7 +19000,7 @@
     ],
     "displayName": "Dan"
   },
-  "npc_2002_Dan_rock": {
+  "npc_2002_dan_rock": {
     "speakerNames": [
       "Dan"
     ],
@@ -19101,7 +19009,7 @@
     ],
     "displayName": "Dan"
   },
-  "npc_2003_Frost_rock": {
+  "npc_2003_frost_rock": {
     "speakerNames": [
       "Frost"
     ],
@@ -19110,7 +19018,7 @@
     ],
     "displayName": "Frost"
   },
-  "npc_2001_Aya_rock": {
+  "npc_2001_aya_rock": {
     "speakerNames": [
       "Aya"
     ],
@@ -19119,7 +19027,7 @@
     ],
     "displayName": "Aya"
   },
-  "npc_2004_Alty_rock": {
+  "npc_2004_alty_rock": {
     "speakerNames": [
       "Alty"
     ],
@@ -19128,16 +19036,7 @@
     ],
     "displayName": "Alty"
   },
-  "avg_NPC_017_3": {
-    "speakerNames": [
-      "D.D.D."
-    ],
-    "searchNames": [
-      "D.D.D."
-    ],
-    "displayName": "D.D.D."
-  },
-  "char_254_Shamare_1": {
+  "char_254_shamare_1": {
     "speakerNames": [
       "Shamare"
     ],
@@ -19146,7 +19045,7 @@
     ],
     "displayName": "Shamare"
   },
-  "char_362_Saga": {
+  "char_362_saga": {
     "speakerNames": [
       "Saga"
     ],
@@ -19155,7 +19054,7 @@
     ],
     "displayName": "Saga"
   },
-  "char_264_Mountain_1": {
+  "char_264_mountain_1": {
     "speakerNames": [
       "Anthony",
       "Kafka",
@@ -19168,16 +19067,7 @@
     ],
     "displayName": "Anthony"
   },
-  "char_214_Kafka_1": {
-    "speakerNames": [
-      "Kafka"
-    ],
-    "searchNames": [
-      "Kafka"
-    ],
-    "displayName": "Kafka"
-  },
-  "char_440_Pinecone": {
+  "char_440_pinecone": {
     "speakerNames": [
       "Mina"
     ],
@@ -19186,7 +19076,7 @@
     ],
     "displayName": "Mina"
   },
-  "avg_1012_skadiSP_1": {
+  "avg_1012_skadisp_1": {
     "speakerNames": [
       "Skadi"
     ],
@@ -19195,7 +19085,7 @@
     ],
     "displayName": "Skadi"
   },
-  "avg_274_Astesia_1": {
+  "avg_274_astesia_1": {
     "speakerNames": [
       "Astesia",
       "Astesia?",
@@ -19210,7 +19100,7 @@
     ],
     "displayName": "Astesia"
   },
-  "char_259_Jessica_1": {
+  "char_259_jessica_1": {
     "speakerNames": [
       "Jessica"
     ],
@@ -19219,7 +19109,7 @@
     ],
     "displayName": "Jessica"
   },
-  "avg_4145_Ulpia_1": {
+  "avg_4145_ulpia_1": {
     "speakerNames": [
       "Ulpianus"
     ],
@@ -19228,7 +19118,7 @@
     ],
     "displayName": "Ulpianus"
   },
-  "char_240_Vanilla_1": {
+  "char_240_vanilla_1": {
     "speakerNames": [
       "Vanilla"
     ],
@@ -19237,7 +19127,7 @@
     ],
     "displayName": "Vanilla"
   },
-  "char_1507_Mephisto_1": {
+  "char_1507_mephisto_1": {
     "speakerNames": [
       "Mephisto"
     ],
@@ -19246,16 +19136,7 @@
     ],
     "displayName": "Mephisto"
   },
-  "$ill_amiya_normal": {
-    "speakerNames": [
-      "Amiya"
-    ],
-    "searchNames": [
-      "Amiya"
-    ],
-    "displayName": "Amiya"
-  },
-  "char_1508_Faust_1": {
+  "char_1508_faust_1": {
     "speakerNames": [
       "Faust"
     ],
@@ -19264,42 +19145,7 @@
     ],
     "displayName": "Faust"
   },
-  "avg_NPC_178": {
-    "speakerNames": [
-      "Art Shop Owner",
-      "Curious Customer",
-      "Tense Townsfolk",
-      "Skeptical Townsfolk"
-    ],
-    "searchNames": [
-      "Art Shop Owner",
-      "Curious Customer",
-      "Tense Townsfolk",
-      "Skeptical Townsfolk"
-    ],
-    "displayName": "Art Shop Owner"
-  },
-  "avg_NPC_460_1": {
-    "speakerNames": [
-      "Worried Townsfolk",
-      "Felipe"
-    ],
-    "searchNames": [
-      "Worried Townsfolk",
-      "Felipe"
-    ],
-    "displayName": "Worried Townsfolk"
-  },
-  "avg_NPC_459_1": {
-    "speakerNames": [
-      "Bold Townsfolk"
-    ],
-    "searchNames": [
-      "Bold Townsfolk"
-    ],
-    "displayName": "Bold Townsfolk"
-  },
-  "AVG_char_501_Durin_1": {
+  "avg_char_501_durin_1": {
     "speakerNames": [
       "Durin"
     ],
@@ -19308,7 +19154,7 @@
     ],
     "displayName": "Durin"
   },
-  "char_336_Scene_1": {
+  "char_336_scene_1": {
     "speakerNames": [
       "Scene",
       "Kroos"
@@ -19319,7 +19165,7 @@
     ],
     "displayName": "Scene"
   },
-  "avg_502_Yato_1": {
+  "avg_502_yato_1": {
     "speakerNames": [
       "Yato"
     ],
@@ -19328,7 +19174,7 @@
     ],
     "displayName": "Yato"
   },
-  "char_373_Leonhardt_1": {
+  "char_373_leonhardt_1": {
     "speakerNames": [
       "Leonhardt",
       "Provence"
@@ -19338,33 +19184,6 @@
       "Provence"
     ],
     "displayName": "Leonhardt"
-  },
-  "avg_NPC_462_1": {
-    "speakerNames": [
-      "Friendly Woman"
-    ],
-    "searchNames": [
-      "Friendly Woman"
-    ],
-    "displayName": "Friendly Woman"
-  },
-  "avg_NPC_189": {
-    "speakerNames": [
-      "Cautious Customer"
-    ],
-    "searchNames": [
-      "Cautious Customer"
-    ],
-    "displayName": "Cautious Customer"
-  },
-  "avg_NPC_187": {
-    "speakerNames": [
-      "Old Townsfolk"
-    ],
-    "searchNames": [
-      "Old Townsfolk"
-    ],
-    "displayName": "Old Townsfolk"
   },
   "avg_npc_293_1": {
     "speakerNames": [

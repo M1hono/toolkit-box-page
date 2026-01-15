@@ -66,6 +66,21 @@ function loadFailures() {
 function saveFailures(failures) {
     ensureDir(LOGS_DIR);
     failures.lastUpdate = Date.now();
+    
+    // Deduplicate and limit failure logs to avoid massive files
+    const deduplicate = (arr, key) => {
+        const seen = new Set();
+        return arr.filter(item => {
+            const val = item[key];
+            if (seen.has(val)) return false;
+            seen.add(val);
+            return true;
+        }).slice(-500); // Keep only last 500 unique failures
+    };
+
+    failures.downloadFailures = deduplicate(failures.downloadFailures, 'url');
+    failures.uploadFailures = deduplicate(failures.uploadFailures, 'key');
+    
     fs.writeFileSync(FAILURES_LOG, JSON.stringify(failures, null, 2), 'utf8');
 }
 
@@ -186,8 +201,13 @@ async function processBatch(characterBatch) {
     let skipped = 0;
     
     for (const char of characterBatch) {
-        for (const variant of char.validVariants) {
-            const imageUrl = `${R2_CONFIG.SOURCE_BASE_URL}${variant}.png`;
+        for (let variant of char.validVariants) {
+            // Lowercase everything
+            variant = variant.toLowerCase();
+            
+            const encodedVariant = encodeURIComponent(variant);
+            const imageUrl = `${R2_CONFIG.SOURCE_BASE_URL}${encodedVariant}.png`;
+            const backupUrl = R2_CONFIG.BACKUP_SOURCE_URL ? `${R2_CONFIG.BACKUP_SOURCE_URL}${encodedVariant}.png` : null;
             const cacheFile = path.resolve(cacheDir, `${variant}.png`);
             const webpFile = path.resolve(cacheDir, `${variant}.webp`);
             
@@ -195,21 +215,49 @@ async function processBatch(characterBatch) {
             
             processed++;
             
-            if (uploadedFiles[r2Key]) {
+            // Skip if already successfully processed (uploaded or already on R2)
+            // Check both current r2Key and legacy .png key
+            const legacyPngKey = `${variant}.png`;
+            const existingEntry = uploadedFiles[r2Key] || uploadedFiles[legacyPngKey];
+            
+            if (existingEntry && (
+                existingEntry.status === 'uploaded' || 
+                existingEntry.status === 'skipped' || 
+                existingEntry.uploaded === true || 
+                existingEntry.skipped === true
+            )) {
                 skipped++;
                 if (processed % 10 === 0) {
                     console.log(`Progress: ${processed} processed, ${uploaded} uploaded, ${skipped} skipped`);
                 }
                 continue;
             }
+
+            // Skip if previously failed (optional: could add a retry-after logic or --force-retry flag)
+            if (existingEntry && existingEntry.status === 'failed' && !process.argv.includes('--force-retry')) {
+                skipped++; // Count as skipped because we're not attempting it
+                continue;
+            }
             
             console.log(`Processing ${variant}...`);
             
             if (!fs.existsSync(cacheFile)) {
-                const downloadSuccess = await downloadImage(imageUrl, cacheFile);
+                let downloadSuccess = await downloadImage(imageUrl, cacheFile);
+                
+                if (!downloadSuccess && backupUrl) {
+                    console.log(`  Primary source failed, trying backup for ${variant}...`);
+                    downloadSuccess = await downloadImage(backupUrl, cacheFile);
+                }
+
                 if (!downloadSuccess) {
-                    failures.downloadFailures.push({ url: imageUrl, timestamp: Date.now() });
+                    failures.downloadFailures.push({ url: imageUrl, variant, timestamp: Date.now() });
                     console.warn(`WARNING: Failed to download ${variant}`);
+                    uploadedFiles[r2Key] = {
+                        timestamp: Date.now(),
+                        variant: variant,
+                        status: 'failed',
+                        error: 'download_failed'
+                    };
                     continue;
                 }
             }
@@ -222,26 +270,38 @@ async function processBatch(characterBatch) {
                 }
             }
             
-            const exists = await objectExists(client, r2Key);
+            // Only check R2 if we don't have a record of it being there
+            let exists = uploadedFiles[r2Key] && uploadedFiles[r2Key].status === 'skipped';
+            if (!exists && !uploadedFiles[r2Key]) {
+                exists = await objectExists(client, r2Key);
+            }
+
             if (!exists) {
                 const uploadSuccess = await uploadToR2(client, uploadFile, r2Key);
                 if (uploadSuccess) {
                     uploadedFiles[r2Key] = {
                         timestamp: Date.now(),
                         variant: variant,
-                        webp: R2_CONFIG.ENABLE_WEBP_CONVERSION
+                        webp: R2_CONFIG.ENABLE_WEBP_CONVERSION,
+                        status: 'uploaded'
                     };
                     uploaded++;
-                    console.log(`Uploaded ${variant} (${uploaded} total)`);
+                    console.log(`  Uploaded ${variant} (${uploaded} total)`);
                 } else {
                     failures.uploadFailures.push({ key: r2Key, timestamp: Date.now() });
+                    uploadedFiles[r2Key] = {
+                        timestamp: Date.now(),
+                        variant: variant,
+                        status: 'failed',
+                        error: 'upload_failed'
+                    };
                 }
             } else {
                 uploadedFiles[r2Key] = {
                     timestamp: Date.now(),
                     variant: variant,
                     webp: R2_CONFIG.ENABLE_WEBP_CONVERSION,
-                    skipped: true
+                    status: 'skipped'
                 };
                 skipped++;
             }

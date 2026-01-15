@@ -34,10 +34,11 @@ function getSpecialImageUrls(variant: string): { primary: string; fallback: stri
 
 export function useArknightsImageLoader() {
     function getVariantImageUrls(variant: string): { primary: string; fallback: string; secondary?: string } {
-        const specialUrls = getSpecialImageUrls(variant);
+        const normalizedVariant = variant.toLowerCase();
+        const specialUrls = getSpecialImageUrls(normalizedVariant);
         if (specialUrls) return specialUrls;
         
-        const filename = `${encodeURIComponent(variant)}.png`;
+        const filename = `${encodeURIComponent(normalizedVariant)}.png`;
         if (imageConfig.enableR2 && imageConfig.useR2Priority) {
             return {
                 primary: `https://${imageConfig.r2PublicUrl}/arknights/characters/${filename}`,

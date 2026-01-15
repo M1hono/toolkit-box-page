@@ -21,12 +21,27 @@ async function main() {
         return;
     }
     
-    console.log(`Processing ${characterEntries.length} characters for R2 upload`);
+    const characterData = characterEntries
+        .map(([id, data]) => {
+            // Use provided validVariants, or default to standard format for operators
+            // NPCs often don't have validVariants if they don't have images
+            const variants = data.validVariants && data.validVariants.length > 0 
+                ? data.validVariants 
+                : (data.charType === 'operator' ? [`${id}#1$1`] : []);
+            
+            return {
+                id,
+                validVariants: variants
+            };
+        })
+        .filter(char => char.validVariants.length > 0);
     
-    const characterData = characterEntries.map(([id, data]) => ({
-        id,
-        validVariants: data.validVariants || [`${id}#1$1`]
-    }));
+    if (characterData.length === 0) {
+        console.log('WARNING: No characters with valid variants found for R2 sync');
+        return;
+    }
+    
+    console.log(`Processing ${characterData.length} characters for R2 upload`);
     
     const batchSize = 50;
     const batches = [];
@@ -47,17 +62,17 @@ async function main() {
         totalUploaded += result.uploaded;
         totalSkipped += result.skipped;
         
-        console.log(`Batch ${i + 1} complete: ${result.processed} processed, ${result.uploaded} uploaded, ${result.skipped} skipped`);
+        console.log(`Batch ${i + 1} complete: ${result.processed} variants processed, ${result.uploaded} uploaded, ${result.skipped} skipped`);
         
         if (i < batches.length - 1) {
-            await new Promise(resolve => setTimeout(resolve, 1000));
+            await new Promise(resolve => setTimeout(resolve, 500));
         }
     }
     
-    console.log('R2 Sync Summary:');
-    console.log(`   - Total Processed: ${totalProcessed}`);
+    console.log('\nR2 Sync Summary:');
+    console.log(`   - Total Variants Processed: ${totalProcessed}`);
     console.log(`   - Total Uploaded: ${totalUploaded}`);
-    console.log(`   - Total Skipped: ${totalSkipped}`);
+    console.log(`   - Total Skipped/Failed: ${totalSkipped}`);
     console.log('R2 synchronization complete!');
 }
 

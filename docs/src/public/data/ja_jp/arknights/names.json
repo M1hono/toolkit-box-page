@@ -737,30 +737,10 @@
   },
   "char_002_amiya_1": {
     "speakerNames": [
-      "アーミヤ",
-      "シャイニング",
-      "アーミヤ？",
-      "ドーベルマン",
-      "Ace",
-      "チェン",
-      "フランカ",
-      "リスカム",
-      "W",
-      "女の子",
-      "女性の声"
+      "アーミヤ"
     ],
     "searchNames": [
-      "アーミヤ",
-      "シャイニング",
-      "アーミヤ？",
-      "ドーベルマン",
-      "Ace",
-      "チェン",
-      "フランカ",
-      "リスカム",
-      "W",
-      "女の子",
-      "女性の声"
+      "アーミヤ"
     ],
     "displayName": "アーミヤ"
   },
@@ -5577,12 +5557,10 @@
   },
   "char_214_kafka_1": {
     "speakerNames": [
-      "カフカ",
-      "看守"
+      "カフカ"
     ],
     "searchNames": [
-      "カフカ",
-      "看守"
+      "カフカ"
     ],
     "displayName": "カフカ"
   },
@@ -7815,26 +7793,12 @@
   },
   "avg_npc_459_1": {
     "speakerNames": [
-      "男性町民",
-      "慎重な町民",
-      "困惑する町民",
-      "用心深い町民",
-      "扉を塞ぐ町民",
-      "追ってきた町民",
-      "蔑む通行人",
-      "勇敢な村人"
+      "度胸のある町民"
     ],
     "searchNames": [
-      "男性町民",
-      "慎重な町民",
-      "困惑する町民",
-      "用心深い町民",
-      "扉を塞ぐ町民",
-      "追ってきた町民",
-      "蔑む通行人",
-      "勇敢な村人"
+      "度胸のある町民"
     ],
-    "displayName": "男性町民"
+    "displayName": "度胸のある町民"
   },
   "avg_npc_453_1": {
     "speakerNames": [
@@ -7859,24 +7823,14 @@
   },
   "avg_npc_460_1": {
     "speakerNames": [
-      "慌てる町民",
-      "慌てふためく町民",
-      "戸惑う町民",
-      "忙しそうな町民",
-      "裁判所事務員",
-      "若い宣教師",
-      "慌てる村人"
+      "心配する町民",
+      "フェリペ"
     ],
     "searchNames": [
-      "慌てる町民",
-      "慌てふためく町民",
-      "戸惑う町民",
-      "忙しそうな町民",
-      "裁判所事務員",
-      "若い宣教師",
-      "慌てる村人"
+      "心配する町民",
+      "フェリペ"
     ],
-    "displayName": "慌てる町民"
+    "displayName": "心配する町民"
   },
   "avg_npc_457_1": {
     "speakerNames": [
@@ -7999,22 +7953,12 @@
   },
   "avg_npc_462_1": {
     "speakerNames": [
-      "逃げ惑う町民",
-      "警戒心の薄い町民",
-      "手伝う町民",
-      "積極的な町民",
-      "友好的な村人",
-      "村人たち"
+      "親切な女性"
     ],
     "searchNames": [
-      "逃げ惑う町民",
-      "警戒心の薄い町民",
-      "手伝う町民",
-      "積極的な町民",
-      "友好的な村人",
-      "村人たち"
+      "親切な女性"
     ],
-    "displayName": "逃げ惑う町民"
+    "displayName": "親切な女性"
   },
   "npc_10002": {
     "speakerNames": [
@@ -8321,53 +8265,27 @@
   },
   "avg_npc_178": {
     "speakerNames": [
-      "男性住民",
-      "別の男性住民",
-      "男性住民A",
-      "住民",
-      "冷たい通行人",
-      "「イベリア人」",
-      "トランスポーター"
+      "画廊のオーナー",
+      "好奇心旺盛な客",
+      "神経質な村人",
+      "懐疑的な村人"
     ],
     "searchNames": [
-      "男性住民",
-      "別の男性住民",
-      "男性住民A",
-      "住民",
-      "冷たい通行人",
-      "「イベリア人」",
-      "トランスポーター"
+      "画廊のオーナー",
+      "好奇心旺盛な客",
+      "神経質な村人",
+      "懐疑的な村人"
     ],
-    "displayName": "男性住民"
+    "displayName": "画廊のオーナー"
   },
   "avg_npc_187": {
     "speakerNames": [
-      "男性住民B",
-      "住民",
-      "うろたえる住民",
-      "修道院の男性住民",
-      "住民A",
-      "男性住民",
-      "まじめな町民",
-      "ふらつく老人",
-      "焦る町民",
-      "飢えた町民",
-      "傷ついた町民"
+      "年配の村人"
     ],
     "searchNames": [
-      "男性住民B",
-      "住民",
-      "うろたえる住民",
-      "修道院の男性住民",
-      "住民A",
-      "男性住民",
-      "まじめな町民",
-      "ふらつく老人",
-      "焦る町民",
-      "飢えた町民",
-      "傷ついた町民"
+      "年配の村人"
     ],
-    "displayName": "男性住民B"
+    "displayName": "年配の村人"
   },
   "avg_npc_180": {
     "speakerNames": [
@@ -8419,22 +8337,12 @@
   },
   "avg_npc_189": {
     "speakerNames": [
-      "男性住民D",
-      "住民",
-      "修道院住民",
-      "住民B",
-      "悲しむ町民",
-      "慎み深い町民"
+      "警戒心の強い客"
     ],
     "searchNames": [
-      "男性住民D",
-      "住民",
-      "修道院住民",
-      "住民B",
-      "悲しむ町民",
-      "慎み深い町民"
+      "警戒心の強い客"
     ],
-    "displayName": "男性住民D"
+    "displayName": "警戒心の強い客"
   },
   "avg_npc_185": {
     "speakerNames": [
@@ -15068,12 +14976,12 @@
   },
   "avg_npc_017_3": {
     "speakerNames": [
-      "司会者"
+      "D.D.D."
     ],
     "searchNames": [
-      "司会者"
+      "D.D.D."
     ],
-    "displayName": "司会者"
+    "displayName": "D.D.D."
   },
   "char_007_closre_1": {
     "speakerNames": [
@@ -19100,7 +19008,7 @@
     ],
     "displayName": "ユーネクテス"
   },
-  "npc_2004_Alty": {
+  "npc_2004_alty": {
     "speakerNames": [
       "Alty",
       "AUS"
@@ -19111,7 +19019,7 @@
     ],
     "displayName": "Alty"
   },
-  "npc_2001_Aya_1": {
+  "npc_2001_aya_1": {
     "speakerNames": [
       "Aya"
     ],
@@ -19120,7 +19028,7 @@
     ],
     "displayName": "Aya"
   },
-  "npc_2003_Frost_1": {
+  "npc_2003_frost_1": {
     "speakerNames": [
       "Frost",
       "AUS"
@@ -19131,7 +19039,7 @@
     ],
     "displayName": "Frost"
   },
-  "npc_2002_Dan_1": {
+  "npc_2002_dan_1": {
     "speakerNames": [
       "Dan"
     ],
@@ -19140,7 +19048,7 @@
     ],
     "displayName": "Dan"
   },
-  "npc_2002_Dan_rock": {
+  "npc_2002_dan_rock": {
     "speakerNames": [
       "Dan"
     ],
@@ -19149,7 +19057,7 @@
     ],
     "displayName": "Dan"
   },
-  "npc_2003_Frost_rock": {
+  "npc_2003_frost_rock": {
     "speakerNames": [
       "Frost"
     ],
@@ -19158,7 +19066,7 @@
     ],
     "displayName": "Frost"
   },
-  "npc_2001_Aya_rock": {
+  "npc_2001_aya_rock": {
     "speakerNames": [
       "Aya"
     ],
@@ -19167,7 +19075,7 @@
     ],
     "displayName": "Aya"
   },
-  "npc_2004_Alty_rock": {
+  "npc_2004_alty_rock": {
     "speakerNames": [
       "Alty"
     ],
@@ -19176,16 +19084,7 @@
     ],
     "displayName": "Alty"
   },
-  "avg_NPC_017_3": {
-    "speakerNames": [
-      "D.D.D."
-    ],
-    "searchNames": [
-      "D.D.D."
-    ],
-    "displayName": "D.D.D."
-  },
-  "char_254_Shamare_1": {
+  "char_254_shamare_1": {
     "speakerNames": [
       "シャマレ"
     ],
@@ -19194,7 +19093,7 @@
     ],
     "displayName": "シャマレ"
   },
-  "char_362_Saga": {
+  "char_362_saga": {
     "speakerNames": [
       "サガ"
     ],
@@ -19203,7 +19102,7 @@
     ],
     "displayName": "サガ"
   },
-  "char_264_Mountain_1": {
+  "char_264_mountain_1": {
     "speakerNames": [
       "アンソニー",
       "カフカ",
@@ -19216,16 +19115,7 @@
     ],
     "displayName": "アンソニー"
   },
-  "char_214_Kafka_1": {
-    "speakerNames": [
-      "カフカ"
-    ],
-    "searchNames": [
-      "カフカ"
-    ],
-    "displayName": "カフカ"
-  },
-  "char_440_Pinecone": {
+  "char_440_pinecone": {
     "speakerNames": [
       "ミナ"
     ],
@@ -19234,7 +19124,7 @@
     ],
     "displayName": "ミナ"
   },
-  "avg_1012_skadiSP_1": {
+  "avg_1012_skadisp_1": {
     "speakerNames": [
       "スカジ"
     ],
@@ -19243,7 +19133,7 @@
     ],
     "displayName": "スカジ"
   },
-  "avg_274_Astesia_1": {
+  "avg_274_astesia_1": {
     "speakerNames": [
       "アステシア",
       "アステシア？",
@@ -19258,7 +19148,7 @@
     ],
     "displayName": "アステシア"
   },
-  "char_259_Jessica_1": {
+  "char_259_jessica_1": {
     "speakerNames": [
       "ジェシカ"
     ],
@@ -19267,7 +19157,7 @@
     ],
     "displayName": "ジェシカ"
   },
-  "avg_4145_Ulpia_1": {
+  "avg_4145_ulpia_1": {
     "speakerNames": [
       "ウルピアヌス"
     ],
@@ -19276,7 +19166,7 @@
     ],
     "displayName": "ウルピアヌス"
   },
-  "char_240_Vanilla_1": {
+  "char_240_vanilla_1": {
     "speakerNames": [
       "バニラ"
     ],
@@ -19285,7 +19175,7 @@
     ],
     "displayName": "バニラ"
   },
-  "char_1507_Mephisto_1": {
+  "char_1507_mephisto_1": {
     "speakerNames": [
       "メフィスト"
     ],
@@ -19294,16 +19184,7 @@
     ],
     "displayName": "メフィスト"
   },
-  "$ill_amiya_normal": {
-    "speakerNames": [
-      "アーミヤ"
-    ],
-    "searchNames": [
-      "アーミヤ"
-    ],
-    "displayName": "アーミヤ"
-  },
-  "char_1508_Faust_1": {
+  "char_1508_faust_1": {
     "speakerNames": [
       "ファウスト"
     ],
@@ -19312,42 +19193,7 @@
     ],
     "displayName": "ファウスト"
   },
-  "avg_NPC_178": {
-    "speakerNames": [
-      "画廊のオーナー",
-      "好奇心旺盛な客",
-      "神経質な村人",
-      "懐疑的な村人"
-    ],
-    "searchNames": [
-      "画廊のオーナー",
-      "好奇心旺盛な客",
-      "神経質な村人",
-      "懐疑的な村人"
-    ],
-    "displayName": "画廊のオーナー"
-  },
-  "avg_NPC_460_1": {
-    "speakerNames": [
-      "心配する町民",
-      "フェリペ"
-    ],
-    "searchNames": [
-      "心配する町民",
-      "フェリペ"
-    ],
-    "displayName": "心配する町民"
-  },
-  "avg_NPC_459_1": {
-    "speakerNames": [
-      "度胸のある町民"
-    ],
-    "searchNames": [
-      "度胸のある町民"
-    ],
-    "displayName": "度胸のある町民"
-  },
-  "AVG_char_501_Durin_1": {
+  "avg_char_501_durin_1": {
     "speakerNames": [
       "ドゥリン"
     ],
@@ -19356,7 +19202,7 @@
     ],
     "displayName": "ドゥリン"
   },
-  "char_336_Scene_1": {
+  "char_336_scene_1": {
     "speakerNames": [
       "シーン",
       "クルース"
@@ -19367,7 +19213,7 @@
     ],
     "displayName": "シーン"
   },
-  "avg_502_Yato_1": {
+  "avg_502_yato_1": {
     "speakerNames": [
       "ヤトウ"
     ],
@@ -19376,7 +19222,7 @@
     ],
     "displayName": "ヤトウ"
   },
-  "char_373_Leonhardt_1": {
+  "char_373_leonhardt_1": {
     "speakerNames": [
       "レオンハルト",
       "プロヴァンス"
@@ -19386,33 +19232,6 @@
       "プロヴァンス"
     ],
     "displayName": "レオンハルト"
-  },
-  "avg_NPC_462_1": {
-    "speakerNames": [
-      "親切な女性"
-    ],
-    "searchNames": [
-      "親切な女性"
-    ],
-    "displayName": "親切な女性"
-  },
-  "avg_NPC_189": {
-    "speakerNames": [
-      "警戒心の強い客"
-    ],
-    "searchNames": [
-      "警戒心の強い客"
-    ],
-    "displayName": "警戒心の強い客"
-  },
-  "avg_NPC_187": {
-    "speakerNames": [
-      "年配の村人"
-    ],
-    "searchNames": [
-      "年配の村人"
-    ],
-    "displayName": "年配の村人"
   },
   "avg_npc_293_1": {
     "speakerNames": [

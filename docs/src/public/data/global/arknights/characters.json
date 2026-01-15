@@ -291,19 +291,9 @@
   "char_002_amiya_1": {
     "charId": "char_002_amiya_1",
     "validVariants": [
-      "char_002_amiya_1#1$1",
-      "char_002_amiya_1#10$1",
-      "char_002_amiya_1#11$1",
-      "char_002_amiya_1#2$1",
-      "char_002_amiya_1#3$1",
-      "char_002_amiya_1#4$1",
-      "char_002_amiya_1#5$1",
-      "char_002_amiya_1#6$1",
-      "char_002_amiya_1#7$1",
-      "char_002_amiya_1#8$1",
-      "char_002_amiya_1#9$1"
+      "char_002_amiya_1#1$1"
     ],
-    "charType": "operator",
+    "charType": "npc",
     "dialogCount": 0
   },
   "char_181_flower_1": {
@@ -817,12 +807,12 @@
     "charType": "npc",
     "dialogCount": 0
   },
-  "char_2001_aya_1": {
-    "charId": "char_2001_aya_1",
+  "npc_2001_aya_1": {
+    "charId": "npc_2001_aya_1",
     "validVariants": [
-      "char_2001_aya_1#1$1"
+      "npc_2001_aya_1#1$1"
     ],
-    "charType": "operator",
+    "charType": "npc",
     "dialogCount": 0
   },
   "npc_2003_frost_1": {
@@ -1591,12 +1581,12 @@
     "charType": "npc",
     "dialogCount": 0
   },
-  "char_2001_aya_rock": {
-    "charId": "char_2001_aya_rock",
+  "npc_2001_aya_rock": {
+    "charId": "npc_2001_aya_rock",
     "validVariants": [
-      "char_2001_aya_rock#1$1"
+      "npc_2001_aya_rock#1$1"
     ],
-    "charType": "operator",
+    "charType": "npc",
     "dialogCount": 0
   },
   "npc_2004_alty_rock": {
@@ -2040,12 +2030,7 @@
   "avg_npc_017_3": {
     "charId": "avg_npc_017_3",
     "validVariants": [
-      "avg_npc_017_3#1$1",
-      "avg_npc_017_3#2$1",
-      "avg_npc_017_3#3$1",
-      "avg_npc_017_3#4$1",
-      "avg_npc_017_3#5$1",
-      "avg_npc_017_3#6$1"
+      "avg_npc_017_3#1$1"
     ],
     "charType": "npc",
     "dialogCount": 0
@@ -3221,12 +3206,7 @@
   "char_362_saga": {
     "charId": "char_362_saga",
     "validVariants": [
-      "char_362_saga#1$1",
-      "char_362_saga#2$1",
-      "char_362_saga#3$1",
-      "char_362_saga#4$1",
-      "char_362_saga#5$1",
-      "char_362_saga#6$1"
+      "char_362_saga#1$1"
     ],
     "charType": "operator",
     "dialogCount": 0
@@ -3760,11 +3740,7 @@
   "char_214_kafka_1": {
     "charId": "char_214_kafka_1",
     "validVariants": [
-      "char_214_kafka_1#1$1",
-      "char_214_kafka_1#2$1",
-      "char_214_kafka_1#3$1",
-      "char_214_kafka_1#4$1",
-      "char_214_kafka_1#5$1"
+      "char_214_kafka_1#1$1"
     ],
     "charType": "operator",
     "dialogCount": 0
@@ -3796,17 +3772,7 @@
   "char_264_mountain_1": {
     "charId": "char_264_mountain_1",
     "validVariants": [
-      "char_264_mountain_1#1$1",
-      "char_264_mountain_1#10$1",
-      "char_264_mountain_1#11$1",
-      "char_264_mountain_1#2$1",
-      "char_264_mountain_1#3$1",
-      "char_264_mountain_1#4$1",
-      "char_264_mountain_1#5$1",
-      "char_264_mountain_1#6$1",
-      "char_264_mountain_1#7$1",
-      "char_264_mountain_1#8$1",
-      "char_264_mountain_1#9$1"
+      "char_264_mountain_1#1$1"
     ],
     "charType": "operator",
     "dialogCount": 0
@@ -4571,30 +4537,7 @@
   "avg_4081_warmy_1": {
     "charId": "avg_4081_warmy_1",
     "validVariants": [
-      "avg_4081_warmy_1#1$1",
-      "avg_4081_warmy_1#1$2",
-      "avg_4081_warmy_1#10$1",
-      "avg_4081_warmy_1#10$2",
-      "avg_4081_warmy_1#11$1",
-      "avg_4081_warmy_1#11$2",
-      "avg_4081_warmy_1#12$1",
-      "avg_4081_warmy_1#12$2",
-      "avg_4081_warmy_1#2$1",
-      "avg_4081_warmy_1#2$2",
-      "avg_4081_warmy_1#3$1",
-      "avg_4081_warmy_1#3$2",
-      "avg_4081_warmy_1#4$1",
-      "avg_4081_warmy_1#4$2",
-      "avg_4081_warmy_1#5$1",
-      "avg_4081_warmy_1#5$2",
-      "avg_4081_warmy_1#6$1",
-      "avg_4081_warmy_1#6$2",
-      "avg_4081_warmy_1#7$1",
-      "avg_4081_warmy_1#7$2",
-      "avg_4081_warmy_1#8$1",
-      "avg_4081_warmy_1#8$2",
-      "avg_4081_warmy_1#9$1",
-      "avg_4081_warmy_1#9$2"
+      "avg_4081_warmy_1#1$1"
     ],
     "charType": "npc",
     "dialogCount": 0
@@ -4688,14 +4631,7 @@
   "avg_npc_1188_1": {
     "charId": "avg_npc_1188_1",
     "validVariants": [
-      "avg_npc_1188_1#1$1",
-      "avg_npc_1188_1#2$1",
-      "avg_npc_1188_1#3$1",
-      "avg_npc_1188_1#4$1",
-      "avg_npc_1188_1#5$1",
-      "avg_npc_1188_1#6$1",
-      "avg_npc_1188_1#7$1",
-      "avg_npc_1188_1#8$1"
+      "avg_npc_1188_1#1$1"
     ],
     "charType": "npc",
     "dialogCount": 0
@@ -6083,14 +6019,6 @@
       "avg_npc_178#1$1"
     ],
     "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_1012_skadi2_1": {
-    "charId": "char_1012_skadi2_1",
-    "validVariants": [
-      "char_1012_skadi2_1#1$1"
-    ],
-    "charType": "operator",
     "dialogCount": 0
   },
   "avg_npc_187": {
@@ -17512,12 +17440,7 @@
   "char_240_vanilla_1": {
     "charId": "char_240_vanilla_1",
     "validVariants": [
-      "char_240_vanilla_1#1$1",
-      "char_240_vanilla_1#2$1",
-      "char_240_vanilla_1#3$1",
-      "char_240_vanilla_1#4$1",
-      "char_240_vanilla_1#5$1",
-      "char_240_vanilla_1#6$1"
+      "char_240_vanilla_1#1$1"
     ],
     "charType": "operator",
     "dialogCount": 0
@@ -17842,11 +17765,7 @@
   "char_1507_mephisto_1": {
     "charId": "char_1507_mephisto_1",
     "validVariants": [
-      "char_1507_mephisto_1#1$1",
-      "char_1507_mephisto_1#2$1",
-      "char_1507_mephisto_1#3$1",
-      "char_1507_mephisto_1#4$1",
-      "char_1507_mephisto_1#5$1"
+      "char_1507_mephisto_1#1$1"
     ],
     "charType": "operator",
     "dialogCount": 0
@@ -17862,8 +17781,7 @@
   "char_1508_faust_1": {
     "charId": "char_1508_faust_1",
     "validVariants": [
-      "char_1508_faust_1#1$1",
-      "char_1508_faust_1#2$1"
+      "char_1508_faust_1#1$1"
     ],
     "charType": "operator",
     "dialogCount": 0
@@ -20695,30 +20613,6 @@
     "charType": "npc",
     "dialogCount": 0
   },
-  "AVG_NPC_1188_1": {
-    "charId": "AVG_NPC_1188_1",
-    "validVariants": [
-      "AVG_NPC_1188_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "AVG_NPC_090": {
-    "charId": "AVG_NPC_090",
-    "validVariants": [
-      "AVG_NPC_090#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "AVG_4081_WARMY_1": {
-    "charId": "AVG_4081_WARMY_1",
-    "validVariants": [
-      "AVG_4081_WARMY_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
   "avg_npc_1640_1": {
     "charId": "avg_npc_1640_1",
     "validVariants": [
@@ -21063,258 +20957,10 @@
     "charType": "npc",
     "dialogCount": 0
   },
-  "npc_2004_Alty": {
-    "charId": "npc_2004_Alty",
+  "avg_1012_skadisp_1": {
+    "charId": "avg_1012_skadisp_1",
     "validVariants": [
-      "npc_2004_Alty#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2001_Aya_1": {
-    "charId": "npc_2001_Aya_1",
-    "validVariants": [
-      "npc_2001_Aya_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2003_Frost_1": {
-    "charId": "npc_2003_Frost_1",
-    "validVariants": [
-      "npc_2003_Frost_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2002_Dan_1": {
-    "charId": "npc_2002_Dan_1",
-    "validVariants": [
-      "npc_2002_Dan_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2002_Dan_rock": {
-    "charId": "npc_2002_Dan_rock",
-    "validVariants": [
-      "npc_2002_Dan_rock#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2003_Frost_rock": {
-    "charId": "npc_2003_Frost_rock",
-    "validVariants": [
-      "npc_2003_Frost_rock#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2001_Aya_rock": {
-    "charId": "npc_2001_Aya_rock",
-    "validVariants": [
-      "npc_2001_Aya_rock#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "npc_2004_Alty_rock": {
-    "charId": "npc_2004_Alty_rock",
-    "validVariants": [
-      "npc_2004_Alty_rock#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "avg_NPC_017_3": {
-    "charId": "avg_NPC_017_3",
-    "validVariants": [
-      "avg_NPC_017_3#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_254_Shamare_1": {
-    "charId": "char_254_Shamare_1",
-    "validVariants": [
-      "char_254_Shamare_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "char_362_Saga": {
-    "charId": "char_362_Saga",
-    "validVariants": [
-      "char_362_Saga#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "char_264_Mountain_1": {
-    "charId": "char_264_Mountain_1",
-    "validVariants": [
-      "char_264_Mountain_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "char_214_Kafka_1": {
-    "charId": "char_214_Kafka_1",
-    "validVariants": [
-      "char_214_Kafka_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "char_440_Pinecone": {
-    "charId": "char_440_Pinecone",
-    "validVariants": [
-      "char_440_Pinecone#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "avg_1012_skadiSP_1": {
-    "charId": "avg_1012_skadiSP_1",
-    "validVariants": [
-      "avg_1012_skadiSP_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "avg_274_Astesia_1": {
-    "charId": "avg_274_Astesia_1",
-    "validVariants": [
-      "avg_274_Astesia_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_259_Jessica_1": {
-    "charId": "char_259_Jessica_1",
-    "validVariants": [
-      "char_259_Jessica_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "avg_4145_Ulpia_1": {
-    "charId": "avg_4145_Ulpia_1",
-    "validVariants": [
-      "avg_4145_Ulpia_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_240_Vanilla_1": {
-    "charId": "char_240_Vanilla_1",
-    "validVariants": [
-      "char_240_Vanilla_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "char_1507_Mephisto_1": {
-    "charId": "char_1507_Mephisto_1",
-    "validVariants": [
-      "char_1507_Mephisto_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "$ill_amiya_normal": {
-    "charId": "$ill_amiya_normal",
-    "validVariants": [
-      "$ill_amiya_normal#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_1508_Faust_1": {
-    "charId": "char_1508_Faust_1",
-    "validVariants": [
-      "char_1508_Faust_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "avg_NPC_178": {
-    "charId": "avg_NPC_178",
-    "validVariants": [
-      "avg_NPC_178#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "avg_NPC_460_1": {
-    "charId": "avg_NPC_460_1",
-    "validVariants": [
-      "avg_NPC_460_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "avg_NPC_459_1": {
-    "charId": "avg_NPC_459_1",
-    "validVariants": [
-      "avg_NPC_459_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "AVG_char_501_Durin_1": {
-    "charId": "AVG_char_501_Durin_1",
-    "validVariants": [
-      "AVG_char_501_Durin_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_336_Scene_1": {
-    "charId": "char_336_Scene_1",
-    "validVariants": [
-      "char_336_Scene_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "avg_502_Yato_1": {
-    "charId": "avg_502_Yato_1",
-    "validVariants": [
-      "avg_502_Yato_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "char_373_Leonhardt_1": {
-    "charId": "char_373_Leonhardt_1",
-    "validVariants": [
-      "char_373_Leonhardt_1#1$1"
-    ],
-    "charType": "operator",
-    "dialogCount": 0
-  },
-  "avg_NPC_462_1": {
-    "charId": "avg_NPC_462_1",
-    "validVariants": [
-      "avg_NPC_462_1#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "avg_NPC_189": {
-    "charId": "avg_NPC_189",
-    "validVariants": [
-      "avg_NPC_189#1$1"
-    ],
-    "charType": "npc",
-    "dialogCount": 0
-  },
-  "avg_NPC_187": {
-    "charId": "avg_NPC_187",
-    "validVariants": [
-      "avg_NPC_187#1$1"
+      "avg_1012_skadisp_1#1$1"
     ],
     "charType": "npc",
     "dialogCount": 0

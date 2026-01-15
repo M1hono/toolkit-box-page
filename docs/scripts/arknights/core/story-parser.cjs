@@ -9,9 +9,13 @@ const PROJECT_CONFIG = require('../../project-config.cjs');
 
 function getBaseCharacterId(id) {
     if (!id) return "";
-    const cleaned = id.replace(/[#\$]\d+/g, '').trim();
-    return cleaned || id;
+    const cleaned = id.replace(/[#\$]\d+/g, '').trim().toLowerCase();
+    return cleaned || id.toLowerCase();
 }
+
+const EXCLUDE_IDS = new Set([
+    "char_1012_skadi2_1"
+]);
 
 function normalizeRawId(id) {
     if (!id || id === "" || id === "char_empty") return "";
@@ -19,7 +23,17 @@ function normalizeRawId(id) {
     const regex = /^(.*?)(?:#(\d+)(?:\s*#\d+)?)?(?:\$(\d+))?$/;
     const matches = regex.exec(id);
     if (!matches) return "";
-    const baseId = matches[1].trim().replace(/\s+/g, "_");
+    let baseId = matches[1].trim().replace(/\s+/g, "_").toLowerCase();
+    
+    // Specific mappings
+    if (baseId === "ill_amiya_normal") {
+        baseId = "char_002_amiya_1";
+    } else if (baseId === "char_2001_aya_1") {
+        baseId = "npc_2001_aya_1";
+    }
+
+    if (EXCLUDE_IDS.has(baseId)) return "";
+
     const faceNum = matches[2] || "1";
     const bodyNum = matches[3] || "1";
     return `${baseId}#${faceNum}$${bodyNum}`;

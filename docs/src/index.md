@@ -2,45 +2,63 @@
 layout: home
 
 hero:
-  name: "VitePress Template"
-  text: "A feature-rich documentation template"
-  tagline: "A modern documentation template built with VitePress, integrated with various enhanced plugins and features"
+  name: "M1hono ToolBox"
+  text: "Game Resource Processing Toolkit"
+  tagline: "Comprehensive toolbox integrating multiple game resource extraction, processing, and translation tools"
   image:
     light: /logo.png
     dark: /logodark.png
-    alt: VitePress Template
+    alt: M1hono ToolBox
   actions:
     - theme: brand
-      text: "Get Started"
-      link: /en-US/guide/getting-started
+      text: "FGO Extractor"
+      link: /en-US/Fgo/CharaFinder
     - theme: alt
-      text: "Features"
-      link: /en-US/guide/features
+      text: "Arknights Tool"
+      link: /en-US/Arknights/CharaFinder
+    - theme: alt
+      text: "JSON Translator"
+      link: /en-US/Mc/JsonTranslator
+    - theme: alt
+      text: "Guidebook Generator"
+      link: /en-US/Mna/GuideBookGeneraor
+    - theme: alt
+      text: "Ritual Generator"
+      link: /en-US/Mna/RitualGenerator
+    - theme: alt
+      text: "Runescribing Editor"
+      link: /en-US/Mna/RunescribingEditor
 
 features:
-  - icon: 📝
-    title: "Markdown Enhancement"
-    details: "Supports rich Markdown extensions such as containers, code groups, math formulas, and Mermaid diagrams"
-  
-  - icon: 🌍
-    title: "Multilingual Support"
-    details: "Built-in support for English and Chinese, easily extendable to more languages to meet internationalization needs"
-    
   - icon: 🎨
-    title: "Modern Theme"
-    details: "Integrated with Vuetify component library, providing beautiful UI components and responsive design"
+    title: "FGO Portrait Extractor"
+    details: "Extract FGO character portraits with diff processing, smart cropping, face detection and batch downloads"
+    link: /en-US/Fgo/CharaFinder
+  
+  - icon: 🎭
+    title: "Arknights Character Tool"
+    details: "Multi-language support for Arknights character portraits, story extraction and batch processing"
+    link: /en-US/Arknights/CharaFinder
     
-  - icon: 🔍
-    title: "Intelligent Search"
-    details: "Integrated with Algolia search, offering fast and accurate full-text search experience"
+  - icon: 📝
+    title: "JSON Translator"
+    details: "Minecraft resource pack translation tool with batch translation and import/export features"
+    link: /en-US/Mc/JsonTranslator
     
-  - icon: 🚀
-    title: "Performance Optimization"
-    details: "Built-in build optimization, caching strategies, and SEO configurations to ensure optimal performance"
+  - icon: 📖
+    title: "Minecraft No Avalon Guidebook Generator"
+    details: "Auto-generate game guidebook content with multi-language translation and editing support"
+    link: /en-US/Mna/GuideBookGeneraor
     
-  - icon: 🔧
-    title: "Development Tools"
-    details: "Automatically generates sidebar, tag data, and other development tools to enhance documentation maintenance efficiency"
+  - icon: ⚔️
+    title: "Ritual Generator"
+    details: "Generate game ritual configurations and commands with parameter editing and preview"
+    link: /en-US/Mna/RitualGenerator
+    
+  - icon: ✏️
+    title: "Runescribing Editor"
+    details: "Visual rune drawing and editing tool with real-time preview and export"
+    link: /en-US/Mna/RunescribingEditor
 
 gitChangelog: false
 ---

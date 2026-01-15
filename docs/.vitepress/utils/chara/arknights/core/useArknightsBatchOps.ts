@@ -21,8 +21,10 @@ export function useArknightsBatchOps() {
         let successCount = 0;
         
         for (const variant of variants) {
+            const normalizedVariant = variant.toLowerCase();
+            
             try {
-                const urls = getUrls(variant);
+                const urls = getUrls(normalizedVariant);
                 const image = await loadImage(urls.primary);
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d')!;
@@ -48,7 +50,7 @@ export function useArknightsBatchOps() {
                 
                 canvas.toBlob((blob) => {
                     if (blob) {
-                        folder.file(`${variant}.png`, blob);
+                        folder.file(`${normalizedVariant}.png`, blob);
                         successCount++;
                     }
                 });
@@ -83,8 +85,10 @@ export function useArknightsBatchOps() {
         let successCount = 0;
         
         for (const variant of variants) {
+            const normalizedVariant = variant.toLowerCase();
+            
             try {
-                const urls = getUrls(variant);
+                const urls = getUrls(normalizedVariant);
                 const image = await loadImage(urls.primary);
                 const canvas = document.createElement('canvas');
                 const ctx = canvas.getContext('2d')!;
@@ -95,7 +99,7 @@ export function useArknightsBatchOps() {
                 
                 canvas.toBlob((blob) => {
                     if (blob) {
-                        folder.file(`${variant}.png`, blob);
+                        folder.file(`${normalizedVariant}.png`, blob);
                         successCount++;
                     }
                 });

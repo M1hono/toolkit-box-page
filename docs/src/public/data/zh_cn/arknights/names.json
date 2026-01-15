@@ -737,30 +737,10 @@
   },
   "char_002_amiya_1": {
     "speakerNames": [
-      "阿米娅",
-      "闪灵",
-      "阿米娅？",
-      "杜宾",
-      "Ace",
-      "陈",
-      "芙兰卡",
-      "雷蛇",
-      "W",
-      "小女孩",
-      "另一个少女的声音"
+      "阿米娅"
     ],
     "searchNames": [
-      "阿米娅",
-      "闪灵",
-      "阿米娅？",
-      "杜宾",
-      "Ace",
-      "陈",
-      "芙兰卡",
-      "雷蛇",
-      "W",
-      "小女孩",
-      "另一个少女的声音"
+      "阿米娅"
     ],
     "displayName": "阿米娅"
   },
@@ -5988,12 +5968,10 @@
   },
   "char_214_kafka_1": {
     "speakerNames": [
-      "卡夫卡",
-      "狱警"
+      "卡夫卡"
     ],
     "searchNames": [
-      "卡夫卡",
-      "狱警"
+      "卡夫卡"
     ],
     "displayName": "卡夫卡"
   },
@@ -6957,14 +6935,12 @@
   },
   "avg_4081_warmy_1": {
     "speakerNames": [
-      "小锅盖",
       "温米"
     ],
     "searchNames": [
-      "小锅盖",
       "温米"
     ],
-    "displayName": "小锅盖"
+    "displayName": "温米"
   },
   "avg_4117_ray_1": {
     "speakerNames": [
@@ -7113,18 +7089,16 @@
   },
   "avg_npc_1188_1": {
     "speakerNames": [
-      "沙地兽",
-      "幼小的沙地兽",
       "小沙地兽",
-      "暂时叫“嗷嗷”"
+      "大沙地兽？",
+      "大沙地兽"
     ],
     "searchNames": [
-      "沙地兽",
-      "幼小的沙地兽",
       "小沙地兽",
-      "暂时叫“嗷嗷”"
+      "大沙地兽？",
+      "大沙地兽"
     ],
-    "displayName": "沙地兽"
+    "displayName": "小沙地兽"
   },
   "avg_npc_1187_1": {
     "speakerNames": [
@@ -8263,26 +8237,12 @@
   },
   "avg_npc_459_1": {
     "speakerNames": [
-      "男性镇民",
-      "谨慎的镇民",
-      "茫然的镇民",
-      "警惕的镇民",
-      "堵着门的镇民",
-      "追来的镇民",
-      "不屑的路人",
-      "勇敢的村民"
+      "大胆的镇民"
     ],
     "searchNames": [
-      "男性镇民",
-      "谨慎的镇民",
-      "茫然的镇民",
-      "警惕的镇民",
-      "堵着门的镇民",
-      "追来的镇民",
-      "不屑的路人",
-      "勇敢的村民"
+      "大胆的镇民"
     ],
-    "displayName": "男性镇民"
+    "displayName": "大胆的镇民"
   },
   "avg_npc_453_1": {
     "speakerNames": [
@@ -8309,24 +8269,14 @@
   },
   "avg_npc_460_1": {
     "speakerNames": [
-      "慌张的镇民",
-      "慌乱的镇民",
-      "惊疑不定的镇民",
-      "紧张的镇民",
-      "审判庭文员",
-      "年轻的教士",
-      "慌张的村民"
+      "担心的镇民",
+      "费利佩"
     ],
     "searchNames": [
-      "慌张的镇民",
-      "慌乱的镇民",
-      "惊疑不定的镇民",
-      "紧张的镇民",
-      "审判庭文员",
-      "年轻的教士",
-      "慌张的村民"
+      "担心的镇民",
+      "费利佩"
     ],
-    "displayName": "慌张的镇民"
+    "displayName": "担心的镇民"
   },
   "avg_npc_457_1": {
     "speakerNames": [
@@ -8451,22 +8401,12 @@
   },
   "avg_npc_462_1": {
     "speakerNames": [
-      "逃命的镇民",
-      "松懈的镇民",
-      "帮忙的镇民",
-      "积极的镇民",
-      "友善的村民",
-      "村民们"
+      "友善的女性"
     ],
     "searchNames": [
-      "逃命的镇民",
-      "松懈的镇民",
-      "帮忙的镇民",
-      "积极的镇民",
-      "友善的村民",
-      "村民们"
+      "友善的女性"
     ],
-    "displayName": "逃命的镇民"
+    "displayName": "友善的女性"
   },
   "npc_10002": {
     "speakerNames": [
@@ -8773,53 +8713,27 @@
   },
   "avg_npc_178": {
     "speakerNames": [
-      "男性居民",
-      "另一个男性居民",
-      "男性居民A",
-      "居民",
-      "冷漠的路人",
-      "“伊比利亚人”",
-      "地方信使"
+      "画店店主",
+      "好奇的顾客",
+      "紧张的镇民",
+      "疑惑的镇民"
     ],
     "searchNames": [
-      "男性居民",
-      "另一个男性居民",
-      "男性居民A",
-      "居民",
-      "冷漠的路人",
-      "“伊比利亚人”",
-      "地方信使"
+      "画店店主",
+      "好奇的顾客",
+      "紧张的镇民",
+      "疑惑的镇民"
     ],
-    "displayName": "男性居民"
+    "displayName": "画店店主"
   },
   "avg_npc_187": {
     "speakerNames": [
-      "男性居民B",
-      "居民",
-      "惊慌的居民",
-      "男性修道院居民",
-      "居民A",
-      "男性居民",
-      "老实的镇民",
-      "蹒跚的老人",
-      "着急的镇民",
-      "饥饿的镇民",
-      "受伤的镇民"
+      "苍老的镇民"
     ],
     "searchNames": [
-      "男性居民B",
-      "居民",
-      "惊慌的居民",
-      "男性修道院居民",
-      "居民A",
-      "男性居民",
-      "老实的镇民",
-      "蹒跚的老人",
-      "着急的镇民",
-      "饥饿的镇民",
-      "受伤的镇民"
+      "苍老的镇民"
     ],
-    "displayName": "男性居民B"
+    "displayName": "苍老的镇民"
   },
   "avg_npc_180": {
     "speakerNames": [
@@ -8871,22 +8785,12 @@
   },
   "avg_npc_189": {
     "speakerNames": [
-      "男性居民D",
-      "居民",
-      "修道院居民",
-      "居民B",
-      "忧伤的镇民",
-      "拘谨的镇民"
+      "警惕的顾客"
     ],
     "searchNames": [
-      "男性居民D",
-      "居民",
-      "修道院居民",
-      "居民B",
-      "忧伤的镇民",
-      "拘谨的镇民"
+      "警惕的顾客"
     ],
-    "displayName": "男性居民D"
+    "displayName": "警惕的顾客"
   },
   "avg_npc_185": {
     "speakerNames": [
@@ -14654,64 +14558,12 @@
   },
   "avg_npc_090": {
     "speakerNames": [
-      "罗德岛外勤干员",
-      "瑞恩",
-      "先锋干员",
-      "罗德岛干员",
-      "查德",
-      "干员威尔",
-      "急促的罗德岛干员",
-      "认真的干员",
-      "办事处干员",
-      "罗德岛外勤干员A&B",
-      "罗德岛外勤干员A",
-      "村民C",
-      "罗德岛外勤干员B",
-      "工程部干员",
-      "重装干员",
-      "路崎",
-      "工程部干员B",
-      "预备干员",
-      "实习干员C",
-      "干员巴蒂",
-      "工程部干员A",
-      "疑惑的人事干员",
-      "近卫干员",
-      "路过的干员",
-      "办事处干员A",
-      "活塞",
-      "菲勒加斯"
+      "严谨的干员"
     ],
     "searchNames": [
-      "罗德岛外勤干员",
-      "瑞恩",
-      "先锋干员",
-      "罗德岛干员",
-      "查德",
-      "干员威尔",
-      "急促的罗德岛干员",
-      "认真的干员",
-      "办事处干员",
-      "罗德岛外勤干员A&B",
-      "罗德岛外勤干员A",
-      "村民C",
-      "罗德岛外勤干员B",
-      "工程部干员",
-      "重装干员",
-      "路崎",
-      "工程部干员B",
-      "预备干员",
-      "实习干员C",
-      "干员巴蒂",
-      "工程部干员A",
-      "疑惑的人事干员",
-      "近卫干员",
-      "路过的干员",
-      "办事处干员A",
-      "活塞",
-      "菲勒加斯"
+      "严谨的干员"
     ],
-    "displayName": "罗德岛外勤干员"
+    "displayName": "严谨的干员"
   },
   "avg_npc_089": {
     "speakerNames": [
@@ -15780,12 +15632,12 @@
   },
   "avg_npc_017_3": {
     "speakerNames": [
-      "主持人"
+      "D.D.D."
     ],
     "searchNames": [
-      "主持人"
+      "D.D.D."
     ],
-    "displayName": "主持人"
+    "displayName": "D.D.D."
   },
   "avg_npc_380_1": {
     "speakerNames": [
@@ -21098,37 +20950,6 @@
     ],
     "displayName": "石英"
   },
-  "AVG_NPC_1188_1": {
-    "speakerNames": [
-      "小沙地兽",
-      "大沙地兽？",
-      "大沙地兽"
-    ],
-    "searchNames": [
-      "小沙地兽",
-      "大沙地兽？",
-      "大沙地兽"
-    ],
-    "displayName": "小沙地兽"
-  },
-  "AVG_NPC_090": {
-    "speakerNames": [
-      "严谨的干员"
-    ],
-    "searchNames": [
-      "严谨的干员"
-    ],
-    "displayName": "严谨的干员"
-  },
-  "AVG_4081_WARMY_1": {
-    "speakerNames": [
-      "温米"
-    ],
-    "searchNames": [
-      "温米"
-    ],
-    "displayName": "温米"
-  },
   "avg_npc_1640_1": {
     "speakerNames": [
       "玉门军医"
@@ -21367,7 +21188,7 @@
     ],
     "displayName": "森蚺"
   },
-  "npc_2004_Alty": {
+  "npc_2004_alty": {
     "speakerNames": [
       "Alty",
       "AUS"
@@ -21378,7 +21199,7 @@
     ],
     "displayName": "Alty"
   },
-  "npc_2001_Aya_1": {
+  "npc_2001_aya_1": {
     "speakerNames": [
       "Aya"
     ],
@@ -21387,7 +21208,7 @@
     ],
     "displayName": "Aya"
   },
-  "npc_2003_Frost_1": {
+  "npc_2003_frost_1": {
     "speakerNames": [
       "Frost",
       "AUS"
@@ -21398,7 +21219,7 @@
     ],
     "displayName": "Frost"
   },
-  "npc_2002_Dan_1": {
+  "npc_2002_dan_1": {
     "speakerNames": [
       "Dan"
     ],
@@ -21407,7 +21228,7 @@
     ],
     "displayName": "Dan"
   },
-  "npc_2002_Dan_rock": {
+  "npc_2002_dan_rock": {
     "speakerNames": [
       "Dan"
     ],
@@ -21416,7 +21237,7 @@
     ],
     "displayName": "Dan"
   },
-  "npc_2003_Frost_rock": {
+  "npc_2003_frost_rock": {
     "speakerNames": [
       "Frost"
     ],
@@ -21425,7 +21246,7 @@
     ],
     "displayName": "Frost"
   },
-  "npc_2001_Aya_rock": {
+  "npc_2001_aya_rock": {
     "speakerNames": [
       "Aya"
     ],
@@ -21434,7 +21255,7 @@
     ],
     "displayName": "Aya"
   },
-  "npc_2004_Alty_rock": {
+  "npc_2004_alty_rock": {
     "speakerNames": [
       "Alty"
     ],
@@ -21443,16 +21264,7 @@
     ],
     "displayName": "Alty"
   },
-  "avg_NPC_017_3": {
-    "speakerNames": [
-      "D.D.D."
-    ],
-    "searchNames": [
-      "D.D.D."
-    ],
-    "displayName": "D.D.D."
-  },
-  "char_254_Shamare_1": {
+  "char_254_shamare_1": {
     "speakerNames": [
       "巫恋"
     ],
@@ -21461,7 +21273,7 @@
     ],
     "displayName": "巫恋"
   },
-  "char_362_Saga": {
+  "char_362_saga": {
     "speakerNames": [
       "嵯峨"
     ],
@@ -21470,7 +21282,7 @@
     ],
     "displayName": "嵯峨"
   },
-  "char_264_Mountain_1": {
+  "char_264_mountain_1": {
     "speakerNames": [
       "安东尼",
       "卡夫卡",
@@ -21483,16 +21295,7 @@
     ],
     "displayName": "安东尼"
   },
-  "char_214_Kafka_1": {
-    "speakerNames": [
-      "卡夫卡"
-    ],
-    "searchNames": [
-      "卡夫卡"
-    ],
-    "displayName": "卡夫卡"
-  },
-  "char_440_Pinecone": {
+  "char_440_pinecone": {
     "speakerNames": [
       "米娜"
     ],
@@ -21501,7 +21304,7 @@
     ],
     "displayName": "米娜"
   },
-  "avg_1012_skadiSP_1": {
+  "avg_1012_skadisp_1": {
     "speakerNames": [
       "斯卡蒂"
     ],
@@ -21510,7 +21313,7 @@
     ],
     "displayName": "斯卡蒂"
   },
-  "avg_274_Astesia_1": {
+  "avg_274_astesia_1": {
     "speakerNames": [
       "星极",
       "星极？",
@@ -21525,7 +21328,7 @@
     ],
     "displayName": "星极"
   },
-  "char_259_Jessica_1": {
+  "char_259_jessica_1": {
     "speakerNames": [
       "杰西卡"
     ],
@@ -21534,7 +21337,7 @@
     ],
     "displayName": "杰西卡"
   },
-  "avg_4145_Ulpia_1": {
+  "avg_4145_ulpia_1": {
     "speakerNames": [
       "乌尔比安"
     ],
@@ -21543,7 +21346,7 @@
     ],
     "displayName": "乌尔比安"
   },
-  "char_240_Vanilla_1": {
+  "char_240_vanilla_1": {
     "speakerNames": [
       "香草"
     ],
@@ -21552,7 +21355,7 @@
     ],
     "displayName": "香草"
   },
-  "char_1507_Mephisto_1": {
+  "char_1507_mephisto_1": {
     "speakerNames": [
       "梅菲斯特"
     ],
@@ -21561,16 +21364,7 @@
     ],
     "displayName": "梅菲斯特"
   },
-  "$ill_amiya_normal": {
-    "speakerNames": [
-      "阿米娅"
-    ],
-    "searchNames": [
-      "阿米娅"
-    ],
-    "displayName": "阿米娅"
-  },
-  "char_1508_Faust_1": {
+  "char_1508_faust_1": {
     "speakerNames": [
       "浮士德"
     ],
@@ -21579,42 +21373,7 @@
     ],
     "displayName": "浮士德"
   },
-  "avg_NPC_178": {
-    "speakerNames": [
-      "画店店主",
-      "好奇的顾客",
-      "紧张的镇民",
-      "疑惑的镇民"
-    ],
-    "searchNames": [
-      "画店店主",
-      "好奇的顾客",
-      "紧张的镇民",
-      "疑惑的镇民"
-    ],
-    "displayName": "画店店主"
-  },
-  "avg_NPC_460_1": {
-    "speakerNames": [
-      "担心的镇民",
-      "费利佩"
-    ],
-    "searchNames": [
-      "担心的镇民",
-      "费利佩"
-    ],
-    "displayName": "担心的镇民"
-  },
-  "avg_NPC_459_1": {
-    "speakerNames": [
-      "大胆的镇民"
-    ],
-    "searchNames": [
-      "大胆的镇民"
-    ],
-    "displayName": "大胆的镇民"
-  },
-  "AVG_char_501_Durin_1": {
+  "avg_char_501_durin_1": {
     "speakerNames": [
       "杜林"
     ],
@@ -21623,7 +21382,7 @@
     ],
     "displayName": "杜林"
   },
-  "char_336_Scene_1": {
+  "char_336_scene_1": {
     "speakerNames": [
       "稀音",
       "克洛丝"
@@ -21634,7 +21393,7 @@
     ],
     "displayName": "稀音"
   },
-  "avg_502_Yato_1": {
+  "avg_502_yato_1": {
     "speakerNames": [
       "夜刀"
     ],
@@ -21643,7 +21402,7 @@
     ],
     "displayName": "夜刀"
   },
-  "char_373_Leonhardt_1": {
+  "char_373_leonhardt_1": {
     "speakerNames": [
       "莱恩哈特",
       "普罗旺斯"
@@ -21653,33 +21412,6 @@
       "普罗旺斯"
     ],
     "displayName": "莱恩哈特"
-  },
-  "avg_NPC_462_1": {
-    "speakerNames": [
-      "友善的女性"
-    ],
-    "searchNames": [
-      "友善的女性"
-    ],
-    "displayName": "友善的女性"
-  },
-  "avg_NPC_189": {
-    "speakerNames": [
-      "警惕的顾客"
-    ],
-    "searchNames": [
-      "警惕的顾客"
-    ],
-    "displayName": "警惕的顾客"
-  },
-  "avg_NPC_187": {
-    "speakerNames": [
-      "苍老的镇民"
-    ],
-    "searchNames": [
-      "苍老的镇民"
-    ],
-    "displayName": "苍老的镇民"
   },
   "avg_npc_293_1": {
     "speakerNames": [

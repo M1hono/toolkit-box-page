@@ -239,7 +239,7 @@
     "timestamp": "2025-09-06T07:21:53.865Z",
     "webpUploaded": false
   },
-  "avg_1012_skadiSP_1#1$1.png": {
+  "avg_1012_skadisp_1#1$1.png": {
     "uploaded": false,
     "timestamp": "2025-09-06T09:08:10.126Z",
     "webpUploaded": false
@@ -7314,9 +7314,9 @@
     "timestamp": "2025-09-06T07:26:14.469Z",
     "webpUploaded": false
   },
-  "avg_274_Astesia_1#1$1.png": {
+  "avg_274_astesia_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:28.467Z",
+    "timestamp": "2025-09-06T12:47:36.771Z",
     "webpUploaded": false
   },
   "avg_275_breeze_1#1$1.png": {
@@ -11915,8 +11915,8 @@
     "webpUploaded": false
   },
   "avg_4081_warmy_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:28:32.042Z",
+    "uploaded": false,
+    "timestamp": "2026-01-12T05:54:26.433Z",
     "webpUploaded": false
   },
   "avg_4080_lin_1#8$1.png": {
@@ -14789,9 +14789,9 @@
     "timestamp": "2025-09-06T07:29:57.308Z",
     "webpUploaded": false
   },
-  "avg_4145_Ulpia_1#1$1.png": {
+  "avg_4145_ulpia_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:30.927Z",
+    "timestamp": "2025-09-06T12:48:09.974Z",
     "webpUploaded": false
   },
   "avg_4146_nymph_1#11$1.png": {
@@ -18439,19 +18439,19 @@
     "timestamp": "2025-09-06T07:31:58.138Z",
     "webpUploaded": false
   },
-  "avg_NPC_017_3#1$1.png": {
+  "avg_npc_017_3#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:32.417Z",
+    "timestamp": "2025-09-06T07:32:03.796Z",
     "webpUploaded": false
   },
-  "avg_502_Yato_1#1$1.png": {
+  "avg_502_yato_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:32.620Z",
+    "timestamp": "2025-09-06T12:50:28.043Z",
     "webpUploaded": false
   },
-  "avg_NPC_017_3#2$1.png": {
+  "avg_npc_017_3#2$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:32.445Z",
+    "timestamp": "2025-09-06T07:32:04.400Z",
     "webpUploaded": false
   },
   "avg_502_nblade_1#1$1.png": {
@@ -18464,49 +18464,49 @@
     "timestamp": "2025-09-06T07:31:58.763Z",
     "webpUploaded": false
   },
-  "avg_NPC_178#1$1.png": {
+  "avg_npc_178#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.281Z",
+    "timestamp": "2025-09-06T07:37:54.458Z",
     "webpUploaded": false
   },
-  "avg_NPC_187#1$1.png": {
+  "avg_npc_187#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.288Z",
+    "timestamp": "2025-09-06T07:40:34.953Z",
     "webpUploaded": false
   },
-  "avg_NPC_017_3#6$1.png": {
+  "avg_npc_017_3#6$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.322Z",
+    "timestamp": "2025-09-06T07:32:04.405Z",
     "webpUploaded": false
   },
-  "avg_NPC_017_3#3$1.png": {
+  "avg_npc_017_3#3$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.336Z",
+    "timestamp": "2025-09-06T07:32:04.385Z",
     "webpUploaded": false
   },
-  "avg_NPC_017_3#5$1.png": {
+  "avg_npc_017_3#5$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.306Z",
+    "timestamp": "2025-09-06T07:32:04.439Z",
     "webpUploaded": false
   },
-  "avg_NPC_462_1#1$1.png": {
+  "avg_npc_462_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.952Z",
+    "timestamp": "2025-09-06T07:44:26.799Z",
     "webpUploaded": false
   },
-  "avg_NPC_460_1#1$1.png": {
+  "avg_npc_460_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.967Z",
+    "timestamp": "2025-09-06T07:44:26.855Z",
     "webpUploaded": false
   },
-  "avg_NPC_459_1#1$1.png": {
+  "avg_npc_459_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.989Z",
+    "timestamp": "2025-09-06T07:44:26.837Z",
     "webpUploaded": false
   },
-  "avg_NPC_189#1$1.png": {
+  "avg_npc_189#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:33.981Z",
+    "timestamp": "2025-09-06T07:40:45.939Z",
     "webpUploaded": false
   },
   "avg_lolxh_4067_1#1$1.png": {
@@ -18634,11 +18634,6 @@
     "timestamp": "2025-09-06T07:32:03.776Z",
     "webpUploaded": false
   },
-  "avg_npc_017_3#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:32:03.796Z",
-    "webpUploaded": false
-  },
   "avg_npc_015#1$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:32:03.805Z",
@@ -18654,29 +18649,9 @@
     "timestamp": "2025-09-06T07:32:03.819Z",
     "webpUploaded": false
   },
-  "avg_npc_017_3#3$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:32:04.385Z",
-    "webpUploaded": false
-  },
   "avg_npc_017_3#4$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:32:04.389Z",
-    "webpUploaded": false
-  },
-  "avg_npc_017_3#2$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:32:04.400Z",
-    "webpUploaded": false
-  },
-  "avg_npc_017_3#6$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:32:04.405Z",
-    "webpUploaded": false
-  },
-  "avg_npc_017_3#5$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:32:04.439Z",
     "webpUploaded": false
   },
   "avg_npc_021#1$1.png": {
@@ -19440,8 +19415,8 @@
     "webpUploaded": false
   },
   "avg_npc_090#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:32:26.123Z",
+    "uploaded": false,
+    "timestamp": "2026-01-12T05:54:26.435Z",
     "webpUploaded": false
   },
   "avg_npc_088#1$1.png": {
@@ -21680,8 +21655,8 @@
     "webpUploaded": false
   },
   "avg_npc_1188_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:33:27.171Z",
+    "uploaded": false,
+    "timestamp": "2026-01-12T05:54:26.420Z",
     "webpUploaded": false
   },
   "avg_npc_1187_1#1$1.png": {
@@ -28924,11 +28899,6 @@
     "timestamp": "2025-09-06T07:37:53.593Z",
     "webpUploaded": false
   },
-  "avg_npc_178#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:37:54.458Z",
-    "webpUploaded": false
-  },
   "avg_npc_1780_1#1$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:37:54.527Z",
@@ -31399,11 +31369,6 @@
     "timestamp": "2025-09-06T07:40:34.025Z",
     "webpUploaded": false
   },
-  "avg_npc_187#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:40:34.953Z",
-    "webpUploaded": false
-  },
   "avg_npc_1870_1#1$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:40:35.014Z",
@@ -31572,11 +31537,6 @@
   "avg_npc_1873_1#7$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:40:45.059Z",
-    "webpUploaded": false
-  },
-  "avg_npc_189#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:40:45.939Z",
     "webpUploaded": false
   },
   "avg_npc_188#1$1.png": {
@@ -36799,24 +36759,9 @@
     "timestamp": "2025-09-06T07:44:25.970Z",
     "webpUploaded": false
   },
-  "avg_npc_462_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:44:26.799Z",
-    "webpUploaded": false
-  },
   "avg_npc_458_1#1$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:44:26.819Z",
-    "webpUploaded": false
-  },
-  "avg_npc_459_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:44:26.837Z",
-    "webpUploaded": false
-  },
-  "avg_npc_460_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:44:26.855Z",
     "webpUploaded": false
   },
   "avg_npc_461_1#1$1.png": {
@@ -46599,9 +46544,9 @@
     "timestamp": "2025-09-06T07:51:42.025Z",
     "webpUploaded": false
   },
-  "char_214_Kafka_1#1$1.png": {
+  "char_214_kafka_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:41.011Z",
+    "timestamp": "2025-09-06T07:51:44.719Z",
     "webpUploaded": false
   },
   "char_213_mostma_1#6$1.png": {
@@ -46624,29 +46569,9 @@
     "timestamp": "2025-09-06T07:51:43.532Z",
     "webpUploaded": false
   },
-  "char_214_Kafka_1#5$1.png": {
+  "char_214_kafka_1#5$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:41.724Z",
-    "webpUploaded": false
-  },
-  "char_214_Kafka_1#4$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T08:37:41.718Z",
-    "webpUploaded": false
-  },
-  "char_214_Kafka_1#2$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T08:37:41.800Z",
-    "webpUploaded": false
-  },
-  "char_214_Kafka_1#3$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T08:37:41.673Z",
-    "webpUploaded": false
-  },
-  "char_214_kafka_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:51:44.719Z",
+    "timestamp": "2025-09-06T07:51:45.988Z",
     "webpUploaded": false
   },
   "char_214_kafka_1#4$1.png": {
@@ -46657,11 +46582,6 @@
   "char_214_kafka_1#2$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:51:45.925Z",
-    "webpUploaded": false
-  },
-  "char_214_kafka_1#5$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T07:51:45.988Z",
     "webpUploaded": false
   },
   "char_214_kafka_1#3$1.png": {
@@ -46999,9 +46919,9 @@
     "timestamp": "2025-09-06T07:52:03.870Z",
     "webpUploaded": false
   },
-  "char_259_Jessica_1#1$1.png": {
+  "char_259_jessica_1#1$1.png": {
     "uploaded": true,
-    "timestamp": "2025-09-06T08:37:43.077Z",
+    "timestamp": "2025-09-06T12:51:37.356Z",
     "webpUploaded": false
   },
   "char_258_podego_1#1$1.png": {
@@ -48599,14 +48519,14 @@
     "timestamp": "2025-09-06T07:53:13.453Z",
     "webpUploaded": false
   },
-  "npc_2001_Aya_1#1$1.png": {
+  "npc_2001_aya_1#1$1.png": {
     "uploaded": false,
-    "timestamp": "2025-09-06T09:08:33.783Z",
+    "timestamp": "2026-01-12T05:56:23.465Z",
     "webpUploaded": false
   },
-  "npc_2001_Aya_rock#1$1.png": {
+  "npc_2001_aya_rock#1$1.png": {
     "uploaded": false,
-    "timestamp": "2025-09-06T09:08:33.760Z",
+    "timestamp": "2026-01-12T05:56:24.175Z",
     "webpUploaded": false
   },
   "npc_10002#1$1.png": {
@@ -48652,11 +48572,6 @@
   "npc_2004_alty_rock#1$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T07:53:15.364Z",
-    "webpUploaded": false
-  },
-  "avg_274_astesia_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T12:47:36.771Z",
     "webpUploaded": false
   },
   "avg_290_vigna_1#11$1.png": {
@@ -48737,11 +48652,6 @@
   "avg_338_iris_1#5$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T12:48:03.883Z",
-    "webpUploaded": false
-  },
-  "avg_4145_ulpia_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T12:48:09.974Z",
     "webpUploaded": false
   },
   "avg_4182_oblvns_1#1$2.png": {
@@ -49254,11 +49164,6 @@
     "timestamp": "2025-09-06T12:50:24.778Z",
     "webpUploaded": false
   },
-  "avg_502_yato_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T12:50:28.043Z",
-    "webpUploaded": false
-  },
   "avg_npc_1937_1#3$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T12:50:38.495Z",
@@ -49432,26 +49337,6 @@
   "avg_npc_1942_1#8$1.png": {
     "uploaded": true,
     "timestamp": "2025-09-06T12:51:26.519Z",
-    "webpUploaded": false
-  },
-  "char_1012_skadi2_1#1$1.png": {
-    "uploaded": false,
-    "timestamp": "2026-01-12T05:56:22.206Z",
-    "webpUploaded": false
-  },
-  "char_2001_aya_rock#1$1.png": {
-    "uploaded": false,
-    "timestamp": "2026-01-12T05:56:24.175Z",
-    "webpUploaded": false
-  },
-  "char_2001_aya_1#1$1.png": {
-    "uploaded": false,
-    "timestamp": "2026-01-12T05:56:23.465Z",
-    "webpUploaded": false
-  },
-  "char_259_jessica_1#1$1.png": {
-    "uploaded": true,
-    "timestamp": "2025-09-06T12:51:37.356Z",
     "webpUploaded": false
   },
   "avg_1045_svash2_1#1$1.png": {
@@ -49914,21 +49799,6 @@
     "timestamp": "2025-12-07T01:29:42.137Z",
     "webpUploaded": false
   },
-  "AVG_NPC_090#1$1.png": {
-    "uploaded": false,
-    "timestamp": "2026-01-12T05:54:26.435Z",
-    "webpUploaded": false
-  },
-  "AVG_NPC_1188_1#1$1.png": {
-    "uploaded": false,
-    "timestamp": "2026-01-12T05:54:26.420Z",
-    "webpUploaded": false
-  },
-  "AVG_4081_WARMY_1#1$1.png": {
-    "uploaded": false,
-    "timestamp": "2026-01-12T05:54:26.433Z",
-    "webpUploaded": false
-  },
   "avg_1022_flwr2_1#1$1.png": {
     "uploaded": true,
     "timestamp": "2026-01-10T01:24:39.902Z",
@@ -50238,5 +50108,185 @@
     "uploaded": true,
     "timestamp": "2026-01-12T05:55:59.406Z",
     "webpUploaded": false
+  },
+  "npc_2001_aya_1#1$1.webp": {
+    "timestamp": 1768459808213,
+    "variant": "npc_2001_aya_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2001_aya_rock#1$1.webp": {
+    "timestamp": 1768459820294,
+    "variant": "npc_2001_aya_rock#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_172_svrash_1#01$1.webp": {
+    "timestamp": 1768459781752,
+    "variant": "avg_172_svrash_1#01$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_npc_1188_1#1$1.webp": {
+    "timestamp": 1768459798957,
+    "variant": "avg_npc_1188_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_npc_090#1$1.webp": {
+    "timestamp": 1768459801208,
+    "variant": "avg_npc_090#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_4081_warmy_1#1$1.webp": {
+    "timestamp": 1768459803875,
+    "variant": "avg_4081_warmy_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2004_alty#1$1.webp": {
+    "timestamp": 1768459806136,
+    "variant": "npc_2004_alty#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2003_frost_1#1$1.webp": {
+    "timestamp": 1768459810527,
+    "variant": "npc_2003_frost_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2002_dan_1#1$1.webp": {
+    "timestamp": 1768459813073,
+    "variant": "npc_2002_dan_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2002_dan_rock#1$1.webp": {
+    "timestamp": 1768459815960,
+    "variant": "npc_2002_dan_rock#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2003_frost_rock#1$1.webp": {
+    "timestamp": 1768459818338,
+    "variant": "npc_2003_frost_rock#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "npc_2004_alty_rock#1$1.webp": {
+    "timestamp": 1768459822203,
+    "variant": "npc_2004_alty_rock#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_254_shamare_1#1$1.webp": {
+    "timestamp": 1768459824140,
+    "variant": "char_254_shamare_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_362_saga#1$1.webp": {
+    "timestamp": 1768459826177,
+    "variant": "char_362_saga#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_264_mountain_1#1$1.webp": {
+    "timestamp": 1768459828348,
+    "variant": "char_264_mountain_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_440_pinecone#1$1.webp": {
+    "timestamp": 1768459830366,
+    "variant": "char_440_pinecone#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_1012_skadisp_1#1$1.webp": {
+    "timestamp": 1768459832393,
+    "variant": "avg_1012_skadisp_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_240_vanilla_1#1$1.webp": {
+    "timestamp": 1768459834256,
+    "variant": "char_240_vanilla_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_1507_mephisto_1#1$1.webp": {
+    "timestamp": 1768459836252,
+    "variant": "char_1507_mephisto_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_1#1$1.webp": {
+    "timestamp": 1768459838489,
+    "variant": "char_002_amiya_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_1508_faust_1#1$1.webp": {
+    "timestamp": 1768459840393,
+    "variant": "char_1508_faust_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_char_501_durin_1#1$1.webp": {
+    "timestamp": 1768459843000,
+    "variant": "avg_char_501_durin_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_336_scene_1#1$1.webp": {
+    "timestamp": 1768459844877,
+    "variant": "char_336_scene_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_373_leonhardt_1#1$1.webp": {
+    "timestamp": 1768459846916,
+    "variant": "char_373_leonhardt_1#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "avg_npc_293_1#1$1.webp": {
+    "timestamp": 1768459849665,
+    "variant": "avg_npc_293_1#1$1",
+    "status": "failed",
+    "error": "upload_failed"
+  },
+  "avg_npc_291#1$1.webp": {
+    "timestamp": 1768459685458,
+    "variant": "avg_npc_291#1$1",
+    "status": "failed",
+    "error": "upload_failed"
+  },
+  "avg_4066_highmo_1#1$1.webp": {
+    "timestamp": 1768459687843,
+    "variant": "avg_4066_highmo_1#1$1",
+    "status": "failed",
+    "error": "upload_failed"
+  },
+  "avg_437_mizukisummer_1#1$1.webp": {
+    "timestamp": 1768459690222,
+    "variant": "avg_437_mizukisummer_1#1$1",
+    "status": "failed",
+    "error": "upload_failed"
+  },
+  "avg_npc_610_1#1$1.webp": {
+    "timestamp": 1768459692235,
+    "variant": "avg_npc_610_1#1$1",
+    "status": "failed",
+    "error": "upload_failed"
+  },
+  "avg_npc_1200_1#1$1.webp": {
+    "timestamp": 1768459694982,
+    "variant": "avg_npc_1200_1#1$1",
+    "status": "failed",
+    "error": "upload_failed"
   }
 }

@@ -510,14 +510,29 @@
             console.log("Sample name:", Object.values(namesData)[0]);
 
             allCharacters.value = Object.keys(globalData)
-                .map((id) => ({
-                    ...globalData[id],
-                    ...(namesData[id] || {
-                        displayName: id,
-                        speakerNames: [],
-                        searchNames: [],
-                    }),
-                }))
+                .map((id) => {
+                    const normalizedId = id.toLowerCase();
+                    const data = globalData[id];
+                    
+                    if (data.validVariants) {
+                        data.validVariants = data.validVariants.map((v: string) => 
+                            v.toLowerCase()
+                        );
+                    }
+                    if (data.charId) {
+                        data.charId = data.charId.toLowerCase();
+                    }
+
+                    return {
+                        ...data,
+                        ...(namesData[id] || namesData[normalizedId] || {
+                            displayName: normalizedId,
+                            speakerNames: [],
+                            searchNames: [],
+                        }),
+                        charId: normalizedId
+                    };
+                })
                 .sort((a, b) => a.displayName.localeCompare(b.displayName));
 
             console.log("Total characters loaded:", allCharacters.value.length);

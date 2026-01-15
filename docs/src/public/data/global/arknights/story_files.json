@@ -1845,7 +1845,7 @@
     "activities/act3d0/level_act3d0_07_beg.txt",
     "activities/act3d0/level_act3d0_ex06_end.txt"
   ],
-  "char_2001_aya_1": [
+  "npc_2001_aya_1": [
     "activities/act11d7/level_act11d7_st01.txt",
     "activities/act17side/level_act17side_05_beg.txt",
     "activities/act17side/level_act17side_st01.txt",
@@ -3184,7 +3184,7 @@
   "npc_2003_frost_rock": [
     "activities/act12d0/level_act12d0_ex01_end.txt"
   ],
-  "char_2001_aya_rock": [
+  "npc_2001_aya_rock": [
     "activities/act12d0/level_act12d0_ex01_end.txt"
   ],
   "npc_2004_alty_rock": [
@@ -6442,7 +6442,8 @@
     "obt/memory/story_alanna_1_1.txt",
     "obt/memory/story_warmy_1_1.txt",
     "activities/act45side/level_act45side_05_beg.txt",
-    "obt/main/level_main_15-02_beg.txt"
+    "obt/main/level_main_15-02_beg.txt",
+    "obt/memory/story_ray_2_1.txt"
   ],
   "avg_4117_ray_1": [
     "activities/act16mini/level_act16mini_st01.txt",
@@ -6537,7 +6538,8 @@
     "obt/main/level_main_15-18_end.txt",
     "obt/memory/story_ray_1_1.txt",
     "activities/act16mini/level_act16mini_st06.txt",
-    "activities/act33side/level_act33side_04_beg.txt"
+    "activities/act33side/level_act33side_04_beg.txt",
+    "obt/memory/story_ray_2_1.txt"
   ],
   "avg_npc_1187_1": [
     "activities/act16mini/level_act16mini_st05.txt"
@@ -8086,24 +8088,6 @@
   "avg_npc_178": [
     "obt/memory/story_deepcl_1_1.txt",
     "obt/memory/story_thorns_1_1.txt"
-  ],
-  "char_1012_skadi2_1": [
-    "activities/act18d3/level_act18d3_02_beg.txt",
-    "activities/act18d3/level_act18d3_02_end.txt",
-    "activities/act18d3/level_act18d3_03_beg.txt",
-    "activities/act18d3/level_act18d3_03_end.txt",
-    "activities/act18d3/level_act18d3_06_end.txt",
-    "activities/act18d3/level_act18d3_07_end.txt",
-    "obt/memory/story_ghost_2_1.txt",
-    "activities/act18d3/level_act18d3_05_end.txt",
-    "activities/act18d3/level_act18d3_04_beg.txt",
-    "activities/act18d3/level_act18d3_06_beg.txt",
-    "activities/act18d3/level_act18d3_07_beg.txt",
-    "activities/act18d3/level_act18d3_08_end.txt",
-    "activities/act18d3/level_act18d3_09_beg.txt",
-    "activities/act18d3/level_act18d3_09_end.txt",
-    "activities/act18d3/level_act18d3_st01.txt",
-    "activities/act18d3/level_act18d3_st02.txt"
   ],
   "avg_npc_187": [
     "obt/memory/story_thorns_1_1.txt"
@@ -18388,15 +18372,6 @@
   ],
   "avg_4063_quartz_1": [
     "obt/memory/story_quartz_1_1.txt"
-  ],
-  "AVG_NPC_1188_1": [
-    "obt/memory/story_ray_2_1.txt"
-  ],
-  "AVG_NPC_090": [
-    "obt/memory/story_ray_2_1.txt"
-  ],
-  "AVG_4081_WARMY_1": [
-    "obt/memory/story_ray_2_1.txt"
   ],
   "avg_npc_1640_1": [
     "obt/memory/story_reckpr_1_1.txt"

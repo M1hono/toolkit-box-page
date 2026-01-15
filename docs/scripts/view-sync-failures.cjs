@@ -24,39 +24,47 @@ function analyzeFailures() {
         ? JSON.parse(fs.readFileSync(UPLOADED_LOG, 'utf8'))
         : {};
     
+    const uploadedEntries = Object.values(uploaded);
+    const successCount = uploadedEntries.filter(e => e.status === 'uploaded' || e.uploaded === true).length;
+    const skippedCount = uploadedEntries.filter(e => e.status === 'skipped' || e.skipped === true).length;
+    const failedCount = uploadedEntries.filter(e => e.status === 'failed').length;
+
     console.log('R2 Sync Status Report');
     console.log('========================');
     console.log(`Last Update: ${new Date(failures.lastUpdate).toLocaleString()}`);
-    console.log(`Successfully Uploaded: ${Object.keys(uploaded).length} files`);
-    console.log(`Download Failures: ${failures.downloadFailures.length}`);
-    console.log(`Upload Failures: ${failures.uploadFailures.length}`);
+    console.log(`Total Processed: ${uploadedEntries.length}`);
+    console.log(`  - Successfully Uploaded: ${successCount}`);
+    console.log(`  - Already on R2 (Skipped): ${skippedCount}`);
+    console.log(`  - Persistent Failures: ${failedCount}`);
+    console.log(`Download Failures (All-time Log): ${failures.downloadFailures.length}`);
+    console.log(`Upload Failures (All-time Log): ${failures.uploadFailures.length}`);
     
-    if (failures.downloadFailures.length > 0) {
-        console.log('\nDownload Failures:');
-        failures.downloadFailures.slice(0, 10).forEach((failure, index) => {
-            const date = new Date(failure.timestamp).toLocaleString();
-            console.log(`   ${index + 1}. ${failure.url} (${date})`);
+    if (failedCount > 0) {
+        console.log('\nPersistent Failures (from uploaded.json):');
+        uploadedEntries.filter(e => e.status === 'failed').slice(0, 20).forEach((entry, index) => {
+            console.log(`   ${index + 1}. ${entry.variant} (Error: ${entry.error || 'unknown'})`);
         });
-        if (failures.downloadFailures.length > 10) {
-            console.log(`   ... and ${failures.downloadFailures.length - 10} more`);
+        if (failedCount > 20) {
+            console.log(`   ... and ${failedCount - 20} more`);
         }
     }
-    
-    if (failures.uploadFailures.length > 0) {
-        console.log('\nUpload Failures:');
-        failures.uploadFailures.slice(0, 10).forEach((failure, index) => {
-            const date = new Date(failure.timestamp).toLocaleString();
-            console.log(`   ${index + 1}. ${failure.key} (${date})`);
+
+    if (failures.downloadFailures.length > 0) {
+        console.log('\nRecent Download Failures:');
+        // Deduplicate and show latest
+        const uniqueDownloads = [...new Set(failures.downloadFailures.map(f => f.url))].reverse();
+        uniqueDownloads.slice(0, 10).forEach((url, index) => {
+            console.log(`   ${index + 1}. ${url}`);
         });
-        if (failures.uploadFailures.length > 10) {
-            console.log(`   ... and ${failures.uploadFailures.length - 10} more`);
+        if (uniqueDownloads.length > 10) {
+            console.log(`   ... and ${uniqueDownloads.length - 10} more unique URLs`);
         }
     }
     
     console.log('\nTroubleshooting Tips:');
     console.log('   - Download failures: Check source URLs and network connectivity');
-    console.log('   - Upload failures: Verify R2 credentials and bucket permissions');
-    console.log('   - Use --force-reset in workflow to retry all failed uploads');
+    console.log('   - Use --force-retry to attempt downloading/uploading failed items again');
+    console.log('   - persistent failures are stored in uploaded.json with status "failed"');
 }
 
 if (require.main === module) {
