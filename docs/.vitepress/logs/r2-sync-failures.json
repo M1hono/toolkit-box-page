@@ -134,6 +134,61 @@
       "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_373_leonhardt_1%231%241.png",
       "variant": "char_373_leonhardt_1#1$1",
       "timestamp": 1768459846916
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%231%241.png",
+      "variant": "char_002_amiya_2#1$1",
+      "timestamp": 1768505552971
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%2310%241.png",
+      "variant": "char_002_amiya_2#10$1",
+      "timestamp": 1768505553088
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%2311%241.png",
+      "variant": "char_002_amiya_2#11$1",
+      "timestamp": 1768505553197
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%232%241.png",
+      "variant": "char_002_amiya_2#2$1",
+      "timestamp": 1768505553301
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%233%241.png",
+      "variant": "char_002_amiya_2#3$1",
+      "timestamp": 1768505553413
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%234%241.png",
+      "variant": "char_002_amiya_2#4$1",
+      "timestamp": 1768505553507
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%235%241.png",
+      "variant": "char_002_amiya_2#5$1",
+      "timestamp": 1768505553616
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%236%241.png",
+      "variant": "char_002_amiya_2#6$1",
+      "timestamp": 1768505553715
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%237%241.png",
+      "variant": "char_002_amiya_2#7$1",
+      "timestamp": 1768505553808
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%238%241.png",
+      "variant": "char_002_amiya_2#8$1",
+      "timestamp": 1768505553922
+    },
+    {
+      "url": "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/char_002_amiya_2%239%241.png",
+      "variant": "char_002_amiya_2#9$1",
+      "timestamp": 1768505554020
     }
   ],
   "uploadFailures": [
@@ -142,5 +197,5 @@
       "timestamp": 1768459849665
     }
   ],
-  "lastUpdate": 1768504514696
+  "lastUpdate": 1768505570136
 }

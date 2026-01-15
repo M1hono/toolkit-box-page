@@ -50294,5 +50294,71 @@
     "variant": "$ill_amiya_normal#1$1",
     "status": "failed",
     "error": "download_failed"
+  },
+  "char_002_amiya_2#1$1.webp": {
+    "timestamp": 1768505552971,
+    "variant": "char_002_amiya_2#1$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#10$1.webp": {
+    "timestamp": 1768505553088,
+    "variant": "char_002_amiya_2#10$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#11$1.webp": {
+    "timestamp": 1768505553197,
+    "variant": "char_002_amiya_2#11$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#2$1.webp": {
+    "timestamp": 1768505553301,
+    "variant": "char_002_amiya_2#2$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#3$1.webp": {
+    "timestamp": 1768505553413,
+    "variant": "char_002_amiya_2#3$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#4$1.webp": {
+    "timestamp": 1768505553507,
+    "variant": "char_002_amiya_2#4$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#5$1.webp": {
+    "timestamp": 1768505553616,
+    "variant": "char_002_amiya_2#5$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#6$1.webp": {
+    "timestamp": 1768505553715,
+    "variant": "char_002_amiya_2#6$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#7$1.webp": {
+    "timestamp": 1768505553808,
+    "variant": "char_002_amiya_2#7$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#8$1.webp": {
+    "timestamp": 1768505553922,
+    "variant": "char_002_amiya_2#8$1",
+    "status": "failed",
+    "error": "download_failed"
+  },
+  "char_002_amiya_2#9$1.webp": {
+    "timestamp": 1768505554020,
+    "variant": "char_002_amiya_2#9$1",
+    "status": "failed",
+    "error": "download_failed"
   }
 }
