@@ -314,21 +314,6 @@
     "avg_1014_nearl2_1",
     "char_148_nearl_ns_1"
   ],
-  "阿米娅": [
-    "char_148_nearl_1",
-    "char_002_amiya_2",
-    "char_017_homura_3",
-    "char_010_chen_1",
-    "char_147_shining_1",
-    "avg_1037_amiya3_1",
-    "avg_npc_1295_1",
-    "char_002_amiya_summer_2",
-    "char_193_frostl_1",
-    "avg_npc_051",
-    "avg_npc_087",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
   "凯尔希": [
     "char_003_kalts_1",
     "char_003_kaltsn07_1",
@@ -551,82 +536,6 @@
     "avg_185_frncat_1"
   ],
   "激动的歌迷": "char_185_frncat_1",
-  "闪灵": [
-    "char_002_amiya_2",
-    "char_147_shining_1",
-    "char_179_cgbird_1",
-    "avgnew_147_shining_1",
-    "avg_147_shining_1",
-    "char_002_amiya_1"
-  ],
-  "阿米娅？": [
-    "char_002_amiya_2",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
-  "杜宾": [
-    "char_002_amiya_2",
-    "char_130_doberm_ex",
-    "char_002_amiya_1"
-  ],
-  "Ace": [
-    "char_002_amiya_2",
-    "char_014_riope",
-    "avg_npc_1309_1",
-    "char_002_amiya_1"
-  ],
-  "陈": [
-    "char_002_amiya_2",
-    "char_010_chen_summer",
-    "char_010_chen_1",
-    "avg_npc_196_1",
-    "avg_1013_spchen_1",
-    "avg_npc_662_1",
-    "avg_npc_790_1",
-    "char_136_hsguma",
-    "avg_npc_086",
-    "char_002_amiya_1"
-  ],
-  "芙兰卡": [
-    "char_002_amiya_2",
-    "avg_npc_155_1",
-    "avg_106_franka_1",
-    "char_107_liskam_1",
-    "char_106_franka_1",
-    "char_208_melan_1",
-    "char_1500_skulsr",
-    "char_002_amiya_1"
-  ],
-  "雷蛇": [
-    "char_002_amiya_2",
-    "avg_npc_156_1",
-    "avg_107_liskam_1",
-    "char_107_liskam_1",
-    "char_002_amiya_1"
-  ],
-  "W": [
-    "char_002_amiya_2",
-    "avg_1035_wisdel_1",
-    "avg_npc_046",
-    "char_1504_cqbw",
-    "avg_npc_412_1",
-    "avg_npc_1343_1",
-    "char_002_amiya_1"
-  ],
-  "小女孩": [
-    "char_002_amiya_2",
-    "avg_npc_045_nn_1",
-    "avg_npc_004",
-    "avg_npc_143",
-    "avg_npc_142",
-    "avg_npc_992_1",
-    "avg_npc_045",
-    "char_002_amiya_1"
-  ],
-  "另一个少女的声音": [
-    "char_002_amiya_2",
-    "char_002_amiya_1"
-  ],
   "调香师": [
     "char_181_flower_1",
     "avg_181_flower_1"
@@ -634,6 +543,10 @@
   "角峰": [
     "char_199_yak_1",
     "avg_199_yak_1"
+  ],
+  "杜宾": [
+    "char_130_doberm_ex",
+    "char_002_amiya_1"
   ],
   "热情的歌迷": "char_130_doberm_ex",
   "整合运动术师": [
@@ -823,6 +736,15 @@
   ],
   "感染者少女": "avg_npc_045_nn_1",
   "“女巫”小敏": "avg_npc_045_nn_1",
+  "小女孩": [
+    "avg_npc_045_nn_1",
+    "avg_npc_004",
+    "avg_npc_143",
+    "avg_npc_142",
+    "avg_npc_992_1",
+    "avg_npc_045",
+    "char_002_amiya_1"
+  ],
   "懵懂的孩童": "avg_npc_045_nn_1",
   "天真的小女孩": [
     "avg_npc_045_nn_1",
@@ -2122,6 +2044,17 @@
     "avg_npc_120"
   ],
   "耀骑士": "avg_1014_nearl2_1",
+  "陈": [
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_npc_196_1",
+    "avg_1013_spchen_1",
+    "avg_npc_662_1",
+    "avg_npc_790_1",
+    "char_136_hsguma",
+    "avg_npc_086",
+    "char_002_amiya_1"
+  ],
   "陈&林雨霞": "char_010_chen_summer",
   "女游客C": "char_010_chen_summer",
   "诗怀雅": [
@@ -2366,6 +2299,13 @@
   "腐败骑士": [
     "avg_npc_102",
     "avg_npc_102_2"
+  ],
+  "闪灵": [
+    "char_147_shining_1",
+    "char_179_cgbird_1",
+    "avgnew_147_shining_1",
+    "avg_147_shining_1",
+    "char_002_amiya_1"
   ],
   "夜莺": [
     "char_179_cgbird_1",
@@ -3522,8 +3462,23 @@
     "char_340_shwaz_2"
   ],
   "巡林者": "char_503_rang",
+  "芙兰卡": [
+    "avg_npc_155_1",
+    "avg_106_franka_1",
+    "char_107_liskam_1",
+    "char_106_franka_1",
+    "char_208_melan_1",
+    "char_1500_skulsr",
+    "char_002_amiya_1"
+  ],
   "雷蛇&芙兰卡": "avg_npc_155_1",
   "丑陋的变异生物": "avg_npc_155_1",
+  "雷蛇": [
+    "avg_npc_156_1",
+    "avg_107_liskam_1",
+    "char_107_liskam_1",
+    "char_002_amiya_1"
+  ],
   "德鲁奇": "avg_npc_158_1",
   "灰烬": [
     "avg_npc_158_1",
@@ -3669,6 +3624,14 @@
   "王庭军战士B": "avg_npc_419_1",
   "萨卡兹低级军官": "avg_npc_419_1",
   "维什戴尔": "avg_1035_wisdel_1",
+  "W": [
+    "avg_1035_wisdel_1",
+    "avg_npc_046",
+    "char_1504_cqbw",
+    "avg_npc_412_1",
+    "avg_npc_1343_1",
+    "char_002_amiya_1"
+  ],
   "精明的商人": [
     "avg_npc_1455_1",
     "avg_npc_1236_1"
@@ -4197,6 +4160,15 @@
   "丽塔": [
     "avg_npc_229_1",
     "avg_275_breeze_1"
+  ],
+  "阿米娅": [
+    "avg_1037_amiya3_1",
+    "avg_npc_1295_1",
+    "char_002_amiya_summer_2",
+    "avg_npc_051",
+    "avg_npc_087",
+    "avg_npc_394_1",
+    "char_002_amiya_1"
   ],
   "Logos": [
     "avg_4133_logos_1",
@@ -4808,6 +4780,11 @@
     "avg_npc_1718_1"
   ],
   "普瑞赛斯？": "avg_npc_083",
+  "Ace": [
+    "char_014_riope",
+    "avg_npc_1309_1",
+    "char_002_amiya_1"
+  ],
   "Scout": [
     "char_014_riope",
     "avg_npc_026",
@@ -6267,6 +6244,10 @@
   "瑟丽斯夫人": "avg_npc_213",
   "蔓德拉": "avg_npc_233_1",
   "重症感染者": "avg_npc_232",
+  "阿米娅？": [
+    "avg_npc_394_1",
+    "char_002_amiya_1"
+  ],
   "邪恶的血魔": "avg_171_bldsk_1",
   "赦罪师直属卫兵": "avg_npc_425_1",
   "赦罪师直属卫兵？": "avg_npc_425_1",
@@ -6548,5 +6529,6 @@
   "杜林": "avg_char_501_durin_1",
   "“剧团喉舌”": "avg_npc_291",
   "海沫": "avg_4066_highmo_1",
-  "西塞罗": "avg_npc_610_1"
+  "西塞罗": "avg_npc_610_1",
+  "另一个少女的声音": "char_002_amiya_1"
 }

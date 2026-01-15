@@ -2,4 +2,4 @@
 aside: false
 ---
 
-  <Arknights />
+<Arknights />

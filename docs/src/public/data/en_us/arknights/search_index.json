@@ -312,21 +312,6 @@
     "avg_1014_nearl2_1",
     "char_148_nearl_ns_1"
   ],
-  "Amiya": [
-    "char_148_nearl_1",
-    "char_002_amiya_2",
-    "char_017_homura_3",
-    "char_010_chen_1",
-    "char_147_shining_1",
-    "avg_1037_amiya3_1",
-    "avg_npc_1295_1",
-    "char_002_amiya_summer_2",
-    "char_193_frostl_1",
-    "avg_npc_051",
-    "avg_npc_087",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
   "Kal'tsit": [
     "char_003_kalts_1",
     "char_003_kaltsn07_1",
@@ -561,81 +546,6 @@
     "char_185_frncat_1",
     "avg_npc_033"
   ],
-  "Shining": [
-    "char_002_amiya_2",
-    "char_147_shining_1",
-    "char_179_cgbird_1",
-    "avgnew_147_shining_1",
-    "avg_147_shining_1",
-    "char_002_amiya_1"
-  ],
-  "Amiya?": [
-    "char_002_amiya_2",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
-  "Dobermann": [
-    "char_002_amiya_2",
-    "char_130_doberm_ex",
-    "char_002_amiya_1"
-  ],
-  "Ace": [
-    "char_002_amiya_2",
-    "char_014_riope",
-    "avg_npc_1309_1",
-    "char_002_amiya_1"
-  ],
-  "Ch'en": [
-    "char_002_amiya_2",
-    "char_010_chen_summer",
-    "char_010_chen_1",
-    "avg_npc_196_1",
-    "avg_1013_spchen_1",
-    "avg_npc_662_1",
-    "avg_npc_790_1",
-    "char_136_hsguma",
-    "avg_npc_086",
-    "char_002_amiya_1"
-  ],
-  "Franka": [
-    "char_002_amiya_2",
-    "avg_npc_155_1",
-    "avg_106_franka_1",
-    "char_107_liskam_1",
-    "char_106_franka_1",
-    "char_208_melan_1",
-    "char_1500_skulsr",
-    "char_002_amiya_1"
-  ],
-  "Liskarm": [
-    "char_002_amiya_2",
-    "avg_npc_156_1",
-    "avg_107_liskam_1",
-    "char_107_liskam_1",
-    "char_002_amiya_1"
-  ],
-  "W": [
-    "char_002_amiya_2",
-    "avg_1035_wisdel_1",
-    "avg_npc_046",
-    "char_1504_cqbw",
-    "avg_npc_412_1",
-    "avg_npc_1343_1",
-    "char_002_amiya_1"
-  ],
-  "Little Girl": [
-    "char_002_amiya_2",
-    "avg_npc_045_nn_1",
-    "avg_npc_004",
-    "avg_npc_143",
-    "avg_npc_142",
-    "avg_npc_045",
-    "char_002_amiya_1"
-  ],
-  "Another Girl's Voice": [
-    "char_002_amiya_2",
-    "char_002_amiya_1"
-  ],
   "Perfumer": [
     "char_181_flower_1",
     "avg_181_flower_1"
@@ -643,6 +553,10 @@
   "Matterhorn": [
     "char_199_yak_1",
     "avg_199_yak_1"
+  ],
+  "Dobermann": [
+    "char_130_doberm_ex",
+    "char_002_amiya_1"
   ],
   "Passionate Fan": "char_130_doberm_ex",
   "Reunion Caster": [
@@ -844,6 +758,14 @@
     "avg_npc_1497_1"
   ],
   "Little 'Witch' Minnie": "avg_npc_045_nn_1",
+  "Little Girl": [
+    "avg_npc_045_nn_1",
+    "avg_npc_004",
+    "avg_npc_143",
+    "avg_npc_142",
+    "avg_npc_045",
+    "char_002_amiya_1"
+  ],
   "Innocent Child": [
     "avg_npc_045_nn_1",
     "avg_npc_661_1"
@@ -2126,6 +2048,17 @@
     "avg_npc_120"
   ],
   "The Radiant Knight": "avg_1014_nearl2_1",
+  "Ch'en": [
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_npc_196_1",
+    "avg_1013_spchen_1",
+    "avg_npc_662_1",
+    "avg_npc_790_1",
+    "char_136_hsguma",
+    "avg_npc_086",
+    "char_002_amiya_1"
+  ],
   "Ernesto": [
     "char_010_chen_summer",
     "avg_486_espumo_1"
@@ -2366,6 +2299,13 @@
   "Corrupted Knight": [
     "avg_npc_102",
     "avg_npc_102_2"
+  ],
+  "Shining": [
+    "char_147_shining_1",
+    "char_179_cgbird_1",
+    "avgnew_147_shining_1",
+    "avg_147_shining_1",
+    "char_002_amiya_1"
   ],
   "Nightingale": [
     "char_179_cgbird_1",
@@ -3362,8 +3302,23 @@
     "char_340_shwaz_2"
   ],
   "Rangers": "char_503_rang",
+  "Franka": [
+    "avg_npc_155_1",
+    "avg_106_franka_1",
+    "char_107_liskam_1",
+    "char_106_franka_1",
+    "char_208_melan_1",
+    "char_1500_skulsr",
+    "char_002_amiya_1"
+  ],
   "Franka & Liskarm": "avg_npc_155_1",
   "Hideous Monstrosity": "avg_npc_155_1",
+  "Liskarm": [
+    "avg_npc_156_1",
+    "avg_107_liskam_1",
+    "char_107_liskam_1",
+    "char_002_amiya_1"
+  ],
   "Drudge": "avg_npc_158_1",
   "Ash": [
     "avg_npc_158_1",
@@ -3497,6 +3452,14 @@
   "Royal Court Soldier B": "avg_npc_419_1",
   "Low-Ranking Sarkaz Officer": "avg_npc_419_1",
   "Wiš'adel": "avg_1035_wisdel_1",
+  "W": [
+    "avg_1035_wisdel_1",
+    "avg_npc_046",
+    "char_1504_cqbw",
+    "avg_npc_412_1",
+    "avg_npc_1343_1",
+    "char_002_amiya_1"
+  ],
   "Crafty Merchant": "avg_npc_1455_1",
   "Old Woman": [
     "avg_npc_1455_1",
@@ -3972,6 +3935,15 @@
   "Rita": [
     "avg_npc_229_1",
     "avg_275_breeze_1"
+  ],
+  "Amiya": [
+    "avg_1037_amiya3_1",
+    "avg_npc_1295_1",
+    "char_002_amiya_summer_2",
+    "avg_npc_051",
+    "avg_npc_087",
+    "avg_npc_394_1",
+    "char_002_amiya_1"
   ],
   "Logos": [
     "avg_4133_logos_1",
@@ -4517,6 +4489,11 @@
     "avg_npc_1718_1"
   ],
   "Priestess?": "avg_npc_083",
+  "Ace": [
+    "char_014_riope",
+    "avg_npc_1309_1",
+    "char_002_amiya_1"
+  ],
   "Scout": [
     "char_014_riope",
     "avg_npc_026",
@@ -5742,6 +5719,10 @@
   "Mrs. Selis": "avg_npc_213",
   "Mandragora": "avg_npc_233_1",
   "Severely Infected": "avg_npc_232",
+  "Amiya?": [
+    "avg_npc_394_1",
+    "char_002_amiya_1"
+  ],
   "Evil Vampire": "avg_171_bldsk_1",
   "Confessarius Guard": "avg_npc_425_1",
   "Confessarius Guard?": "avg_npc_425_1",
@@ -5949,5 +5930,6 @@
   "Faust": "char_1508_faust_1",
   "'Troupe Mouthpiece'": "avg_npc_291",
   "Highmore": "avg_4066_highmo_1",
-  "Cicero": "avg_npc_610_1"
+  "Cicero": "avg_npc_610_1",
+  "Another Girl's Voice": "char_002_amiya_1"
 }

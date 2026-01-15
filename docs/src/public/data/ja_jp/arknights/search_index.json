@@ -297,21 +297,6 @@
     "avg_1014_nearl2_1",
     "char_148_nearl_ns_1"
   ],
-  "アーミヤ": [
-    "char_148_nearl_1",
-    "char_002_amiya_2",
-    "char_017_homura_3",
-    "char_010_chen_1",
-    "char_147_shining_1",
-    "avg_1037_amiya3_1",
-    "avg_npc_1295_1",
-    "char_002_amiya_summer_2",
-    "char_193_frostl_1",
-    "avg_npc_051",
-    "avg_npc_087",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
   "ケルシー": [
     "char_003_kalts_1",
     "char_003_kaltsn07_1",
@@ -562,81 +547,6 @@
     "avg_185_frncat_1"
   ],
   "感激したファン": "char_185_frncat_1",
-  "シャイニング": [
-    "char_002_amiya_2",
-    "char_147_shining_1",
-    "char_179_cgbird_1",
-    "avgnew_147_shining_1",
-    "avg_147_shining_1",
-    "char_002_amiya_1"
-  ],
-  "アーミヤ？": [
-    "char_002_amiya_2",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
-  "ドーベルマン": [
-    "char_002_amiya_2",
-    "char_130_doberm_ex",
-    "char_002_amiya_1"
-  ],
-  "Ace": [
-    "char_002_amiya_2",
-    "char_014_riope",
-    "avg_npc_1309_1",
-    "char_002_amiya_1"
-  ],
-  "チェン": [
-    "char_002_amiya_2",
-    "char_010_chen_summer",
-    "char_010_chen_1",
-    "avg_npc_196_1",
-    "avg_1013_spchen_1",
-    "avg_npc_662_1",
-    "avg_npc_790_1",
-    "char_136_hsguma",
-    "avg_npc_086",
-    "char_002_amiya_1"
-  ],
-  "フランカ": [
-    "char_002_amiya_2",
-    "avg_npc_155_1",
-    "avg_106_franka_1",
-    "char_107_liskam_1",
-    "char_106_franka_1",
-    "char_208_melan_1",
-    "char_1500_skulsr",
-    "char_002_amiya_1"
-  ],
-  "リスカム": [
-    "char_002_amiya_2",
-    "avg_npc_156_1",
-    "avg_107_liskam_1",
-    "char_107_liskam_1",
-    "char_002_amiya_1"
-  ],
-  "W": [
-    "char_002_amiya_2",
-    "avg_1035_wisdel_1",
-    "avg_npc_046",
-    "char_1504_cqbw",
-    "avg_npc_412_1",
-    "avg_npc_1343_1",
-    "char_002_amiya_1"
-  ],
-  "女の子": [
-    "char_002_amiya_2",
-    "avg_npc_045_nn_1",
-    "avg_npc_143",
-    "avg_npc_142",
-    "avg_npc_992_1",
-    "avg_npc_045",
-    "char_002_amiya_1"
-  ],
-  "女性の声": [
-    "char_002_amiya_2",
-    "char_002_amiya_1"
-  ],
   "パフューマー": [
     "char_181_flower_1",
     "avg_181_flower_1"
@@ -644,6 +554,10 @@
   "マッターホルン": [
     "char_199_yak_1",
     "avg_199_yak_1"
+  ],
+  "ドーベルマン": [
+    "char_130_doberm_ex",
+    "char_002_amiya_1"
   ],
   "熱狂的ファン": "char_130_doberm_ex",
   "レユニオン術師": [
@@ -830,6 +744,14 @@
   "何も知らない子供": "avg_npc_045_nn_1",
   "ピュアな女の子": "avg_npc_045_nn_1",
   "感染者の女の子": "avg_npc_045_nn_1",
+  "女の子": [
+    "avg_npc_045_nn_1",
+    "avg_npc_143",
+    "avg_npc_142",
+    "avg_npc_992_1",
+    "avg_npc_045",
+    "char_002_amiya_1"
+  ],
   "ガタイのいい黒服": "avg_npc_031",
   "コソコソした黒服": "avg_npc_031",
   "黒服の男": "avg_npc_031",
@@ -2091,6 +2013,17 @@
   ],
   "老職人コーヴァル": "avg_npc_101",
   "老騎士フォー": "avg_npc_120",
+  "チェン": [
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_npc_196_1",
+    "avg_1013_spchen_1",
+    "avg_npc_662_1",
+    "avg_npc_790_1",
+    "char_136_hsguma",
+    "avg_npc_086",
+    "char_002_amiya_1"
+  ],
   "エルネスト": [
     "char_010_chen_summer",
     "avg_486_espumo_1"
@@ -2341,6 +2274,13 @@
   "腐敗騎士": [
     "avg_npc_102",
     "avg_npc_102_2"
+  ],
+  "シャイニング": [
+    "char_147_shining_1",
+    "char_179_cgbird_1",
+    "avgnew_147_shining_1",
+    "avg_147_shining_1",
+    "char_002_amiya_1"
   ],
   "ナイチンゲール": [
     "char_179_cgbird_1",
@@ -3340,8 +3280,23 @@
     "char_340_shwaz_2"
   ],
   "レンジャー": "char_503_rang",
+  "フランカ": [
+    "avg_npc_155_1",
+    "avg_106_franka_1",
+    "char_107_liskam_1",
+    "char_106_franka_1",
+    "char_208_melan_1",
+    "char_1500_skulsr",
+    "char_002_amiya_1"
+  ],
   "リスカム＆フランカ": "avg_npc_155_1",
   "醜い変異生物": "avg_npc_155_1",
+  "リスカム": [
+    "avg_npc_156_1",
+    "avg_107_liskam_1",
+    "char_107_liskam_1",
+    "char_002_amiya_1"
+  ],
   "ドラッジ": "avg_npc_158_1",
   "Ash": [
     "avg_npc_158_1",
@@ -3473,6 +3428,14 @@
   "王庭軍戦士B": "avg_npc_419_1",
   "サルカズ下級士官": "avg_npc_419_1",
   "ウィシャデル": "avg_1035_wisdel_1",
+  "W": [
+    "avg_1035_wisdel_1",
+    "avg_npc_046",
+    "char_1504_cqbw",
+    "avg_npc_412_1",
+    "avg_npc_1343_1",
+    "char_002_amiya_1"
+  ],
   "抜け目ない商人": "avg_npc_1455_1",
   "一人暮らしの老人": "avg_npc_1455_1",
   "年長の女性": "avg_npc_1455_1",
@@ -3942,6 +3905,15 @@
   "リタ": [
     "avg_npc_229_1",
     "avg_275_breeze_1"
+  ],
+  "アーミヤ": [
+    "avg_1037_amiya3_1",
+    "avg_npc_1295_1",
+    "char_002_amiya_summer_2",
+    "avg_npc_051",
+    "avg_npc_087",
+    "avg_npc_394_1",
+    "char_002_amiya_1"
   ],
   "Logos": [
     "avg_4133_logos_1",
@@ -4483,6 +4455,11 @@
     "avg_npc_1718_1"
   ],
   "プリースティス？": "avg_npc_083",
+  "Ace": [
+    "char_014_riope",
+    "avg_npc_1309_1",
+    "char_002_amiya_1"
+  ],
   "Scout": [
     "char_014_riope",
     "avg_npc_026",
@@ -5704,6 +5681,10 @@
   "セリス夫人": "avg_npc_213",
   "マンドラゴラ": "avg_npc_233_1",
   "重傷感染者": "avg_npc_232",
+  "アーミヤ？": [
+    "avg_npc_394_1",
+    "char_002_amiya_1"
+  ],
   "邪悪なブラッドブルード": "avg_171_bldsk_1",
   "聴罪師直属衛兵": "avg_npc_425_1",
   "聴罪師直属衛兵？": "avg_npc_425_1",
@@ -5915,5 +5896,6 @@
   "「劇団の喉舌」": "avg_npc_291",
   "ハイモア": "avg_4066_highmo_1",
   "キケロ": "avg_npc_610_1",
-  "ペペ": "avg_npc_1200_1"
+  "ペペ": "avg_npc_1200_1",
+  "女性の声": "char_002_amiya_1"
 }

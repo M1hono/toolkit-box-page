@@ -136,6 +136,35 @@ function consolidateResults(results, langCode) {
         }
     }
 
+    // Clean up: Remove source IDs that should be combined
+    Object.keys(combineRules).forEach(sourceId => {
+        const targetId = combineRules[sourceId];
+        if (sourceId !== targetId) {
+            if (globalChars[sourceId]) {
+                console.log(`  Removing combined source: ${sourceId} (→ ${targetId})`);
+                delete globalChars[sourceId];
+            }
+            if (langNames[sourceId]) {
+                console.log(`  Removing combined source from names: ${sourceId}`);
+                delete langNames[sourceId];
+            }
+            if (langStorys[sourceId]) {
+                console.log(`  Removing combined source from storys: ${sourceId}`);
+                delete langStorys[sourceId];
+            }
+        }
+    });
+
+    // Bidirectional cleanup: Remove excluded names from speakerNames
+    for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
+        for (const charId of excludedCharIds) {
+            if (langNames[charId] && langNames[charId].speakerNames) {
+                langNames[charId].speakerNames = langNames[charId].speakerNames.filter(n => n !== name);
+                langNames[charId].searchNames = langNames[charId].speakerNames;
+            }
+        }
+    }
+
     saveGlobalCharacters(globalChars);
     saveLanguageNames(langCode, langNames);
     saveLanguageStorys(langCode, langStorys);

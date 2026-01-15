@@ -421,13 +421,11 @@
   "char_148_nearl_1": {
     "speakerNames": [
       "Nearl",
-      "Margaret",
-      "Amiya"
+      "Margaret"
     ],
     "searchNames": [
       "Nearl",
-      "Margaret",
-      "Amiya"
+      "Margaret"
     ],
     "displayName": "Nearl"
   },
@@ -732,35 +730,6 @@
       "Excited Fan"
     ],
     "displayName": "Mousse"
-  },
-  "char_002_amiya_2": {
-    "speakerNames": [
-      "Amiya",
-      "Shining",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
-    ],
-    "searchNames": [
-      "Amiya",
-      "Shining",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
-    ],
-    "displayName": "Amiya"
   },
   "char_181_flower_1": {
     "speakerNames": [
@@ -3045,12 +3014,10 @@
   },
   "char_017_homura_3": {
     "speakerNames": [
-      "Blaze",
-      "Amiya"
+      "Blaze"
     ],
     "searchNames": [
-      "Blaze",
-      "Amiya"
+      "Blaze"
     ],
     "displayName": "Blaze"
   },
@@ -3547,13 +3514,11 @@
     "speakerNames": [
       "Ch'en",
       "Masked Rhodes Island Operator",
-      "Amiya",
       "Wei Yenwu"
     ],
     "searchNames": [
       "Ch'en",
       "Masked Rhodes Island Operator",
-      "Amiya",
       "Wei Yenwu"
     ],
     "displayName": "Ch'en"
@@ -4244,12 +4209,10 @@
   },
   "char_147_shining_1": {
     "speakerNames": [
-      "Shining",
-      "Amiya"
+      "Shining"
     ],
     "searchNames": [
-      "Shining",
-      "Amiya"
+      "Shining"
     ],
     "displayName": "Shining"
   },
@@ -16374,12 +16337,10 @@
   "char_193_frostl_1": {
     "speakerNames": [
       "Frostleaf",
-      "Amiya",
       "FrostNova"
     ],
     "searchNames": [
       "Frostleaf",
-      "Amiya",
       "FrostNova"
     ],
     "displayName": "Frostleaf"

@@ -48,7 +48,7 @@ function analyzeFailures() {
             console.log(`   ... and ${failedCount - 20} more`);
         }
     }
-
+    
     if (failures.downloadFailures.length > 0) {
         console.log('\nRecent Download Failures:');
         // Deduplicate and show latest

@@ -145,7 +145,7 @@
                         <v-card-text class="flex-spacer">
                             <v-data-iterator
                                 :items="characterStories"
-                                :items-per-page="25"
+                                :items-per-page="36"
                             >
                                 <template #default="{ items }">
                                     <div class="stories-grid">

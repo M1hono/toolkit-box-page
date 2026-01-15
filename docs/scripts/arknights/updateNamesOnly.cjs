@@ -164,6 +164,16 @@ async function updateNamesForLanguage(langCode) {
     
     console.log(`Generated search index: ${Object.keys(searchIndex).length} terms (${duplicateCount} with duplicates)`);
     
+    // Bidirectional cleanup: Remove excluded names from speakerNames
+    for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
+        for (const charId of excludedCharIds) {
+            if (finalNames[charId] && finalNames[charId].speakerNames) {
+                finalNames[charId].speakerNames = finalNames[charId].speakerNames.filter(n => n !== name);
+                finalNames[charId].searchNames = finalNames[charId].speakerNames;
+            }
+        }
+    }
+    
     saveLanguageNames(langCode, finalNames);
     saveLanguageStorys(langCode, characterStorys);
     saveLanguageSearchIndex(langCode, searchIndex);

@@ -30,7 +30,7 @@ async function main() {
                 : (data.charType === 'operator' ? [`${id}#1$1`] : []);
             
             return {
-                id,
+        id,
                 validVariants: variants
             };
         })
