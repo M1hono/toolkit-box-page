@@ -324,7 +324,8 @@
     "char_193_frostl_1",
     "avg_npc_051",
     "avg_npc_087",
-    "avg_npc_394_1"
+    "avg_npc_394_1",
+    "$ill_amiya_normal"
   ],
   "Kal'tsit": [
     "char_003_kalts_1",
@@ -560,6 +561,69 @@
     "char_185_frncat_1",
     "avg_npc_033"
   ],
+  "Shining": [
+    "char_002_amiya_1",
+    "char_147_shining_1",
+    "char_179_cgbird_1",
+    "avgnew_147_shining_1",
+    "avg_147_shining_1"
+  ],
+  "Amiya?": [
+    "char_002_amiya_1",
+    "avg_npc_394_1"
+  ],
+  "Dobermann": [
+    "char_002_amiya_1",
+    "char_130_doberm_ex"
+  ],
+  "Ace": [
+    "char_002_amiya_1",
+    "char_014_riope",
+    "avg_npc_1309_1"
+  ],
+  "Ch'en": [
+    "char_002_amiya_1",
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_npc_196_1",
+    "avg_1013_spchen_1",
+    "avg_npc_662_1",
+    "avg_npc_790_1",
+    "char_136_hsguma",
+    "avg_npc_086"
+  ],
+  "Franka": [
+    "char_002_amiya_1",
+    "avg_npc_155_1",
+    "avg_106_franka_1",
+    "char_107_liskam_1",
+    "char_106_franka_1",
+    "char_208_melan_1",
+    "char_1500_skulsr"
+  ],
+  "Liskarm": [
+    "char_002_amiya_1",
+    "avg_npc_156_1",
+    "avg_107_liskam_1",
+    "char_107_liskam_1"
+  ],
+  "W": [
+    "char_002_amiya_1",
+    "avg_1035_wisdel_1",
+    "avg_npc_046",
+    "char_1504_cqbw",
+    "avg_npc_412_1",
+    "avg_npc_1343_1"
+  ],
+  "Little Girl": [
+    "char_002_amiya_1",
+    "avg_npc_045_nn_1",
+    "avg_npc_004",
+    "avg_npc_143",
+    "avg_npc_142",
+    "avg_npc_045"
+  ],
+  "Another Girl's Voice": "char_002_amiya_1",
   "Perfumer": [
     "char_181_flower_1",
     "avg_181_flower_1"
@@ -568,7 +632,6 @@
     "char_199_yak_1",
     "avg_199_yak_1"
   ],
-  "Dobermann": "char_130_doberm_ex",
   "Passionate Fan": "char_130_doberm_ex",
   "Reunion Caster": [
     "char_1011_wizard_1",
@@ -769,13 +832,6 @@
     "avg_npc_1497_1"
   ],
   "Little 'Witch' Minnie": "avg_npc_045_nn_1",
-  "Little Girl": [
-    "avg_npc_045_nn_1",
-    "avg_npc_004",
-    "avg_npc_143",
-    "avg_npc_142",
-    "avg_npc_045"
-  ],
   "Innocent Child": [
     "avg_npc_045_nn_1",
     "avg_npc_661_1"
@@ -878,7 +934,8 @@
   "Lively Female Patient": "avg_npc_243",
   "Townsfolk B": [
     "avg_npc_243",
-    "avg_npc_068"
+    "avg_npc_068",
+    "avg_npc_189"
   ],
   "Information Broker": "avg_npc_243",
   "Opportunistic Merchant Alumnus": "avg_npc_243",
@@ -1085,7 +1142,8 @@
   ],
   "Townsfolk A": [
     "avg_npc_065",
-    "avg_npc_242"
+    "avg_npc_242",
+    "avg_npc_187"
   ],
   "Smiling Follower": "avg_npc_065",
   "Leithanan Traveler": "avg_npc_065",
@@ -1304,7 +1362,8 @@
   ],
   "Host": [
     "avg_npc_176",
-    "avg_npc_033"
+    "avg_npc_033",
+    "avg_npc_017_3"
   ],
   "Wealthy Woman": "avg_npc_175",
   "A Leithanian Noblewoman": "avg_npc_175",
@@ -1593,7 +1652,10 @@
   "Shrewd Youth": "avg_npc_033",
   "Block Manager?": "avg_npc_033",
   "Panicked Lungmen Citizen": "avg_npc_033",
-  "Male Resident": "avg_npc_033",
+  "Male Resident": [
+    "avg_npc_033",
+    "avg_npc_187"
+  ],
   "Vicious-Looking Lou Seoi Member": "avg_npc_033",
   "Angry Lou Seoi Member": "avg_npc_033",
   "Injured Lou Seoi Member": "avg_npc_033",
@@ -1771,6 +1833,7 @@
   ],
   "Jailer": [
     "avg_npc_134",
+    "char_214_kafka_1",
     "avg_npc_136",
     "avg_npc_137"
   ],
@@ -2051,16 +2114,6 @@
     "avg_npc_120"
   ],
   "The Radiant Knight": "avg_1014_nearl2_1",
-  "Ch'en": [
-    "char_010_chen_summer",
-    "char_010_chen_1",
-    "avg_npc_196_1",
-    "avg_1013_spchen_1",
-    "avg_npc_662_1",
-    "avg_npc_790_1",
-    "char_136_hsguma",
-    "avg_npc_086"
-  ],
   "Ernesto": [
     "char_010_chen_summer",
     "avg_486_espumo_1"
@@ -2301,12 +2354,6 @@
   "Corrupted Knight": [
     "avg_npc_102",
     "avg_npc_102_2"
-  ],
-  "Shining": [
-    "char_147_shining_1",
-    "char_179_cgbird_1",
-    "avgnew_147_shining_1",
-    "avg_147_shining_1"
   ],
   "Nightingale": [
     "char_179_cgbird_1",
@@ -3303,21 +3350,8 @@
     "char_340_shwaz_2"
   ],
   "Rangers": "char_503_rang",
-  "Franka": [
-    "avg_npc_155_1",
-    "avg_106_franka_1",
-    "char_107_liskam_1",
-    "char_106_franka_1",
-    "char_208_melan_1",
-    "char_1500_skulsr"
-  ],
   "Franka & Liskarm": "avg_npc_155_1",
   "Hideous Monstrosity": "avg_npc_155_1",
-  "Liskarm": [
-    "avg_npc_156_1",
-    "avg_107_liskam_1",
-    "char_107_liskam_1"
-  ],
   "Drudge": "avg_npc_158_1",
   "Ash": [
     "avg_npc_158_1",
@@ -3451,13 +3485,6 @@
   "Royal Court Soldier B": "avg_npc_419_1",
   "Low-Ranking Sarkaz Officer": "avg_npc_419_1",
   "Wiš'adel": "avg_1035_wisdel_1",
-  "W": [
-    "avg_1035_wisdel_1",
-    "avg_npc_046",
-    "char_1504_cqbw",
-    "avg_npc_412_1",
-    "avg_npc_1343_1"
-  ],
   "Crafty Merchant": "avg_npc_1455_1",
   "Old Woman": [
     "avg_npc_1455_1",
@@ -3509,6 +3536,7 @@
   ],
   "Monastery Inhabitant": [
     "avg_npc_934_1",
+    "avg_npc_189",
     "avg_npc_940_1"
   ],
   "Concerned Sarkaz": "avg_npc_934_1",
@@ -3537,7 +3565,15 @@
   ],
   "Peculiar-looking Elder": "avg_npc_420_1",
   "'Pelirrojito'": "avg_npc_450_1",
+  "Male Townsperson": "avg_npc_459_1",
+  "Cautious Townsperson": "avg_npc_459_1",
+  "Nihilistic Townsperson": "avg_npc_459_1",
+  "Alert Townsfolk": "avg_npc_459_1",
+  "Blockading Townsfolk": "avg_npc_459_1",
+  "Pursuing Townsfolk": "avg_npc_459_1",
+  "Scoffing Passerby": "avg_npc_459_1",
   "Bold Townsfolk": "avg_npc_459_1",
+  "Brave Villager": "avg_npc_459_1",
   "Strange Adherent": "avg_npc_453_1",
   "Mournful Adherent": "avg_npc_453_1",
   "Agitated Cultist": "avg_npc_453_1",
@@ -3546,7 +3582,14 @@
   "Burnt Cultist": "avg_npc_453_1",
   "Torturer Cultist": "avg_npc_453_1",
   "Angry Assassin": "avg_npc_453_1",
+  "Panicking Townsperson": "avg_npc_460_1",
+  "Panicking Townsfolk": "avg_npc_460_1",
+  "Terrified Townsperson": "avg_npc_460_1",
+  "Tense Townsperson": "avg_npc_460_1",
+  "Inquisition Clerk": "avg_npc_460_1",
   "Worried Townsfolk": "avg_npc_460_1",
+  "Young Priest": "avg_npc_460_1",
+  "Panicky Villager": "avg_npc_460_1",
   "Felipe": "avg_npc_460_1",
   "Dying Sea Terror": "avg_npc_457_1",
   "Creeping Sea Terror": "avg_npc_457_1",
@@ -3588,6 +3631,12 @@
   "Gladiia": "avg_474_gladiia_1",
   "Captain Alfonso & Specter": "avg_1023_ghost2_1",
   "Specter & Skadi": "avg_1023_ghost2_1",
+  "Fleeing Townsfolk": "avg_npc_462_1",
+  "Indiscreet Townsfolk": "avg_npc_462_1",
+  "Helping Townsfolk": "avg_npc_462_1",
+  "Excitable Townsfolk": "avg_npc_462_1",
+  "Friendly Villager": "avg_npc_462_1",
+  "Villagers": "avg_npc_462_1",
   "Friendly Woman": "avg_npc_462_1",
   "Mon3tr": [
     "npc_10002",
@@ -3651,10 +3700,30 @@
   "Passenger": "char_472_pasngr_n_1",
   "Old José": "avg_npc_181",
   "Old Panhandler": "avg_npc_181",
+  "Male Inhabitant": "avg_npc_178",
+  "Another Male Inhabitant": "avg_npc_178",
+  "Male Inhabitant A": "avg_npc_178",
+  "Inhabitant": [
+    "avg_npc_178",
+    "avg_npc_187",
+    "avg_npc_188",
+    "avg_npc_189"
+  ],
+  "Aloof Passerby": "avg_npc_178",
+  "'Iberian'": "avg_npc_178",
   "Art Shop Owner": "avg_npc_178",
+  "Local Messenger": "avg_npc_178",
   "Curious Customer": "avg_npc_178",
   "Tense Townsfolk": "avg_npc_178",
   "Skeptical Townsfolk": "avg_npc_178",
+  "Male Inhabitant B": "avg_npc_187",
+  "Panicked Inhabitant": "avg_npc_187",
+  "Male Monastery Inhabitant": "avg_npc_187",
+  "Honest Townsperson": "avg_npc_187",
+  "Tottering Old Man": "avg_npc_187",
+  "Anxious Townsperson": "avg_npc_187",
+  "Hungry Townsfolk": "avg_npc_187",
+  "Injured Townsfolk": "avg_npc_187",
   "Female Inhabitant": "avg_npc_180",
   "Anita": "avg_npc_180",
   "Old Inhabitant": "avg_npc_179",
@@ -3662,8 +3731,10 @@
   "Añora": "avg_npc_179",
   "Inquisitor": "avg_npc_182",
   "Male Inhabitant C": "avg_npc_188",
-  "Inhabitant": "avg_npc_188",
   "Anxious Inhabitant": "avg_npc_188",
+  "Male Inhabitant D": "avg_npc_189",
+  "Distressed Townsperson": "avg_npc_189",
+  "Stoic Townsfolk": "avg_npc_189",
   "Cautious Customer": "avg_npc_189",
   "Monster A": "avg_npc_185",
   "Monster B": "avg_npc_185",
@@ -4434,10 +4505,6 @@
     "avg_npc_1718_1"
   ],
   "Priestess?": "avg_npc_083",
-  "Ace": [
-    "char_014_riope",
-    "avg_npc_1309_1"
-  ],
   "Scout": [
     "char_014_riope",
     "avg_npc_026",
@@ -5663,7 +5730,6 @@
   "Mrs. Selis": "avg_npc_213",
   "Mandragora": "avg_npc_233_1",
   "Severely Infected": "avg_npc_232",
-  "Amiya?": "avg_npc_394_1",
   "Evil Vampire": "avg_171_bldsk_1",
   "Confessarius Guard": "avg_npc_425_1",
   "Confessarius Guard?": "avg_npc_425_1",

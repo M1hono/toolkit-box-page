@@ -309,7 +309,8 @@
     "char_193_frostl_1",
     "avg_npc_051",
     "avg_npc_087",
-    "avg_npc_394_1"
+    "avg_npc_394_1",
+    "$ill_amiya_normal"
   ],
   "ケルシー": [
     "char_003_kalts_1",
@@ -561,6 +562,69 @@
     "avg_185_frncat_1"
   ],
   "感激したファン": "char_185_frncat_1",
+  "シャイニング": [
+    "char_002_amiya_1",
+    "char_147_shining_1",
+    "char_179_cgbird_1",
+    "avgnew_147_shining_1",
+    "avg_147_shining_1"
+  ],
+  "アーミヤ？": [
+    "char_002_amiya_1",
+    "avg_npc_394_1"
+  ],
+  "ドーベルマン": [
+    "char_002_amiya_1",
+    "char_130_doberm_ex"
+  ],
+  "Ace": [
+    "char_002_amiya_1",
+    "char_014_riope",
+    "avg_npc_1309_1"
+  ],
+  "チェン": [
+    "char_002_amiya_1",
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_npc_196_1",
+    "avg_1013_spchen_1",
+    "avg_npc_662_1",
+    "avg_npc_790_1",
+    "char_136_hsguma",
+    "avg_npc_086"
+  ],
+  "フランカ": [
+    "char_002_amiya_1",
+    "avg_npc_155_1",
+    "avg_106_franka_1",
+    "char_107_liskam_1",
+    "char_106_franka_1",
+    "char_208_melan_1",
+    "char_1500_skulsr"
+  ],
+  "リスカム": [
+    "char_002_amiya_1",
+    "avg_npc_156_1",
+    "avg_107_liskam_1",
+    "char_107_liskam_1"
+  ],
+  "W": [
+    "char_002_amiya_1",
+    "avg_1035_wisdel_1",
+    "avg_npc_046",
+    "char_1504_cqbw",
+    "avg_npc_412_1",
+    "avg_npc_1343_1"
+  ],
+  "女の子": [
+    "char_002_amiya_1",
+    "avg_npc_045_nn_1",
+    "avg_npc_143",
+    "avg_npc_142",
+    "avg_npc_992_1",
+    "avg_npc_045"
+  ],
+  "女性の声": "char_002_amiya_1",
   "パフューマー": [
     "char_181_flower_1",
     "avg_181_flower_1"
@@ -569,7 +633,6 @@
     "char_199_yak_1",
     "avg_199_yak_1"
   ],
-  "ドーベルマン": "char_130_doberm_ex",
   "熱狂的ファン": "char_130_doberm_ex",
   "レユニオン術師": [
     "char_1011_wizard_1",
@@ -755,13 +818,6 @@
   "何も知らない子供": "avg_npc_045_nn_1",
   "ピュアな女の子": "avg_npc_045_nn_1",
   "感染者の女の子": "avg_npc_045_nn_1",
-  "女の子": [
-    "avg_npc_045_nn_1",
-    "avg_npc_143",
-    "avg_npc_142",
-    "avg_npc_992_1",
-    "avg_npc_045"
-  ],
   "ガタイのいい黒服": "avg_npc_031",
   "コソコソした黒服": "avg_npc_031",
   "黒服の男": "avg_npc_031",
@@ -1025,11 +1081,17 @@
     "avg_npc_068",
     "avg_npc_065",
     "avg_npc_001",
-    "avg_npc_188"
+    "avg_npc_178",
+    "avg_npc_187",
+    "avg_npc_188",
+    "avg_npc_189"
   ],
   "民兵": "avg_npc_068",
   "頑固な住民": "avg_npc_068",
-  "住民B": "avg_npc_068",
+  "住民B": [
+    "avg_npc_068",
+    "avg_npc_189"
+  ],
   "負傷した住民": "avg_npc_068",
   "経験が浅い店員": "avg_npc_068",
   "平凡な術師": "avg_npc_068",
@@ -1063,7 +1125,10 @@
     "avg_npc_065",
     "avg_npc_067"
   ],
-  "住民A": "avg_npc_065",
+  "住民A": [
+    "avg_npc_065",
+    "avg_npc_187"
+  ],
   "微笑む信徒": "avg_npc_065",
   "リターニアからの旅行者": "avg_npc_065",
   "武装した感染者": [
@@ -1164,6 +1229,7 @@
     "avg_npc_021",
     "avg_npc_534_1",
     "avg_npc_365_1",
+    "avg_npc_178",
     "avg_npc_417_1",
     "avg_npc_498_1"
   ],
@@ -1253,7 +1319,8 @@
     "avg_npc_033",
     "avg_4058_pepe_1",
     "avg_npc_1477_1",
-    "avg_npc_1491_1"
+    "avg_npc_1491_1",
+    "avg_npc_017_3"
   ],
   "情熱的な商人": "avg_npc_176",
   "ヴィクトリアの伯爵": "avg_npc_176",
@@ -1730,6 +1797,7 @@
   ],
   "看守": [
     "avg_npc_134",
+    "char_214_kafka_1",
     "avg_npc_136",
     "avg_npc_137"
   ],
@@ -2011,16 +2079,6 @@
   ],
   "老職人コーヴァル": "avg_npc_101",
   "老騎士フォー": "avg_npc_120",
-  "チェン": [
-    "char_010_chen_summer",
-    "char_010_chen_1",
-    "avg_npc_196_1",
-    "avg_1013_spchen_1",
-    "avg_npc_662_1",
-    "avg_npc_790_1",
-    "char_136_hsguma",
-    "avg_npc_086"
-  ],
   "エルネスト": [
     "char_010_chen_summer",
     "avg_486_espumo_1"
@@ -2272,12 +2330,6 @@
     "avg_npc_102",
     "avg_npc_102_2"
   ],
-  "シャイニング": [
-    "char_147_shining_1",
-    "char_179_cgbird_1",
-    "avgnew_147_shining_1",
-    "avg_147_shining_1"
-  ],
   "ナイチンゲール": [
     "char_179_cgbird_1",
     "avg_179_cgbird_1"
@@ -2426,7 +2478,10 @@
   "興奮する村人": "avg_npc_140",
   "山を掘る者": "avg_npc_140",
   "通りすがりの村人A": "avg_npc_140",
-  "慌てる村人": "avg_npc_140",
+  "慌てる村人": [
+    "avg_npc_140",
+    "avg_npc_460_1"
+  ],
   "町民": [
     "avg_npc_140",
     "avg_npc_141",
@@ -3273,21 +3328,8 @@
     "char_340_shwaz_2"
   ],
   "レンジャー": "char_503_rang",
-  "フランカ": [
-    "avg_npc_155_1",
-    "avg_106_franka_1",
-    "char_107_liskam_1",
-    "char_106_franka_1",
-    "char_208_melan_1",
-    "char_1500_skulsr"
-  ],
   "リスカム＆フランカ": "avg_npc_155_1",
   "醜い変異生物": "avg_npc_155_1",
-  "リスカム": [
-    "avg_npc_156_1",
-    "avg_107_liskam_1",
-    "char_107_liskam_1"
-  ],
   "ドラッジ": "avg_npc_158_1",
   "Ash": [
     "avg_npc_158_1",
@@ -3419,13 +3461,6 @@
   "王庭軍戦士B": "avg_npc_419_1",
   "サルカズ下級士官": "avg_npc_419_1",
   "ウィシャデル": "avg_1035_wisdel_1",
-  "W": [
-    "avg_1035_wisdel_1",
-    "avg_npc_046",
-    "char_1504_cqbw",
-    "avg_npc_412_1",
-    "avg_npc_1343_1"
-  ],
   "抜け目ない商人": "avg_npc_1455_1",
   "一人暮らしの老人": "avg_npc_1455_1",
   "年長の女性": "avg_npc_1455_1",
@@ -3473,6 +3508,7 @@
   ],
   "修道院住民": [
     "avg_npc_934_1",
+    "avg_npc_189",
     "avg_npc_940_1"
   ],
   "心配するサルカズ住民": "avg_npc_934_1",
@@ -3502,7 +3538,15 @@
   ],
   "奇妙な老人": "avg_npc_420_1",
   "「赤髪」": "avg_npc_450_1",
+  "男性町民": "avg_npc_459_1",
+  "慎重な町民": "avg_npc_459_1",
+  "困惑する町民": "avg_npc_459_1",
+  "用心深い町民": "avg_npc_459_1",
+  "扉を塞ぐ町民": "avg_npc_459_1",
+  "追ってきた町民": "avg_npc_459_1",
+  "蔑む通行人": "avg_npc_459_1",
   "度胸のある町民": "avg_npc_459_1",
+  "勇敢な村人": "avg_npc_459_1",
   "不気味な深海教徒": "avg_npc_453_1",
   "悲しげな深海教徒": "avg_npc_453_1",
   "緊張気味の深海教徒": "avg_npc_453_1",
@@ -3510,7 +3554,13 @@
   "火傷を負った深海教徒": "avg_npc_453_1",
   "拷問の任を負う深海教徒": "avg_npc_453_1",
   "逆上する殺し屋": "avg_npc_453_1",
+  "慌てる町民": "avg_npc_460_1",
+  "慌てふためく町民": "avg_npc_460_1",
+  "戸惑う町民": "avg_npc_460_1",
+  "忙しそうな町民": "avg_npc_460_1",
+  "裁判所事務員": "avg_npc_460_1",
   "心配する町民": "avg_npc_460_1",
+  "若い宣教師": "avg_npc_460_1",
   "フェリペ": "avg_npc_460_1",
   "瀕死の恐魚": "avg_npc_457_1",
   "うごめく恐魚": "avg_npc_457_1",
@@ -3549,6 +3599,12 @@
   "グレイディーア": "avg_474_gladiia_1",
   "スペクター/アルフォンソ船長": "avg_1023_ghost2_1",
   "スペクター/スカジ": "avg_1023_ghost2_1",
+  "逃げ惑う町民": "avg_npc_462_1",
+  "警戒心の薄い町民": "avg_npc_462_1",
+  "手伝う町民": "avg_npc_462_1",
+  "積極的な町民": "avg_npc_462_1",
+  "友好的な村人": "avg_npc_462_1",
+  "村人たち": "avg_npc_462_1",
   "親切な女性": "avg_npc_462_1",
   "Mon3tr": [
     "npc_10002",
@@ -3618,10 +3674,26 @@
   "パッセンジャー": "char_472_pasngr_n_1",
   "ホセ": "avg_npc_181",
   "老いた乞食": "avg_npc_181",
+  "男性住民": [
+    "avg_npc_178",
+    "avg_npc_187"
+  ],
+  "別の男性住民": "avg_npc_178",
+  "男性住民A": "avg_npc_178",
+  "冷たい通行人": "avg_npc_178",
+  "「イベリア人」": "avg_npc_178",
   "画廊のオーナー": "avg_npc_178",
   "好奇心旺盛な客": "avg_npc_178",
   "神経質な村人": "avg_npc_178",
   "懐疑的な村人": "avg_npc_178",
+  "男性住民B": "avg_npc_187",
+  "うろたえる住民": "avg_npc_187",
+  "修道院の男性住民": "avg_npc_187",
+  "まじめな町民": "avg_npc_187",
+  "ふらつく老人": "avg_npc_187",
+  "焦る町民": "avg_npc_187",
+  "飢えた町民": "avg_npc_187",
+  "傷ついた町民": "avg_npc_187",
   "年配の村人": "avg_npc_187",
   "女性住民": "avg_npc_180",
   "アニタ": "avg_npc_180",
@@ -3634,6 +3706,9 @@
     "avg_npc_188",
     "avg_npc_416_1"
   ],
+  "男性住民D": "avg_npc_189",
+  "悲しむ町民": "avg_npc_189",
+  "慎み深い町民": "avg_npc_189",
   "警戒心の強い客": "avg_npc_189",
   "怪物A": "avg_npc_185",
   "怪物B": "avg_npc_185",
@@ -4396,10 +4471,6 @@
     "avg_npc_1718_1"
   ],
   "プリースティス？": "avg_npc_083",
-  "Ace": [
-    "char_014_riope",
-    "avg_npc_1309_1"
-  ],
   "Scout": [
     "char_014_riope",
     "avg_npc_026",
@@ -5621,7 +5692,6 @@
   "セリス夫人": "avg_npc_213",
   "マンドラゴラ": "avg_npc_233_1",
   "重傷感染者": "avg_npc_232",
-  "アーミヤ？": "avg_npc_394_1",
   "邪悪なブラッドブルード": "avg_171_bldsk_1",
   "聴罪師直属衛兵": "avg_npc_425_1",
   "聴罪師直属衛兵？": "avg_npc_425_1",
