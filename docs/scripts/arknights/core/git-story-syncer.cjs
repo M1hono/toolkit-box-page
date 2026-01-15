@@ -23,7 +23,7 @@ async function cloneStoryDirsOnly(repoUrl, localPath, storyPaths) {
     const repoExists = fs.existsSync(path.join(localPath, '.git'));
     
     if (repoExists) {
-        console.log(`🔄 Updating existing sparse repository: ${path.basename(localPath)}`);
+        console.log(`Updating existing sparse repository: ${path.basename(localPath)}`);
         try {
             execSync('git pull --rebase', { 
                 cwd: localPath, 
@@ -32,12 +32,12 @@ async function cloneStoryDirsOnly(repoUrl, localPath, storyPaths) {
             });
             return true;
         } catch (error) {
-            console.warn(`⚠️  Pull failed, will re-clone: ${error.message}`);
+            console.warn(`WARNING: Pull failed, will re-clone: ${error.message}`);
             deleteDir(localPath);
         }
     }
     
-    console.log(`📥 Cloning repository with sparse checkout (story dirs only): ${repoUrl}`);
+    console.log(`Cloning repository with sparse checkout (story dirs only): ${repoUrl}`);
     ensureDir(path.dirname(localPath));
     
     try {
@@ -57,7 +57,7 @@ async function cloneStoryDirsOnly(repoUrl, localPath, storyPaths) {
         ensureDir(path.dirname(sparseCheckoutFile));
         fs.writeFileSync(sparseCheckoutFile, storyPaths.join('\n'));
         
-        console.log(`   📂 Sparse checkout paths: ${storyPaths.join(', ')}`);
+        console.log(`   Sparse checkout paths: ${storyPaths.join(', ')}`);
         
         execSync('git pull --depth 1 origin master', { 
             cwd: localPath, 
@@ -65,11 +65,11 @@ async function cloneStoryDirsOnly(repoUrl, localPath, storyPaths) {
             timeout: PROJECT_CONFIG.GIT_CONFIG.SPARSE_CHECKOUT_TIMEOUT
         });
         
-        console.log(`✅ Sparse checkout complete`);
+        console.log(`Sparse checkout complete`);
         return true;
         
     } catch (error) {
-        console.error(`❌ Sparse checkout failed: ${error.message}`);
+        console.error(`ERROR: Sparse checkout failed: ${error.message}`);
         deleteDir(localPath);
         return false;
     }
@@ -86,35 +86,35 @@ async function syncLanguageStories(langCode, dryRun = false, repoExists = false)
     const storyPath = repoConfig.storyPaths[langCode];
     
     if (!storyPath) {
-        console.error(`❌ Unsupported language: ${langCode}`);
+        console.error(`ERROR: Unsupported language: ${langCode}`);
         return false;
     }
     
     const sourceStoryPath = path.join(ARKNIGHTS_REPO_PATH, storyPath);
     const targetStoryPath = path.join(PROJECT_CONFIG.getDataPath(langCode, 'arknights'), 'story');
     
-    console.log(`\n🌐 Syncing ${langCode} stories via git...`);
+    console.log(`\nSyncing ${langCode} stories via git...`);
     
     if (dryRun) {
-        console.log(`📋 [DRY RUN] Would use repo at ${ARKNIGHTS_REPO_PATH}`);
-        console.log(`📋 [DRY RUN] Would copy from ${storyPath}`);
-        console.log(`📋 [DRY RUN] Would sync to ${targetStoryPath}`);
+        console.log(`[DRY RUN] Would use repo at ${ARKNIGHTS_REPO_PATH}`);
+        console.log(`[DRY RUN] Would copy from ${storyPath}`);
+        console.log(`[DRY RUN] Would sync to ${targetStoryPath}`);
         return true;
     }
     
     if (!repoExists) {
-        console.error(`❌ Repository not cloned yet for ${langCode}`);
+        console.error(`ERROR: Repository not cloned yet for ${langCode}`);
         return false;
     }
     
     if (!fs.existsSync(sourceStoryPath)) {
-        console.error(`❌ Story directory not found: ${sourceStoryPath}`);
+        console.error(`ERROR: Story directory not found: ${sourceStoryPath}`);
         return false;
     }
     
     const beforeCount = countStoryFiles(targetStoryPath);
     
-    console.log(`📂 Extracting story files from ${storyPath}...`);
+    console.log(`Extracting story files from ${storyPath}...`);
     const success = await extractStoryFiles(langCode, sourceStoryPath, targetStoryPath);
     
     if (!success) {
@@ -123,7 +123,7 @@ async function syncLanguageStories(langCode, dryRun = false, repoExists = false)
     
     const afterCount = countStoryFiles(targetStoryPath);
     
-    console.log(`✅ ${langCode} stories synced: ${afterCount} files (was ${beforeCount})`);
+    console.log(`${langCode} stories synced: ${afterCount} files (was ${beforeCount})`);
     
     return true;
 }
@@ -137,10 +137,10 @@ async function syncAllStories(options = {}) {
     const { dryRun = false, cleanup = true } = options;
     const startTime = Date.now();
     
-    console.log('🚀 Starting git-based story synchronization...');
+    console.log('Starting git-based story synchronization...');
     
     if (dryRun) {
-        console.log('🔍 Running in dry-run mode (preview only)');
+        console.log('Running in dry-run mode (preview only)');
     }
     
     const supportedLanguages = PROJECT_CONFIG.GAMES.arknights.supported_langs;
@@ -155,11 +155,11 @@ async function syncAllStories(options = {}) {
             const repoConfig = PROJECT_CONFIG.REPOSITORIES.arknights;
             const storyPaths = Object.values(repoConfig.storyPaths);
             
-            console.log(`📥 Sparse checkout repository (story dirs only): ${repoConfig.url}`);
+            console.log(`Sparse checkout repository (story dirs only): ${repoConfig.url}`);
             repoCloned = await cloneStoryDirsOnly(repoConfig.url, ARKNIGHTS_REPO_PATH, storyPaths);
             
             if (!repoCloned) {
-                console.error('❌ Failed to sparse checkout repository, aborting...');
+                console.error('ERROR: Failed to sparse checkout repository, aborting...');
                 return Object.fromEntries(supportedLanguages.map(lang => [lang, false]));
             }
         }
@@ -171,13 +171,13 @@ async function syncAllStories(options = {}) {
         const totalTime = Date.now() - startTime;
         const successCount = Object.values(results).filter(Boolean).length;
         
-        console.log('\n🎉 Git-based story sync complete!');
-        console.log(`⏱️  Total time: ${(totalTime / 1000).toFixed(1)}s`);
-        console.log(`📊 Success: ${successCount}/${supportedLanguages.length} languages`);
+        console.log('\nGit-based story sync complete!');
+        console.log(`Total time: ${(totalTime / 1000).toFixed(1)}s`);
+        console.log(`Success: ${successCount}/${supportedLanguages.length} languages`);
         
     } finally {
         if (cleanup && !dryRun) {
-            console.log('🧹 Cleaning up temporary repositories...');
+            console.log('Cleaning up temporary repositories...');
             deleteDir(TEMP_DIR);
         }
     }

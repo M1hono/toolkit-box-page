@@ -54,7 +54,7 @@ function consolidateResults(results, langCode) {
     saveLanguageNames(langCode, langNames);
     saveScanState(scanState);
     
-    console.log(`✅ Consolidation complete for ${langCode}`);
+    console.log(`Consolidation complete for ${langCode}`);
     console.log(`   Global: ${Object.keys(globalChars).length} total (${newChars} new)`);
     console.log(`   Names: ${Object.keys(langNames).length} total (${updatedNames} updated)`);
 }

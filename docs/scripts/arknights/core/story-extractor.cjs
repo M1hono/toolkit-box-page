@@ -16,7 +16,7 @@ const PROJECT_CONFIG = require('../../project-config.cjs');
  */
 async function extractStoryFiles(langCode, sourceStoryDir, targetStoryDir) {
     if (!fs.existsSync(sourceStoryDir)) {
-        console.error(`❌ Source story directory not found: ${sourceStoryDir}`);
+        console.error(`ERROR: Source story directory not found: ${sourceStoryDir}`);
         return false;
     }
 
@@ -34,11 +34,11 @@ async function extractStoryFiles(langCode, sourceStoryDir, targetStoryDir) {
             fs.copyFileSync(sourcePath, targetPath);
             successCount++;
         } catch (e) {
-            console.error(`❌ Failed to extract ${storyFile}: ${e.message}`);
+            console.error(`ERROR: Failed to extract ${storyFile}: ${e.message}`);
         }
     }
 
-    console.log(`✅ Extracted ${successCount}/${storyFiles.length} story files for ${langCode}`);
+    console.log(`Extracted ${successCount}/${storyFiles.length} story files for ${langCode}`);
     return successCount > 0;
 }
 

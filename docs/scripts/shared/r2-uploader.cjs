@@ -122,7 +122,7 @@ async function convertToWebP(inputPath, outputPath) {
             .toFile(outputPath);
         return true;
     } catch (error) {
-        console.warn(`⚠️  WebP conversion failed for ${inputPath}:`, error.message);
+        console.warn(`WARNING: WebP conversion failed for ${inputPath}:`, error.message);
         return false;
     }
 }
@@ -163,7 +163,7 @@ async function uploadToR2(client, filePath, key) {
         }));
         return true;
     } catch (error) {
-        console.error(`❌ Upload failed for ${key}:`, error.message);
+        console.error(`ERROR: Upload failed for ${key}:`, error.message);
         return false;
     }
 }
@@ -193,17 +193,23 @@ async function processBatch(characterBatch) {
             
             const r2Key = R2_CONFIG.ENABLE_WEBP_CONVERSION ? `${variant}.webp` : `${variant}.png`;
             
+            processed++;
+            
             if (uploadedFiles[r2Key]) {
                 skipped++;
+                if (processed % 10 === 0) {
+                    console.log(`Progress: ${processed} processed, ${uploaded} uploaded, ${skipped} skipped`);
+                }
                 continue;
             }
             
-            console.log(`📥 Processing ${variant}...`);
+            console.log(`Processing ${variant}...`);
             
             if (!fs.existsSync(cacheFile)) {
                 const downloadSuccess = await downloadImage(imageUrl, cacheFile);
                 if (!downloadSuccess) {
                     failures.downloadFailures.push({ url: imageUrl, timestamp: Date.now() });
+                    console.warn(`WARNING: Failed to download ${variant}`);
                     continue;
                 }
             }
@@ -226,6 +232,7 @@ async function processBatch(characterBatch) {
                         webp: R2_CONFIG.ENABLE_WEBP_CONVERSION
                     };
                     uploaded++;
+                    console.log(`Uploaded ${variant} (${uploaded} total)`);
                 } else {
                     failures.uploadFailures.push({ key: r2Key, timestamp: Date.now() });
                 }
@@ -243,8 +250,6 @@ async function processBatch(characterBatch) {
                 if (fs.existsSync(cacheFile)) fs.unlinkSync(cacheFile);
                 if (fs.existsSync(webpFile)) fs.unlinkSync(webpFile);
             }
-            
-            processed++;
             
             if (processed % 10 === 0) {
                 saveUploadedFiles(uploadedFiles);

@@ -11,22 +11,22 @@ const { parseStory } = require('./core/story-parser.cjs');
 const { loadGlobalCharacters, loadLanguageNames, saveLanguageNames } = require('./api/characters-api.cjs');
 
 async function updateNamesForLanguage(langCode) {
-    console.log(`\n🔄 Updating names for ${langCode}...`);
+    console.log(`\nUpdating names for ${langCode}...`);
     
     const globalChars = loadGlobalCharacters();
     const validCharIds = new Set(Object.keys(globalChars));
     
-    console.log(`📊 Found ${validCharIds.size} valid character IDs in global characters.json`);
+    console.log(`Found ${validCharIds.size} valid character IDs in global characters.json`);
     
     const storyDir = getTargetStoryDir(langCode);
     const storyFiles = getAllStoryFilesFromDir(storyDir);
     
     if (storyFiles.length === 0) {
-        console.warn(`⚠️  No story files found for ${langCode}`);
+        console.warn(`WARNING: No story files found for ${langCode}`);
         return;
     }
     
-    console.log(`📖 Parsing ${storyFiles.length} story files...`);
+    console.log(`Parsing ${storyFiles.length} story files...`);
     
     const characterNames = {};
     
@@ -71,7 +71,7 @@ async function updateNamesForLanguage(langCode) {
         }
     }
     
-    console.log(`✅ Extracted names for ${Object.keys(finalNames).length} characters (updated ${Object.keys(characterNames).length}, kept ${Object.keys(finalNames).length - Object.keys(characterNames).length} existing)`);
+    console.log(`Extracted names for ${Object.keys(finalNames).length} characters (updated ${Object.keys(characterNames).length}, kept ${Object.keys(finalNames).length - Object.keys(characterNames).length} existing)`);
     
     saveLanguageNames(langCode, finalNames);
 }
@@ -83,7 +83,7 @@ async function main() {
         await updateNamesForLanguage(lang);
     }
     
-    console.log('\n✅ All names.json files updated successfully!');
+    console.log('\nAll names.json files updated successfully!');
 }
 
 main().catch(console.error);

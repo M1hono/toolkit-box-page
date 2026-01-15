@@ -33,7 +33,7 @@ async function run() {
                 }
             }
         } catch (e) {
-            console.error(`❌ Worker failed to parse ${storyFile}: ${e.message}`);
+            console.error(`ERROR: Worker failed to parse ${storyFile}: ${e.message}`);
         }
     }
 

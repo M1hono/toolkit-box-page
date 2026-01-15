@@ -22,7 +22,7 @@ function sparseCheckoutStory(langCode) {
     const targetDir = path.resolve(langPath, 'story_repo');
     const finalDir = path.resolve(langPath, 'story');
 
-    console.log(`📡 Initializing sparse-checkout for ${langCode} from ${repoUrl}`);
+    console.log(`Initializing sparse-checkout for ${langCode} from ${repoUrl}`);
     
     ensureDir(path.dirname(targetDir));
     if (fs.existsSync(targetDir)) fs.rmSync(targetDir, { recursive: true, force: true });
@@ -36,7 +36,7 @@ function sparseCheckoutStory(langCode) {
         fs.writeFileSync('.git/info/sparse-checkout', pathFilter);
         
         execSync('git checkout master');
-        console.log(`✅ Identification baseline synchronized for ${langCode}`);
+        console.log(`Identification baseline synchronized for ${langCode}`);
         
         const sourcePath = path.resolve(targetDir, pathFilter);
         if (fs.existsSync(sourcePath)) {
@@ -47,7 +47,7 @@ function sparseCheckoutStory(langCode) {
         process.chdir(__dirname); // Restore context
         fs.rmSync(targetDir, { recursive: true, force: true });
     } catch (e) {
-        console.error(`❌ Synchronization session failed for ${langCode}: ${e.message}`);
+        console.error(`ERROR: Synchronization session failed for ${langCode}: ${e.message}`);
     }
 }
 
