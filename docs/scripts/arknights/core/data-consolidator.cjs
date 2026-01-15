@@ -15,65 +15,94 @@ const {
 } = require('../api/characters-api.cjs');
 const { loadScanState, saveScanState, updateCharacterScanStats } = require('../api/scan-stats-api.cjs');
 const { getBaseCharacterId } = require('./story-parser.cjs');
+const fs = require('fs');
+const path = require('path');
+
+/**
+ * Load exclude rules for search index
+ */
+function loadExcludeRules(langCode) {
+    const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja' };
+    const configLang = langMap[langCode] || langCode;
+    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`);
+    return fs.existsSync(excludePath) ? JSON.parse(fs.readFileSync(excludePath, 'utf8')) : {};
+}
+
+/**
+ * Load combine rules (global)
+ */
+function loadCombineRules() {
+    const combinePath = path.resolve(__dirname, '../../.vitepress/config/arknights-combine.json');
+    return fs.existsSync(combinePath) ? JSON.parse(fs.readFileSync(combinePath, 'utf8')) : {};
+}
 
 function consolidateResults(results, langCode) {
     const globalChars = loadGlobalCharacters();
     const langNames = loadLanguageNames(langCode);
     const langStorys = loadLanguageStorys(langCode);
     const scanState = loadScanState();
+    const combineRules = loadCombineRules();
 
     const isMasterSource = langCode === 'zh_CN';
     let newChars = 0;
     let updatedNames = 0;
 
     for (const [baseId, data] of results) {
+        // Apply combine rule
+        const targetId = combineRules[baseId] || baseId;
+        
         // Update global character metadata
-        if (isMasterSource || !globalChars[baseId]) {
-            if (!globalChars[baseId]) {
-                globalChars[baseId] = {
-                    charId: baseId,
-                    validVariants: data.validVariants || [`${baseId}#1$1`],
-                    charType: baseId.startsWith('char_') ? 'operator' : 'npc',
+        if (isMasterSource || !globalChars[targetId]) {
+            if (!globalChars[targetId]) {
+                globalChars[targetId] = {
+                    charId: targetId,
+                    validVariants: data.validVariants || [`${targetId}#1$1`],
+                    charType: targetId.startsWith('char_') ? 'operator' : 'npc',
                     dialogCount: 0 
                 };
                 newChars++;
             } else {
                 if (data.validVariants && data.validVariants.length > 0) {
-                    const existingVariants = new Set(globalChars[baseId].validVariants);
+                    const existingVariants = new Set(globalChars[targetId].validVariants);
                     data.validVariants.forEach(v => existingVariants.add(v));
-                    globalChars[baseId].validVariants = Array.from(existingVariants).sort();
+                    globalChars[targetId].validVariants = Array.from(existingVariants).sort();
                 }
             }
         }
 
         // Update scan stats if this is the master source
         if (isMasterSource) {
-            updateCharacterScanStats(baseId, scanState, globalChars[baseId].validVariants.length);
+            updateCharacterScanStats(targetId, scanState, globalChars[targetId].validVariants.length);
         }
 
-        // Update language-specific names
-        if (!langNames[baseId] || (data.speakerNames && data.speakerNames.length > 0)) {
-            const existingNames = langNames[baseId]?.speakerNames || [];
+        // Update language-specific names (use targetId after combine)
+        if (!langNames[targetId] || (data.speakerNames && data.speakerNames.length > 0)) {
+            const existingNames = langNames[targetId]?.speakerNames || [];
             const newNames = data.speakerNames || [];
             const mergedNames = Array.from(new Set([...existingNames, ...newNames])).filter(Boolean);
             
-            langNames[baseId] = {
+            langNames[targetId] = {
                 speakerNames: mergedNames,
                 searchNames: mergedNames,
-                displayName: mergedNames[0] || langNames[baseId]?.displayName || baseId
+                displayName: mergedNames[0] || langNames[targetId]?.displayName || targetId
             };
             updatedNames++;
         }
 
         // Update language-specific story mappings
         if (data.storyFiles && data.storyFiles.length > 0) {
-            const existingStorys = langStorys[baseId] || [];
-            langStorys[baseId] = Array.from(new Set([...existingStorys, ...data.storyFiles])).sort();
+            // Apply combine rules to story mappings
+            const targetId = combineRules[baseId] || baseId;
+            const existingStorys = langStorys[targetId] || [];
+            langStorys[targetId] = Array.from(new Set([...existingStorys, ...data.storyFiles])).sort();
         }
     }
 
     // Generate search index: name -> charId (or array of charIds if duplicate names exist)
+    const excludeRules = loadExcludeRules(langCode);
+    const combineRules = loadCombineRules();
     const searchIndex = {};
+    
     for (const [id, data] of Object.entries(langNames)) {
         const names = new Set();
         if (data.displayName) names.add(data.displayName);
@@ -83,15 +112,22 @@ function consolidateResults(results, langCode) {
         for (const name of names) {
             if (!name || name.trim() === "") continue;
             
+            // Check exclude rules BEFORE applying combine
+            const excludeList = excludeRules[name] || [];
+            if (excludeList.includes(id)) {
+                continue;
+            }
+            
+            // Apply combine rules
+            const actualId = combineRules[id] || id;
+            
             // Support multiple characters with the same name
             if (!searchIndex[name]) {
-                searchIndex[name] = id;
+                searchIndex[name] = actualId;
             } else if (typeof searchIndex[name] === 'string') {
-                // Convert single ID to array when duplicate found
-                searchIndex[name] = [searchIndex[name], id];
+                searchIndex[name] = [searchIndex[name], actualId];
             } else if (Array.isArray(searchIndex[name])) {
-                // Add to existing array
-                searchIndex[name].push(id);
+                searchIndex[name].push(actualId);
             }
         }
     }

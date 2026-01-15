@@ -21,7 +21,8 @@ export const zh_CN = <DefaultTheme.Config>{
                 text: "游戏工具",
                 items: [
                     { text: "FGO 角色提取", link: "/zh-CN/Fgo/CharaFinder" },
-                    { text: "明日方舟角色", link: "/zh-CN/Arknights/CharaFinder" }
+                    { text: "明日方舟角色", link: "/zh-CN/Arknights/CharaFinder" },
+                    { text: "明日方舟剧情", link: "/zh-CN/Arknights/StoryTracker" }
                 ]
             },
             {

@@ -21,7 +21,8 @@ export const en_US = <DefaultTheme.Config>{
                 text: "Game Tools",
                 items: [
                     { text: "FGO Extractor", link: "/en-US/Fgo/CharaFinder" },
-                    { text: "Arknights Tool", link: "/en-US/Arknights/CharaFinder" }
+                    { text: "Arknights Tool", link: "/en-US/Arknights/CharaFinder" },
+                    { text: "Arknights Story Tracker", link: "/en-US/Arknights/StoryTracker" }
                 ]
             },
             {

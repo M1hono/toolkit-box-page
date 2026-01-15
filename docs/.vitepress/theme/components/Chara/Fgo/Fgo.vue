@@ -90,6 +90,7 @@
 
 <script setup lang="ts">
     import { ref, computed, onMounted, nextTick } from "vue";
+    import { useData, useRoute } from "vitepress";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import { useFgoImageLoader } from "../../../../utils/chara/fgo/core/useFgoImageLoader";
     import { useFgoDiffProcessor } from "../../../../utils/chara/fgo/core/useFgoDiffProcessor";
@@ -129,6 +130,9 @@
         detectFace: "Detect Face",
         onlineOnly: "Online Only",
     });
+
+    const { lang } = useData();
+    const route = useRoute();
 
     const {
         characterData,
@@ -189,7 +193,7 @@
         () => Object.keys(allCharacterImages.value).length > 0
     );
     const hasDiffs = computed(() => diffImages.value.length > 0);
-    
+
     const canSave = computed(() => {
         return !!(
             selectedCharacter.value &&
@@ -197,7 +201,7 @@
             hasDiffs.value
         );
     });
-    
+
     const canBatch = computed(() => {
         return !!(
             selectedCharacter.value &&
@@ -255,6 +259,14 @@
         selectedCharacter.value = character;
         isLocalImage.value = false;
         searchResults.value = [];
+
+        if (typeof window !== "undefined") {
+            window.history.pushState(
+                {},
+                "",
+                `${route.path}?char=${character.id}`
+            );
+        }
 
         const imageUrls = extractImageUrls(character);
         allCharacterImages.value = imageUrls;
@@ -481,10 +493,40 @@
         await fetchCharacterData();
         await loadOpenCV();
         setTimeout(() => initFaceDetector(), 1000);
+
+        const charParam = new URLSearchParams(window.location.search).get(
+            "char"
+        );
+        if (charParam && characterData.value.length > 0) {
+            const charId = Number(charParam);
+            const char = characterData.value.find((c) => c.id === charId);
+            if (char) {
+                const result: SearchResult = {
+                    id: char.id,
+                    name: getCharacterName(char),
+                    jpName: char.name,
+                    faceId:
+                        Number(
+                            Object.keys(
+                                char.imageData?.faceCoordinates || {}
+                            )[0]
+                        ) || charId,
+                };
+                await selectCharacter(result);
+            }
+        }
     });
 </script>
 
 <style scoped>
+    .fgo-root :deep(.v-card-title),
+    .fgo-root :deep(h1),
+    .fgo-root :deep(h2),
+    .fgo-root :deep(h3) {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
     .fgo-root {
         min-height: 100vh;
         display: flex;

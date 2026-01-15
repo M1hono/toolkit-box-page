@@ -29,7 +29,7 @@ export const projectConfig: ProjectConfig = {
      * Favicon configuration
      * Can be a local file path (relative to base) or external URL
      */
-    favicon: "logo.png", // or "favicon.ico" or "https://example.com/icon.svg"
+    favicon: "https://tool.mihono.cn/favicon.ico", // or "favicon.ico" or "https://example.com/icon.svg"
 
     /**
      * Logo configuration

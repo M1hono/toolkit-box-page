@@ -314,21 +314,6 @@
     "avg_1014_nearl2_1",
     "char_148_nearl_ns_1"
   ],
-  "阿米娅": [
-    "char_148_nearl_1",
-    "char_002_amiya_1",
-    "char_017_homura_3",
-    "char_010_chen_1",
-    "char_147_shining_1",
-    "avg_1037_amiya3_1",
-    "avg_npc_1295_1",
-    "char_002_amiya_summer_2",
-    "char_193_frostl_1",
-    "avg_npc_051",
-    "avg_npc_087",
-    "avg_npc_394_1",
-    "$ill_amiya_normal"
-  ],
   "凯尔希": [
     "char_003_kalts_1",
     "char_003_kaltsn07_1",
@@ -551,28 +536,37 @@
     "avg_185_frncat_1"
   ],
   "激动的歌迷": "char_185_frncat_1",
+  "阿米娅": [
+    "char_002_amiya_2",
+    "avg_1037_amiya3_1",
+    "avg_npc_1295_1",
+    "char_002_amiya_summer_2",
+    "avg_npc_051",
+    "avg_npc_087",
+    "avg_npc_394_1"
+  ],
   "闪灵": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "char_147_shining_1",
     "char_179_cgbird_1",
     "avgnew_147_shining_1",
     "avg_147_shining_1"
   ],
   "阿米娅？": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "avg_npc_394_1"
   ],
   "杜宾": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "char_130_doberm_ex"
   ],
   "Ace": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "char_014_riope",
     "avg_npc_1309_1"
   ],
   "陈": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "char_010_chen_summer",
     "char_010_chen_1",
     "avg_npc_196_1",
@@ -583,7 +577,7 @@
     "avg_npc_086"
   ],
   "芙兰卡": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "avg_npc_155_1",
     "avg_106_franka_1",
     "char_107_liskam_1",
@@ -592,13 +586,13 @@
     "char_1500_skulsr"
   ],
   "雷蛇": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "avg_npc_156_1",
     "avg_107_liskam_1",
     "char_107_liskam_1"
   ],
   "W": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "avg_1035_wisdel_1",
     "avg_npc_046",
     "char_1504_cqbw",
@@ -606,7 +600,7 @@
     "avg_npc_1343_1"
   ],
   "小女孩": [
-    "char_002_amiya_1",
+    "char_002_amiya_2",
     "avg_npc_045_nn_1",
     "avg_npc_004",
     "avg_npc_143",
@@ -614,7 +608,7 @@
     "avg_npc_992_1",
     "avg_npc_045"
   ],
-  "另一个少女的声音": "char_002_amiya_1",
+  "另一个少女的声音": "char_002_amiya_2",
   "调香师": [
     "char_181_flower_1",
     "avg_181_flower_1"

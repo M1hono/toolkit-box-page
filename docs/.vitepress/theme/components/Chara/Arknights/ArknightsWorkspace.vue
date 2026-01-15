@@ -37,6 +37,9 @@
                     <button class="btn btn-secondary" @click="$emit('batch')">
                         {{ t.batch }}
                     </button>
+                    <button class="btn btn-secondary" @click="$emit('go-stories')">
+                        {{ t.goStories }}
+                    </button>
                 </div>
             </div>
 
@@ -129,6 +132,7 @@ const { t } = useSafeI18n('arknights-workspace', {
     download: "Download Full",
     copy: "Copy Full",
     batch: "Batch",
+    goStories: "Stories",
     downloadCrop: "Download Crop",
     copyCrop: "Copy Crop",
     loading: "Loading...",
@@ -163,6 +167,7 @@ const emit = defineEmits<{
     'copy': [];
     'copy-crop': [];
     'batch': [];
+    'go-stories': [];
 }>();
 
 const canvasRef = ref<HTMLCanvasElement | null>(null);

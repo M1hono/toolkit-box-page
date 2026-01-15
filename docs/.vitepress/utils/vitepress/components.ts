@@ -17,6 +17,7 @@ import { YoutubeVideo, BilibiliVideo, PdfViewer } from "../../theme/components/m
 import { MNavLinks } from "../../theme/components/navigation";
 import { MnaGuidebookGenerator, RunescribingEditor, RitualGenerator } from "../../theme/components/AvalonWard";
 import Arknights from "../../theme/components/Chara/Arknights/Arknights.vue";
+import ArknightsStoryTracker from "../../theme/components/Chara/Arknights/ArknightsStoryTracker.vue";
 import Fgo from "../../theme/components/Chara/Fgo/Fgo.vue";
 import { JsonTranslator } from "../../theme/components/mc";
 import {
@@ -63,6 +64,7 @@ const components = {
     VChart,
     MnaGuidebookGenerator,
     Arknights,
+    ArknightsStoryTracker,
     RunescribingEditor,
     RitualGenerator,
     JsonTranslator,

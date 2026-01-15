@@ -93,6 +93,7 @@
                         @copy="handleCopyFull"
                         @copy-crop="handleCopyCrop"
                         @batch="showBatchDialog = true"
+                        @go-stories="goToStories"
                     />
 
                     <arknights-control-panel
@@ -131,7 +132,7 @@
 
 <script setup lang="ts">
     import { ref, computed, watch, onMounted, nextTick } from "vue";
-    import { useData } from "vitepress";
+    import { useData, useRoute } from "vitepress";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import { useArknightsImageLoader } from "../../../../utils/chara/arknights/core/useArknightsImageLoader";
     import { useArknightsCanvasOps } from "../../../../utils/chara/arknights/core/useArknightsCanvasOps";
@@ -163,6 +164,7 @@
     });
 
     const { lang } = useData();
+    const route = useRoute();
 
     const currentLangCode = computed(() => {
         console.log("Current VitePress lang.value:", lang.value);
@@ -278,6 +280,15 @@
         selectedCharacter.value = char;
         selectedCharacterId.value = char.charId;
         sidebarOpen.value = false;
+
+        if (typeof window !== "undefined") {
+            window.history.pushState(
+                {},
+                "",
+                `${route.path}?char=${char.charId}`
+            );
+        }
+
         if (char.validVariants?.length) {
             const sorted = [...char.validVariants].sort((a, b) => {
                 const matchA = a.match(/#(\d+)\$(\d+)$/);
@@ -481,42 +492,37 @@
         }
     }
 
+    function goToStories() {
+        if (!selectedCharacter.value) return;
+        const langPart = lang.value === 'root' ? '' : `/${lang.value}`;
+        const name = selectedCharacter.value.displayName;
+        const charId = selectedCharacter.value.charId;
+        const url = `${langPart}/Arknights/StoryTracker?char=${encodeURIComponent(name)}_${charId}`;
+        window.location.href = url;
+    }
+
     async function loadData() {
         try {
             isInitialLoading.value = true;
 
             const langCode = currentLangCode.value;
-            console.log(
-                "Loading data for language:",
-                lang.value,
-                "→",
-                langCode
-            );
 
             const [globalRes, namesRes] = await Promise.all([
                 fetch("/data/global/arknights/characters.json?t=" + Date.now()),
                 fetch(`/data/${langCode}/arknights/names.json?t=` + Date.now()),
             ]);
 
-            console.log(
-                "Names fetch URL:",
-                `/data/${langCode}/arknights/names.json`
-            );
-            console.log("Names response:", namesRes.status, namesRes.ok);
-
             const globalData = await globalRes.json();
             const namesData = await namesRes.json();
-
-            console.log("Sample name:", Object.values(namesData)[0]);
 
             allCharacters.value = Object.keys(globalData)
                 .map((id) => {
                     const normalizedId = id.toLowerCase();
                     const data = globalData[id];
-                    
+
                     if (data.validVariants) {
-                        data.validVariants = data.validVariants.map((v: string) => 
-                            v.toLowerCase()
+                        data.validVariants = data.validVariants.map(
+                            (v: string) => v.toLowerCase()
                         );
                     }
                     if (data.charId) {
@@ -525,19 +531,30 @@
 
                     return {
                         ...data,
-                        ...(namesData[id] || namesData[normalizedId] || {
-                            displayName: normalizedId,
-                            speakerNames: [],
-                            searchNames: [],
-                        }),
-                        charId: normalizedId
+                        ...(namesData[id] ||
+                            namesData[normalizedId] || {
+                                displayName: normalizedId,
+                                speakerNames: [],
+                                searchNames: [],
+                            }),
+                        charId: normalizedId,
                     };
                 })
                 .sort((a, b) => a.displayName.localeCompare(b.displayName));
 
-            console.log("Total characters loaded:", allCharacters.value.length);
+            const charParam = new URLSearchParams(window.location.search).get(
+                "char"
+            );
+            if (charParam && allCharacters.value.length > 0) {
+                const char = allCharacters.value.find(
+                    (c) => c.charId === charParam
+                );
+                if (char) {
+                    await selectCharacter(char);
+                }
+            }
         } catch (error) {
-            console.error("Data load error:", error);
+            // Silent error handling
         } finally {
             isInitialLoading.value = false;
         }
@@ -553,6 +570,14 @@
 </script>
 
 <style scoped>
+    .arknights-app :deep(.v-card-title),
+    .arknights-app :deep(h1),
+    .arknights-app :deep(h2),
+    .arknights-app :deep(h3) {
+        border-top: none !important;
+        border-bottom: none !important;
+    }
+
     .arknights-app {
         min-height: 100vh;
         background: var(--vp-c-bg);

@@ -17,6 +17,27 @@ const {
     loadLanguageStorys
 } = require('./api/characters-api.cjs');
 
+function loadExcludeRules(langCode) {
+    const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja' };
+    const configLang = langMap[langCode] || langCode;
+    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`);
+    if (fs.existsSync(excludePath)) {
+        console.log(`✅ Loaded exclude rules for ${langCode} from ${configLang}`);
+        return JSON.parse(fs.readFileSync(excludePath, 'utf8'));
+    }
+    console.log(`⚠️ No exclude rules found for ${langCode} at ${excludePath}`);
+    return {};
+}
+
+function loadCombineRules() {
+    const combinePath = path.resolve(__dirname, '../../.vitepress/config/arknights-combine.json');
+    if (fs.existsSync(combinePath)) {
+        console.log(`✅ Loaded combine rules`);
+        return JSON.parse(fs.readFileSync(combinePath, 'utf8'));
+    }
+    return {};
+}
+
 async function updateNamesForLanguage(langCode) {
     console.log(`\nUpdating names for ${langCode}...`);
     
@@ -56,11 +77,14 @@ async function updateNamesForLanguage(langCode) {
                         }
                         data.speakerNames.forEach(name => characterNames[charId].speakerNames.add(name));
                         
-                        // Also update story mappings
-                        if (data.storyFiles && data.storyFiles.length > 0) {
-                            const existing = characterStorys[charId] || [];
-                            characterStorys[charId] = Array.from(new Set([...existing, ...data.storyFiles])).sort();
-                        }
+                    // Also update story mappings
+                    if (data.storyFiles && data.storyFiles.length > 0) {
+                        // Apply combine rules
+                        const combineRules = loadCombineRules();
+                        const targetId = combineRules[charId] || charId;
+                        const existing = characterStorys[targetId] || [];
+                        characterStorys[targetId] = Array.from(new Set([...existing, ...data.storyFiles])).sort();
+                    }
                     }
                 }
             } catch (error) {
@@ -92,7 +116,13 @@ async function updateNamesForLanguage(langCode) {
     }
     
     // Generate search index from final names
+    const excludeRules = loadExcludeRules(langCode);
+    const combineRules = loadCombineRules();
     const searchIndex = {};
+    
+    let excludedCount = 0;
+    let combinedCount = 0;
+    
     for (const [id, data] of Object.entries(finalNames)) {
         const names = new Set();
         if (data.displayName) names.add(data.displayName);
@@ -102,18 +132,29 @@ async function updateNamesForLanguage(langCode) {
         for (const name of names) {
             if (!name || name.trim() === "") continue;
             
+            // Check exclude rules BEFORE applying combine
+            const excludeList = excludeRules[name] || [];
+            if (excludeList.includes(id)) {
+                excludedCount++;
+                continue;
+            }
+            
+            // Apply combine rules
+            const actualId = combineRules[id] || id;
+            if (combineRules[id]) combinedCount++;
+            
             // Support multiple characters with the same name
             if (!searchIndex[name]) {
-                searchIndex[name] = id;
+                searchIndex[name] = actualId;
             } else if (typeof searchIndex[name] === 'string') {
-                // Convert single ID to array when duplicate found
-                searchIndex[name] = [searchIndex[name], id];
+                searchIndex[name] = [searchIndex[name], actualId];
             } else if (Array.isArray(searchIndex[name])) {
-                // Add to existing array
-                searchIndex[name].push(id);
+                searchIndex[name].push(actualId);
             }
         }
     }
+    
+    console.log(`Applied rules: ${excludedCount} excluded, ${combinedCount} combined`);
     
     // Count duplicates in search index
     let duplicateCount = 0;

@@ -1,0 +1,12 @@
+{
+  "title": "ストーリートラッカー",
+  "searchPlaceholder": "キャラクター名を検索...",
+  "characterCount": "{count} キャラクター",
+  "characterVariant": "キャラクターバリアント",
+  "storyReader": "ストーリーリーダー",
+  "textReader": "テキスト",
+  "akgcc": "akgcc",
+  "storyAppearances": "ストーリー登場 ({count})",
+  "noCharacterSelected": "キャラクター未選択",
+  "searchPrompt": "キャラクターを検索"
+}

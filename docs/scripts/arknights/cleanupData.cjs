@@ -23,7 +23,8 @@ const MAPPINGS = {
 };
 
 const EXCLUDE_IDS = new Set([
-    "char_1012_skadi2_1"
+    "char_1012_skadi2_1",
+    "$ill_amiya_normal"
 ]);
 
 function normalizeId(id) {

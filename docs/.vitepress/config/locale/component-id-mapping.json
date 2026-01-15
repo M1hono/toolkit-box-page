@@ -39,6 +39,7 @@
         "arknights-controls": "Chara/Arknights/ArknightsControlPanel",
         "arknights-sidebar": "Chara/Arknights/ArknightsSidebar",
         "arknights-workspace": "Chara/Arknights/ArknightsWorkspace",
+        "arknights-story-tracker": "Chara/Arknights/ArknightsStoryTracker",
         "fgo-main": "Chara/Fgo/Fgo",
         "fgo-batch-dialog": "Chara/Fgo/FgoBatchDialog",
         "fgo-bottom-controls": "Chara/Fgo/FgoBottomControls",
