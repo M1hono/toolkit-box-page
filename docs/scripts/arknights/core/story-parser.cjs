@@ -21,7 +21,7 @@ function loadLangExcludeRules(langCode) {
     
     const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja' };
     const configLang = langMap[langCode] || langCode;
-    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`);
+    const excludePath = path.resolve(__dirname, `../../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`);
     
     if (fs.existsSync(excludePath)) {
         langExcludeCache[langCode] = JSON.parse(fs.readFileSync(excludePath, 'utf8'));
