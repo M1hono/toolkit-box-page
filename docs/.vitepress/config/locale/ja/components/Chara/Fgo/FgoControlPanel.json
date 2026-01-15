@@ -1,16 +1,16 @@
 {
-    "imageSelection": "画像選択",
-    "aspectRatio": "アスペクト比",
-    "manualSelection": "手動選択",
-    "width": "幅",
-    "height": "高さ",
-    "preview": "プレビュー",
     "actions": "操作",
-    "prevDiff": "前へ",
-    "nextDiff": "次へ",
-    "bgColor": "背景色",
-    "save": "選択範囲を保存",
+    "aspectRatio": "アスペクト比",
     "batch": "一括処理",
+    "bgColor": "背景色",
     "detectFace": "顔認識",
-    "onlineOnly": "オンラインのみ"
+    "height": "高さ",
+    "imageSelection": "画像選択",
+    "manualSelection": "手動選択",
+    "nextDiff": "次へ",
+    "onlineOnly": "オンラインのみ",
+    "prevDiff": "前へ",
+    "preview": "プレビュー",
+    "save": "選択範囲を保存",
+    "width": "幅"
 }

@@ -1,8 +1,8 @@
 {
-    "title": "Batch Download",
     "batchCrop": "Batch Crop",
     "batchCropDesc": "Download all variants with current selection",
     "batchFull": "Batch Full",
     "batchFullDesc": "Download all original variants",
-    "cancel": "Cancel"
+    "cancel": "Cancel",
+    "title": "Batch Download"
 }

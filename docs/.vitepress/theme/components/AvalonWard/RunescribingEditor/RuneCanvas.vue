@@ -172,7 +172,7 @@ Vertical Value: ${props.values.vValue}`;
         if (!ctx.value) return;
 
         let finalColor = color;
-        if (color === "#FFAA00") {
+        if (color === "#FFAA00" && typeof document !== "undefined") {
             finalColor =
                 getComputedStyle(document.documentElement)
                     .getPropertyValue("--highlight-color")
@@ -200,7 +200,7 @@ Vertical Value: ${props.values.vValue}`;
         if (!ctx.value) return;
 
         let finalColor = color;
-        if (color === "#FFAA00") {
+        if (color === "#FFAA00" && typeof document !== "undefined") {
             finalColor =
                 getComputedStyle(document.documentElement)
                     .getPropertyValue("--highlight-color")

@@ -1,0 +1,16 @@
+{
+    "addSection": "Add Section",
+    "clearForm": "Clear Form",
+    "editSection": "Edit Section",
+    "editingEntry": "Editing Entry",
+    "entryCategory": "Category",
+    "entryName": "Entry ID",
+    "fillFromSource": "Fill from Source",
+    "index": "Index",
+    "noEntrySelected": "No Entry Selected",
+    "noSections": "No sections added. Click \"Add Section\" to start.",
+    "saveEntry": "Save Entry",
+    "sections": "Sections",
+    "selectOrCreateEntry": "Select an entry from the list or create a new one to start editing.",
+    "tier": "Tier"
+}

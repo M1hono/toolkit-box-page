@@ -1,6 +1,7 @@
 {
-    "aspectRatio": "アスペクト比",
+    "height": "高さ",
+    "image": "Image",
+    "ratio": "Aspect Ratio",
     "selection": "選択範囲",
-    "width": "幅",
-    "height": "高さ"
+    "width": "幅"
 }

@@ -1,8 +1,8 @@
 {
-    "panelTitle": "Settings",
-    "aspectRatioTitle": "Aspect Ratio",
     "aspectRatioFree": "Free",
+    "aspectRatioTitle": "Aspect Ratio",
+    "heightLabel": "Height",
     "manualAdjustTitle": "Selection Area",
-    "widthLabel": "Width",
-    "heightLabel": "Height"
+    "panelTitle": "Settings",
+    "widthLabel": "Width"
 }

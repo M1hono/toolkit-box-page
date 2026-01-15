@@ -118,7 +118,7 @@ export default {
                 
                 watch(() => route.path, () => {
                     setupLanguageControl();
-                    if (inBrowser && window.busuanzi) {
+                    if (window.busuanzi) {
                         window.busuanzi.fetch();
                     }
                 });

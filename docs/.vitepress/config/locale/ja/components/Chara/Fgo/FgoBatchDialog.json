@@ -1,9 +1,9 @@
 {
-    "title": "一括ダウンロード",
-    "description": "全バリエーションのダウンロードタイプを選択",
     "batchCropped": "切り抜き選択",
     "batchCroppedDesc": "現在の選択範囲でダウンロード",
     "batchFull": "完全な画像",
     "batchFullDesc": "完全な差分画像をダウンロード",
-    "cancel": "キャンセル"
+    "cancel": "キャンセル",
+    "description": "全バリエーションのダウンロードタイプを選択",
+    "title": "一括ダウンロード"
 }

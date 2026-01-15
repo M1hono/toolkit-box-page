@@ -1,0 +1,8 @@
+{
+    "delete": "Delete",
+    "edit": "Edit",
+    "itemsPerPage": "Items per page",
+    "noEntries": "No matching entries found. Please import files or clear filters.",
+    "pageInfo": "Page {current} of {total}",
+    "translationEntries": "Translation Entries"
+}

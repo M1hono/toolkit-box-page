@@ -257,7 +257,10 @@ function drawSelection(ctx: CanvasRenderingContext2D) {
     const s = isSelecting.value || isResizing.value ? tempSelection.value : props.selection;
     if (s.width <= 0 || s.height <= 0) return;
 
-    const brandColor = getComputedStyle(document.documentElement).getPropertyValue('--vp-c-brand-1').trim() || '#409EFF';
+    let brandColor = '#409EFF';
+    if (typeof document !== 'undefined') {
+        brandColor = getComputedStyle(document.documentElement).getPropertyValue('--vp-c-brand-1').trim() || '#409EFF';
+    }
     
     ctx.strokeStyle = brandColor;
     ctx.lineWidth = 2;

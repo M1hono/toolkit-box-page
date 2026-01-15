@@ -11,9 +11,14 @@ declare global {
     }
 }
 
-const ColorThief = (window as any).ColorThief || class {
-    getColor() {return [255, 255, 255];}
-};
+function getColorThief() {
+    if (typeof window !== 'undefined' && (window as any).ColorThief) {
+        return new (window as any).ColorThief();
+    }
+    return {
+        getColor: () => [255, 255, 255]
+    };
+}
 
 export function useFgoDiffProcessor() {
     const diffImages = ref<HTMLCanvasElement[]>([]);
@@ -206,7 +211,7 @@ export function useFgoDiffProcessor() {
 
     function extractMainColor(image: HTMLImageElement) {
         try {
-            const colorThief = new ColorThief();
+            const colorThief = getColorThief();
             const dominantColor = colorThief.getColor(image);
             mainColor.value = {
                 r: dominantColor[0],

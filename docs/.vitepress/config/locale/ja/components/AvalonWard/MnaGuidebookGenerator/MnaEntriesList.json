@@ -1,0 +1,18 @@
+{
+    "category": "Category",
+    "createEntry": "Create Entry",
+    "createFirstEntry": "Create your first entry above.",
+    "delete": "Delete",
+    "edit": "Edit",
+    "entriesList": "Entries List",
+    "filterEntries": "Filter entries",
+    "itemsPerPage": "Items per page",
+    "newEntryId": "New Entry ID",
+    "newEntryPlaceholder": "Enter unique entry ID",
+    "noEntries": "No Entries",
+    "of": "of",
+    "sections": "Sections",
+    "showUntranslatedOnly": "Show untranslated only",
+    "tier": "Tier",
+    "totalEntries": "total entries"
+}

@@ -1,0 +1,13 @@
+{
+    "customCategories": "Custom Categories",
+    "newCategory": "New Category",
+    "newCategoryPlaceholder": "Enter category name",
+    "settings": "Settings",
+    "sourceFile": "Source File",
+    "sourceFileHint": "Original language (e.g., en_us.json)",
+    "targetFile": "Target File",
+    "targetFileHint": "Translation file (e.g., zh_cn.json)",
+    "totalEntries": "Total",
+    "translated": "Translated",
+    "untranslated": "Untranslated"
+}

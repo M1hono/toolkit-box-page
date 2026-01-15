@@ -1,0 +1,19 @@
+{
+    "autoUpdate": "Auto Update",
+    "autoUpdateSuccess": "Auto-updated entries from source",
+    "changedEntriesFound": "changed entries found",
+    "confirmClear": "Are you sure you want to clear all data?",
+    "confirmDelete": "Are you sure you want to delete this entry?",
+    "confirmDeleteEntry": "Are you sure you want to delete entry \"{entry}\"?",
+    "dataCleared": "All data cleared",
+    "downloadJson": "Download JSON",
+    "entriesUpdated": "entries updated",
+    "entryCreated": "Entry created successfully",
+    "exportSuccess": "File exported successfully",
+    "generateJson": "Generate JSON",
+    "importSourceSuccess": "Source file imported successfully",
+    "importTargetSuccess": "Target file imported successfully",
+    "newEntriesFound": "new entries found",
+    "pleaseEnterEntryId": "Please enter an entry ID",
+    "title": "MNA Guidebook Generator & Translator"
+}

@@ -1,0 +1,12 @@
+{
+    "beamColor": "Beam Color",
+    "connectBeam": "Connect Beam",
+    "createdItem": "Created Item",
+    "createdItemPlaceholder": "e.g. minecraft:diamond",
+    "displayIndexes": "Display Indexes",
+    "innerColor": "Inner Color",
+    "kittable": "Kittable",
+    "outerColor": "Outer Color",
+    "parameters": "Parameters",
+    "tier": "Tier"
+}

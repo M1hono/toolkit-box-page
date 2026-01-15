@@ -1,0 +1,10 @@
+{
+    "consume": "Consume",
+    "dynamic": "Dynamic",
+    "dynamicSource": "Dynamic Source",
+    "itemIdPlaceholder": "Item ID (required)",
+    "manualReturn": "Manual Return",
+    "noKeys": "No keys defined. Add reagents to the grid first.",
+    "optional": "Optional",
+    "reagentKeys": "Reagent Keys"
+}

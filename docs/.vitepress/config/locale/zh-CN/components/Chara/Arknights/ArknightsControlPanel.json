@@ -1,8 +1,8 @@
 {
-    "panelTitle": "设置",
-    "aspectRatioTitle": "宽高比",
     "aspectRatioFree": "自由",
+    "aspectRatioTitle": "宽高比",
+    "heightLabel": "高",
     "manualAdjustTitle": "选择区域",
-    "widthLabel": "宽",
-    "heightLabel": "高"
+    "panelTitle": "设置",
+    "widthLabel": "宽"
 }

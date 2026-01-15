@@ -1,6 +1,7 @@
 {
-    "aspectRatio": "比例",
+    "height": "高",
+    "image": "Image",
+    "ratio": "Aspect Ratio",
     "selection": "选区",
-    "width": "宽",
-    "height": "高"
+    "width": "宽"
 }

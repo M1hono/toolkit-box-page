@@ -1,6 +1,7 @@
 {
-    "aspectRatio": "Aspect Ratio",
+    "height": "Height",
+    "image": "Image",
+    "ratio": "Aspect Ratio",
     "selection": "Selection",
-    "width": "Width",
-    "height": "Height"
+    "width": "Width"
 }

@@ -1,0 +1,16 @@
+{
+    "binary": "Binary",
+    "clearGrid": "Clear Grid",
+    "codeOutput": "Code Output",
+    "copyCode": "Copy",
+    "decimal": "Decimal",
+    "fillGrid": "Fill Grid",
+    "horizontal": "Horizontal",
+    "outputItem": "Output Item",
+    "outputItemPlaceholder": "e.g. minecraft:acacia_boat",
+    "recipeConfiguration": "Recipe Configuration",
+    "requiredFaction": "Required Faction",
+    "requiredFactionPlaceholder": "e.g. mna:none",
+    "tier": "Tier",
+    "vertical": "Vertical"
+}

@@ -1,16 +1,16 @@
 {
-    "imageSelection": "图像选择",
-    "aspectRatio": "宽高比",
-    "manualSelection": "手动选择",
-    "width": "宽度",
-    "height": "高度",
-    "preview": "预览",
     "actions": "操作",
-    "prevDiff": "上一个",
-    "nextDiff": "下一个",
-    "bgColor": "背景颜色",
-    "save": "保存选区",
+    "aspectRatio": "宽高比",
     "batch": "批量处理",
+    "bgColor": "背景颜色",
     "detectFace": "检测脸部",
-    "onlineOnly": "仅限在线角色"
+    "height": "高度",
+    "imageSelection": "图像选择",
+    "manualSelection": "手动选择",
+    "nextDiff": "下一个",
+    "onlineOnly": "仅限在线角色",
+    "prevDiff": "上一个",
+    "preview": "预览",
+    "save": "保存选区",
+    "width": "宽度"
 }

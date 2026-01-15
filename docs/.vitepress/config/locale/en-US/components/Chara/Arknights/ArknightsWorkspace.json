@@ -1,15 +1,15 @@
 {
-    "detectFace": "Detect Face",
-    "reset": "Reset",
-    "download": "Download Full",
-    "copy": "Copy Full",
+    "allNames": "All Names:",
     "batch": "Batch",
-    "downloadCrop": "Download Crop",
-    "copyCrop": "Copy Crop",
-    "loading": "Loading...",
-    "noSelection": "No character selected",
-    "noImage": "No image",
     "bgColor": "Background",
+    "copy": "Copy Full",
+    "copyCrop": "Copy Crop",
+    "detectFace": "Detect Face",
+    "download": "Download Full",
+    "downloadCrop": "Download Crop",
+    "loading": "Loading...",
+    "noImage": "No image",
+    "noSelection": "No character selected",
     "preview": "Preview",
-    "allNames": "All Names:"
+    "reset": "Reset"
 }

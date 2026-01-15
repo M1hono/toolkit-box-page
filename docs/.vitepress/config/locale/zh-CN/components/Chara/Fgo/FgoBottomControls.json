@@ -1,13 +1,13 @@
 {
-    "background": "背景色",
-    "bgHint": "应用于预览/导出",
-    "preview": "预览",
     "actions": "操作",
-    "prev": "上一个",
-    "next": "下一个",
-    "save": "保存",
-    "copy": "复制",
+    "background": "背景色",
     "batch": "批量",
+    "bgHint": "应用于预览/导出",
+    "copy": "复制",
     "detectFace": "检测人脸",
-    "onlineOnly": "仅在线"
+    "next": "下一个",
+    "onlineOnly": "仅在线",
+    "prev": "上一个",
+    "preview": "预览",
+    "save": "保存"
 }

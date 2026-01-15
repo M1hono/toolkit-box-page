@@ -1,8 +1,8 @@
 {
-    "panelTitle": "設定",
-    "aspectRatioTitle": "アスペクト比",
     "aspectRatioFree": "自由",
+    "aspectRatioTitle": "アスペクト比",
+    "heightLabel": "高さ",
     "manualAdjustTitle": "選択範囲",
-    "widthLabel": "幅",
-    "heightLabel": "高さ"
+    "panelTitle": "設定",
+    "widthLabel": "幅"
 }

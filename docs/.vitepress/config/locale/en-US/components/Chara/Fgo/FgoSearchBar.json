@@ -1,6 +1,6 @@
 {
-    "title": "FGO Character Portrait Extractor",
-    "searchPlaceholder": "Search character name...",
     "or": "or",
+    "searchPlaceholder": "Search character name...",
+    "title": "FGO Character Portrait Extractor",
     "uploadImage": "Upload Image"
 }

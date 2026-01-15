@@ -1,10 +1,10 @@
 {
+    "allNames": "全ての名前：",
+    "listHeader": "キャラクター",
+    "noResults": "キャラクターが見つかりません",
+    "scenesUnit": "シーン",
     "searchPlaceholder": "キャラクター名を検索...",
     "typeAll": "すべて",
-    "typeOperator": "オペレーター",
     "typeNpc": "NPC",
-    "listHeader": "キャラクター",
-    "scenesUnit": "シーン",
-    "noResults": "キャラクターが見つかりません",
-    "allNames": "全ての名前："
+    "typeOperator": "オペレーター"
 }

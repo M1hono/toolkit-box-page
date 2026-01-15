@@ -1,0 +1,16 @@
+{
+    "allTranslated": "All entries translated!",
+    "category": "Category",
+    "createFromSource": "Create from Source",
+    "delete": "Delete",
+    "fix": "Fix",
+    "mismatchWarning": "These entries have structural differences between source and target.",
+    "mismatches": "Mismatches",
+    "noMismatches": "No structural mismatches",
+    "noOrphaned": "No orphaned entries",
+    "orphaned": "Orphaned",
+    "orphanedWarning": "These entries exist in target but not in source. Consider deleting them.",
+    "sections": "Sections",
+    "title": "Translation Issues",
+    "untranslated": "Untranslated"
+}

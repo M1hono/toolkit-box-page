@@ -1,8 +1,8 @@
 {
-    "title": "批量下载",
     "batchCrop": "批量裁剪",
     "batchCropDesc": "使用当前选择区域下载所有变体",
     "batchFull": "批量原图",
     "batchFullDesc": "下载所有原始变体",
-    "cancel": "取消"
+    "cancel": "取消",
+    "title": "批量下载"
 }
