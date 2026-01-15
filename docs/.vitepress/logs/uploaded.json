@@ -50288,5 +50288,11 @@
     "variant": "avg_npc_1200_1#1$1",
     "status": "failed",
     "error": "upload_failed"
+  },
+  "$ill_amiya_normal#1$1.webp": {
+    "timestamp": 1768465453958,
+    "variant": "$ill_amiya_normal#1$1",
+    "status": "failed",
+    "error": "download_failed"
   }
 }
