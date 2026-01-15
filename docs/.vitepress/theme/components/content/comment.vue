@@ -55,10 +55,10 @@ const extractTerm = (path: string) => {
             script.async = true;
             script.crossOrigin = "anonymous";
 
-            script.dataset.repo = "PickAID/CrychicDoc";
-            script.dataset.repoId = "R_kgDOMnN0IQ";
-            script.dataset.category = "Announcements";
-            script.dataset.categoryId = "DIC_kwDOMnN0Ic4Ch3qm";
+            script.dataset.repo = "M1hono/toolkit-box-page";
+            script.dataset.repoId = "R_kgDONDjwPA";
+            script.dataset.category = "General";
+            script.dataset.categoryId = "DIC_kwDONDjwPM4C1AMy";
             script.dataset.mapping = "specific";
             script.dataset.term = extractTerm(route.path);
             script.dataset.strict = "1";
