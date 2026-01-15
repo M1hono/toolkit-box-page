@@ -11,13 +11,7 @@
         <div class="app-header">
             <div class="header-content">
                 <div class="title-section">
-                    <button
-                        class="sidebar-toggle"
-                        @click="sidebarOpen = !sidebarOpen"
-                    >
-                        {{ sidebarOpen ? "✕" : "☰" }} {{ t.characters }}
-                    </button>
-                    <h1 class="app-title">{{ t.appTitle }}</h1>
+                <h1 class="app-title">{{ t.appTitle }}</h1>
                     <p class="app-subtitle">{{ t.appSubtitle }}</p>
                 </div>
                 <div class="stats-section">
@@ -41,6 +35,17 @@
                 v-if="sidebarOpen"
                 @click="sidebarOpen = false"
             ></div>
+            
+            <button
+                class="floating-sidebar-toggle"
+                @click="sidebarOpen = !sidebarOpen"
+                :title="t.characters"
+            >
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                    <path fill="#ffffff" d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7"/>
+                </svg>
+            </button>
+            
             <div class="left-panel" :class="{ open: sidebarOpen }">
                 <arknights-sidebar
                     :characters="paginatedCharacters"
@@ -631,17 +636,8 @@
         text-transform: uppercase;
     }
 
-    .sidebar-toggle {
+    .floating-sidebar-toggle {
         display: none;
-        padding: 8px 16px;
-        border: 1px solid var(--vp-c-divider);
-        border-radius: 4px;
-        background: var(--vp-c-bg);
-        color: var(--vp-c-text-1);
-        font-size: 0.9rem;
-        font-weight: 500;
-        cursor: pointer;
-        margin-bottom: 12px;
     }
 
     .sidebar-overlay {
@@ -743,8 +739,28 @@
     }
 
     @media (max-width: 1024px) {
-        .sidebar-toggle {
-            display: block;
+        .floating-sidebar-toggle {
+            display: flex;
+            position: fixed;
+            top: 70px;
+            right: 16px;
+            z-index: 999;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: var(--button-bg-color, #c5a16b);
+            border: none;
+            cursor: pointer;
+            padding: 12px;
+            box-shadow: 2px 2px 10px 4px rgba(0, 0, 0, 0.15);
+            transition: background-color 0.3s, transform 0.3s;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .floating-sidebar-toggle:hover {
+            background-color: var(--button-hover-color, #a38348);
+            transform: scale(1.1);
         }
 
         .sidebar-overlay {
