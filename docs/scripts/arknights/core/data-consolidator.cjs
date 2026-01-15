@@ -100,7 +100,6 @@ function consolidateResults(results, langCode) {
 
     // Generate search index: name -> charId (or array of charIds if duplicate names exist)
     const excludeRules = loadExcludeRules(langCode);
-    const combineRules = loadCombineRules();
     const searchIndex = {};
     
     for (const [id, data] of Object.entries(langNames)) {
