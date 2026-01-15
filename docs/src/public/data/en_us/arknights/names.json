@@ -19352,43 +19352,5 @@
       "Pepe"
     ],
     "displayName": "Pepe"
-  },
-  "$ill_amiya_normal": {
-    "speakerNames": [
-      "Amiya"
-    ],
-    "searchNames": [
-      "Amiya"
-    ],
-    "displayName": "Amiya"
-  },
-  "char_002_amiya_1": {
-    "speakerNames": [
-      "Amiya",
-      "Shining",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
-    ],
-    "searchNames": [
-      "Amiya",
-      "Shining",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
-    ],
-    "displayName": "Amiya"
   }
 }

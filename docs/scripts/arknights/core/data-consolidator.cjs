@@ -54,17 +54,24 @@ function consolidateResults(results, langCode) {
         // Update global character metadata
         if (isMasterSource || !globalChars[targetId]) {
             if (!globalChars[targetId]) {
+                // Rename variants to match targetId
+                const renamedVariants = (data.validVariants || [`${targetId}#1$1`]).map(v => 
+                    v.replace(baseId, targetId)
+                );
+                
                 globalChars[targetId] = {
                     charId: targetId,
-                    validVariants: data.validVariants || [`${targetId}#1$1`],
+                    validVariants: renamedVariants,
                     charType: targetId.startsWith('char_') ? 'operator' : 'npc',
                     dialogCount: 0 
                 };
                 newChars++;
             } else {
                 if (data.validVariants && data.validVariants.length > 0) {
+                    // Rename variants when merging
+                    const renamedVariants = data.validVariants.map(v => v.replace(baseId, targetId));
                     const existingVariants = new Set(globalChars[targetId].validVariants);
-                    data.validVariants.forEach(v => existingVariants.add(v));
+                    renamedVariants.forEach(v => existingVariants.add(v));
                     globalChars[targetId].validVariants = Array.from(existingVariants).sort();
                 }
             }
@@ -91,8 +98,6 @@ function consolidateResults(results, langCode) {
 
         // Update language-specific story mappings
         if (data.storyFiles && data.storyFiles.length > 0) {
-            // Apply combine rules to story mappings
-            const targetId = combineRules[baseId] || baseId;
             const existingStorys = langStorys[targetId] || [];
             langStorys[targetId] = Array.from(new Set([...existingStorys, ...data.storyFiles])).sort();
         }
