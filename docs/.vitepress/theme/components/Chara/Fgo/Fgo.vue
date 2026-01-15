@@ -15,7 +15,7 @@
             @upload="handleFileUpload"
         />
 
-        <div class="layout">
+        <div class="layout" :class="{ 'no-panels': !selectedCharacter }">
             <div class="top" v-if="selectedCharacter">
                 <fgo-top-controls
                     :all-images="allCharacterImages"
@@ -189,22 +189,22 @@
         () => Object.keys(allCharacterImages.value).length > 0
     );
     const hasDiffs = computed(() => diffImages.value.length > 0);
-    const canSave = computed(
-        () =>
-            !!(
-                selectedCharacter.value &&
-                workspaceCanvas.value &&
-                hasDiffs.value
-            )
-    );
-    const canBatch = computed(
-        () =>
-            !!(
-                selectedCharacter.value &&
-                hasDiffs.value &&
-                diffImages.value.length > 1
-            )
-    );
+    
+    const canSave = computed(() => {
+        return !!(
+            selectedCharacter.value &&
+            workspaceCanvas.value &&
+            hasDiffs.value
+        );
+    });
+    
+    const canBatch = computed(() => {
+        return !!(
+            selectedCharacter.value &&
+            hasDiffs.value &&
+            diffImages.value.length > 1
+        );
+    });
 
     const backgroundColor = computed<ColorRGBA>(() => {
         const hex = bgColorHex.value
@@ -232,11 +232,20 @@
                 );
             })
             .slice(0, 10)
-            .map((char) => ({
-                id: char.id,
-                name: getCharacterName(char),
-                jpName: char.name,
-            }));
+            .map((char) => {
+                // Extract first face ID from faceCoordinates for icon display
+                const faceCoords = char.imageData?.faceCoordinates;
+                const firstFaceId = faceCoords
+                    ? Object.keys(faceCoords)[0]
+                    : null;
+
+                return {
+                    id: char.id,
+                    name: getCharacterName(char),
+                    jpName: char.name,
+                    faceId: firstFaceId ? Number(firstFaceId) : char.id,
+                };
+            });
     }
 
     async function selectCharacter(result: SearchResult) {
@@ -278,7 +287,6 @@
                             y: faceRect.y + faceRect.height,
                         };
                         faceDetected.value = true;
-                        console.log("✅ Face auto-detected:", faceRect);
                     }
                 }
             );
@@ -299,20 +307,18 @@
                         y: faceRect.y + faceRect.height,
                     };
                     faceDetected.value = true;
-                    console.log("✅ Face detected from coordinates:", faceRect);
                 }
             }
 
             if (!faceDetected.value) {
                 selectionStart.value = { x: 256, y: 100 };
                 selectionEnd.value = { x: 768, y: 600 };
-                console.log("⚠️ Using default selection");
             }
 
             await nextTick();
             workspaceRef.value?.draw?.();
         } catch (error) {
-            console.error("Image load failed:", error);
+            // Silent error handling
         }
     }
 
@@ -344,7 +350,7 @@
                     selectionEnd.value = { x: 256, y: 256 };
                     workspaceRef.value?.draw?.();
                 } catch (error) {
-                    console.error("Image processing failed:", error);
+                    // Silent error handling
                 }
             }
         };
@@ -356,26 +362,24 @@
         workspaceRef.value?.draw?.();
     }
 
-     function previewPreviousDiff() {
-         if (diffImages.value.length === 0) return;
-         currentDiffIndex.value =
-             (currentDiffIndex.value - 1 + diffImages.value.length) %
-             diffImages.value.length;
-         console.log("Previous diff:", currentDiffIndex.value);
-         nextTick(() => {
-             workspaceRef.value?.draw?.();
-         });
-     }
+    function previewPreviousDiff() {
+        if (diffImages.value.length === 0) return;
+        currentDiffIndex.value =
+            (currentDiffIndex.value - 1 + diffImages.value.length) %
+            diffImages.value.length;
+        nextTick(() => {
+            workspaceRef.value?.draw?.();
+        });
+    }
 
-     function previewNextDiff() {
-         if (diffImages.value.length === 0) return;
-         currentDiffIndex.value =
-             (currentDiffIndex.value + 1) % diffImages.value.length;
-         console.log("Next diff:", currentDiffIndex.value);
-         nextTick(() => {
-             workspaceRef.value?.draw?.();
-         });
-     }
+    function previewNextDiff() {
+        if (diffImages.value.length === 0) return;
+        currentDiffIndex.value =
+            (currentDiffIndex.value + 1) % diffImages.value.length;
+        nextTick(() => {
+            workspaceRef.value?.draw?.();
+        });
+    }
 
     async function saveSelectedArea() {
         if (!workspaceCanvas.value || !selectedCharacter.value) return;
@@ -387,26 +391,21 @@
         );
     }
 
-     async function handleBatchConfirm(type: 'cropped' | 'full') {
-         showBatchDialog.value = false;
-         if (!selectedCharacter.value || diffImages.value.length === 0) {
-             console.error('Cannot batch: no character or diffs');
-             return;
-         }
-         
-         console.log(`Starting batch (${type}) for ${selectedCharacter.value.name}: ${diffImages.value.length} diffs`);
-         try {
-             const count = await processBatch(
-                 diffImages.value,
-                 type === 'cropped' ? selection.value : null,
-                 backgroundColor.value,
-                 selectedCharacter.value.name
-             );
-             console.log(`✅ Batch complete: ${count} images downloaded`);
-         } catch (error) {
-             console.error('Batch failed:', error);
-         }
-     }
+    async function handleBatchConfirm(type: "cropped" | "full") {
+        showBatchDialog.value = false;
+        if (!selectedCharacter.value || diffImages.value.length === 0) return;
+
+        try {
+            await processBatch(
+                diffImages.value,
+                type === "cropped" ? selection.value : null,
+                backgroundColor.value,
+                selectedCharacter.value.name
+            );
+        } catch (error) {
+            // Silent error handling
+        }
+    }
 
     function autoDetectFace() {
         if (
@@ -472,9 +471,8 @@
             await navigator.clipboard.write([
                 new ClipboardItem({ "image/png": blob }),
             ]);
-            console.log("✅ Copied to clipboard");
         } catch (error) {
-            console.error("Failed to copy:", error);
+            // Silent error handling
         }
     }
 
@@ -488,18 +486,27 @@
 
 <style scoped>
     .fgo-root {
-        padding: 16px;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
     }
 
     .layout {
-        margin-top: 14px;
+        flex: 1;
         display: grid;
         grid-template-columns: minmax(0, 1fr) 380px;
         grid-template-areas:
             "workspace top"
             "workspace bottom";
-        grid-template-rows: auto 1fr;
+        grid-template-rows: auto minmax(0, 1fr);
         gap: 14px;
+        padding: 0 16px 16px 16px;
+    }
+
+    .layout.no-panels {
+        grid-template-columns: 1fr;
+        grid-template-areas: "workspace";
+        grid-template-rows: 1fr;
     }
 
     .top {
@@ -511,12 +518,13 @@
         grid-area: workspace;
         min-height: 640px;
         display: flex;
+        flex-direction: column;
         align-items: stretch;
     }
 
     .bottom {
         grid-area: bottom;
-        align-self: end;
+        align-self: start;
     }
 
     .empty {
@@ -528,7 +536,8 @@
         background: var(--vp-c-bg-soft);
         border: 1px solid var(--vp-c-divider);
         border-radius: 12px;
-        padding: 18px;
+        padding: 48px 24px;
+        min-height: 400px;
     }
 
     .empty-title {
@@ -592,10 +601,6 @@
     }
 
     @media (max-width: 768px) {
-        .fgo-root {
-            padding: 12px;
-        }
-
         .workspace {
             min-height: 420px;
         }

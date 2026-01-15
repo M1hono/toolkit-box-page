@@ -37,7 +37,10 @@
         isResizing: boolean;
         resizeDirection: string;
         getResizeDirection: (x: number, y: number) => string;
-        drawSelectionBox: (ctx: CanvasRenderingContext2D, selection: SelectionRect) => void;
+        drawSelectionBox: (
+            ctx: CanvasRenderingContext2D,
+            selection: SelectionRect
+        ) => void;
     }>();
 
     const emit = defineEmits<{
@@ -136,7 +139,6 @@
     watch(
         () => props.diffImages,
         () => {
-            console.log('DiffImages changed:', props.diffImages.length);
             nextTick(() => draw());
         },
         { deep: true }
@@ -144,8 +146,7 @@
 
     watch(
         () => props.currentDiffIndex,
-        (newIndex) => {
-            console.log('CurrentDiffIndex changed to:', newIndex);
+        () => {
             nextTick(() => draw());
         }
     );

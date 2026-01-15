@@ -47,7 +47,7 @@
 
     defineEmits<{
         close: [];
-        confirm: [type: 'cropped' | 'full'];
+        confirm: [type: "cropped" | "full"];
     }>();
 </script>
 
@@ -84,12 +84,12 @@
         color: var(--vp-c-text-3);
     }
 
-     .batch-options {
-         margin-bottom: 16px;
-         display: flex;
-         flex-direction: column;
-         gap: 12px;
-     }
+    .batch-options {
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
 
     .batch-btn {
         width: 100%;
@@ -112,7 +112,6 @@
         border-color: var(--vp-c-brand-1);
         background: var(--vp-c-brand-soft);
     }
-
 
     .btn-desc {
         font-size: 0.85rem;

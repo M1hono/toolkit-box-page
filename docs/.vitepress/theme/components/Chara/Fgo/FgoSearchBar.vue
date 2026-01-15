@@ -2,58 +2,111 @@
 /**
  * @fileoverview FGO Search Bar Component
  * @component FgoSearchBar
- * @description Character search and file upload functionality
+ * @description Character search with Vuetify autocomplete and servant icons
  */
 -->
 
 <template>
-    <div class="search-bar">
-        <h1 class="title">{{ t.title }}</h1>
-        <div class="input-methods">
-            <input
-                v-model="searchQuery"
-                @input="handleSearch"
-                :placeholder="t.searchPlaceholder"
-                class="search-input"
-            />
-            <span class="or-text">{{ t.or }}</span>
-            <label class="file-upload-btn">
-                {{ t.uploadImage }}
+    <div class="search-bar-wrapper">
+        <v-card flat class="search-card">
+            <v-card-title class="text-center pa-8 pb-6">
+                <div class="title-text">{{ t.title }}</div>
+            </v-card-title>
+
+            <v-card-text class="px-8 pb-8">
+                <v-autocomplete
+                    v-model:search="searchQuery"
+                    v-model="selectedValue"
+                    :items="resultsWithDisplay"
+                    :placeholder="t.searchPlaceholder"
+                    item-title="displayText"
+                    item-value="id"
+                    variant="outlined"
+                    density="comfortable"
+                    clearable
+                    hide-details
+                    prepend-inner-icon="mdi-magnify"
+                    class="search-autocomplete"
+                    @update:model-value="handleSelect"
+                >
+                    <template #item="{ props, item }">
+                        <v-list-item v-bind="props" class="search-result-item">
+                            <template #prepend>
+                                <v-avatar
+                                    size="48"
+                                    rounded
+                                    class="servant-avatar"
+                                >
+                                    <v-img
+                                        :src="getServantIcon(item.raw)"
+                                        :alt="item.raw.name"
+                                        cover
+                                    >
+                                        <template #error>
+                                            <div class="icon-placeholder">
+                                                <v-icon
+                                                    >mdi-account-circle</v-icon
+                                                >
+                                            </div>
+                                        </template>
+                                    </v-img>
+                                </v-avatar>
+                            </template>
+                            <v-list-item-title class="result-name">{{
+                                item.raw.name
+                            }}</v-list-item-title>
+                            <v-list-item-subtitle class="result-jp-name">{{
+                                item.raw.jpName
+                            }}</v-list-item-subtitle>
+                        </v-list-item>
+                    </template>
+                </v-autocomplete>
+
+                <div class="divider-wrapper">
+                    <v-divider></v-divider>
+                    <span class="divider-text">{{ t.or }}</span>
+                    <v-divider></v-divider>
+                </div>
+
+                <v-btn
+                    block
+                    color="primary"
+                    size="x-large"
+                    variant="elevated"
+                    prepend-icon="mdi-upload"
+                    @click="triggerFileInput"
+                    class="upload-btn"
+                >
+                    {{ t.uploadImage }}
+                </v-btn>
+
                 <input
+                    ref="fileInputRef"
                     type="file"
                     accept=".png,.jpg,.jpeg"
                     @change="handleFileUpload"
                     style="display: none"
                 />
-            </label>
-        </div>
-
-        <div v-if="searchResults.length > 0" class="search-results">
-            <div
-                v-for="result in searchResults"
-                :key="result.id"
-                class="result-item"
-                @click="$emit('select', result)"
-            >
-                {{ result.name }} ({{ result.jpName }})
-            </div>
-        </div>
+            </v-card-text>
+        </v-card>
     </div>
 </template>
 
 <script setup lang="ts">
-    import { ref } from "vue";
+    import { ref, computed, watch } from "vue";
+    import { useData } from "vitepress";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import type { SearchResult } from "../../../../utils/chara/fgo/types";
+    import { getLanguageByCode } from "../../../../config/project-config";
 
     const { t } = useSafeI18n("fgo-search", {
         title: "FGO Character Portrait Extractor",
         searchPlaceholder: "Search character name...",
-        or: "or",
+        or: "OR",
         uploadImage: "Upload Image",
     });
 
-    defineProps<{
+    const props = defineProps<{
         searchResults: SearchResult[];
     }>();
 
@@ -63,10 +116,46 @@
         upload: [file: File];
     }>();
 
+    const { lang } = useData();
     const searchQuery = ref("");
+    const selectedValue = ref<number | null>(null);
+    const fileInputRef = ref<HTMLInputElement | null>(null);
 
-    function handleSearch() {
-        emit("search", searchQuery.value);
+    const currentRegion = computed(() => {
+        const langConfig = getLanguageByCode(lang.value);
+        if (lang.value === "zh-CN" || lang.value === "root") return "CN";
+        if (lang.value === "ja-JP") return "JP";
+        return "NA";
+    });
+
+    const resultsWithDisplay = computed(() => {
+        return props.searchResults.map((r) => ({
+            ...r,
+            displayText: `${r.name} (${r.jpName})`,
+        }));
+    });
+
+    function getServantIcon(result: any): string {
+        const iconId = result.faceId || `${result.id}0`;
+        return `https://static.atlasacademy.io/${currentRegion.value}/Faces/f_${iconId}.png`;
+    }
+
+    watch(searchQuery, (newValue) => {
+        emit("search", newValue);
+    });
+
+    function handleSelect(value: number | null) {
+        if (!value) return;
+        const result = props.searchResults.find((r) => r.id === value);
+        if (result) {
+            emit("select", result);
+            selectedValue.value = null;
+            searchQuery.value = "";
+        }
+    }
+
+    function triggerFileInput() {
+        fileInputRef.value?.click();
     }
 
     function handleFileUpload(e: Event) {
@@ -80,106 +169,101 @@
 </script>
 
 <style scoped>
-    .search-bar {
+    .search-bar-wrapper {
         background: var(--vp-c-bg);
-        padding: 20px;
-        border-bottom: 1px solid var(--vp-c-divider);
+        padding: 0 16px 16px 16px;
     }
 
-    .title {
-        text-align: center;
-        margin: 0 0 16px 0;
-        font-size: 1.75rem;
-        font-weight: 600;
+    .search-card {
+        width: 100%;
+        border: 1px solid var(--vp-c-divider) !important;
+        border-radius: 12px !important;
+    }
+
+    .title-text {
+        font-size: 2rem;
+        font-weight: 700;
+        line-height: 1.2;
         background: linear-gradient(135deg, var(--vp-c-brand-1), #722ed1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        letter-spacing: -0.5px;
     }
 
-    .input-methods {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 16px;
-        flex-wrap: wrap;
+    .search-autocomplete {
+        margin-bottom: 20px;
     }
 
-    .search-input {
-        flex: 1;
-        max-width: 400px;
-        min-width: 200px;
-        padding: 10px 12px;
+    .search-result-item {
+        padding: 12px 16px !important;
+    }
+
+    .servant-avatar {
         border: 1px solid var(--vp-c-divider);
-        border-radius: 4px;
         background: var(--vp-c-bg);
+    }
+
+    .result-name {
+        font-size: 1rem;
+        font-weight: 600;
         color: var(--vp-c-text-1);
-        font-size: 0.9rem;
+        margin-bottom: 2px;
     }
 
-    .search-input:focus {
-        outline: none;
-        border-color: var(--vp-c-brand-1);
-    }
-
-    .or-text {
-        font-size: 0.9rem;
+    .result-jp-name {
+        font-size: 0.85rem;
         color: var(--vp-c-text-3);
     }
 
-    .file-upload-btn {
-        padding: 10px 20px;
-        background: var(--vp-c-brand-1);
-        color: white;
-        border: 1px solid var(--vp-c-brand-1);
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 0.9rem;
-        font-weight: 500;
-        transition: all 0.2s ease;
-    }
-
-    .file-upload-btn:hover {
-        background: var(--vp-c-brand-2);
-        border-color: var(--vp-c-brand-2);
-    }
-
-    .search-results {
-        margin-top: 16px;
-        max-height: 200px;
-        overflow-y: auto;
-        background: var(--vp-c-bg-soft);
+    .servant-avatar {
         border: 1px solid var(--vp-c-divider);
-        border-radius: 6px;
-    }
-
-    .result-item {
-        padding: 10px 16px;
-        cursor: pointer;
-        border-bottom: 1px solid var(--vp-c-divider);
-        transition: background 0.15s ease;
-    }
-
-    .result-item:hover {
         background: var(--vp-c-bg);
+        flex-shrink: 0;
     }
 
-    .result-item:last-child {
-        border-bottom: none;
+    .icon-placeholder {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: var(--vp-c-bg-soft);
+        color: var(--vp-c-text-3);
+    }
+
+    .divider-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        margin: 24px 0;
+    }
+
+    .divider-text {
+        color: var(--vp-c-text-3);
+        font-size: 0.75rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        white-space: nowrap;
+    }
+
+    .upload-btn {
+        font-weight: 600;
+        font-size: 0.95rem;
+        letter-spacing: 0.5px;
     }
 
     @media (max-width: 768px) {
-        .input-methods {
-            flex-direction: column;
-            align-items: stretch;
+        .search-bar-wrapper {
+            padding: 16px;
         }
 
-        .search-input {
-            max-width: none;
+        .title-text {
+            font-size: 1.5rem;
         }
 
-        .or-text {
-            display: none;
+        .search-autocomplete {
+            font-size: 0.9rem;
         }
     }
 </style>

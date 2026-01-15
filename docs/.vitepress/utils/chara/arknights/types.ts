@@ -20,6 +20,11 @@ export interface UnifiedCharacterData extends CharacterData, CharacterNames {
     // Combined properties for easy UI usage
 }
 
+export interface StoryReaderUrls {
+    textReader: string;
+    akgcc: string;
+}
+
 export interface SelectionRect {
     x: number;
     y: number;

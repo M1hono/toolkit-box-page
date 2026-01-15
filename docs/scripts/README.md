@@ -2,7 +2,7 @@
 
 Multi-language data processing system for Arknights and FGO character data.
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Configuration Layer
 - **`project-config.cjs`** - Central configuration for languages, games, and data paths
@@ -12,15 +12,17 @@ Multi-language data processing system for Arknights and FGO character data.
 - **`shared/network-utils.cjs`** - HTTP request utilities
 - **`shared/file-utils.cjs`** - File system operations and directory management
 
-## 🏹 Arknights System
+## Arknights System
 
 ### Main Entry Points
 - **`arknights/main-fetcher.cjs`** - Primary orchestrator for data acquisition
-- **`arknights/story-syncer.cjs`** - Story data synchronization manager
+- **`arknights/syncStoryData.cjs`** - Story data synchronization manager
+- **`arknights/updateNamesOnly.cjs`** - Updates names and generates indices without full rescan
+- **`arknights/cleanupData.cjs`** - Normalizes all character IDs to lowercase
 
 ### API Layer
 - **`arknights/api/arknights-client.cjs`** - Game data repository client
-- **`arknights/api/characters-api.cjs`** - Character data management
+- **`arknights/api/characters-api.cjs`** - Character data management (now includes storys.json and search_index.json)
 - **`arknights/api/scan-stats-api.cjs`** - Scan state tracking
 
 ### Core Processing
@@ -33,7 +35,7 @@ Multi-language data processing system for Arknights and FGO character data.
 - **`arknights/workers/story-parser-worker.cjs`** - Parallel story parsing
 - **`arknights/workers/image-check-worker.cjs`** - Parallel image variant verification
 
-## ⚔️ FGO System
+## FGO System
 
 ### Main Entry Points
 - **`fgo/main-fetcher.cjs`** - Primary orchestrator for servant data
@@ -44,7 +46,7 @@ Multi-language data processing system for Arknights and FGO character data.
 ### Core Processing
 - **`fgo/core/servant-processor.cjs`** - Servant data processing and search index generation
 
-## 📁 Data Structure
+## Data Structure
 
 ### Multi-Language Organization
 ```
@@ -53,29 +55,42 @@ docs/src/public/data/
 │   ├── arknights/
 │   │   ├── characters.json       # Global character attributes
 │   │   ├── scan_stats.json       # Scan state tracking
-│   │   └── story_files.json      # Story file mapping
+│   │   └── story_files.json      # Legacy: Global story mapping
 │   └── fgo/
 │       └── metadata.json         # Global FGO metadata
 ├── zh_cn/
 │   ├── arknights/
 │   │   ├── names.json            # Chinese character names
-│   │   └── story/                # Chinese story files
+│   │   ├── storys.json           # Chinese story file mappings (NEW)
+│   │   ├── search_index.json     # Name→ID search index (NEW)
+│   │   └── story/                # Chinese story files (gitignored)
 │   └── fgo/
 │       ├── servants.json         # Chinese servant data
 │       ├── search_index.json     # Chinese search index
 │       ├── nameMapping.json      # JP→CN name mapping
 │       ├── translations.json     # Translation data
 │       └── no_translation.json   # Untranslated entries
-└── en_us/
+├── en_us/
+│   ├── arknights/
+│   │   ├── names.json            # English character names
+│   │   ├── storys.json           # English story file mappings (NEW)
+│   │   ├── search_index.json     # Name→ID search index (NEW)
+│   │   └── story/                # English story files (gitignored)
+│   └── fgo/
+│       ├── servants.json         # English servant data
+│       └── search_index.json     # English search index
+└── ja_jp/
     ├── arknights/
-    │   ├── names.json            # English character names
-    │   └── story/                # English story files
+    │   ├── names.json            # Japanese character names
+    │   ├── storys.json           # Japanese story file mappings (NEW)
+    │   ├── search_index.json     # Name→ID search index (NEW)
+    │   └── story/                # Japanese story files (gitignored)
     └── fgo/
-        ├── servants.json         # English servant data
-        └── search_index.json     # English search index
+        ├── servants.json         # Japanese servant data
+        └── search_index.json     # Japanese search index
 ```
 
-## 🚀 Usage Examples
+## Usage Examples
 
 ### Arknights Data Fetching
 ```bash
@@ -92,7 +107,7 @@ node arknights/story-syncer.cjs
 node fgo/main-fetcher.cjs
 ```
 
-## 🔧 Environment Configuration
+## Environment Configuration
 
 Required environment variables:
 ```bash
@@ -101,7 +116,7 @@ export R2_ACCESS_KEY_ID="your_r2_access_key_id"
 export R2_SECRET_ACCESS_KEY="your_r2_secret_access_key"
 ```
 
-## 🎯 Key Features
+## Key Features
 
 ### Multi-Language Support
 - **Arknights**: Chinese (zh_CN) and English (en_US) support
@@ -124,7 +139,7 @@ export R2_SECRET_ACCESS_KEY="your_r2_secret_access_key"
 - Secure R2 integration for image storage
 - No hardcoded sensitive information
 
-## 📊 Processing Workflow
+## Processing Workflow
 
 ### Arknights Pipeline
 1. **Discovery**: Identify available story files from game data repositories
@@ -140,7 +155,7 @@ export R2_SECRET_ACCESS_KEY="your_r2_secret_access_key"
 3. **Translate**: Apply Chinese name mappings to Japanese data
 4. **Output**: Generate language-specific servant databases
 
-## 🛠️ Code Standards
+## Code Standards
 
 - **JSDoc Documentation**: English-only comprehensive documentation
 - **No Inline Comments**: Clean, self-documenting code
@@ -149,7 +164,7 @@ export R2_SECRET_ACCESS_KEY="your_r2_secret_access_key"
 - **Error Handling**: Comprehensive error handling and logging
 - **Modularity**: Single responsibility principle with clear API boundaries
 
-## 📈 Performance Metrics
+## Performance Metrics
 
 | Operation | Throughput | Concurrency |
 |-----------|------------|-------------|
@@ -158,7 +173,88 @@ export R2_SECRET_ACCESS_KEY="your_r2_secret_access_key"
 | Data Consolidation | ~1000 chars/sec | Single-threaded |
 | File Downloads | ~200 files/min | 10 concurrent |
 
-## 🔍 Troubleshooting
+## Frontend API Utilities
+
+Located in `docs/.vitepress/utils/chara/arknights/core/`, these composables provide access to the generated data files:
+
+### useArknightsData
+
+Comprehensive data access composable for character information and story mappings:
+
+```typescript
+import { useArknightsData } from '@/utils/chara/arknights';
+
+const {
+  loadLanguageData,
+  getCharacterIdByName,
+  getCharacterById,
+  getStoriesForCharacter,
+  getStoryReadersForCharacter,
+  searchCharacters,
+  stats
+} = useArknightsData();
+
+// Load data for a language
+await loadLanguageData('en_us');
+
+// Search by name using search_index.json
+const charId = getCharacterIdByName('Bounty Hunter'); 
+// Returns: 'avg_npc_009' (single ID)
+// OR: ['avg_181_flower_1', 'avg_1022_flwr2_1'] (multiple IDs if duplicate name)
+
+// Get all IDs for a name (always returns array)
+const allIds = getAllCharacterIdsByName('莱娜');
+// Returns: ['avg_181_flower_1', 'avg_1022_flwr2_1']
+
+// Get full character info
+const character = getCharacterById('avg_npc_009');
+
+// Get stories where character appears
+const stories = getStoriesForCharacter('avg_npc_009');
+// Returns: ['activities/a001/level_a001_01_beg.txt', ...]
+
+// Get story reader URLs
+const readers = getStoryReadersForCharacter('avg_npc_009');
+// Returns: [{ path: '...', urls: { textReader: '...', akgcc: '...' } }]
+```
+
+### useArknightsStoryReader
+
+Converts internal story paths to external reader URLs:
+
+```typescript
+import { useArknightsStoryReader } from '@/utils/chara/arknights';
+
+const { getStoryReaderUrls } = useArknightsStoryReader();
+
+const urls = getStoryReaderUrls('activities/a001/level_a001_01_beg.txt', 'en_us');
+// Returns:
+// {
+//   textReader: 'https://050644zf.github.io/ArknightsStoryTextReader/#/en_US/content?f=...',
+//   akgcc: 'https://akgcc.github.io/story/#side&a001&0'
+// }
+```
+
+### Data Files Generated
+
+- **`storys.json`**: Character ID → Story file paths (language-specific)
+  ```json
+  {
+    "avg_npc_009": ["activities/a001/level_a001_01_beg.txt", ...]
+  }
+  ```
+  
+- **`search_index.json`**: Character name → Character ID(s) (language-specific)
+  ```json
+  {
+    "Bounty Hunter": "avg_npc_009",
+    "莱娜": ["avg_181_flower_1", "avg_1022_flwr2_1"]
+  }
+  ```
+  *Note: Returns string for unique names, array for duplicate names*
+  
+- **`names.json`**: Character ID → Names data (language-specific)
+- **`characters.json`**: Character ID → Metadata (global)
 
 ### Common Issues
 1. **Network Timeouts**: Adjust timeout values in network-utils.cjs

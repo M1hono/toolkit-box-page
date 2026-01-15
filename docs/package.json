@@ -62,6 +62,8 @@
         "data:fgo": "node scripts/fgo/main-fetcher.cjs",
         "data:story": "node scripts/arknights/syncStoryData.cjs",
         "data:story-git": "node scripts/arknights/syncStoryData.cjs --use-git",
+        "data:cleanup": "node scripts/arknights/cleanupData.cjs",
+        "data:names": "node scripts/arknights/updateNamesOnly.cjs",
         "r2:sync": "node scripts/sync-to-r2.cjs",
         "r2:failures": "node scripts/view-sync-failures.cjs"
     },

@@ -48,4 +48,5 @@ export interface SearchResult {
     id: number;
     name: string;
     jpName: string;
+    faceId?: number;
 }

@@ -16,33 +16,58 @@ export function useFgoFaceDetection() {
     const faceDetected = ref(false);
     const opencvReady = ref(false);
 
+    let opencvLoadingPromise: Promise<void> | null = null;
+
     async function loadOpenCV(): Promise<void> {
-        return new Promise<void>((resolve) => {
-            if (window.cv) {
-                console.log("✅ OpenCV already exists");
-                opencvReady.value = true;
-                resolve();
-            } else {
-                console.log("📥 Loading OpenCV...");
-                if (typeof document !== 'undefined') {
-                    const script = document.createElement("script");
-                    script.src = "https://docs.opencv.org/4.5.2/opencv.js";
-                    script.async = true;
-                    script.onload = () => {
-                        console.log("✅ OpenCV loaded");
+        // Return existing promise if already loading
+        if (opencvLoadingPromise) {
+            return opencvLoadingPromise;
+        }
+
+        if (window.cv && window.cv.Mat) {
+            console.log("✅ OpenCV already loaded");
+            opencvReady.value = true;
+            return Promise.resolve();
+        }
+
+        opencvLoadingPromise = new Promise<void>((resolve) => {
+            // Check if script is already in DOM
+            const existingScript = document.querySelector('script[src*="opencv.js"]');
+            if (existingScript) {
+                console.log("⏳ OpenCV script already loading...");
+                const checkReady = setInterval(() => {
+                    if (window.cv && window.cv.Mat) {
+                        clearInterval(checkReady);
                         opencvReady.value = true;
+                        console.log("✅ OpenCV ready");
                         resolve();
-                    };
-                    script.onerror = () => {
-                        console.error("❌ OpenCV load failed");
-                        resolve();
-                    };
-                    document.body.appendChild(script);
-                } else {
+                    }
+                }, 100);
+                return;
+            }
+
+            console.log("📥 Loading OpenCV...");
+            if (typeof document !== 'undefined') {
+                const script = document.createElement("script");
+                script.src = "https://docs.opencv.org/4.5.2/opencv.js";
+                script.async = true;
+                script.onload = () => {
+                    console.log("✅ OpenCV loaded");
+                    opencvReady.value = true;
                     resolve();
-                }
+                };
+                script.onerror = () => {
+                    console.error("❌ OpenCV load failed");
+                    opencvLoadingPromise = null;
+                    resolve();
+                };
+                document.body.appendChild(script);
+            } else {
+                resolve();
             }
         });
+
+        return opencvLoadingPromise;
     }
 
     async function initFaceDetector() {

@@ -29,16 +29,11 @@ export function useFgoDiffProcessor() {
         baseImage: HTMLImageElement,
         detectFaceCallback?: (mat: any) => any
     ): Promise<HTMLCanvasElement[]> {
-        console.log("🔄 Processing diff images...");
-        console.log(`📏 Image size: ${baseImage.width}x${baseImage.height}`);
-
         if (!window.cv || !window.cv.Mat) {
-            console.warn("⚠️ OpenCV not fully loaded, using basic processing");
             return createBasicCanvas(baseImage);
         }
 
         if (!baseImage.complete || baseImage.naturalWidth === 0) {
-            console.warn("⚠️ Image not fully loaded, waiting...");
             await new Promise((resolve) => {
                 if (baseImage.complete) resolve(true);
                 else {
@@ -53,8 +48,6 @@ export function useFgoDiffProcessor() {
         const displayWidth = 1024;
         const displayHeight = 768;
         const diffBlockSize = 256;
-
-        console.log(`🎯 Processing mode: ${is2048Width ? "2048 width" : "1024 width"}`);
 
         const tempCanvas = document.createElement("canvas");
         const tempCtx = tempCanvas.getContext("2d");
@@ -73,11 +66,24 @@ export function useFgoDiffProcessor() {
             return createBasicCanvas(baseImage);
         }
 
+        // Create Mat from canvas using a wrapper to handle ImageData properly
         let baseImageMat;
         try {
-            baseImageMat = window.cv.imread(tempCanvas);
+            const cvCanvas = document.createElement('canvas');
+            cvCanvas.width = tempCanvas.width;
+            cvCanvas.height = tempCanvas.height;
+            const cvCtx = cvCanvas.getContext('2d')!;
+            cvCtx.drawImage(tempCanvas, 0, 0);
+            
+            const tempId = `opencv-temp-${Date.now()}`;
+            cvCanvas.id = tempId;
+            document.body.appendChild(cvCanvas);
+            cvCanvas.style.display = 'none';
+            
+            baseImageMat = window.cv.imread(tempId);
+            
+            document.body.removeChild(cvCanvas);
         } catch (error) {
-            console.error("OpenCV imread failed:", error);
             return createBasicCanvas(baseImage);
         }
         const diffs: HTMLCanvasElement[] = [];
@@ -91,57 +97,29 @@ export function useFgoDiffProcessor() {
         }
 
         let diffCount = 0;
+        
         for (let y = displayHeight; y < baseImage.height; y += diffBlockSize) {
             for (let x = 0; x < baseImage.width; x += diffBlockSize) {
                 const diffWidth = Math.min(diffBlockSize, baseImage.width - x);
                 const diffHeight = Math.min(diffBlockSize, baseImage.height - y);
 
-                if (diffWidth < diffBlockSize * 0.3 || diffHeight < diffBlockSize * 0.3) {
+                if (diffWidth < diffBlockSize * 0.5 || diffHeight < diffBlockSize * 0.5) {
                     continue;
                 }
 
-                const diffMat = baseImageMat.roi(
-                    new window.cv.Rect(x, y, diffWidth, diffHeight)
-                );
+                const diffMat = baseImageMat.roi(new window.cv.Rect(x, y, diffWidth, diffHeight));
 
                 const result = new window.cv.Mat();
-                window.cv.matchTemplate(
-                    bodyMat,
-                    diffMat,
-                    result,
-                    window.cv.TM_SQDIFF_NORMED
-                );
-
-                let minMax = window.cv.minMaxLoc(result);
-                let { x: matchX, y: matchY } = minMax.minLoc;
+                window.cv.matchTemplate(bodyMat, diffMat, result, window.cv.TM_SQDIFF_NORMED);
+                let { x: matchX, y: matchY } = window.cv.minMaxLoc(result).minLoc;
 
                 const diffCanvas = document.createElement("canvas");
                 diffCanvas.width = 1024;
                 diffCanvas.height = 768;
                 const diffCtx = diffCanvas.getContext("2d")!;
 
-                diffCtx.drawImage(
-                    baseImage,
-                    displayStartX,
-                    0,
-                    displayWidth,
-                    displayHeight,
-                    0,
-                    0,
-                    1024,
-                    768
-                );
-
-                diffCtx.drawImage(
-                    baseImage,
-                    x, y,
-                    diffWidth,
-                    diffHeight,
-                    matchX,
-                    matchY,
-                    diffWidth,
-                    diffHeight
-                );
+                diffCtx.drawImage(baseImage, displayStartX, 0, displayWidth, displayHeight, 0, 0, 1024, 768);
+                diffCtx.drawImage(baseImage, x, y, diffWidth, diffHeight, matchX, matchY, diffWidth, diffHeight);
 
                 if (!isTransparentCanvas(diffCanvas)) {
                     diffs.push(diffCanvas);
@@ -157,15 +135,12 @@ export function useFgoDiffProcessor() {
             bodyMat.delete();
             baseImageMat.delete();
         } catch (error) {
-            console.warn("Failed to delete OpenCV mats:", error);
+            // Silently handle cleanup errors
         }
 
         extractMainColor(baseImage);
-
-        console.log(`✅ Processing complete! Input ${baseImage.width}x${baseImage.height} → Output ${diffs.length} 1024x768 diffs`);
         
         if (diffs.length === 0) {
-            console.warn("No diffs generated, falling back to basic canvas");
             return createBasicCanvas(baseImage);
         }
         
