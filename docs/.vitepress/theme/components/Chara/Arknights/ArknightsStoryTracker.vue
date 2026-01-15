@@ -65,7 +65,7 @@
                         v-for="variant in selectedCharacter.validVariants"
                         :key="variant"
                         class="variant-item"
-                        @click="previewVariant(variant)"
+                        @click="showPreviewVariant(variant)"
                     >
                         <v-img
                             :src="getThumbnailUrl(variant)"
@@ -283,7 +283,7 @@ function handleSelect(id: string | null) {
     }
 }
 
-function previewVariant(variant: string) {
+function showPreviewVariant(variant: string) {
     previewVariant.value = variant;
     previewDialog.value = true;
 }
