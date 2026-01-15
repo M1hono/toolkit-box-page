@@ -16,27 +16,28 @@
                 @mousedown="handleMouseDown"
                 @mousemove="handleMouseMove"
                 @mouseup="handleMouseUp"
-                @touchstart="handleMouseDown"
-                @touchmove="handleMouseMove"
+                @mouseleave="handleMouseUp"
+                @touchstart.prevent="handleMouseDown"
+                @touchmove.prevent="handleMouseMove"
                 @touchend="handleMouseUp"
-                :style="{ cursor: currentCursor }"
             ></canvas>
         </div>
     </div>
 </template>
 
 <script setup lang="ts">
-    import { ref, computed, watch, nextTick } from "vue";
+    import { ref, watch, nextTick } from "vue";
     import type { SelectionRect } from "../../../../utils/chara/fgo/types";
 
     const props = defineProps<{
         diffImages: HTMLCanvasElement[];
         currentDiffIndex: number;
         selection: SelectionRect;
+        tempSelection: SelectionRect;
         isSelecting: boolean;
         isResizing: boolean;
-        resizeDirection: string;
-        getResizeDirection: (x: number, y: number) => string;
+        getResizeDirection: (x: number, y: number, sel?: SelectionRect) => string;
+        getCursorForDirection: (direction: string) => string;
         drawSelectionBox: (
             ctx: CanvasRenderingContext2D,
             selection: SelectionRect
@@ -53,25 +54,6 @@
 
     const canvasRef = ref<HTMLCanvasElement | null>(null);
 
-    const currentCursor = computed(() => {
-        if (props.isSelecting || props.isResizing) {
-            return "crosshair";
-        }
-
-        const cursorMap: Record<string, string> = {
-            nw: "nw-resize",
-            ne: "ne-resize",
-            sw: "sw-resize",
-            se: "se-resize",
-            n: "n-resize",
-            s: "s-resize",
-            w: "w-resize",
-            e: "e-resize",
-        };
-
-        return cursorMap[props.resizeDirection] || "crosshair";
-    });
-
     function getCanvasCoords(event: MouseEvent | TouchEvent): {
         x: number;
         y: number;
@@ -79,8 +61,8 @@
         if (!canvasRef.value) return { x: 0, y: 0 };
 
         const rect = canvasRef.value.getBoundingClientRect();
-        const { clientX, clientY } =
-            event instanceof TouchEvent ? event.touches[0] : event;
+        const clientX = event instanceof TouchEvent ? event.touches[0]?.clientX ?? 0 : event.clientX;
+        const clientY = event instanceof TouchEvent ? event.touches[0]?.clientY ?? 0 : event.clientY;
 
         const scaleX = canvasRef.value.width / rect.width;
         const scaleY = canvasRef.value.height / rect.height;
@@ -98,18 +80,24 @@
     }
 
     function handleMouseMove(event: MouseEvent | TouchEvent) {
-        if (!props.isSelecting && !props.isResizing) {
-            const coords = getCanvasCoords(event);
-            props.getResizeDirection(coords.x, coords.y);
-        } else {
-            const coords = getCanvasCoords(event);
+        const coords = getCanvasCoords(event);
+        
+        if (props.isSelecting || props.isResizing) {
             emit("update-selection", coords.x, coords.y);
             draw();
+        } else {
+            const direction = props.getResizeDirection(coords.x, coords.y, props.selection);
+            if (canvasRef.value) {
+                canvasRef.value.style.cursor = props.getCursorForDirection(direction);
+            }
         }
     }
 
     function handleMouseUp() {
         emit("end-selection");
+        if (canvasRef.value) {
+            canvasRef.value.style.cursor = 'crosshair';
+        }
     }
 
     function draw() {
@@ -124,7 +112,11 @@
         if (!frame) return;
 
         ctx.drawImage(frame, 0, 0);
-        props.drawSelectionBox(ctx, props.selection);
+        
+        const selToDraw = (props.isSelecting || props.isResizing) 
+            ? props.tempSelection 
+            : props.selection;
+        props.drawSelectionBox(ctx, selToDraw);
         emit("draw");
     }
 
@@ -169,17 +161,21 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-width: 600px;
+        min-width: 0;
         background: var(--vp-c-bg);
-        padding: 24px;
+        padding: 16px;
         border-radius: 8px;
         border: 1px solid var(--vp-c-divider);
+        box-sizing: border-box;
+        overflow: hidden;
     }
 
     .canvas-container {
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 100%;
+        max-width: 100%;
     }
 
     canvas {
@@ -189,25 +185,16 @@
         border: 2px solid var(--vp-c-divider);
         cursor: crosshair;
         transition: border-color 0.2s ease;
+        display: block;
     }
 
     canvas:hover {
         border-color: var(--vp-c-brand-1);
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 640px) {
         .workspace {
-            min-width: auto;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .workspace {
-            padding: 16px;
-        }
-
-        canvas {
-            max-width: 95%;
+            padding: 12px;
         }
     }
 </style>

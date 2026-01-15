@@ -3,10 +3,12 @@
  * @description Logic for filtering and paginating the character list
  */
 
-import { ref, computed } from 'vue';
-import type { UnifiedCharacterData } from '../types';
+import { ref, computed } from "vue";
+import type { UnifiedCharacterData } from "../types";
 
-export function useArknightsList(characters: { value: UnifiedCharacterData[] }) {
+export function useArknightsList(characters: {
+    value: UnifiedCharacterData[];
+}) {
     const searchQuery = ref("");
     const typeFilter = ref("");
     const currentPage = ref(1);
@@ -25,8 +27,12 @@ export function useArknightsList(characters: { value: UnifiedCharacterData[] }) 
                 (char) =>
                     char.displayName.toLowerCase().includes(query) ||
                     char.charId.toLowerCase().includes(query) ||
-                    char.searchNames.some((name) => name.toLowerCase().includes(query)) ||
-                    char.speakerNames.some((name) => name.toLowerCase().includes(query))
+                    char.searchNames.some((name) =>
+                        name.toLowerCase().includes(query)
+                    ) ||
+                    char.speakerNames.some((name) =>
+                        name.toLowerCase().includes(query)
+                    )
             );
         }
 
@@ -39,7 +45,9 @@ export function useArknightsList(characters: { value: UnifiedCharacterData[] }) 
         return filteredCharacters.value.slice(start, end);
     });
 
-    const totalPages = computed(() => Math.ceil(filteredCharacters.value.length / pageSize.value));
+    const totalPages = computed(() =>
+        Math.ceil(filteredCharacters.value.length / pageSize.value)
+    );
 
     function handleSearch() {
         currentPage.value = 1;
@@ -53,6 +61,6 @@ export function useArknightsList(characters: { value: UnifiedCharacterData[] }) 
         filteredCharacters,
         paginatedCharacters,
         totalPages,
-        handleSearch
+        handleSearch,
     };
 }

@@ -173,7 +173,7 @@
     .bottom-controls {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
 
     .card {
@@ -185,7 +185,7 @@
 
     .card-title {
         font-weight: 600;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         color: var(--vp-c-text-1);
     }
 
@@ -198,13 +198,13 @@
 
     .hint {
         margin-top: 6px;
-        font-size: 0.78rem;
+        font-size: 0.75rem;
         color: var(--vp-c-text-3);
     }
 
     .color {
-        width: 52px;
-        height: 34px;
+        width: 48px;
+        height: 32px;
         border: 1px solid var(--vp-c-divider);
         border-radius: 8px;
         background: transparent;
@@ -212,42 +212,37 @@
     }
 
     .preview {
-        margin-top: 10px;
+        margin-top: 8px;
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 170px;
+        min-height: 140px;
         background: var(--vp-c-bg-soft);
         border: 1px solid var(--vp-c-divider);
         border-radius: 10px;
-        padding: 10px;
+        padding: 8px;
     }
 
     .preview canvas {
         max-width: 100%;
-        max-height: 180px;
+        max-height: 150px;
         border-radius: 8px;
     }
 
     .actions {
-        margin-top: 10px;
+        margin-top: 8px;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 8px;
-    }
-
-    .actions button:nth-child(5),
-    .actions button:nth-child(6) {
-        grid-column: span 1;
+        gap: 6px;
     }
 
     .btn {
-        padding: 10px 12px;
+        padding: 8px 10px;
         border: 1px solid var(--vp-c-divider);
-        border-radius: 10px;
+        border-radius: 8px;
         background: var(--vp-c-bg);
         color: var(--vp-c-text-1);
-        font-size: 0.85rem;
+        font-size: 0.8rem;
         cursor: pointer;
         transition: all 0.15s ease;
     }
@@ -262,9 +257,15 @@
         cursor: not-allowed;
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
         .actions {
-            grid-template-columns: 1fr;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+
+    @media (max-width: 480px) {
+        .actions {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 </style>

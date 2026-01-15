@@ -3,8 +3,8 @@
  * @description Handles automatic face detection using crop data
  */
 
-import { ref, onMounted } from 'vue';
-import type { SelectionRect, CanvasSize } from '../types';
+import { ref, onMounted } from "vue";
+import type { SelectionRect, CanvasSize } from "../types";
 
 export function useArknightsFaceDetection() {
     const cropData = ref<Record<string, any>>({});
@@ -12,13 +12,13 @@ export function useArknightsFaceDetection() {
     async function loadCropData() {
         try {
             const response = await fetch(
-                'https://raw.githubusercontent.com/akgcc/arkdata/main/cropper_data/auto_coords.json'
+                "https://raw.githubusercontent.com/akgcc/arkdata/main/cropper_data/auto_coords.json"
             );
             if (response.ok) {
                 cropData.value = await response.json();
             }
         } catch (error) {
-            console.warn('Failed to load crop data:', error);
+            console.warn("Failed to load crop data:", error);
         }
     }
 
@@ -30,10 +30,12 @@ export function useArknightsFaceDetection() {
     ): SelectionRect | null {
         const normalizedVariant = variant.toLowerCase();
         let cropInfo = cropData.value[normalizedVariant];
-        
+
         if (!cropInfo) {
             const lowerVariant = normalizedVariant.toLowerCase();
-            const key = Object.keys(cropData.value).find(k => k.toLowerCase() === lowerVariant);
+            const key = Object.keys(cropData.value).find(
+                (k) => k.toLowerCase() === lowerVariant
+            );
             if (key) cropInfo = cropData.value[key];
         }
 
@@ -44,24 +46,30 @@ export function useArknightsFaceDetection() {
             canvasSize.width / image.width,
             canvasSize.height / image.height
         );
-        
+
         const originalX = -cropX / scale;
         const originalY = -cropY / scale;
         const canvasX = originalX * canvasScale;
         const canvasY = originalY * canvasScale;
-        
+
         const cropSize = 96 * multiplier * canvasScale;
-        
-        const finalX = Math.max(0, Math.min(canvasX, canvasSize.width - cropSize));
-        const finalY = Math.max(0, Math.min(canvasY, canvasSize.height - cropSize));
+
+        const finalX = Math.max(
+            0,
+            Math.min(canvasX, canvasSize.width - cropSize)
+        );
+        const finalY = Math.max(
+            0,
+            Math.min(canvasY, canvasSize.height - cropSize)
+        );
         const finalWidth = Math.min(cropSize, canvasSize.width - finalX);
         const finalHeight = Math.min(cropSize, canvasSize.height - finalY);
-        
+
         return {
             x: Math.round(finalX),
             y: Math.round(finalY),
             width: Math.round(finalWidth),
-            height: Math.round(finalHeight)
+            height: Math.round(finalHeight),
         };
     }
 
@@ -71,7 +79,7 @@ export function useArknightsFaceDetection() {
             x: (canvasSize.width - size) / 2,
             y: canvasSize.height * 0.05,
             width: size,
-            height: size
+            height: size,
         };
     }
 
@@ -81,6 +89,6 @@ export function useArknightsFaceDetection() {
         cropData,
         loadCropData,
         detectFaceRegion,
-        getDefaultSelection
+        getDefaultSelection,
     };
 }

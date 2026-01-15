@@ -3,37 +3,39 @@
  * @description Provides access to character data, stories, and search functionality
  */
 
-import { ref, computed } from 'vue';
-import type { UnifiedCharacterData, StoryReaderUrls } from '../types';
-import { getStoryReaderUrls } from './useArknightsStoryReader';
+import { ref, computed } from "vue";
+import type { UnifiedCharacterData, StoryReaderUrls } from "../types";
+import { getStoryReaderUrls } from "./useArknightsStoryReader";
 
 export function useArknightsData() {
     const characters = ref<Record<string, UnifiedCharacterData>>({});
     const names = ref<Record<string, any>>({});
     const storys = ref<Record<string, string[]>>({});
     const searchIndex = ref<Record<string, string>>({});
-    const currentLang = ref('en_us');
+    const currentLang = ref("en_us");
 
     /**
      * Load all data for a specific language
      */
     async function loadLanguageData(lang: string) {
         currentLang.value = lang;
-        
-        try {
-            const [globalRes, namesRes, storysRes, searchRes] = await Promise.all([
-                fetch(`/data/global/arknights/characters.json`),
-                fetch(`/data/${lang}/arknights/names.json`),
-                fetch(`/data/${lang}/arknights/storys.json`),
-                fetch(`/data/${lang}/arknights/search_index.json`)
-            ]);
 
-            const [globalData, namesData, storysData, searchData] = await Promise.all([
-                globalRes.json(),
-                namesRes.json(),
-                storysRes.json(),
-                searchRes.json()
-            ]);
+        try {
+            const [globalRes, namesRes, storysRes, searchRes] =
+                await Promise.all([
+                    fetch(`/data/global/arknights/characters.json`),
+                    fetch(`/data/${lang}/arknights/names.json`),
+                    fetch(`/data/${lang}/arknights/storys.json`),
+                    fetch(`/data/${lang}/arknights/search_index.json`),
+                ]);
+
+            const [globalData, namesData, storysData, searchData] =
+                await Promise.all([
+                    globalRes.json(),
+                    namesRes.json(),
+                    storysRes.json(),
+                    searchRes.json(),
+                ]);
 
             characters.value = globalData;
             names.value = namesData;
@@ -42,7 +44,7 @@ export function useArknightsData() {
 
             return true;
         } catch (error) {
-            console.error('Failed to load language data:', error);
+            console.error("Failed to load language data:", error);
             return false;
         }
     }
@@ -61,7 +63,7 @@ export function useArknightsData() {
     function getAllCharacterIdsByName(name: string): string[] {
         const result = searchIndex.value[name];
         if (!result) return [];
-        return typeof result === 'string' ? [result] : result;
+        return typeof result === "string" ? [result] : result;
     }
 
     /**
@@ -70,15 +72,15 @@ export function useArknightsData() {
     function getCharacterById(id: string): UnifiedCharacterData | null {
         const char = characters.value[id];
         const name = names.value[id];
-        
+
         if (!char) return null;
-        
+
         return {
             ...char,
             ...name,
             displayName: name?.displayName || id,
             speakerNames: name?.speakerNames || [],
-            searchNames: name?.searchNames || []
+            searchNames: name?.searchNames || [],
         };
     }
 
@@ -92,11 +94,13 @@ export function useArknightsData() {
     /**
      * Get story reader URLs for a character's stories
      */
-    function getStoryReadersForCharacter(id: string): Array<{ path: string; urls: StoryReaderUrls }> {
+    function getStoryReadersForCharacter(
+        id: string
+    ): Array<{ path: string; urls: StoryReaderUrls }> {
         const stories = getStoriesForCharacter(id);
-        return stories.map(path => ({
+        return stories.map((path) => ({
             path,
-            urls: getStoryReaderUrls(path, currentLang.value)
+            urls: getStoryReaderUrls(path, currentLang.value),
         }));
     }
 
@@ -106,24 +110,24 @@ export function useArknightsData() {
     function searchCharacters(query: string): UnifiedCharacterData[] {
         const lowerQuery = query.toLowerCase();
         const results: UnifiedCharacterData[] = [];
-        
+
         for (const [id, nameData] of Object.entries(names.value)) {
             const allNames = [
                 nameData.displayName,
                 ...(nameData.speakerNames || []),
-                ...(nameData.searchNames || [])
+                ...(nameData.searchNames || []),
             ].filter(Boolean);
-            
-            const matches = allNames.some(name => 
+
+            const matches = allNames.some((name) =>
                 name.toLowerCase().includes(lowerQuery)
             );
-            
+
             if (matches) {
                 const char = getCharacterById(id);
                 if (char) results.push(char);
             }
         }
-        
+
         return results;
     }
 
@@ -134,7 +138,7 @@ export function useArknightsData() {
         const types = new Set<string>();
         for (const storyList of Object.values(storys.value)) {
             for (const story of storyList) {
-                const type = story.split('/')[0];
+                const type = story.split("/")[0];
                 types.add(type);
             }
         }
@@ -146,15 +150,17 @@ export function useArknightsData() {
      */
     function getCharactersByStoryType(type: string): UnifiedCharacterData[] {
         const results: UnifiedCharacterData[] = [];
-        
+
         for (const [id, storyList] of Object.entries(storys.value)) {
-            const hasType = storyList.some(story => story.startsWith(`${type}/`));
+            const hasType = storyList.some((story) =>
+                story.startsWith(`${type}/`)
+            );
             if (hasType) {
                 const char = getCharacterById(id);
                 if (char) results.push(char);
             }
         }
-        
+
         return results;
     }
 
@@ -166,7 +172,7 @@ export function useArknightsData() {
         totalNames: Object.keys(names.value).length,
         totalSearchTerms: Object.keys(searchIndex.value).length,
         charactersWithStories: Object.keys(storys.value).length,
-        totalStories: Object.values(storys.value).flat().length
+        totalStories: Object.values(storys.value).flat().length,
     }));
 
     return {
@@ -184,6 +190,6 @@ export function useArknightsData() {
         getStoryReadersForCharacter,
         searchCharacters,
         storyTypes,
-        getCharactersByStoryType
+        getCharactersByStoryType,
     };
 }

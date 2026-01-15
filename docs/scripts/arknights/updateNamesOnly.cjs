@@ -115,56 +115,10 @@ async function updateNamesForLanguage(langCode) {
         console.warn(`WARNING: No story files found for ${langCode}, using existing names data`);
     }
     
-    // Generate search index from final names
     const excludeRules = loadExcludeRules(langCode);
     const combineRules = loadCombineRules();
-    const searchIndex = {};
     
-    let excludedCount = 0;
-    let combinedCount = 0;
-    
-    for (const [id, data] of Object.entries(finalNames)) {
-        const names = new Set();
-        if (data.displayName) names.add(data.displayName);
-        if (data.speakerNames) data.speakerNames.forEach(n => names.add(n));
-        if (data.searchNames) data.searchNames.forEach(n => names.add(n));
-        
-        for (const name of names) {
-            if (!name || name.trim() === "") continue;
-            
-            // Check exclude rules BEFORE applying combine
-            const excludeList = excludeRules[name] || [];
-            if (excludeList.includes(id)) {
-                excludedCount++;
-                continue;
-            }
-            
-            // Apply combine rules
-            const actualId = combineRules[id] || id;
-            if (combineRules[id]) combinedCount++;
-            
-            // Support multiple characters with the same name
-            if (!searchIndex[name]) {
-                searchIndex[name] = actualId;
-            } else if (typeof searchIndex[name] === 'string') {
-                searchIndex[name] = [searchIndex[name], actualId];
-            } else if (Array.isArray(searchIndex[name])) {
-                searchIndex[name].push(actualId);
-            }
-        }
-    }
-    
-    console.log(`Applied rules: ${excludedCount} excluded, ${combinedCount} combined`);
-    
-    // Count duplicates in search index
-    let duplicateCount = 0;
-    for (const value of Object.values(searchIndex)) {
-        if (Array.isArray(value)) duplicateCount++;
-    }
-    
-    console.log(`Generated search index: ${Object.keys(searchIndex).length} terms (${duplicateCount} with duplicates)`);
-    
-    // Bidirectional cleanup: Remove excluded names from speakerNames
+    // Bidirectional cleanup FIRST: Remove excluded names from speakerNames BEFORE search index generation
     let cleanupCount = 0;
     for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
         for (const charId of excludedCharIds) {
@@ -179,8 +133,59 @@ async function updateNamesForLanguage(langCode) {
         }
     }
     if (cleanupCount > 0) {
-        console.log(`  Cleaned ${cleanupCount} speakerNames entries`);
+        console.log(`  Cleaned ${cleanupCount} speakerNames entries via exclude rules`);
     }
+    
+    // Generate search index from final names (now with cleaned data)
+    const searchIndex = {};
+    
+    let excludedCount = 0;
+    let combinedCount = 0;
+    
+    for (const [id, data] of Object.entries(finalNames)) {
+        const names = new Set();
+        if (data.displayName) names.add(data.displayName);
+        if (data.speakerNames) data.speakerNames.forEach(n => names.add(n));
+        if (data.searchNames) data.searchNames.forEach(n => names.add(n));
+        
+        for (const name of names) {
+            if (!name || name.trim() === "") continue;
+            
+            // Double-check exclude rules (for names that might still appear in displayName)
+            const excludeList = excludeRules[name] || [];
+            if (excludeList.includes(id)) {
+                excludedCount++;
+                continue;
+            }
+            
+            // Apply combine rules
+            const actualId = combineRules[id] || id;
+            if (combineRules[id]) combinedCount++;
+            
+            // Support multiple characters with the same name
+            if (!searchIndex[name]) {
+                searchIndex[name] = actualId;
+            } else if (typeof searchIndex[name] === 'string') {
+                if (searchIndex[name] !== actualId) {
+                    searchIndex[name] = [searchIndex[name], actualId];
+                }
+            } else if (Array.isArray(searchIndex[name])) {
+                if (!searchIndex[name].includes(actualId)) {
+                    searchIndex[name].push(actualId);
+                }
+            }
+        }
+    }
+    
+    console.log(`Applied rules: ${excludedCount} excluded, ${combinedCount} combined`);
+    
+    // Count duplicates in search index
+    let duplicateCount = 0;
+    for (const value of Object.values(searchIndex)) {
+        if (Array.isArray(value)) duplicateCount++;
+    }
+    
+    console.log(`Generated search index: ${Object.keys(searchIndex).length} terms (${duplicateCount} with duplicates)`)
     
     saveLanguageNames(langCode, finalNames);
     saveLanguageStorys(langCode, characterStorys);

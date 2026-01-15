@@ -9,11 +9,11 @@
 <template>
     <div class="search-bar-wrapper">
         <v-card flat class="search-card">
-            <v-card-title class="text-center pa-8 pb-6">
+            <v-card-title class="text-center pa-4 pa-sm-6 pb-4">
                 <div class="title-text">{{ t.title }}</div>
             </v-card-title>
 
-            <v-card-text class="px-8 pb-8">
+            <v-card-text class="px-4 px-sm-6 pb-4 pb-sm-6">
                 <v-autocomplete
                     v-model:search="searchQuery"
                     v-model="selectedValue"
@@ -171,55 +171,58 @@
 <style scoped>
     .search-bar-wrapper {
         background: var(--vp-c-bg);
-        padding: 0 16px 16px 16px;
+        padding: 16px;
+        box-sizing: border-box;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
     }
 
     .search-card {
         width: 100%;
+        max-width: 100%;
         border: 1px solid var(--vp-c-divider) !important;
         border-radius: 12px !important;
+        box-sizing: border-box;
     }
 
     .title-text {
-        font-size: 2rem;
+        font-size: clamp(1.1rem, 4vw, 1.75rem);
         font-weight: 700;
-        line-height: 1.2;
+        line-height: 1.3;
         background: linear-gradient(135deg, var(--vp-c-brand-1), #722ed1);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
         letter-spacing: -0.5px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
     }
 
     .search-autocomplete {
-        margin-bottom: 20px;
+        margin-bottom: 16px;
     }
 
     .search-result-item {
-        padding: 12px 16px !important;
-    }
-
-    .servant-avatar {
-        border: 1px solid var(--vp-c-divider);
-        background: var(--vp-c-bg);
-    }
-
-    .result-name {
-        font-size: 1rem;
-        font-weight: 600;
-        color: var(--vp-c-text-1);
-        margin-bottom: 2px;
-    }
-
-    .result-jp-name {
-        font-size: 0.85rem;
-        color: var(--vp-c-text-3);
+        padding: 10px 14px !important;
     }
 
     .servant-avatar {
         border: 1px solid var(--vp-c-divider);
         background: var(--vp-c-bg);
         flex-shrink: 0;
+    }
+
+    .result-name {
+        font-size: 0.95rem;
+        font-weight: 600;
+        color: var(--vp-c-text-1);
+        margin-bottom: 2px;
+    }
+
+    .result-jp-name {
+        font-size: 0.8rem;
+        color: var(--vp-c-text-3);
     }
 
     .icon-placeholder {
@@ -235,8 +238,8 @@
     .divider-wrapper {
         display: flex;
         align-items: center;
-        gap: 16px;
-        margin: 24px 0;
+        gap: 12px;
+        margin: 16px 0;
     }
 
     .divider-text {
@@ -249,21 +252,22 @@
 
     .upload-btn {
         font-weight: 600;
-        font-size: 0.95rem;
+        font-size: 0.9rem;
         letter-spacing: 0.5px;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 640px) {
         .search-bar-wrapper {
-            padding: 16px;
+            padding: 12px;
         }
 
-        .title-text {
-            font-size: 1.5rem;
+        .divider-wrapper {
+            gap: 8px;
+            margin: 12px 0;
         }
 
-        .search-autocomplete {
-            font-size: 0.9rem;
+        .upload-btn {
+            font-size: 0.85rem;
         }
     }
 </style>

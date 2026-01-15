@@ -3,8 +3,8 @@
  * @description Handles download, copy, and batch processing operations
  */
 
-import JSZip from 'jszip';
-import type { SelectionRect, ColorRGBA } from '../types';
+import JSZip from "jszip";
+import type { SelectionRect, ColorRGBA } from "../types";
 
 export function useFgoCanvasOps() {
     async function saveSelectedArea(
@@ -39,7 +39,7 @@ export function useFgoCanvasOps() {
             tempCanvas.height
         );
 
-        if (typeof document !== 'undefined') {
+        if (typeof document !== "undefined") {
             const link = document.createElement("a");
             link.download = filename;
             link.href = tempCanvas.toDataURL();
@@ -54,13 +54,17 @@ export function useFgoCanvasOps() {
         characterName: string
     ): Promise<number> {
         const isCropped = selection !== null;
-        console.log(`🎨 Starting batch process (${isCropped ? 'cropped' : 'full'}): ${diffCanvases.length} images`);
-        
+        console.log(
+            `🎨 Starting batch process (${isCropped ? "cropped" : "full"}): ${
+                diffCanvases.length
+            } images`
+        );
+
         const zip = new JSZip();
 
         for (let i = 0; i < diffCanvases.length; i++) {
             const sourceCanvas = diffCanvases[i];
-            
+
             if (!isCropped) {
                 try {
                     const blob = await new Promise<Blob>((resolve, reject) => {
@@ -69,10 +73,21 @@ export function useFgoCanvasOps() {
                             else reject(new Error("Failed to create blob"));
                         });
                     });
-                    zip.file(`${characterName}_full_${String(i + 1).padStart(2, '0')}.png`, blob);
-                    console.log(`✅ Added full image ${i + 1}/${diffCanvases.length}`);
+                    zip.file(
+                        `${characterName}_full_${String(i + 1).padStart(
+                            2,
+                            "0"
+                        )}.png`,
+                        blob
+                    );
+                    console.log(
+                        `✅ Added full image ${i + 1}/${diffCanvases.length}`
+                    );
                 } catch (error) {
-                    console.error(`Failed to process full image ${i + 1}:`, error);
+                    console.error(
+                        `Failed to process full image ${i + 1}:`,
+                        error
+                    );
                 }
             } else {
                 const offset = 2;
@@ -109,22 +124,33 @@ export function useFgoCanvasOps() {
                             else reject(new Error("Failed to create blob"));
                         });
                     });
-                    zip.file(`${characterName}_cropped_${String(i + 1).padStart(2, '0')}.png`, blob);
-                    console.log(`✅ Added cropped image ${i + 1}/${diffCanvases.length}`);
+                    zip.file(
+                        `${characterName}_cropped_${String(i + 1).padStart(
+                            2,
+                            "0"
+                        )}.png`,
+                        blob
+                    );
+                    console.log(
+                        `✅ Added cropped image ${i + 1}/${diffCanvases.length}`
+                    );
                 } catch (error) {
-                    console.error(`Failed to process cropped image ${i + 1}:`, error);
+                    console.error(
+                        `Failed to process cropped image ${i + 1}:`,
+                        error
+                    );
                 }
             }
         }
 
-        console.log('📦 Generating ZIP...');
-        const content = await zip.generateAsync({ 
+        console.log("📦 Generating ZIP...");
+        const content = await zip.generateAsync({
             type: "blob",
             compression: "DEFLATE",
-            compressionOptions: { level: 6 }
+            compressionOptions: { level: 6 },
         });
-        
-        if (typeof document !== 'undefined') {
+
+        if (typeof document !== "undefined") {
             const link = document.createElement("a");
             link.download = `${characterName}_batch_${Date.now()}.zip`;
             link.href = URL.createObjectURL(content);
@@ -138,12 +164,49 @@ export function useFgoCanvasOps() {
         return diffCanvases.length;
     }
 
-    function drawSelectionBox(ctx: CanvasRenderingContext2D, selection: SelectionRect) {
-        ctx.strokeStyle = "red";
+    function drawSelectionBox(
+        ctx: CanvasRenderingContext2D,
+        selection: SelectionRect
+    ) {
+        let brandColor = "#409EFF";
+        if (typeof document !== "undefined") {
+            brandColor =
+                getComputedStyle(document.documentElement)
+                    .getPropertyValue("--vp-c-brand-1")
+                    .trim() || "#409EFF";
+        }
+
+        ctx.strokeStyle = brandColor;
         ctx.lineWidth = 2;
-        ctx.setLineDash([5, 5]);
-        ctx.strokeRect(selection.x, selection.y, selection.width, selection.height);
+        ctx.setLineDash([6, 4]);
+        ctx.strokeRect(
+            selection.x,
+            selection.y,
+            selection.width,
+            selection.height
+        );
         ctx.setLineDash([]);
+
+        ctx.fillStyle = brandColor;
+        const handleSize = 8;
+        const handles = [
+            [selection.x, selection.y],
+            [selection.x + selection.width, selection.y],
+            [selection.x, selection.y + selection.height],
+            [selection.x + selection.width, selection.y + selection.height],
+            [selection.x + selection.width / 2, selection.y],
+            [selection.x + selection.width / 2, selection.y + selection.height],
+            [selection.x, selection.y + selection.height / 2],
+            [selection.x + selection.width, selection.y + selection.height / 2],
+        ];
+        handles.forEach(([hx, hy]) => {
+            ctx.fillRect(
+                hx - handleSize / 2,
+                hy - handleSize / 2,
+                handleSize,
+                handleSize
+            );
+        });
     }
 
     function drawPreview(
@@ -194,6 +257,6 @@ export function useFgoCanvasOps() {
         saveSelectedArea,
         batchProcess,
         drawSelectionBox,
-        drawPreview
+        drawPreview,
     };
 }

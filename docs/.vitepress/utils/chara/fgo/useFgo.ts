@@ -3,12 +3,12 @@
  * @description Orchestrates all FGO sub-composables
  */
 
-import { onMounted } from 'vue';
-import { useFgoImageLoader } from './core/useFgoImageLoader';
-import { useFgoDiffProcessor } from './core/useFgoDiffProcessor';
-import { useFgoSelection } from './core/useFgoSelection';
-import { useFgoCanvasOps } from './core/useFgoCanvasOps';
-import { useFgoFaceDetection } from './core/useFgoFaceDetection';
+import { onMounted } from "vue";
+import { useFgoImageLoader } from "./core/useFgoImageLoader";
+import { useFgoDiffProcessor } from "./core/useFgoDiffProcessor";
+import { useFgoSelection } from "./core/useFgoSelection";
+import { useFgoCanvasOps } from "./core/useFgoCanvasOps";
+import { useFgoFaceDetection } from "./core/useFgoFaceDetection";
 
 export function useFgo() {
     const imageLoader = useFgoImageLoader();
@@ -29,6 +29,6 @@ export function useFgo() {
         ...diffProcessor,
         ...selection,
         ...canvasOps,
-        ...faceDetection
+        ...faceDetection,
     };
 }

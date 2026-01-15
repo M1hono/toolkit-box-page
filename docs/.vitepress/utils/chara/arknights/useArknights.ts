@@ -3,11 +3,11 @@
  * @description Orchestrates all Arknights sub-composables
  */
 
-import { onMounted, watch } from 'vue';
-import { useArknightsCore } from './core/useArknightsCore';
-import { useArknightsCanvas } from './core/useArknightsCanvas';
-import { useArknightsList } from './core/useArknightsList';
-import { useArknightsBatch } from './core/useArknightsBatch';
+import { onMounted, watch } from "vue";
+import { useArknightsCore } from "./core/useArknightsCore";
+import { useArknightsCanvas } from "./core/useArknightsCanvas";
+import { useArknightsList } from "./core/useArknightsList";
+import { useArknightsBatch } from "./core/useArknightsBatch";
 
 export function useArknights() {
     const core = useArknightsCore();
@@ -28,6 +28,6 @@ export function useArknights() {
         ...core,
         ...list,
         ...canvas,
-        ...batch
+        ...batch,
     };
 }

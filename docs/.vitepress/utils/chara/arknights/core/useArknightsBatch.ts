@@ -3,14 +3,18 @@
  * @description Logic for batch downloading and ZIP generation
  */
 
-import { ref } from 'vue';
-import JSZip from 'jszip';
-import type { UnifiedCharacterData } from '../types';
+import { ref } from "vue";
+import JSZip from "jszip";
+import type { UnifiedCharacterData } from "../types";
 
 export function useArknightsBatch() {
     const isBatchProcessing = ref(false);
 
-    async function downloadAsZip(character: UnifiedCharacterData, variants: string[], getUrl: (v: string) => string) {
+    async function downloadAsZip(
+        character: UnifiedCharacterData,
+        variants: string[],
+        getUrl: (v: string) => string
+    ) {
         try {
             isBatchProcessing.value = true;
             const zip = new JSZip();
@@ -29,7 +33,7 @@ export function useArknightsBatch() {
             link.download = `${character.displayName}_variants.zip`;
             link.click();
         } catch (error) {
-            console.error('❌ Batch download failed:', error);
+            console.error("❌ Batch download failed:", error);
         } finally {
             isBatchProcessing.value = false;
         }
@@ -37,6 +41,6 @@ export function useArknightsBatch() {
 
     return {
         isBatchProcessing,
-        downloadAsZip
+        downloadAsZip,
     };
 }

@@ -3,8 +3,8 @@
  * @description Handles face detection using OpenCV and coordinate data
  */
 
-import { ref, onMounted } from 'vue';
-import type { FgoCharacter, FaceCoordinate, SelectionRect } from '../types';
+import { ref, onMounted } from "vue";
+import type { FgoCharacter, FaceCoordinate, SelectionRect } from "../types";
 
 declare global {
     interface Window {
@@ -32,7 +32,9 @@ export function useFgoFaceDetection() {
 
         opencvLoadingPromise = new Promise<void>((resolve) => {
             // Check if script is already in DOM
-            const existingScript = document.querySelector('script[src*="opencv.js"]');
+            const existingScript = document.querySelector(
+                'script[src*="opencv.js"]'
+            );
             if (existingScript) {
                 console.log("⏳ OpenCV script already loading...");
                 const checkReady = setInterval(() => {
@@ -47,7 +49,7 @@ export function useFgoFaceDetection() {
             }
 
             console.log("📥 Loading OpenCV...");
-            if (typeof document !== 'undefined') {
+            if (typeof document !== "undefined") {
                 const script = document.createElement("script");
                 script.src = "https://docs.opencv.org/4.5.2/opencv.js";
                 script.async = true;
@@ -107,7 +109,7 @@ export function useFgoFaceDetection() {
                 try {
                     const response = await fetch(classifier.url);
                     if (!response.ok) continue;
-                    
+
                     const buffer = await response.arrayBuffer();
                     const uint8Array = new Uint8Array(buffer);
 
@@ -116,7 +118,10 @@ export function useFgoFaceDetection() {
                         console.log(`✅ Loaded classifier: ${classifier.name}`);
                     }
                 } catch (error) {
-                    console.warn(`⚠️ Failed to load ${classifier.name}:`, error);
+                    console.warn(
+                        `⚠️ Failed to load ${classifier.name}:`,
+                        error
+                    );
                 }
             }
             console.log("✅ Face detector initialized");
@@ -139,20 +144,26 @@ export function useFgoFaceDetection() {
         try {
             if (window.cv.FS && window.cv.FS.readFile) {
                 try {
-                    const animeData = window.cv.FS.readFile("lbpcascade_animeface.xml");
+                    const animeData = window.cv.FS.readFile(
+                        "lbpcascade_animeface.xml"
+                    );
                     if (animeData && animeData.length > 0) {
                         faceCascade.load("lbpcascade_animeface.xml");
                         cascadeLoaded = true;
                         console.log("✅ Using anime face detector");
                     }
                 } catch (e) {
-                    console.log("⚠️ Anime detector unavailable, trying general detector");
+                    console.log(
+                        "⚠️ Anime detector unavailable, trying general detector"
+                    );
                 }
             }
 
             if (!cascadeLoaded && window.cv.FS && window.cv.FS.readFile) {
                 try {
-                    const generalData = window.cv.FS.readFile("haarcascade_frontalface_default.xml");
+                    const generalData = window.cv.FS.readFile(
+                        "haarcascade_frontalface_default.xml"
+                    );
                     if (generalData && generalData.length > 0) {
                         faceCascade.load("haarcascade_frontalface_default.xml");
                         cascadeLoaded = true;
@@ -233,7 +244,8 @@ export function useFgoFaceDetection() {
                 (key) =>
                     key.includes(imageId) ||
                     imageId.includes(key) ||
-                    key.replace(/[^0-9]/g, "") === imageId.replace(/[^0-9]/g, "")
+                    key.replace(/[^0-9]/g, "") ===
+                        imageId.replace(/[^0-9]/g, "")
             );
             if (fuzzyMatch) {
                 faceData = faceCoords[fuzzyMatch];
@@ -241,13 +253,21 @@ export function useFgoFaceDetection() {
             }
         }
 
-        if (faceData && typeof faceData.faceX === 'number' && typeof faceData.faceY === 'number') {
-            const adjusted = adjustFaceCoordinates(faceData.faceX, faceData.faceY, image);
+        if (
+            faceData &&
+            typeof faceData.faceX === "number" &&
+            typeof faceData.faceY === "number"
+        ) {
+            const adjusted = adjustFaceCoordinates(
+                faceData.faceX,
+                faceData.faceY,
+                image
+            );
             return {
                 x: adjusted.x,
                 y: adjusted.y,
                 width: 256,
-                height: 256
+                height: 256,
             };
         }
 
@@ -307,6 +327,6 @@ export function useFgoFaceDetection() {
         loadOpenCV,
         initFaceDetector,
         detectFaceInMat,
-        detectFaceFromCoordinates
+        detectFaceFromCoordinates,
     };
 }

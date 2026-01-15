@@ -3,7 +3,7 @@
  * @description Handles diff image processing with OpenCV template matching
  */
 
-import { ref } from 'vue';
+import { ref } from "vue";
 
 declare global {
     interface Window {
@@ -12,11 +12,11 @@ declare global {
 }
 
 function getColorThief() {
-    if (typeof window !== 'undefined' && (window as any).ColorThief) {
+    if (typeof window !== "undefined" && (window as any).ColorThief) {
         return new (window as any).ColorThief();
     }
     return {
-        getColor: () => [255, 255, 255]
+        getColor: () => [255, 255, 255],
     };
 }
 
@@ -55,10 +55,10 @@ export function useFgoDiffProcessor() {
             console.error("Failed to get canvas context");
             return createBasicCanvas(baseImage);
         }
-        
+
         tempCanvas.width = baseImage.width;
         tempCanvas.height = baseImage.height;
-        
+
         try {
             tempCtx.drawImage(baseImage, 0, 0);
         } catch (error) {
@@ -69,19 +69,19 @@ export function useFgoDiffProcessor() {
         // Create Mat from canvas using a wrapper to handle ImageData properly
         let baseImageMat;
         try {
-            const cvCanvas = document.createElement('canvas');
+            const cvCanvas = document.createElement("canvas");
             cvCanvas.width = tempCanvas.width;
             cvCanvas.height = tempCanvas.height;
-            const cvCtx = cvCanvas.getContext('2d')!;
+            const cvCtx = cvCanvas.getContext("2d")!;
             cvCtx.drawImage(tempCanvas, 0, 0);
-            
+
             const tempId = `opencv-temp-${Date.now()}`;
             cvCanvas.id = tempId;
             document.body.appendChild(cvCanvas);
-            cvCanvas.style.display = 'none';
-            
+            cvCanvas.style.display = "none";
+
             baseImageMat = window.cv.imread(tempId);
-            
+
             document.body.removeChild(cvCanvas);
         } catch (error) {
             return createBasicCanvas(baseImage);
@@ -97,29 +97,63 @@ export function useFgoDiffProcessor() {
         }
 
         let diffCount = 0;
-        
+
         for (let y = displayHeight; y < baseImage.height; y += diffBlockSize) {
             for (let x = 0; x < baseImage.width; x += diffBlockSize) {
                 const diffWidth = Math.min(diffBlockSize, baseImage.width - x);
-                const diffHeight = Math.min(diffBlockSize, baseImage.height - y);
+                const diffHeight = Math.min(
+                    diffBlockSize,
+                    baseImage.height - y
+                );
 
-                if (diffWidth < diffBlockSize * 0.5 || diffHeight < diffBlockSize * 0.5) {
+                if (
+                    diffWidth < diffBlockSize * 0.5 ||
+                    diffHeight < diffBlockSize * 0.5
+                ) {
                     continue;
                 }
 
-                const diffMat = baseImageMat.roi(new window.cv.Rect(x, y, diffWidth, diffHeight));
+                const diffMat = baseImageMat.roi(
+                    new window.cv.Rect(x, y, diffWidth, diffHeight)
+                );
 
                 const result = new window.cv.Mat();
-                window.cv.matchTemplate(bodyMat, diffMat, result, window.cv.TM_SQDIFF_NORMED);
-                let { x: matchX, y: matchY } = window.cv.minMaxLoc(result).minLoc;
+                window.cv.matchTemplate(
+                    bodyMat,
+                    diffMat,
+                    result,
+                    window.cv.TM_SQDIFF_NORMED
+                );
+                let { x: matchX, y: matchY } =
+                    window.cv.minMaxLoc(result).minLoc;
 
                 const diffCanvas = document.createElement("canvas");
                 diffCanvas.width = 1024;
                 diffCanvas.height = 768;
                 const diffCtx = diffCanvas.getContext("2d")!;
 
-                diffCtx.drawImage(baseImage, displayStartX, 0, displayWidth, displayHeight, 0, 0, 1024, 768);
-                diffCtx.drawImage(baseImage, x, y, diffWidth, diffHeight, matchX, matchY, diffWidth, diffHeight);
+                diffCtx.drawImage(
+                    baseImage,
+                    displayStartX,
+                    0,
+                    displayWidth,
+                    displayHeight,
+                    0,
+                    0,
+                    1024,
+                    768
+                );
+                diffCtx.drawImage(
+                    baseImage,
+                    x,
+                    y,
+                    diffWidth,
+                    diffHeight,
+                    matchX,
+                    matchY,
+                    diffWidth,
+                    diffHeight
+                );
 
                 if (!isTransparentCanvas(diffCanvas)) {
                     diffs.push(diffCanvas);
@@ -139,15 +173,17 @@ export function useFgoDiffProcessor() {
         }
 
         extractMainColor(baseImage);
-        
+
         if (diffs.length === 0) {
             return createBasicCanvas(baseImage);
         }
-        
+
         return diffs;
     }
 
-    function createBasicCanvas(baseImage: HTMLImageElement): HTMLCanvasElement[] {
+    function createBasicCanvas(
+        baseImage: HTMLImageElement
+    ): HTMLCanvasElement[] {
         const canvas = document.createElement("canvas");
         const ctx = canvas.getContext("2d")!;
         canvas.width = 1024;
@@ -202,6 +238,6 @@ export function useFgoDiffProcessor() {
         diffImages,
         currentDiffIndex,
         mainColor,
-        processDiffImages
+        processDiffImages,
     };
 }

@@ -129,7 +129,7 @@
     .top-controls {
         display: flex;
         flex-direction: column;
-        gap: 12px;
+        gap: 10px;
     }
 
     .card {
@@ -141,9 +141,9 @@
 
     .card-title {
         font-weight: 600;
-        font-size: 0.9rem;
+        font-size: 0.85rem;
         color: var(--vp-c-text-1);
-        margin-bottom: 10px;
+        margin-bottom: 8px;
     }
 
     .select {
@@ -154,22 +154,28 @@
         background: var(--vp-c-bg);
         color: var(--vp-c-text-1);
         font-size: 0.85rem;
+        box-sizing: border-box;
     }
 
     .ratio-grid {
         display: grid;
-        grid-template-columns: repeat(6, minmax(0, 1fr));
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 6px;
     }
 
     .ratio-btn {
-        padding: 8px 6px;
+        padding: 8px 4px;
         border: 1px solid var(--vp-c-divider);
         border-radius: 8px;
         background: var(--vp-c-bg);
         color: var(--vp-c-text-1);
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         cursor: pointer;
+        transition: all 0.15s ease;
+    }
+
+    .ratio-btn:hover {
+        border-color: var(--vp-c-brand-1);
     }
 
     .ratio-btn.active {
@@ -181,17 +187,17 @@
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 10px;
+        gap: 8px;
     }
 
     .field {
         display: flex;
         flex-direction: column;
-        gap: 6px;
+        gap: 4px;
     }
 
     .label {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         color: var(--vp-c-text-3);
     }
 
@@ -202,6 +208,8 @@
         background: var(--vp-c-bg);
         color: var(--vp-c-text-1);
         font-size: 0.85rem;
+        width: 100%;
+        box-sizing: border-box;
     }
 
     .input:focus {
@@ -209,9 +217,19 @@
         border-color: var(--vp-c-brand-1);
     }
 
-    @media (max-width: 640px) {
+    @media (max-width: 1024px) {
+        .ratio-grid {
+            grid-template-columns: repeat(6, minmax(0, 1fr));
+        }
+    }
+
+    @media (max-width: 480px) {
         .ratio-grid {
             grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .grid {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
         }
     }
 </style>

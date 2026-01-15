@@ -40,14 +40,15 @@
                     :diff-images="diffImages"
                     :current-diff-index="currentDiffIndex"
                     :selection="selection"
+                    :temp-selection="tempSelection"
                     :is-selecting="isSelecting"
                     :is-resizing="isResizing"
-                    :resize-direction="resizeDirection"
                     :get-resize-direction="getResizeDirection"
+                    :get-cursor-for-direction="getCursorForDirection"
                     :draw-selection-box="drawSelectionBox"
-                    @start-selection="startSelection"
-                    @update-selection="updateSelectionLogic"
-                    @end-selection="endSelection"
+                    @start-selection="handleStartSelection"
+                    @update-selection="handleUpdateSelection"
+                    @end-selection="handleEndSelection"
                     @canvas-ready="workspaceCanvas = $event"
                 />
             </div>
@@ -151,14 +152,15 @@
         selectionStart,
         selectionEnd,
         selection,
+        tempSelection,
         isSelecting,
         isResizing,
-        resizeDirection,
         currentAspectRatio,
         getResizeDirection,
-        startSelection,
-        updateSelection: updateSelectionLogic,
-        endSelection,
+        getCursorForDirection,
+        startSelection: startSel,
+        updateSelection: updateSel,
+        endSelection: endSel,
         setAspectRatio: setRatio,
     } = useFgoSelection();
 
@@ -369,6 +371,21 @@
         reader.readAsDataURL(file);
     }
 
+    function handleStartSelection(x: number, y: number) {
+        startSel(x, y, selection.value);
+    }
+
+    function handleUpdateSelection(x: number, y: number) {
+        updateSel(x, y);
+    }
+
+    function handleEndSelection() {
+        const result = endSel();
+        if (result) {
+            nextTick(() => workspaceRef.value?.draw?.());
+        }
+    }
+
     function setAspectRatio(ratio: string) {
         setRatio(ratio);
         workspaceRef.value?.draw?.();
@@ -531,18 +548,21 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        overflow-x: hidden;
     }
 
     .layout {
         flex: 1;
         display: grid;
-        grid-template-columns: minmax(0, 1fr) 380px;
+        grid-template-columns: minmax(0, 1fr) 340px;
         grid-template-areas:
             "workspace top"
             "workspace bottom";
         grid-template-rows: auto minmax(0, 1fr);
-        gap: 14px;
+        gap: 16px;
         padding: 0 16px 16px 16px;
+        box-sizing: border-box;
+        max-width: 100%;
     }
 
     .layout.no-panels {
@@ -553,12 +573,12 @@
 
     .top {
         grid-area: top;
-        align-self: end;
+        align-self: start;
     }
 
     .workspace {
         grid-area: workspace;
-        min-height: 640px;
+        min-height: 500px;
         display: flex;
         flex-direction: column;
         align-items: stretch;
@@ -576,24 +596,24 @@
         align-items: center;
         justify-content: center;
         background: var(--vp-c-bg-soft);
-        border: 1px solid var(--vp-c-divider);
+        border: 1px dashed var(--vp-c-divider);
         border-radius: 12px;
         padding: 48px 24px;
-        min-height: 400px;
+        min-height: 300px;
     }
 
     .empty-title {
         font-weight: 700;
         font-size: 1.1rem;
-        color: var(--vp-c-text-1);
+        color: var(--vp-c-text-2);
     }
 
     .empty-sub {
-        margin-top: 6px;
+        margin-top: 8px;
         color: var(--vp-c-text-3);
         font-size: 0.9rem;
         text-align: center;
-        max-width: 520px;
+        max-width: 400px;
     }
 
     .loading-overlay {
@@ -627,7 +647,7 @@
         color: var(--vp-c-text-2);
     }
 
-    @media (max-width: 1200px) {
+    @media (max-width: 1024px) {
         .layout {
             grid-template-columns: 1fr;
             grid-template-areas:
@@ -635,16 +655,34 @@
                 "workspace"
                 "bottom";
             grid-template-rows: auto auto auto;
+            gap: 12px;
         }
 
         .workspace {
-            min-height: 520px;
+            min-height: 400px;
         }
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 640px) {
+        .layout {
+            padding: 0 12px 12px 12px;
+        }
+
         .workspace {
-            min-height: 420px;
+            min-height: 320px;
+        }
+
+        .empty {
+            padding: 32px 16px;
+            min-height: 200px;
+        }
+
+        .empty-title {
+            font-size: 1rem;
+        }
+
+        .empty-sub {
+            font-size: 0.85rem;
         }
     }
 

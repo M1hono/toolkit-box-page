@@ -6,7 +6,7 @@
 export interface CharacterData {
     charId: string;
     validVariants: string[];
-    charType: 'operator' | 'npc';
+    charType: "operator" | "npc";
     dialogCount: number;
 }
 

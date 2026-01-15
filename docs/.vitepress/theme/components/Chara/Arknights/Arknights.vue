@@ -11,7 +11,7 @@
         <div class="app-header">
             <div class="header-content">
                 <div class="title-section">
-                <h1 class="app-title">{{ t.appTitle }}</h1>
+                    <h1 class="app-title">{{ t.appTitle }}</h1>
                     <p class="app-subtitle">{{ t.appSubtitle }}</p>
                 </div>
                 <div class="stats-section">
@@ -35,17 +35,25 @@
                 v-if="sidebarOpen"
                 @click="sidebarOpen = false"
             ></div>
-            
+
             <button
                 class="floating-sidebar-toggle"
                 @click="sidebarOpen = !sidebarOpen"
                 :title="t.characters"
             >
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                    <path fill="#ffffff" d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7"/>
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                >
+                    <path
+                        fill="#ffffff"
+                        d="M16 17v2H2v-2s0-4 7-4s7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59a5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7"
+                    />
                 </svg>
             </button>
-            
+
             <div class="left-panel" :class="{ open: sidebarOpen }">
                 <arknights-sidebar
                     :characters="paginatedCharacters"
@@ -499,10 +507,12 @@
 
     function goToStories() {
         if (!selectedCharacter.value) return;
-        const langPart = lang.value === 'root' ? '' : `/${lang.value}`;
+        const langPart = lang.value === "root" ? "" : `/${lang.value}`;
         const name = selectedCharacter.value.displayName;
         const charId = selectedCharacter.value.charId;
-        const url = `${langPart}/Arknights/StoryTracker?char=${encodeURIComponent(name)}_${charId}`;
+        const url = `${langPart}/Arknights/StoryTracker?char=${encodeURIComponent(
+            name
+        )}_${charId}`;
         window.location.href = url;
     }
 
