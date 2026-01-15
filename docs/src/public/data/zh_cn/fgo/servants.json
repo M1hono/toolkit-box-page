@@ -4637,6 +4637,56 @@
       }
     }
   },
+  "106200": {
+    "id": 106200,
+    "collectionNo": 434,
+    "name": "黑姬",
+    "ruby": "黑姬",
+    "className": "saber",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/1062000/1062000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/1062001/1062001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/1062002/1062002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "1062000": {
+          "id": 1062000,
+          "faceX": 370,
+          "faceY": 154,
+          "scale": 1
+        },
+        "1062001": {
+          "id": 1062001,
+          "faceX": 370,
+          "faceY": 151,
+          "scale": 1
+        },
+        "1062002": {
+          "id": 1062002,
+          "faceX": 380,
+          "faceY": 151,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/1062000/1062000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/1062001/1062001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/1062002/1062002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "200100": {
     "id": 200100,
     "collectionNo": 11,
@@ -13030,6 +13080,56 @@
         "costume": {
           "305630": "https://static.atlasacademy.io/CN/CharaFigure/3056300/3056300_merged.png"
         },
+        "story": {}
+      }
+    }
+  },
+  "305700": {
+    "id": 305700,
+    "collectionNo": 433,
+    "name": "比肖内",
+    "ruby": "比肖内",
+    "className": "lancer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3057000/3057000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3057001/3057001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3057002/3057002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "3057000": {
+          "id": 3057000,
+          "faceX": 376,
+          "faceY": 131,
+          "scale": 1
+        },
+        "3057001": {
+          "id": 3057001,
+          "faceX": 387,
+          "faceY": 111,
+          "scale": 1
+        },
+        "3057002": {
+          "id": 3057002,
+          "faceX": 357,
+          "faceY": 162,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3057000/3057000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3057001/3057001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3057002/3057002_merged.png"
+        },
+        "costume": {},
         "story": {}
       }
     }

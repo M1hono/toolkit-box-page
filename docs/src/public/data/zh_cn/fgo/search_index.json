@@ -742,6 +742,20 @@
     ]
   },
   {
+    "id": 106200,
+    "name": "黑姬",
+    "originalName": "黑姬",
+    "ruby": "黑姬",
+    "className": "saber",
+    "rarity": 4,
+    "searchTerms": [
+      "黑姬",
+      "黑姬",
+      "黑姬",
+      "saber"
+    ]
+  },
+  {
     "id": 200100,
     "name": "卫宫",
     "originalName": "卫宫",
@@ -2096,6 +2110,20 @@
       "梵高〔矿工〕",
       "梵高〔矿工〕",
       "梵高〔矿工〕",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305700,
+    "name": "比肖内",
+    "originalName": "比肖内",
+    "ruby": "比肖内",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "比肖内",
+      "比肖内",
+      "比肖内",
       "lancer"
     ]
   },
