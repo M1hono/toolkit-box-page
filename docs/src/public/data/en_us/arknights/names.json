@@ -421,11 +421,13 @@
   "char_148_nearl_1": {
     "speakerNames": [
       "Nearl",
-      "Margaret"
+      "Margaret",
+      "Amiya"
     ],
     "searchNames": [
       "Nearl",
-      "Margaret"
+      "Margaret",
+      "Amiya"
     ],
     "displayName": "Nearl"
   },
@@ -3014,10 +3016,12 @@
   },
   "char_017_homura_3": {
     "speakerNames": [
-      "Blaze"
+      "Blaze",
+      "Amiya"
     ],
     "searchNames": [
-      "Blaze"
+      "Blaze",
+      "Amiya"
     ],
     "displayName": "Blaze"
   },
@@ -3514,12 +3518,14 @@
     "speakerNames": [
       "Ch'en",
       "Masked Rhodes Island Operator",
-      "Wei Yenwu"
+      "Wei Yenwu",
+      "Amiya"
     ],
     "searchNames": [
       "Ch'en",
       "Masked Rhodes Island Operator",
-      "Wei Yenwu"
+      "Wei Yenwu",
+      "Amiya"
     ],
     "displayName": "Ch'en"
   },
@@ -4209,10 +4215,12 @@
   },
   "char_147_shining_1": {
     "speakerNames": [
-      "Shining"
+      "Shining",
+      "Amiya"
     ],
     "searchNames": [
-      "Shining"
+      "Shining",
+      "Amiya"
     ],
     "displayName": "Shining"
   },
@@ -16337,11 +16345,13 @@
   "char_193_frostl_1": {
     "speakerNames": [
       "Frostleaf",
-      "FrostNova"
+      "FrostNova",
+      "Amiya"
     ],
     "searchNames": [
       "Frostleaf",
-      "FrostNova"
+      "FrostNova",
+      "Amiya"
     ],
     "displayName": "Frostleaf"
   },
