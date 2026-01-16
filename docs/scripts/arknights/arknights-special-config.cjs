@@ -25,7 +25,7 @@ function shouldFilterSpecialName(name) {
     if (name.trim() === "") return true;
     if (FILTERED_NAMES.has(name.trim())) return true;
     if (/^\d+$/.test(name.trim())) return true;
-    
+
     if (/^(avg|char)_[a-z0-9]+_\d+(_\d+)?$/i.test(name.trim())) return true;
     if (/^(avg|char)_[a-z0-9]+_[a-z]+_\d+$/i.test(name.trim())) return true;
 

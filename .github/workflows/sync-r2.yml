@@ -13,11 +13,16 @@ on:
                 required: false
                 default: false
                 type: boolean
+    workflow_run:
+        workflows: ["Main Data Pipeline"]
+        types:
+            - completed
 
 jobs:
     sync-to-r2:
         runs-on: ubuntu-latest
         timeout-minutes: 120
+        if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
         steps:
             - name: Checkout code
@@ -58,6 +63,29 @@ jobs:
                   echo "Starting R2 image sync..."
                   echo "Config: Upload with cache cleanup, tracking in uploaded.json"
                   yarn r2:sync
+                  echo "R2 image sync complete"
+
+            - name: Sync JSON data to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Starting R2 data sync..."
+                  yarn r2:sync-data
+                  echo "R2 data sync complete"
+
+            - name: Sync avatars to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Starting R2 avatar sync..."
+                  yarn r2:sync-avatars
+                  echo "R2 avatar sync complete"
 
             - name: Upload sync logs
               if: always()

@@ -6,9 +6,9 @@
 const { fetchData } = require("../../shared/network-utils.cjs");
 
 const REPOS = {
-    zh_CN: "https:
-    en_US: "https:
-    ja_JP: "https:
+    zh_CN: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/cn",
+    en_US: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/en",
+    ja_JP: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/jp",
 };
 
 /**

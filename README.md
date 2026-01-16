@@ -38,11 +38,52 @@ Copyright (c) 2025 M1hono. All Rights Reserved.
 
 This software is proprietary and all rights are reserved. See LICENSE file for details.
 
-## API Data Usage
+## Credits and API Providers
 
-While the software code is proprietary, all game data accessed through public APIs (Atlas Academy API for FGO, ArknightsAssets repository, etc.) remains free to use under their respective licenses. This project only provides tools to process such data and does not claim ownership of any game assets or API data.
+This project is built upon the generous work of various community projects and API providers:
 
-And the Data and API files provided through page service is also free to use and welcomed to ask for any helps as I could.
+### FGO Data Providers
+- **[Atlas Academy](https://apps.atlasacademy.io/)** - Comprehensive FGO database and API
+  - API Documentation: https://api.atlasacademy.io/rapidoc
+  - Discord Community: https://discord.gg/grandorder
+  - Provides servant data, images, and game mechanics for all FGO servers
+
+### Arknights Data Providers
+- **[ArknightsAssets](https://github.com/ArknightsAssets/ArknightsGamedata)** - Official game data repository
+  - Complete game data for all servers (CN, EN, JP, KR)
+  - Story files, character data, and game assets
+  - Primary source for all Arknights content
+
+- **[akgcc/arkdata](https://github.com/akgcc/arkdata)** - Community asset repository
+  - Character images and thumbnails
+  - Story reader integration
+  - Image processing pipelines and optimization
+
+### Story Readers
+- **[ArknightsStoryTextReader](https://050644zf.github.io/ArknightsStoryTextReader/)** - Text-based story reader
+- **[akgcc Story Reader](https://akgcc.github.io/story/)** - Interactive story reader with visual elements
+
+### Infrastructure
+- **Cloudflare R2** - CDN and object storage for fast global asset delivery
+- **GitHub Pages** - Hosting and continuous deployment
+- **GitHub Actions** - Automated data processing and synchronization
+
+## Data Usage and Licensing
+
+All game data accessed through public APIs and repositories remains under their respective licenses:
+- FGO data via Atlas Academy API - Free for non-commercial use
+- Arknights data via ArknightsAssets - MIT License
+- Community assets via akgcc - Respective repository licenses
+
+This project provides processing tools and does not claim ownership of any game assets or API data. All processed data files are also freely available for community use.
+
+## Getting Help
+
+For issues related to:
+- **FGO data**: Contact Atlas Academy Discord or check their API docs
+- **Arknights data**: Check ArknightsAssets repository issues
+- **Tool functionality**: Open an issue in this repository
+- **Data processing**: Reach out via GitHub issues - happy to help!
 
 ## Development
 

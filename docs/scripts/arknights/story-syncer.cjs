@@ -1,6 +1,14 @@
 /**
- * @fileoverview Arknights Story Repository Synchronizer
- * @description Specialized logic for cloning and sparse-checking out story text from remote repositories
+ * @fileoverview Arknights Story Repository Synchronizer (Legacy)
+ * @module arknights/story-syncer
+ * @description
+ * Legacy story synchronization using direct git operations.
+ * Replaced by git-story-syncer.cjs which uses improved filtering logic.
+ * 
+ * @deprecated Use git-story-syncer.cjs instead
+ * @example
+ * const { sparseCheckoutStory } = require('./story-syncer');
+ * sparseCheckoutStory('zh_CN');
  */
 
 const fs = require('fs');
@@ -10,13 +18,13 @@ const PROJECT_CONFIG = require('../project-config.cjs');
 const { ensureDir } = require('../shared/file-utils.cjs');
 
 /**
- * Executes a localized Git sparse-checkout session
- * @param {string} langCode - Source language platform
+ * Execute legacy git sparse-checkout for story files
+ * @deprecated Use git-story-syncer.cjs instead
+ * @param {string} langCode - Language code (zh_CN, en_US, ja_JP)
  */
 function sparseCheckoutStory(langCode) {
-    const repoUrl = langCode === 'zh_CN' 
-        ? "https:
-        : "https:
+    const repoConfig = PROJECT_CONFIG.REPOSITORIES.arknights;
+    const repoUrl = repoConfig.url;
     
     const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
     const targetDir = path.resolve(langPath, 'story_repo');
@@ -32,13 +40,13 @@ function sparseCheckoutStory(langCode) {
         process.chdir(targetDir);
         execSync('git config core.sparseCheckout true');
         
-        const pathFilter = langCode === 'zh_CN' ? 'zh_CN/gamedata/story/' : 'en/gamedata/story/';
-        fs.writeFileSync('.git/info/sparse-checkout', pathFilter);
+        const storyPath = repoConfig.storyPaths[langCode];
+        fs.writeFileSync('.git/info/sparse-checkout', storyPath);
         
         execSync('git checkout master');
-        console.log(`Identification baseline synchronized for ${langCode}`);
+        console.log(`Story files synchronized for ${langCode}`);
         
-        const sourcePath = path.resolve(targetDir, pathFilter);
+        const sourcePath = path.resolve(targetDir, storyPath);
         if (fs.existsSync(sourcePath)) {
             ensureDir(finalDir);
             execSync(`cp -R "${sourcePath}"* "${finalDir}/"`);
@@ -47,10 +55,14 @@ function sparseCheckoutStory(langCode) {
         process.chdir(__dirname);
         fs.rmSync(targetDir, { recursive: true, force: true });
     } catch (e) {
-        console.error(`ERROR: Synchronization session failed for ${langCode}: ${e.message}`);
+        console.error(`ERROR: Synchronization failed for ${langCode}: ${e.message}`);
     }
 }
 
+/**
+ * @exports arknights/story-syncer
+ * @property {Function} sparseCheckoutStory - Legacy sync function
+ */
 module.exports = {
     sparseCheckoutStory
 };

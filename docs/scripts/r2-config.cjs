@@ -10,11 +10,10 @@ const R2_CONFIG = {
     R2_BUCKET_NAME: 'arknights-chara-image',
     
     R2_ENDPOINT: process.env.R2_ACCOUNT_ID 
-        ? `https:
+        ? `https://${process.env.R2_ACCOUNT_ID}.r2.cloudflarestorage.com` 
         : '',
     R2_PUBLIC_URL: 'arkimage.top',
     
-
     ENABLE_R2: true,
     USE_R2_FOR_DISPLAY: false,
     USE_R2_FOR_DETECTION: false,
@@ -24,13 +23,11 @@ const R2_CONFIG = {
     ENABLE_WEBP_CONVERSION: true,
     CLEAN_CACHE_AFTER_UPLOAD: true,
     
-
-    SOURCE_BASE_URL: 'https:
-    BACKUP_SOURCE_URL: 'https:
+    SOURCE_BASE_URL: 'https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/',
+    BACKUP_SOURCE_URL: 'https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/characters/',
     
-
-    R2_DATA_BASE_URL: 'https:
-    GITHUB_DATA_BASE_URL: 'https:
+    R2_DATA_BASE_URL: 'https://arkimage.top/data',
+    GITHUB_DATA_BASE_URL: 'https://raw.githubusercontent.com/M1hono/toolkit-box-page/main/docs/src/public/data',
 };
 
 module.exports = R2_CONFIG;

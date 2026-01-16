@@ -20,6 +20,11 @@ const client = new S3Client({
         accessKeyId: R2_CONFIG.R2_ACCESS_KEY_ID,
         secretAccessKey: R2_CONFIG.R2_SECRET_ACCESS_KEY,
     },
+    requestHandler: {
+        connectionTimeout: 30000,
+        socketTimeout: 30000,
+    },
+    maxAttempts: 3,
 });
 
 /**
@@ -34,20 +39,17 @@ async function uploadJsonFile(localPath, r2Key) {
 
         const fileContent = fs.readFileSync(localPath);
         try {
-            await client.send(
-                new HeadObjectCommand({
-                    Bucket: "toolkit-data",
-                    Key: r2Key,
-                })
-            );
-
-        } catch (error) {
-
-        }
+        await client.send(
+            new HeadObjectCommand({
+                Bucket: R2_CONFIG.R2_BUCKET_NAME,
+                Key: r2Key,
+            })
+        );
+        } catch (error) {}
 
         await client.send(
             new PutObjectCommand({
-                Bucket: "toolkit-data",
+                Bucket: R2_CONFIG.R2_BUCKET_NAME,
                 Key: r2Key,
                 Body: fileContent,
                 ContentType: "application/json",

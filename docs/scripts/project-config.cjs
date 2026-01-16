@@ -3,86 +3,128 @@
  * @description Global configuration for supported languages, games, and data paths
  */
 
-const path = require('path');
+const path = require("path");
 
-const DOCS_ROOT = path.resolve(__dirname, '..');
-const PUBLIC_DATA_ROOT = path.resolve(DOCS_ROOT, 'src/public/data');
-const TEMP_DIR = path.resolve(DOCS_ROOT, '.temp');
+const DOCS_ROOT = path.resolve(__dirname, "..");
+const PUBLIC_DATA_ROOT = path.resolve(DOCS_ROOT, "src/public/data");
+const TEMP_DIR = path.resolve(DOCS_ROOT, ".temp");
 
 const PROJECT_CONFIG = {
     LANGUAGES: {
         zh_CN: {
-            code: 'zh_CN',
-            path: 'zh_cn',
-            label: '简体中文'
+            code: "zh_CN",
+            path: "zh_cn",
+            label: "简体中文",
         },
         en_US: {
-            code: 'en_US',
-            path: 'en_us',
-            label: 'English'
+            code: "en_US",
+            path: "en_us",
+            label: "English",
         },
         ja_JP: {
-            code: 'ja_JP',
-            path: 'ja_jp',
-            label: '日本語'
-        }
+            code: "ja_JP",
+            path: "ja_jp",
+            label: "日本語",
+        },
     },
 
     PLATFORM_MAPPING: {
         fgo: {
-            'NA': 'en_US',
-            'JP': 'ja_JP',
-            'CN': 'zh_CN'
+            NA: "en_US",
+            JP: "ja_JP",
+            CN: "zh_CN",
         },
         arknights: {
-            'en': 'en_US',
-            'zh_CN': 'zh_CN',
-            'ja_JP': 'ja_JP'
-        }
+            en: "en_US",
+            zh_CN: "zh_CN",
+            ja_JP: "ja_JP",
+        },
     },
 
     GAMES: {
         arknights: {
-            id: 'arknights',
-            supported_langs: ['zh_CN', 'en_US', 'ja_JP']
+            id: "arknights",
+            supported_langs: ["zh_CN", "en_US", "ja_JP"],
         },
         fgo: {
-            id: 'fgo',
-            supported_langs: ['zh_CN', 'en_US', 'ja_JP']
-        }
+            id: "fgo",
+            supported_langs: ["zh_CN", "en_US", "ja_JP"],
+        },
     },
 
     REPOSITORIES: {
         arknights: {
-            url: 'https://github.com/ArknightsAssets/ArknightsGamedata.git',
+            url: "https://github.com/ArknightsAssets/ArknightsGamedata.git",
             storyPaths: {
-                zh_CN: 'cn/gamedata/story',
-                en_US: 'en/gamedata/story',
-                ja_JP: 'jp/gamedata/story'
+                zh_CN: "cn/gamedata/story",
+                en_US: "en/gamedata/story",
+                ja_JP: "jp/gamedata/story",
             },
             dataPaths: {
-                zh_CN: 'cn/gamedata',
-                en_US: 'en/gamedata',
-                ja_JP: 'jp/gamedata'
-            }
-        }
+                zh_CN: "cn/gamedata",
+                en_US: "en/gamedata",
+                ja_JP: "jp/gamedata",
+            },
+        },
     },
 
     GIT_CONFIG: {
         SPARSE_CHECKOUT_TIMEOUT: 180000,
         PULL_TIMEOUT: 60000,
         BATCH_SIZE: 10,
-        PROGRESS_INTERVAL: 50
+        PROGRESS_INTERVAL: 50,
     },
 
     STORY_FILTER_CONFIG: {
         meaninglessNames: {
-            zh_CN: ["？？？","？？？？", "所有人", "？", "...", "unknown", "旁白", "画外音", "系统", "system"],
-            en_US: ["???", "?????", "Everyone", "?", "...", "unknown", "narrator", "system", "voice-over", "all"],
-            ja_JP: ["？？？", "?????", "全員", "？", "...", "unknown", "ナレーター", "システム", "system", "みんな"]
+            zh_CN: [
+                "？？？",
+                "？？？？",
+                "所有人",
+                "？",
+                "...",
+                "unknown",
+                "旁白",
+                "画外音",
+                "系统",
+                "system",
+            ],
+            en_US: [
+                "???",
+                "?????",
+                "Everyone",
+                "?",
+                "...",
+                "unknown",
+                "narrator",
+                "system",
+                "voice-over",
+                "all",
+            ],
+            ja_JP: [
+                "？？？",
+                "?????",
+                "全員",
+                "？",
+                "...",
+                "unknown",
+                "ナレーター",
+                "システム",
+                "system",
+                "みんな",
+            ],
         },
-        commonFilters: ["？？？", "？？？？", "???", "?????", "?", "...", "unknown", "system"],
-        numericPattern: /^\d+$/
+        commonFilters: [
+            "？？？",
+            "？？？？",
+            "???",
+            "?????",
+            "?",
+            "...",
+            "unknown",
+            "system",
+        ],
+        numericPattern: /^\d+$/,
     },
 
     TEMP_DIR,
@@ -96,7 +138,8 @@ const PROJECT_CONFIG = {
      * @returns {string} - Absolute path
      */
     getDataPath(langCode, gameId) {
-        const langPath = this.LANGUAGES[langCode]?.path || langCode.toLowerCase();
+        const langPath =
+            this.LANGUAGES[langCode]?.path || langCode.toLowerCase();
         return path.resolve(PUBLIC_DATA_ROOT, langPath, gameId);
     },
 
@@ -106,7 +149,7 @@ const PROJECT_CONFIG = {
      * @returns {string} - Absolute path
      */
     getGlobalPath(gameId) {
-        return path.resolve(PUBLIC_DATA_ROOT, 'global', gameId);
+        return path.resolve(PUBLIC_DATA_ROOT, "global", gameId);
     },
 
     /**
@@ -115,12 +158,13 @@ const PROJECT_CONFIG = {
      * @returns {string} - GitHub raw content URL
      */
     getArknightsDataUrl(langCode) {
-        const baseUrl = 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master';
+        const baseUrl =
+            "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master";
         const dataPaths = this.REPOSITORIES.arknights.dataPaths;
         const dataPath = dataPaths[langCode];
         if (!dataPath) return null;
-        
-        const langDir = dataPath.split('/')[0];
+
+        const langDir = dataPath.split("/")[0];
         return `${baseUrl}/${langDir}`;
     },
 
@@ -128,9 +172,9 @@ const PROJECT_CONFIG = {
      * Map internal language codes to VitePress locale codes
      */
     LANG_TO_LOCALE_MAP: {
-        'zh_CN': 'zh-CN',
-        'en_US': 'en-US', 
-        'ja_JP': 'ja'
+        zh_CN: "zh-CN",
+        en_US: "en-US",
+        ja_JP: "ja",
     },
 
     /**
@@ -140,7 +184,7 @@ const PROJECT_CONFIG = {
      */
     getLocaleCode(langCode) {
         return this.LANG_TO_LOCALE_MAP[langCode] || langCode;
-    }
+    },
 
     /**
      * Get the data source URL for Arknights game data
@@ -148,15 +192,16 @@ const PROJECT_CONFIG = {
      * @returns {string} - GitHub raw content URL
      */
     getArknightsDataUrl(langCode) {
-        const baseUrl = 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master';
+        const baseUrl =
+            "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master";
         const dataPaths = this.REPOSITORIES.arknights.dataPaths;
         const dataPath = dataPaths[langCode];
         if (!dataPath) return null;
-        
+
         // Extract language directory (cn, en, jp) from dataPath
-        const langDir = dataPath.split('/')[0];
+        const langDir = dataPath.split("/")[0];
         return `${baseUrl}/${langDir}`;
-    }
+    },
 };
 
 module.exports = PROJECT_CONFIG;

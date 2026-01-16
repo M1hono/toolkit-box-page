@@ -200,7 +200,7 @@ function parseStory(text, storyId, langCode = "zh_CN") {
 
     lines.forEach((line) => {
         let trimmed = line.trim();
-        if (!trimmed || trimmed.startsWith("
+        if (!trimmed || trimmed.startsWith("//")) return;
         trimmed = trimmed.replace(/\/\/.*$/, "").trim();
         if (!trimmed) return;
 

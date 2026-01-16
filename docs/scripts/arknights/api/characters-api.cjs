@@ -3,19 +3,21 @@
  * @description Interfaces with the global and language-specific character data
  */
 
-const fs = require('fs');
-const path = require('path');
-const PROJECT_CONFIG = require('../../project-config.cjs');
-const { ensureDir } = require('../../shared/file-utils.cjs');
+const fs = require("fs");
+const path = require("path");
+const PROJECT_CONFIG = require("../../project-config.cjs");
+const { ensureDir } = require("../../shared/file-utils.cjs");
 
 /**
  * Load global character metadata
  * @returns {Object}
  */
 function loadGlobalCharacters() {
-    const globalPath = PROJECT_CONFIG.getGlobalPath('arknights');
-    const filePath = path.resolve(globalPath, 'characters.json');
-    return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : {};
+    const globalPath = PROJECT_CONFIG.getGlobalPath("arknights");
+    const filePath = path.resolve(globalPath, "characters.json");
+    return fs.existsSync(filePath)
+        ? JSON.parse(fs.readFileSync(filePath, "utf8"))
+        : {};
 }
 
 /**
@@ -23,10 +25,10 @@ function loadGlobalCharacters() {
  * @param {Object} characters - Data to save
  */
 function saveGlobalCharacters(characters) {
-    const globalPath = PROJECT_CONFIG.getGlobalPath('arknights');
+    const globalPath = PROJECT_CONFIG.getGlobalPath("arknights");
     ensureDir(globalPath);
-    const filePath = path.resolve(globalPath, 'characters.json');
-    fs.writeFileSync(filePath, JSON.stringify(characters, null, 2), 'utf8');
+    const filePath = path.resolve(globalPath, "characters.json");
+    fs.writeFileSync(filePath, JSON.stringify(characters, null, 2), "utf8");
 }
 
 /**
@@ -35,9 +37,11 @@ function saveGlobalCharacters(characters) {
  * @returns {Object}
  */
 function loadLanguageNames(langCode) {
-    const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
-    const filePath = path.resolve(langPath, 'names.json');
-    return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : {};
+    const langPath = PROJECT_CONFIG.getDataPath(langCode, "arknights");
+    const filePath = path.resolve(langPath, "names.json");
+    return fs.existsSync(filePath)
+        ? JSON.parse(fs.readFileSync(filePath, "utf8"))
+        : {};
 }
 
 /**
@@ -46,10 +50,10 @@ function loadLanguageNames(langCode) {
  * @param {Object} names - Data to save
  */
 function saveLanguageNames(langCode, names) {
-    const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
+    const langPath = PROJECT_CONFIG.getDataPath(langCode, "arknights");
     ensureDir(langPath);
-    const filePath = path.resolve(langPath, 'names.json');
-    fs.writeFileSync(filePath, JSON.stringify(names, null, 2), 'utf8');
+    const filePath = path.resolve(langPath, "names.json");
+    fs.writeFileSync(filePath, JSON.stringify(names, null, 2), "utf8");
 }
 
 /**
@@ -58,9 +62,11 @@ function saveLanguageNames(langCode, names) {
  * @returns {Object}
  */
 function loadLanguageStorys(langCode) {
-    const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
-    const filePath = path.resolve(langPath, 'storys.json');
-    return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : {};
+    const langPath = PROJECT_CONFIG.getDataPath(langCode, "arknights");
+    const filePath = path.resolve(langPath, "storys.json");
+    return fs.existsSync(filePath)
+        ? JSON.parse(fs.readFileSync(filePath, "utf8"))
+        : {};
 }
 
 /**
@@ -69,10 +75,10 @@ function loadLanguageStorys(langCode) {
  * @param {Object} storys - Data to save
  */
 function saveLanguageStorys(langCode, storys) {
-    const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
+    const langPath = PROJECT_CONFIG.getDataPath(langCode, "arknights");
     ensureDir(langPath);
-    const filePath = path.resolve(langPath, 'storys.json');
-    fs.writeFileSync(filePath, JSON.stringify(storys, null, 2), 'utf8');
+    const filePath = path.resolve(langPath, "storys.json");
+    fs.writeFileSync(filePath, JSON.stringify(storys, null, 2), "utf8");
 }
 
 /**
@@ -81,9 +87,11 @@ function saveLanguageStorys(langCode, storys) {
  * @returns {Object}
  */
 function loadLanguageSearchIndex(langCode) {
-    const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
-    const filePath = path.resolve(langPath, 'search_index.json');
-    return fs.existsSync(filePath) ? JSON.parse(fs.readFileSync(filePath, 'utf8')) : {};
+    const langPath = PROJECT_CONFIG.getDataPath(langCode, "arknights");
+    const filePath = path.resolve(langPath, "search_index.json");
+    return fs.existsSync(filePath)
+        ? JSON.parse(fs.readFileSync(filePath, "utf8"))
+        : {};
 }
 
 /**
@@ -92,10 +100,10 @@ function loadLanguageSearchIndex(langCode) {
  * @param {Object} index - Data to save
  */
 function saveLanguageSearchIndex(langCode, index) {
-    const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
+    const langPath = PROJECT_CONFIG.getDataPath(langCode, "arknights");
     ensureDir(langPath);
-    const filePath = path.resolve(langPath, 'search_index.json');
-    fs.writeFileSync(filePath, JSON.stringify(index, null, 2), 'utf8');
+    const filePath = path.resolve(langPath, "search_index.json");
+    fs.writeFileSync(filePath, JSON.stringify(index, null, 2), "utf8");
 }
 
 module.exports = {
@@ -106,5 +114,5 @@ module.exports = {
     saveGlobalCharacters,
     saveLanguageNames,
     saveLanguageStorys,
-    saveLanguageSearchIndex
+    saveLanguageSearchIndex,
 };
