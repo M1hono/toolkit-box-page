@@ -2,13 +2,11 @@
   "avg_npc_009": {
     "speakerNames": [
       "Bounty Hunter",
-      "Violent Bounty Hunter",
       "Rusthammer Warrior",
       "Rusthammer Member"
     ],
     "searchNames": [
       "Bounty Hunter",
-      "Violent Bounty Hunter",
       "Rusthammer Warrior",
       "Rusthammer Member"
     ],
@@ -17,7 +15,6 @@
   "avg_npc_003": {
     "speakerNames": [
       "Carol",
-      "Grani",
       "A Haggard Girl",
       "Diner C",
       "Hesitant Woman",
@@ -25,7 +22,6 @@
     ],
     "searchNames": [
       "Carol",
-      "Grani",
       "A Haggard Girl",
       "Diner C",
       "Hesitant Woman",
@@ -36,22 +32,15 @@
   "avg_npc_008": {
     "speakerNames": [
       "Bounty Hunter",
-      "Violent Bounty Hunter",
       "'Captain'",
       "Infected Hooligan",
       "Hooligan Mercenary",
       "Wounded Mercenary",
-      "Searching Mercenary",
       "Riverblade Squad Mercenary B",
-      "Riverblade Squad Mercenary",
-      "Riverblade Squad Mercenary Captain",
       "Bounty Hunter B",
-      "Bounty Hunter C",
       "Boorish Man",
-      "Lu the Middle",
       "Caravan Guard",
       "Rusthammer Warrior",
-      "Rusthammer Warriors",
       "Attacker",
       "Hoodlum B",
       "Bandit Leader",
@@ -60,42 +49,28 @@
       "Arrogant Robber",
       "Mercenary A",
       "Boorish Bandit",
-      "Vicious Bandit",
       "Impatient Mercenary",
       "Black Market Brawler B",
       "Survivor B",
-      "Explorer B",
-      "Mercenary B",
       "Young Mercenary",
       "Bounty Hunter On Watch",
-      "Strong Bounter Hunter",
       "Curious Bounty Hunter",
       "Mercenary Captain",
       "Quiet Bounty Hunter",
-      "Infected Brother",
       "Wastelander",
-      "Rickety Joe",
-      "Old Captain",
-      "Abi"
+      "Old Captain"
     ],
     "searchNames": [
       "Bounty Hunter",
-      "Violent Bounty Hunter",
       "'Captain'",
       "Infected Hooligan",
       "Hooligan Mercenary",
       "Wounded Mercenary",
-      "Searching Mercenary",
       "Riverblade Squad Mercenary B",
-      "Riverblade Squad Mercenary",
-      "Riverblade Squad Mercenary Captain",
       "Bounty Hunter B",
-      "Bounty Hunter C",
       "Boorish Man",
-      "Lu the Middle",
       "Caravan Guard",
       "Rusthammer Warrior",
-      "Rusthammer Warriors",
       "Attacker",
       "Hoodlum B",
       "Bandit Leader",
@@ -104,23 +79,16 @@
       "Arrogant Robber",
       "Mercenary A",
       "Boorish Bandit",
-      "Vicious Bandit",
       "Impatient Mercenary",
       "Black Market Brawler B",
       "Survivor B",
-      "Explorer B",
-      "Mercenary B",
       "Young Mercenary",
       "Bounty Hunter On Watch",
-      "Strong Bounter Hunter",
       "Curious Bounty Hunter",
       "Mercenary Captain",
       "Quiet Bounty Hunter",
-      "Infected Brother",
       "Wastelander",
-      "Rickety Joe",
-      "Old Captain",
-      "Abi"
+      "Old Captain"
     ],
     "displayName": "Bounty Hunter"
   },
@@ -129,100 +97,64 @@
       "Violent Bounty Hunter",
       "Bounty Hunter",
       "Rough Hooligan",
-      "Ugly Hooligan",
-      "Infected Hooligan",
       "Ursus Caravan Guard",
       "Strange Townsfolk",
       "Mercenary",
-      "Mercenary Caster",
       "Indignant Mercenary",
-      "Violent Mercenary",
-      "Searching Mercenary",
       "Riverblade Squad Mercenary",
-      "Riverblade Squad Mercenary A",
       "Bounty Hunter A",
       "Lu the Older",
       "Hunter",
       "Hoodlum",
-      "Hoodlum A",
       "Bandit Leader",
-      "Knife-Wielding Bandit",
-      "Apprehensive Bandit",
       "Mercenary B",
-      "Mercenary A",
       "Vulgar Bandit",
       "Bandit",
-      "Elder Hunter",
       "Infected Thug",
-      "Infected Henchman",
       "Suspicious Man",
-      "Crafty Robber",
       "Strange Hunter",
       "Surly Bandit",
-      "Indifferent Bandit",
-      "Daniil",
       "Shrewd Bandit",
-      "Towering Bandit",
-      "Crumbling Bandit",
       "Cowardly Mercenary",
-      "Black Market Brawler",
       "Survivor A",
       "Diminutive Mercenary",
       "Cruel Bounty Hunter",
       "Chatty Bounty Hunter",
+      "Mercenary A",
       "Sullen Bounty Hunter",
       "Infected Underling",
-      "Gavial",
       "Sargonian Veteran"
     ],
     "searchNames": [
       "Violent Bounty Hunter",
       "Bounty Hunter",
       "Rough Hooligan",
-      "Ugly Hooligan",
-      "Infected Hooligan",
       "Ursus Caravan Guard",
       "Strange Townsfolk",
       "Mercenary",
-      "Mercenary Caster",
       "Indignant Mercenary",
-      "Violent Mercenary",
-      "Searching Mercenary",
       "Riverblade Squad Mercenary",
-      "Riverblade Squad Mercenary A",
       "Bounty Hunter A",
       "Lu the Older",
       "Hunter",
       "Hoodlum",
-      "Hoodlum A",
       "Bandit Leader",
-      "Knife-Wielding Bandit",
-      "Apprehensive Bandit",
       "Mercenary B",
-      "Mercenary A",
       "Vulgar Bandit",
       "Bandit",
-      "Elder Hunter",
       "Infected Thug",
-      "Infected Henchman",
       "Suspicious Man",
-      "Crafty Robber",
       "Strange Hunter",
       "Surly Bandit",
-      "Indifferent Bandit",
-      "Daniil",
       "Shrewd Bandit",
-      "Towering Bandit",
-      "Crumbling Bandit",
       "Cowardly Mercenary",
-      "Black Market Brawler",
       "Survivor A",
       "Diminutive Mercenary",
       "Cruel Bounty Hunter",
       "Chatty Bounty Hunter",
+      "Mercenary A",
       "Sullen Bounty Hunter",
       "Infected Underling",
-      "Gavial",
       "Sargonian Veteran"
     ],
     "displayName": "Violent Bounty Hunter"
@@ -254,7 +186,6 @@
       "Hurrying Worker",
       "Old Townsfolk",
       "Porter",
-      "Kurt Sr.",
       "Wallen",
       "Tense Infected",
       "BBQ Restaurant Owner",
@@ -268,8 +199,7 @@
       "Bread Vendor",
       "Uncle Wong",
       "Infected Employee A",
-      "Worried Smith",
-      "Village Headman"
+      "Worried Smith"
     ],
     "searchNames": [
       "Villager",
@@ -288,7 +218,6 @@
       "Hurrying Worker",
       "Old Townsfolk",
       "Porter",
-      "Kurt Sr.",
       "Wallen",
       "Tense Infected",
       "BBQ Restaurant Owner",
@@ -302,69 +231,56 @@
       "Bread Vendor",
       "Uncle Wong",
       "Infected Employee A",
-      "Worried Smith",
-      "Village Headman"
+      "Worried Smith"
     ],
     "displayName": "Villager"
   },
   "avg_npc_010": {
     "speakerNames": [
       "Big Bob",
-      "Big Bob.",
-      "Grani",
       "Scary Orc?",
-      "Scary Orc",
-      "Not-So-Scary Orc",
       "Male Tourist B"
     ],
     "searchNames": [
       "Big Bob",
-      "Big Bob.",
-      "Grani",
       "Scary Orc?",
-      "Scary Orc",
-      "Not-So-Scary Orc",
       "Male Tourist B"
     ],
     "displayName": "Big Bob"
   },
   "char_263_skadi": {
     "speakerNames": [
-      "Skadi",
-      "Skadi & Specter"
+      "Skadi"
     ],
     "searchNames": [
-      "Skadi",
-      "Skadi & Specter"
+      "Skadi"
     ],
     "displayName": "Skadi"
   },
   "char_1002_nsabr_2": {
     "speakerNames": [
       "Reunion Member A",
-      "Reunion Member",
       "Reunion Squad Leader",
+      "Reunion Member",
       "Reunion Blademaster",
       "Silent Reunion Member",
       "Terracotta",
       "Gareth",
       "Reunion Soldier",
       "Reunion Infected",
-      "Reunion Warrior",
       "Crippled Reunion Fighter",
       "Reunion Member B"
     ],
     "searchNames": [
       "Reunion Member A",
-      "Reunion Member",
       "Reunion Squad Leader",
+      "Reunion Member",
       "Reunion Blademaster",
       "Silent Reunion Member",
       "Terracotta",
       "Gareth",
       "Reunion Soldier",
       "Reunion Infected",
-      "Reunion Warrior",
       "Crippled Reunion Fighter",
       "Reunion Member B"
     ],
@@ -416,16 +332,10 @@
   "char_003_kalts_1": {
     "speakerNames": [
       "Kal'tsit",
-      "Gavial",
-      "Lillia",
-      "Wei Yenwu",
       "Taciturn Passerby"
     ],
     "searchNames": [
       "Kal'tsit",
-      "Gavial",
-      "Lillia",
-      "Wei Yenwu",
       "Taciturn Passerby"
     ],
     "displayName": "Kal'tsit"
@@ -443,14 +353,10 @@
   },
   "char_260_durnar_1": {
     "speakerNames": [
-      "Dur-nar",
-      "Beagle",
-      "Dur-nar/Dobermann"
+      "Dur-nar"
     ],
     "searchNames": [
-      "Dur-nar",
-      "Beagle",
-      "Dur-nar/Dobermann"
+      "Dur-nar"
     ],
     "displayName": "Dur-nar"
   },
@@ -510,12 +416,10 @@
   "char_195_glassb_2": {
     "speakerNames": [
       "Istina",
-      "Istina & May",
       "Anna"
     ],
     "searchNames": [
       "Istina",
-      "Istina & May",
       "Anna"
     ],
     "displayName": "Istina"
@@ -523,13 +427,11 @@
   "char_194_rosali_1": {
     "speakerNames": [
       "Leto",
-      "Rosalind",
-      "Beehunter & Leto"
+      "Rosalind"
     ],
     "searchNames": [
       "Leto",
-      "Rosalind",
-      "Beehunter & Leto"
+      "Rosalind"
     ],
     "displayName": "Leto"
   },
@@ -556,43 +458,35 @@
   "char_013_riop": {
     "speakerNames": [
       "Vanguard Operator",
-      "Compass",
       "Rhodes Island Guard",
       "Instructor Grace",
       "Central Control Staff",
       "Heavily-Armed Man",
       "Guard",
       "Operator Oliver",
-      "Operator Shredder",
       "Grace",
       "Engineering Operator B",
       "Greypaw",
       "Guard Operator B",
       "Field Operator B",
-      "Field Operator A",
       "Office Operator B",
-      "Feraligus",
       "Guard Operator",
       "Vanguard Operator B"
     ],
     "searchNames": [
       "Vanguard Operator",
-      "Compass",
       "Rhodes Island Guard",
       "Instructor Grace",
       "Central Control Staff",
       "Heavily-Armed Man",
       "Guard",
       "Operator Oliver",
-      "Operator Shredder",
       "Grace",
       "Engineering Operator B",
       "Greypaw",
       "Guard Operator B",
       "Field Operator B",
-      "Field Operator A",
       "Office Operator B",
-      "Feraligus",
       "Guard Operator",
       "Vanguard Operator B"
     ],
@@ -610,10 +504,6 @@
       "Occphen",
       "Guard Operator",
       "Logistics Operator",
-      "Logistics Operator.",
-      "Logistics Operator A",
-      "Logistics Operator B.",
-      "Logistics Operator A.",
       "Navigator B",
       "Pilot",
       "Engineering Operator",
@@ -621,7 +511,6 @@
       "Tired Rhodes Island Operator",
       "Hawk",
       "Adamant",
-      "Barty",
       "Operator Barty",
       "Rhodes Island Field Operator B",
       "Engineering Operator A",
@@ -655,10 +544,6 @@
       "Occphen",
       "Guard Operator",
       "Logistics Operator",
-      "Logistics Operator.",
-      "Logistics Operator A",
-      "Logistics Operator B.",
-      "Logistics Operator A.",
       "Navigator B",
       "Pilot",
       "Engineering Operator",
@@ -666,7 +551,6 @@
       "Tired Rhodes Island Operator",
       "Hawk",
       "Adamant",
-      "Barty",
       "Operator Barty",
       "Rhodes Island Field Operator B",
       "Engineering Operator A",
@@ -743,7 +627,6 @@
       "Determined Reunion Caster",
       "Reunion Member",
       "Reunion?",
-      "Mays",
       "Ursus Caster"
     ],
     "searchNames": [
@@ -752,7 +635,6 @@
       "Determined Reunion Caster",
       "Reunion Member",
       "Reunion?",
-      "Mays",
       "Ursus Caster"
     ],
     "displayName": "Reunion Caster"
@@ -796,13 +678,11 @@
   "avg_377_gdglow_1": {
     "speakerNames": [
       "Susie",
-      "Goldenglow",
-      "Quercus"
+      "Goldenglow"
     ],
     "searchNames": [
       "Susie",
-      "Goldenglow",
-      "Quercus"
+      "Goldenglow"
     ],
     "displayName": "Susie"
   },
@@ -828,12 +708,10 @@
       "Cheerful Infected",
       "Carl",
       "Angry Miner",
-      "Luca",
       "Diner B",
       "Kazimierz Ruffian",
       "Gangster Messenger",
       "Infected Employee",
-      "Infected Employees",
       "Talkative Messenger",
       "Neighbor B",
       "Angry Villager"
@@ -859,12 +737,10 @@
       "Cheerful Infected",
       "Carl",
       "Angry Miner",
-      "Luca",
       "Diner B",
       "Kazimierz Ruffian",
       "Gangster Messenger",
       "Infected Employee",
-      "Infected Employees",
       "Talkative Messenger",
       "Neighbor B",
       "Angry Villager"
@@ -878,7 +754,6 @@
       "Ill-Intentioned Citizen",
       "Nervous Worker",
       "Nervous Infected",
-      "Gordon",
       "Wastelander A"
     ],
     "searchNames": [
@@ -887,7 +762,6 @@
       "Ill-Intentioned Citizen",
       "Nervous Worker",
       "Nervous Infected",
-      "Gordon",
       "Wastelander A"
     ],
     "displayName": "Bean the Infected"
@@ -931,12 +805,10 @@
   },
   "avg_492_quercu_1": {
     "speakerNames": [
-      "Quercus",
-      "Quercus?"
+      "Quercus"
     ],
     "searchNames": [
-      "Quercus",
-      "Quercus?"
+      "Quercus"
     ],
     "displayName": "Quercus"
   },
@@ -952,67 +824,45 @@
   "avg_npc_020": {
     "speakerNames": [
       "Security Guard A",
-      "Security Guard B",
-      "Security Chief",
       "Bodyguard A",
-      "Bodyguard B",
       "Worker A",
-      "Worker B",
       "Ship Guard",
       "Warehouse Watchman",
       "Casino Dealer",
-      "Security",
       "Galería Security Officer",
       "Museum Security",
       "Bodyguard",
-      "Bodyguard C",
       "Cronin's Henchman",
       "Cronin's Bodyguard",
       "Staff",
       "Organizing Committee Member",
-      "Staff Worker",
       "Security Guard",
-      "Snaptooth Gofer",
-      "Investigator",
-      "Otti",
       "Raythean Industries Security",
       "Mine Guard",
       "Company Representative",
       "Charlie",
-      "Party Security Detail",
-      "Event Security Detail"
+      "Party Security Detail"
     ],
     "searchNames": [
       "Security Guard A",
-      "Security Guard B",
-      "Security Chief",
       "Bodyguard A",
-      "Bodyguard B",
       "Worker A",
-      "Worker B",
       "Ship Guard",
       "Warehouse Watchman",
       "Casino Dealer",
-      "Security",
       "Galería Security Officer",
       "Museum Security",
       "Bodyguard",
-      "Bodyguard C",
       "Cronin's Henchman",
       "Cronin's Bodyguard",
       "Staff",
       "Organizing Committee Member",
-      "Staff Worker",
       "Security Guard",
-      "Snaptooth Gofer",
-      "Investigator",
-      "Otti",
       "Raythean Industries Security",
       "Mine Guard",
       "Company Representative",
       "Charlie",
-      "Party Security Detail",
-      "Event Security Detail"
+      "Party Security Detail"
     ],
     "displayName": "Security Guard A"
   },
@@ -1045,60 +895,36 @@
   "avg_npc_031": {
     "speakerNames": [
       "Imposing Black-Suit",
-      "Sly Black-Suit",
       "Man in Black",
-      "Tommaso",
-      "Cadeddu",
       "Stony-Faced Bodyguard",
-      "Calm Hitman",
       "Rossati Mafioso",
       "Mafioso",
-      "Pensive Hitman",
+      "Calm Hitman",
       "Flippant Security Guard",
-      "Harsh Security Guard",
       "Mafioso B",
       "Mafioso A",
-      "Mafioso ",
-      "Mafioso & Passerby",
       "Gang Member",
       "Unfamiliar Man",
       "Fat Kwan",
       "Mafioso F",
-      "Sinister Gang Member",
       "Fierce-looking Char Siu Member",
-      "Shrewd-looking Char Siu Member",
-      "Char Siu Members",
-      "Char Siu Member",
-      "Char Sius & Lou Seois",
       "Mafia Boss"
     ],
     "searchNames": [
       "Imposing Black-Suit",
-      "Sly Black-Suit",
       "Man in Black",
-      "Tommaso",
-      "Cadeddu",
       "Stony-Faced Bodyguard",
-      "Calm Hitman",
       "Rossati Mafioso",
       "Mafioso",
-      "Pensive Hitman",
+      "Calm Hitman",
       "Flippant Security Guard",
-      "Harsh Security Guard",
       "Mafioso B",
       "Mafioso A",
-      "Mafioso ",
-      "Mafioso & Passerby",
       "Gang Member",
       "Unfamiliar Man",
       "Fat Kwan",
       "Mafioso F",
-      "Sinister Gang Member",
       "Fierce-looking Char Siu Member",
-      "Shrewd-looking Char Siu Member",
-      "Char Siu Members",
-      "Char Siu Member",
-      "Char Sius & Lou Seois",
       "Mafia Boss"
     ],
     "displayName": "Imposing Black-Suit"
@@ -1106,13 +932,11 @@
   "avg_4016_kazema_1": {
     "speakerNames": [
       "Kite the Recorder",
-      "Kazemaru",
-      "Lively Student"
+      "Kazemaru"
     ],
     "searchNames": [
       "Kite the Recorder",
-      "Kazemaru",
-      "Lively Student"
+      "Kazemaru"
     ],
     "displayName": "Kite the Recorder"
   },
@@ -1153,7 +977,6 @@
       "Panicked Merchant",
       "Maid",
       "Kind Villager",
-      "Aunt Danka",
       "Pasado",
       "Townsfolk B",
       "Information Broker",
@@ -1174,7 +997,6 @@
       "Panicked Merchant",
       "Maid",
       "Kind Villager",
-      "Aunt Danka",
       "Pasado",
       "Townsfolk B",
       "Information Broker",
@@ -1187,7 +1009,6 @@
   "avg_npc_241": {
     "speakerNames": [
       "Guards' Captain",
-      "Guards Member",
       "Victorian Soldier",
       "Angry Alliance Soldier",
       "Patrol Captain",
@@ -1204,7 +1025,6 @@
     ],
     "searchNames": [
       "Guards' Captain",
-      "Guards Member",
       "Victorian Soldier",
       "Angry Alliance Soldier",
       "Patrol Captain",
@@ -1243,13 +1063,11 @@
       "Cowell",
       "Butler",
       "Wealthily-Dressed Man",
-      "William",
       "Curious Noble",
       "Factory Director",
       "Mayor",
       "Extremely Serious Councilor",
       "Wealthy Man",
-      "Noblewoman and Wealthy Man",
       "Anxious Patient",
       "Local Judge B",
       "Senior Project Manager",
@@ -1277,13 +1095,11 @@
       "Cowell",
       "Butler",
       "Wealthily-Dressed Man",
-      "William",
       "Curious Noble",
       "Factory Director",
       "Mayor",
       "Extremely Serious Councilor",
       "Wealthy Man",
-      "Noblewoman and Wealthy Man",
       "Anxious Patient",
       "Local Judge B",
       "Senior Project Manager",
@@ -1303,12 +1119,10 @@
   },
   "avg_npc_330_1": {
     "speakerNames": [
-      "Reunion Warrior",
-      "Gareth"
+      "Reunion Warrior"
     ],
     "searchNames": [
-      "Reunion Warrior",
-      "Gareth"
+      "Reunion Warrior"
     ],
     "displayName": "Reunion Warrior"
   },
@@ -1329,9 +1143,7 @@
       "Infected",
       "Reunion Soldier",
       "Reunion Warrior",
-      "Soda Hawker",
-      "Kevin",
-      "Ah Wei"
+      "Soda Hawker"
     ],
     "searchNames": [
       "Reunion Member",
@@ -1340,9 +1152,7 @@
       "Infected",
       "Reunion Soldier",
       "Reunion Warrior",
-      "Soda Hawker",
-      "Kevin",
-      "Ah Wei"
+      "Soda Hawker"
     ],
     "displayName": "Reunion Member"
   },
@@ -1358,13 +1168,11 @@
   "avg_npc_333_1": {
     "speakerNames": [
       "Elba",
-      "Cold Voice",
-      "Wounded Infected"
+      "Cold Voice"
     ],
     "searchNames": [
       "Elba",
-      "Cold Voice",
-      "Wounded Infected"
+      "Cold Voice"
     ],
     "displayName": "Elba"
   },
@@ -1393,7 +1201,6 @@
       "Ordinary Infected A",
       "Fast Food Joint Owner",
       "Worker Biting Toothpick",
-      "Workers",
       "Transport Rental Salesman",
       "Militiaman B",
       "Passing Merchant",
@@ -1424,7 +1231,6 @@
       "Ordinary Infected A",
       "Fast Food Joint Owner",
       "Worker Biting Toothpick",
-      "Workers",
       "Transport Rental Salesman",
       "Militiaman B",
       "Passing Merchant",
@@ -1466,7 +1272,6 @@
     "speakerNames": [
       "Councilor",
       "Townsfolk",
-      "Militiaman",
       "Stubborn Townsfolk",
       "Townsfolk B",
       "Wounded Townsfolk",
@@ -1484,7 +1289,6 @@
     "searchNames": [
       "Councilor",
       "Townsfolk",
-      "Militiaman",
       "Stubborn Townsfolk",
       "Townsfolk B",
       "Wounded Townsfolk",
@@ -1512,12 +1316,10 @@
   },
   "char_358_lisa_1": {
     "speakerNames": [
-      "Suzuran",
-      "Folinic"
+      "Suzuran"
     ],
     "searchNames": [
-      "Suzuran",
-      "Folinic"
+      "Suzuran"
     ],
     "displayName": "Suzuran"
   },
@@ -1568,7 +1370,6 @@
     "speakerNames": [
       "Armed Infected",
       "Sarkaz Warrior",
-      "Young Sarkaz Warrior",
       "Sarkaz Mercenary",
       "Weapon-Maintaining Mercenary",
       "Stern Mercenary",
@@ -1580,28 +1381,20 @@
       "Dour Mercenary",
       "Excited Mercenary",
       "Dying Mercenary",
-      "Sarkaz Traitor",
-      "Sarkaz Mercenary B",
       "Sarkaz Boiler Worker",
-      "Sarkaz Warrior?",
       "Sarkaz Soldier",
       "Tired Sarkaz Worker",
-      "Cheering Sarkaz Worker",
-      "Slyly Smiling Sarkaz Worker",
       "Sarkaz Supervisor",
       "Timid Mercenary",
       "Beleaguered Mercenary",
       "Sarkaz Youth",
       "Patrolling Sarkaz Soldier B",
       "Sarkaz Passerby",
-      "Sarkaz Teacher",
-      "Agama Gang",
-      "Agama Gang Leader"
+      "Agama Gang"
     ],
     "searchNames": [
       "Armed Infected",
       "Sarkaz Warrior",
-      "Young Sarkaz Warrior",
       "Sarkaz Mercenary",
       "Weapon-Maintaining Mercenary",
       "Stern Mercenary",
@@ -1613,23 +1406,16 @@
       "Dour Mercenary",
       "Excited Mercenary",
       "Dying Mercenary",
-      "Sarkaz Traitor",
-      "Sarkaz Mercenary B",
       "Sarkaz Boiler Worker",
-      "Sarkaz Warrior?",
       "Sarkaz Soldier",
       "Tired Sarkaz Worker",
-      "Cheering Sarkaz Worker",
-      "Slyly Smiling Sarkaz Worker",
       "Sarkaz Supervisor",
       "Timid Mercenary",
       "Beleaguered Mercenary",
       "Sarkaz Youth",
       "Patrolling Sarkaz Soldier B",
       "Sarkaz Passerby",
-      "Sarkaz Teacher",
-      "Agama Gang",
-      "Agama Gang Leader"
+      "Agama Gang"
     ],
     "displayName": "Armed Infected"
   },
@@ -1637,7 +1423,6 @@
     "speakerNames": [
       "Armed Infected",
       "Armed Infected A",
-      "Armed Infected B",
       "Rebellious Townsfolk",
       "Infected Captive",
       "Rebellious Infected",
@@ -1646,7 +1431,6 @@
     "searchNames": [
       "Armed Infected",
       "Armed Infected A",
-      "Armed Infected B",
       "Rebellious Townsfolk",
       "Infected Captive",
       "Rebellious Infected",
@@ -1692,12 +1476,10 @@
   },
   "char_293_thorns_1": {
     "speakerNames": [
-      "Thorns",
-      "Unremarkable Tourist"
+      "Thorns"
     ],
     "searchNames": [
-      "Thorns",
-      "Unremarkable Tourist"
+      "Thorns"
     ],
     "displayName": "Thorns"
   },
@@ -1733,7 +1515,6 @@
       "Male Tourist",
       "Shopkeeper B",
       "Street Artist",
-      "Male Tourist A",
       "Tabloid Reporter",
       "Messenger",
       "Food Stall Owner",
@@ -1742,18 +1523,14 @@
       "Customer A",
       "Tourist A",
       "Careless Youth",
-      "Arcade Worker?",
       "Club Owner",
       "Audience Member A",
-      "Audience Member C",
-      "Surprised Man",
-      "Tucker"
+      "Surprised Man"
     ],
     "searchNames": [
       "Male Tourist",
       "Shopkeeper B",
       "Street Artist",
-      "Male Tourist A",
       "Tabloid Reporter",
       "Messenger",
       "Food Stall Owner",
@@ -1762,12 +1539,9 @@
       "Customer A",
       "Tourist A",
       "Careless Youth",
-      "Arcade Worker?",
       "Club Owner",
       "Audience Member A",
-      "Audience Member C",
-      "Surprised Man",
-      "Tucker"
+      "Surprised Man"
     ],
     "displayName": "Male Tourist"
   },
@@ -1776,7 +1550,6 @@
       "Female Tourist",
       "Shopkeeper A",
       "Community Resident",
-      "Female Tourist A",
       "Manager",
       "Tourist",
       "Customer B",
@@ -1788,7 +1561,6 @@
       "Female Tourist",
       "Shopkeeper A",
       "Community Resident",
-      "Female Tourist A",
       "Manager",
       "Tourist",
       "Customer B",
@@ -1859,7 +1631,6 @@
       "Elegant Ambassador",
       "Tipsy Businessman",
       "Theater Manager",
-      "Announcer",
       "Enthusiastic Merchant",
       "Victorian Count",
       "Bank President",
@@ -1868,12 +1639,9 @@
       "Seasoned Investor",
       "Pompous Man",
       "Cheerful Noble",
-      "Earl Morrill",
       "Greedy Businessman",
       "Noble Gentleman",
-      "Noble Gentleman & Noble Lady",
       "Slimy Noble",
-      "Slimy Noble & Astute Noble",
       "Fretful Merchant",
       "Scathing Baron",
       "Genial Noble",
@@ -1895,7 +1663,6 @@
       "Elegant Ambassador",
       "Tipsy Businessman",
       "Theater Manager",
-      "Announcer",
       "Enthusiastic Merchant",
       "Victorian Count",
       "Bank President",
@@ -1904,12 +1671,9 @@
       "Seasoned Investor",
       "Pompous Man",
       "Cheerful Noble",
-      "Earl Morrill",
       "Greedy Businessman",
       "Noble Gentleman",
-      "Noble Gentleman & Noble Lady",
       "Slimy Noble",
-      "Slimy Noble & Astute Noble",
       "Fretful Merchant",
       "Scathing Baron",
       "Genial Noble",
@@ -1989,23 +1753,16 @@
       "Taran Refugee",
       "Tempersome Taran Refugee",
       "Excited Taran Refugee",
-      "Angry Taran Refugee",
       "Confused Resident",
-      "Community Resident",
       "Factory Owner",
       "Ragged Citizen",
       "Cheerful Soldier",
       "Agitated Citizen",
       "Embittered Man",
       "Chef MacMartin",
-      "Restless Youth",
       "Frightened Youth",
-      "Wounded Youth",
       "Grieving Man",
-      "Busy Youth",
-      "Messenger MacMartin",
       "Young Volunteer",
-      "Angry Youth",
       "Timid Youth",
       "Angry Citizen",
       "Infected",
@@ -2017,8 +1774,6 @@
       "Hot-Blooded Youth",
       "Gentleman",
       "Photographers",
-      "Placid Photographer",
-      "Restless Photographer",
       "Suspicious Man",
       "Stan",
       "Independent Reporter",
@@ -2029,10 +1784,8 @@
       "Townsfolk A",
       "'Engineer'",
       "Michael",
-      "Wasting Deserter",
       "Bent",
       "Infected Villager",
-      "Wheedling Merchant Alumnus",
       "Twitchy Taran Man",
       "Lean Man",
       "Merchant",
@@ -2045,23 +1798,16 @@
       "Taran Refugee",
       "Tempersome Taran Refugee",
       "Excited Taran Refugee",
-      "Angry Taran Refugee",
       "Confused Resident",
-      "Community Resident",
       "Factory Owner",
       "Ragged Citizen",
       "Cheerful Soldier",
       "Agitated Citizen",
       "Embittered Man",
       "Chef MacMartin",
-      "Restless Youth",
       "Frightened Youth",
-      "Wounded Youth",
       "Grieving Man",
-      "Busy Youth",
-      "Messenger MacMartin",
       "Young Volunteer",
-      "Angry Youth",
       "Timid Youth",
       "Angry Citizen",
       "Infected",
@@ -2073,8 +1819,6 @@
       "Hot-Blooded Youth",
       "Gentleman",
       "Photographers",
-      "Placid Photographer",
-      "Restless Photographer",
       "Suspicious Man",
       "Stan",
       "Independent Reporter",
@@ -2085,10 +1829,8 @@
       "Townsfolk A",
       "'Engineer'",
       "Michael",
-      "Wasting Deserter",
       "Bent",
       "Infected Villager",
-      "Wheedling Merchant Alumnus",
       "Twitchy Taran Man",
       "Lean Man",
       "Merchant",
@@ -2207,18 +1949,10 @@
   },
   "avg_npc_299_1": {
     "speakerNames": [
-      "Taihe",
-      "Amiable Young Man",
-      "Zuo Le",
-      "Kroos",
-      "Mr. Nothing"
+      "Taihe"
     ],
     "searchNames": [
-      "Taihe",
-      "Amiable Young Man",
-      "Zuo Le",
-      "Kroos",
-      "Mr. Nothing"
+      "Taihe"
     ],
     "displayName": "Taihe"
   },
@@ -2233,58 +1967,36 @@
   },
   "avg_npc_542_1": {
     "speakerNames": [
-      "Gambino",
-      "Gambino & Capone",
-      "Gambino & Man in Black"
+      "Gambino"
     ],
     "searchNames": [
-      "Gambino",
-      "Gambino & Capone",
-      "Gambino & Man in Black"
+      "Gambino"
     ],
     "displayName": "Gambino"
   },
   "char_015_lmg": {
     "speakerNames": [
       "L.G.D. Officer A",
-      "L.G.D. Officer B",
       "L.G.D. Officer",
-      "Exhausted L.G.D. Officer",
       "Frivolous L.G.D. Officer",
-      "Serious L.G.D. Officer",
-      "L.G.D. Officer?",
-      "Terracotta",
-      "Watermelon-scented L.G.D. Officer",
       "L.G.D. Agent",
       "Guard",
       "L. G. D. Officer",
-      "L. G. D. Captain",
       "L. G. D. Operator",
       "Policeman A",
-      "Policeman B",
-      "Policemen",
       "Officer Kam",
       "L.G.D. Supervisor",
       "Senior L.G.D. Officer"
     ],
     "searchNames": [
       "L.G.D. Officer A",
-      "L.G.D. Officer B",
       "L.G.D. Officer",
-      "Exhausted L.G.D. Officer",
       "Frivolous L.G.D. Officer",
-      "Serious L.G.D. Officer",
-      "L.G.D. Officer?",
-      "Terracotta",
-      "Watermelon-scented L.G.D. Officer",
       "L.G.D. Agent",
       "Guard",
       "L. G. D. Officer",
-      "L. G. D. Captain",
       "L. G. D. Operator",
       "Policeman A",
-      "Policeman B",
-      "Policemen",
       "Officer Kam",
       "L.G.D. Supervisor",
       "Senior L.G.D. Officer"
@@ -2305,24 +2017,16 @@
       "Rat King",
       "Lin",
       "Old Man",
-      "Texas",
-      "Emperor",
       "Retiree",
       "Passerby Old Man",
-      "Master Lin?",
-      "Master Lin",
       "Lin Kojui"
     ],
     "searchNames": [
       "Rat King",
       "Lin",
       "Old Man",
-      "Texas",
-      "Emperor",
       "Retiree",
       "Passerby Old Man",
-      "Master Lin?",
-      "Master Lin",
       "Lin Kojui"
     ],
     "displayName": "Rat King"
@@ -2333,10 +2037,10 @@
       "An Excited Spectator",
       "A Passing Tourist B",
       "An Audience Member B",
-      "A Tourist",
       "A Tourist B",
       "A Spectator",
       "A Spectator B",
+      "A Tourist",
       "Ordinary Clerk",
       "Male Lungmenite",
       "Live Animal Trader",
@@ -2350,15 +2054,12 @@
       "Lungmenite?",
       "Drunk",
       "Seemingly Ordinary Resident",
-      "Rat King's Henchman",
       "Slum Dweller",
       "Host",
       "Curious Youth",
       "Excited Youth",
       "Ordinary Lungmen Citizen",
       "Excited Fan",
-      "Confused Fan",
-      "Perplexed Fan",
       "Doctor",
       "Lighting Engineer",
       "Innocent Passerby",
@@ -2374,13 +2075,8 @@
       "Hapless Man",
       "Customer",
       "Shrewd Youth",
-      "Block Manager?",
       "Panicked Lungmen Citizen",
       "Male Resident",
-      "Vicious-Looking Lou Seoi Member",
-      "Angry Lou Seoi Member",
-      "Injured Lou Seoi Member",
-      "Lou Seoi Member",
       "Staged(?) Male Passerby",
       "Gui"
     ],
@@ -2389,10 +2085,10 @@
       "An Excited Spectator",
       "A Passing Tourist B",
       "An Audience Member B",
-      "A Tourist",
       "A Tourist B",
       "A Spectator",
       "A Spectator B",
+      "A Tourist",
       "Ordinary Clerk",
       "Male Lungmenite",
       "Live Animal Trader",
@@ -2406,15 +2102,12 @@
       "Lungmenite?",
       "Drunk",
       "Seemingly Ordinary Resident",
-      "Rat King's Henchman",
       "Slum Dweller",
       "Host",
       "Curious Youth",
       "Excited Youth",
       "Ordinary Lungmen Citizen",
       "Excited Fan",
-      "Confused Fan",
-      "Perplexed Fan",
       "Doctor",
       "Lighting Engineer",
       "Innocent Passerby",
@@ -2430,13 +2123,8 @@
       "Hapless Man",
       "Customer",
       "Shrewd Youth",
-      "Block Manager?",
       "Panicked Lungmen Citizen",
       "Male Resident",
-      "Vicious-Looking Lou Seoi Member",
-      "Angry Lou Seoi Member",
-      "Injured Lou Seoi Member",
-      "Lou Seoi Member",
       "Staged(?) Male Passerby",
       "Gui"
     ],
@@ -2445,12 +2133,10 @@
   "avg_npc_214_1": {
     "speakerNames": [
       "The Blood Knight",
-      "Nightmare Knight",
       "Dikaiopolis"
     ],
     "searchNames": [
       "The Blood Knight",
-      "Nightmare Knight",
       "Dikaiopolis"
     ],
     "displayName": "The Blood Knight"
@@ -2509,14 +2195,12 @@
     "speakerNames": [
       "A Corporate Employee",
       "Dzwonek Rep",
-      "Tired Corporate Employee",
       "A Commuting Worker",
       "A Corporate Employee A",
       "Mid-level Manager",
       "Uniformed Worker",
       "Kazimierzian Staff Member",
       "Witness",
-      "Snobby Official",
       "Researcher",
       "City Hall Staffer",
       "Bored Bank Employee",
@@ -2527,7 +2211,6 @@
       "Staff Worker",
       "Knight Scout",
       "Man in Reporter Garb",
-      "Rafał",
       "City Council Administrator",
       "Professor's Assistant",
       "Retained Lawyer",
@@ -2541,14 +2224,12 @@
     "searchNames": [
       "A Corporate Employee",
       "Dzwonek Rep",
-      "Tired Corporate Employee",
       "A Commuting Worker",
       "A Corporate Employee A",
       "Mid-level Manager",
       "Uniformed Worker",
       "Kazimierzian Staff Member",
       "Witness",
-      "Snobby Official",
       "Researcher",
       "City Hall Staffer",
       "Bored Bank Employee",
@@ -2559,7 +2240,6 @@
       "Staff Worker",
       "Knight Scout",
       "Man in Reporter Garb",
-      "Rafał",
       "City Council Administrator",
       "Professor's Assistant",
       "Retained Lawyer",
@@ -2577,25 +2257,15 @@
       "Armorless Union Assassin",
       "A Security Officer",
       "An Armorless Union Member",
-      "A Gofer Armorless Union Member",
-      "A Seasoned Armorless Union Member",
       "An Armorless Union Member A",
-      "An Armorless Union Member B",
-      "Armorless Union Member",
-      "Armorless Union Captain",
-      "Armorless Union Assassin A"
+      "Armorless Union Member"
     ],
     "searchNames": [
       "Armorless Union Assassin",
       "A Security Officer",
       "An Armorless Union Member",
-      "A Gofer Armorless Union Member",
-      "A Seasoned Armorless Union Member",
       "An Armorless Union Member A",
-      "An Armorless Union Member B",
-      "Armorless Union Member",
-      "Armorless Union Captain",
-      "Armorless Union Assassin A"
+      "Armorless Union Member"
     ],
     "displayName": "Armorless Union Assassin"
   },
@@ -2613,7 +2283,6 @@
       "Secretary",
       "National Council Representative",
       "Man in a Suit",
-      "Hamm",
       "Serious Corporate Employee",
       "Staff",
       "A Corporate Employee",
@@ -2647,7 +2316,6 @@
       "Secretary",
       "National Council Representative",
       "Man in a Suit",
-      "Hamm",
       "Serious Corporate Employee",
       "Staff",
       "A Corporate Employee",
@@ -2681,14 +2349,10 @@
   },
   "char_325_bison_1": {
     "speakerNames": [
-      "Bison",
-      "Croissant",
-      "Texas"
+      "Bison"
     ],
     "searchNames": [
-      "Bison",
-      "Croissant",
-      "Texas"
+      "Bison"
     ],
     "displayName": "Bison"
   },
@@ -2713,22 +2377,14 @@
   "avg_npc_132": {
     "speakerNames": [
       "A-Zone Prisoner A",
-      "A-Zone Prisoner B",
-      "A-Zone Prisoner",
-      "Rick",
-      "A-Zone Prisoner C",
       "A-Zone Prisoners",
-      "Robin",
+      "A-Zone Prisoner",
       "Prisoner B"
     ],
     "searchNames": [
       "A-Zone Prisoner A",
-      "A-Zone Prisoner B",
-      "A-Zone Prisoner",
-      "Rick",
-      "A-Zone Prisoner C",
       "A-Zone Prisoners",
-      "Robin",
+      "A-Zone Prisoner",
       "Prisoner B"
     ],
     "displayName": "A-Zone Prisoner A"
@@ -2736,12 +2392,10 @@
   "avg_npc_134": {
     "speakerNames": [
       "Jailer A",
-      "Jailer B",
       "Jailer"
     ],
     "searchNames": [
       "Jailer A",
-      "Jailer B",
       "Jailer"
     ],
     "displayName": "Jailer A"
@@ -2749,26 +2403,16 @@
   "avg_npc_133": {
     "speakerNames": [
       "B-Zone Prisoner A",
-      "B-Zone Prisoner B",
-      "B-Zone Prisoner C",
-      "B-Zone Prisoners",
       "Infected Prisoner A",
-      "Infected Prisoner B",
-      "Infected Prisoner C",
-      "B-Zone Prisoner",
-      "Robin",
+      "B-Zone Prisoners",
+      "B-Zone Prisoner B",
       "Prisoner A"
     ],
     "searchNames": [
       "B-Zone Prisoner A",
-      "B-Zone Prisoner B",
-      "B-Zone Prisoner C",
-      "B-Zone Prisoners",
       "Infected Prisoner A",
-      "Infected Prisoner B",
-      "Infected Prisoner C",
-      "B-Zone Prisoner",
-      "Robin",
+      "B-Zone Prisoners",
+      "B-Zone Prisoner B",
       "Prisoner A"
     ],
     "displayName": "B-Zone Prisoner A"
@@ -2781,7 +2425,6 @@
       "Pondering Follower",
       "Weary-eyed Gravedigger",
       "Tired Worker",
-      "Spirited Worker",
       "Discouraged Worker",
       "Community Resident",
       "Operating Crew",
@@ -2792,15 +2435,12 @@
       "Injured Pioneer",
       "Young Hunter",
       "Townsfolk",
-      "Filon",
       "Strong Townsfolk",
-      "Edgar",
       "Irritable Infected",
       "Timid Miner",
       "Diner D",
       "Abel",
       "Silent Worker",
-      "Joyful Worker",
       "Miner ???",
       "Infected Employee?",
       "Excited Blacksmith",
@@ -2815,7 +2455,6 @@
       "Pondering Follower",
       "Weary-eyed Gravedigger",
       "Tired Worker",
-      "Spirited Worker",
       "Discouraged Worker",
       "Community Resident",
       "Operating Crew",
@@ -2826,15 +2465,12 @@
       "Injured Pioneer",
       "Young Hunter",
       "Townsfolk",
-      "Filon",
       "Strong Townsfolk",
-      "Edgar",
       "Irritable Infected",
       "Timid Miner",
       "Diner D",
       "Abel",
       "Silent Worker",
-      "Joyful Worker",
       "Miner ???",
       "Infected Employee?",
       "Excited Blacksmith",
@@ -2856,12 +2492,10 @@
   "char_285_medic2_1": {
     "speakerNames": [
       "Lancet-2",
-      "Dylan",
       "Abnormal Lancet-2"
     ],
     "searchNames": [
       "Lancet-2",
-      "Dylan",
       "Abnormal Lancet-2"
     ],
     "displayName": "Lancet-2"
@@ -2869,32 +2503,24 @@
   "avg_npc_071": {
     "speakerNames": [
       "Archosauria A",
-      "Archosauria",
       "Archosauria Warrior",
-      "Uda & Aruna",
       "Uda",
       "Clan Leader A",
       "Archosauria B",
       "Excited Archosauria",
-      "No Longer Excited Archosauria",
       "Agitated Archosauria",
-      "Yota",
       "Serious Archosauria",
       "Furious Archosauria",
       "Impetuous Villager"
     ],
     "searchNames": [
       "Archosauria A",
-      "Archosauria",
       "Archosauria Warrior",
-      "Uda & Aruna",
       "Uda",
       "Clan Leader A",
       "Archosauria B",
       "Excited Archosauria",
-      "No Longer Excited Archosauria",
       "Agitated Archosauria",
-      "Yota",
       "Serious Archosauria",
       "Furious Archosauria",
       "Impetuous Villager"
@@ -2904,46 +2530,32 @@
   "avg_npc_070": {
     "speakerNames": [
       "Archosauria B",
-      "Archosauria C",
-      "Archosauria",
       "Peta",
-      "Archosauria Champion",
+      "Archosauria",
       "Aruna",
       "Yogi",
-      "Clan Leader B",
-      "Clan Leader C",
       "Archosauria D",
       "Archosauria A",
       "Groaning Archosauria",
       "Coin Dealer",
       "Courageous Archosauria",
-      "Gator-headed Beast-man",
-      "Bright Archosauria",
       "Happy Archosauria",
-      "Tribe Priest",
       "Rowdy Archosauria",
       "Enthusiastic Villager",
       "Sage's Attendant"
     ],
     "searchNames": [
       "Archosauria B",
-      "Archosauria C",
-      "Archosauria",
       "Peta",
-      "Archosauria Champion",
+      "Archosauria",
       "Aruna",
       "Yogi",
-      "Clan Leader B",
-      "Clan Leader C",
       "Archosauria D",
       "Archosauria A",
       "Groaning Archosauria",
       "Coin Dealer",
       "Courageous Archosauria",
-      "Gator-headed Beast-man",
-      "Bright Archosauria",
       "Happy Archosauria",
-      "Tribe Priest",
       "Rowdy Archosauria",
       "Enthusiastic Villager",
       "Sage's Attendant"
@@ -2991,22 +2603,14 @@
   },
   "char_416_zumama_1": {
     "speakerNames": [
-      "Zumama",
       "Archosauria A",
-      "Archosauria B",
-      "Archosauria C",
-      "Archosauria D",
       "Eunectes"
     ],
     "searchNames": [
-      "Zumama",
       "Archosauria A",
-      "Archosauria B",
-      "Archosauria C",
-      "Archosauria D",
       "Eunectes"
     ],
-    "displayName": "Zumama"
+    "displayName": "Archosauria A"
   },
   "avg_npc_075": {
     "speakerNames": [
@@ -3101,14 +2705,10 @@
   },
   "char_187_ccheal_summer_1": {
     "speakerNames": [
-      "Gavial",
-      "Utage",
-      "Ceobe"
+      "Gavial"
     ],
     "searchNames": [
-      "Gavial",
-      "Utage",
-      "Ceobe"
+      "Gavial"
     ],
     "displayName": "Gavial"
   },
@@ -3145,13 +2745,10 @@
       "Young Bartender",
       "Kazimierzian Girl",
       "Basket-holding Girl",
-      "Veggie",
       "Lydia",
       "Runaway Girl",
       "An Infected Woman",
       "Timid Woman",
-      "Lana",
-      "Servant",
       "Little Girl"
     ],
     "searchNames": [
@@ -3159,13 +2756,10 @@
       "Young Bartender",
       "Kazimierzian Girl",
       "Basket-holding Girl",
-      "Veggie",
       "Lydia",
       "Runaway Girl",
       "An Infected Woman",
       "Timid Woman",
-      "Lana",
-      "Servant",
       "Little Girl"
     ],
     "displayName": "Enthusiastic Villager"
@@ -3175,27 +2769,25 @@
       "Noble's Mercenary",
       "A Staid Knight",
       "A Popcorn-Clutching Knight",
-      "An Audience Knight",
       "A Spectating Knight",
       "A Protesting Knight",
       "An Observing Knight",
+      "An Audience Knight",
       "Annoyed Tourist",
       "A Spectating Knight A",
-      "Patrolling Knight",
-      "Search Team Member"
+      "Patrolling Knight"
     ],
     "searchNames": [
       "Noble's Mercenary",
       "A Staid Knight",
       "A Popcorn-Clutching Knight",
-      "An Audience Knight",
       "A Spectating Knight",
       "A Protesting Knight",
       "An Observing Knight",
+      "An Audience Knight",
       "Annoyed Tourist",
       "A Spectating Knight A",
-      "Patrolling Knight",
-      "Search Team Member"
+      "Patrolling Knight"
     ],
     "displayName": "Noble's Mercenary"
   },
@@ -3205,9 +2797,7 @@
       "Enthusiastic Infected",
       "Zeno",
       "Anxious Man",
-      "Farone",
       "Fierce Infected",
-      "Gus",
       "Cheering Infected Worker"
     ],
     "searchNames": [
@@ -3215,9 +2805,7 @@
       "Enthusiastic Infected",
       "Zeno",
       "Anxious Man",
-      "Farone",
       "Fierce Infected",
-      "Gus",
       "Cheering Infected Worker"
     ],
     "displayName": "Ill Refugee"
@@ -3239,12 +2827,10 @@
   },
   "avg_4032_provs_1": {
     "speakerNames": [
-      "Deszcz",
-      "Big Drinker Customer"
+      "Deszcz"
     ],
     "searchNames": [
-      "Deszcz",
-      "Big Drinker Customer"
+      "Deszcz"
     ],
     "displayName": "Deszcz"
   },
@@ -3252,22 +2838,16 @@
     "speakerNames": [
       "Flametail",
       "Passing Fan",
-      "Greatmouth Mob",
-      "'Flametail' Knight",
       "Flametail' Sona",
       "Sona",
-      "Flametail Knight",
-      "A Hoarse Knight"
+      "Flametail Knight"
     ],
     "searchNames": [
       "Flametail",
       "Passing Fan",
-      "Greatmouth Mob",
-      "'Flametail' Knight",
       "Flametail' Sona",
       "Sona",
-      "Flametail Knight",
-      "A Hoarse Knight"
+      "Flametail Knight"
     ],
     "displayName": "Flametail"
   },
@@ -3275,17 +2855,13 @@
     "speakerNames": [
       "Ashlock",
       "Ashlock Knight",
-      "Flametail Knight",
       "Greynuty",
-      "A Hoarse Knight",
       "An Indifferent Knight"
     ],
     "searchNames": [
       "Ashlock",
       "Ashlock Knight",
-      "Flametail Knight",
       "Greynuty",
-      "A Hoarse Knight",
       "An Indifferent Knight"
     ],
     "displayName": "Ashlock"
@@ -3297,12 +2873,10 @@
       "Fretful Noble",
       "Stoic-Looking Noble",
       "Nitpicking Critic",
-      "Calm Noble",
       "Older Noble",
       "Urtican Subject?",
       "Haughty Broker",
       "Haggard Noble",
-      "Berman",
       "Blanche"
     ],
     "searchNames": [
@@ -3311,12 +2885,10 @@
       "Fretful Noble",
       "Stoic-Looking Noble",
       "Nitpicking Critic",
-      "Calm Noble",
       "Older Noble",
       "Urtican Subject?",
       "Haughty Broker",
       "Haggard Noble",
-      "Berman",
       "Blanche"
     ],
     "displayName": "Resplendently Dressed Noble"
@@ -3355,16 +2927,12 @@
     "speakerNames": [
       "Campaign Knight",
       "Campaign Knight A",
-      "Campaign Knight B",
-      "'Kazimierzian'",
-      "Marsov"
+      "'Kazimierzian'"
     ],
     "searchNames": [
       "Campaign Knight",
       "Campaign Knight A",
-      "Campaign Knight B",
-      "'Kazimierzian'",
-      "Marsov"
+      "'Kazimierzian'"
     ],
     "displayName": "Campaign Knight"
   },
@@ -3379,39 +2947,29 @@
   },
   "avg_npc_101": {
     "speakerNames": [
-      "Old Craftsman",
-      "Old Knight",
-      "Bald Marcin"
+      "Old Craftsman"
     ],
     "searchNames": [
-      "Old Craftsman",
-      "Old Knight",
-      "Bald Marcin"
+      "Old Craftsman"
     ],
     "displayName": "Old Craftsman"
   },
   "avg_npc_120": {
     "speakerNames": [
-      "Old Knight",
-      "Old Knight & Old Craftsman",
-      "Old Craftsman"
+      "Old Knight"
     ],
     "searchNames": [
-      "Old Knight",
-      "Old Knight & Old Craftsman",
-      "Old Craftsman"
+      "Old Knight"
     ],
     "displayName": "Old Knight"
   },
   "avg_1014_nearl2_1": {
     "speakerNames": [
       "Margaret",
-      "Nearl",
       "The Radiant Knight"
     ],
     "searchNames": [
       "Margaret",
-      "Nearl",
       "The Radiant Knight"
     ],
     "displayName": "Margaret"
@@ -3419,16 +2977,10 @@
   "char_010_chen_summer": {
     "speakerNames": [
       "Ch'en",
-      "Ernesto",
-      "Lin Yühsia",
-      "Ch'en & Lin Yühsia",
       "Female Tourist C"
     ],
     "searchNames": [
       "Ch'en",
-      "Ernesto",
-      "Lin Yühsia",
-      "Ch'en & Lin Yühsia",
       "Female Tourist C"
     ],
     "displayName": "Ch'en"
@@ -3446,14 +2998,10 @@
   },
   "char_010_chen_1": {
     "speakerNames": [
-      "Ch'en",
-      "Masked Rhodes Island Operator",
-      "Wei Yenwu"
+      "Ch'en"
     ],
     "searchNames": [
-      "Ch'en",
-      "Masked Rhodes Island Operator",
-      "Wei Yenwu"
+      "Ch'en"
     ],
     "displayName": "Ch'en"
   },
@@ -3469,13 +3017,9 @@
   "avg_npc_201": {
     "speakerNames": [
       "Chagrined Male Tourist",
-      "Cheerful Male Tourist",
-      "Impatient Male Tourist",
-      "Male Music-Loving Tourist",
       "Passionate Male Tourist",
-      "Male & Female Tourist",
+      "Impatient Male Tourist",
       "Startled Male Tourist",
-      "Terrified Male Tourist",
       "Sly Stranger",
       "Arrogant Youth",
       "Tourist",
@@ -3486,13 +3030,9 @@
     ],
     "searchNames": [
       "Chagrined Male Tourist",
-      "Cheerful Male Tourist",
-      "Impatient Male Tourist",
-      "Male Music-Loving Tourist",
       "Passionate Male Tourist",
-      "Male & Female Tourist",
+      "Impatient Male Tourist",
       "Startled Male Tourist",
-      "Terrified Male Tourist",
       "Sly Stranger",
       "Arrogant Youth",
       "Tourist",
@@ -3506,19 +3046,15 @@
   "avg_npc_202": {
     "speakerNames": [
       "Sluggish Female Tourist",
-      "Female Music-Loving Tourist",
       "Excited Female Tourist",
       "Startled Female Tourist",
-      "Terrified Female Tourist",
       "Excited Tourist",
       "Waitress"
     ],
     "searchNames": [
       "Sluggish Female Tourist",
-      "Female Music-Loving Tourist",
       "Excited Female Tourist",
       "Startled Female Tourist",
-      "Terrified Female Tourist",
       "Excited Tourist",
       "Waitress"
     ],
@@ -3537,12 +3073,10 @@
   },
   "avg_npc_196_1": {
     "speakerNames": [
-      "Lin Yühsia",
-      "Ch'en"
+      "Lin Yühsia"
     ],
     "searchNames": [
-      "Lin Yühsia",
-      "Ch'en"
+      "Lin Yühsia"
     ],
     "displayName": "Lin Yühsia"
   },
@@ -3564,7 +3098,6 @@
       "Tourist A?",
       "Bar Owner",
       "Criminal",
-      "Tulio",
       "Casino Worker",
       "Flustered Mobber"
     ],
@@ -3574,7 +3107,6 @@
       "Tourist A?",
       "Bar Owner",
       "Criminal",
-      "Tulio",
       "Casino Worker",
       "Flustered Mobber"
     ],
@@ -3586,7 +3118,6 @@
       "Bodyguard",
       "Mayor's Bodyguard",
       "Toady Dossoles Police Officer",
-      "Impatient Dossoles Police Officer",
       "Candela's Subordinate"
     ],
     "searchNames": [
@@ -3594,7 +3125,6 @@
       "Bodyguard",
       "Mayor's Bodyguard",
       "Toady Dossoles Police Officer",
-      "Impatient Dossoles Police Officer",
       "Candela's Subordinate"
     ],
     "displayName": "Casino Boss"
@@ -3669,13 +3199,11 @@
   "avg_npc_204": {
     "speakerNames": [
       "Irritated Contestant",
-      "Angered Contestant",
       "Feeble-minded Contestant",
       "Excited Customer"
     ],
     "searchNames": [
       "Irritated Contestant",
-      "Angered Contestant",
       "Feeble-minded Contestant",
       "Excited Customer"
     ],
@@ -3684,7 +3212,6 @@
   "avg_npc_205": {
     "speakerNames": [
       "Irritated Contestant",
-      "Contestant?",
       "Headstrong Contestant",
       "Drunkard A",
       "Contestant",
@@ -3694,7 +3221,6 @@
     ],
     "searchNames": [
       "Irritated Contestant",
-      "Contestant?",
       "Headstrong Contestant",
       "Drunkard A",
       "Contestant",
@@ -3734,23 +3260,15 @@
   "avg_npc_193": {
     "speakerNames": [
       "Dim-witted Pancho Subordinate",
-      "Quick-witted Pancho Subordinate",
-      "Alert Pancho Subordinate",
       "Captain's Subordinate",
       "Bulky Soldier",
-      "Shrewd Soldier",
-      "Bolívarian Serviceman A",
-      "Bolívarian Serviceman B"
+      "Bolívarian Serviceman A"
     ],
     "searchNames": [
       "Dim-witted Pancho Subordinate",
-      "Quick-witted Pancho Subordinate",
-      "Alert Pancho Subordinate",
       "Captain's Subordinate",
       "Bulky Soldier",
-      "Shrewd Soldier",
-      "Bolívarian Serviceman A",
-      "Bolívarian Serviceman B"
+      "Bolívarian Serviceman A"
     ],
     "displayName": "Dim-witted Pancho Subordinate"
   },
@@ -3796,12 +3314,10 @@
   },
   "char_219_meteo_1": {
     "speakerNames": [
-      "Meteorite",
-      "Jessica"
+      "Meteorite"
     ],
     "searchNames": [
-      "Meteorite",
-      "Jessica"
+      "Meteorite"
     ],
     "displayName": "Meteorite"
   },
@@ -3863,7 +3379,6 @@
     "speakerNames": [
       "Sarkaz Warrior",
       "Burly Townsfolk",
-      "Strange Townsfolk",
       "Sarkaz Mercenary",
       "Fierce Mercenary",
       "Returned Mercenary",
@@ -3877,25 +3392,21 @@
       "Sarkaz Robber",
       "Sarkaz Mercenary Captain",
       "Fierce Sarkaz",
-      "'Miner'",
       "Quiet Sarkaz Worker",
+      "'Miner'",
       "Crane",
       "Babel Member?",
       "Excited Mercenary",
       "Guerrilla Sarkaz",
       "Scared Sarkaz Soldier",
       "Mercenary Captain",
-      "Grimm",
       "Ferocious Sarkaz Bandit",
-      "Panicking Sarkaz Bandit",
-      "Hot-Headed Sarkaz Bandit",
       "Sarkaz Overseer",
       "Agama Gang Member"
     ],
     "searchNames": [
       "Sarkaz Warrior",
       "Burly Townsfolk",
-      "Strange Townsfolk",
       "Sarkaz Mercenary",
       "Fierce Mercenary",
       "Returned Mercenary",
@@ -3909,18 +3420,15 @@
       "Sarkaz Robber",
       "Sarkaz Mercenary Captain",
       "Fierce Sarkaz",
-      "'Miner'",
       "Quiet Sarkaz Worker",
+      "'Miner'",
       "Crane",
       "Babel Member?",
       "Excited Mercenary",
       "Guerrilla Sarkaz",
       "Scared Sarkaz Soldier",
       "Mercenary Captain",
-      "Grimm",
       "Ferocious Sarkaz Bandit",
-      "Panicking Sarkaz Bandit",
-      "Hot-Headed Sarkaz Bandit",
       "Sarkaz Overseer",
       "Agama Gang Member"
     ],
@@ -3928,23 +3436,19 @@
   },
   "char_365_aprl": {
     "speakerNames": [
-      "April",
-      "April & Ayerscarpe"
+      "April"
     ],
     "searchNames": [
-      "April",
-      "April & Ayerscarpe"
+      "April"
     ],
     "displayName": "April"
   },
   "char_212_ansel_1": {
     "speakerNames": [
-      "Ansel",
-      "Lava"
+      "Ansel"
     ],
     "searchNames": [
-      "Ansel",
-      "Lava"
+      "Ansel"
     ],
     "displayName": "Ansel"
   },
@@ -3986,27 +3490,21 @@
   },
   "char_281_popka_1": {
     "speakerNames": [
-      "Popukar",
-      "Popukar & Bubble",
-      "Shamare"
+      "Popukar"
     ],
     "searchNames": [
-      "Popukar",
-      "Popukar & Bubble",
-      "Shamare"
+      "Popukar"
     ],
     "displayName": "Popukar"
   },
   "avg_npc_061": {
     "speakerNames": [
       "Maria",
-      "Maria & Platinum",
       "Foreign Tourist B",
       "Blemishine"
     ],
     "searchNames": [
       "Maria",
-      "Maria & Platinum",
       "Foreign Tourist B",
       "Blemishine"
     ],
@@ -4014,12 +3512,10 @@
   },
   "avg_npc_064_weapon_1": {
     "speakerNames": [
-      "Zofia",
-      "Maria"
+      "Zofia"
     ],
     "searchNames": [
-      "Zofia",
-      "Maria"
+      "Zofia"
     ],
     "displayName": "Zofia"
   },
@@ -4043,26 +3539,20 @@
   },
   "avg_npc_121": {
     "speakerNames": [
-      "Greatmouth Mob",
-      "Left-hand Knight"
+      "Greatmouth Mob"
     ],
     "searchNames": [
-      "Greatmouth Mob",
-      "Left-hand Knight"
+      "Greatmouth Mob"
     ],
     "displayName": "Greatmouth Mob"
   },
   "avg_npc_109": {
     "speakerNames": [
       "Corporate Employee",
-      "Deep Male Voice",
-      "Bold Female Voice",
       "Spokesman Malkiewicz"
     ],
     "searchNames": [
       "Corporate Employee",
-      "Deep Male Voice",
-      "Bold Female Voice",
       "Spokesman Malkiewicz"
     ],
     "displayName": "Corporate Employee"
@@ -4081,12 +3571,10 @@
   "char_204_platnm_1": {
     "speakerNames": [
       "Platinum",
-      "Voice in the darkness",
       "Centaurea"
     ],
     "searchNames": [
       "Platinum",
-      "Voice in the darkness",
       "Centaurea"
     ],
     "displayName": "Platinum"
@@ -4115,14 +3603,10 @@
   },
   "avg_npc_102": {
     "speakerNames": [
-      "Withered Knight",
-      "Corrupted Knight",
-      "Corrupted Knight & Withered Knight"
+      "Withered Knight"
     ],
     "searchNames": [
-      "Withered Knight",
-      "Corrupted Knight",
-      "Corrupted Knight & Withered Knight"
+      "Withered Knight"
     ],
     "displayName": "Withered Knight"
   },
@@ -4146,12 +3630,10 @@
   },
   "char_179_cgbird_1": {
     "speakerNames": [
-      "Nightingale",
-      "Shining"
+      "Nightingale"
     ],
     "searchNames": [
-      "Nightingale",
-      "Shining"
+      "Nightingale"
     ],
     "displayName": "Nightingale"
   },
@@ -4204,17 +3686,11 @@
   "avg_430_fartth_1": {
     "speakerNames": [
       "Justyna",
-      "A Hoarse Knight",
-      "Szewczyk",
-      "A Cold-Looking Knight",
-      "Zola"
+      "A Cold-Looking Knight"
     ],
     "searchNames": [
       "Justyna",
-      "A Hoarse Knight",
-      "Szewczyk",
-      "A Cold-Looking Knight",
-      "Zola"
+      "A Cold-Looking Knight"
     ],
     "displayName": "Justyna"
   },
@@ -4222,15 +3698,11 @@
     "speakerNames": [
       "A Hoarse Knight",
       "An Infected Knight",
-      "An Infected Knight A",
-      "An Infected Knight B",
       "Infected Knight-Engineer"
     ],
     "searchNames": [
       "A Hoarse Knight",
       "An Infected Knight",
-      "An Infected Knight A",
-      "An Infected Knight B",
       "Infected Knight-Engineer"
     ],
     "displayName": "A Hoarse Knight"
@@ -4277,44 +3749,38 @@
       "A Competing Knight",
       "A Kazimierz Knight",
       "Armor-clad Knight",
-      "Zorn",
-      "Razor Knight"
+      "Zorn"
     ],
     "searchNames": [
       "A Competing Knight",
       "A Kazimierz Knight",
       "Armor-clad Knight",
-      "Zorn",
-      "Razor Knight"
+      "Zorn"
     ],
     "displayName": "A Competing Knight"
   },
   "avg_npc_032": {
     "speakerNames": [
       "A Sensible Spectator",
-      "A Rowdy Spectator",
       "A Passing Tourist A",
       "An Audience Member A",
       "A Tourist",
       "A Tourist A",
+      "A Rowdy Spectator",
       "An Enthusiastic Spectator",
       "A Spectator A",
       "Female Lungmenite",
       "Clerk",
       "Female Tourist",
       "Contestant",
-      "Alba",
       "Passerby Diner",
       "Camera Crew Leader",
       "Passing Traveler",
       "Rinz",
-      "Ah Yun",
       "Passerby Girl",
       "Overfamiliar Woman",
       "Passerby B",
       "Angry Woman",
-      "Angry Man & Woman",
-      "Embarrassed Woman",
       "Female Passerby",
       "Frightened Woman",
       "Diner A",
@@ -4322,36 +3788,31 @@
       "Girl",
       "Shopkeeper",
       "Trapped Lungmen Citizen",
-      "Slum Infected",
       "Female Resident",
       "Ye Zizhen",
       "Staged(?) Female Passerby"
     ],
     "searchNames": [
       "A Sensible Spectator",
-      "A Rowdy Spectator",
       "A Passing Tourist A",
       "An Audience Member A",
       "A Tourist",
       "A Tourist A",
+      "A Rowdy Spectator",
       "An Enthusiastic Spectator",
       "A Spectator A",
       "Female Lungmenite",
       "Clerk",
       "Female Tourist",
       "Contestant",
-      "Alba",
       "Passerby Diner",
       "Camera Crew Leader",
       "Passing Traveler",
       "Rinz",
-      "Ah Yun",
       "Passerby Girl",
       "Overfamiliar Woman",
       "Passerby B",
       "Angry Woman",
-      "Angry Man & Woman",
-      "Embarrassed Woman",
       "Female Passerby",
       "Frightened Woman",
       "Diner A",
@@ -4359,7 +3820,6 @@
       "Girl",
       "Shopkeeper",
       "Trapped Lungmen Citizen",
-      "Slum Infected",
       "Female Resident",
       "Ye Zizhen",
       "Staged(?) Female Passerby"
@@ -4416,12 +3876,10 @@
   },
   "char_120_hibisc_1": {
     "speakerNames": [
-      "Hibiscus",
-      "Lava"
+      "Hibiscus"
     ],
     "searchNames": [
-      "Hibiscus",
-      "Lava"
+      "Hibiscus"
     ],
     "displayName": "Hibiscus"
   },
@@ -4472,17 +3930,13 @@
       "An Infected Refugee",
       "Infected",
       "Infected Peddler",
-      "Young Man",
-      "Anwar",
-      "Alsu"
+      "Young Man"
     ],
     "searchNames": [
       "An Infected Refugee",
       "Infected",
       "Infected Peddler",
-      "Young Man",
-      "Anwar",
-      "Alsu"
+      "Young Man"
     ],
     "displayName": "An Infected Refugee"
   },
@@ -4490,16 +3944,12 @@
     "speakerNames": [
       "Panicked Youth",
       "Fang Xiaoshi",
-      "Annoyed Youth",
-      "Curious Youth",
-      "Proud Youth"
+      "Annoyed Youth"
     ],
     "searchNames": [
       "Panicked Youth",
       "Fang Xiaoshi",
-      "Annoyed Youth",
-      "Curious Youth",
-      "Proud Youth"
+      "Annoyed Youth"
     ],
     "displayName": "Panicked Youth"
   },
@@ -4520,7 +3970,6 @@
       "Malicious Shanhaizhong Member",
       "Ominous Shanhaizhong Member",
       "Alert Shanhaizhong Member",
-      "Vicious Shanhaizhong Member",
       "Greedy Shanhaizhong Member",
       "Anxious Shanhaizhong Member",
       "Restless Shanhaizhong Member",
@@ -4533,7 +3982,6 @@
       "Malicious Shanhaizhong Member",
       "Ominous Shanhaizhong Member",
       "Alert Shanhaizhong Member",
-      "Vicious Shanhaizhong Member",
       "Greedy Shanhaizhong Member",
       "Anxious Shanhaizhong Member",
       "Restless Shanhaizhong Member",
@@ -4546,7 +3994,6 @@
       "Innkeeper",
       "Angry Villager",
       "Passing Villager B",
-      "Villager",
       "Nervous Villager",
       "Panicked Student",
       "Arrogant Man",
@@ -4556,14 +4003,12 @@
       "Drinking Old Man",
       "Tea Leaf Peddler",
       "Drunken Martial Artist",
-      "Sober Martial Artist",
       "Rescue Squad Member"
     ],
     "searchNames": [
       "Innkeeper",
       "Angry Villager",
       "Passing Villager B",
-      "Villager",
       "Nervous Villager",
       "Panicked Student",
       "Arrogant Man",
@@ -4573,7 +4018,6 @@
       "Drinking Old Man",
       "Tea Leaf Peddler",
       "Drunken Martial Artist",
-      "Sober Martial Artist",
       "Rescue Squad Member"
     ],
     "displayName": "Innkeeper"
@@ -4586,15 +4030,11 @@
       "Passing Villager A",
       "Villager",
       "Rough Villager",
-      "Vigilant Villager",
       "Villager A",
-      "Villager B",
       "Passionate Farmer",
-      "Tired Farmer",
       "Teahouse Keeper",
       "Innkeeper",
       "Busy Farmer",
-      "Terrified Farmer",
       "Farmer",
       "Townsfolk",
       "Humble Worker",
@@ -4602,7 +4042,6 @@
       "Stonemason",
       "Street Stall Owner",
       "Second Apprentice",
-      "First Apprentice",
       "Gui"
     ],
     "searchNames": [
@@ -4612,15 +4051,11 @@
       "Passing Villager A",
       "Villager",
       "Rough Villager",
-      "Vigilant Villager",
       "Villager A",
-      "Villager B",
       "Passionate Farmer",
-      "Tired Farmer",
       "Teahouse Keeper",
       "Innkeeper",
       "Busy Farmer",
-      "Terrified Farmer",
       "Farmer",
       "Townsfolk",
       "Humble Worker",
@@ -4628,7 +4063,6 @@
       "Stonemason",
       "Street Stall Owner",
       "Second Apprentice",
-      "First Apprentice",
       "Gui"
     ],
     "displayName": "Plowing Villager"
@@ -4647,25 +4081,17 @@
       "Astonished Villager",
       "Reporting Villager",
       "Villager",
-      "Terrified Villager",
-      "Villager B",
       "Clinician",
       "Heroine?",
-      "Feline Girl",
-      "Xiaoyu",
-      "'Xiaoyu'"
+      "Feline Girl"
     ],
     "searchNames": [
       "Astonished Villager",
       "Reporting Villager",
       "Villager",
-      "Terrified Villager",
-      "Villager B",
       "Clinician",
       "Heroine?",
-      "Feline Girl",
-      "Xiaoyu",
-      "'Xiaoyu'"
+      "Feline Girl"
     ],
     "displayName": "Astonished Villager"
   },
@@ -4685,13 +4111,10 @@
       "Agitated Villager",
       "Returned Traveler",
       "Angry Martial Artist",
-      "Disappointed Martial Artist",
       "Jing",
       "Mr. Ruan",
       "Well-Traveled Man",
-      "L.G.D. Officer",
-      "Retired Soldier",
-      "Guest"
+      "Retired Soldier"
     ],
     "searchNames": [
       "Bystander Villager",
@@ -4699,27 +4122,22 @@
       "Agitated Villager",
       "Returned Traveler",
       "Angry Martial Artist",
-      "Disappointed Martial Artist",
       "Jing",
       "Mr. Ruan",
       "Well-Traveled Man",
-      "L.G.D. Officer",
-      "Retired Soldier",
-      "Guest"
+      "Retired Soldier"
     ],
     "displayName": "Bystander Villager"
   },
   "avg_npc_798_1": {
     "speakerNames": [
       "Bystander Villager",
-      "Food-Delivering Villager",
       "Roadside Clinic Staff",
       "Errand Runner",
       "Rescue Squad Leader"
     ],
     "searchNames": [
       "Bystander Villager",
-      "Food-Delivering Villager",
       "Roadside Clinic Staff",
       "Errand Runner",
       "Rescue Squad Leader"
@@ -4833,15 +4251,11 @@
   "avg_npc_268": {
     "speakerNames": [
       "Devotee",
-      "Elder A",
-      "Elder B",
-      "Elder C"
+      "Elder A"
     ],
     "searchNames": [
       "Devotee",
-      "Elder A",
-      "Elder B",
-      "Elder C"
+      "Elder A"
     ],
     "displayName": "Devotee"
   },
@@ -4866,24 +4280,20 @@
   "avg_172_svrash_1": {
     "speakerNames": [
       "Enciodes",
-      "SilverAsh",
-      "Matterhorn?"
+      "SilverAsh"
     ],
     "searchNames": [
       "Enciodes",
-      "SilverAsh",
-      "Matterhorn?"
+      "SilverAsh"
     ],
     "displayName": "Enciodes"
   },
   "avg_206_gnosis_1": {
     "speakerNames": [
-      "Gnosis",
-      "Degenbrecher"
+      "Gnosis"
     ],
     "searchNames": [
-      "Gnosis",
-      "Degenbrecher"
+      "Gnosis"
     ],
     "displayName": "Gnosis"
   },
@@ -4948,25 +4358,19 @@
     "speakerNames": [
       "Neighbor",
       "Kjerag Commoner A",
-      "Kjerag Commoner C",
       "Kjerag Civilian B",
-      "Kjerag Noble B",
       "Spectating Passenger",
       "Common Kjerag Woman",
       "Depressed Passerby",
-      "No-Longer-Depressed Passerby",
       "Lively Staffer"
     ],
     "searchNames": [
       "Neighbor",
       "Kjerag Commoner A",
-      "Kjerag Commoner C",
       "Kjerag Civilian B",
-      "Kjerag Noble B",
       "Spectating Passenger",
       "Common Kjerag Woman",
       "Depressed Passerby",
-      "No-Longer-Depressed Passerby",
       "Lively Staffer"
     ],
     "displayName": "Neighbor"
@@ -5072,27 +4476,23 @@
     "speakerNames": [
       "Senior Subject",
       "Kjerag Civilian A",
-      "Kjerag Noble A",
       "Elderly Pilgrim",
       "Burdenbeast Herder",
       "Kjerag Elder",
       "Old Herdsman",
       "Lara's Father",
       "Old Man",
-      "Nail-Tender",
       "Hawker A"
     ],
     "searchNames": [
       "Senior Subject",
       "Kjerag Civilian A",
-      "Kjerag Noble A",
       "Elderly Pilgrim",
       "Burdenbeast Herder",
       "Kjerag Elder",
       "Old Herdsman",
       "Lara's Father",
       "Old Man",
-      "Nail-Tender",
       "Hawker A"
     ],
     "displayName": "Senior Subject"
@@ -5103,17 +4503,8 @@
       "Sluggish Soldier",
       "Young Kjerag Warrior",
       "Kjerag Warrior A",
-      "Kjerag Warriors A & B",
       "Paleroche Clan Warrior",
-      "Browntail Clan Warrior A",
-      "Browntail Clan Warrior B",
-      "Browntail Clan Warriors",
-      "Paleroche Clan Warriors",
       "Silverash Clan Warrior A",
-      "Silverash Clan Warrior B",
-      "Browntail Clan Warrior",
-      "Silverash Clan Warrior",
-      "Silverash Clan Warriors",
       "Kjerag Warrior",
       "Guard?",
       "Agile Kjerag Warrior",
@@ -5124,17 +4515,8 @@
       "Sluggish Soldier",
       "Young Kjerag Warrior",
       "Kjerag Warrior A",
-      "Kjerag Warriors A & B",
       "Paleroche Clan Warrior",
-      "Browntail Clan Warrior A",
-      "Browntail Clan Warrior B",
-      "Browntail Clan Warriors",
-      "Paleroche Clan Warriors",
       "Silverash Clan Warrior A",
-      "Silverash Clan Warrior B",
-      "Browntail Clan Warrior",
-      "Silverash Clan Warrior",
-      "Silverash Clan Warriors",
       "Kjerag Warrior",
       "Guard?",
       "Agile Kjerag Warrior",
@@ -5145,33 +4527,23 @@
   "avg_npc_284_1": {
     "speakerNames": [
       "Armed Subject",
-      "Bodyguard",
       "Nosy Soldier",
       "Old Kjerag Warrior",
-      "Kjerag Warriors",
-      "Kjerag Warrior?",
       "Kjerag Warrior B",
       "Paleroche Clan Warrior",
       "Browntail Clan Warrior C",
       "Silverash Clan Warrior C",
-      "Silverash Clan Warrior D",
-      "Paleroche Clan Warriors",
       "Kjerag Hunter",
       "Kjerag Warrior"
     ],
     "searchNames": [
       "Armed Subject",
-      "Bodyguard",
       "Nosy Soldier",
       "Old Kjerag Warrior",
-      "Kjerag Warriors",
-      "Kjerag Warrior?",
       "Kjerag Warrior B",
       "Paleroche Clan Warrior",
       "Browntail Clan Warrior C",
       "Silverash Clan Warrior C",
-      "Silverash Clan Warrior D",
-      "Paleroche Clan Warriors",
       "Kjerag Hunter",
       "Kjerag Warrior"
     ],
@@ -5315,22 +4687,14 @@
     "speakerNames": [
       "Tschäggättä",
       "Out-of-Breath Tschäggättä",
-      "Exhausted Tschäggättä",
       "Pumped-Up Tschäggättä",
-      "Frantic Tschäggättä",
-      "Burly Tschäggättä",
-      "Tschäggättä B",
-      "Tschäggättä A"
+      "Tschäggättä B"
     ],
     "searchNames": [
       "Tschäggättä",
       "Out-of-Breath Tschäggättä",
-      "Exhausted Tschäggättä",
       "Pumped-Up Tschäggättä",
-      "Frantic Tschäggättä",
-      "Burly Tschäggättä",
-      "Tschäggättä B",
-      "Tschäggättä A"
+      "Tschäggättä B"
     ],
     "displayName": "Tschäggättä"
   },
@@ -5338,14 +4702,12 @@
     "speakerNames": [
       "Kjerag Noble B",
       "Fretful Wife",
-      "Chief's Wife",
       "Karlan Trade Manager",
       "Hawker B"
     ],
     "searchNames": [
       "Kjerag Noble B",
       "Fretful Wife",
-      "Chief's Wife",
       "Karlan Trade Manager",
       "Hawker B"
     ],
@@ -5362,49 +4724,39 @@
   },
   "char_242_mayer": {
     "speakerNames": [
-      "Mayer",
-      "Closure"
+      "Mayer"
     ],
     "searchNames": [
-      "Mayer",
-      "Closure"
+      "Mayer"
     ],
     "displayName": "Mayer"
   },
   "char_249_muesys_1": {
     "speakerNames": [
-      "Muelsyse",
-      "Silence"
+      "Muelsyse"
     ],
     "searchNames": [
-      "Muelsyse",
-      "Silence"
+      "Muelsyse"
     ],
     "displayName": "Muelsyse"
   },
   "char_214_kafka_1": {
     "speakerNames": [
-      "Kafka",
-      "Jailer"
+      "Kafka"
     ],
     "searchNames": [
-      "Kafka",
-      "Jailer"
+      "Kafka"
     ],
     "displayName": "Kafka"
   },
   "char_451_robin": {
     "speakerNames": [
-      "B-Zone Prisoner",
-      "Robin",
-      "A-Zone Prisoner A"
+      "Robin"
     ],
     "searchNames": [
-      "B-Zone Prisoner",
-      "Robin",
-      "A-Zone Prisoner A"
+      "Robin"
     ],
-    "displayName": "B-Zone Prisoner"
+    "displayName": "Robin"
   },
   "avg_npc_135": {
     "speakerNames": [
@@ -5427,15 +4779,11 @@
   "avg_npc_136": {
     "speakerNames": [
       "Jailer",
-      "Jailer B",
-      "Jesselton",
-      "Saria"
+      "Jailer B"
     ],
     "searchNames": [
       "Jailer",
-      "Jailer B",
-      "Jesselton",
-      "Saria"
+      "Jailer B"
     ],
     "displayName": "Jailer"
   },
@@ -5510,23 +4858,19 @@
   },
   "char_332_archet": {
     "speakerNames": [
-      "Hildegard",
-      "Archetto"
+      "Hildegard"
     ],
     "searchNames": [
-      "Hildegard",
-      "Archetto"
+      "Hildegard"
     ],
     "displayName": "Hildegard"
   },
   "char_383_snsant_1": {
     "speakerNames": [
-      "Snowsant",
-      "Snowsant.."
+      "Snowsant"
     ],
     "searchNames": [
-      "Snowsant",
-      "Snowsant.."
+      "Snowsant"
     ],
     "displayName": "Snowsant"
   },
@@ -5570,16 +4914,10 @@
   },
   "char_373_lionhd": {
     "speakerNames": [
-      "Leonhardt",
-      "Honeyberry",
-      "Kroos",
-      "Istina"
+      "Leonhardt"
     ],
     "searchNames": [
-      "Leonhardt",
-      "Honeyberry",
-      "Kroos",
-      "Istina"
+      "Leonhardt"
     ],
     "displayName": "Leonhardt"
   },
@@ -5653,27 +4991,21 @@
       "Scientific Investigation Section Member",
       "Rhine Lab Tech",
       "Rhine Staff B",
-      "Energy Section Researcher",
-      "Rhine Staff?",
       "Researcher",
       "Rhine Staff A",
       "Rhine Lab Tech B",
       "Apprehensive Rhine Lab Tech",
-      "Researcher A",
-      "Researcher C"
+      "Researcher A"
     ],
     "searchNames": [
       "Scientific Investigation Section Member",
       "Rhine Lab Tech",
       "Rhine Staff B",
-      "Energy Section Researcher",
-      "Rhine Staff?",
       "Researcher",
       "Rhine Staff A",
       "Rhine Lab Tech B",
       "Apprehensive Rhine Lab Tech",
-      "Researcher A",
-      "Researcher C"
+      "Researcher A"
     ],
     "displayName": "Scientific Investigation Section Member"
   },
@@ -5690,19 +5022,15 @@
     "speakerNames": [
       "Sami Warrior",
       "Tenacious Sami Mountain Warrior",
-      "Sami Mountain Scout",
       "Sheath Zelkova",
       "Icefield Inhabitant B",
-      "Icefield Inhabitant A",
       "Colddeath Warrior"
     ],
     "searchNames": [
       "Sami Warrior",
       "Tenacious Sami Mountain Warrior",
-      "Sami Mountain Scout",
       "Sheath Zelkova",
       "Icefield Inhabitant B",
-      "Icefield Inhabitant A",
       "Colddeath Warrior"
     ],
     "displayName": "Sami Warrior"
@@ -5712,8 +5040,6 @@
       "Sami Shaman",
       "Forest Shaman",
       "Sami Wetlands Shaman",
-      "Grieving Apprentice Shaman",
-      "Mild-Mannered Shaman",
       "Ceremony-Conducting Shaman",
       "Colddeath Shaman"
     ],
@@ -5721,8 +5047,6 @@
       "Sami Shaman",
       "Forest Shaman",
       "Sami Wetlands Shaman",
-      "Grieving Apprentice Shaman",
-      "Mild-Mannered Shaman",
       "Ceremony-Conducting Shaman",
       "Colddeath Shaman"
     ],
@@ -5805,12 +5129,10 @@
       "Worn-out Infected",
       "Stranger",
       "Muscular Man",
-      "Shadow",
       "Villager",
       "Angry Youth",
       "Uncle Pickett",
-      "Haggard Worker",
-      "Darrell"
+      "Haggard Worker"
     ],
     "searchNames": [
       "Ursus Caravan Member",
@@ -5822,12 +5144,10 @@
       "Worn-out Infected",
       "Stranger",
       "Muscular Man",
-      "Shadow",
       "Villager",
       "Angry Youth",
       "Uncle Pickett",
-      "Haggard Worker",
-      "Darrell"
+      "Haggard Worker"
     ],
     "displayName": "Ursus Caravan Member"
   },
@@ -5852,9 +5172,7 @@
       "Rhine Lab Tech A",
       "Researcher",
       "Ecological Section Researcher B",
-      "Ecological Section Researcher",
       "Researcher B",
-      "Researcher D",
       "Luli"
     ],
     "searchNames": [
@@ -5868,9 +5186,7 @@
       "Rhine Lab Tech A",
       "Researcher",
       "Ecological Section Researcher B",
-      "Ecological Section Researcher",
       "Researcher B",
-      "Researcher D",
       "Luli"
     ],
     "displayName": "Rhine Lab Researcher"
@@ -5878,7 +5194,6 @@
   "avg_npc_524_1": {
     "speakerNames": [
       "Unfamiliar Researcher",
-      "Beachbrella Field Staff",
       "Bar Patron",
       "Trimountarian",
       "Nervous Entrepreneur",
@@ -5894,7 +5209,6 @@
     ],
     "searchNames": [
       "Unfamiliar Researcher",
-      "Beachbrella Field Staff",
       "Bar Patron",
       "Trimountarian",
       "Nervous Entrepreneur",
@@ -5929,9 +5243,7 @@
       "Homeless Resident",
       "Weary Pioneer",
       "Pioneer B",
-      "Pioneer A",
       "Contestant A",
-      "Contestant B",
       "Flustered Pioneer"
     ],
     "searchNames": [
@@ -5943,9 +5255,7 @@
       "Homeless Resident",
       "Weary Pioneer",
       "Pioneer B",
-      "Pioneer A",
       "Contestant A",
-      "Contestant B",
       "Flustered Pioneer"
     ],
     "displayName": "Rhine Lab Task Force Messenger"
@@ -5955,34 +5265,26 @@
       "Suspicious Liberi",
       "Drunkard",
       "Frivolous Columbian",
-      "Cheerful Columbian",
       "Reporter B",
       "Vice President's Secretary",
-      "Reporter?",
-      "Police Officer",
       "Humble Secretary",
       "Millais",
       "Rude Reporter",
       "Morgue Worker",
       "Impatient Man",
-      "Detective Mosby",
       "Columbian Traveler"
     ],
     "searchNames": [
       "Suspicious Liberi",
       "Drunkard",
       "Frivolous Columbian",
-      "Cheerful Columbian",
       "Reporter B",
       "Vice President's Secretary",
-      "Reporter?",
-      "Police Officer",
       "Humble Secretary",
       "Millais",
       "Rude Reporter",
       "Morgue Worker",
       "Impatient Man",
-      "Detective Mosby",
       "Columbian Traveler"
     ],
     "displayName": "Suspicious Liberi"
@@ -5990,12 +5292,10 @@
   "avgnew_455_nothing_1": {
     "speakerNames": [
       "Mr. Nothing",
-      "Kroos",
       "'Mr. Chasteberry'"
     ],
     "searchNames": [
       "Mr. Nothing",
-      "Kroos",
       "'Mr. Chasteberry'"
     ],
     "displayName": "Mr. Nothing"
@@ -6025,12 +5325,7 @@
   "avg_npc_305_1": {
     "speakerNames": [
       "Street Youth",
-      "Mr. Nothing",
-      "Street Youth A",
-      "Street Youth B",
-      "Street Youths",
       "Suspicious Passerby",
-      "Suspicious Passersby",
       "Young Bodyguard",
       "Triad",
       "Hoodlum",
@@ -6041,12 +5336,7 @@
     ],
     "searchNames": [
       "Street Youth",
-      "Mr. Nothing",
-      "Street Youth A",
-      "Street Youth B",
-      "Street Youths",
       "Suspicious Passerby",
-      "Suspicious Passersby",
       "Young Bodyguard",
       "Triad",
       "Hoodlum",
@@ -6061,20 +5351,12 @@
     "speakerNames": [
       "Strange Object",
       "Waregeist",
-      "Strange Entity",
-      "Bottle-Shaped Entity",
-      "Scroll-Shaped Entity",
-      "Sword-Shaped Entity",
-      "Waregeist & Ink Spirit"
+      "Strange Entity"
     ],
     "searchNames": [
       "Strange Object",
       "Waregeist",
-      "Strange Entity",
-      "Bottle-Shaped Entity",
-      "Scroll-Shaped Entity",
-      "Sword-Shaped Entity",
-      "Waregeist & Ink Spirit"
+      "Strange Entity"
     ],
     "displayName": "Strange Object"
   },
@@ -6103,8 +5385,8 @@
   "avg_npc_304_1": {
     "speakerNames": [
       "Snowsweeping Stranger",
-      "Part-Timer",
       "Teahouse Tourist",
+      "Part-Timer",
       "Startled Customer",
       "Townsfolk",
       "Street Passerby",
@@ -6114,8 +5396,8 @@
     ],
     "searchNames": [
       "Snowsweeping Stranger",
-      "Part-Timer",
       "Teahouse Tourist",
+      "Part-Timer",
       "Startled Customer",
       "Townsfolk",
       "Street Passerby",
@@ -6134,15 +5416,12 @@
       "Street Youth",
       "Curious Passerby",
       "Teahouse Server",
-      "Hu Jun",
       "Waiter",
       "Half-Drunk Martial Artist",
-      "Sober Martial Artist",
       "Young Farmer",
       "Lin Yühsia's Subordinate",
       "Tavern Assistant",
-      "Tavern Owner",
-      "Traceless Fist Practitioner"
+      "Tavern Owner"
     ],
     "searchNames": [
       "Feeble Apprentice",
@@ -6152,15 +5431,12 @@
       "Street Youth",
       "Curious Passerby",
       "Teahouse Server",
-      "Hu Jun",
       "Waiter",
       "Half-Drunk Martial Artist",
-      "Sober Martial Artist",
       "Young Farmer",
       "Lin Yühsia's Subordinate",
       "Tavern Assistant",
-      "Tavern Owner",
-      "Traceless Fist Practitioner"
+      "Tavern Owner"
     ],
     "displayName": "Feeble Apprentice"
   },
@@ -6179,28 +5455,16 @@
     "speakerNames": [
       "Ink Spirit",
       "Villager",
-      "Little Girl",
-      "Saga",
       "Strange Creature",
-      "'Free'",
-      "Ink Spirits",
       "Gormless Ink Spirit",
-      "'Bitey'",
-      "Bitey",
-      "Bitey & Bitey?"
+      "Bitey"
     ],
     "searchNames": [
       "Ink Spirit",
       "Villager",
-      "Little Girl",
-      "Saga",
       "Strange Creature",
-      "'Free'",
-      "Ink Spirits",
       "Gormless Ink Spirit",
-      "'Bitey'",
-      "Bitey",
-      "Bitey & Bitey?"
+      "Bitey"
     ],
     "displayName": "Ink Spirit"
   },
@@ -6216,28 +5480,20 @@
   "avgnew_2014_nian_1": {
     "speakerNames": [
       "Nian",
-      "Swordsmith",
-      "Nian Huihan"
+      "Swordsmith"
     ],
     "searchNames": [
       "Nian",
-      "Swordsmith",
-      "Nian Huihan"
+      "Swordsmith"
     ],
     "displayName": "Nian"
   },
   "avg_2023_ling_1": {
     "speakerNames": [
-      "Ling",
-      "Nian",
-      "Dusk",
-      "'Sui-Xiang'"
+      "Ling"
     ],
     "searchNames": [
-      "Ling",
-      "Nian",
-      "Dusk",
-      "'Sui-Xiang'"
+      "Ling"
     ],
     "displayName": "Ling"
   },
@@ -6285,14 +5541,10 @@
   },
   "char_455_nothing_1": {
     "speakerNames": [
-      "Mr. Nothing",
-      "Lava",
-      "Saga"
+      "Mr. Nothing"
     ],
     "searchNames": [
-      "Mr. Nothing",
-      "Lava",
-      "Saga"
+      "Mr. Nothing"
     ],
     "displayName": "Mr. Nothing"
   },
@@ -6327,23 +5579,19 @@
   },
   "char_122_beagle_1": {
     "speakerNames": [
-      "Beagle",
-      "Fang & Beagle"
+      "Beagle"
     ],
     "searchNames": [
-      "Beagle",
-      "Fang & Beagle"
+      "Beagle"
     ],
     "displayName": "Beagle"
   },
   "char_121_lava_1": {
     "speakerNames": [
-      "Lava",
-      "Lava & Hibiscus"
+      "Lava"
     ],
     "searchNames": [
-      "Lava",
-      "Lava & Hibiscus"
+      "Lava"
     ],
     "displayName": "Lava"
   },
@@ -6398,8 +5646,7 @@
       "Barrenlands Mechanic",
       "Infected Worker",
       "Hard-Working Miner",
-      "Sixth Uncle",
-      "Fourteenth Brother"
+      "Sixth Uncle"
     ],
     "searchNames": [
       "Worker 'Brake'",
@@ -6407,8 +5654,7 @@
       "Barrenlands Mechanic",
       "Infected Worker",
       "Hard-Working Miner",
-      "Sixth Uncle",
-      "Fourteenth Brother"
+      "Sixth Uncle"
     ],
     "displayName": "Worker 'Brake'"
   },
@@ -6420,8 +5666,7 @@
       "Barrenlands Settler",
       "Company Representative",
       "Weary Miner",
-      "Ninth Auntie",
-      "Seventeenth Sister"
+      "Ninth Auntie"
     ],
     "searchNames": [
       "Worker 'Motor'",
@@ -6430,8 +5675,7 @@
       "Barrenlands Settler",
       "Company Representative",
       "Weary Miner",
-      "Ninth Auntie",
-      "Seventeenth Sister"
+      "Ninth Auntie"
     ],
     "displayName": "Worker 'Motor'"
   },
@@ -6449,44 +5693,34 @@
   "avg_npc_399_1": {
     "speakerNames": [
       "Inspector B",
-      "Inspector A",
       "Columbian Mercenary",
       "Special Forces Captain",
       "Tired Mercenary",
-      "Cautious Mercenary",
       "Impatient Mercenary",
       "Mysterious Mercenary",
       "Concerned Mercenary",
-      "Alert Mercenary",
       "Calm Mercenary",
       "Disdainful Mercenary",
       "Nervous Mercenary",
       "Victorian Mercenary",
       "Former Defense Forces Soldier",
       "Unhappy Soldier",
-      "Terrified Soldier",
-      "Security Detail",
       "County Police"
     ],
     "searchNames": [
       "Inspector B",
-      "Inspector A",
       "Columbian Mercenary",
       "Special Forces Captain",
       "Tired Mercenary",
-      "Cautious Mercenary",
       "Impatient Mercenary",
       "Mysterious Mercenary",
       "Concerned Mercenary",
-      "Alert Mercenary",
       "Calm Mercenary",
       "Disdainful Mercenary",
       "Nervous Mercenary",
       "Victorian Mercenary",
       "Former Defense Forces Soldier",
       "Unhappy Soldier",
-      "Terrified Soldier",
-      "Security Detail",
       "County Police"
     ],
     "displayName": "Inspector B"
@@ -6503,24 +5737,20 @@
   "avg_npc_1188_1": {
     "speakerNames": [
       "Sandbeast",
-      "Little Sandbeast",
-      "'Rory' (for now)"
+      "Little Sandbeast"
     ],
     "searchNames": [
       "Sandbeast",
-      "Little Sandbeast",
-      "'Rory' (for now)"
+      "Little Sandbeast"
     ],
     "displayName": "Sandbeast"
   },
   "avg_npc_1187_1": {
     "speakerNames": [
-      "Sandbeast",
-      "A Sandbeast"
+      "Sandbeast"
     ],
     "searchNames": [
-      "Sandbeast",
-      "A Sandbeast"
+      "Sandbeast"
     ],
     "displayName": "Sandbeast"
   },
@@ -6537,14 +5767,12 @@
   },
   "avg_npc_1190_1": {
     "speakerNames": [
-      "Massive Sandbeast",
       "Sandbeast"
     ],
     "searchNames": [
-      "Massive Sandbeast",
       "Sandbeast"
     ],
-    "displayName": "Massive Sandbeast"
+    "displayName": "Sandbeast"
   },
   "avg_npc_972_1": {
     "speakerNames": [
@@ -6573,16 +5801,10 @@
   },
   "avg_npc_360_1": {
     "speakerNames": [
-      "Cheery Legatus",
-      "Reserved Legatus",
-      "Reluctant Legatus",
-      "Calm Legatus"
+      "Cheery Legatus"
     ],
     "searchNames": [
-      "Cheery Legatus",
-      "Reserved Legatus",
-      "Reluctant Legatus",
-      "Calm Legatus"
+      "Cheery Legatus"
     ],
     "displayName": "Cheery Legatus"
   },
@@ -6623,14 +5845,11 @@
       "Agitated Citizen",
       "Relaxed Lateran Citizen",
       "Brisk Lateran Citizen",
-      "Troubled Lateran Citizen",
       "Sankta Neighbor",
       "Notarial Hall Employee",
       "Notarial Hall Official",
       "Staid Woman",
-      "Notarial Hall Executor",
-      "Reserved Lateran",
-      "Sankta Customer"
+      "Reserved Lateran"
     ],
     "searchNames": [
       "Blabbermouth Hospital Attendant",
@@ -6639,14 +5858,11 @@
       "Agitated Citizen",
       "Relaxed Lateran Citizen",
       "Brisk Lateran Citizen",
-      "Troubled Lateran Citizen",
       "Sankta Neighbor",
       "Notarial Hall Employee",
       "Notarial Hall Official",
       "Staid Woman",
-      "Notarial Hall Executor",
-      "Reserved Lateran",
-      "Sankta Customer"
+      "Reserved Lateran"
     ],
     "displayName": "Blabbermouth Hospital Attendant"
   },
@@ -6656,10 +5872,6 @@
       "Cheerful Neighbor",
       "Joyous Lateran Citizen",
       "Sedate Lateran Citizen",
-      "Sedate? Lateran Citizen",
-      "Sedate?? Lateran Citizen",
-      "Not Very Sedate Lateran Citizen",
-      "Composed Lateran Citizen",
       "Spirited Lateran",
       "Sankta Passerby",
       "Seventh Tribunal Investigator",
@@ -6667,9 +5879,6 @@
       "Anxious Lateran",
       "Laid-Back Passerby",
       "Candid Stall Owner",
-      "Still-Trying-to-be-Candid Stall Owner",
-      "Not-So-Candid Stall Owner",
-      "Trying-to-Smile-Anyway Stall Owner",
       "Friendly Lateran"
     ],
     "searchNames": [
@@ -6677,10 +5886,6 @@
       "Cheerful Neighbor",
       "Joyous Lateran Citizen",
       "Sedate Lateran Citizen",
-      "Sedate? Lateran Citizen",
-      "Sedate?? Lateran Citizen",
-      "Not Very Sedate Lateran Citizen",
-      "Composed Lateran Citizen",
       "Spirited Lateran",
       "Sankta Passerby",
       "Seventh Tribunal Investigator",
@@ -6688,9 +5893,6 @@
       "Anxious Lateran",
       "Laid-Back Passerby",
       "Candid Stall Owner",
-      "Still-Trying-to-be-Candid Stall Owner",
-      "Not-So-Candid Stall Owner",
-      "Trying-to-Smile-Anyway Stall Owner",
       "Friendly Lateran"
     ],
     "displayName": "Conscientious Doctor"
@@ -6698,7 +5900,6 @@
   "avg_npc_365_1": {
     "speakerNames": [
       "Lateran Citizen?",
-      "Reserved Hospital Attendant",
       "Panicked Underling of Patia",
       "Devout Citizen",
       "Liberi Citizen",
@@ -6706,12 +5907,10 @@
       "Liberi Passerby",
       "Lateran Messenger",
       "Nimble Lateran",
-      "Handcuffed Lateran",
       "Nervous Youth"
     ],
     "searchNames": [
       "Lateran Citizen?",
-      "Reserved Hospital Attendant",
       "Panicked Underling of Patia",
       "Devout Citizen",
       "Liberi Citizen",
@@ -6719,7 +5918,6 @@
       "Liberi Passerby",
       "Lateran Messenger",
       "Nimble Lateran",
-      "Handcuffed Lateran",
       "Nervous Youth"
     ],
     "displayName": "Lateran Citizen?"
@@ -6754,27 +5952,19 @@
   },
   "avg_300_phenxi_1": {
     "speakerNames": [
-      "Fiammetta",
-      "Shimmering Vigil",
-      "The Liberi Formerly Known As Shimmering Vigil",
-      "Fiammetta & Patrizion"
+      "Fiammetta"
     ],
     "searchNames": [
-      "Fiammetta",
-      "Shimmering Vigil",
-      "The Liberi Formerly Known As Shimmering Vigil",
-      "Fiammetta & Patrizion"
+      "Fiammetta"
     ],
     "displayName": "Fiammetta"
   },
   "avg_npc_353_1": {
     "speakerNames": [
-      "Lemuen",
-      "Fiammetta"
+      "Lemuen"
     ],
     "searchNames": [
-      "Lemuen",
-      "Fiammetta"
+      "Lemuen"
     ],
     "displayName": "Lemuen"
   },
@@ -6803,13 +5993,11 @@
   "avg_npc_358_1": {
     "speakerNames": [
       "Apostolic Knight",
-      "Gun-Knight",
-      "Patrizion"
+      "Gun-Knight"
     ],
     "searchNames": [
       "Apostolic Knight",
-      "Gun-Knight",
-      "Patrizion"
+      "Gun-Knight"
     ],
     "displayName": "Apostolic Knight"
   },
@@ -6837,12 +6025,10 @@
   },
   "char_279_excu_4": {
     "speakerNames": [
-      "Federico",
-      "Executor"
+      "Federico"
     ],
     "searchNames": [
-      "Federico",
-      "Executor"
+      "Federico"
     ],
     "displayName": "Federico"
   },
@@ -6892,7 +6078,6 @@
       "Busy Nun",
       "Nun",
       "Pious Cleric",
-      "Cheerful Cleric",
       "Silent Cleric",
       "Cleric"
     ],
@@ -6904,7 +6089,6 @@
       "Busy Nun",
       "Nun",
       "Pious Cleric",
-      "Cheerful Cleric",
       "Silent Cleric",
       "Cleric"
     ],
@@ -6930,7 +6114,6 @@
       "Homeless Person",
       "Doubtful Former Desert Bandit",
       "Fake Liquor Seller",
-      "Wary Villager",
       "Mayor",
       "Sargonian Janissary"
     ],
@@ -6942,7 +6125,6 @@
       "Homeless Person",
       "Doubtful Former Desert Bandit",
       "Fake Liquor Seller",
-      "Wary Villager",
       "Mayor",
       "Sargonian Janissary"
     ],
@@ -6955,8 +6137,7 @@
       "Panicked Nun",
       "Nervous Nun",
       "Liberi Nun",
-      "Solemn Cleric",
-      "Solemn Cleric?"
+      "Solemn Cleric"
     ],
     "searchNames": [
       "Stoic Sister",
@@ -6964,8 +6145,7 @@
       "Panicked Nun",
       "Nervous Nun",
       "Liberi Nun",
-      "Solemn Cleric",
-      "Solemn Cleric?"
+      "Solemn Cleric"
     ],
     "displayName": "Stoic Sister"
   },
@@ -6989,14 +6169,10 @@
   },
   "avg_npc_155_1": {
     "speakerNames": [
-      "Franka",
-      "Franka & Liskarm",
-      "Hideous Monstrosity"
+      "Franka"
     ],
     "searchNames": [
-      "Franka",
-      "Franka & Liskarm",
-      "Hideous Monstrosity"
+      "Franka"
     ],
     "displayName": "Franka"
   },
@@ -7011,12 +6187,10 @@
   },
   "avg_npc_158_1": {
     "speakerNames": [
-      "Drudge",
-      "Ash"
+      "Drudge"
     ],
     "searchNames": [
-      "Drudge",
-      "Ash"
+      "Drudge"
     ],
     "displayName": "Drudge"
   },
@@ -7072,7 +6246,6 @@
       "Black Market Merchant",
       "Villager",
       "Swept-Up Trader",
-      "Swept-Up Trader?",
       "Arrogant Merchant",
       "Soldier",
       "Vengeful Merchant",
@@ -7085,7 +6258,6 @@
       "Black Market Merchant",
       "Villager",
       "Swept-Up Trader",
-      "Swept-Up Trader?",
       "Arrogant Merchant",
       "Soldier",
       "Vengeful Merchant",
@@ -7225,7 +6397,6 @@
   "avg_npc_1163_1": {
     "speakerNames": [
       "Docile Burdenbeast",
-      "Burdenbeast by the Fire",
       "Lily",
       "Feisty Burdenbeast",
       "Burdenbeast",
@@ -7234,7 +6405,6 @@
     ],
     "searchNames": [
       "Docile Burdenbeast",
-      "Burdenbeast by the Fire",
       "Lily",
       "Feisty Burdenbeast",
       "Burdenbeast",
@@ -7246,13 +6416,11 @@
   "avg_4146_nymph_1": {
     "speakerNames": [
       "Overwhelmed Girl",
-      "Nymph",
-      "Familiar Voice"
+      "Nymph"
     ],
     "searchNames": [
       "Overwhelmed Girl",
-      "Nymph",
-      "Familiar Voice"
+      "Nymph"
     ],
     "displayName": "Overwhelmed Girl"
   },
@@ -7260,27 +6428,21 @@
     "speakerNames": [
       "Fremont",
       "Cranky Old Man",
-      "'Fremont'",
-      "Laqeramaline",
-      "Theresa"
+      "Laqeramaline"
     ],
     "searchNames": [
       "Fremont",
       "Cranky Old Man",
-      "'Fremont'",
-      "Laqeramaline",
-      "Theresa"
+      "Laqeramaline"
     ],
     "displayName": "Fremont"
   },
   "avg_npc_404_1": {
     "speakerNames": [
-      "Manfred",
-      "Ascalon"
+      "Manfred"
     ],
     "searchNames": [
-      "Manfred",
-      "Ascalon"
+      "Manfred"
     ],
     "displayName": "Manfred"
   },
@@ -7290,7 +6452,6 @@
       "'Mop-Head'",
       "Sarkaz Royal Court Soldier",
       "Injured Soldier",
-      "Composed Soldier",
       "Military Commission Guard",
       "Panicked Royal Court Soldier",
       "Sarkaz Warrior",
@@ -7300,8 +6461,6 @@
       "Royal Court Junior Officer",
       "Sarkaz Royal Court Soldier B",
       "Royal Guard",
-      "Royal Court Soldier A",
-      "Royal Court Soldier B",
       "Low-Ranking Sarkaz Officer"
     ],
     "searchNames": [
@@ -7309,7 +6468,6 @@
       "'Mop-Head'",
       "Sarkaz Royal Court Soldier",
       "Injured Soldier",
-      "Composed Soldier",
       "Military Commission Guard",
       "Panicked Royal Court Soldier",
       "Sarkaz Warrior",
@@ -7319,8 +6477,6 @@
       "Royal Court Junior Officer",
       "Sarkaz Royal Court Soldier B",
       "Royal Guard",
-      "Royal Court Soldier A",
-      "Royal Court Soldier B",
       "Low-Ranking Sarkaz Officer"
     ],
     "displayName": "Military Commission Soldier"
@@ -7349,12 +6505,10 @@
   },
   "avg_npc_869_1": {
     "speakerNames": [
-      "Ermengarde",
-      "'Ermengarde'"
+      "Ermengarde"
     ],
     "searchNames": [
-      "Ermengarde",
-      "'Ermengarde'"
+      "Ermengarde"
     ],
     "displayName": "Ermengarde"
   },
@@ -7363,15 +6517,13 @@
       "Slag Shadow",
       "Strange Shadow",
       "Shadow",
-      "'Sarkaz'",
-      "Revenant's Shadow"
+      "'Sarkaz'"
     ],
     "searchNames": [
       "Slag Shadow",
       "Strange Shadow",
       "Shadow",
-      "'Sarkaz'",
-      "Revenant's Shadow"
+      "'Sarkaz'"
     ],
     "displayName": "Slag Shadow"
   },
@@ -7426,7 +6578,6 @@
     "speakerNames": [
       "Calm Woman",
       "Sarkaz Resident",
-      "Caroline",
       "Wary Civilian",
       "Indifferent Woman",
       "Sarkaz Civilian",
@@ -7435,7 +6586,6 @@
     "searchNames": [
       "Calm Woman",
       "Sarkaz Resident",
-      "Caroline",
       "Wary Civilian",
       "Indifferent Woman",
       "Sarkaz Civilian",
@@ -7487,8 +6637,7 @@
       "Angry Civilian",
       "Nervous Woman",
       "Brooding Gang Leader",
-      "Kazdelian Outskirter B",
-      "Sarkaz Hunter"
+      "Kazdelian Outskirter B"
     ],
     "searchNames": [
       "Street Hawker",
@@ -7498,8 +6647,7 @@
       "Angry Civilian",
       "Nervous Woman",
       "Brooding Gang Leader",
-      "Kazdelian Outskirter B",
-      "Sarkaz Hunter"
+      "Kazdelian Outskirter B"
     ],
     "displayName": "Street Hawker"
   },
@@ -7514,31 +6662,25 @@
   },
   "avg_npc_1452_1": {
     "speakerNames": [
-      "Qalaiša",
-      "Gentle Woman",
-      "Northwind Witch"
+      "Qalaiša"
     ],
     "searchNames": [
-      "Qalaiša",
-      "Gentle Woman",
-      "Northwind Witch"
+      "Qalaiša"
     ],
     "displayName": "Qalaiša"
   },
   "avg_npc_1341_1": {
     "speakerNames": [
-      "Dying Nachzehrer",
       "Nachzehrer Warrior",
       "Nachzehrer Royal Court Elites",
       "Sarkaz Warrior"
     ],
     "searchNames": [
-      "Dying Nachzehrer",
       "Nachzehrer Warrior",
       "Nachzehrer Royal Court Elites",
       "Sarkaz Warrior"
     ],
-    "displayName": "Dying Nachzehrer"
+    "displayName": "Nachzehrer Warrior"
   },
   "avg_npc_420_1": {
     "speakerNames": [
@@ -7555,33 +6697,25 @@
   },
   "avg_npc_450_1": {
     "speakerNames": [
-      "Elysium",
-      "'Pelirrojito'"
+      "Elysium"
     ],
     "searchNames": [
-      "Elysium",
-      "'Pelirrojito'"
+      "Elysium"
     ],
     "displayName": "Elysium"
   },
   "avg_npc_459_1": {
     "speakerNames": [
       "Male Townsperson",
-      "Cautious Townsperson",
       "Nihilistic Townsperson",
       "Alert Townsfolk",
-      "Blockading Townsfolk",
-      "Pursuing Townsfolk",
       "Bold Townsfolk",
       "Brave Villager"
     ],
     "searchNames": [
       "Male Townsperson",
-      "Cautious Townsperson",
       "Nihilistic Townsperson",
       "Alert Townsfolk",
-      "Blockading Townsfolk",
-      "Pursuing Townsfolk",
       "Bold Townsfolk",
       "Brave Villager"
     ],
@@ -7591,7 +6725,6 @@
     "speakerNames": [
       "Strange Adherent",
       "Mournful Adherent",
-      "Agitated Cultist",
       "Rear Guard Cultist",
       "Bizarre Cultist",
       "Burnt Cultist",
@@ -7601,7 +6734,6 @@
     "searchNames": [
       "Strange Adherent",
       "Mournful Adherent",
-      "Agitated Cultist",
       "Rear Guard Cultist",
       "Bizarre Cultist",
       "Burnt Cultist",
@@ -7638,8 +6770,6 @@
   "avg_npc_457_1": {
     "speakerNames": [
       "Dying Sea Terror",
-      "Creeping Sea Terror",
-      "Thiago",
       "Sea Terror",
       "Sea Monster",
       "Unexpected Sea Terrors",
@@ -7647,8 +6777,6 @@
     ],
     "searchNames": [
       "Dying Sea Terror",
-      "Creeping Sea Terror",
-      "Thiago",
       "Sea Terror",
       "Sea Monster",
       "Unexpected Sea Terrors",
@@ -7687,10 +6815,7 @@
     "speakerNames": [
       "Tight-Lipped Adherent",
       "Silent Cultist",
-      "Vigilant Cultist",
       "Out-of-Breath Cultist",
-      "Church of the Deep Cultist A",
-      "Church of the Deep Cultist B",
       "Wounded Cultist",
       "Priest",
       "Strange Outsider",
@@ -7700,10 +6825,7 @@
     "searchNames": [
       "Tight-Lipped Adherent",
       "Silent Cultist",
-      "Vigilant Cultist",
       "Out-of-Breath Cultist",
-      "Church of the Deep Cultist A",
-      "Church of the Deep Cultist B",
       "Wounded Cultist",
       "Priest",
       "Strange Outsider",
@@ -7743,12 +6865,10 @@
   },
   "avg_1023_ghost2_1": {
     "speakerNames": [
-      "Specter",
-      "Captain Alfonso & Specter"
+      "Specter"
     ],
     "searchNames": [
-      "Specter",
-      "Captain Alfonso & Specter"
+      "Specter"
     ],
     "displayName": "Specter"
   },
@@ -7756,19 +6876,15 @@
     "speakerNames": [
       "Fleeing Townsfolk",
       "Indiscreet Townsfolk",
-      "Helping Townsfolk",
       "Excitable Townsfolk",
       "Friendly Villager",
-      "Villagers",
       "Friendly Woman"
     ],
     "searchNames": [
       "Fleeing Townsfolk",
       "Indiscreet Townsfolk",
-      "Helping Townsfolk",
       "Excitable Townsfolk",
       "Friendly Villager",
-      "Villagers",
       "Friendly Woman"
     ],
     "displayName": "Fleeing Townsfolk"
@@ -7807,13 +6923,11 @@
   "avg_4009_irene_1": {
     "speakerNames": [
       "Inquisitor Irene",
-      "Irene",
-      "Secunda & Irene"
+      "Irene"
     ],
     "searchNames": [
       "Inquisitor Irene",
-      "Irene",
-      "Secunda & Irene"
+      "Irene"
     ],
     "displayName": "Inquisitor Irene"
   },
@@ -7876,12 +6990,10 @@
   },
   "avg_npc_452_1": {
     "speakerNames": [
-      "Chief Mate",
-      "Seaborn"
+      "Chief Mate"
     ],
     "searchNames": [
-      "Chief Mate",
-      "Seaborn"
+      "Chief Mate"
     ],
     "displayName": "Chief Mate"
   },
@@ -8077,29 +7189,23 @@
   "avg_npc_178": {
     "speakerNames": [
       "Male Inhabitant",
-      "Another Male Inhabitant",
-      "Male Inhabitant A",
       "Inhabitant",
+      "Male Inhabitant A",
       "Aloof Passerby",
       "'Iberian'",
       "Art Shop Owner",
       "Local Messenger",
-      "Curious Customer",
-      "Tense Townsfolk",
-      "Skeptical Townsfolk"
+      "Curious Customer"
     ],
     "searchNames": [
       "Male Inhabitant",
-      "Another Male Inhabitant",
-      "Male Inhabitant A",
       "Inhabitant",
+      "Male Inhabitant A",
       "Aloof Passerby",
       "'Iberian'",
       "Art Shop Owner",
       "Local Messenger",
-      "Curious Customer",
-      "Tense Townsfolk",
-      "Skeptical Townsfolk"
+      "Curious Customer"
     ],
     "displayName": "Male Inhabitant"
   },
@@ -8110,7 +7216,6 @@
       "Panicked Inhabitant",
       "Male Resident",
       "Tottering Old Man",
-      "Anxious Townsperson",
       "Hungry Townsfolk",
       "Old Townsfolk"
     ],
@@ -8120,7 +7225,6 @@
       "Panicked Inhabitant",
       "Male Resident",
       "Tottering Old Man",
-      "Anxious Townsperson",
       "Hungry Townsfolk",
       "Old Townsfolk"
     ],
@@ -8128,14 +7232,12 @@
   },
   "avg_npc_180": {
     "speakerNames": [
-      "Female Inhabitant",
       "Anita"
     ],
     "searchNames": [
-      "Female Inhabitant",
       "Anita"
     ],
-    "displayName": "Female Inhabitant"
+    "displayName": "Anita"
   },
   "avg_npc_179": {
     "speakerNames": [
@@ -8177,7 +7279,6 @@
   "avg_npc_189": {
     "speakerNames": [
       "Male Inhabitant D",
-      "Inhabitant",
       "Monastery Inhabitant",
       "Townsfolk B",
       "Distressed Townsperson",
@@ -8186,7 +7287,6 @@
     ],
     "searchNames": [
       "Male Inhabitant D",
-      "Inhabitant",
       "Monastery Inhabitant",
       "Townsfolk B",
       "Distressed Townsperson",
@@ -8197,14 +7297,10 @@
   },
   "avg_npc_185": {
     "speakerNames": [
-      "Monster A",
-      "Monster B",
-      "Monster C"
+      "Monster A"
     ],
     "searchNames": [
-      "Monster A",
-      "Monster B",
-      "Monster C"
+      "Monster A"
     ],
     "displayName": "Monster A"
   },
@@ -8254,10 +7350,8 @@
   "avg_npc_423_1": {
     "speakerNames": [
       "Wounded Abandoned Soldier",
-      "Wounded Victorian Soldier",
       "Exemplar",
       "Injured Exemplar",
-      "Walker",
       "Excitable Soldier",
       "Panting Soldier",
       "Prisoner",
@@ -8266,10 +7360,8 @@
     ],
     "searchNames": [
       "Wounded Abandoned Soldier",
-      "Wounded Victorian Soldier",
       "Exemplar",
       "Injured Exemplar",
-      "Walker",
       "Excitable Soldier",
       "Panting Soldier",
       "Prisoner",
@@ -8307,7 +7399,6 @@
       "Slippery Soldier",
       "Stern Soldier",
       "Victorian Soldier",
-      "Victorian Soldier?",
       "Excited Soldier",
       "Impetuous Soldier",
       "Stressed Soldier",
@@ -8324,7 +7415,6 @@
       "Slippery Soldier",
       "Stern Soldier",
       "Victorian Soldier",
-      "Victorian Soldier?",
       "Excited Soldier",
       "Impetuous Soldier",
       "Stressed Soldier",
@@ -8434,8 +7524,7 @@
       "Adjutant Hill",
       "'Adjutant Hill'",
       "Stern Officer",
-      "Victorian Soldier A",
-      "Victorian Soldier B"
+      "Victorian Soldier A"
     ],
     "searchNames": [
       "Cold Alliance Soldier",
@@ -8450,8 +7539,7 @@
       "Adjutant Hill",
       "'Adjutant Hill'",
       "Stern Officer",
-      "Victorian Soldier A",
-      "Victorian Soldier B"
+      "Victorian Soldier A"
     ],
     "displayName": "Cold Alliance Soldier"
   },
@@ -8466,12 +7554,9 @@
       "Londinium Citizen",
       "Hesitant Citizen",
       "Catastrophe Messenger",
-      "Catastrophe Messenger?",
-      "Tamika",
       "Fleeing Londinier",
       "Lanky Inventor",
       "Angry Resident",
-      "No Longer Angry Resident",
       "New Teacher",
       "Ivy",
       "Haggard Woman",
@@ -8487,12 +7572,9 @@
       "Londinium Citizen",
       "Hesitant Citizen",
       "Catastrophe Messenger",
-      "Catastrophe Messenger?",
-      "Tamika",
       "Fleeing Londinier",
       "Lanky Inventor",
       "Angry Resident",
-      "No Longer Angry Resident",
       "New Teacher",
       "Ivy",
       "Haggard Woman",
@@ -8519,7 +7601,6 @@
       "Angry Thug",
       "Worked-Up Thug",
       "Skeptical Citizen",
-      "Cheering Civilian",
       "Agitated Citizen",
       "Newsagent",
       "Gali",
@@ -8538,7 +7619,6 @@
       "Angry Thug",
       "Worked-Up Thug",
       "Skeptical Citizen",
-      "Cheering Civilian",
       "Agitated Citizen",
       "Newsagent",
       "Gali",
@@ -8594,12 +7674,10 @@
   },
   "avg_npc_1664_1": {
     "speakerNames": [
-      "Young Sarkaz",
-      "Milton"
+      "Young Sarkaz"
     ],
     "searchNames": [
-      "Young Sarkaz",
-      "Milton"
+      "Young Sarkaz"
     ],
     "displayName": "Young Sarkaz"
   },
@@ -8634,14 +7712,12 @@
     "speakerNames": [
       "'Trilby Asher'",
       "Foreigner With a Funny Hat",
-      "'John Smith'",
       "Trilby Asher",
       "Behatted Person"
     ],
     "searchNames": [
       "'Trilby Asher'",
       "Foreigner With a Funny Hat",
-      "'John Smith'",
       "Trilby Asher",
       "Behatted Person"
     ],
@@ -8685,11 +7761,9 @@
       "Downtrodden Man",
       "Wronged Worker",
       "Londinium Worker",
-      "Londinium Workers",
       "Londinium Worker B",
       "Short-sighted Worker",
       "Unhappy Resident",
-      "No Longer Unhappy Resident",
       "Hired Hand"
     ],
     "searchNames": [
@@ -8700,11 +7774,9 @@
       "Downtrodden Man",
       "Wronged Worker",
       "Londinium Worker",
-      "Londinium Workers",
       "Londinium Worker B",
       "Short-sighted Worker",
       "Unhappy Resident",
-      "No Longer Unhappy Resident",
       "Hired Hand"
     ],
     "displayName": "'Big Wrench'"
@@ -8738,28 +7810,20 @@
   },
   "avg_1019_siege2_1": {
     "speakerNames": [
-      "Vina",
-      "Delphine"
+      "Vina"
     ],
     "searchNames": [
-      "Vina",
-      "Delphine"
+      "Vina"
     ],
     "displayName": "Vina"
   },
   "avg_npc_229_1": {
     "speakerNames": [
       "Horn",
-      "Bagpipe",
-      "Manfred",
-      "Horn & Bagpipe",
       "Rita"
     ],
     "searchNames": [
       "Horn",
-      "Bagpipe",
-      "Manfred",
-      "Horn & Bagpipe",
       "Rita"
     ],
     "displayName": "Horn"
@@ -8802,12 +7866,10 @@
   },
   "avg_179_cgbird_1": {
     "speakerNames": [
-      "Nightingale",
-      "Liz?"
+      "Nightingale"
     ],
     "searchNames": [
-      "Nightingale",
-      "Liz?"
+      "Nightingale"
     ],
     "displayName": "Nightingale"
   },
@@ -8862,13 +7924,11 @@
     "speakerNames": [
       "Columbian Military Officer",
       "Columbian Soldier",
-      "Sniper",
       "Columbian Soldier B"
     ],
     "searchNames": [
       "Columbian Military Officer",
       "Columbian Soldier",
-      "Sniper",
       "Columbian Soldier B"
     ],
     "displayName": "Columbian Military Officer"
@@ -8878,7 +7938,6 @@
       "Respectful Attendant",
       "Drunken Infected",
       "Skittish Infected",
-      "Rude Infected",
       "Rule-Abiding Instructor",
       "Neurotic Infected",
       "Passionate Infected",
@@ -8889,7 +7948,7 @@
       "Community Artist",
       "Emotional Infected",
       "Hardware Shop Owner",
-      "Schneider",
+      "Rude Infected",
       "Graf's Attendant",
       "Jif",
       "Nervous Townsperson",
@@ -8899,7 +7958,6 @@
       "Respectful Attendant",
       "Drunken Infected",
       "Skittish Infected",
-      "Rude Infected",
       "Rule-Abiding Instructor",
       "Neurotic Infected",
       "Passionate Infected",
@@ -8910,7 +7968,7 @@
       "Community Artist",
       "Emotional Infected",
       "Hardware Shop Owner",
-      "Schneider",
+      "Rude Infected",
       "Graf's Attendant",
       "Jif",
       "Nervous Townsperson",
@@ -8931,12 +7989,10 @@
   },
   "avg_npc_1663_1": {
     "speakerNames": [
-      "Mysterious Man",
-      "Paryaqaqa"
+      "Mysterious Man"
     ],
     "searchNames": [
-      "Mysterious Man",
-      "Paryaqaqa"
+      "Mysterious Man"
     ],
     "displayName": "Mysterious Man"
   },
@@ -8954,34 +8010,24 @@
       "Lateran Commando",
       "Young Lateran Commando",
       "Pontifica Cohors Member B",
-      "Pontifica Cohors Member D",
-      "Pontifica Cohors Member C",
-      "Pontifica Cohors Member",
-      "Pontifica Cohors Member?"
+      "Pontifica Cohors Member"
     ],
     "searchNames": [
       "Lateran Commando",
       "Young Lateran Commando",
       "Pontifica Cohors Member B",
-      "Pontifica Cohors Member D",
-      "Pontifica Cohors Member C",
-      "Pontifica Cohors Member",
-      "Pontifica Cohors Member?"
+      "Pontifica Cohors Member"
     ],
     "displayName": "Lateran Commando"
   },
   "avg_4046_ebnhlz_1": {
     "speakerNames": [
       "Ebenholz",
-      "Ebenholz & Kreide",
-      "Young Noble",
-      "Ebenholz?"
+      "Young Noble"
     ],
     "searchNames": [
       "Ebenholz",
-      "Ebenholz & Kreide",
-      "Young Noble",
-      "Ebenholz?"
+      "Young Noble"
     ],
     "displayName": "Ebenholz"
   },
@@ -9016,12 +8062,10 @@
   },
   "avg_1024_hbisc2_1": {
     "speakerNames": [
-      "Hibiscus",
-      "Cheerful Infected"
+      "Hibiscus"
     ],
     "searchNames": [
-      "Hibiscus",
-      "Cheerful Infected"
+      "Hibiscus"
     ],
     "displayName": "Hibiscus"
   },
@@ -9045,12 +8089,10 @@
   },
   "avg_npc_485_1": {
     "speakerNames": [
-      "Coffee Shop Owner",
-      "Biegler"
+      "Coffee Shop Owner"
     ],
     "searchNames": [
-      "Coffee Shop Owner",
-      "Biegler"
+      "Coffee Shop Owner"
     ],
     "displayName": "Coffee Shop Owner"
   },
@@ -9061,7 +8103,6 @@
       "Medic Operator",
       "Logistics Operator",
       "Flustered Operator",
-      "Meticulous Operator",
       "Medical Department Operator",
       "Rhodes Island Operator"
     ],
@@ -9071,7 +8112,6 @@
       "Medic Operator",
       "Logistics Operator",
       "Flustered Operator",
-      "Meticulous Operator",
       "Medical Department Operator",
       "Rhodes Island Operator"
     ],
@@ -9088,9 +8128,7 @@
       "Mummy",
       "Shopkeeper",
       "Thiem",
-      "Jif & Thiem",
       "Leithanian Woman",
-      "Miss Bachmann",
       "Frau Perry",
       "Enthusiastic Citizen"
     ],
@@ -9104,9 +8142,7 @@
       "Mummy",
       "Shopkeeper",
       "Thiem",
-      "Jif & Thiem",
       "Leithanian Woman",
-      "Miss Bachmann",
       "Frau Perry",
       "Enthusiastic Citizen"
     ],
@@ -9129,7 +8165,6 @@
       "Meddlesome Infected",
       "Mannered Infected",
       "Nervous Musician",
-      "Frightened Infected",
       "Nervous Infected",
       "Attendant",
       "Noble Attendant",
@@ -9144,7 +8179,6 @@
       "Meddlesome Infected",
       "Mannered Infected",
       "Nervous Musician",
-      "Frightened Infected",
       "Nervous Infected",
       "Attendant",
       "Noble Attendant",
@@ -9161,8 +8195,6 @@
       "Gullible Infected",
       "Friendly Infected",
       "Expectant Audience Member",
-      "Emotional Afterglow Resident",
-      "Tough Infected",
       "Cheerful Infected",
       "Onlooking Passerby B",
       "Mayor",
@@ -9172,8 +8204,6 @@
       "Gullible Infected",
       "Friendly Infected",
       "Expectant Audience Member",
-      "Emotional Afterglow Resident",
-      "Tough Infected",
       "Cheerful Infected",
       "Onlooking Passerby B",
       "Mayor",
@@ -9251,14 +8281,12 @@
     "speakerNames": [
       "Woman",
       "Golden-haired Woman",
-      "Ewigegnade",
-      "'Lieselotte'"
+      "Ewigegnade"
     ],
     "searchNames": [
       "Woman",
       "Golden-haired Woman",
-      "Ewigegnade",
-      "'Lieselotte'"
+      "Ewigegnade"
     ],
     "displayName": "Woman"
   },
@@ -9314,13 +8342,11 @@
   "avg_npc_1866_1": {
     "speakerNames": [
       "Heartless Swordswoman",
-      "Sword-Bearing Woman",
-      "Woman With Lowered Brows"
+      "Sword-Bearing Woman"
     ],
     "searchNames": [
       "Heartless Swordswoman",
-      "Sword-Bearing Woman",
-      "Woman With Lowered Brows"
+      "Sword-Bearing Woman"
     ],
     "displayName": "Heartless Swordswoman"
   },
@@ -9337,12 +8363,10 @@
   },
   "avg_npc_1642_1": {
     "speakerNames": [
-      "Mischievous Kid",
-      "Cocky Boy"
+      "Mischievous Kid"
     ],
     "searchNames": [
-      "Mischievous Kid",
-      "Cocky Boy"
+      "Mischievous Kid"
     ],
     "displayName": "Mischievous Kid"
   },
@@ -9369,7 +8393,6 @@
   "avg_npc_1630_1": {
     "speakerNames": [
       "Reserved Man",
-      "Frustrated Middle-Aged Man",
       "Exhausted Judicial Official",
       "Judicial Jailer",
       "Judicial Officer",
@@ -9377,7 +8400,6 @@
     ],
     "searchNames": [
       "Reserved Man",
-      "Frustrated Middle-Aged Man",
       "Exhausted Judicial Official",
       "Judicial Jailer",
       "Judicial Officer",
@@ -9391,7 +8413,6 @@
       "Old Luo",
       "Regular Customer",
       "Injured Old Man",
-      "Chen Xiuqing",
       "Old Beggar"
     ],
     "searchNames": [
@@ -9399,7 +8420,6 @@
       "Old Luo",
       "Regular Customer",
       "Injured Old Man",
-      "Chen Xiuqing",
       "Old Beggar"
     ],
     "displayName": "Butler"
@@ -9428,23 +8448,19 @@
   },
   "avg_npc_1868_1": {
     "speakerNames": [
-      "Quiet Weiqi Player",
-      "Lan Ke"
+      "Quiet Weiqi Player"
     ],
     "searchNames": [
-      "Quiet Weiqi Player",
-      "Lan Ke"
+      "Quiet Weiqi Player"
     ],
     "displayName": "Quiet Weiqi Player"
   },
   "avg_npc_1873_1": {
     "speakerNames": [
-      "Hesitant Girl",
-      "Bai Jin"
+      "Hesitant Girl"
     ],
     "searchNames": [
-      "Hesitant Girl",
-      "Bai Jin"
+      "Hesitant Girl"
     ],
     "displayName": "Hesitant Girl"
   },
@@ -9511,18 +8527,14 @@
   "avg_npc_795_1": {
     "speakerNames": [
       "Yumen Sentry",
-      "Yumen Lieutenant",
       "Yumen Sentry A",
       "Millenion",
-      "Patrol Battalion Soldier",
       "Patrol Battalion Soldier A"
     ],
     "searchNames": [
       "Yumen Sentry",
-      "Yumen Lieutenant",
       "Yumen Sentry A",
       "Millenion",
-      "Patrol Battalion Soldier",
       "Patrol Battalion Soldier A"
     ],
     "displayName": "Yumen Sentry"
@@ -9549,13 +8561,11 @@
   "avg_npc_785_1": {
     "speakerNames": [
       "Huai Tianpei",
-      "Burly Man",
-      "Huai"
+      "Burly Man"
     ],
     "searchNames": [
       "Huai Tianpei",
-      "Burly Man",
-      "Huai"
+      "Burly Man"
     ],
     "displayName": "Huai Tianpei"
   },
@@ -9685,25 +8695,21 @@
   "avg_npc_535_1": {
     "speakerNames": [
       "Sonny",
-      "Curbside Vulpo",
-      "Mr. 'Aslan'"
+      "Curbside Vulpo"
     ],
     "searchNames": [
       "Sonny",
-      "Curbside Vulpo",
-      "Mr. 'Aslan'"
+      "Curbside Vulpo"
     ],
     "displayName": "Sonny"
   },
   "avg_135_halo_1": {
     "speakerNames": [
       "Elena",
-      "Silence",
       "Astgenne"
     ],
     "searchNames": [
       "Elena",
-      "Silence",
       "Astgenne"
     ],
     "displayName": "Elena"
@@ -9714,7 +8720,6 @@
       "Strange power armor",
       "Columbian Soldier",
       "Power Armor Operator",
-      "Power Armor Operator?",
       "Golosse"
     ],
     "searchNames": [
@@ -9722,7 +8727,6 @@
       "Strange power armor",
       "Columbian Soldier",
       "Power Armor Operator",
-      "Power Armor Operator?",
       "Golosse"
     ],
     "displayName": "Strange Power Armor"
@@ -9748,19 +8752,11 @@
   "avg_128_plosis_1": {
     "speakerNames": [
       "Ptilopsis",
-      "Patient?",
-      "Unlucky?",
-      "Team Member",
-      "Joyce Moore",
-      "Joyce"
+      "Patient?"
     ],
     "searchNames": [
       "Ptilopsis",
-      "Patient?",
-      "Unlucky?",
-      "Team Member",
-      "Joyce Moore",
-      "Joyce"
+      "Patient?"
     ],
     "displayName": "Ptilopsis"
   },
@@ -9795,12 +8791,10 @@
   },
   "avg_482_pallas_1": {
     "speakerNames": [
-      "Pallas",
-      "Erato & Pallas"
+      "Pallas"
     ],
     "searchNames": [
-      "Pallas",
-      "Erato & Pallas"
+      "Pallas"
     ],
     "displayName": "Pallas"
   },
@@ -9816,21 +8810,11 @@
   "avg_4054_malist_1": {
     "speakerNames": [
       "Stitch Canvas",
-      "A little kid?",
-      "Maybe a Metal Crab?",
-      "Not a Metal Crab",
-      "Pint-Sized Durin",
-      "Mature Durin",
       "Scathing Durin",
       "Minimalist"
     ],
     "searchNames": [
       "Stitch Canvas",
-      "A little kid?",
-      "Maybe a Metal Crab?",
-      "Not a Metal Crab",
-      "Pint-Sized Durin",
-      "Mature Durin",
       "Scathing Durin",
       "Minimalist"
     ],
@@ -9848,41 +8832,27 @@
   "avg_npc_573_1": {
     "speakerNames": [
       "Wobbly Durin",
-      "Both Durins",
       "Tipsy Durin",
       "Durin",
-      "Thrilled Durin",
       "Inebriated Durin",
       "Cheering Durin",
       "Croque Diamondface Up High",
       "Indolent Durin",
       "Heartened Durin",
-      "Durin Who's Carrying a Whole Barrel in His Arms",
       "Astute Durin",
-      "Chatty Durin",
-      "Not Very Astute Durin",
-      "Starting-to-be-Astute Durin",
-      "Leisurely Durin",
-      "Astonished Durin"
+      "Leisurely Durin"
     ],
     "searchNames": [
       "Wobbly Durin",
-      "Both Durins",
       "Tipsy Durin",
       "Durin",
-      "Thrilled Durin",
       "Inebriated Durin",
       "Cheering Durin",
       "Croque Diamondface Up High",
       "Indolent Durin",
       "Heartened Durin",
-      "Durin Who's Carrying a Whole Barrel in His Arms",
       "Astute Durin",
-      "Chatty Durin",
-      "Not Very Astute Durin",
-      "Starting-to-be-Astute Durin",
-      "Leisurely Durin",
-      "Astonished Durin"
+      "Leisurely Durin"
     ],
     "displayName": "Wobbly Durin"
   },
@@ -9892,36 +8862,26 @@
       "Nervous Durin",
       "Enthusiastic Durin",
       "Excited Durin",
-      "Imaginative Durin",
       "Cool-Headed Durin",
       "Relaxed Durin",
       "Rational Durin",
       "Meticulous Durin",
-      "Meticulous Durin?",
       "Courteous Durin",
-      "Not Very Courteous Durin",
-      "Starting-to-be-Courteous Durin",
       "Elderly Durin",
-      "Tipsy Durin",
-      "Pragmatic Durin"
+      "Tipsy Durin"
     ],
     "searchNames": [
       "Absent-Minded Durin",
       "Nervous Durin",
       "Enthusiastic Durin",
       "Excited Durin",
-      "Imaginative Durin",
       "Cool-Headed Durin",
       "Relaxed Durin",
       "Rational Durin",
       "Meticulous Durin",
-      "Meticulous Durin?",
       "Courteous Durin",
-      "Not Very Courteous Durin",
-      "Starting-to-be-Courteous Durin",
       "Elderly Durin",
-      "Tipsy Durin",
-      "Pragmatic Durin"
+      "Tipsy Durin"
     ],
     "displayName": "Absent-Minded Durin"
   },
@@ -9953,38 +8913,22 @@
     "speakerNames": [
       "Piss-Drunk Durin",
       "Flustered Durin",
-      "Topsy-Turvy Durin",
       "Excited Durin",
-      "Curious Durin",
       "Eager Durin",
       "Cheerful Durin",
       "Thrilled Durin",
-      "Expectant Durin",
-      "Relaxed Durin",
       "Clear-headed Durin",
-      "Stubborn Durin",
-      "Not Very Clear-headed Durin",
-      "Not Very Astute Durin",
-      "Starting-to-be-Clear-headed Durin",
       "Young Durin",
       "Admiring Durin"
     ],
     "searchNames": [
       "Piss-Drunk Durin",
       "Flustered Durin",
-      "Topsy-Turvy Durin",
       "Excited Durin",
-      "Curious Durin",
       "Eager Durin",
       "Cheerful Durin",
       "Thrilled Durin",
-      "Expectant Durin",
-      "Relaxed Durin",
       "Clear-headed Durin",
-      "Stubborn Durin",
-      "Not Very Clear-headed Durin",
-      "Not Very Astute Durin",
-      "Starting-to-be-Clear-headed Durin",
       "Young Durin",
       "Admiring Durin"
     ],
@@ -10025,14 +8969,12 @@
     "speakerNames": [
       "Strange Machine",
       "Strange Machine #0429",
-      "Strange Machine A",
-      "Strange Machine B"
+      "Strange Machine A"
     ],
     "searchNames": [
       "Strange Machine",
       "Strange Machine #0429",
-      "Strange Machine A",
-      "Strange Machine B"
+      "Strange Machine A"
     ],
     "displayName": "Strange Machine"
   },
@@ -10130,10 +9072,7 @@
       "Private Physician",
       "Kindly Neighbor",
       "Government Clerk",
-      "Flustered Government Clerk",
-      "Clerk Teresa",
-      "Town Judge",
-      "Town 'Judge'"
+      "Town Judge"
     ],
     "searchNames": [
       "Court Clerk",
@@ -10143,10 +9082,7 @@
       "Private Physician",
       "Kindly Neighbor",
       "Government Clerk",
-      "Flustered Government Clerk",
-      "Clerk Teresa",
-      "Town Judge",
-      "Town 'Judge'"
+      "Town Judge"
     ],
     "displayName": "Court Clerk"
   },
@@ -10192,32 +9128,22 @@
     "speakerNames": [
       "Bellone Bodyguard",
       "Frivolous Mafioso",
-      "Angry Mafioso",
       "Bodyguard",
       "Mafioso",
       "Saluzzo Mafioso",
-      "Loyal Mafioso",
-      "Radical Mafioso",
       "Bellone Mafioso",
-      "Skeptical Mafioso",
-      "Mafiosi",
-      "Saluzzo Guard",
+      "Radical Mafioso",
       "Mafioso G",
       "Arrogant Mafioso"
     ],
     "searchNames": [
       "Bellone Bodyguard",
       "Frivolous Mafioso",
-      "Angry Mafioso",
       "Bodyguard",
       "Mafioso",
       "Saluzzo Mafioso",
-      "Loyal Mafioso",
-      "Radical Mafioso",
       "Bellone Mafioso",
-      "Skeptical Mafioso",
-      "Mafiosi",
-      "Saluzzo Guard",
+      "Radical Mafioso",
       "Mafioso G",
       "Arrogant Mafioso"
     ],
@@ -10314,8 +9240,6 @@
       "Undercover Officer A",
       "Judge's Assistant",
       "Obstinate Partner",
-      "Dispatcher",
-      "'Dispatcher'",
       "Sad Man",
       "Meticulous Man"
     ],
@@ -10324,8 +9248,6 @@
       "Undercover Officer A",
       "Judge's Assistant",
       "Obstinate Partner",
-      "Dispatcher",
-      "'Dispatcher'",
       "Sad Man",
       "Meticulous Man"
     ],
@@ -10338,8 +9260,6 @@
       "Zola",
       "Luna",
       "Mischievous Student",
-      "Note-Passing Student",
-      "Selene",
       "Thin Girl"
     ],
     "searchNames": [
@@ -10348,8 +9268,6 @@
       "Zola",
       "Luna",
       "Mischievous Student",
-      "Note-Passing Student",
-      "Selene",
       "Thin Girl"
     ],
     "displayName": "Rubio's Daughter"
@@ -10381,25 +9299,17 @@
   "avg_npc_699_1": {
     "speakerNames": [
       "Bailiff",
-      "Serious Bailiff",
-      "Resolute Bailiff",
-      "Angry Bailiff",
       "Bodyguard",
       "Mafioso A",
       "Fierce Mafioso",
-      "Judge's Subordinate",
-      "'Judge's' Subordinate"
+      "Judge's Subordinate"
     ],
     "searchNames": [
       "Bailiff",
-      "Serious Bailiff",
-      "Resolute Bailiff",
-      "Angry Bailiff",
       "Bodyguard",
       "Mafioso A",
       "Fierce Mafioso",
-      "Judge's Subordinate",
-      "'Judge's' Subordinate"
+      "Judge's Subordinate"
     ],
     "displayName": "Bailiff"
   },
@@ -10465,12 +9375,10 @@
   },
   "avg_npc_244": {
     "speakerNames": [
-      "Dublinn Soldier",
-      "Dublinn Soldier?"
+      "Dublinn Soldier"
     ],
     "searchNames": [
-      "Dublinn Soldier",
-      "Dublinn Soldier?"
+      "Dublinn Soldier"
     ],
     "displayName": "Dublinn Soldier"
   },
@@ -10562,14 +9470,12 @@
       "Dublinn Officer",
       "Frantic Soldier",
       "Dublinn Soldier A",
-      "Dublinn Soldier B",
       "Dublinn Soldier"
     ],
     "searchNames": [
       "Dublinn Officer",
       "Frantic Soldier",
       "Dublinn Soldier A",
-      "Dublinn Soldier B",
       "Dublinn Soldier"
     ],
     "displayName": "Dublinn Officer"
@@ -10595,13 +9501,11 @@
   "avg_npc_786_1": {
     "speakerNames": [
       "Aloof Woman",
-      "Shanhaizhong Boss?",
       "Shanhaizhong Boss",
       "Ya"
     ],
     "searchNames": [
       "Aloof Woman",
-      "Shanhaizhong Boss?",
       "Shanhaizhong Boss",
       "Ya"
     ],
@@ -10788,13 +9692,11 @@
   "avg_264_f12yin_1": {
     "speakerNames": [
       "Anthony",
-      "Mountain",
-      "Domma & Anthony"
+      "Mountain"
     ],
     "searchNames": [
       "Anthony",
-      "Mountain",
-      "Domma & Anthony"
+      "Mountain"
     ],
     "displayName": "Anthony"
   },
@@ -10812,50 +9714,40 @@
   "avg_npc_894_1": {
     "speakerNames": [
       "Loken",
-      "Familiar Silhouette",
-      "'Loken'"
+      "Familiar Silhouette"
     ],
     "searchNames": [
       "Loken",
-      "Familiar Silhouette",
-      "'Loken'"
+      "Familiar Silhouette"
     ],
     "displayName": "Loken"
   },
   "avg_npc_902_1": {
     "speakerNames": [
       "Components Control Section Employee",
-      "Components Control Section Employee B",
-      "Components Control Section Employee C",
-      "Components Control Section Employee A"
+      "Components Control Section Employee B"
     ],
     "searchNames": [
       "Components Control Section Employee",
-      "Components Control Section Employee B",
-      "Components Control Section Employee C",
-      "Components Control Section Employee A"
+      "Components Control Section Employee B"
     ],
     "displayName": "Components Control Section Employee"
   },
   "avg_npc_083": {
     "speakerNames": [
-      "Priestess",
-      "Priestess?"
+      "Priestess"
     ],
     "searchNames": [
-      "Priestess",
-      "Priestess?"
+      "Priestess"
     ],
     "displayName": "Priestess"
   },
   "char_014_riope": {
     "speakerNames": [
-      "Ace",
-      "Scout"
+      "Ace"
     ],
     "searchNames": [
-      "Ace",
-      "Scout"
+      "Ace"
     ],
     "displayName": "Ace"
   },
@@ -10888,12 +9780,10 @@
   },
   "avg_npc_056": {
     "speakerNames": [
-      "Theresa",
-      "Theresa?"
+      "Theresa"
     ],
     "searchNames": [
-      "Theresa",
-      "Theresa?"
+      "Theresa"
     ],
     "displayName": "Theresa"
   },
@@ -10949,12 +9839,10 @@
   "avg_1032_excu2_1": {
     "speakerNames": [
       "Federico",
-      "'Federico'",
       "Executor"
     ],
     "searchNames": [
       "Federico",
-      "'Federico'",
       "Executor"
     ],
     "displayName": "Federico"
@@ -11007,42 +9895,34 @@
     "speakerNames": [
       "Raggedly-Dressed Boy",
       "Lively Child",
-      "Shy Child & Lively Child",
-      "Erendel",
-      "Estara & Erendel"
+      "Estara & Erendel",
+      "Erendel"
     ],
     "searchNames": [
       "Raggedly-Dressed Boy",
       "Lively Child",
-      "Shy Child & Lively Child",
-      "Erendel",
-      "Estara & Erendel"
+      "Estara & Erendel",
+      "Erendel"
     ],
     "displayName": "Raggedly-Dressed Boy"
   },
   "avg_npc_940_1": {
     "speakerNames": [
-      "Monastery Inhabitant",
-      "Julian",
-      "Startled Inhabitant"
+      "Monastery Inhabitant"
     ],
     "searchNames": [
-      "Monastery Inhabitant",
-      "Julian",
-      "Startled Inhabitant"
+      "Monastery Inhabitant"
     ],
     "displayName": "Monastery Inhabitant"
   },
   "avg_npc_930_1": {
     "speakerNames": [
       "Twisted Monster",
-      "'Twisted Monster'",
-      "Hyman"
+      "'Twisted Monster'"
     ],
     "searchNames": [
       "Twisted Monster",
-      "'Twisted Monster'",
-      "Hyman"
+      "'Twisted Monster'"
     ],
     "displayName": "Twisted Monster"
   },
@@ -11128,15 +10008,11 @@
   "avg_4106_bryota_1": {
     "speakerNames": [
       "Enis",
-      "Adele",
-      "Male Passerby",
-      "Guiltless Man"
+      "Male Passerby"
     ],
     "searchNames": [
       "Enis",
-      "Adele",
-      "Male Passerby",
-      "Guiltless Man"
+      "Male Passerby"
     ],
     "displayName": "Enis"
   },
@@ -11162,16 +10038,12 @@
     "speakerNames": [
       "Curious Boy",
       "Boy",
-      "Frightened Boy",
-      "Excited Boy",
       "Lut",
       "Young Boy"
     ],
     "searchNames": [
       "Curious Boy",
       "Boy",
-      "Frightened Boy",
-      "Excited Boy",
       "Lut",
       "Young Boy"
     ],
@@ -11181,9 +10053,7 @@
     "speakerNames": [
       "Girl",
       "Innocent Girl",
-      "Joyful Girl",
       "Ice Cream-Craving Girl",
-      "Indignant Girl",
       "Unhappy Girl",
       "Dejected Little Girl",
       "Liv"
@@ -11191,9 +10061,7 @@
     "searchNames": [
       "Girl",
       "Innocent Girl",
-      "Joyful Girl",
       "Ice Cream-Craving Girl",
-      "Indignant Girl",
       "Unhappy Girl",
       "Dejected Little Girl",
       "Liv"
@@ -11250,13 +10118,11 @@
   "avg_npc_997_1": {
     "speakerNames": [
       "Tired Government Employee",
-      "Costa",
-      "Tired Voice"
+      "Costa"
     ],
     "searchNames": [
       "Tired Government Employee",
-      "Costa",
-      "Tired Voice"
+      "Costa"
     ],
     "displayName": "Tired Government Employee"
   },
@@ -11274,14 +10140,10 @@
   "avg_npc_995_1": {
     "speakerNames": [
       "Man Becoming Excited",
-      "Excited Man",
-      "Bored Man",
       "Pelipper"
     ],
     "searchNames": [
       "Man Becoming Excited",
-      "Excited Man",
-      "Bored Man",
       "Pelipper"
     ],
     "displayName": "Man Becoming Excited"
@@ -11299,12 +10161,10 @@
   },
   "avg_348_ceylon_1": {
     "speakerNames": [
-      "Ceylon",
-      "Rinz"
+      "Ceylon"
     ],
     "searchNames": [
-      "Ceylon",
-      "Rinz"
+      "Ceylon"
     ],
     "displayName": "Ceylon"
   },
@@ -11438,19 +10298,13 @@
   "avg_npc_998_1": {
     "speakerNames": [
       "Weary Worker",
-      "Nervous Worker",
       "Dispirited Worker",
-      "Cautious Man",
-      "Cautious Man?",
-      "Obsidian Miner"
+      "Cautious Man"
     ],
     "searchNames": [
       "Weary Worker",
-      "Nervous Worker",
       "Dispirited Worker",
-      "Cautious Man",
-      "Cautious Man?",
-      "Obsidian Miner"
+      "Cautious Man"
     ],
     "displayName": "Weary Worker"
   },
@@ -11465,12 +10319,10 @@
   },
   "avg_340_shwaz_1": {
     "speakerNames": [
-      "Schwarz",
-      "Herman's Voice"
+      "Schwarz"
     ],
     "searchNames": [
-      "Schwarz",
-      "Herman's Voice"
+      "Schwarz"
     ],
     "displayName": "Schwarz"
   },
@@ -11542,13 +10394,11 @@
   "avg_4105_almond_1": {
     "speakerNames": [
       "Laura",
-      "Blacksteel Technician",
       "Blacksteel Operator",
       "Almond"
     ],
     "searchNames": [
       "Laura",
-      "Blacksteel Technician",
       "Blacksteel Operator",
       "Almond"
     ],
@@ -11594,26 +10444,18 @@
     "speakerNames": [
       "Blacksteel Mercenary",
       "Blacksteel Squad Member",
-      "Helpless Blacksteel Mercenary",
-      "Rational Blacksteel Mercenary",
       "Calm Blacksteel Mercenary",
       "Blacksteel Operator",
       "Blacksteel Engineering Team Member",
-      "Blacksteel Senior Operator",
-      "Blacksteel Administrator",
-      "Engineering Supervisor"
+      "Blacksteel Administrator"
     ],
     "searchNames": [
       "Blacksteel Mercenary",
       "Blacksteel Squad Member",
-      "Helpless Blacksteel Mercenary",
-      "Rational Blacksteel Mercenary",
       "Calm Blacksteel Mercenary",
       "Blacksteel Operator",
       "Blacksteel Engineering Team Member",
-      "Blacksteel Senior Operator",
-      "Blacksteel Administrator",
-      "Engineering Supervisor"
+      "Blacksteel Administrator"
     ],
     "displayName": "Blacksteel Mercenary"
   },
@@ -11640,10 +10482,6 @@
       "Sneaky Snowfield Bandit",
       "Vicious Gangster",
       "Rude Ruffian",
-      "Boorish Brute",
-      "Indifferent Snowfield Bandit",
-      "Cruel Snowfield Bandit",
-      "Stubborn Snowfield Rioter",
       "Hard-hearted Hoodlum",
       "Young Man With Bruised Face"
     ],
@@ -11651,10 +10489,6 @@
       "Sneaky Snowfield Bandit",
       "Vicious Gangster",
       "Rude Ruffian",
-      "Boorish Brute",
-      "Indifferent Snowfield Bandit",
-      "Cruel Snowfield Bandit",
-      "Stubborn Snowfield Rioter",
       "Hard-hearted Hoodlum",
       "Young Man With Bruised Face"
     ],
@@ -11664,14 +10498,12 @@
     "speakerNames": [
       "Anxious Man",
       "Unhappy-looking Resident",
-      "Furious Resident",
       "Community Resident",
       "Perro"
     ],
     "searchNames": [
       "Anxious Man",
       "Unhappy-looking Resident",
-      "Furious Resident",
       "Community Resident",
       "Perro"
     ],
@@ -11682,15 +10514,13 @@
       "Irritable Woman",
       "Gentle Female Voice",
       "Helpless Plate Resident",
-      "Chatty Female Patient",
-      "Sofia the Former Maid"
+      "Chatty Female Patient"
     ],
     "searchNames": [
       "Irritable Woman",
       "Gentle Female Voice",
       "Helpless Plate Resident",
-      "Chatty Female Patient",
-      "Sofia the Former Maid"
+      "Chatty Female Patient"
     ],
     "displayName": "Irritable Woman"
   },
@@ -11707,53 +10537,41 @@
     "speakerNames": [
       "Cora",
       "'Cora'",
-      "Cora?",
-      "Witch King"
+      "Cora?"
     ],
     "searchNames": [
       "Cora",
       "'Cora'",
-      "Cora?",
-      "Witch King"
+      "Cora?"
     ],
     "displayName": "Cora"
   },
   "avg_4098_vvana_1": {
     "speakerNames": [
-      "Viviana",
-      "'Hochberg'",
-      "Viviana?"
+      "Viviana"
     ],
     "searchNames": [
-      "Viviana",
-      "'Hochberg'",
-      "Viviana?"
+      "Viviana"
     ],
     "displayName": "Viviana"
   },
   "avg_npc_1117_1": {
     "speakerNames": [
       "Gesatzswächter",
-      "'Gesatzswächter'",
       "Witch King"
     ],
     "searchNames": [
       "Gesatzswächter",
-      "'Gesatzswächter'",
       "Witch King"
     ],
     "displayName": "Gesatzswächter"
   },
   "avg_npc_1115_1": {
     "speakerNames": [
-      "Grimmacht",
-      "'Grimmacht'",
-      "Michael"
+      "Grimmacht"
     ],
     "searchNames": [
-      "Grimmacht",
-      "'Grimmacht'",
-      "Michael"
+      "Grimmacht"
     ],
     "displayName": "Grimmacht"
   },
@@ -11784,12 +10602,10 @@
   "avg_npc_1123_1": {
     "speakerNames": [
       "Loris",
-      "'Gendarmerie'",
       "Witch King"
     ],
     "searchNames": [
       "Loris",
-      "'Gendarmerie'",
       "Witch King"
     ],
     "displayName": "Loris"
@@ -11797,14 +10613,10 @@
   "avg_245_cello_1": {
     "speakerNames": [
       "Arturia",
-      "The Witch King's Musician",
-      "Arturia?",
       "'Arturia'"
     ],
     "searchNames": [
       "Arturia",
-      "The Witch King's Musician",
-      "Arturia?",
       "'Arturia'"
     ],
     "displayName": "Arturia"
@@ -11812,17 +10624,13 @@
   "avg_npc_1131_1": {
     "speakerNames": [
       "Stubborn Apprentice",
-      "'Stubborn Apprentice'",
       "Guy Next Door",
-      "Arrogant Student",
-      "Viktor"
+      "Arrogant Student"
     ],
     "searchNames": [
       "Stubborn Apprentice",
-      "'Stubborn Apprentice'",
       "Guy Next Door",
-      "Arrogant Student",
-      "Viktor"
+      "Arrogant Student"
     ],
     "displayName": "Stubborn Apprentice"
   },
@@ -11877,13 +10685,11 @@
   "avg_npc_1135_1": {
     "speakerNames": [
       "Spire Caster",
-      "Imperial Caster",
-      "'Spire Caster'"
+      "Imperial Caster"
     ],
     "searchNames": [
       "Spire Caster",
-      "Imperial Caster",
-      "'Spire Caster'"
+      "Imperial Caster"
     ],
     "displayName": "Spire Caster"
   },
@@ -11899,12 +10705,10 @@
   "avg_npc_1132_1": {
     "speakerNames": [
       "Bewildered Student",
-      "Passing Student",
       "Payne"
     ],
     "searchNames": [
       "Bewildered Student",
-      "Passing Student",
       "Payne"
     ],
     "displayName": "Bewildered Student"
@@ -11933,14 +10737,12 @@
     "speakerNames": [
       "Motivated Student",
       "Young Woman",
-      "Scornful Student",
-      "Britney"
+      "Scornful Student"
     ],
     "searchNames": [
       "Motivated Student",
       "Young Woman",
-      "Scornful Student",
-      "Britney"
+      "Scornful Student"
     ],
     "displayName": "Motivated Student"
   },
@@ -11956,12 +10758,10 @@
   "avg_npc_1122_1": {
     "speakerNames": [
       "Gentle Woman",
-      "Anxious Woman",
       "Yulia"
     ],
     "searchNames": [
       "Gentle Woman",
-      "Anxious Woman",
       "Yulia"
     ],
     "displayName": "Gentle Woman"
@@ -11998,15 +10798,11 @@
   "avg_npc_1116_1": {
     "speakerNames": [
       "Herkunftshorn",
-      "Witch King",
-      "Witch King?",
-      "Ebenholz"
+      "Witch King"
     ],
     "searchNames": [
       "Herkunftshorn",
-      "Witch King",
-      "Witch King?",
-      "Ebenholz"
+      "Witch King"
     ],
     "displayName": "Herkunftshorn"
   },
@@ -12097,7 +10893,6 @@
       "Sickly Soldier",
       "Somber Soldier",
       "Victorian Soldier C",
-      "Victorian Soldier D",
       "Drunken Soldier",
       "Excited Soldier",
       "Robben",
@@ -12107,7 +10902,6 @@
       "Sickly Soldier",
       "Somber Soldier",
       "Victorian Soldier C",
-      "Victorian Soldier D",
       "Drunken Soldier",
       "Excited Soldier",
       "Robben",
@@ -12146,26 +10940,22 @@
     "speakerNames": [
       "Surprised Farmer",
       "Joyful Farmer",
-      "Tipsy Farmer",
       "Anxious Farmer",
       "Angry Farmer",
       "Tired Farmer",
       "Panicked Farmer",
       "Lead Farmer A",
-      "Lead Farmer C",
       "Senior Farmer",
       "Astonished Farmer"
     ],
     "searchNames": [
       "Surprised Farmer",
       "Joyful Farmer",
-      "Tipsy Farmer",
       "Anxious Farmer",
       "Angry Farmer",
       "Tired Farmer",
       "Panicked Farmer",
       "Lead Farmer A",
-      "Lead Farmer C",
       "Senior Farmer",
       "Astonished Farmer"
     ],
@@ -12176,42 +10966,30 @@
       "Happy Farmer",
       "Drunken Farmer",
       "Alarmed Farmer",
-      "Astonished Farmer",
       "Farmer by the Fields",
       "Worried Farmer",
-      "Anxious Farmer",
       "Resentful Farmer",
-      "Lead Farmer B",
-      "Frightened Farmer"
+      "Lead Farmer B"
     ],
     "searchNames": [
       "Happy Farmer",
       "Drunken Farmer",
       "Alarmed Farmer",
-      "Astonished Farmer",
       "Farmer by the Fields",
       "Worried Farmer",
-      "Anxious Farmer",
       "Resentful Farmer",
-      "Lead Farmer B",
-      "Frightened Farmer"
+      "Lead Farmer B"
     ],
     "displayName": "Happy Farmer"
   },
   "avg_2025_shu_1": {
     "speakerNames": [
       "Shu",
-      "Indistinct Woman",
-      "Ethereal Woman",
-      "Passing Nongye Tianshi",
       "Kind Woman",
       "Passing Xian"
     ],
     "searchNames": [
       "Shu",
-      "Indistinct Woman",
-      "Ethereal Woman",
-      "Passing Nongye Tianshi",
       "Kind Woman",
       "Passing Xian"
     ],
@@ -12279,40 +11057,26 @@
   "avg_npc_1244_1": {
     "speakerNames": [
       "Stray Stockbeast",
-      "Mianmian",
       "Strange Fabric",
-      "Stockbeast's Voice",
       "Eerie Fabric",
-      "Passing Stockbeast",
-      "Docile Stockbeast",
-      "Blocking Stockbeast",
-      "Grain Buds",
-      "Young Farmer"
+      "Blocking Stockbeast"
     ],
     "searchNames": [
       "Stray Stockbeast",
-      "Mianmian",
       "Strange Fabric",
-      "Stockbeast's Voice",
       "Eerie Fabric",
-      "Passing Stockbeast",
-      "Docile Stockbeast",
-      "Blocking Stockbeast",
-      "Grain Buds",
-      "Young Farmer"
+      "Blocking Stockbeast"
     ],
     "displayName": "Stray Stockbeast"
   },
   "avg_npc_1243_1": {
     "speakerNames": [
-      "Old Lumberjack",
       "Silent Lumberjack"
     ],
     "searchNames": [
-      "Old Lumberjack",
       "Silent Lumberjack"
     ],
-    "displayName": "Old Lumberjack"
+    "displayName": "Silent Lumberjack"
   },
   "avg_npc_1240_1": {
     "speakerNames": [
@@ -12352,16 +11116,14 @@
   "avg_npc_1236_1": {
     "speakerNames": [
       "Well-Dressed Man",
-      "Ji",
       "Caravan Leader",
-      "Astute Merchant",
+      "Ji",
       "Sharp Dressed Man"
     ],
     "searchNames": [
       "Well-Dressed Man",
-      "Ji",
       "Caravan Leader",
-      "Astute Merchant",
+      "Ji",
       "Sharp Dressed Man"
     ],
     "displayName": "Well-Dressed Man"
@@ -12405,12 +11167,10 @@
   },
   "avg_4123_ela_1": {
     "speakerNames": [
-      "Ela",
-      "Ela?"
+      "Ela"
     ],
     "searchNames": [
-      "Ela",
-      "Ela?"
+      "Ela"
     ],
     "displayName": "Ela"
   },
@@ -12434,14 +11194,10 @@
   },
   "avg_4125_rdoc_1": {
     "speakerNames": [
-      "Doc",
-      "Sound from Loudspeakers",
-      "Tecno & Doc"
+      "Doc"
     ],
     "searchNames": [
-      "Doc",
-      "Sound from Loudspeakers",
-      "Tecno & Doc"
+      "Doc"
     ],
     "displayName": "Doc"
   },
@@ -12486,13 +11242,11 @@
   "avg_npc_601_1": {
     "speakerNames": [
       "Impoverished Young Man",
-      "Muscular Man",
-      "Burly Man"
+      "Muscular Man"
     ],
     "searchNames": [
       "Impoverished Young Man",
-      "Muscular Man",
-      "Burly Man"
+      "Muscular Man"
     ],
     "displayName": "Impoverished Young Man"
   },
@@ -12517,27 +11271,17 @@
   "avg_npc_1272_1": {
     "speakerNames": [
       "Squad Leader",
-      "Gun-Wielding Soldier",
       "Fully-Armed Soldier",
       "Irate Soldier",
-      "Slacking Officer",
       "Cowardly Soldier",
-      "Tired Soldier",
-      "Worn-Out Soldier",
-      "Spooked Soldier",
       "Alert Soldier",
       "Snaptooth Boss"
     ],
     "searchNames": [
       "Squad Leader",
-      "Gun-Wielding Soldier",
       "Fully-Armed Soldier",
       "Irate Soldier",
-      "Slacking Officer",
       "Cowardly Soldier",
-      "Tired Soldier",
-      "Worn-Out Soldier",
-      "Spooked Soldier",
       "Alert Soldier",
       "Snaptooth Boss"
     ],
@@ -12560,12 +11304,9 @@
       "Mischievous Child",
       "Millen",
       "Anxious Child",
-      "Eric",
       "Boy",
       "Billy",
       "Emaciated Child",
-      "Dirt-Poor Peddler",
-      "Joe",
       "Cunning Boy",
       "Terrified Child"
     ],
@@ -12585,12 +11326,9 @@
       "Mischievous Child",
       "Millen",
       "Anxious Child",
-      "Eric",
       "Boy",
       "Billy",
       "Emaciated Child",
-      "Dirt-Poor Peddler",
-      "Joe",
       "Cunning Boy",
       "Terrified Child"
     ],
@@ -12611,13 +11349,11 @@
     "speakerNames": [
       "Alert Community Guard",
       "Community Guard",
-      "Pelirrojo",
       "Street Sculptor"
     ],
     "searchNames": [
       "Alert Community Guard",
       "Community Guard",
-      "Pelirrojo",
       "Street Sculptor"
     ],
     "displayName": "Alert Community Guard"
@@ -12640,7 +11376,6 @@
       "Grandmother",
       "Ursus Civilian",
       "Woman",
-      "Sani",
       "Button Shop Tailor"
     ],
     "searchNames": [
@@ -12651,7 +11386,6 @@
       "Grandmother",
       "Ursus Civilian",
       "Woman",
-      "Sani",
       "Button Shop Tailor"
     ],
     "displayName": "Elderly Woman"
@@ -12742,13 +11476,11 @@
   "avg_npc_1303_1": {
     "speakerNames": [
       "Lost Child",
-      "Sleepy Child",
-      "Odda"
+      "Sleepy Child"
     ],
     "searchNames": [
       "Lost Child",
-      "Sleepy Child",
-      "Odda"
+      "Sleepy Child"
     ],
     "displayName": "Lost Child"
   },
@@ -12810,15 +11542,13 @@
       "'Teacher'",
       "Babel Member",
       "Babel Squad Member",
-      "Babelite",
-      "Table Salt"
+      "Babelite"
     ],
     "searchNames": [
       "'Teacher'",
       "Babel Member",
       "Babel Squad Member",
-      "Babelite",
-      "Table Salt"
+      "Babelite"
     ],
     "displayName": "'Teacher'"
   },
@@ -12864,16 +11594,16 @@
   },
   "avg_npc_654_1": {
     "speakerNames": [
-      "Confessarius",
       "'Father'",
-      "Qui'sartuštaj"
+      "Qui'sartuštaj",
+      "Confessarius"
     ],
     "searchNames": [
-      "Confessarius",
       "'Father'",
-      "Qui'sartuštaj"
+      "Qui'sartuštaj",
+      "Confessarius"
     ],
-    "displayName": "Confessarius"
+    "displayName": "'Father'"
   },
   "avg_npc_1299_1": {
     "speakerNames": [
@@ -12946,16 +11676,14 @@
       "Determined Assassin",
       "Hornless Sarkaz",
       "Hornless Assassin",
-      "Airship 'Apparition'",
-      "Silent Assassin"
+      "Airship 'Apparition'"
     ],
     "searchNames": [
       "Name-Forsaken Sacrificer",
       "Determined Assassin",
       "Hornless Sarkaz",
       "Hornless Assassin",
-      "Airship 'Apparition'",
-      "Silent Assassin"
+      "Airship 'Apparition'"
     ],
     "displayName": "Name-Forsaken Sacrificer"
   },
@@ -12999,14 +11727,12 @@
     "speakerNames": [
       "'Little Handy'",
       "'Little Handy' from the Institute of Facility Management",
-      "'Little Handy' from Institute of Facility Management",
-      "'Little Handy' at the Street Corner"
+      "'Little Handy' from Institute of Facility Management"
     ],
     "searchNames": [
       "'Little Handy'",
       "'Little Handy' from the Institute of Facility Management",
-      "'Little Handy' from Institute of Facility Management",
-      "'Little Handy' at the Street Corner"
+      "'Little Handy' from Institute of Facility Management"
     ],
     "displayName": "'Little Handy'"
   },
@@ -13189,12 +11915,10 @@
   },
   "avg_npc_1389_1": {
     "speakerNames": [
-      "Seaborn",
-      "Gentle Seaborn"
+      "Seaborn"
     ],
     "searchNames": [
-      "Seaborn",
-      "Gentle Seaborn"
+      "Seaborn"
     ],
     "displayName": "Seaborn"
   },
@@ -13212,7 +11936,6 @@
       "Lamplighter",
       "Noble Scholar",
       "King",
-      "Strange Ghost",
       "Gem Collector",
       "Caravan Leader"
     ],
@@ -13220,7 +11943,6 @@
       "Lamplighter",
       "Noble Scholar",
       "King",
-      "Strange Ghost",
       "Gem Collector",
       "Caravan Leader"
     ],
@@ -13228,14 +11950,10 @@
   },
   "avg_4058_pepe_1": {
     "speakerNames": [
-      "Pepe",
-      "Woman Behind the Jeweled Screen",
-      "Ceremony Host"
+      "Pepe"
     ],
     "searchNames": [
-      "Pepe",
-      "Woman Behind the Jeweled Screen",
-      "Ceremony Host"
+      "Pepe"
     ],
     "displayName": "Pepe"
   },
@@ -13288,25 +12006,21 @@
   "avg_4138_narant_1": {
     "speakerNames": [
       "Narantuya",
-      "Odd Woman",
-      "Shady Woman"
+      "Odd Woman"
     ],
     "searchNames": [
       "Narantuya",
-      "Odd Woman",
-      "Shady Woman"
+      "Odd Woman"
     ],
     "displayName": "Narantuya"
   },
   "avg_npc_1477_1": {
     "speakerNames": [
       "Aspasia",
-      "Ceremony Host",
       "Minoan Traveler"
     ],
     "searchNames": [
       "Aspasia",
-      "Ceremony Host",
       "Minoan Traveler"
     ],
     "displayName": "Aspasia"
@@ -13320,10 +12034,7 @@
       "Ceremony Host",
       "Rashad",
       "Museum Staff",
-      "Incredibly Bored Citizen",
-      "Museum Ticketer",
-      "Doting Servant",
-      "Servant in Bushes"
+      "Doting Servant"
     ],
     "searchNames": [
       "Picky Visitor",
@@ -13333,10 +12044,7 @@
       "Ceremony Host",
       "Rashad",
       "Museum Staff",
-      "Incredibly Bored Citizen",
-      "Museum Ticketer",
-      "Doting Servant",
-      "Servant in Bushes"
+      "Doting Servant"
     ],
     "displayName": "Picky Visitor"
   },
@@ -13402,18 +12110,14 @@
       "Museum Staff",
       "Gathering Staff",
       "Museum Receptionist",
-      "Waiter",
       "King's Brother",
-      "New King",
       "Kindly Servant"
     ],
     "searchNames": [
       "Museum Staff",
       "Gathering Staff",
       "Museum Receptionist",
-      "Waiter",
       "King's Brother",
-      "New King",
       "Kindly Servant"
     ],
     "displayName": "Museum Staff"
@@ -13421,12 +12125,10 @@
   "avg_npc_1485_1": {
     "speakerNames": [
       "Ajani",
-      "Ajazi and Ajani",
       "Ingratiating Employee"
     ],
     "searchNames": [
       "Ajani",
-      "Ajazi and Ajani",
       "Ingratiating Employee"
     ],
     "displayName": "Ajani"
@@ -13436,14 +12138,12 @@
       "Bejeweled Man",
       "Flustered Clerk",
       "Excited Merchant",
-      "Merchant",
       "Factory Director"
     ],
     "searchNames": [
       "Bejeweled Man",
       "Flustered Clerk",
       "Excited Merchant",
-      "Merchant",
       "Factory Director"
     ],
     "displayName": "Bejeweled Man"
@@ -13483,12 +12183,10 @@
   },
   "avg_npc_1481_1": {
     "speakerNames": [
-      "Injured Youth",
-      "Quiet Youth"
+      "Injured Youth"
     ],
     "searchNames": [
-      "Injured Youth",
-      "Quiet Youth"
+      "Injured Youth"
     ],
     "displayName": "Injured Youth"
   },
@@ -13512,16 +12210,10 @@
   },
   "avg_4142_laios_1": {
     "speakerNames": [
-      "Laios",
-      "Chilchuck & Laios",
-      "Senshi & Laios",
-      "Laios (Familiar Ver.)"
+      "Laios"
     ],
     "searchNames": [
-      "Laios",
-      "Chilchuck & Laios",
-      "Senshi & Laios",
-      "Laios (Familiar Ver.)"
+      "Laios"
     ],
     "displayName": "Laios"
   },
@@ -13536,12 +12228,10 @@
   },
   "avg_4141_marcil_1": {
     "speakerNames": [
-      "Marcille",
-      "Chilchuck & Marcille"
+      "Marcille"
     ],
     "searchNames": [
-      "Marcille",
-      "Chilchuck & Marcille"
+      "Marcille"
     ],
     "displayName": "Marcille"
   },
@@ -13575,24 +12265,20 @@
   "avg_npc_1427_1": {
     "speakerNames": [
       "Ink Spirit",
-      "Lively Ink Spirit",
-      "'Angry'"
+      "Lively Ink Spirit"
     ],
     "searchNames": [
       "Ink Spirit",
-      "Lively Ink Spirit",
-      "'Angry'"
+      "Lively Ink Spirit"
     ],
     "displayName": "Ink Spirit"
   },
   "avg_npc_1425_1": {
     "speakerNames": [
-      "Relaxed Ink Spirit",
-      "'Lazy'"
+      "Relaxed Ink Spirit"
     ],
     "searchNames": [
-      "Relaxed Ink Spirit",
-      "'Lazy'"
+      "Relaxed Ink Spirit"
     ],
     "displayName": "Relaxed Ink Spirit"
   },
@@ -13607,12 +12293,10 @@
   },
   "avg_npc_1426_1": {
     "speakerNames": [
-      "Chest",
-      "Chest?"
+      "Chest"
     ],
     "searchNames": [
-      "Chest",
-      "Chest?"
+      "Chest"
     ],
     "displayName": "Chest"
   },
@@ -13622,54 +12306,42 @@
       "Ryan",
       "Vanguard Operator",
       "Rhodes Island Operator",
-      "Chard",
       "Operator Will",
       "Panicked Rhodes Island Operator",
       "Serious Operator",
       "Office Operator",
       "Rhodes Island Field Operator A&B",
-      "Rhodes Island Field Operator A",
       "Rhodes Island Field Operator B",
       "Engineering Operator",
       "Defender Operator",
-      "Lucci",
       "Engineering Operator B",
-      "Reserve Operator",
       "Intern Operator C",
       "Operator Barty",
       "Engineering Operator A",
       "Guard Operator",
       "Operator Passerby",
-      "Office Operator A",
-      "Piston",
-      "Feraligus"
+      "Office Operator A"
     ],
     "searchNames": [
       "Rhodes Island Field Operator",
       "Ryan",
       "Vanguard Operator",
       "Rhodes Island Operator",
-      "Chard",
       "Operator Will",
       "Panicked Rhodes Island Operator",
       "Serious Operator",
       "Office Operator",
       "Rhodes Island Field Operator A&B",
-      "Rhodes Island Field Operator A",
       "Rhodes Island Field Operator B",
       "Engineering Operator",
       "Defender Operator",
-      "Lucci",
       "Engineering Operator B",
-      "Reserve Operator",
       "Intern Operator C",
       "Operator Barty",
       "Engineering Operator A",
       "Guard Operator",
       "Operator Passerby",
-      "Office Operator A",
-      "Piston",
-      "Feraligus"
+      "Office Operator A"
     ],
     "displayName": "Rhodes Island Field Operator"
   },
@@ -13680,9 +12352,7 @@
       "Operator Shredder",
       "Rhodes Island Sniper",
       "Seasoned Rhodes Island Operator",
-      "Hank",
       "Office Operator B",
-      "Seanson",
       "Operator Hoger",
       "Intern Operator B",
       "Operator Chard",
@@ -13696,9 +12366,7 @@
       "Operator Shredder",
       "Rhodes Island Sniper",
       "Seasoned Rhodes Island Operator",
-      "Hank",
       "Office Operator B",
-      "Seanson",
       "Operator Hoger",
       "Intern Operator B",
       "Operator Chard",
@@ -13724,8 +12392,7 @@
       "Intern Operator",
       "Logistics Operator",
       "Rhodes Island Landship Operator B",
-      "HR Operator",
-      "Records Room Operator"
+      "HR Operator"
     ],
     "searchNames": [
       "Rubber",
@@ -13733,8 +12400,7 @@
       "Intern Operator",
       "Logistics Operator",
       "Rhodes Island Landship Operator B",
-      "HR Operator",
-      "Records Room Operator"
+      "HR Operator"
     ],
     "displayName": "Rubber"
   },
@@ -13912,7 +12578,6 @@
       "Londinium Worker",
       "Londinium Worker A",
       "Desperate Refugee",
-      "Panicked Refugee",
       "Repair Shop Machinist"
     ],
     "searchNames": [
@@ -13922,7 +12587,6 @@
       "Londinium Worker",
       "Londinium Worker A",
       "Desperate Refugee",
-      "Panicked Refugee",
       "Repair Shop Machinist"
     ],
     "displayName": "Enthusiastic Worker"
@@ -13944,16 +12608,12 @@
       "Timid Child",
       "Innocent Child",
       "Farmer",
-      "Old Man",
       "Tyrant",
       "Disgusted Child",
       "Curious Girl",
-      "Hope",
       "Composed Child",
       "Repulsed Child",
       "Enthusiastic Student",
-      "Hollering Student",
-      "Madeline",
       "Villager's Child"
     ],
     "searchNames": [
@@ -13961,16 +12621,12 @@
       "Timid Child",
       "Innocent Child",
       "Farmer",
-      "Old Man",
       "Tyrant",
       "Disgusted Child",
       "Curious Girl",
-      "Hope",
       "Composed Child",
       "Repulsed Child",
       "Enthusiastic Student",
-      "Hollering Student",
-      "Madeline",
       "Villager's Child"
     ],
     "displayName": "Sulking Child"
@@ -13978,12 +12634,10 @@
   "avg_npc_657_1": {
     "speakerNames": [
       "Molly",
-      "Damazti Cluster",
       "'Molly'"
     ],
     "searchNames": [
       "Molly",
-      "Damazti Cluster",
       "'Molly'"
     ],
     "displayName": "Molly"
@@ -14193,14 +12847,12 @@
     "speakerNames": [
       "Famiglia Lawyer",
       "Mafioso A & B",
-      "Mafioso",
-      "Famiglia Company Employee"
+      "Mafioso"
     ],
     "searchNames": [
       "Famiglia Lawyer",
       "Mafioso A & B",
-      "Mafioso",
-      "Famiglia Company Employee"
+      "Mafioso"
     ],
     "displayName": "Famiglia Lawyer"
   },
@@ -14258,13 +12910,13 @@
   "avg_4026_vulpis_1": {
     "speakerNames": [
       "Smiling Signora",
-      "Ingrid",
-      "Tipsy Vulpo"
+      "Tipsy Vulpo",
+      "Ingrid"
     ],
     "searchNames": [
       "Smiling Signora",
-      "Ingrid",
-      "Tipsy Vulpo"
+      "Tipsy Vulpo",
+      "Ingrid"
     ],
     "displayName": "Smiling Signora"
   },
@@ -14320,15 +12972,11 @@
     "speakerNames": [
       "'Carnevale Participant B'",
       "Mafioso B",
-      "Mafioso",
-      "Carnevale Participant A",
       "Fanatical Mafioso"
     ],
     "searchNames": [
       "'Carnevale Participant B'",
       "Mafioso B",
-      "Mafioso",
-      "Carnevale Participant A",
       "Fanatical Mafioso"
     ],
     "displayName": "'Carnevale Participant B'"
@@ -14372,13 +13020,11 @@
   "avg_4163_rosesa_1": {
     "speakerNames": [
       "Pascuala",
-      "Isidro",
       "Conniving Vendor",
       "Rose Salt"
     ],
     "searchNames": [
       "Pascuala",
-      "Isidro",
       "Conniving Vendor",
       "Rose Salt"
     ],
@@ -14396,22 +13042,12 @@
   "avg_npc_1587_1": {
     "speakerNames": [
       "Warrior Priest",
-      "Warrior Priest B",
-      "Sad Warrior Priest",
-      "Merciless Warrior Priest",
       "Reliable Warrior Priest",
-      "Pursuing Warrior Priest",
-      "Inquisition Cleric",
       "Inquisition Official"
     ],
     "searchNames": [
       "Warrior Priest",
-      "Warrior Priest B",
-      "Sad Warrior Priest",
-      "Merciless Warrior Priest",
       "Reliable Warrior Priest",
-      "Pursuing Warrior Priest",
-      "Inquisition Cleric",
       "Inquisition Official"
     ],
     "displayName": "Warrior Priest"
@@ -14437,13 +13073,9 @@
   "avg_npc_1591_1": {
     "speakerNames": [
       "Howling Sailor",
-      "Sword-Wielding Sailor",
-      "Impulsive Sailor",
-      "Menacing Sailor",
       "Sad Man",
       "Cesc",
       "Hesitant Sailor",
-      "Anxious Sailor",
       "Alert Sailor",
       "Excited Pirate",
       "Fearless Sailor",
@@ -14451,13 +13083,9 @@
     ],
     "searchNames": [
       "Howling Sailor",
-      "Sword-Wielding Sailor",
-      "Impulsive Sailor",
-      "Menacing Sailor",
       "Sad Man",
       "Cesc",
       "Hesitant Sailor",
-      "Anxious Sailor",
       "Alert Sailor",
       "Excited Pirate",
       "Fearless Sailor",
@@ -14542,36 +13170,24 @@
     "speakerNames": [
       "Nervous Sailor",
       "Panicked Sailor",
-      "Hapless Sailor",
       "Anxious Sailor",
-      "Aloof Sailor",
-      "Flustered Sailor",
       "Impassionate Sailor",
       "Tired Sailor",
-      "Angry Sailor",
       "Howling Sailor",
       "Stunned Sailor",
       "Impulsive Sailor",
-      "Dizzy Sailor",
-      "Inattentive Guard",
-      "Angry Man"
+      "Inattentive Guard"
     ],
     "searchNames": [
       "Nervous Sailor",
       "Panicked Sailor",
-      "Hapless Sailor",
       "Anxious Sailor",
-      "Aloof Sailor",
-      "Flustered Sailor",
       "Impassionate Sailor",
       "Tired Sailor",
-      "Angry Sailor",
       "Howling Sailor",
       "Stunned Sailor",
       "Impulsive Sailor",
-      "Dizzy Sailor",
-      "Inattentive Guard",
-      "Angry Man"
+      "Inattentive Guard"
     ],
     "displayName": "Nervous Sailor"
   },
@@ -14581,7 +13197,6 @@
       "Angry Sailor",
       "Eager Pirate",
       "Frightened Sailor",
-      "Frail Sailor",
       "Doubting Sailor"
     ],
     "searchNames": [
@@ -14589,7 +13204,6 @@
       "Angry Sailor",
       "Eager Pirate",
       "Frightened Sailor",
-      "Frail Sailor",
       "Doubting Sailor"
     ],
     "displayName": "Excited Sailor"
@@ -14660,15 +13274,11 @@
   "char_103_angel_1": {
     "speakerNames": [
       "Exusiai",
-      "Bison & Exusiai",
-      "Penguin Logistics",
-      "Emperor"
+      "Penguin Logistics"
     ],
     "searchNames": [
       "Exusiai",
-      "Bison & Exusiai",
-      "Penguin Logistics",
-      "Emperor"
+      "Penguin Logistics"
     ],
     "displayName": "Exusiai"
   },
@@ -14712,12 +13322,10 @@
   },
   "char_007_closre_1": {
     "speakerNames": [
-      "Closure",
-      "Ke Luxi"
+      "Closure"
     ],
     "searchNames": [
-      "Closure",
-      "Ke Luxi"
+      "Closure"
     ],
     "displayName": "Closure"
   },
@@ -14803,14 +13411,12 @@
     "speakerNames": [
       "Elegant Woman",
       "Xingzhu",
-      "Ning Yin",
-      "Patrolling Soldier"
+      "Ning Yin"
     ],
     "searchNames": [
       "Elegant Woman",
       "Xingzhu",
-      "Ning Yin",
-      "Patrolling Soldier"
+      "Ning Yin"
     ],
     "displayName": "Elegant Woman"
   },
@@ -14921,30 +13527,22 @@
   "avg_npc_1636_1": {
     "speakerNames": [
       "Bored Chef",
-      "Veteran Chef",
-      "Careless Chef"
+      "Veteran Chef"
     ],
     "searchNames": [
       "Bored Chef",
-      "Veteran Chef",
-      "Careless Chef"
+      "Veteran Chef"
     ],
     "displayName": "Bored Chef"
   },
   "avg_npc_1637_1": {
     "speakerNames": [
       "Patrolling Soldier",
-      "Soldier",
-      "Patrolling Guardsman",
-      "Guard B",
-      "Guard Chief"
+      "Patrolling Guardsman"
     ],
     "searchNames": [
       "Patrolling Soldier",
-      "Soldier",
-      "Patrolling Guardsman",
-      "Guard B",
-      "Guard Chief"
+      "Patrolling Guardsman"
     ],
     "displayName": "Patrolling Soldier"
   },
@@ -15033,14 +13631,12 @@
     "speakerNames": [
       "Eblana",
       "The Red Dragon",
-      "Greedy Red Dragon",
-      "Necrass"
+      "Greedy Red Dragon"
     ],
     "searchNames": [
       "Eblana",
       "The Red Dragon",
-      "Greedy Red Dragon",
-      "Necrass"
+      "Greedy Red Dragon"
     ],
     "displayName": "Eblana"
   },
@@ -15120,13 +13716,11 @@
   "avg_npc_1687_1": {
     "speakerNames": [
       "Impatient Resident",
-      "Silent Resident",
       "Sensitive Resident",
       "Leisurely Resident"
     ],
     "searchNames": [
       "Impatient Resident",
-      "Silent Resident",
       "Sensitive Resident",
       "Leisurely Resident"
     ],
@@ -15155,30 +13749,22 @@
   "avg_npc_234": {
     "speakerNames": [
       "'The Cruel Officer'",
-      "'The Ombudsman'",
       "'The Bandit'",
-      "'The Toxicologist'",
-      "'The Accountant'",
-      "'The Convict'"
+      "'The Accountant'"
     ],
     "searchNames": [
       "'The Cruel Officer'",
-      "'The Ombudsman'",
       "'The Bandit'",
-      "'The Toxicologist'",
-      "'The Accountant'",
-      "'The Convict'"
+      "'The Accountant'"
     ],
     "displayName": "'The Cruel Officer'"
   },
   "avg_npc_1698_1": {
     "speakerNames": [
-      "Writer",
-      "'The Singer'"
+      "Writer"
     ],
     "searchNames": [
-      "Writer",
-      "'The Singer'"
+      "Writer"
     ],
     "displayName": "Writer"
   },
@@ -15225,17 +13811,13 @@
       "Decrepit Old Man",
       "Ian",
       "Silent Old Man",
-      "Anxious Old Man",
-      "Old Clerk",
-      "Callisto"
+      "Anxious Old Man"
     ],
     "searchNames": [
       "Decrepit Old Man",
       "Ian",
       "Silent Old Man",
-      "Anxious Old Man",
-      "Old Clerk",
-      "Callisto"
+      "Anxious Old Man"
     ],
     "displayName": "Decrepit Old Man"
   },
@@ -15310,12 +13892,10 @@
   },
   "avg_npc_1785_1": {
     "speakerNames": [
-      "Nurturer",
-      "Guiding Nurturer"
+      "Nurturer"
     ],
     "searchNames": [
-      "Nurturer",
-      "Guiding Nurturer"
+      "Nurturer"
     ],
     "displayName": "Nurturer"
   },
@@ -15494,13 +14074,11 @@
   "avg_npc_1795_1": {
     "speakerNames": [
       "Sankta B",
-      "Sankta Errari",
-      "Walking Sankta B"
+      "Sankta Errari"
     ],
     "searchNames": [
       "Sankta B",
-      "Sankta Errari",
-      "Walking Sankta B"
+      "Sankta Errari"
     ],
     "displayName": "Sankta B"
   },
@@ -15546,12 +14124,10 @@
   },
   "avg_npc_1793_1": {
     "speakerNames": [
-      "Gap-Toothed Girl",
-      "Idida"
+      "Gap-Toothed Girl"
     ],
     "searchNames": [
-      "Gap-Toothed Girl",
-      "Idida"
+      "Gap-Toothed Girl"
     ],
     "displayName": "Gap-Toothed Girl"
   },
@@ -15660,7 +14236,6 @@
     "speakerNames": [
       "Liberi",
       "Londinium Resident",
-      "Clara",
       "Busy Old Woman",
       "Rental Store Owner",
       "Obina"
@@ -15668,7 +14243,6 @@
     "searchNames": [
       "Liberi",
       "Londinium Resident",
-      "Clara",
       "Busy Old Woman",
       "Rental Store Owner",
       "Obina"
@@ -15746,12 +14320,10 @@
   },
   "avg_npc_1831_1": {
     "speakerNames": [
-      "Moira",
-      "Tippi & Moira"
+      "Moira"
     ],
     "searchNames": [
-      "Moira",
-      "Tippi & Moira"
+      "Moira"
     ],
     "displayName": "Moira"
   },
@@ -15805,13 +14377,11 @@
   "avg_4198_christ_1": {
     "speakerNames": [
       "Miss.Christine",
-      "Mysterious and Elegant Creature",
-      "Mysterious and Beautiful Creature"
+      "Mysterious and Elegant Creature"
     ],
     "searchNames": [
       "Miss.Christine",
-      "Mysterious and Elegant Creature",
-      "Mysterious and Beautiful Creature"
+      "Mysterious and Elegant Creature"
     ],
     "displayName": "Miss.Christine"
   },
@@ -15820,15 +14390,13 @@
       "Staff B",
       "Staff",
       "Scared Staff",
-      "Skeptical Staff",
-      "Confused Staff B"
+      "Skeptical Staff"
     ],
     "searchNames": [
       "Staff B",
       "Staff",
       "Scared Staff",
-      "Skeptical Staff",
-      "Confused Staff B"
+      "Skeptical Staff"
     ],
     "displayName": "Staff B"
   },
@@ -15959,12 +14527,10 @@
   },
   "avg_npc_025_1": {
     "speakerNames": [
-      "Patriot",
-      "Reunion Soldier"
+      "Patriot"
     ],
     "searchNames": [
-      "Patriot",
-      "Reunion Soldier"
+      "Patriot"
     ],
     "displayName": "Patriot"
   },
@@ -15988,23 +14554,19 @@
   },
   "char_107_liskam_1": {
     "speakerNames": [
-      "Liskarm",
-      "Franka"
+      "Liskarm"
     ],
     "searchNames": [
-      "Liskarm",
-      "Franka"
+      "Liskarm"
     ],
     "displayName": "Liskarm"
   },
   "char_106_franka_1": {
     "speakerNames": [
-      "Franka",
-      "Franka & Exusiai"
+      "Franka"
     ],
     "searchNames": [
-      "Franka",
-      "Franka & Exusiai"
+      "Franka"
     ],
     "displayName": "Franka"
   },
@@ -16019,12 +14581,10 @@
   },
   "char_193_frostl_1": {
     "speakerNames": [
-      "Frostleaf",
-      "FrostNova"
+      "Frostleaf"
     ],
     "searchNames": [
-      "Frostleaf",
-      "FrostNova"
+      "Frostleaf"
     ],
     "displayName": "Frostleaf"
   },
@@ -16066,12 +14626,10 @@
   },
   "char_213_mostma_1": {
     "speakerNames": [
-      "Mostima",
-      "One-Armed Chainsaw Guy"
+      "Mostima"
     ],
     "searchNames": [
-      "Mostima",
-      "One-Armed Chainsaw Guy"
+      "Mostima"
     ],
     "displayName": "Mostima"
   },
@@ -16088,22 +14646,12 @@
   },
   "char_300_phenxi_1": {
     "speakerNames": [
-      "Suffering?",
-      "Chosen Overseer?",
-      "Treasure Guardian?",
-      "Suffering",
-      "One-Armed Chainsaw Guy",
-      "Mostima"
+      "Suffering"
     ],
     "searchNames": [
-      "Suffering?",
-      "Chosen Overseer?",
-      "Treasure Guardian?",
-      "Suffering",
-      "One-Armed Chainsaw Guy",
-      "Mostima"
+      "Suffering"
     ],
-    "displayName": "Suffering?"
+    "displayName": "Suffering"
   },
   "char_291_aglina_1": {
     "speakerNames": [
@@ -16117,13 +14665,11 @@
   "char_136_hsguma": {
     "speakerNames": [
       "Madame Oni",
-      "Hoshiguma",
-      "Ch'en"
+      "Hoshiguma"
     ],
     "searchNames": [
       "Madame Oni",
-      "Hoshiguma",
-      "Ch'en"
+      "Hoshiguma"
     ],
     "displayName": "Madame Oni"
   },
@@ -16149,23 +14695,19 @@
   },
   "avg_npc_044_1": {
     "speakerNames": [
-      "Lava",
-      "Lava.."
+      "Lava"
     ],
     "searchNames": [
-      "Lava",
-      "Lava.."
+      "Lava"
     ],
     "displayName": "Lava"
   },
   "char_208_melan_1": {
     "speakerNames": [
-      "Melantha",
-      "Franka"
+      "Melantha"
     ],
     "searchNames": [
-      "Melantha",
-      "Franka"
+      "Melantha"
     ],
     "displayName": "Melantha"
   },
@@ -16183,7 +14725,6 @@
   "avg_npc_045": {
     "speakerNames": [
       "Dora..",
-      "Dora",
       "Timid Child",
       "Little Girl",
       "Gianna",
@@ -16191,7 +14732,6 @@
     ],
     "searchNames": [
       "Dora..",
-      "Dora",
       "Timid Child",
       "Little Girl",
       "Gianna",
@@ -16210,12 +14750,10 @@
   },
   "char_171_bldsk_1": {
     "speakerNames": [
-      "Warfarin",
-      "Brave Child"
+      "Warfarin"
     ],
     "searchNames": [
-      "Warfarin",
-      "Brave Child"
+      "Warfarin"
     ],
     "displayName": "Warfarin"
   },
@@ -16239,36 +14777,28 @@
   },
   "char_163_hpsts_1": {
     "speakerNames": [
-      "????",
-      "Vulcan",
-      "Vulcan."
+      "Vulcan"
     ],
     "searchNames": [
-      "????",
-      "Vulcan",
-      "Vulcan."
+      "Vulcan"
     ],
-    "displayName": "????"
+    "displayName": "Vulcan"
   },
   "char_278_orchid_1": {
     "speakerNames": [
-      "Orchid",
-      "Orchid."
+      "Orchid"
     ],
     "searchNames": [
-      "Orchid",
-      "Orchid."
+      "Orchid"
     ],
     "displayName": "Orchid"
   },
   "char_282_catap_1": {
     "speakerNames": [
-      "Catapult",
-      "Catapult & Patrolling Knight"
+      "Catapult"
     ],
     "searchNames": [
-      "Catapult",
-      "Catapult & Patrolling Knight"
+      "Catapult"
     ],
     "displayName": "Catapult"
   },
@@ -16303,19 +14833,11 @@
     "speakerNames": [
       "Rusthammer Member Boone",
       "Reunion Member",
-      "ReUni N MemBr",
-      "ReUMmbr? N;E? OE",
-      "Mephisto's hERd",
-      "Mephisto's HeRd",
       "Mephisto's Herd"
     ],
     "searchNames": [
       "Rusthammer Member Boone",
       "Reunion Member",
-      "ReUni N MemBr",
-      "ReUMmbr? N;E? OE",
-      "Mephisto's hERd",
-      "Mephisto's HeRd",
       "Mephisto's Herd"
     ],
     "displayName": "Rusthammer Member Boone"
@@ -16340,12 +14862,10 @@
   },
   "avg_478_kirara_1": {
     "speakerNames": [
-      "Kirara",
-      "Kirara & Unfamiliar Man"
+      "Kirara"
     ],
     "searchNames": [
-      "Kirara",
-      "Kirara & Unfamiliar Man"
+      "Kirara"
     ],
     "displayName": "Kirara"
   },
@@ -16432,9 +14952,7 @@
       "Hawking Operator",
       "Medic Operator",
       "Operator Susan",
-      "Celine",
       "Rookie Engineering Operator",
-      "Celica",
       "Field Operator A",
       "Field Operator",
       "Engineering Operator",
@@ -16457,9 +14975,7 @@
       "Hawking Operator",
       "Medic Operator",
       "Operator Susan",
-      "Celine",
       "Rookie Engineering Operator",
-      "Celica",
       "Field Operator A",
       "Field Operator",
       "Engineering Operator",
@@ -16480,12 +14996,10 @@
   },
   "avg_123_fang_1": {
     "speakerNames": [
-      "Fang",
-      "Aciddrop"
+      "Fang"
     ],
     "searchNames": [
-      "Fang",
-      "Aciddrop"
+      "Fang"
     ],
     "displayName": "Fang"
   },
@@ -16574,25 +15088,19 @@
   },
   "char_1500_skulsr": {
     "speakerNames": [
-      "Skullshatterer",
-      "Franka",
-      "Hoshiguma"
+      "Skullshatterer"
     ],
     "searchNames": [
-      "Skullshatterer",
-      "Franka",
-      "Hoshiguma"
+      "Skullshatterer"
     ],
     "displayName": "Skullshatterer"
   },
   "char_1505_frstar_1": {
     "speakerNames": [
-      "FrostNova",
-      "Phantom Crossbowman"
+      "FrostNova"
     ],
     "searchNames": [
-      "FrostNova",
-      "Phantom Crossbowman"
+      "FrostNova"
     ],
     "displayName": "FrostNova"
   },
@@ -16622,26 +15130,14 @@
     "speakerNames": [
       "Yeti Squad Member",
       "Yeti Squad Member A",
-      "Yeti Squad Member B",
-      "Yeti Squad Member C",
-      "Petrova",
-      "Young",
-      "Nesti",
-      "Yeti Squad Member D",
-      "Mr. Yeti #1",
-      "Yeti #1"
+      "Yeti #1",
+      "Petrova"
     ],
     "searchNames": [
       "Yeti Squad Member",
       "Yeti Squad Member A",
-      "Yeti Squad Member B",
-      "Yeti Squad Member C",
-      "Petrova",
-      "Young",
-      "Nesti",
-      "Yeti Squad Member D",
-      "Mr. Yeti #1",
-      "Yeti #1"
+      "Yeti #1",
+      "Petrova"
     ],
     "displayName": "Yeti Squad Member"
   },
@@ -16656,12 +15152,10 @@
   },
   "avg_npc_057": {
     "speakerNames": [
-      "Ursus Infected",
-      "Tatiana"
+      "Ursus Infected"
     ],
     "searchNames": [
-      "Ursus Infected",
-      "Tatiana"
+      "Ursus Infected"
     ],
     "displayName": "Ursus Infected"
   },
@@ -16776,14 +15270,10 @@
   },
   "avg_npc_227_1": {
     "speakerNames": [
-      "Colonel Hamilton",
-      "Hamilton",
-      "Victorian Soldier"
+      "Colonel Hamilton"
     ],
     "searchNames": [
-      "Colonel Hamilton",
-      "Hamilton",
-      "Victorian Soldier"
+      "Colonel Hamilton"
     ],
     "displayName": "Colonel Hamilton"
   },
@@ -16889,35 +15379,29 @@
   },
   "avg_171_bldsk_1": {
     "speakerNames": [
-      "Warfarin",
-      "Evil Vampire"
+      "Warfarin"
     ],
     "searchNames": [
-      "Warfarin",
-      "Evil Vampire"
+      "Warfarin"
     ],
     "displayName": "Warfarin"
   },
   "avg_npc_425_1": {
     "speakerNames": [
-      "Confessarius Guard",
-      "Confessarius Guard?"
+      "Confessarius Guard"
     ],
     "searchNames": [
-      "Confessarius Guard",
-      "Confessarius Guard?"
+      "Confessarius Guard"
     ],
     "displayName": "Confessarius Guard"
   },
   "avg_npc_062": {
     "speakerNames": [
       "Theresis",
-      "Theresis?",
       "Regent"
     ],
     "searchNames": [
       "Theresis",
-      "Theresis?",
       "Regent"
     ],
     "displayName": "Theresis"
@@ -16925,13 +15409,11 @@
   "avg_npc_403_1": {
     "speakerNames": [
       "Bill",
-      "Self-Salvation Corps Soldier",
-      "Bill?"
+      "Self-Salvation Corps Soldier"
     ],
     "searchNames": [
       "Bill",
-      "Self-Salvation Corps Soldier",
-      "Bill?"
+      "Self-Salvation Corps Soldier"
     ],
     "displayName": "Bill"
   },
@@ -16995,12 +15477,10 @@
   },
   "avg_npc_648_1": {
     "speakerNames": [
-      "Catherine",
-      "Sarkaz Mercenary Captain"
+      "Catherine"
     ],
     "searchNames": [
-      "Catherine",
-      "Sarkaz Mercenary Captain"
+      "Catherine"
     ],
     "displayName": "Catherine"
   },
@@ -17035,12 +15515,10 @@
   },
   "avg_npc_866_1": {
     "speakerNames": [
-      "Delphine",
-      "Damazti Cluster"
+      "Delphine"
     ],
     "searchNames": [
-      "Delphine",
-      "Damazti Cluster"
+      "Delphine"
     ],
     "displayName": "Delphine"
   },
@@ -17057,12 +15535,10 @@
   },
   "avg_npc_868_1": {
     "speakerNames": [
-      "Duke of Windermere",
-      "Damazti Cluster"
+      "Duke of Windermere"
     ],
     "searchNames": [
-      "Duke of Windermere",
-      "Damazti Cluster"
+      "Duke of Windermere"
     ],
     "displayName": "Duke of Windermere"
   },
@@ -17077,12 +15553,10 @@
   },
   "avg_npc_1073_1": {
     "speakerNames": [
-      "Victorian Officer",
-      "Swordguard"
+      "Victorian Officer"
     ],
     "searchNames": [
-      "Victorian Officer",
-      "Swordguard"
+      "Victorian Officer"
     ],
     "displayName": "Victorian Officer"
   },
@@ -17211,12 +15685,10 @@
   },
   "avg_npc_1726_1": {
     "speakerNames": [
-      "'Beepy'",
-      "Pained 'Beepy'"
+      "'Beepy'"
     ],
     "searchNames": [
-      "'Beepy'",
-      "Pained 'Beepy'"
+      "'Beepy'"
     ],
     "displayName": "'Beepy'"
   },
@@ -17577,14 +16049,10 @@
   },
   "avg_4025_aprot2_1": {
     "speakerNames": [
-      "Abyss",
-      "Shalem",
-      "■■"
+      "Abyss"
     ],
     "searchNames": [
-      "Abyss",
-      "Shalem",
-      "■■"
+      "Abyss"
     ],
     "displayName": "Abyss"
   },
@@ -17599,14 +16067,10 @@
   },
   "avg_484_robrta_1": {
     "speakerNames": [
-      "Roberta",
-      "Rubber and Roberta",
-      "Tall Woman and Roberta"
+      "Roberta"
     ],
     "searchNames": [
-      "Roberta",
-      "Rubber and Roberta",
-      "Tall Woman and Roberta"
+      "Roberta"
     ],
     "displayName": "Roberta"
   },
@@ -17648,12 +16112,10 @@
   },
   "avg_369_bena_1": {
     "speakerNames": [
-      "Bena",
-      "??"
+      "Bena"
     ],
     "searchNames": [
-      "Bena",
-      "??"
+      "Bena"
     ],
     "displayName": "Bena"
   },
@@ -17668,12 +16130,10 @@
   },
   "avg_252_bibeak_1": {
     "speakerNames": [
-      "Bibeak",
-      "Bibeak & Mrs. Selis"
+      "Bibeak"
     ],
     "searchNames": [
-      "Bibeak",
-      "Bibeak & Mrs. Selis"
+      "Bibeak"
     ],
     "displayName": "Bibeak"
   },
@@ -17697,12 +16157,10 @@
   },
   "avgnew_129_bluep_1": {
     "speakerNames": [
-      "Blue Poison",
-      "Blue Poison and Glaucus"
+      "Blue Poison"
     ],
     "searchNames": [
-      "Blue Poison",
-      "Blue Poison and Glaucus"
+      "Blue Poison"
     ],
     "displayName": "Blue Poison"
   },
@@ -17737,12 +16195,10 @@
   },
   "avg_356_broca_1": {
     "speakerNames": [
-      "Broca",
-      "Chiave & Broca"
+      "Broca"
     ],
     "searchNames": [
-      "Broca",
-      "Chiave & Broca"
+      "Broca"
     ],
     "displayName": "Broca"
   },
@@ -17777,24 +16233,10 @@
   },
   "avg_npc_605_1": {
     "speakerNames": [
-      "Peacake",
-      "Trey & Twista",
-      "Hammer",
-      "Ice Cube",
-      "B.I.G.",
-      "Metal Crabs",
-      "B.I.G. & Twista",
-      "Twista"
+      "Peacake"
     ],
     "searchNames": [
-      "Peacake",
-      "Trey & Twista",
-      "Hammer",
-      "Ice Cube",
-      "B.I.G.",
-      "Metal Crabs",
-      "B.I.G. & Twista",
-      "Twista"
+      "Peacake"
     ],
     "displayName": "Peacake"
   },
@@ -17828,16 +16270,10 @@
   "avg_npc_1497_1": {
     "speakerNames": [
       "Girl by the Shore",
-      "Sad Girl",
-      "Sobbing Girl",
-      "Happy Girl",
       "Infected Girl"
     ],
     "searchNames": [
       "Girl by the Shore",
-      "Sad Girl",
-      "Sobbing Girl",
-      "Happy Girl",
       "Infected Girl"
     ],
     "displayName": "Girl by the Shore"
@@ -17862,12 +16298,10 @@
   },
   "avg_npc_1493_1": {
     "speakerNames": [
-      "Queen",
-      "Former Queen"
+      "Queen"
     ],
     "searchNames": [
-      "Queen",
-      "Former Queen"
+      "Queen"
     ],
     "displayName": "Queen"
   },
@@ -18003,12 +16437,10 @@
   },
   "avg_npc_538_1": {
     "speakerNames": [
-      "Fowlbeast",
-      "Sir Cromwell"
+      "Fowlbeast"
     ],
     "searchNames": [
-      "Fowlbeast",
-      "Sir Cromwell"
+      "Fowlbeast"
     ],
     "displayName": "Fowlbeast"
   },
@@ -18032,18 +16464,10 @@
   },
   "avg_npc_145": {
     "speakerNames": [
-      "Lens",
-      "M.P.M No. 1",
-      "Mirror",
-      "M.P.M No. 2",
-      "Scene"
+      "Lens"
     ],
     "searchNames": [
-      "Lens",
-      "M.P.M No. 1",
-      "Mirror",
-      "M.P.M No. 2",
-      "Scene"
+      "Lens"
     ],
     "displayName": "Lens"
   },
@@ -18067,14 +16491,10 @@
   },
   "avg_185_frncat_1": {
     "speakerNames": [
-      "Mousse",
-      "Mrs. Selis & Mousse",
-      "Mousse & Anxious Young Operator?"
+      "Mousse"
     ],
     "searchNames": [
-      "Mousse",
-      "Mrs. Selis & Mousse",
-      "Mousse & Anxious Young Operator?"
+      "Mousse"
     ],
     "displayName": "Mousse"
   },
@@ -18107,23 +16527,19 @@
   },
   "avg_npc_1252_1": {
     "speakerNames": [
-      "Embarrassed Old Man",
-      "Spirited Old Man"
+      "Embarrassed Old Man"
     ],
     "searchNames": [
-      "Embarrassed Old Man",
-      "Spirited Old Man"
+      "Embarrassed Old Man"
     ],
     "displayName": "Embarrassed Old Man"
   },
   "avg_449_glider_1": {
     "speakerNames": [
-      "Honeyberry",
-      "Honeyberry & Kirara"
+      "Honeyberry"
     ],
     "searchNames": [
-      "Honeyberry",
-      "Honeyberry & Kirara"
+      "Honeyberry"
     ],
     "displayName": "Honeyberry"
   },
@@ -18171,12 +16587,10 @@
   },
   "avg_133_mm_1": {
     "speakerNames": [
-      "May",
-      "Metis"
+      "May"
     ],
     "searchNames": [
-      "May",
-      "Metis"
+      "May"
     ],
     "displayName": "May"
   },
@@ -18254,23 +16668,19 @@
   },
   "char_150_snakekiller_1": {
     "speakerNames": [
-      "Cuora",
-      "Cardigan and Cuora"
+      "Cuora"
     ],
     "searchNames": [
-      "Cuora",
-      "Cardigan and Cuora"
+      "Cuora"
     ],
     "displayName": "Cuora"
   },
   "char_151_myrtle_1": {
     "speakerNames": [
-      "Myrtle",
-      "Click&Myrtle"
+      "Myrtle"
     ],
     "searchNames": [
-      "Myrtle",
-      "Click&Myrtle"
+      "Myrtle"
     ],
     "displayName": "Myrtle"
   },
@@ -18330,23 +16740,19 @@
   },
   "avg_4006_melnte_1": {
     "speakerNames": [
-      "Melanite",
-      "Breonna"
+      "Melanite"
     ],
     "searchNames": [
-      "Melanite",
-      "Breonna"
+      "Melanite"
     ],
     "displayName": "Melanite"
   },
   "avg_219_meteo_1": {
     "speakerNames": [
-      "Meteorite",
-      "Blunt Wedge"
+      "Meteorite"
     ],
     "searchNames": [
-      "Meteorite",
-      "Blunt Wedge"
+      "Meteorite"
     ],
     "displayName": "Meteorite"
   },
@@ -18397,12 +16803,10 @@
   },
   "avg_npc_545_1": {
     "speakerNames": [
-      "Meeboo SUPER",
-      "Meeboo"
+      "Meeboo SUPER"
     ],
     "searchNames": [
-      "Meeboo SUPER",
-      "Meeboo"
+      "Meeboo SUPER"
     ],
     "displayName": "Meeboo SUPER"
   },
@@ -18626,12 +17030,10 @@
   },
   "avg_363_toddi_1": {
     "speakerNames": [
-      "Toddifons",
-      "Toddifons & Eunectes"
+      "Toddifons"
     ],
     "searchNames": [
-      "Toddifons",
-      "Toddifons & Eunectes"
+      "Toddifons"
     ],
     "displayName": "Toddifons"
   },
@@ -18682,12 +17084,10 @@
   },
   "npc_2004_alty": {
     "speakerNames": [
-      "Alty",
-      "AUS"
+      "Alty"
     ],
     "searchNames": [
-      "Alty",
-      "AUS"
+      "Alty"
     ],
     "displayName": "Alty"
   },
@@ -18702,12 +17102,10 @@
   },
   "npc_2003_frost_1": {
     "speakerNames": [
-      "Frost",
-      "AUS"
+      "Frost"
     ],
     "searchNames": [
-      "Frost",
-      "AUS"
+      "Frost"
     ],
     "displayName": "Frost"
   },
@@ -18777,12 +17175,10 @@
   "char_264_mountain_1": {
     "speakerNames": [
       "Anthony",
-      "Kafka",
       "Mountain"
     ],
     "searchNames": [
       "Anthony",
-      "Kafka",
       "Mountain"
     ],
     "displayName": "Anthony"
@@ -18808,14 +17204,10 @@
   "avg_274_astesia_1": {
     "speakerNames": [
       "Astesia",
-      "Astesia?",
-      "Astgenne",
       "Passerby Liberi"
     ],
     "searchNames": [
       "Astesia",
-      "Astesia?",
-      "Astgenne",
       "Passerby Liberi"
     ],
     "displayName": "Astesia"
@@ -18894,39 +17286,21 @@
   },
   "char_373_leonhardt_1": {
     "speakerNames": [
-      "Leonhardt",
-      "Provence"
+      "Leonhardt"
     ],
     "searchNames": [
-      "Leonhardt",
-      "Provence"
+      "Leonhardt"
     ],
     "displayName": "Leonhardt"
   },
   "char_002_amiya_1": {
     "speakerNames": [
       "Amiya",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
+      "Amiya?"
     ],
     "searchNames": [
       "Amiya",
-      "Amiya?",
-      "Dobermann",
-      "Ace",
-      "Ch'en",
-      "Franka",
-      "Liskarm",
-      "W",
-      "Little Girl",
-      "Another Girl's Voice"
+      "Amiya?"
     ],
     "displayName": "Amiya"
   },
@@ -18973,13 +17347,11 @@
   "avg_npc_1896_1": {
     "speakerNames": [
       "Kinbee?",
-      "Mifune",
-      "Mifune's Voice"
+      "Mifune"
     ],
     "searchNames": [
       "Kinbee?",
-      "Mifune",
-      "Mifune's Voice"
+      "Mifune"
     ],
     "displayName": "Kinbee?"
   },
@@ -19003,23 +17375,19 @@
   },
   "avg_npc_1895_1": {
     "speakerNames": [
-      "Tessai",
-      "Tessai's Voice"
+      "Tessai"
     ],
     "searchNames": [
-      "Tessai",
-      "Tessai's Voice"
+      "Tessai"
     ],
     "displayName": "Tessai"
   },
   "avg_4202_haruka_1": {
     "speakerNames": [
-      "Momoka",
-      "Novice Ninja"
+      "Momoka"
     ],
     "searchNames": [
-      "Momoka",
-      "Novice Ninja"
+      "Momoka"
     ],
     "displayName": "Momoka"
   },
@@ -19037,13 +17405,11 @@
   "avg_npc_1897_1": {
     "speakerNames": [
       "Kichisei",
-      "Kajimachi Resident",
-      "Passionate Fans"
+      "Kajimachi Resident"
     ],
     "searchNames": [
       "Kichisei",
-      "Kajimachi Resident",
-      "Passionate Fans"
+      "Kajimachi Resident"
     ],
     "displayName": "Kichisei"
   },
@@ -19074,19 +17440,15 @@
       "Fierce Yakuza",
       "Lazy Yakuza",
       "Yakuza and Ninjas",
-      "Yakuza Captain",
       "Anguished Yakuza",
-      "Jirou",
-      "Yakuza B"
+      "Jirou"
     ],
     "searchNames": [
       "Fierce Yakuza",
       "Lazy Yakuza",
       "Yakuza and Ninjas",
-      "Yakuza Captain",
       "Anguished Yakuza",
-      "Jirou",
-      "Yakuza B"
+      "Jirou"
     ],
     "displayName": "Fierce Yakuza"
   },
@@ -19102,17 +17464,13 @@
   "avg_npc_1907_1": {
     "speakerNames": [
       "Yakuza Members",
-      "Bold Yakuza",
       "Posturing Yakuza",
-      "Yakuza A",
-      "Yakuza C"
+      "Yakuza A"
     ],
     "searchNames": [
       "Yakuza Members",
-      "Bold Yakuza",
       "Posturing Yakuza",
-      "Yakuza A",
-      "Yakuza C"
+      "Yakuza A"
     ],
     "displayName": "Yakuza Members"
   },
@@ -19265,12 +17623,10 @@
   "avg_npc_1914_1": {
     "speakerNames": [
       "Anxious Police Officer",
-      "Target-Seeking Police Officer",
       "Tired Police"
     ],
     "searchNames": [
       "Anxious Police Officer",
-      "Target-Seeking Police Officer",
       "Tired Police"
     ],
     "displayName": "Anxious Police Officer"
