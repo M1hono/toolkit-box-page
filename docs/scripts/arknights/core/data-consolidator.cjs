@@ -276,6 +276,16 @@ async function consolidateResults(results, langCode) {
     saveLanguageSearchIndex(langCode, searchIndex);
     saveScanState(scanState);
 
+    // Save debug info if Kal'tsit debug is enabled
+    if (process.env.DEBUG_KALTS === 'true') {
+        const { KALTS_DEBUG } = require('./story-parser.cjs');
+        if (KALTS_DEBUG.issues.length > 0) {
+            const debugFile = path.resolve(__dirname, `../debug-kalts-${langCode}.json`);
+            fs.writeFileSync(debugFile, JSON.stringify(KALTS_DEBUG.issues, null, 2), 'utf8');
+            console.log(`   ⚠️  Kal'tsit debug: ${KALTS_DEBUG.issues.length} issues found → ${debugFile}`);
+        }
+    }
+
     console.log(`Consolidation complete for ${langCode}`);
     console.log(
         `   Global: ${Object.keys(globalChars).length} total (${newChars} new)`
