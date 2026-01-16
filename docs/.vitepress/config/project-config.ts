@@ -75,8 +75,8 @@ export const projectConfig: ProjectConfig = {
             giscusLang: "en",
         },
         {
-            code: "ja",
-            name: "ja",
+            code: "ja-JP",
+            name: "ja-JP",
             displayName: "日本語",
             isDefault: false,
             link: "/ja-JP/",
@@ -121,7 +121,7 @@ export const projectConfig: ProjectConfig = {
         drawio: false,
         markmap: false,
         multilingual: false,
-        autoSidebar: false,
+        autoSidebar: true,
         editLink: false,
     },
 

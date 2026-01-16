@@ -394,10 +394,13 @@
         );
     });
 
-    const characterStories = computed(() => {
-        if (!selectedCharacter.value) return [];
-        return getStoryReadersForCharacter(selectedCharacter.value.charId);
-    });
+    const characterStories = ref<Array<{ path: string; urls: any }>>([]);
+
+    async function loadCharacterStories(charId: string) {
+        characterStories.value = [];
+        const stories = await getStoryReadersForCharacter(charId);
+        characterStories.value = stories;
+    }
 
     function getThumbnailUrl(variant: string): string {
         return `https://raw.githubusercontent.com/akgcc/arkdata/refs/heads/main/thumbs/${encodeURIComponent(
@@ -458,6 +461,7 @@
             selectedCharacter.value = null;
             selectedName.value = null;
             selectedCharacterId.value = null;
+            characterStories.value = [];
             if (typeof window !== "undefined") {
                 window.history.pushState({}, "", route.path);
             }
@@ -495,6 +499,7 @@ Available characters for "${name}":`,
 
         selectedCharacter.value = char;
         selectedVariantIndex.value = 0;
+        loadCharacterStories(charId);
 
         if (typeof window !== "undefined") {
             const routeParam = `${encodeURIComponent(name)}_${charId}`;

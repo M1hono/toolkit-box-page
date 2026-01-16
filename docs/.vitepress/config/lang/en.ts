@@ -35,7 +35,9 @@ export const en_US = <DefaultTheme.Config>{
                 ]
             }
         ],
-        sidebar: getSidebarSync(getLangCodeFromLink(langConfig.link!)),
+        sidebar: isFeatureEnabled('autoSidebar') 
+            ? getSidebarSync(getLangCodeFromLink(langConfig.link!)) 
+            : [],
         outline: {
             level: "deep",
             label: "Page Content",

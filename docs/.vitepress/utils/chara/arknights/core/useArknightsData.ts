@@ -94,14 +94,17 @@ export function useArknightsData() {
     /**
      * Get story reader URLs for a character's stories
      */
-    function getStoryReadersForCharacter(
+    async function getStoryReadersForCharacter(
         id: string
-    ): Array<{ path: string; urls: StoryReaderUrls }> {
+    ): Promise<Array<{ path: string; urls: StoryReaderUrls }>> {
         const stories = getStoriesForCharacter(id);
-        return stories.map((path) => ({
-            path,
-            urls: getStoryReaderUrls(path, currentLang.value),
-        }));
+        const results = await Promise.all(
+            stories.map(async (path) => ({
+                path,
+                urls: await getStoryReaderUrls(path, currentLang.value),
+            }))
+        );
+        return results;
     }
 
     /**

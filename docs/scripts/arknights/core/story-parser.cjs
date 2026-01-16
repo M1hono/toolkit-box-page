@@ -58,6 +58,10 @@ const EXCLUDE_IDS = new Set([
     "$ill_amiya_normal"
 ]);
 
+const CHAR_PATH_FIXES = {
+    "char_2006_weiywfmzuki": "char_2006_fmzuki",
+};
+
 function normalizeRawId(id) {
     if (!id || id === "" || id === "char_empty") return "";
     id = id.trim();
@@ -71,6 +75,11 @@ function normalizeRawId(id) {
         baseId = "char_002_amiya_1";
     } else if (baseId === "char_2001_aya_1") {
         baseId = "npc_2001_aya_1";
+    }
+    
+    // Apply character path fixes
+    if (CHAR_PATH_FIXES[baseId]) {
+        baseId = CHAR_PATH_FIXES[baseId];
     }
 
     if (EXCLUDE_IDS.has(baseId)) return "";

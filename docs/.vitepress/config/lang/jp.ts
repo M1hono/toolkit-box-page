@@ -3,9 +3,9 @@ import { getProjectInfo, getLanguageByCode, getLangCodeFromLink, getSearchLocale
 import { getSidebarSync } from '../../utils/sidebar';
 
 const projectInfo = getProjectInfo();
-const langConfig = getLanguageByCode('ja')!;
+const langConfig = getLanguageByCode('ja-JP')!;
 
-export const ja = <DefaultTheme.Config>{
+export const ja_JP = <DefaultTheme.Config>{
     label: langConfig.displayName,
     lang: langConfig.giscusLang,
     link: langConfig.link,
@@ -35,7 +35,9 @@ export const ja = <DefaultTheme.Config>{
                 ]
             }
         ],
-        sidebar: getSidebarSync(getLangCodeFromLink(langConfig.link!)),
+        sidebar: isFeatureEnabled('autoSidebar') 
+            ? getSidebarSync(getLangCodeFromLink(langConfig.link!)) 
+            : [],
         outline: {
             level: "deep",
             label: "ページナビゲーション",
