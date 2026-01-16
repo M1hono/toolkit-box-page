@@ -133,9 +133,13 @@ function parseStory(text, storyId, langCode = 'zh_CN') {
         // Get the character who is currently speaking based on focus
         if (stage.speaker === 99) return null; // All speaking - don't map
         if (stage.speaker === -1 || stage.speaker === 0) return null; // None/dialog
+        if (stage.speaker === "") return null; // Empty speaker
         
+        // Map speaker number to slot key
         const slotKey = stage.speaker === 1 ? "name" : `name${stage.speaker}`;
-        return stage.characters[slotKey] || "";
+        const speakingChar = stage.characters[slotKey] || "";
+        
+        return speakingChar;
     };
     
     lines.forEach(line => {
