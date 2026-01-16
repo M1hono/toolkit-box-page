@@ -95,8 +95,8 @@ jobs:
               uses: actions/upload-artifact@v4
               with:
                   name: kalts-debug-files-${{ github.run_number }}
-                  path: |
-                      docs/.debug/
+                  path: docs/.debug/**/*
+                  if-no-files-found: warn
                   retention-days: 30
 
             - name: Update FGO Data

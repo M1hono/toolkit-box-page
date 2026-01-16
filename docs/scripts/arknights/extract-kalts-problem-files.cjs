@@ -75,10 +75,23 @@ async function main() {
         }
     }
 
-    // Save manifest
+    // Always save manifest (even if empty) so artifact upload succeeds
     const manifestFile = path.resolve(__dirname, '../../.debug/kalts-problem-files.json');
     ensureDir(path.dirname(manifestFile));
     fs.writeFileSync(manifestFile, JSON.stringify(allResults, null, 2), 'utf8');
+    
+    // Also create a summary file
+    const summaryFile = path.resolve(__dirname, '../../.debug/summary.txt');
+    const totalFiles = Object.values(allResults).reduce((sum, files) => sum + files.length, 0);
+    fs.writeFileSync(summaryFile, 
+        `Kal'tsit Debug Extraction\n` +
+        `========================\n\n` +
+        `Total problematic files: ${totalFiles}\n\n` +
+        Object.entries(allResults).map(([lang, files]) => 
+            `${lang}: ${files.length} files`
+        ).join('\n'),
+        'utf8'
+    );
     
     console.log(`\n✅ Problem files extracted to: docs/.debug/kalts-stories/`);
     console.log(`✅ Manifest saved to: docs/.debug/kalts-problem-files.json`);
