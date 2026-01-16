@@ -1,6 +1,19 @@
 /**
- * @fileoverview R2 Data Synchronization Script
- * @description Uploads JSON data files (names.json, storys.json, etc.) to Cloudflare R2
+ * @fileoverview R2 JSON Data Synchronization Script
+ * @module r2/data-sync
+ * @description
+ * Uploads JSON data files to Cloudflare R2 for fast CDN delivery.
+ * Always uploads (no skip logic) to ensure fresh data.
+ * Processes all game data files: names.json, storys.json, servants.json, etc.
+ * 
+ * Supports:
+ * - Global data (characters.json, scan_stats.json)
+ * - Language-specific data (names.json, search_index.json, etc.)
+ * - Both Arknights and FGO game data
+ * 
+ * @example
+ * const { syncDataToR2 } = require('./sync-data-to-r2');
+ * await syncDataToR2();
  */
 
 const fs = require("fs");
@@ -8,7 +21,6 @@ const path = require("path");
 const {
     S3Client,
     PutObjectCommand,
-    HeadObjectCommand,
 } = require("@aws-sdk/client-s3");
 const PROJECT_CONFIG = require("./project-config.cjs");
 const R2_CONFIG = require("./r2-config.cjs");
@@ -66,7 +78,8 @@ async function uploadJsonFile(localPath, r2Key) {
 }
 
 /**
- * Sync all JSON data files to R2
+ * Synchronize all JSON data files to R2 storage
+ * @returns {Promise<void>}
  */
 async function syncDataToR2() {
     console.log("Starting R2 data synchronization...\n");
@@ -117,10 +130,10 @@ async function syncDataToR2() {
         else failed++;
     }
 
-    console.log("\n📊 R2 Data Sync Summary:");
-    console.log(`   ✅ Uploaded: ${uploaded}`);
-    console.log(`   ❌ Failed: ${failed}`);
-    console.log(`   📁 Total: ${filesToUpload.length}`);
+    console.log("\nR2 Data Sync Summary:");
+    console.log(`   Uploaded: ${uploaded}`);
+    console.log(`   Failed: ${failed}`);
+    console.log(`   Total: ${filesToUpload.length}`);
 }
 
 if (require.main === module) {
@@ -130,4 +143,9 @@ if (require.main === module) {
     });
 }
 
+/**
+ * @exports r2/data-sync
+ * @property {Function} syncDataToR2 - Main data sync function
+ * @property {Function} uploadJsonFile - Upload single JSON file
+ */
 module.exports = { syncDataToR2, uploadJsonFile };

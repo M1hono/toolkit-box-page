@@ -94,4 +94,8 @@ if (require.main === module) {
     });
 }
 
+/**
+ * @exports r2/character-sync
+ * @property {Function} main - Main synchronization function
+ */
 module.exports = { main };

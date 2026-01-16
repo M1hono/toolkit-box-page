@@ -87,6 +87,17 @@ jobs:
                   yarn r2:sync-avatars
                   echo "R2 avatar sync complete"
 
+            - name: Sync story icons to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Starting R2 story icons sync..."
+                  yarn r2:sync-icons
+                  echo "R2 story icons sync complete"
+
             - name: Upload sync logs
               if: always()
               uses: actions/upload-artifact@v4

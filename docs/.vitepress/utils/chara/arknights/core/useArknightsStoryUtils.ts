@@ -65,53 +65,60 @@ export function getCharacterIdFromRecordActId(
 }
 
 /**
- * Get character avatar URL for arknights characters
- * Tries R2 first for faster loading, GitHub as fallback
- * Returns primary URL (browser will handle fallback via onerror)
+ * Get character avatar URL with R2 first, fallback to GitHub
+ * @param {string} charId - Character ID
+ * @param {boolean} useR2 - Whether to use R2 (true) or fallback (false)
+ * @returns {string} Avatar URL
  */
-function getCharacterThumbnailUrl(charId: string): string {
-    // Don't add #1$1 suffix for avatars - use base ID only
+function getCharacterThumbnailUrl(charId: string, useR2: boolean = true): string {
     const baseId = charId.split('#')[0].toLowerCase();
     
-    // Try R2 first for better performance
-    // If R2 fails, component's v-img error handler can fallback to GitHub
-    return `https://arkimage.top/arknights/avatars/${encodeURIComponent(baseId)}.png`;
+    if (useR2) {
+        return `https://arkimage.top/arknights/avatars/${encodeURIComponent(baseId)}.png`;
+    } else {
+        return `https://raw.githubusercontent.com/akgcc/arkdata/refs/heads/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(baseId)}.png`;
+    }
 }
 
 /**
  * Get GitHub fallback URL for character avatar
  */
 function getCharacterAvatarFallbackUrl(charId: string): string {
-    const baseId = charId.split('#')[0].toLowerCase();
-    return `https://raw.githubusercontent.com/akgcc/arkdata/refs/heads/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(baseId)}.png`;
+    return getCharacterThumbnailUrl(charId, false);
 }
 
 /**
- * Get story icon URL based on story path and type
+ * Get story icon URL with R2 first, fallback to old CDN
  * @param path - Story file path
  * @param charDict - Optional character dictionary for record stories
+ * @param useR2 - Whether to use R2 (true) or fallback (false)
  * @returns Icon URL
  */
-export function getStoryIconUrl(path: string, charDict?: Record<string, { id: string; name: string }>): string {
+export function getStoryIconUrl(
+    path: string, 
+    charDict?: Record<string, { id: string; name: string }>,
+    useR2: boolean = true
+): string {
     const parts = path.split("/");
     const filename = parts[parts.length - 1].replace(".txt", "");
 
     // Record stories (operator records) - show character avatar using chardict
     if (filename.startsWith("story_") && charDict) {
-        // Extract actId from path for record stories
         const actIdMatch = path.match(/story_[^\/]+/);
         if (actIdMatch) {
             const actId = actIdMatch[0].replace('.txt', '');
             const charId = getCharacterIdFromRecordActId(actId, charDict);
             if (charId) {
-                return getCharacterThumbnailUrl(charId);
+                return getCharacterThumbnailUrl(charId, useR2);
             }
         }
     }
 
+    const baseUrl = useR2 ? 'https://arkimage.top/arknights' : 'https://r2.m31ns.top/img';
+
     // Activities type (side stories)
     if (parts[0] === "activities") {
-        return `https://r2.m31ns.top/img/banners/${parts[1]}.png`;
+        return `${baseUrl}/${useR2 ? 'banners' : 'banners'}/${parts[1]}.png`;
     }
 
     // Main stories
@@ -119,16 +126,15 @@ export function getStoryIconUrl(path: string, charDict?: Record<string, { id: st
     const hasSt = parts.includes("st");
 
     if (hasMain || hasSt) {
-        // Extract chapter number from filename: level_main_15-10_beg → 15
         const match = filename.match(/(\d+)-\d+/);
         if (match && match[1]) {
             const chapterNum = parseInt(match[1], 10);
-            return `https://r2.m31ns.top/img/icons/main_${chapterNum}.png`;
+            return `${baseUrl}/${useR2 ? 'icons' : 'icons'}/main_${chapterNum}.png`;
         }
     }
 
     // Fallback to chapter ID
-    return `https://r2.m31ns.top/img/icons/${parts[1] || parts[0]}.png`;
+    return `${baseUrl}/${useR2 ? 'icons' : 'icons'}/${parts[1] || parts[0]}.png`;
 }
 
 export function useArknightsStoryUtils() {

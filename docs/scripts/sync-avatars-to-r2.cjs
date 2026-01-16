@@ -89,7 +89,8 @@ async function syncAvatar(charId, cacheDir) {
  * @returns {Promise<string[]>} Array of character IDs
  */
 async function getAllCharacterIds() {
-    const languages = ["cn", "en", "jp"];
+    const langMap = { 'zh_CN': 'cn', 'en_US': 'en', 'ja_JP': 'jp' };
+    const languages = PROJECT_CONFIG.GAMES.arknights.supported_langs.map(lang => langMap[lang]);
     const allCharIds = new Set();
 
     for (const lang of languages) {

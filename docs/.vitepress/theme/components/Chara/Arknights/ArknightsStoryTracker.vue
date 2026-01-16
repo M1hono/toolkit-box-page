@@ -436,24 +436,8 @@
     }
 
     function getStoryIconFallback(path: string): string {
-        const { getCharacterAvatarFallbackUrl } = useArknightsStoryUtils();
-        const parts = path.split("/");
-        const filename = parts[parts.length - 1].replace(".txt", "");
-
-        // For record stories, use GitHub fallback URL
-        if (filename.startsWith("story_")) {
-            const actIdMatch = path.match(/story_[^\/]+/);
-            if (actIdMatch) {
-                const actId = actIdMatch[0].replace('.txt', '');
-                const charId = getCharacterFromRecordActId(actId);
-                if (charId) {
-                    return getCharacterAvatarFallbackUrl(charId);
-                }
-            }
-        }
-
-        // Other stories use generic fallback
-        return `https://r2.m31ns.top/img/icons/404.png`;
+        // Use old CDN as fallback
+        return getStoryIconUrl(path, charDict.value, false);
     }
 
     function handleStoryIconError(path: string) {
