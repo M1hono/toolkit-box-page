@@ -30,8 +30,9 @@ function loadCharacterFixes() {
 function loadExcludeMappings(langCode) {
     const fs = require('fs');
     const path = require('path');
-    const PROJECT_CONFIG = require('../../project-config.cjs');
-    const localeCode = PROJECT_CONFIG.getLocaleCode(langCode);
+    
+    const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja-JP' };
+    const localeCode = langMap[langCode] || langCode;
     const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${localeCode}/arknights-exclude-mapping.json`);
     return fs.existsSync(excludePath) ? JSON.parse(fs.readFileSync(excludePath, 'utf8')) : {};
 }

@@ -217,13 +217,9 @@ function parseStory(text, storyId, langCode = "zh_CN") {
             if (!actualSpeaker) {
                 const speakingChar = getSpeakingCharacter();
                 if (speakingChar) {
-                    const baseId = getBaseCharacterId(speakingChar);
-                    if (
-                        baseId &&
-                        (!stage.names[baseId] || stage.names[baseId].size === 0)
-                    ) {
-                        actualSpeaker = speakingChar;
-                    }
+                    actualSpeaker = speakingChar;
+                } else if (stage.spotlight && stage.characters[stage.spotlight]) {
+                    actualSpeaker = stage.characters[stage.spotlight];
                 }
             }
 

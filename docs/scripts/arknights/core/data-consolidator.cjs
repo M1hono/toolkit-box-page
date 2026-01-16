@@ -199,7 +199,7 @@ async function consolidateResults(results, langCode) {
             if (excludeList.includes(id)) {
                 continue;
             }
-            const actualId = combineRules[id] || id;
+            const actualId = characterFixes[id] || id;
             if (!searchIndex[name]) {
                 searchIndex[name] = actualId;
             } else if (typeof searchIndex[name] === "string") {
