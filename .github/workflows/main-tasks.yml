@@ -89,15 +89,12 @@ jobs:
                   echo "Extracting debug files for Kal'tsit name mappings..."
                   yarn data:extract-kalts-debug
                   echo "Debug extraction complete"
-
-            - name: Upload Kal'tsit Debug Files
-              if: always()
-              uses: actions/upload-artifact@v4
-              with:
-                  name: kalts-debug-files-${{ github.run_number }}
-                  path: docs/.debug/**/*
-                  if-no-files-found: warn
-                  retention-days: 30
+                  
+                  if [ -d ".debug" ] && [ "$(ls -A .debug 2>/dev/null)" ]; then
+                    echo "Debug files created, will commit"
+                  else
+                    echo "No debug files created"
+                  fi
 
             - name: Update FGO Data
               if: ${{ inputs.task_priority == 'fgo-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
@@ -124,7 +121,7 @@ jobs:
                     git diff --cached --name-only
                   fi
 
-            - name: Commit data changes (exclude story files)
+            - name: Commit data changes (exclude story files, include debug files)
               if: steps.check-changes.outputs.changed == 'true'
               run: |
                   git config --local user.email "action@github.com"
@@ -135,9 +132,15 @@ jobs:
                   git reset docs/src/public/data/*/arknights/story/
                   git reset docs/src/public/data/**/story/
                   
+                  # Add debug files if they exist
+                  if [ -d "docs/.debug" ]; then
+                    git add docs/.debug/
+                    echo "Debug files added to commit"
+                  fi
+                  
                   git commit -m "Update game data $(date '+%Y-%m-%d %H:%M:%S')"
 
-                  echo "Pushing data updates..."
+                  echo "Pushing data and debug files..."
                   for i in {1..3}; do
                     if git push; then
                       echo "Push successful"
