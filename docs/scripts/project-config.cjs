@@ -107,6 +107,22 @@ const PROJECT_CONFIG = {
      */
     getGlobalPath(gameId) {
         return path.resolve(PUBLIC_DATA_ROOT, 'global', gameId);
+    },
+
+    /**
+     * Get the data source URL for Arknights game data
+     * @param {string} langCode - Language code (zh_CN, en_US, ja_JP)
+     * @returns {string} - GitHub raw content URL
+     */
+    getArknightsDataUrl(langCode) {
+        const baseUrl = 'https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master';
+        const dataPaths = this.REPOSITORIES.arknights.dataPaths;
+        const dataPath = dataPaths[langCode];
+        if (!dataPath) return null;
+        
+        // Extract language directory (cn, en, jp) from dataPath
+        const langDir = dataPath.split('/')[0];
+        return `${baseUrl}/${langDir}`;
     }
 };
 
