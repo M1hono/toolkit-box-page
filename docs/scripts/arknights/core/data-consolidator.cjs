@@ -52,16 +52,16 @@ function loadExcludeRules(langCode) {
 }
 
 /**
- * Load global combine rules
- * @returns {Object} Combine rules: { sourceId: targetId }
+ * Load global character fixes
+ * @returns {Object} Character fixes: { sourceId: targetId }
  */
-function loadCombineRules() {
-    const combinePath = path.resolve(
+function loadCharacterFixes() {
+    const fixesPath = path.resolve(
         __dirname,
-        "../../../.vitepress/config/arknights-combine.json"
+        "../../../.vitepress/config/arknights-fixes.json"
     );
-    return fs.existsSync(combinePath)
-        ? JSON.parse(fs.readFileSync(combinePath, "utf8"))
+    return fs.existsSync(fixesPath)
+        ? JSON.parse(fs.readFileSync(fixesPath, "utf8"))
         : {};
 }
 
@@ -76,14 +76,14 @@ async function consolidateResults(results, langCode) {
     const langNames = loadLanguageNames(langCode);
     const langStorys = loadLanguageStorys(langCode);
     const scanState = loadScanState();
-    const combineRules = loadCombineRules();
+    const characterFixes = loadCharacterFixes();
 
     const isMasterSource = langCode === "zh_CN";
     let newChars = 0;
     let updatedNames = 0;
 
     for (const [baseId, data] of results) {
-        const targetId = combineRules[baseId] || baseId;
+        const targetId = characterFixes[baseId] || baseId;
         if (isMasterSource || !globalChars[targetId]) {
             if (!globalChars[targetId]) {
                 const renamedVariants = (
@@ -141,8 +141,8 @@ async function consolidateResults(results, langCode) {
             ).sort();
         }
     }
-    Object.keys(combineRules).forEach((sourceId) => {
-        const targetId = combineRules[sourceId];
+    Object.keys(characterFixes).forEach((sourceId) => {
+        const targetId = characterFixes[sourceId];
         if (sourceId !== targetId) {
             if (globalChars[sourceId]) {
                 console.log(

@@ -53,14 +53,14 @@ function loadExcludeRules(langCode) {
  * Load global combine rules
  * @returns {Object} Combine rules
  */
-function loadCombineRules() {
-    const combinePath = path.resolve(
+function loadCharacterFixes() {
+    const fixesPath = path.resolve(
         __dirname,
-        "../../.vitepress/config/arknights-combine.json"
+        "../../.vitepress/config/arknights-fixes.json"
     );
-    if (fs.existsSync(combinePath)) {
-        console.log(`Loaded combine rules`);
-        return JSON.parse(fs.readFileSync(combinePath, "utf8"));
+    if (fs.existsSync(fixesPath)) {
+        console.log(`Loaded character fixes`);
+        return JSON.parse(fs.readFileSync(fixesPath, "utf8"));
     }
     return {};
 }
@@ -109,8 +109,8 @@ async function updateNamesForLanguage(langCode) {
                         );
 
                         if (data.storyFiles && data.storyFiles.length > 0) {
-                            const combineRules = loadCombineRules();
-                            const targetId = combineRules[charId] || charId;
+                        const characterFixes = loadCharacterFixes();
+                        const targetId = characterFixes[charId] || charId;
                             const existing = characterStorys[targetId] || [];
                             characterStorys[targetId] = Array.from(
                                 new Set([...existing, ...data.storyFiles])
@@ -153,7 +153,7 @@ async function updateNamesForLanguage(langCode) {
     }
 
     const excludeRules = loadExcludeRules(langCode);
-    const combineRules = loadCombineRules();
+    const characterFixes = loadCharacterFixes();
 
     let cleanupCount = 0;
     for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
@@ -197,8 +197,8 @@ async function updateNamesForLanguage(langCode) {
                 continue;
             }
 
-            const actualId = combineRules[id] || id;
-            if (combineRules[id]) combinedCount++;
+            const actualId = characterFixes[id] || id;
+            if (characterFixes[id]) combinedCount++;
 
             if (!searchIndex[name]) {
                 searchIndex[name] = actualId;

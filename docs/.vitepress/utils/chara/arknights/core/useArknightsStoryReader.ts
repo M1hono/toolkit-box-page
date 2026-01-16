@@ -28,7 +28,7 @@ export async function getStoryReaderUrls(
     // 1. Arknights Story Text Reader (050644zf)
     const readerLang = normalizeLangForTextReader(lang);
     const cleanPath = storyPath.replace(/\.txt$/, "");
-    const textReader = `https://050644zf.github.io/ArknightsStoryTextReader/#/${readerLang}/content?f=${cleanPath}`;
+    const textReader = `https://astr.pages.dev/#/${readerLang}/content?f=${cleanPath}`;
 
     // 2. akgcc Story Reader with correct type, actId, and index
     const storyType = getStoryType(cleanPath);

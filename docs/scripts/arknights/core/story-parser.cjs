@@ -15,8 +15,13 @@
 
 const fs = require("fs");
 const path = require("path");
-const { shouldExcludeMapping } = require("../arknights-exclude-config.cjs");
-const { shouldFilterSpecialName } = require("../arknights-special-config.cjs");
+const { 
+    shouldExcludeMapping, 
+    shouldFilterSpecialName,
+    EXCLUDE_IDS,
+    applyCharacterFixes,
+    SPECIAL_ID_MAPPINGS
+} = require("../character-fixes-config.cjs");
 const PROJECT_CONFIG = require("../../project-config.cjs");
 
 const langExcludeCache = {};
@@ -53,7 +58,7 @@ function loadLangExcludeRules(langCode) {
  * @returns {boolean} True if mapping should be excluded
  */
 function shouldExcludeMappingFull(charId, speakerName, langCode) {
-    if (shouldExcludeMapping(charId, speakerName)) return true;
+    if (shouldExcludeMapping(charId, speakerName, langCode)) return true;
 
     const langRules = loadLangExcludeRules(langCode);
     const excludeList = langRules[speakerName] || [];
@@ -75,12 +80,6 @@ function getBaseCharacterId(id) {
     return cleaned || id.toLowerCase();
 }
 
-const EXCLUDE_IDS = new Set(["char_1012_skadi2_1"]);
-
-const CHAR_PATH_FIXES = {
-    char_2006_weiywfmzuki: "char_2006_fmzuki",
-    $ill_amiya_normal: "char_002_amiya_1",
-};
 
 /**
  * Normalize character ID from story script format to standard format
@@ -96,20 +95,16 @@ function normalizeRawId(id) {
     if (!matches) return "";
     let baseId = matches[1].trim().replace(/\s+/g, "_").toLowerCase();
 
-    if (baseId === "ill_amiya_normal") {
-        baseId = "char_002_amiya_1";
-    } else if (baseId === "char_2001_aya_1") {
-        baseId = "npc_2001_aya_1";
+    if (SPECIAL_ID_MAPPINGS[baseId]) {
+        baseId = SPECIAL_ID_MAPPINGS[baseId];
     }
 
-    if (CHAR_PATH_FIXES[baseId]) {
-        baseId = CHAR_PATH_FIXES[baseId];
-    }
+    baseId = applyCharacterFixes(baseId);
 
     if (EXCLUDE_IDS.has(baseId)) return "";
 
-    const faceNum = matches[2] || "1";
-    const bodyNum = matches[3] || "1";
+    const faceNum = parseInt(matches[2] || "1", 10);
+    const bodyNum = parseInt(matches[3] || "1", 10);
     return `${baseId}#${faceNum}$${bodyNum}`;
 }
 
