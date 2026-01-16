@@ -15,8 +15,8 @@ const { ensureDir } = require('../shared/file-utils.cjs');
  */
 function sparseCheckoutStory(langCode) {
     const repoUrl = langCode === 'zh_CN' 
-        ? "https://github.com/Kengxxiao/ArknightsGameData.git"
-        : "https://github.com/ArknightsAssets/ArknightsGamedata.git";
+        ? "https:
+        : "https:
     
     const langPath = PROJECT_CONFIG.getDataPath(langCode, 'arknights');
     const targetDir = path.resolve(langPath, 'story_repo');
@@ -44,7 +44,7 @@ function sparseCheckoutStory(langCode) {
             execSync(`cp -R "${sourcePath}"* "${finalDir}/"`);
         }
         
-        process.chdir(__dirname); // Restore context
+        process.chdir(__dirname);
         fs.rmSync(targetDir, { recursive: true, force: true });
     } catch (e) {
         console.error(`ERROR: Synchronization session failed for ${langCode}: ${e.message}`);

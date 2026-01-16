@@ -1,6 +1,14 @@
 /**
  * @fileoverview Arknights Story File Extractor
- * @description Extracts story files from cloned git repository to target locations
+ * @module arknights/story-extractor
+ * @description
+ * Extracts and filters story files from git repository.
+ * Only copies files listed in story_review_table.json (official game stories).
+ * Automatically removes obsolete story files no longer in game data.
+ *
+ * @example
+ * const { extractStoryFiles } = require('./story-extractor');
+ * await extractStoryFiles('zh_CN', sourceDir, targetDir);
  */
 
 const fs = require("fs");
@@ -28,14 +36,11 @@ async function fetchValidStoryPaths(langCode) {
         const storyReview = response.data;
         const validPaths = new Set();
 
-        // Collect all storyTxt paths from all acts
         for (const actData of Object.values(storyReview)) {
             if (actData?.infoUnlockDatas) {
                 for (const story of actData.infoUnlockDatas) {
                     if (story.storyTxt) {
-                        // Add the path with .txt extension
                         validPaths.add(`${story.storyTxt}.txt`);
-                        // Also add without extension for flexibility
                         validPaths.add(story.storyTxt);
                     }
                 }
@@ -70,12 +75,8 @@ async function extractStoryFiles(langCode, sourceStoryDir, targetStoryDir) {
     }
 
     ensureDir(targetStoryDir);
-
-    // Fetch valid story paths from story_review_table.json
     const validPaths = await fetchValidStoryPaths(langCode);
     const storyFiles = walkDir(sourceStoryDir, ".txt");
-
-    // Clean up old files that are no longer in story_review_table
     let deletedCount = 0;
     if (validPaths && fs.existsSync(targetStoryDir)) {
         const existingFiles = walkDir(targetStoryDir, ".txt");
@@ -105,7 +106,6 @@ async function extractStoryFiles(langCode, sourceStoryDir, targetStoryDir) {
     let skippedCount = 0;
 
     for (const storyFile of storyFiles) {
-        // Filter: only copy files that are in story_review_table
         if (validPaths) {
             const isValid =
                 validPaths.has(storyFile) ||
@@ -120,7 +120,7 @@ async function extractStoryFiles(langCode, sourceStoryDir, targetStoryDir) {
         try {
             const sourcePath = path.join(sourceStoryDir, storyFile);
             const targetPath = path.join(targetStoryDir, storyFile);
-            
+
             ensureDir(path.dirname(targetPath));
             fs.copyFileSync(sourcePath, targetPath);
             successCount++;

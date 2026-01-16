@@ -14,8 +14,8 @@ async function run() {
     const results = [];
 
     const sources = [
-        "https://raw.githubusercontent.com/akgcc/arkdata/main/assets/avg/characters/",
-        "https://raw.githubusercontent.com/Aceship/Arknight-Images/main/avg/characters/"
+        "https:
+        "https:
     ];
 
     for (const [baseId, char] of characters) {

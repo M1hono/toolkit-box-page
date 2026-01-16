@@ -1,7 +1,19 @@
 /**
  * @fileoverview Arknights Data Consolidator
- * @description Merges and splits character data between global metadata and language-specific names
- * IMPORTANT: Only updates/merges data, never deletes existing entries
+ * @module arknights/data-consolidator
+ * @description
+ * Consolidates parsed story data into structured JSON files for frontend consumption.
+ * Handles data merging, combine rules, exclude rules, and cleanup operations.
+ *
+ * Output files:
+ * - global/arknights/characters.json - Character metadata
+ * - {lang}/arknights/names.json - Character names per language
+ * - {lang}/arknights/storys.json - Story file mappings
+ * - {lang}/arknights/search_index.json - Name search index
+ *
+ * @example
+ * const { consolidateResults } = require('./data-consolidator');
+ * await consolidateResults(parsedCharacters, 'zh_CN');
  */
 
 const {
@@ -19,18 +31,20 @@ const {
     updateCharacterScanStats,
 } = require("../api/scan-stats-api.cjs");
 const { getBaseCharacterId } = require("./story-parser.cjs");
+const PROJECT_CONFIG = require("../../project-config.cjs");
 const fs = require("fs");
 const path = require("path");
 
 /**
- * Load exclude rules for search index
+ * Load language-specific exclude rules
+ * @param {string} langCode - Language code (zh_CN, en_US, ja_JP)
+ * @returns {Object} Exclude rules: { name: [charIds] }
  */
 function loadExcludeRules(langCode) {
-    const langMap = { zh_CN: "zh-CN", en_US: "en-US", ja_JP: "ja" };
-    const configLang = langMap[langCode] || langCode;
+    const localeCode = PROJECT_CONFIG.getLocaleCode(langCode);
     const excludePath = path.resolve(
         __dirname,
-        `../../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`
+        `../../../.vitepress/config/locale/${localeCode}/arknights-search-exclude.json`
     );
     return fs.existsSync(excludePath)
         ? JSON.parse(fs.readFileSync(excludePath, "utf8"))
@@ -38,18 +52,25 @@ function loadExcludeRules(langCode) {
 }
 
 /**
- * Load combine rules (global)
+ * Load global combine rules
+ * @returns {Object} Combine rules: { sourceId: targetId }
  */
 function loadCombineRules() {
     const combinePath = path.resolve(
         __dirname,
-        "../../.vitepress/config/arknights-combine.json"
+        "../../../.vitepress/config/arknights-combine.json"
     );
     return fs.existsSync(combinePath)
         ? JSON.parse(fs.readFileSync(combinePath, "utf8"))
         : {};
 }
 
+/**
+ * Consolidate parsed story results into structured data files
+ * @param {Map} results - Parsed character data from story files
+ * @param {string} langCode - Language code (zh_CN, en_US, ja_JP)
+ * @returns {Promise<void>}
+ */
 async function consolidateResults(results, langCode) {
     const globalChars = loadGlobalCharacters();
     const langNames = loadLanguageNames(langCode);
@@ -62,13 +83,9 @@ async function consolidateResults(results, langCode) {
     let updatedNames = 0;
 
     for (const [baseId, data] of results) {
-        // Apply combine rule
         const targetId = combineRules[baseId] || baseId;
-
-        // Update global character metadata
         if (isMasterSource || !globalChars[targetId]) {
             if (!globalChars[targetId]) {
-                // Rename variants to match targetId
                 const renamedVariants = (
                     data.validVariants || [`${targetId}#1$1`]
                 ).map((v) => v.replace(baseId, targetId));
@@ -82,7 +99,6 @@ async function consolidateResults(results, langCode) {
                 newChars++;
             } else {
                 if (data.validVariants && data.validVariants.length > 0) {
-                    // Rename variants when merging
                     const renamedVariants = data.validVariants.map((v) =>
                         v.replace(baseId, targetId)
                     );
@@ -96,7 +112,6 @@ async function consolidateResults(results, langCode) {
             }
         }
 
-        // Update scan stats if this is the master source
         if (isMasterSource) {
             updateCharacterScanStats(
                 targetId,
@@ -105,8 +120,6 @@ async function consolidateResults(results, langCode) {
             );
         }
 
-        // Update language-specific names (use targetId after combine)
-        // REPLACE names from story parsing, don't merge with old data
         if (data.speakerNames && data.speakerNames.length > 0) {
             langNames[targetId] = {
                 speakerNames: data.speakerNames,
@@ -115,15 +128,12 @@ async function consolidateResults(results, langCode) {
             };
             updatedNames++;
         } else if (!langNames[targetId]) {
-            // Only keep existing if character not found in stories
             langNames[targetId] = {
                 speakerNames: langNames[targetId]?.speakerNames || [],
                 searchNames: langNames[targetId]?.searchNames || [],
                 displayName: langNames[targetId]?.displayName || targetId,
             };
         }
-
-        // Update language-specific story mappings
         if (data.storyFiles && data.storyFiles.length > 0) {
             const existingStorys = langStorys[targetId] || [];
             langStorys[targetId] = Array.from(
@@ -131,8 +141,6 @@ async function consolidateResults(results, langCode) {
             ).sort();
         }
     }
-
-    // Clean up: Remove source IDs that should be combined
     Object.keys(combineRules).forEach((sourceId) => {
         const targetId = combineRules[sourceId];
         if (sourceId !== targetId) {
@@ -156,8 +164,6 @@ async function consolidateResults(results, langCode) {
             }
         }
     });
-
-    // Bidirectional cleanup FIRST: Remove excluded names from speakerNames BEFORE search index generation
     const excludeRules = loadExcludeRules(langCode);
     let cleanupCount = 0;
     for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
@@ -179,8 +185,6 @@ async function consolidateResults(results, langCode) {
             `  Cleaned ${cleanupCount} speakerNames entries via exclude rules`
         );
     }
-
-    // Generate search index: name -> charId (after cleanup, so excluded entries won't appear)
     const searchIndex = {};
 
     for (const [id, data] of Object.entries(langNames)) {
@@ -191,17 +195,11 @@ async function consolidateResults(results, langCode) {
 
         for (const name of names) {
             if (!name || name.trim() === "") continue;
-
-            // Double-check exclude rules (for names that might still appear in displayName)
             const excludeList = excludeRules[name] || [];
             if (excludeList.includes(id)) {
                 continue;
             }
-
-            // Apply combine rules
             const actualId = combineRules[id] || id;
-
-            // Support multiple characters with the same name (with deduplication)
             if (!searchIndex[name]) {
                 searchIndex[name] = actualId;
             } else if (typeof searchIndex[name] === "string") {
@@ -216,16 +214,17 @@ async function consolidateResults(results, langCode) {
         }
     }
 
-    // Clean up storys.json: Remove story paths that no longer exist
-    // Build set of valid story paths from story_review_table
     let validStoryPaths = null;
     try {
-        const axios = require('axios');
-        const PROJECT_CONFIG = require('../../project-config.cjs');
+        const axios = require("axios");
+        const PROJECT_CONFIG = require("../../project-config.cjs");
         const dataSource = PROJECT_CONFIG.getArknightsDataUrl(langCode);
-        
+
         if (dataSource) {
-            const response = await axios.get(`${dataSource}/gamedata/excel/story_review_table.json`, { timeout: 30000 });
+            const response = await axios.get(
+                `${dataSource}/gamedata/excel/story_review_table.json`,
+                { timeout: 30000 }
+            );
             validStoryPaths = new Set();
             for (const actData of Object.values(response.data)) {
                 if (actData?.infoUnlockDatas) {
@@ -238,17 +237,19 @@ async function consolidateResults(results, langCode) {
             }
         }
     } catch (error) {
-        console.warn(`   Could not load story_review_table for cleanup: ${error.message}`);
+        console.warn(
+            `   Could not load story_review_table for cleanup: ${error.message}`
+        );
     }
-
-    // Remove non-existent story paths from each character
     let cleanedStoryPaths = 0;
     if (validStoryPaths) {
         for (const charId of Object.keys(langStorys)) {
             if (langStorys[charId] && Array.isArray(langStorys[charId])) {
                 const originalLength = langStorys[charId].length;
-                langStorys[charId] = langStorys[charId].filter(storyPath => 
-                    validStoryPaths.has(storyPath) || validStoryPaths.has(storyPath.replace(/\.txt$/, ''))
+                langStorys[charId] = langStorys[charId].filter(
+                    (storyPath) =>
+                        validStoryPaths.has(storyPath) ||
+                        validStoryPaths.has(storyPath.replace(/\.txt$/, ""))
                 );
                 cleanedStoryPaths += originalLength - langStorys[charId].length;
             }
@@ -257,8 +258,6 @@ async function consolidateResults(results, langCode) {
             console.log(`   Removed ${cleanedStoryPaths} obsolete story paths`);
         }
     }
-
-    // Clean up: Remove characters that have no stories
     let cleanedChars = 0;
     for (const charId of Object.keys(langNames)) {
         if (!langStorys[charId] || langStorys[charId].length === 0) {
@@ -291,6 +290,9 @@ async function consolidateResults(results, langCode) {
     console.log(`   Search Index: ${Object.keys(searchIndex).length} terms`);
 }
 
+/**
+ * @exports arknights/data-consolidator
+ */
 module.exports = {
     consolidateResults,
 };

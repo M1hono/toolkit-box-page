@@ -5,7 +5,6 @@
 
 const { Worker } = require("worker_threads");
 const path = require("path");
-const { normalizeRawId } = require("./story-parser.cjs");
 
 /**
  * Verifies character variants via physical image asset checks in worker threads
@@ -15,12 +14,17 @@ const { normalizeRawId } = require("./story-parser.cjs");
  * @param {Object} options - Configuration options
  * @returns {Promise<Map>} - Updated character data with valid variants
  */
-async function generateVariants(allCharacters, mergedCharacters, scanState, options = {}) {
-    const { 
-        checkImages = false, 
-        quietMode = false, 
+async function generateVariants(
+    allCharacters,
+    mergedCharacters,
+    scanState,
+    options = {}
+) {
+    const {
+        checkImages = false,
+        quietMode = false,
         useSmartDetection = true,
-        maxScans = 300
+        maxScans = 300,
     } = options;
 
     const charsToScan = [];
@@ -33,7 +37,11 @@ async function generateVariants(allCharacters, mergedCharacters, scanState, opti
     }
 
     const activeScans = charsToScan.slice(0, maxScans);
-    console.log(`📊 Processing ${activeScans.length} characters for variants (${checkImages ? 'image check' : 'metadata only'})`);
+    console.log(
+        ` Processing ${activeScans.length} characters for variants (${
+            checkImages ? "image check" : "metadata only"
+        })`
+    );
 
     if (!checkImages) {
         for (const [id, char] of mergedCharacters) {
@@ -41,13 +49,18 @@ async function generateVariants(allCharacters, mergedCharacters, scanState, opti
             for (const [fullId] of allCharacters) {
                 if (fullId.startsWith(id + "#")) inferred.push(fullId);
             }
-            char.validVariants = inferred.length > 0 ? inferred.sort() : [`${id}#1$1`];
+            char.validVariants =
+                inferred.length > 0 ? inferred.sort() : [`${id}#1$1`];
         }
         return mergedCharacters;
     }
 
-    const results = await runVerificationWorkers(activeScans, allCharacters, options);
-    
+    const results = await runVerificationWorkers(
+        activeScans,
+        allCharacters,
+        options
+    );
+
     for (const [id, variants] of results) {
         const char = mergedCharacters.get(id);
         if (char) {
@@ -70,7 +83,7 @@ function shouldScan(id, char, scanState, options) {
     const now = Date.now();
     const daysSince = (now - stats.lastScanTime) / (1000 * 60 * 60 * 24);
 
-    return !stats.lastScanTime || daysSince > 1; // Default: scan once per day
+    return !stats.lastScanTime || daysSince > 1;
 }
 
 /**
@@ -81,8 +94,11 @@ async function runVerificationWorkers(tasks, allCharacters, options) {
     const workerCount = Math.min(tasks.length, 6);
     if (workerCount === 0) return new Map();
 
-    const chunks = Array.from({ length: workerCount }, (_, i) => 
-        tasks.slice(Math.floor(tasks.length * i / workerCount), Math.floor(tasks.length * (i + 1) / workerCount))
+    const chunks = Array.from({ length: workerCount }, (_, i) =>
+        tasks.slice(
+            Math.floor((tasks.length * i) / workerCount),
+            Math.floor((tasks.length * (i + 1)) / workerCount)
+        )
     );
 
     const promises = chunks.map((chunk, index) => {
@@ -94,23 +110,36 @@ async function runVerificationWorkers(tasks, allCharacters, options) {
                         characters: chunk,
                         allCharacters: Array.from(allCharacters.entries()),
                         quietMode: options.quietMode,
-                        useSmartDetection: options.useSmartDetection
-                    }
+                        useSmartDetection: options.useSmartDetection,
+                    },
                 }
             );
 
-            worker.on("message", (res) => res.success ? resolve(res.results) : reject(new Error(res.error)));
+            worker.on("message", (res) =>
+                res.success
+                    ? resolve(res.results)
+                    : reject(new Error(res.error))
+            );
             worker.on("error", reject);
-            worker.on("exit", (code) => code !== 0 && reject(new Error(`Worker ${index} exited with code ${code}`)));
+            worker.on(
+                "exit",
+                (code) =>
+                    code !== 0 &&
+                    reject(
+                        new Error(`Worker ${index} exited with code ${code}`)
+                    )
+            );
         });
     });
 
     const resultsArray = await Promise.all(promises);
     const finalResults = new Map();
-    resultsArray.forEach(workerRes => workerRes.forEach(([id, variants]) => finalResults.set(id, variants)));
+    resultsArray.forEach((workerRes) =>
+        workerRes.forEach(([id, variants]) => finalResults.set(id, variants))
+    );
     return finalResults;
 }
 
 module.exports = {
-    generateVariants
+    generateVariants,
 };

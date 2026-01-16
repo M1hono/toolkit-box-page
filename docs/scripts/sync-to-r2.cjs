@@ -23,8 +23,6 @@ async function main() {
     
     const characterData = characterEntries
         .map(([id, data]) => {
-            // Use provided validVariants, or default to standard format for operators
-            // NPCs often don't have validVariants if they don't have images
             const variants = data.validVariants && data.validVariants.length > 0 
                 ? data.validVariants 
                 : (data.charType === 'operator' ? [`${id}#1$1`] : []);

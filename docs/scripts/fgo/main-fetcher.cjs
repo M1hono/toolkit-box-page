@@ -1,6 +1,19 @@
 /**
  * @fileoverview Main FGO Data Fetcher
- * @description Orchestrates the fetching and processing of FGO servant data for multiple platforms with optimized output
+ * @module fgo/main-fetcher
+ * @description
+ * Orchestrates FGO servant data fetching and processing for all platforms.
+ * Fetches from Atlas Academy API and processes into language-specific files.
+ * 
+ * Output files:
+ * - global/fgo/servants.json - All servant data
+ * - {lang}/fgo/servants.json - Language-specific servant data
+ * - {lang}/fgo/metadata.json - Platform metadata
+ * - zh_CN/fgo/translations.json - Chinese translations
+ * 
+ * @example
+ * const { syncPlatform } = require('./main-fetcher');
+ * await syncPlatform('JP');
  */
 
 const path = require('path');
@@ -67,7 +80,7 @@ async function syncPlatform(platform) {
     
     const langCode = PROJECT_CONFIG.PLATFORM_MAPPING.fgo[platform];
     if (!langCode) {
-        console.error(`❌ No language mapping found for platform ${platform}`);
+        console.error(` No language mapping found for platform ${platform}`);
         return;
     }
     
@@ -137,11 +150,11 @@ async function syncPlatform(platform) {
             'utf8'
         );
         
-        console.log(`✅ ${platform} (${langCode}): ${Object.keys(finalServants).length} servants processed`);
-        console.log(`📊 Generated search index with ${searchIndex.length} entries`);
+        console.log(` ${platform} (${langCode}): ${Object.keys(finalServants).length} servants processed`);
+        console.log(` Generated search index with ${searchIndex.length} entries`);
         
     } catch (error) {
-        console.error(`❌ Failed to sync platform ${platform}:`, error.message);
+        console.error(` Failed to sync platform ${platform}:`, error.message);
     }
 }
 

@@ -5,7 +5,7 @@
 
 const { fetchData } = require('../../shared/network-utils.cjs');
 
-const BASE_URL = "https://api.atlasacademy.io";
+const BASE_URL = "https:
 
 /**
  * Get endpoint for a specific language platform

@@ -1,6 +1,16 @@
 /**
  * @fileoverview Update Names.json Only
- * @description Safely updates names.json for all languages without modifying characters.json
+ * @module arknights/updateNamesOnly
+ * @description
+ * Safely updates names.json, storys.json, and search_index.json
+ * without modifying characters.json. Useful for quick name updates
+ * without full data regeneration.
+ * 
+ * Uses existing story files if available, otherwise keeps current data.
+ * 
+ * @example
+ * const { updateNamesForLanguage } = require('./updateNamesOnly');
+ * await updateNamesForLanguage('zh_CN');
  */
 
 const fs = require('fs');
@@ -17,22 +27,30 @@ const {
     loadLanguageStorys
 } = require('./api/characters-api.cjs');
 
+/**
+ * Load language-specific exclude rules
+ * @param {string} langCode - Language code
+ * @returns {Object} Exclude rules
+ */
 function loadExcludeRules(langCode) {
-    const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja' };
-    const configLang = langMap[langCode] || langCode;
-    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${configLang}/arknights-search-exclude.json`);
+    const localeCode = PROJECT_CONFIG.getLocaleCode(langCode);
+    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${localeCode}/arknights-search-exclude.json`);
     if (fs.existsSync(excludePath)) {
-        console.log(`✅ Loaded exclude rules for ${langCode} from ${configLang}`);
+        console.log(` Loaded exclude rules for ${langCode} from ${localeCode}`);
         return JSON.parse(fs.readFileSync(excludePath, 'utf8'));
     }
-    console.log(`⚠️ No exclude rules found for ${langCode} at ${excludePath}`);
+    console.log(` No exclude rules found for ${langCode}`);
     return {};
 }
 
+/**
+ * Load global combine rules
+ * @returns {Object} Combine rules
+ */
 function loadCombineRules() {
     const combinePath = path.resolve(__dirname, '../../.vitepress/config/arknights-combine.json');
     if (fs.existsSync(combinePath)) {
-        console.log(`✅ Loaded combine rules`);
+        console.log(`Loaded combine rules`);
         return JSON.parse(fs.readFileSync(combinePath, 'utf8'));
     }
     return {};
@@ -77,9 +95,9 @@ async function updateNamesForLanguage(langCode) {
                         }
                         data.speakerNames.forEach(name => characterNames[charId].speakerNames.add(name));
                         
-                    // Also update story mappings
+
                     if (data.storyFiles && data.storyFiles.length > 0) {
-                        // Apply combine rules
+
                         const combineRules = loadCombineRules();
                         const targetId = combineRules[charId] || charId;
                         const existing = characterStorys[targetId] || [];
@@ -92,7 +110,7 @@ async function updateNamesForLanguage(langCode) {
             }
         }
         
-        // Merge story-extracted names with existing
+
         for (const [charId, data] of Object.entries(characterNames)) {
             const speakerNames = Array.from(data.speakerNames);
             finalNames[charId] = {
@@ -103,7 +121,7 @@ async function updateNamesForLanguage(langCode) {
             updatedFromStories++;
         }
         
-        // Keep existing names for characters not found in stories
+
         for (const charId of Object.keys(existingNames)) {
             if (validCharIds.has(charId) && !finalNames[charId]) {
                 finalNames[charId] = existingNames[charId];
@@ -118,7 +136,7 @@ async function updateNamesForLanguage(langCode) {
     const excludeRules = loadExcludeRules(langCode);
     const combineRules = loadCombineRules();
     
-    // Bidirectional cleanup FIRST: Remove excluded names from speakerNames BEFORE search index generation
+
     let cleanupCount = 0;
     for (const [name, excludedCharIds] of Object.entries(excludeRules)) {
         for (const charId of excludedCharIds) {
@@ -136,7 +154,7 @@ async function updateNamesForLanguage(langCode) {
         console.log(`  Cleaned ${cleanupCount} speakerNames entries via exclude rules`);
     }
     
-    // Generate search index from final names (now with cleaned data)
+
     const searchIndex = {};
     
     let excludedCount = 0;
@@ -151,18 +169,18 @@ async function updateNamesForLanguage(langCode) {
         for (const name of names) {
             if (!name || name.trim() === "") continue;
             
-            // Double-check exclude rules (for names that might still appear in displayName)
+
             const excludeList = excludeRules[name] || [];
             if (excludeList.includes(id)) {
                 excludedCount++;
                 continue;
             }
             
-            // Apply combine rules
+
             const actualId = combineRules[id] || id;
             if (combineRules[id]) combinedCount++;
             
-            // Support multiple characters with the same name
+
             if (!searchIndex[name]) {
                 searchIndex[name] = actualId;
             } else if (typeof searchIndex[name] === 'string') {
@@ -179,7 +197,7 @@ async function updateNamesForLanguage(langCode) {
     
     console.log(`Applied rules: ${excludedCount} excluded, ${combinedCount} combined`);
     
-    // Count duplicates in search index
+
     let duplicateCount = 0;
     for (const value of Object.values(searchIndex)) {
         if (Array.isArray(value)) duplicateCount++;

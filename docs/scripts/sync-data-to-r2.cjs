@@ -33,8 +33,6 @@ async function uploadJsonFile(localPath, r2Key) {
         }
 
         const fileContent = fs.readFileSync(localPath);
-
-        // Check if file already exists with same content
         try {
             await client.send(
                 new HeadObjectCommand({
@@ -42,9 +40,9 @@ async function uploadJsonFile(localPath, r2Key) {
                     Key: r2Key,
                 })
             );
-            // File exists, could add ETag comparison here
+
         } catch (error) {
-            // File doesn't exist, proceed with upload
+
         }
 
         await client.send(
@@ -53,14 +51,14 @@ async function uploadJsonFile(localPath, r2Key) {
                 Key: r2Key,
                 Body: fileContent,
                 ContentType: "application/json",
-                CacheControl: "public, max-age=300", // 5 minute cache
+                CacheControl: "public, max-age=300",
             })
         );
 
-        console.log(`✅ Uploaded: ${r2Key}`);
+        console.log(` Uploaded: ${r2Key}`);
         return true;
     } catch (error) {
-        console.error(`❌ Failed to upload ${r2Key}:`, error.message);
+        console.error(` Failed to upload ${r2Key}:`, error.message);
         return false;
     }
 }
@@ -73,12 +71,8 @@ async function syncDataToR2() {
 
     const publicDataRoot = PROJECT_CONFIG.PUBLIC_DATA_ROOT;
     const filesToUpload = [];
-
-    // Collect all JSON files to upload
     const languages = ["en_us", "ja_jp", "zh_cn"];
     const games = ["arknights", "fgo"];
-
-    // Global data
     for (const game of games) {
         const globalDir = path.join(publicDataRoot, "global", game);
         if (fs.existsSync(globalDir)) {
@@ -93,8 +87,6 @@ async function syncDataToR2() {
             }
         }
     }
-
-    // Language-specific data
     for (const lang of languages) {
         for (const game of games) {
             const langDir = path.join(publicDataRoot, lang, game);

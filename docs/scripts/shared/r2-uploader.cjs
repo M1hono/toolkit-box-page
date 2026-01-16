@@ -67,7 +67,7 @@ function saveFailures(failures) {
     ensureDir(LOGS_DIR);
     failures.lastUpdate = Date.now();
     
-    // Deduplicate and limit failure logs to avoid massive files
+
     const deduplicate = (arr, key) => {
         const seen = new Set();
         return arr.filter(item => {
@@ -75,7 +75,7 @@ function saveFailures(failures) {
             if (seen.has(val)) return false;
             seen.add(val);
             return true;
-        }).slice(-500); // Keep only last 500 unique failures
+        }).slice(-500);
     };
 
     failures.downloadFailures = deduplicate(failures.downloadFailures, 'url');
@@ -202,7 +202,7 @@ async function processBatch(characterBatch) {
     
     for (const char of characterBatch) {
         for (let variant of char.validVariants) {
-            // Lowercase everything
+
             variant = variant.toLowerCase();
             
             const encodedVariant = encodeURIComponent(variant);
@@ -215,8 +215,8 @@ async function processBatch(characterBatch) {
             
             processed++;
             
-            // Skip if already successfully processed (uploaded or already on R2)
-            // Check both current r2Key and legacy .png key
+
+
             const legacyPngKey = `${variant}.png`;
             const existingEntry = uploadedFiles[r2Key] || uploadedFiles[legacyPngKey];
             
@@ -232,10 +232,8 @@ async function processBatch(characterBatch) {
                 }
                 continue;
             }
-
-            // Skip if previously failed (optional: could add a retry-after logic or --force-retry flag)
             if (existingEntry && existingEntry.status === 'failed' && !process.argv.includes('--force-retry')) {
-                skipped++; // Count as skipped because we're not attempting it
+                skipped++;
                 continue;
             }
             
@@ -270,7 +268,7 @@ async function processBatch(characterBatch) {
                 }
             }
             
-            // Only check R2 if we don't have a record of it being there
+
             let exists = uploadedFiles[r2Key] && uploadedFiles[r2Key].status === 'skipped';
             if (!exists && !uploadedFiles[r2Key]) {
                 exists = await objectExists(client, r2Key);

@@ -31,12 +31,12 @@ function normalizeId(id) {
     if (!id) return id;
     let normalized = id.toLowerCase();
     
-    // Apply mappings
-    // Find the base ID by removing variants and extensions
+
+
     const parts = normalized.split(/[#\$\.]/);
     let baseId = parts[0];
     
-    // If it started with $, parts[0] might be empty, check parts[1]
+
     if (baseId === "" && normalized.startsWith('$') && parts.length > 1) {
         baseId = '$' + parts[1];
     }

@@ -82,20 +82,6 @@ jobs:
                   yarn data:arknights
                   echo "Arknights character data update complete"
 
-            - name: Extract Kal'tsit Debug Files
-              if: ${{ inputs.task_priority == 'arknights-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
-              working-directory: docs
-              run: |
-                  echo "Extracting debug files for Kal'tsit name mappings..."
-                  yarn data:extract-kalts-debug
-                  echo "Debug extraction complete"
-                  
-                  if [ -d ".debug" ] && [ "$(ls -A .debug 2>/dev/null)" ]; then
-                    echo "Debug files created, will commit"
-                  else
-                    echo "No debug files created"
-                  fi
-
             - name: Update FGO Data
               if: ${{ inputs.task_priority == 'fgo-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
               working-directory: docs

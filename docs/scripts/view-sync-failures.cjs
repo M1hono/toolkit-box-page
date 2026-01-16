@@ -51,7 +51,7 @@ function analyzeFailures() {
     
     if (failures.downloadFailures.length > 0) {
         console.log('\nRecent Download Failures:');
-        // Deduplicate and show latest
+
         const uniqueDownloads = [...new Set(failures.downloadFailures.map(f => f.url))].reverse();
         uniqueDownloads.slice(0, 10).forEach((url, index) => {
             console.log(`   ${index + 1}. ${url}`);

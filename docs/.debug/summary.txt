@@ -1,8 +1,0 @@
-Kal'tsit Debug Extraction
-========================
-
-Total problematic files: 36
-
-zh_CN: 17 files
-en_US: 16 files
-ja_JP: 3 files
