@@ -15133,15 +15133,6 @@
     ],
     "displayName": "クロージャ"
   },
-  "avg_npc_380_1": {
-    "speakerNames": [
-      "コンビクション"
-    ],
-    "searchNames": [
-      "コンビクション"
-    ],
-    "displayName": "コンビクション"
-  },
   "char_134_ifrit_5": {
     "speakerNames": [
       "イフリータ"
@@ -16484,28 +16475,6 @@
       "シモーネ"
     ],
     "displayName": "シモーネ"
-  },
-  "avg_4091_ulika_1": {
-    "speakerNames": [
-      "Uちゃん",
-      "U-Gigamax"
-    ],
-    "searchNames": [
-      "Uちゃん",
-      "U-Gigamax"
-    ],
-    "displayName": "Uちゃん"
-  },
-  "avg_4091_ulika2_1": {
-    "speakerNames": [
-      "Uちゃん",
-      "ユーリカ"
-    ],
-    "searchNames": [
-      "Uちゃん",
-      "ユーリカ"
-    ],
-    "displayName": "Uちゃん"
   },
   "avg_328_cammou_1": {
     "speakerNames": [
@@ -19379,60 +19348,6 @@
       "プロヴァンス"
     ],
     "displayName": "レオンハルト"
-  },
-  "avg_npc_293_1": {
-    "speakerNames": [
-      "ファントム"
-    ],
-    "searchNames": [
-      "ファントム"
-    ],
-    "displayName": "ファントム"
-  },
-  "avg_npc_291": {
-    "speakerNames": [
-      "「劇団の喉舌」"
-    ],
-    "searchNames": [
-      "「劇団の喉舌」"
-    ],
-    "displayName": "「劇団の喉舌」"
-  },
-  "avg_4066_highmo_1": {
-    "speakerNames": [
-      "ハイモア"
-    ],
-    "searchNames": [
-      "ハイモア"
-    ],
-    "displayName": "ハイモア"
-  },
-  "avg_437_mizukisummer_1": {
-    "speakerNames": [
-      "ミヅキ"
-    ],
-    "searchNames": [
-      "ミヅキ"
-    ],
-    "displayName": "ミヅキ"
-  },
-  "avg_npc_610_1": {
-    "speakerNames": [
-      "キケロ"
-    ],
-    "searchNames": [
-      "キケロ"
-    ],
-    "displayName": "キケロ"
-  },
-  "avg_npc_1200_1": {
-    "speakerNames": [
-      "ペペ"
-    ],
-    "searchNames": [
-      "ペペ"
-    ],
-    "displayName": "ペペ"
   },
   "char_002_amiya_1": {
     "speakerNames": [

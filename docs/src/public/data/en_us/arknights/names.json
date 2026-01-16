@@ -15023,15 +15023,6 @@
     ],
     "displayName": "Closure"
   },
-  "avg_npc_380_1": {
-    "speakerNames": [
-      "Conviction"
-    ],
-    "searchNames": [
-      "Conviction"
-    ],
-    "displayName": "Conviction"
-  },
   "char_134_ifrit_5": {
     "speakerNames": [
       "Ifrit"
@@ -16362,28 +16353,6 @@
       "Simone"
     ],
     "displayName": "Simone"
-  },
-  "avg_4091_ulika_1": {
-    "speakerNames": [
-      "Streamer U",
-      "U-Gigamax"
-    ],
-    "searchNames": [
-      "Streamer U",
-      "U-Gigamax"
-    ],
-    "displayName": "Streamer U"
-  },
-  "avg_4091_ulika2_1": {
-    "speakerNames": [
-      "Streamer U",
-      "Eureka"
-    ],
-    "searchNames": [
-      "Streamer U",
-      "Eureka"
-    ],
-    "displayName": "Streamer U"
   },
   "avg_328_cammou_1": {
     "speakerNames": [
@@ -19259,60 +19228,6 @@
       "Provence"
     ],
     "displayName": "Leonhardt"
-  },
-  "avg_npc_293_1": {
-    "speakerNames": [
-      "Phantom"
-    ],
-    "searchNames": [
-      "Phantom"
-    ],
-    "displayName": "Phantom"
-  },
-  "avg_npc_291": {
-    "speakerNames": [
-      "'Troupe Mouthpiece'"
-    ],
-    "searchNames": [
-      "'Troupe Mouthpiece'"
-    ],
-    "displayName": "'Troupe Mouthpiece'"
-  },
-  "avg_4066_highmo_1": {
-    "speakerNames": [
-      "Highmore"
-    ],
-    "searchNames": [
-      "Highmore"
-    ],
-    "displayName": "Highmore"
-  },
-  "avg_437_mizukisummer_1": {
-    "speakerNames": [
-      "Mizuki"
-    ],
-    "searchNames": [
-      "Mizuki"
-    ],
-    "displayName": "Mizuki"
-  },
-  "avg_npc_610_1": {
-    "speakerNames": [
-      "Cicero"
-    ],
-    "searchNames": [
-      "Cicero"
-    ],
-    "displayName": "Cicero"
-  },
-  "avg_npc_1200_1": {
-    "speakerNames": [
-      "Pepe"
-    ],
-    "searchNames": [
-      "Pepe"
-    ],
-    "displayName": "Pepe"
   },
   "char_002_amiya_1": {
     "speakerNames": [

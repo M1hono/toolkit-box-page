@@ -7804,15 +7804,6 @@
     ],
     "displayName": "可露希尔"
   },
-  "avg_npc_096": {
-    "speakerNames": [
-      "杰西卡"
-    ],
-    "searchNames": [
-      "杰西卡"
-    ],
-    "displayName": "杰西卡"
-  },
   "avg_npc_932_1": {
     "speakerNames": [
       "弹吉他的歌手",
@@ -10549,42 +10540,6 @@
       "铸铁"
     ],
     "displayName": "铸铁"
-  },
-  "avg_npc_805_1": {
-    "speakerNames": [
-      "寻宝人"
-    ],
-    "searchNames": [
-      "寻宝人"
-    ],
-    "displayName": "寻宝人"
-  },
-  "avg_npc_802_1": {
-    "speakerNames": [
-      "曼提柯杀手"
-    ],
-    "searchNames": [
-      "曼提柯杀手"
-    ],
-    "displayName": "曼提柯杀手"
-  },
-  "avg_npc_803_1": {
-    "speakerNames": [
-      "联络员"
-    ],
-    "searchNames": [
-      "联络员"
-    ],
-    "displayName": "联络员"
-  },
-  "avg_npc_801_1": {
-    "speakerNames": [
-      "“沙卒”"
-    ],
-    "searchNames": [
-      "“沙卒”"
-    ],
-    "displayName": "“沙卒”"
   },
   "avg_4054_malist_1": {
     "speakerNames": [
@@ -15778,15 +15733,6 @@
     ],
     "displayName": "D.D.D."
   },
-  "avg_npc_380_1": {
-    "speakerNames": [
-      "断罪者"
-    ],
-    "searchNames": [
-      "断罪者"
-    ],
-    "displayName": "断罪者"
-  },
   "char_134_ifrit_5": {
     "speakerNames": [
       "伊芙利特"
@@ -18388,28 +18334,6 @@
       "西蒙娜"
     ],
     "displayName": "西蒙娜"
-  },
-  "avg_4091_ulika_1": {
-    "speakerNames": [
-      "主播U",
-      "U-Gigamax"
-    ],
-    "searchNames": [
-      "主播U",
-      "U-Gigamax"
-    ],
-    "displayName": "主播U"
-  },
-  "avg_4091_ulika2_1": {
-    "speakerNames": [
-      "主播U",
-      "尤里卡"
-    ],
-    "searchNames": [
-      "主播U",
-      "尤里卡"
-    ],
-    "displayName": "主播U"
   },
   "avg_328_cammou_1": {
     "speakerNames": [
@@ -21549,60 +21473,6 @@
       "普罗旺斯"
     ],
     "displayName": "莱恩哈特"
-  },
-  "avg_npc_293_1": {
-    "speakerNames": [
-      "傀影"
-    ],
-    "searchNames": [
-      "傀影"
-    ],
-    "displayName": "傀影"
-  },
-  "avg_npc_291": {
-    "speakerNames": [
-      "“剧团喉舌”"
-    ],
-    "searchNames": [
-      "“剧团喉舌”"
-    ],
-    "displayName": "“剧团喉舌”"
-  },
-  "avg_4066_highmo_1": {
-    "speakerNames": [
-      "海沫"
-    ],
-    "searchNames": [
-      "海沫"
-    ],
-    "displayName": "海沫"
-  },
-  "avg_437_mizukisummer_1": {
-    "speakerNames": [
-      "水月"
-    ],
-    "searchNames": [
-      "水月"
-    ],
-    "displayName": "水月"
-  },
-  "avg_npc_610_1": {
-    "speakerNames": [
-      "西塞罗"
-    ],
-    "searchNames": [
-      "西塞罗"
-    ],
-    "displayName": "西塞罗"
-  },
-  "avg_npc_1200_1": {
-    "speakerNames": [
-      "佩佩"
-    ],
-    "searchNames": [
-      "佩佩"
-    ],
-    "displayName": "佩佩"
   },
   "char_002_amiya_1": {
     "speakerNames": [
