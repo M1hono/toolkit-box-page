@@ -5,6 +5,7 @@
 
 import type { StoryReaderUrls } from "../types";
 import { getAkgccIndex } from "./useArknightsStoryIndex";
+import { getStoryType, extractActId } from "../constants";
 
 /**
  * Normalizes language code for 050644zf reader (e.g. zh_cn -> zh_CN)
@@ -13,19 +14,6 @@ function normalizeLangForTextReader(lang: string): string {
     const parts = lang.split("_");
     if (parts.length < 2) return lang;
     return `${parts[0].toLowerCase()}_${parts[1].toUpperCase()}`;
-}
-
-/**
- * Maps Arknights story type to akgcc type
- */
-function mapToAkgccType(type: string): string {
-    const mapping: Record<string, string> = {
-        activities: "side",
-        main: "main",
-        record: "record",
-        guide: "guide",
-    };
-    return mapping[type] || type;
 }
 
 /**
@@ -42,18 +30,16 @@ export async function getStoryReaderUrls(
     const cleanPath = storyPath.replace(/\.txt$/, "");
     const textReader = `https://050644zf.github.io/ArknightsStoryTextReader/#/${readerLang}/content?f=${cleanPath}`;
 
-    // 2. akgcc Story Reader with correct index
-    const parts = cleanPath.split("/");
+    // 2. akgcc Story Reader with correct type, actId, and index
+    const storyType = getStoryType(cleanPath);
+    const actId = extractActId(cleanPath);
+    
     let akgcc = "https://akgcc.github.io/story/";
 
-    if (parts.length >= 2) {
-        const type = mapToAkgccType(parts[0]);
-        const actId = parts[1];
-        
+    if (actId) {
         // Get correct index from story_review_table.json
         const index = await getAkgccIndex(storyPath, lang);
-
-        akgcc = `${akgcc}#${type}&${actId}&${index}`;
+        akgcc = `${akgcc}#${storyType}&${actId}&${index}`;
     }
 
     return { textReader, akgcc };

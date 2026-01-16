@@ -4,6 +4,7 @@
  */
 
 import { ref } from "vue";
+import { ARKNIGHTS_DATA_SOURCES, extractActId } from "../constants";
 
 interface StoryIndexMap {
     [actId: string]: {
@@ -14,22 +15,13 @@ interface StoryIndexMap {
 const storyIndexCache = ref<Record<string, StoryIndexMap>>({});
 const loadingPromises = new Map<string, Promise<void>>();
 
-const DATA_SOURCES: Record<string, string> = {
-    en_us: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/en",
-    en_US: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/en",
-    ja_jp: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/jp",
-    ja_JP: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/jp",
-    zh_cn: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/cn",
-    zh_CN: "https://raw.githubusercontent.com/ArknightsAssets/ArknightsGamedata/master/cn",
-};
-
 /**
  * Load and process story review table to build index mappings
  */
 async function loadStoryIndexMap(lang: string): Promise<void> {
     if (storyIndexCache.value[lang]) return;
 
-    const dataSource = DATA_SOURCES[lang];
+    const dataSource = ARKNIGHTS_DATA_SOURCES[lang];
     if (!dataSource) {
         console.warn(`No data source for language: ${lang}`);
         return;
@@ -118,25 +110,29 @@ export async function getAkgccIndex(
     await loadingPromises.get(lang);
 
     const cleanPath = storyPath.replace(/\.txt$/, "");
-    const parts = cleanPath.split("/");
+    const actId = extractActId(cleanPath);
 
-    if (parts.length < 2) return 0;
+    if (!actId) return 0;
 
-    const actId = parts[1]; // e.g., 'act18mini'
     const indexMap = storyIndexCache.value[lang];
-
     if (!indexMap || !indexMap[actId]) return 0;
 
-    // Try to find exact match
-    const storyTxt = cleanPath;
-    if (indexMap[actId][storyTxt] !== undefined) {
-        return indexMap[actId][storyTxt];
+    // Try to find exact match with cleanPath
+    if (indexMap[actId][cleanPath] !== undefined) {
+        return indexMap[actId][cleanPath];
     }
 
-    // Try without activities/ prefix
+    // Try without leading directory (for different path prefixes)
+    const parts = cleanPath.split("/");
     const shortPath = parts.slice(1).join("/");
     if (indexMap[actId][shortPath] !== undefined) {
         return indexMap[actId][shortPath];
+    }
+
+    // Try with just filename
+    const filename = parts[parts.length - 1];
+    if (indexMap[actId][filename] !== undefined) {
+        return indexMap[actId][filename];
     }
 
     return 0;

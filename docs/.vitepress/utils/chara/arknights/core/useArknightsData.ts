@@ -6,12 +6,15 @@
 import { ref, computed } from "vue";
 import type { UnifiedCharacterData, StoryReaderUrls } from "../types";
 import { getStoryReaderUrls } from "./useArknightsStoryReader";
+import { loadDataWithFallback } from "../../../data/useDualSourceLoader";
+import { ARKNIGHTS_DATA_SOURCES } from "../constants";
 
 export function useArknightsData() {
     const characters = ref<Record<string, UnifiedCharacterData>>({});
     const names = ref<Record<string, any>>({});
     const storys = ref<Record<string, string[]>>({});
     const searchIndex = ref<Record<string, string>>({});
+    const charDict = ref<Record<string, { id: string; name: string }>>({}); // charcode → {id, name}
     const currentLang = ref("en_us");
 
     /**
@@ -21,26 +24,58 @@ export function useArknightsData() {
         currentLang.value = lang;
 
         try {
-            const [globalRes, namesRes, storysRes, searchRes] =
-                await Promise.all([
-                    fetch(`/data/global/arknights/characters.json`),
-                    fetch(`/data/${lang}/arknights/names.json`),
-                    fetch(`/data/${lang}/arknights/storys.json`),
-                    fetch(`/data/${lang}/arknights/search_index.json`),
-                ]);
+            // Load character table to build chardict
+            const dataSource = ARKNIGHTS_DATA_SOURCES[lang];
+            let characterTable: any = {};
+            
+            if (dataSource) {
+                try {
+                    const charTableRes = await fetch(`${dataSource}/gamedata/excel/character_table.json`);
+                    if (charTableRes.ok) {
+                        characterTable = await charTableRes.json();
+                    }
+                } catch (e) {
+                    console.warn("Failed to load character table:", e);
+                }
+            }
 
+            // Load data with R2-first strategy, fallback to local/GitHub
             const [globalData, namesData, storysData, searchData] =
                 await Promise.all([
-                    globalRes.json(),
-                    namesRes.json(),
-                    storysRes.json(),
-                    searchRes.json(),
+                    loadDataWithFallback(`global/arknights/characters.json`).catch(() =>
+                        fetch(`/data/global/arknights/characters.json`).then(r => r.json())
+                    ),
+                    loadDataWithFallback(`${lang}/arknights/names.json`).catch(() =>
+                        fetch(`/data/${lang}/arknights/names.json`).then(r => r.json())
+                    ),
+                    loadDataWithFallback(`${lang}/arknights/storys.json`).catch(() =>
+                        fetch(`/data/${lang}/arknights/storys.json`).then(r => r.json())
+                    ),
+                    loadDataWithFallback(`${lang}/arknights/search_index.json`).catch(() =>
+                        fetch(`/data/${lang}/arknights/search_index.json`).then(r => r.json())
+                    ),
                 ]);
 
             characters.value = globalData;
             names.value = namesData;
             storys.value = storysData;
             searchIndex.value = searchData;
+
+            // Build chardict from character_table.json
+            const dict: Record<string, { id: string; name: string }> = {};
+            for (const [charId, charData] of Object.entries(characterTable)) {
+                const parts = charId.split('_');
+                // Add mapping for numeric index (e.g., "003" from char_003_kalts)
+                if (parts.length >= 2 && /^\d+$/.test(parts[1])) {
+                    dict[parts[1]] = { id: charId, name: (charData as any).name || charId };
+                }
+                // Add mapping for character code (last part, e.g., "kalts")
+                if (parts.length >= 2) {
+                    const code = parts[parts.length - 1];
+                    dict[code] = { id: charId, name: (charData as any).name || charId };
+                }
+            }
+            charDict.value = dict;
 
             return true;
         } catch (error) {
@@ -178,11 +213,27 @@ export function useArknightsData() {
         totalStories: Object.values(storys.value).flat().length,
     }));
 
+    /**
+     * Get character ID from record story actId using chardict
+     * Follows akgcc pattern: eventid.split("_")[1] → chardict[cin].id
+     */
+    function getCharacterFromRecordActId(actId: string): string | null {
+        const parts = actId.split('_');
+        if (parts.length < 2) return null;
+        
+        // Extract character code/index from position [1]
+        const cin = parts[1];
+        const charData = charDict.value[cin];
+        
+        return charData?.id || null;
+    }
+
     return {
         characters,
         names,
         storys,
         searchIndex,
+        charDict,
         currentLang,
         stats,
         loadLanguageData,
@@ -191,6 +242,7 @@ export function useArknightsData() {
         getCharacterById,
         getStoriesForCharacter,
         getStoryReadersForCharacter,
+        getCharacterFromRecordActId,
         searchCharacters,
         storyTypes,
         getCharactersByStoryType,

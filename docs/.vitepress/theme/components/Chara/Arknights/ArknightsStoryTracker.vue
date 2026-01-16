@@ -218,6 +218,7 @@
                                                 :lazy-src="`https://r2.m31ns.top/img/icons/404.png`"
                                                 aspect-ratio="1"
                                                 cover
+                                                @error="handleStoryIconError(story.raw.path)"
                                             >
                                                 <template #placeholder>
                                                     <div
@@ -300,6 +301,7 @@
     import { useData, useRoute } from "vitepress";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import { useArknightsData } from "../../../../utils/chara/arknights/core/useArknightsData";
+    import { useArknightsStoryUtils } from "../../../../utils/chara/arknights/core/useArknightsStoryUtils";
     import type { UnifiedCharacterData } from "../../../../utils/chara/arknights/types";
     import { getLanguageByCode } from "../../../../config/project-config";
 
@@ -324,8 +326,12 @@
         getAllCharacterIdsByName,
         getCharacterById,
         getStoryReadersForCharacter,
+        getCharacterFromRecordActId,
+        charDict,
         names,
     } = useArknightsData();
+
+    const { loadStoryVariables, getStoryIconUrl } = useArknightsStoryUtils();
 
     const searchQuery = ref("");
     const selectedName = ref<string | null>(null);
@@ -334,6 +340,7 @@
     const selectedVariantIndex = ref(0);
     const selectedReader = ref<"textReader" | "akgcc">("textReader");
     const storySearch = ref("");
+    const storyIconErrors = ref<Set<string>>(new Set());
 
     const langCode = computed(() => {
         const cfg = getLanguageByCode(lang.value);
@@ -420,29 +427,37 @@
     }
 
     function getStoryIcon(path: string): string {
+        // If R2 failed before, use GitHub fallback
+        if (storyIconErrors.value.has(path)) {
+            return getStoryIconFallback(path);
+        }
+        // Pass charDict to getStoryIconUrl for record story character lookup
+        return getStoryIconUrl(path, charDict.value);
+    }
+
+    function getStoryIconFallback(path: string): string {
+        const { getCharacterAvatarFallbackUrl } = useArknightsStoryUtils();
         const parts = path.split("/");
         const filename = parts[parts.length - 1].replace(".txt", "");
 
-        // Check if it's activities type
-        if (parts[0] === "activities") {
-            return `https://r2.m31ns.top/img/banners/${parts[1]}.png`;
-        }
-
-        // Check if 'main' appears in the path (could be parts[0] or parts[1])
-        const hasMain = parts.includes("main");
-        const hasSt = parts.includes("st");
-
-        if (hasMain || hasSt) {
-            // Extract chapter number from filename: level_main_15-10_beg → 15
-            const match = filename.match(/(\d+)-\d+/); // Match first number before dash
-            if (match && match[1]) {
-                const chapterNum = parseInt(match[1], 10); // Remove leading zeros
-                return `https://r2.m31ns.top/img/icons/main_${chapterNum}.png`;
+        // For record stories, use GitHub fallback URL
+        if (filename.startsWith("story_")) {
+            const actIdMatch = path.match(/story_[^\/]+/);
+            if (actIdMatch) {
+                const actId = actIdMatch[0].replace('.txt', '');
+                const charId = getCharacterFromRecordActId(actId);
+                if (charId) {
+                    return getCharacterAvatarFallbackUrl(charId);
+                }
             }
         }
 
-        // Fallback to chapter ID
-        return `https://r2.m31ns.top/img/icons/${parts[1] || parts[0]}.png`;
+        // Other stories use generic fallback
+        return `https://r2.m31ns.top/img/icons/404.png`;
+    }
+
+    function handleStoryIconError(path: string) {
+        storyIconErrors.value.add(path);
     }
 
     function getStoryName(path: string): string {
@@ -523,6 +538,7 @@ Available characters for "${name}":`,
         () => lang.value,
         async () => {
             await loadLanguageData(langCode.value);
+            await loadStoryVariables(langCode.value);
         }
     );
 
@@ -534,6 +550,7 @@ Available characters for "${name}":`,
 
     onMounted(async () => {
         await loadLanguageData(langCode.value);
+        await loadStoryVariables(langCode.value);
 
         const charParam = new URLSearchParams(window.location.search).get(
             "char"

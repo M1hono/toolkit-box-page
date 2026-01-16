@@ -37,7 +37,7 @@ async function syncLanguage(langCode, options = {}) {
     const scanState = loadScanState();
     const mergedCharacters = await generateVariants(allCharacters, allCharacters, scanState, options);
     
-    consolidateResults(mergedCharacters, langCode);
+    await consolidateResults(mergedCharacters, langCode);
 }
 
 /**

@@ -80,7 +80,7 @@
     }
 
     function handleMouseMove(event: MouseEvent | TouchEvent) {
-        const coords = getCanvasCoords(event);
+            const coords = getCanvasCoords(event);
         
         if (props.isSelecting || props.isResizing) {
             emit("update-selection", coords.x, coords.y);

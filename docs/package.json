@@ -65,6 +65,7 @@
         "data:cleanup": "node scripts/arknights/cleanupData.cjs",
         "data:names": "node scripts/arknights/updateNamesOnly.cjs",
         "r2:sync": "node scripts/sync-to-r2.cjs",
+        "r2:sync-data": "node scripts/sync-data-to-r2.cjs",
         "r2:failures": "node scripts/view-sync-failures.cjs"
     },
     "dependencies": {

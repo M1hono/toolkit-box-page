@@ -167,11 +167,11 @@ async function updateNamesForLanguage(langCode) {
                 searchIndex[name] = actualId;
             } else if (typeof searchIndex[name] === 'string') {
                 if (searchIndex[name] !== actualId) {
-                    searchIndex[name] = [searchIndex[name], actualId];
+                searchIndex[name] = [searchIndex[name], actualId];
                 }
             } else if (Array.isArray(searchIndex[name])) {
                 if (!searchIndex[name].includes(actualId)) {
-                    searchIndex[name].push(actualId);
+                searchIndex[name].push(actualId);
                 }
             }
         }
