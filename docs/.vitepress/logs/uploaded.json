@@ -50360,5 +50360,17 @@
     "variant": "char_002_amiya_2#9$1",
     "status": "failed",
     "error": "download_failed"
+  },
+  "avg_npc_1258_1#1$1.webp": {
+    "timestamp": 1768578799886,
+    "variant": "avg_npc_1258_1#1$1",
+    "webp": true,
+    "status": "uploaded"
+  },
+  "avg_npc_1910_1#1$1.webp": {
+    "timestamp": 1768578802380,
+    "variant": "avg_npc_1910_1#1$1",
+    "webp": true,
+    "status": "uploaded"
   }
 }
