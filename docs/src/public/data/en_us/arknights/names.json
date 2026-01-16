@@ -77,7 +77,8 @@
       "Wastelander",
       "Rickety Joe",
       "Old Captain",
-      "Abi"
+      "Abi",
+      "Rusthammer Warriors"
     ],
     "searchNames": [
       "Bounty Hunter",
@@ -122,7 +123,8 @@
       "Wastelander",
       "Rickety Joe",
       "Old Captain",
-      "Abi"
+      "Abi",
+      "Rusthammer Warriors"
     ],
     "displayName": "Bounty Hunter"
   },
@@ -860,7 +862,8 @@
       "Miners?",
       "Infected Employee",
       "Neighbor B",
-      "Angry Villager"
+      "Angry Villager",
+      "Infected Employees"
     ],
     "searchNames": [
       "Stone the Infected",
@@ -891,7 +894,8 @@
       "Miners?",
       "Infected Employee",
       "Neighbor B",
-      "Angry Villager"
+      "Angry Villager",
+      "Infected Employees"
     ],
     "displayName": "Stone the Infected"
   },
@@ -1631,7 +1635,8 @@
       "Sarkaz Teacher",
       "Old Sarkaz Hunter",
       "Agama Gang",
-      "Agama Gang Leader"
+      "Agama Gang Leader",
+      "Excited Mercenary"
     ],
     "searchNames": [
       "Armed Infected",
@@ -1665,7 +1670,8 @@
       "Sarkaz Teacher",
       "Old Sarkaz Hunter",
       "Agama Gang",
-      "Agama Gang Leader"
+      "Agama Gang Leader",
+      "Excited Mercenary"
     ],
     "displayName": "Armed Infected"
   },
@@ -2703,7 +2709,8 @@
       "Kazimierz Representative",
       "Commercial Agent",
       "Staff Worker",
-      "Navigator"
+      "Navigator",
+      "Travel-Stained Lawyer"
     ],
     "searchNames": [
       "Secretary",
@@ -2735,7 +2742,8 @@
       "Kazimierz Representative",
       "Commercial Agent",
       "Staff Worker",
-      "Navigator"
+      "Navigator",
+      "Travel-Stained Lawyer"
     ],
     "displayName": "Secretary"
   },
@@ -2944,7 +2952,8 @@
       "Yota",
       "Serious Archosauria",
       "Furious Archosauria",
-      "Impetuous Villager"
+      "Impetuous Villager",
+      "Uda & Aruna"
     ],
     "searchNames": [
       "Archosauria A",
@@ -2959,7 +2968,8 @@
       "Yota",
       "Serious Archosauria",
       "Furious Archosauria",
-      "Impetuous Villager"
+      "Impetuous Villager",
+      "Uda & Aruna"
     ],
     "displayName": "Archosauria A"
   },
@@ -2985,7 +2995,8 @@
       "Tribe Priest",
       "Rowdy Archosauria",
       "Enthusiastic Villager",
-      "Sage's Attendant"
+      "Sage's Attendant",
+      "Courageous Archosauria"
     ],
     "searchNames": [
       "Archosauria B",
@@ -3008,7 +3019,8 @@
       "Tribe Priest",
       "Rowdy Archosauria",
       "Enthusiastic Villager",
-      "Sage's Attendant"
+      "Sage's Attendant",
+      "Courageous Archosauria"
     ],
     "displayName": "Archosauria B"
   },
@@ -3324,7 +3336,8 @@
       "Flametail' Sona",
       "Sona",
       "Flametail Knight",
-      "A Hoarse Knight"
+      "A Hoarse Knight",
+      "Greatmouth Mob"
     ],
     "searchNames": [
       "Flametail",
@@ -3333,7 +3346,8 @@
       "Flametail' Sona",
       "Sona",
       "Flametail Knight",
-      "A Hoarse Knight"
+      "A Hoarse Knight",
+      "Greatmouth Mob"
     ],
     "displayName": "Flametail"
   },
@@ -3461,11 +3475,13 @@
   "avg_npc_120": {
     "speakerNames": [
       "Old Knight",
-      "Old Craftsman"
+      "Old Craftsman",
+      "Old Knight & Old Craftsman"
     ],
     "searchNames": [
       "Old Knight",
-      "Old Craftsman"
+      "Old Craftsman",
+      "Old Knight & Old Craftsman"
     ],
     "displayName": "Old Knight"
   },
@@ -3547,7 +3563,8 @@
       "Mysterious Person",
       "Criminal",
       "Casino Guest",
-      "Bolívarian Traveler"
+      "Bolívarian Traveler",
+      "Male & Female Tourist"
     ],
     "searchNames": [
       "Chagrined Male Tourist",
@@ -3563,7 +3580,8 @@
       "Mysterious Person",
       "Criminal",
       "Casino Guest",
-      "Bolívarian Traveler"
+      "Bolívarian Traveler",
+      "Male & Female Tourist"
     ],
     "displayName": "Chagrined Male Tourist"
   },
@@ -4073,12 +4091,14 @@
     "speakerNames": [
       "Maria",
       "Foreign Tourist B",
-      "Blemishine"
+      "Blemishine",
+      "Maria & Platinum"
     ],
     "searchNames": [
       "Maria",
       "Foreign Tourist B",
-      "Blemishine"
+      "Blemishine",
+      "Maria & Platinum"
     ],
     "displayName": "Maria"
   },
@@ -4190,11 +4210,13 @@
   "avg_npc_102": {
     "speakerNames": [
       "Withered Knight",
-      "Corrupted Knight"
+      "Corrupted Knight",
+      "Corrupted Knight & Withered Knight"
     ],
     "searchNames": [
       "Withered Knight",
-      "Corrupted Knight"
+      "Corrupted Knight",
+      "Corrupted Knight & Withered Knight"
     ],
     "displayName": "Withered Knight"
   },
@@ -4351,13 +4373,15 @@
       "A Competing Knight",
       "A Kazimierz Knight",
       "Armor-clad Knight",
-      "Zorn"
+      "Zorn",
+      "Razor Knight"
     ],
     "searchNames": [
       "A Competing Knight",
       "A Kazimierz Knight",
       "Armor-clad Knight",
-      "Zorn"
+      "Zorn",
+      "Razor Knight"
     ],
     "displayName": "A Competing Knight"
   },
@@ -4604,7 +4628,9 @@
       "Alert Shanhaizhong Member",
       "Vicious Shanhaizhong Member",
       "Anxious Shanhaizhong Member",
-      "Restless Shanhaizhong Member"
+      "Restless Shanhaizhong Member",
+      "Greedy Shanhaizhong Member",
+      "Calm Shanhaizhong Member"
     ],
     "searchNames": [
       "Panicked Shanhaizhong Member",
@@ -4615,7 +4641,9 @@
       "Alert Shanhaizhong Member",
       "Vicious Shanhaizhong Member",
       "Anxious Shanhaizhong Member",
-      "Restless Shanhaizhong Member"
+      "Restless Shanhaizhong Member",
+      "Greedy Shanhaizhong Member",
+      "Calm Shanhaizhong Member"
     ],
     "displayName": "Panicked Shanhaizhong Member"
   },
@@ -6166,7 +6194,9 @@
       "Hoodlum",
       "Street Thug",
       "Street Loafer",
-      "Plated Fist Practitioner"
+      "Plated Fist Practitioner",
+      "Street Youths",
+      "Suspicious Passersby"
     ],
     "searchNames": [
       "Street Youth",
@@ -6179,7 +6209,9 @@
       "Hoodlum",
       "Street Thug",
       "Street Loafer",
-      "Plated Fist Practitioner"
+      "Plated Fist Practitioner",
+      "Street Youths",
+      "Suspicious Passersby"
     ],
     "displayName": "Street Youth"
   },
@@ -8722,7 +8754,8 @@
       "Cafeteria Manager",
       "Hairdresser",
       "Messenger",
-      "Farmer"
+      "Farmer",
+      "Gossipy Manservant"
     ],
     "searchNames": [
       "Frantic Man",
@@ -8740,7 +8773,8 @@
       "Cafeteria Manager",
       "Hairdresser",
       "Messenger",
-      "Farmer"
+      "Farmer",
+      "Gossipy Manservant"
     ],
     "displayName": "Frantic Man"
   },
@@ -11232,13 +11266,15 @@
       "Shy Child & Lively Child",
       "Lively Child",
       "Erendel",
-      "Estara & Erendel"
+      "Estara & Erendel",
+      "Raggedly-Dressed Boy"
     ],
     "searchNames": [
       "Shy Child & Lively Child",
       "Lively Child",
       "Erendel",
-      "Estara & Erendel"
+      "Estara & Erendel",
+      "Raggedly-Dressed Boy"
     ],
     "displayName": "Shy Child & Lively Child"
   },
@@ -11883,7 +11919,8 @@
       "Stubborn Snowfield Rioter",
       "Hard-hearted Hoodlum",
       "Guileful Gangster",
-      "Young Man With Bruised Face"
+      "Young Man With Bruised Face",
+      "Indifferent Snowfield Bandit"
     ],
     "searchNames": [
       "Sneaky Snowfield Bandit",
@@ -11894,7 +11931,8 @@
       "Stubborn Snowfield Rioter",
       "Hard-hearted Hoodlum",
       "Guileful Gangster",
-      "Young Man With Bruised Face"
+      "Young Man With Bruised Face",
+      "Indifferent Snowfield Bandit"
     ],
     "displayName": "Sneaky Snowfield Bandit"
   },
@@ -13015,10 +13053,14 @@
   },
   "avg_npc_1303_1": {
     "speakerNames": [
-      "Lost Child"
+      "Lost Child",
+      "Sleepy Child",
+      "Odda"
     ],
     "searchNames": [
-      "Lost Child"
+      "Lost Child",
+      "Sleepy Child",
+      "Odda"
     ],
     "displayName": "Lost Child"
   },
@@ -13326,19 +13368,23 @@
   },
   "avg_npc_1381_1": {
     "speakerNames": [
-      "Blandus"
+      "Blandus",
+      "Haggard Scholar"
     ],
     "searchNames": [
-      "Blandus"
+      "Blandus",
+      "Haggard Scholar"
     ],
     "displayName": "Blandus"
   },
   "avg_npc_1387_1": {
     "speakerNames": [
-      "Cassia"
+      "Cassia",
+      "Ægir Woman"
     ],
     "searchNames": [
-      "Cassia"
+      "Cassia",
+      "Ægir Woman"
     ],
     "displayName": "Cassia"
   },
@@ -13593,7 +13639,9 @@
       "Museum Staff",
       "Museum Ticketer",
       "Doting Servant",
-      "Servant in Bushes"
+      "Servant in Bushes",
+      "Mother",
+      "Incredibly Bored Citizen"
     ],
     "searchNames": [
       "Picky Visitor",
@@ -13604,7 +13652,9 @@
       "Museum Staff",
       "Museum Ticketer",
       "Doting Servant",
-      "Servant in Bushes"
+      "Servant in Bushes",
+      "Mother",
+      "Incredibly Bored Citizen"
     ],
     "displayName": "Picky Visitor"
   },
@@ -15229,11 +15279,13 @@
   "avg_npc_1636_1": {
     "speakerNames": [
       "Veteran Chef",
-      "Careless Chef"
+      "Careless Chef",
+      "Bored Chef"
     ],
     "searchNames": [
       "Veteran Chef",
-      "Careless Chef"
+      "Careless Chef",
+      "Bored Chef"
     ],
     "displayName": "Veteran Chef"
   },
@@ -16130,13 +16182,15 @@
       "Staff",
       "Scared Staff",
       "Skeptical Staff",
-      "Confused Staff B"
+      "Confused Staff B",
+      "Staff B"
     ],
     "searchNames": [
       "Staff",
       "Scared Staff",
       "Skeptical Staff",
-      "Confused Staff B"
+      "Confused Staff B",
+      "Staff B"
     ],
     "displayName": "Staff"
   },
@@ -16309,10 +16363,12 @@
   },
   "char_106_franka_1": {
     "speakerNames": [
-      "Franka"
+      "Franka",
+      "Franka & Exusiai"
     ],
     "searchNames": [
-      "Franka"
+      "Franka",
+      "Franka & Exusiai"
     ],
     "displayName": "Franka"
   },
@@ -18149,10 +18205,18 @@
   },
   "avg_npc_1497_1": {
     "speakerNames": [
-      "Infected Girl"
+      "Infected Girl",
+      "Girl by the Shore",
+      "Sad Girl",
+      "Sobbing Girl",
+      "Happy Girl"
     ],
     "searchNames": [
-      "Infected Girl"
+      "Infected Girl",
+      "Girl by the Shore",
+      "Sad Girl",
+      "Sobbing Girl",
+      "Happy Girl"
     ],
     "displayName": "Infected Girl"
   },
@@ -19257,5 +19321,14 @@
       "Another Girl's Voice"
     ],
     "displayName": "Amiya"
+  },
+  "avg_npc_1258_1": {
+    "speakerNames": [
+      "Elegant Woman"
+    ],
+    "searchNames": [
+      "Elegant Woman"
+    ],
+    "displayName": "Elegant Woman"
   }
 }

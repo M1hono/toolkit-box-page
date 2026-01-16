@@ -103,11 +103,40 @@ function shouldFilterName(name, langCode = 'zh_CN') {
     return false;
 }
 
+// Character slot and focus mapping (following akgcc logic)
+const CharslotFocusMap = {
+    'l': 1, 'left': 1,
+    'm': 2, 'middle': 2,
+    'r': 3, 'right': 3,
+    'all': 99, 'a': 99,
+    'none': -1, 'n': -1
+};
+
+const CharslotNameMap = {
+    'l': '', 'left': '',  // Should be 1, but kept as '' for safety
+    'm': 2, 'middle': 2,
+    'r': 3, 'right': 3
+};
+
 function parseStory(text, storyId, langCode = 'zh_CN') {
     const lines = text.split("\n");
-    const stage = { spotlight: "", characters: {}, history: [], names: {} };
+    const stage = { 
+        spotlight: "", 
+        characters: {},  // Maps slot -> character variant (e.g., "1" -> "char_002_amiya_1#5")
+        speaker: 0,      // Current speaker number (1, 2, 3, 99)
+        history: [],     // All characters that appeared
+        names: {}        // Maps characterId -> Set of names
+    };
     
     const getProtagonist = () => stage.characters[stage.spotlight] || "";
+    const getSpeakingCharacter = () => {
+        // Get the character who is currently speaking based on focus
+        if (stage.speaker === 99) return null; // All speaking - don't map
+        if (stage.speaker === -1 || stage.speaker === 0) return null; // None/dialog
+        
+        const slotKey = stage.speaker === 1 ? "name" : `name${stage.speaker}`;
+        return stage.characters[slotKey] || "";
+    };
     
     lines.forEach(line => {
         const trimmed = line.trim();
@@ -115,13 +144,14 @@ function parseStory(text, storyId, langCode = 'zh_CN') {
 
         const dialogMatch = trimmed.match(/\[name="([^"]+)"\]/);
         if (dialogMatch) {
-            const speaker = dialogMatch[1];
-            const protag = getProtagonist();
-            if (protag) {
-                const baseId = getBaseCharacterId(protag);
-                if (baseId && !shouldExcludeMappingFull(baseId, speaker, langCode)) {
+            const speakerName = dialogMatch[1];
+            // Map name only to the FOCUSED/SPEAKING character
+            const speakingChar = getSpeakingCharacter();
+            if (speakingChar) {
+                const baseId = getBaseCharacterId(speakingChar);
+                if (baseId && !shouldExcludeMappingFull(baseId, speakerName, langCode)) {
                     if (!stage.names[baseId]) stage.names[baseId] = new Set();
-                    stage.names[baseId].add(speaker);
+                    stage.names[baseId].add(speakerName);
                 }
             }
             return;
@@ -137,35 +167,61 @@ function parseStory(text, storyId, langCode = 'zh_CN') {
             if (!args.name && !args.name2) {
                 stage.spotlight = ""; 
                 stage.characters = {};
+                stage.speaker = 0;
             } else {
                 const variant1 = normalizeRawId(args.name);
                 const variant2 = normalizeRawId(args.name2);
+                
+                stage.characters = {};
                 if (variant1) { 
-                    stage.characters["1"] = variant1; 
+                    stage.characters["name"] = variant1;  // name = slot 1
                     const baseId = getBaseCharacterId(variant1);
                     if (baseId) stage.history.push(baseId);
                 }
                 if (variant2) { 
-                    stage.characters["2"] = variant2; 
+                    stage.characters["name2"] = variant2;  // name2 = slot 2
                     const baseId = getBaseCharacterId(variant2);
                     if (baseId) stage.history.push(baseId);
                 }
-                stage.spotlight = args.focus || "1";
+                
+                // Set speaker based on focus
+                const focusArg = args.focus || "1";
+                stage.speaker = parseInt(focusArg) || 1;
+                stage.spotlight = stage.speaker === 1 ? "name" : `name${stage.speaker}`;
             }
         } else if (cmd === "charslot") {
-            const variant = normalizeRawId(args.name);
-            if (variant) {
-                stage.characters[args.slot] = variant;
-                const baseId = getBaseCharacterId(variant);
-                if (baseId) stage.history.push(baseId);
-                stage.spotlight = args.focus || args.slot;
-            } else {
+            if (!args || !args.name) {
                 stage.spotlight = ""; 
                 stage.characters = {};
+                stage.speaker = 0;
+            } else {
+                const variant = normalizeRawId(args.name);
+                if (variant) {
+                    // Delete duplicates of same character
+                    const basename = (name) => name.split("#")[0].split("$")[0];
+                    const variantBase = basename(variant);
+                    for (let key in stage.characters) {
+                        if (basename(stage.characters[key]) === variantBase) {
+                            delete stage.characters[key];
+                        }
+                    }
+                    
+                    // Add character to slot
+                    const slotKey = `name${CharslotNameMap[args.slot] || args.slot}`;
+                    stage.characters[slotKey] = variant;
+                    
+                    const baseId = getBaseCharacterId(variant);
+                    if (baseId) stage.history.push(baseId);
+                    
+                    // Set speaker based on focus
+                    stage.speaker = CharslotFocusMap[args.focus] || CharslotNameMap[args.slot] || 1;
+                    stage.spotlight = slotKey;
+                }
             }
         } else if (cmd === "dialog") {
             stage.spotlight = ""; 
             stage.characters = {};
+            stage.speaker = 0;
         }
     });
 

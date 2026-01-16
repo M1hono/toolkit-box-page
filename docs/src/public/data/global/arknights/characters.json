@@ -21022,5 +21022,21 @@
     ],
     "charType": "operator",
     "dialogCount": 0
+  },
+  "avg_npc_1258_1": {
+    "charId": "avg_npc_1258_1",
+    "validVariants": [
+      "avg_npc_1258_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_1910_1": {
+    "charId": "avg_npc_1910_1",
+    "validVariants": [
+      "avg_npc_1910_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
   }
 }

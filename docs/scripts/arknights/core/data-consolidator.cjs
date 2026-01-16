@@ -106,25 +106,21 @@ async function consolidateResults(results, langCode) {
         }
 
         // Update language-specific names (use targetId after combine)
-        if (
-            !langNames[targetId] ||
-            (data.speakerNames && data.speakerNames.length > 0)
-        ) {
-            const existingNames = langNames[targetId]?.speakerNames || [];
-            const newNames = data.speakerNames || [];
-            const mergedNames = Array.from(
-                new Set([...existingNames, ...newNames])
-            ).filter(Boolean);
-
+        // REPLACE names from story parsing, don't merge with old data
+        if (data.speakerNames && data.speakerNames.length > 0) {
             langNames[targetId] = {
-                speakerNames: mergedNames,
-                searchNames: mergedNames,
-                displayName:
-                    mergedNames[0] ||
-                    langNames[targetId]?.displayName ||
-                    targetId,
+                speakerNames: data.speakerNames,
+                searchNames: data.speakerNames,
+                displayName: data.speakerNames[0] || targetId,
             };
             updatedNames++;
+        } else if (!langNames[targetId]) {
+            // Only keep existing if character not found in stories
+            langNames[targetId] = {
+                speakerNames: langNames[targetId]?.speakerNames || [],
+                searchNames: langNames[targetId]?.searchNames || [],
+                displayName: langNames[targetId]?.displayName || targetId,
+            };
         }
 
         // Update language-specific story mappings
