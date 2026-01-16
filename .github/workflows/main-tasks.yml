@@ -82,6 +82,23 @@ jobs:
                   yarn data:arknights
                   echo "Arknights character data update complete"
 
+            - name: Extract Kal'tsit Debug Files
+              if: ${{ inputs.task_priority == 'arknights-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
+              working-directory: docs
+              run: |
+                  echo "Extracting debug files for Kal'tsit name mappings..."
+                  yarn data:extract-kalts-debug
+                  echo "Debug extraction complete"
+
+            - name: Upload Kal'tsit Debug Files
+              if: always()
+              uses: actions/upload-artifact@v4
+              with:
+                  name: kalts-debug-files-${{ github.run_number }}
+                  path: |
+                      docs/.debug/
+                  retention-days: 30
+
             - name: Update FGO Data
               if: ${{ inputs.task_priority == 'fgo-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
               working-directory: docs

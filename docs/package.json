@@ -65,6 +65,7 @@
         "data:story-clean": "rm -rf src/public/data/*/arknights/story && echo 'Story files cleaned'",
         "data:cleanup": "node scripts/arknights/cleanupData.cjs",
         "data:names": "node scripts/arknights/updateNamesOnly.cjs",
+        "data:extract-kalts-debug": "node scripts/arknights/extract-kalts-problem-files.cjs",
         "r2:sync": "node scripts/sync-to-r2.cjs",
         "r2:sync-data": "node scripts/sync-data-to-r2.cjs",
         "r2:failures": "node scripts/view-sync-failures.cjs"

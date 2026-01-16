@@ -118,17 +118,6 @@ const CharslotNameMap = {
     'r': 3, 'right': 3
 };
 
-// Debug: Track problematic name assignments for Kal'tsit
-const KALTS_DEBUG = {
-    enabled: process.env.DEBUG_KALTS === 'true',
-    correctNames: {
-        'zh_CN': ['凯尔希'],
-        'en_US': ['Kal\'tsit', 'Dr. Kal\'tsit'],
-        'ja_JP': ['ケルシー']
-    },
-    issues: []
-};
-
 function parseStory(text, storyId, langCode = 'zh_CN') {
     const lines = text.split("\n");
     const stage = { 
@@ -167,27 +156,6 @@ function parseStory(text, storyId, langCode = 'zh_CN') {
                 if (baseId && !shouldExcludeMappingFull(baseId, speakerName, langCode)) {
                     if (!stage.names[baseId]) stage.names[baseId] = new Set();
                     stage.names[baseId].add(speakerName);
-                    
-                    // Debug: Check for wrong Kal'tsit name assignments
-                    if (KALTS_DEBUG.enabled && baseId.includes('kalts')) {
-                        const correctNames = KALTS_DEBUG.correctNames[langCode] || [];
-                        const isCorrect = correctNames.some(correct => 
-                            speakerName.includes(correct)
-                        );
-                        
-                        if (!isCorrect) {
-                            const issue = {
-                                file: storyId,
-                                character: baseId,
-                                wrongName: speakerName,
-                                speakingChar: speakingChar,
-                                speaker: stage.speaker,
-                                characters: {...stage.characters}
-                            };
-                            KALTS_DEBUG.issues.push(issue);
-                            console.warn(`⚠️  [${storyId}] Assigning "${speakerName}" to ${baseId} (speaker=${stage.speaker})`);
-                        }
-                    }
                 }
             }
             return;
@@ -277,6 +245,5 @@ module.exports = {
     shouldFilterName,
     getBaseCharacterId,
     shouldExcludeMappingFull,
-    loadLangExcludeRules,
-    KALTS_DEBUG
+    loadLangExcludeRules
 };
