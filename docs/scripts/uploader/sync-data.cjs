@@ -44,7 +44,6 @@ async function syncJsonFile(localPath, filename, lang = null, game = 'arknights'
             })
         );
 
-        console.log(`Uploaded: ${r2Key}`);
         return true;
     } catch (error) {
         console.error(`Failed: ${r2Key} - ${error.message}`);

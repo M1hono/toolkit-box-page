@@ -70,7 +70,6 @@
         "r2:story-avatars": "node scripts/uploader/sync-story-avatars.cjs",
         "r2:story-icons": "node scripts/uploader/sync-story-icons.cjs",
         "r2:data": "node scripts/uploader/sync-data.cjs",
-        "r2:cleanup": "node scripts/uploader/cleanup-r2-wrong-paths.cjs",
         "r2:failures": "node scripts/view-sync-failures.cjs"
     },
     "dependencies": {
