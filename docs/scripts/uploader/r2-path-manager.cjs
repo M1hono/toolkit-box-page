@@ -46,27 +46,34 @@ function getStoryAvatarKey(charId, isWebp = false) {
     // Story avatars are always base character IDs (no variants) in avatars folder
     const baseId = charId.split('#')[0].split('$')[0];
     const extension = isWebp ? 'webp' : 'png';
-    return `${R2_FOLDERS.AVATARS}/${baseId}.${extension}`;
+    const encodedId = encodeURIComponent(baseId);
+    return `${R2_FOLDERS.AVATARS}/${encodedId}.${extension}`;
 }
 
 /**
  * Generate proper R2 key for character variant image (full PNG image)
  * @param {string} variantId - Full variant ID with # and $ 
  * @returns {string} R2 key
+ * @example 'avg_003_kalts_1#1$1' -> 'arknights/characters/avg_003_kalts_1%231%241.png'
  */
 function getCharacterVariantKey(variantId) {
     // Character variant images are always PNG in characters folder
-    return `${R2_FOLDERS.CHARACTERS}/${variantId}.png`;
+    // URL encode # and $ for R2 keys
+    const encodedId = encodeURIComponent(variantId);
+    return `${R2_FOLDERS.CHARACTERS}/${encodedId}.png`;
 }
 
 /**
  * Generate proper R2 key for variant avatar (small WebP icon for display/search)
  * @param {string} variantId - Full variant ID with # and $
- * @returns {string} R2 key  
+ * @returns {string} R2 key
+ * @example 'avg_003_kalts_1#1$1' -> 'arknights/variantavatars/avg_003_kalts_1%231%241.webp'
  */
 function getVariantAvatarKey(variantId) {
     // Variant avatars are always WebP in variantavatars folder
-    return `${R2_FOLDERS.VARIANT_AVATARS}/${variantId}.webp`;
+    // URL encode # and $ for R2 keys
+    const encodedId = encodeURIComponent(variantId);
+    return `${R2_FOLDERS.VARIANT_AVATARS}/${encodedId}.webp`;
 }
 
 /**

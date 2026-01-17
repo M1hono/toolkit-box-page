@@ -88,10 +88,10 @@ async function syncCharacterVariant(variant, cacheDir) {
 }
 
 /**
- * Main function with wave-based processing
+ * Main function with parallel wave processing
  */
 async function main() {
-    console.log("Starting character variant sync with wave processing...\n");
+    console.log("Starting character variant sync with parallel processing...\n");
 
     const characters = loadCharacters();
     const cacheDir = path.resolve(__dirname, "../../.cache/characters");
@@ -106,28 +106,46 @@ async function main() {
 
     console.log(`Scan complete: ${allVariants.length} character variants\n`);
 
-    const WAVE_UPLOAD_LIMIT = 300;
-    const WAVE_DELAY = 2000;
+    const BATCH_SIZE = 20;
+    const MAX_UPLOADS_PER_WAVE = 300;
+    const MAX_UPLOADS_PER_RUN = 1000;
+    const WAVE_DELAY = 1000;
     
     let totalUploaded = 0, totalSkipped = 0, totalFailed = 0;
     let waveNumber = 1;
     let uploadedInWave = 0;
 
-    for (let i = 0; i < allVariants.length; i++) {
-        const variant = allVariants[i];
-        const result = await syncCharacterVariant(variant, cacheDir);
-        
-        if (result === 'uploaded') {
-            totalUploaded++;
-            uploadedInWave++;
-        } else if (result === 'skipped') {
-            totalSkipped++;
-        } else {
-            totalFailed++;
+    for (let i = 0; i < allVariants.length; i += BATCH_SIZE) {
+        // Stop if reached max uploads for this run
+        if (totalUploaded >= MAX_UPLOADS_PER_RUN) {
+            console.log(`\nReached max upload limit (${MAX_UPLOADS_PER_RUN}), stopping`);
+            console.log(`Remaining: ${allVariants.length - i} variants`);
+            break;
         }
 
-        // Check if wave limit reached (only count uploads, not skips)
-        if (uploadedInWave >= WAVE_UPLOAD_LIMIT && i < allVariants.length - 1) {
+        const batch = allVariants.slice(i, i + BATCH_SIZE);
+        
+        // Process batch in parallel
+        const results = await Promise.all(
+            batch.map(variant => syncCharacterVariant(variant, cacheDir))
+        );
+        
+        // Count results
+        results.forEach(result => {
+            if (result === 'uploaded') {
+                totalUploaded++;
+                uploadedInWave++;
+            } else if (result === 'skipped') {
+                totalSkipped++;
+            } else {
+                totalFailed++;
+            }
+        });
+
+        console.log(`Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${results.filter(r => r === 'uploaded').length} uploaded, ${results.filter(r => r === 'skipped').length} skipped`);
+
+        // Check if wave limit reached (only count uploads)
+        if (uploadedInWave >= MAX_UPLOADS_PER_WAVE && i + BATCH_SIZE < allVariants.length && totalUploaded < MAX_UPLOADS_PER_RUN) {
             console.log(`\nWave ${waveNumber} complete: ${uploadedInWave} uploads`);
             console.log(`Waiting ${WAVE_DELAY}ms before next wave...\n`);
             await new Promise(resolve => setTimeout(resolve, WAVE_DELAY));

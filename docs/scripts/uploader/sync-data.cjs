@@ -22,8 +22,8 @@ const client = new S3Client({
 /**
  * Sync single JSON file (always uploads, no skip logic)
  */
-async function syncJsonFile(localPath, filename, lang = null) {
-    const r2Key = getDataFileKey(filename, lang, 'arknights');
+async function syncJsonFile(localPath, filename, lang = null, game = 'arknights') {
+    const r2Key = getDataFileKey(filename, lang, game);
 
     try {
         if (!fs.existsSync(localPath)) {
@@ -53,28 +53,29 @@ async function syncJsonFile(localPath, filename, lang = null) {
 }
 
 /**
- * Main function (no waves - data files are always updated)
+ * Main function with parallel processing
  */
 async function main() {
-    console.log("Starting JSON data sync (always updates)...\n");
+    console.log("Starting JSON data sync with parallel processing...\n");
 
     const baseDir = path.resolve(__dirname, "../../src/public/data");
-    let uploaded = 0, failed = 0;
+    const allFiles = [];
 
-    // Global files
+    // Collect global files
     const globalDir = path.join(baseDir, "global/arknights");
     if (fs.existsSync(globalDir)) {
         const globalFiles = fs.readdirSync(globalDir).filter(f => f.endsWith('.json'));
-        console.log(`Global files: ${globalFiles.length}`);
-        
-        for (const filename of globalFiles) {
-            const localPath = path.join(globalDir, filename);
-            const success = await syncJsonFile(localPath, filename, null);
-            if (success) uploaded++; else failed++;
-        }
+        globalFiles.forEach(filename => {
+            allFiles.push({
+                localPath: path.join(globalDir, filename),
+                filename,
+                lang: null,
+                game: 'arknights'
+            });
+        });
     }
 
-    // Language files
+    // Collect language files
     const languages = PROJECT_CONFIG.GAMES.arknights.supported_langs;
     for (const langCode of languages) {
         const localeCode = PROJECT_CONFIG.getLocaleCode(langCode);
@@ -82,20 +83,31 @@ async function main() {
         
         if (fs.existsSync(langDir)) {
             const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
-            console.log(`${localeCode} files: ${langFiles.length}`);
-            
-            for (const filename of langFiles) {
-                const localPath = path.join(langDir, filename);
-                const success = await syncJsonFile(localPath, filename, localeCode);
-                if (success) uploaded++; else failed++;
-            }
+            langFiles.forEach(filename => {
+                allFiles.push({
+                    localPath: path.join(langDir, filename),
+                    filename,
+                    lang: localeCode,
+                    game: 'arknights'
+                });
+            });
         }
     }
+
+    console.log(`Scan complete: ${allFiles.length} data files\n`);
+
+    // Upload all files in parallel
+    const results = await Promise.all(
+        allFiles.map(file => syncJsonFile(file.localPath, file.filename, file.lang, file.game))
+    );
+    
+    const uploaded = results.filter(r => r === true).length;
+    const failed = results.filter(r => r === false).length;
 
     console.log(`\nSync complete:`);
     console.log(`  Uploaded: ${uploaded}`);
     console.log(`  Failed: ${failed}`);
-    console.log(`  Total: ${uploaded + failed}`);
+    console.log(`  Total: ${allFiles.length}`);
 }
 
 if (require.main === module) {

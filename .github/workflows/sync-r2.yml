@@ -13,11 +13,6 @@ on:
                 required: false
                 default: false
                 type: boolean
-            cleanup_wrong_paths:
-                description: "Clean up files in wrong R2 paths"
-                required: false
-                default: true
-                type: boolean
     workflow_run:
         workflows: ["Main Data Pipeline"]
         types:
@@ -46,7 +41,6 @@ jobs:
               run: yarn install --frozen-lockfile
 
             - name: Clean up R2 wrong paths if requested
-              if: ${{ inputs.cleanup_wrong_paths == true }}
               working-directory: docs
               env:
                   R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}

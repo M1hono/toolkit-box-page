@@ -99,10 +99,10 @@ async function syncStoryAvatar(charId, cacheDir) {
 }
 
 /**
- * Main function with wave-based processing
+ * Main function with parallel wave processing
  */
 async function main() {
-    console.log("Starting story avatar sync with wave processing...\n");
+    console.log("Starting story avatar sync with parallel processing...\n");
 
     const operators = await discoverOperators();
     const cacheDir = path.resolve(__dirname, "../../.cache/story-avatars");
@@ -110,28 +110,46 @@ async function main() {
 
     console.log(`Scan complete: ${operators.length} story avatars\n`);
 
-    const WAVE_UPLOAD_LIMIT = 200;
-    const WAVE_DELAY = 2000;
+    const BATCH_SIZE = 20;
+    const MAX_UPLOADS_PER_WAVE = 200;
+    const MAX_UPLOADS_PER_RUN = 500;
+    const WAVE_DELAY = 1000;
     
     let totalUploaded = 0, totalSkipped = 0, totalFailed = 0;
     let waveNumber = 1;
     let uploadedInWave = 0;
 
-    for (let i = 0; i < operators.length; i++) {
-        const charId = operators[i];
-        const result = await syncStoryAvatar(charId, cacheDir);
-        
-        if (result === 'uploaded') {
-            totalUploaded++;
-            uploadedInWave++;
-        } else if (result === 'skipped') {
-            totalSkipped++;
-        } else {
-            totalFailed++;
+    for (let i = 0; i < operators.length; i += BATCH_SIZE) {
+        // Stop if reached max uploads for this run
+        if (totalUploaded >= MAX_UPLOADS_PER_RUN) {
+            console.log(`\nReached max upload limit (${MAX_UPLOADS_PER_RUN}), stopping`);
+            console.log(`Remaining: ${operators.length - i} avatars`);
+            break;
         }
 
-        // Check if wave limit reached (only count uploads, not skips)
-        if (uploadedInWave >= WAVE_UPLOAD_LIMIT && i < operators.length - 1) {
+        const batch = operators.slice(i, i + BATCH_SIZE);
+        
+        // Process batch in parallel
+        const results = await Promise.all(
+            batch.map(charId => syncStoryAvatar(charId, cacheDir))
+        );
+        
+        // Count results
+        results.forEach(result => {
+            if (result === 'uploaded') {
+                totalUploaded++;
+                uploadedInWave++;
+            } else if (result === 'skipped') {
+                totalSkipped++;
+            } else {
+                totalFailed++;
+            }
+        });
+
+        console.log(`Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${results.filter(r => r === 'uploaded').length} uploaded, ${results.filter(r => r === 'skipped').length} skipped`);
+
+        // Check if wave limit reached (only count uploads)
+        if (uploadedInWave >= MAX_UPLOADS_PER_WAVE && i + BATCH_SIZE < operators.length && totalUploaded < MAX_UPLOADS_PER_RUN) {
             console.log(`\nWave ${waveNumber} complete: ${uploadedInWave} uploads`);
             console.log(`Waiting ${WAVE_DELAY}ms before next wave...\n`);
             await new Promise(resolve => setTimeout(resolve, WAVE_DELAY));
