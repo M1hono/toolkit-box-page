@@ -13,12 +13,6 @@
   "錆槌メンバー": "avg_npc_009",
   "錆鎚メンバー": "avg_npc_009",
   "キャロル": "avg_npc_003",
-  "グラニ": [
-    "avg_npc_003",
-    "char_220_grani",
-    "avg_npc_010",
-    "avg_220_grani_1"
-  ],
   "やつれた少女": "avg_npc_003",
   "客C": "avg_npc_003",
   "ためらいがちな女性": "avg_npc_003",
@@ -162,6 +156,10 @@
   "賞金ハンター": "avg_npc_007",
   "感染者の手下": "avg_npc_007",
   "サルゴン老兵": "avg_npc_007",
+  "グラニ": [
+    "char_220_grani",
+    "avg_220_grani_1"
+  ],
   "村人": [
     "avg_npc_005",
     "avg_npc_797_1",
@@ -2164,10 +2162,6 @@
     "avg_npc_086",
     "char_002_amiya_1"
   ],
-  "エルネスト": [
-    "char_010_chen_summer",
-    "avg_486_espumo_1"
-  ],
   "チェン&ユーシャ": "char_010_chen_summer",
   "観光客の女性C": "char_010_chen_summer",
   "スワイヤー": [
@@ -2213,6 +2207,7 @@
     "avg_npc_196_1",
     "avg_4080_lin_1"
   ],
+  "エルネスト": "avg_486_espumo_1",
   "テキーラ": [
     "avg_486_espumo_1",
     "avg_npc_1212_1"
