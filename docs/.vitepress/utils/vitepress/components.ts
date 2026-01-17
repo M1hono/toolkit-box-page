@@ -19,6 +19,7 @@ import { MnaGuidebookGenerator, RunescribingEditor, RitualGenerator } from "../.
 import Arknights from "../../theme/components/Chara/Arknights/Arknights.vue";
 import ArknightsStoryTracker from "../../theme/components/Chara/Arknights/ArknightsStoryTracker.vue";
 import Fgo from "../../theme/components/Chara/Fgo/Fgo.vue";
+import CardGenerator from "../../theme/components/CardGenerator/CardGenerator.vue";
 import { JsonTranslator } from "../../theme/components/mc";
 import {
     Buttons,
@@ -68,7 +69,8 @@ const components = {
     RunescribingEditor,
     RitualGenerator,
     JsonTranslator,
-    Fgo
+    Fgo,
+    CardGenerator
 };
 
 export const registerComponents = (app: App) => {

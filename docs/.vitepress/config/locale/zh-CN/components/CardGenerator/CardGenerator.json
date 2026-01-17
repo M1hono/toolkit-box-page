@@ -1,0 +1,19 @@
+{
+    "title": "FGO 从者卡片生成器",
+    "cardSettings": "卡片设置",
+    "class": "职阶",
+    "variant": "变体",
+    "rarity": "稀有度",
+    "state": "状态",
+    "frame": "边框",
+    "servantName": "从者名称",
+    "className": "职阶名称", 
+    "goldNumbers": "金色数字",
+    "imageUpload": "图片上传",
+    "dropHere": "拖放文件到此处",
+    "dragOrClick": "拖拽图片到此处或点击选择",
+    "imageControls": "图片控制",
+    "save": "保存",
+    "copy": "复制",
+    "preview": "预览"
+}

@@ -1,0 +1,143 @@
+{
+    "classes": {
+        "saber": ["class1_1", "class2_1", "class3_1", "class3_10001"],
+        "archer": ["class1_2", "class2_2", "class3_2", "class3_10002"],
+        "lancer": ["class1_3", "class2_3", "class3_3", "class3_10003"],
+        "rider": ["class1_4", "class2_4", "class3_4", "class3_10004"],
+        "caster": ["class1_5", "class2_5", "class3_5", "class3_10005"],
+        "assassin": ["class1_6", "class2_6", "class3_6", "class3_10006"],
+        "berserker": ["class1_7", "class2_7", "class3_7", "class3_10007"],
+        "shielder": ["class1_8", "class2_8", "class3_8"],
+        "ruler": ["class1_9", "class2_9", "class3_9", "class3_10009"],
+        "alterego": ["class1_10", "class2_10", "class3_10", "class3_10010"],
+        "avenger": ["class1_11", "class2_11", "class3_11", "class3_10011"],
+        "mooncancer": ["class1_23", "class2_23", "class3_23"],
+        "foreigner": ["class1_25", "class2_25", "class3_25"],
+        "pretender": ["class1_28", "class2_28", "class3_28"],
+        "beast": ["class1_33", "class2_33", "class3_33"]
+    },
+    "frames": [
+        { "value": "bronze", "label": "Bronze" },
+        { "value": "silver", "label": "Silver" },
+        { "value": "gold", "label": "Gold" },
+        { "value": "gold-special", "label": "Gold Special" },
+        { "value": "grand-1", "label": "Grand 1" },
+        { "value": "grand-2", "label": "Grand 2" },
+        { "value": "grand-3", "label": "Grand 3" },
+        { "value": "grand-4", "label": "Grand 4" },
+        { "value": "special-1", "label": "Special 1" },
+        { "value": "special-2", "label": "Special 2" },
+        { "value": "special-3", "label": "Special 3" },
+        { "value": "special-4", "label": "Special 4" },
+        { "value": "special-5", "label": "Special 5" },
+        { "value": "special-6", "label": "Special 6" }
+    ],
+    "rarity": {
+        "0": [
+            {
+                "value": "0",
+                "label": "Silver (0)",
+                "filename": "rarity0_0.png"
+            },
+            { "value": "1", "label": "Gold (1)", "filename": "rarity0_1.png" },
+            { "value": "2", "label": "Variant 2", "filename": "rarity0_2.png" },
+            { "value": "3", "label": "Variant 3", "filename": "rarity0_3.png" },
+            { "value": "4", "label": "Variant 4", "filename": "rarity0_4.png" },
+            {
+                "value": "sp_2",
+                "label": "Special 2",
+                "filename": "rarity0_sp_2.png"
+            },
+            {
+                "value": "sp_3",
+                "label": "Special 3",
+                "filename": "rarity0_sp_3.png"
+            },
+            {
+                "value": "sp_4",
+                "label": "Special 4",
+                "filename": "rarity0_sp_4.png"
+            }
+        ],
+        "1": [
+            {
+                "value": "0",
+                "label": "Silver (0)",
+                "filename": "rarity1_0.png"
+            },
+            { "value": "1", "label": "Gold (1)", "filename": "rarity1_1.png" },
+            { "value": "2", "label": "Variant 2", "filename": "rarity1_2.png" },
+            { "value": "3", "label": "Variant 3", "filename": "rarity1_3.png" },
+            {
+                "value": "sp_2",
+                "label": "Special 2",
+                "filename": "rarity1_sp_2.png"
+            },
+            {
+                "value": "sp_3",
+                "label": "Special 3",
+                "filename": "rarity1_sp_3.png"
+            }
+        ],
+        "2": [
+            {
+                "value": "0",
+                "label": "Silver (0)",
+                "filename": "rarity2_0.png"
+            },
+            { "value": "1", "label": "Gold (1)", "filename": "rarity2_1.png" },
+            { "value": "2", "label": "Variant 2", "filename": "rarity2_2.png" },
+            { "value": "3", "label": "Variant 3", "filename": "rarity2_3.png" },
+            {
+                "value": "sp_2",
+                "label": "Special 2",
+                "filename": "rarity2_sp_2.png"
+            },
+            {
+                "value": "sp_3",
+                "label": "Special 3",
+                "filename": "rarity2_sp_3.png"
+            }
+        ],
+        "3": [
+            {
+                "value": "0",
+                "label": "Silver (0)",
+                "filename": "rarity3_0.png"
+            },
+            { "value": "1", "label": "Gold (1)", "filename": "rarity3_1.png" },
+            { "value": "2", "label": "Variant 2", "filename": "rarity3_2.png" },
+            { "value": "3", "label": "Variant 3", "filename": "rarity3_3.png" },
+            {
+                "value": "sp_2",
+                "label": "Special 2",
+                "filename": "rarity3_sp_2.png"
+            },
+            {
+                "value": "sp_3",
+                "label": "Special 3",
+                "filename": "rarity3_sp_3.png"
+            }
+        ],
+        "4": [
+            {
+                "value": "0",
+                "label": "Silver (0)",
+                "filename": "rarity4_0.png"
+            },
+            { "value": "1", "label": "Gold (1)", "filename": "rarity4_1.png" },
+            { "value": "2", "label": "Variant 2", "filename": "rarity4_2.png" },
+            { "value": "3", "label": "Variant 3", "filename": "rarity4_3.png" }
+        ],
+        "5": [
+            {
+                "value": "0",
+                "label": "Silver (0)",
+                "filename": "rarity5_0.png"
+            },
+            { "value": "1", "label": "Gold (1)", "filename": "rarity5_1.png" },
+            { "value": "2", "label": "Variant 2", "filename": "rarity5_2.png" },
+            { "value": "3", "label": "Variant 3", "filename": "rarity5_3.png" }
+        ]
+    }
+}

@@ -121,6 +121,17 @@ jobs:
                   yarn r2:story-icons
                   echo "Story icons and banners complete"
 
+            - name: Sync FGO assets to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Syncing FGO assets (fonts + UI)..."
+                  yarn r2:fgo-assets
+                  echo "FGO assets sync complete"
+
             - name: Upload sync logs
               if: always()
               uses: actions/upload-artifact@v4

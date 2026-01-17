@@ -53,6 +53,7 @@
         "json-output-panel": "mc/JsonTranslator/JsonOutputPanel",
         "json-search-bar": "mc/JsonTranslator/JsonSearchBar",
         "json-translator": "mc/JsonTranslator/JsonTranslator",
-        "json-untranslated-panel": "mc/JsonTranslator/JsonUntranslatedPanel"
+        "json-untranslated-panel": "mc/JsonTranslator/JsonUntranslatedPanel",
+        "fgo-card-generator": "CardGenerator/CardGenerator"
     }
 }

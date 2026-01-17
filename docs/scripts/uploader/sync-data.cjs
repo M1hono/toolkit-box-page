@@ -1,6 +1,6 @@
 /**
  * @fileoverview Sync JSON Data to R2
- * @description Upload all JSON data files to data/global/arknights/ and data/{lang}/arknights/
+ * @description Upload JSON data files for both Arknights and FGO
  */
 
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
@@ -22,9 +22,7 @@ const client = new S3Client({
 /**
  * Sync single JSON file (always uploads, no skip logic)
  */
-async function syncJsonFile(localPath, filename, lang = null, game = 'arknights') {
-    const r2Key = getDataFileKey(filename, lang, game);
-
+async function syncJsonFile(localPath, r2Key) {
     try {
         if (!fs.existsSync(localPath)) {
             console.warn(`File not found: ${localPath}`);
@@ -33,7 +31,6 @@ async function syncJsonFile(localPath, filename, lang = null, game = 'arknights'
 
         const fileContent = fs.readFileSync(localPath);
         
-        // Always upload, data must be fresh
         await client.send(
             new PutObjectCommand({
                 Bucket: R2_CONFIG.R2_BUCKET_NAME,
@@ -52,29 +49,26 @@ async function syncJsonFile(localPath, filename, lang = null, game = 'arknights'
 }
 
 /**
- * Main function with parallel processing
+ * Sync Arknights JSON data
  */
-async function main() {
-    console.log("Starting JSON data sync with parallel processing...\n");
-
+async function syncArknightsData() {
+    console.log("📊 Syncing Arknights JSON data...");
+    
     const baseDir = path.resolve(__dirname, "../../src/public/data");
     const allFiles = [];
 
-    // Collect global files
     const globalDir = path.join(baseDir, "global/arknights");
     if (fs.existsSync(globalDir)) {
         const globalFiles = fs.readdirSync(globalDir).filter(f => f.endsWith('.json'));
         globalFiles.forEach(filename => {
             allFiles.push({
                 localPath: path.join(globalDir, filename),
-                filename,
-                lang: null,
-                game: 'arknights'
+                r2Key: getDataFileKey(filename, null, 'arknights'),
+                isDataFile: true
             });
         });
     }
 
-    // Collect language files
     const languages = PROJECT_CONFIG.GAMES.arknights.supported_langs;
     for (const langCode of languages) {
         const localeCode = PROJECT_CONFIG.getLocaleCode(langCode);
@@ -85,28 +79,63 @@ async function main() {
             langFiles.forEach(filename => {
                 allFiles.push({
                     localPath: path.join(langDir, filename),
-                    filename,
-                    lang: localeCode,
-                    game: 'arknights'
+                    r2Key: getDataFileKey(filename, localeCode, 'arknights'),
+                    isDataFile: true
                 });
             });
         }
     }
 
-    console.log(`Scan complete: ${allFiles.length} data files\n`);
-
-    // Upload all files in parallel
     const results = await Promise.all(
-        allFiles.map(file => syncJsonFile(file.localPath, file.filename, file.lang, file.game))
+        allFiles.map(file => syncFile(file.localPath, file.r2Key, file.isDataFile))
     );
     
     const uploaded = results.filter(r => r === true).length;
     const failed = results.filter(r => r === false).length;
 
-    console.log(`\nSync complete:`);
-    console.log(`  Uploaded: ${uploaded}`);
-    console.log(`  Failed: ${failed}`);
-    console.log(`  Total: ${allFiles.length}`);
+    console.log(`   📤 Arknights data: ${uploaded} uploaded, ${failed} failed`);
+    return { uploaded, failed };
+}
+
+/**
+ * Sync FGO JSON data only
+ */
+async function syncFGOData() {
+    console.log("🎮 Syncing FGO JSON data...");
+    
+    const baseDir = path.resolve(__dirname, "../../src/public");
+    let uploaded = 0;
+    let failed = 0;
+    
+    const fgoDataDir = path.join(baseDir, "data/global/fgo");
+    if (fs.existsSync(fgoDataDir)) {
+        const dataFiles = fs.readdirSync(fgoDataDir).filter(f => f.endsWith('.json'));
+        for (const filename of dataFiles) {
+            const r2Key = `data/global/fgo/${filename}`;
+            const success = await syncJsonFile(path.join(fgoDataDir, filename), r2Key);
+            if (success) uploaded++; else failed++;
+        }
+    }
+    
+    console.log(`   📤 FGO data: ${uploaded} uploaded, ${failed} failed`);
+    return { uploaded, failed };
+}
+
+/**
+ * Main function - sync JSON data only
+ */
+async function main() {
+    console.log("🚀 Starting JSON data sync...\n");
+
+    const arknightsResult = await syncArknightsData();
+    console.log();
+    
+    const fgoResult = await syncFGOData();
+    console.log();
+
+    console.log("🎉 JSON data sync finished!");
+    console.log(`   Arknights: ${arknightsResult.uploaded} uploaded, ${arknightsResult.failed} failed`);
+    console.log(`   FGO: ${fgoResult.uploaded} uploaded, ${fgoResult.failed} failed`);
 }
 
 if (require.main === module) {
