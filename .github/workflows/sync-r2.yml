@@ -13,6 +13,11 @@ on:
                 required: false
                 default: false
                 type: boolean
+            cleanup_wrong_paths:
+                description: "Clean up files in wrong R2 paths"
+                required: false
+                default: true
+                type: boolean
     workflow_run:
         workflows: ["Main Data Pipeline"]
         types:
@@ -40,6 +45,19 @@ jobs:
               working-directory: docs
               run: yarn install --frozen-lockfile
 
+            - name: Clean up R2 wrong paths if requested
+              if: ${{ inputs.cleanup_wrong_paths == true }}
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+                  CONFIRM_DELETE: "true"
+              run: |
+                  echo "Cleaning up files in wrong R2 paths..."
+                  yarn r2:cleanup
+                  echo "Cleanup complete"
+
             - name: Clean up logs if requested
               working-directory: docs
               run: |
@@ -53,18 +71,6 @@ jobs:
                     rm -f .vitepress/logs/r2-sync-failures.json
                   fi
 
-            - name: Sync images to R2
-              working-directory: docs
-              env:
-                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
-                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
-                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
-              run: |
-                  echo "Starting R2 image sync..."
-                  echo "Config: Upload with cache cleanup, tracking in uploaded.json"
-                  yarn r2:sync
-                  echo "R2 image sync complete"
-
             - name: Sync JSON data to R2
               working-directory: docs
               env:
@@ -72,31 +78,53 @@ jobs:
                   R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
                   R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
               run: |
-                  echo "Starting R2 data sync..."
-                  yarn r2:sync-data
-                  echo "R2 data sync complete"
+                  echo "Syncing JSON data..."
+                  yarn r2:data
+                  echo "JSON data complete"
 
-            - name: Sync avatars to R2
+            - name: Sync character variants to R2
               working-directory: docs
               env:
                   R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
                   R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
                   R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
               run: |
-                  echo "Starting R2 avatar sync..."
-                  yarn r2:sync-avatars
-                  echo "R2 avatar sync complete"
+                  echo "Syncing character variant images (PNG)..."
+                  yarn r2:characters
+                  echo "Character variants complete"
 
-            - name: Sync story icons to R2
+            - name: Sync variant avatars to R2
               working-directory: docs
               env:
                   R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
                   R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
                   R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
               run: |
-                  echo "Starting R2 story icons sync..."
-                  yarn r2:sync-icons
-                  echo "R2 story icons sync complete"
+                  echo "Syncing variant avatars (WebP)..."
+                  yarn r2:variant-avatars
+                  echo "Variant avatars complete"
+
+            - name: Sync story avatars to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Syncing story avatars (operator icons)..."
+                  yarn r2:story-avatars
+                  echo "Story avatars complete"
+
+            - name: Sync story icons and banners to R2
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Syncing story icons and banners..."
+                  yarn r2:story-icons
+                  echo "Story icons and banners complete"
 
             - name: Upload sync logs
               if: always()
@@ -167,5 +195,4 @@ jobs:
                     echo "No failure logs"
                   fi
 
-                  echo "R2 sync status report:"
-                  yarn r2:failures || echo "Cannot generate status report"
+                  echo "R2 sync workflow completed"

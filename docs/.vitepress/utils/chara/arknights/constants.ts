@@ -52,6 +52,8 @@ export function getStoryType(path: string): string {
  * - 'obt/main/level_main_14-17_end' -> 'main_14'
  * - 'obt/memory/story_chen2_set_1_1' -> 'story_chen2_set_1'
  * - 'bt/memory/story_bldsk_2_1' -> 'story_bldsk' (tries to match base)
+ * - 'activities/act1/level_a001_01_beg' -> '1stact' (special case)
+ * - 'activities/act2/level_a002_01_beg' -> 'act2' (normal format)
  */
 export function extractActId(storyPath: string): string | null {
     const parts = storyPath.split("/");
@@ -73,6 +75,18 @@ export function extractActId(storyPath: string): string | null {
         }
         
         return filename;
+    }
+
+    // Special level_a001 format: level_a<num>_<stage>_<variant>
+    const levelActMatch = filename.match(/^level_a(\d{3})/);
+    if (levelActMatch) {
+        const actNum = parseInt(levelActMatch[1], 10);
+        // Only act 1 uses ordinal format (1stact), others use normal format (act2, act3, etc.)
+        if (actNum === 1) {
+            return "1stact";
+        } else {
+            return `act${actNum}`;
+        }
     }
 
     // Main stories: level_main_<chapter>-<stage>_<variant>

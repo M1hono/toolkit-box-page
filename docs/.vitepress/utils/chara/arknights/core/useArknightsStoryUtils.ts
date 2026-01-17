@@ -4,7 +4,9 @@
  */
 
 import { ref } from "vue";
-import { ARKNIGHTS_DATA_SOURCES, extractCharCodeFromRecordStory } from "../constants";
+import {
+    ARKNIGHTS_DATA_SOURCES
+} from "../constants";
 
 const storyVariables = ref<Record<string, Record<string, string>>>({});
 const loadingPromise = new Map<string, Promise<void>>();
@@ -15,9 +17,9 @@ const currentLang = ref<string>("en_us");
  */
 async function loadStoryVariables(lang: string): Promise<void> {
     currentLang.value = lang;
-    
+
     if (storyVariables.value[lang]) return;
-    
+
     if (loadingPromise.has(lang)) {
         await loadingPromise.get(lang);
         return;
@@ -54,14 +56,47 @@ export function getCharacterIdFromRecordActId(
     actId: string,
     charDict: Record<string, { id: string; name: string }>
 ): string | null {
-    const parts = actId.split('_');
+    const parts = actId.split("_");
     if (parts.length < 2) return null;
-    
+
     // Extract character code/index from position [1] (akgcc pattern)
     const cin = parts[1];
     const charData = charDict[cin];
-    
+
     return charData?.id || null;
+}
+
+/**
+ * Format story path display name for level_a001 type files
+ * @param {string} path - Story file path
+ * @returns {string} Formatted display name
+ * @example
+ * - 'activities/act1/level_a001_01_beg.txt' -> 'Act 1 - Chapter 1 (Beginning)'
+ * - 'activities/act2/level_a002_05_end.txt' -> 'Act 2 - Chapter 5 (Ending)'
+ */
+export function formatLevelActStoryName(path: string): string {
+    const filename = path.split("/").pop()?.replace(".txt", "") || "";
+
+    // Match level_a<act>_<chapter>_<variant> format
+    const match = filename.match(/^level_a(\d{3})_(\d+)_(.+)$/);
+    if (!match) return filename;
+
+    const actNum = parseInt(match[1], 10);
+    const chapterNum = parseInt(match[2], 10);
+    const variant = match[3];
+
+    // Format variant names
+    const variantMap: Record<string, string> = {
+        beg: "Beginning",
+        end: "Ending",
+        mid: "Middle",
+        start: "Start",
+        finish: "Finish",
+    };
+
+    const variantDisplay = variantMap[variant.toLowerCase()] || variant;
+
+    return `Act ${actNum} - Chapter ${chapterNum} (${variantDisplay})`;
 }
 
 /**
@@ -70,13 +105,20 @@ export function getCharacterIdFromRecordActId(
  * @param {boolean} useR2 - Whether to use R2 (true) or fallback (false)
  * @returns {string} Avatar URL
  */
-function getCharacterThumbnailUrl(charId: string, useR2: boolean = true): string {
-    const baseId = charId.split('#')[0].toLowerCase();
-    
+function getCharacterThumbnailUrl(
+    charId: string,
+    useR2: boolean = true
+): string {
+    const baseId = charId.split("#")[0].toLowerCase();
+
     if (useR2) {
-        return `https://arkimage.top/arknights/avatars/${encodeURIComponent(baseId)}.png`;
+        return `https://arkimage.top/arknights/avatars/${encodeURIComponent(
+            baseId
+        )}.png`;
     } else {
-        return `https://raw.githubusercontent.com/akgcc/arkdata/refs/heads/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(baseId)}.png`;
+        return `https://raw.githubusercontent.com/akgcc/arkdata/refs/heads/main/assets/torappu/dynamicassets/arts/charavatars/${encodeURIComponent(
+            baseId
+        )}.png`;
     }
 }
 
@@ -95,7 +137,7 @@ function getCharacterAvatarFallbackUrl(charId: string): string {
  * @returns Icon URL
  */
 export function getStoryIconUrl(
-    path: string, 
+    path: string,
     charDict?: Record<string, { id: string; name: string }>,
     useR2: boolean = true
 ): string {
@@ -106,7 +148,7 @@ export function getStoryIconUrl(
     if (filename.startsWith("story_") && charDict) {
         const actIdMatch = path.match(/story_[^\/]+/);
         if (actIdMatch) {
-            const actId = actIdMatch[0].replace('.txt', '');
+            const actId = actIdMatch[0].replace(".txt", "");
             const charId = getCharacterIdFromRecordActId(actId, charDict);
             if (charId) {
                 return getCharacterThumbnailUrl(charId, useR2);
@@ -114,14 +156,25 @@ export function getStoryIconUrl(
         }
     }
 
-    const baseUrl = useR2 ? 'https://arkimage.top/arknights' : 'https://r2.m31ns.top/img';
-
-    // Activities type (side stories)
-    if (parts[0] === "activities") {
-        return `${baseUrl}/${useR2 ? 'banners' : 'banners'}/${parts[1]}.png`;
+    const baseUrl = useR2
+        ? "https://arkimage.top/arknights"
+        : "https://r2.m31ns.top/img";
+    // Special rule for level_a001 format files 
+    const levelActMatch = filename.match(/^level_a(\d{3})/);
+    if (levelActMatch) {
+        const actNum = parseInt(levelActMatch[1], 10);
+        // Only act 1 uses ordinal format (1stact), others use normal format (act2, act3, etc.)
+        if (actNum === 1) {
+            return `${baseUrl}/${useR2 ? "banners" : "banners"}/1stact.png`;
+        } else {
+            return `${baseUrl}/${useR2 ? "banners" : "banners"}/act${actNum}.png`;
+        }
     }
 
-    // Main stories
+    if (parts[0] === "activities") {
+        return `${baseUrl}/${useR2 ? "banners" : "banners"}/${parts[1]}.png`;
+    }
+
     const hasMain = parts.includes("main");
     const hasSt = parts.includes("st");
 
@@ -129,12 +182,16 @@ export function getStoryIconUrl(
         const match = filename.match(/(\d+)-\d+/);
         if (match && match[1]) {
             const chapterNum = parseInt(match[1], 10);
-            return `${baseUrl}/${useR2 ? 'icons' : 'icons'}/main_${chapterNum}.png`;
+            return `${baseUrl}/${
+                useR2 ? "icons" : "icons"
+            }/main_${chapterNum}.png`;
         }
     }
 
     // Fallback to chapter ID
-    return `${baseUrl}/${useR2 ? 'icons' : 'icons'}/${parts[1] || parts[0]}.png`;
+    return `${baseUrl}/${useR2 ? "icons" : "icons"}/${
+        parts[1] || parts[0]
+    }.png`;
 }
 
 export function useArknightsStoryUtils() {
@@ -144,5 +201,6 @@ export function useArknightsStoryUtils() {
         getCharacterIdFromRecordActId,
         getCharacterThumbnailUrl,
         getCharacterAvatarFallbackUrl,
+        formatLevelActStoryName,
     };
 }
