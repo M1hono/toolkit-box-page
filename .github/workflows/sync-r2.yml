@@ -40,17 +40,30 @@ jobs:
               working-directory: docs
               run: yarn install --frozen-lockfile
 
+            - name: Clean WebP files from arknights/characters/
+              working-directory: docs
+              env:
+                  R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+                  R2_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+                  R2_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+              run: |
+                  echo "Cleaning WebP files from arknights/characters/..."
+                  node scripts/one-time-cleanup-webp.cjs
+                  echo "WebP cleanup complete"
+
             - name: Clean up logs if requested
               working-directory: docs
               run: |
                   if [ "${{ inputs.force_reset }}" = "true" ]; then
                     echo "Force reset: Removing upload logs"
                     rm -f .vitepress/logs/uploaded.json
+                    rm -f .vitepress/logs/*-uploaded.json
                   fi
 
                   if [ "${{ inputs.clean_failures }}" = "true" ]; then
                     echo "Cleaning failure logs"
                     rm -f .vitepress/logs/r2-sync-failures.json
+                    rm -f .vitepress/logs/*-failures.json
                   fi
 
             - name: Sync JSON data to R2
