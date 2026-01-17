@@ -7,15 +7,14 @@ const fs = require("fs");
 const path = require("path");
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
 const { loadUploadTracker } = require("./upload-tracker.cjs");
-const { getR2Config } = require("../r2-config.cjs");
+const R2_CONFIG = require("../r2-config.cjs");
 
-const r2Config = getR2Config();
 const s3Client = new S3Client({
     region: "auto",
-    endpoint: r2Config.endpoint,
+    endpoint: R2_CONFIG.R2_ENDPOINT,
     credentials: {
-        accessKeyId: r2Config.accessKeyId,
-        secretAccessKey: r2Config.secretAccessKey,
+        accessKeyId: R2_CONFIG.R2_ACCESS_KEY_ID,
+        secretAccessKey: R2_CONFIG.R2_SECRET_ACCESS_KEY,
     },
     requestHandler: {
         connectionTimeout: 30000,
@@ -61,7 +60,7 @@ async function syncAssetFile(localPath, r2Key, tracker) {
 
         await s3Client.send(
             new PutObjectCommand({
-                Bucket: r2Config.bucketName,
+                Bucket: R2_CONFIG.R2_BUCKET_NAME,
                 Key: r2Key,
                 Body: fileContent,
                 ContentType: contentType,

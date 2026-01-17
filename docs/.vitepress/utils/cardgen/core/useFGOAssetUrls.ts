@@ -19,7 +19,7 @@
  * R2 CDN base URL for FGO assets
  * @constant {string}
  */
-const R2_BASE_URL = "https://arkimage.top/fgo";
+const R2_BASE_URL = "https://arkimage.top";
 
 /**
  * Local fallback base URL
@@ -38,7 +38,7 @@ const LOCAL_BASE_URL = "";
  */
 export function getFontUrl(filename: string, useR2: boolean = true): string {
     if (useR2) {
-        return `${R2_BASE_URL}/font/${filename}`;
+        return `${R2_BASE_URL}/fgo/font/${filename}`;
     } else {
         return `${LOCAL_BASE_URL}/Font/${filename}`;
     }
@@ -58,7 +58,7 @@ export function getUIAssetUrl(
     useR2: boolean = true
 ): string {
     if (useR2) {
-        return `${R2_BASE_URL}/servantcardui/${assetPath}`;
+        return `${R2_BASE_URL}/fgo/servantcardui/${assetPath}`;
     } else {
         return `${LOCAL_BASE_URL}/imgs/fgo/${assetPath}`;
     }
@@ -79,6 +79,34 @@ export function getDataUrl(filename: string, useR2: boolean = true): string {
     } else {
         return `${LOCAL_BASE_URL}/data/global/fgo/${filename}`;
     }
+}
+
+/**
+ * Load data with R2 fallback logic
+ * @param {string} filename - Data filename
+ * @returns {Promise<any>} Parsed JSON data or null
+ * @description
+ * Tries R2 first, falls back to local if R2 fails.
+ * Returns null if both sources fail.
+ */
+export async function loadDataWithFallback(filename: string): Promise<any> {
+    try {
+        const r2Url = getDataUrl(filename, true);
+        let response = await fetch(r2Url);
+
+        if (!response.ok) {
+            const localUrl = getDataUrl(filename, false);
+            response = await fetch(localUrl);
+        }
+
+        if (response.ok) {
+            return await response.json();
+        }
+    } catch (error) {
+        // Both R2 and local failed
+    }
+
+    return null;
 }
 
 /**

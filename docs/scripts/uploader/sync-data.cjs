@@ -30,7 +30,7 @@ async function syncJsonFile(localPath, r2Key) {
         }
 
         const fileContent = fs.readFileSync(localPath);
-        
+
         await client.send(
             new PutObjectCommand({
                 Bucket: R2_CONFIG.R2_BUCKET_NAME,
@@ -53,18 +53,20 @@ async function syncJsonFile(localPath, r2Key) {
  */
 async function syncArknightsData() {
     console.log("📊 Syncing Arknights JSON data...");
-    
+
     const baseDir = path.resolve(__dirname, "../../src/public/data");
     const allFiles = [];
 
     const globalDir = path.join(baseDir, "global/arknights");
     if (fs.existsSync(globalDir)) {
-        const globalFiles = fs.readdirSync(globalDir).filter(f => f.endsWith('.json'));
-        globalFiles.forEach(filename => {
+        const globalFiles = fs
+            .readdirSync(globalDir)
+            .filter((f) => f.endsWith(".json"));
+        globalFiles.forEach((filename) => {
             allFiles.push({
                 localPath: path.join(globalDir, filename),
-                r2Key: getDataFileKey(filename, null, 'arknights'),
-                isDataFile: true
+                r2Key: getDataFileKey(filename, null, "arknights"),
+                isDataFile: true,
             });
         });
     }
@@ -73,25 +75,27 @@ async function syncArknightsData() {
     for (const langCode of languages) {
         const localeCode = PROJECT_CONFIG.getLocaleCode(langCode);
         const langDir = path.join(baseDir, `${localeCode}/arknights`);
-        
+
         if (fs.existsSync(langDir)) {
-            const langFiles = fs.readdirSync(langDir).filter(f => f.endsWith('.json'));
-            langFiles.forEach(filename => {
+            const langFiles = fs
+                .readdirSync(langDir)
+                .filter((f) => f.endsWith(".json"));
+            langFiles.forEach((filename) => {
                 allFiles.push({
                     localPath: path.join(langDir, filename),
-                    r2Key: getDataFileKey(filename, localeCode, 'arknights'),
-                    isDataFile: true
+                    r2Key: getDataFileKey(filename, localeCode, "arknights"),
+                    isDataFile: true,
                 });
             });
         }
     }
 
     const results = await Promise.all(
-        allFiles.map(file => syncFile(file.localPath, file.r2Key, file.isDataFile))
+        allFiles.map((file) => syncJsonFile(file.localPath, file.r2Key))
     );
-    
-    const uploaded = results.filter(r => r === true).length;
-    const failed = results.filter(r => r === false).length;
+
+    const uploaded = results.filter((r) => r === true).length;
+    const failed = results.filter((r) => r === false).length;
 
     console.log(`   📤 Arknights data: ${uploaded} uploaded, ${failed} failed`);
     return { uploaded, failed };
@@ -102,21 +106,27 @@ async function syncArknightsData() {
  */
 async function syncFGOData() {
     console.log("🎮 Syncing FGO JSON data...");
-    
+
     const baseDir = path.resolve(__dirname, "../../src/public");
     let uploaded = 0;
     let failed = 0;
-    
+
     const fgoDataDir = path.join(baseDir, "data/global/fgo");
     if (fs.existsSync(fgoDataDir)) {
-        const dataFiles = fs.readdirSync(fgoDataDir).filter(f => f.endsWith('.json'));
+        const dataFiles = fs
+            .readdirSync(fgoDataDir)
+            .filter((f) => f.endsWith(".json"));
         for (const filename of dataFiles) {
             const r2Key = `data/global/fgo/${filename}`;
-            const success = await syncJsonFile(path.join(fgoDataDir, filename), r2Key);
-            if (success) uploaded++; else failed++;
+            const success = await syncJsonFile(
+                path.join(fgoDataDir, filename),
+                r2Key
+            );
+            if (success) uploaded++;
+            else failed++;
         }
     }
-    
+
     console.log(`   📤 FGO data: ${uploaded} uploaded, ${failed} failed`);
     return { uploaded, failed };
 }
@@ -129,13 +139,17 @@ async function main() {
 
     const arknightsResult = await syncArknightsData();
     console.log();
-    
+
     const fgoResult = await syncFGOData();
     console.log();
 
     console.log("🎉 JSON data sync finished!");
-    console.log(`   Arknights: ${arknightsResult.uploaded} uploaded, ${arknightsResult.failed} failed`);
-    console.log(`   FGO: ${fgoResult.uploaded} uploaded, ${fgoResult.failed} failed`);
+    console.log(
+        `   Arknights: ${arknightsResult.uploaded} uploaded, ${arknightsResult.failed} failed`
+    );
+    console.log(
+        `   FGO: ${fgoResult.uploaded} uploaded, ${fgoResult.failed} failed`
+    );
 }
 
 if (require.main === module) {

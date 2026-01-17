@@ -17,7 +17,11 @@
  */
 
 import { ref } from "vue";
-import { getDataUrl, getUIAssetUrl } from "./useFGOAssetUrls";
+import {
+    getDataUrl,
+    getUIAssetUrl,
+    loadDataWithFallback,
+} from "./useFGOAssetUrls";
 
 /**
  * Available class names (populated dynamically)
@@ -90,22 +94,8 @@ let ASSETS_MANIFEST: {
  */
 async function loadManifest() {
     if (ASSETS_MANIFEST) return ASSETS_MANIFEST;
-    
-    try {
-        const r2Url = getDataUrl("fgo-assets.json", true);
-        const localUrl = getDataUrl("fgo-assets.json", false);
-        
-        let response = await fetch(r2Url);
-        if (!response.ok) {
-            response = await fetch(localUrl);
-        }
-        
-        if (response.ok) {
-            ASSETS_MANIFEST = await response.json();
-        }
-    } catch (error) {
-        console.error("Error loading FGO manifest:", error);
-    }
+
+    ASSETS_MANIFEST = await loadDataWithFallback("fgo-assets.json");
     return ASSETS_MANIFEST;
 }
 

@@ -6,6 +6,6 @@
 export { renderFGOCard } from './core/useFGORenderer';
 export { scanClassFolders, scanClassVariants, scanFrameFolders, scanRarityVariants, CLASS_OPTIONS, RARITY_LEVELS, RARITY_STATES, FRAME_CATEGORIES } from './core/useFGOAssets';
 export { useImageManipulation } from './core/useImageManipulation';
-export { getFontUrl, getUIAssetUrl, getDataUrl } from './core/useFGOAssetUrls';
+export { getFontUrl, getUIAssetUrl, getDataUrl, loadDataWithFallback } from './core/useFGOAssetUrls';
 export type { FGOCardData, ImageTransform } from './core/useFGORenderer';
 export type { ImageState, UploadedFile } from './core/useImageManipulation';
