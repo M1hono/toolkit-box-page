@@ -82,30 +82,35 @@ export function getDataUrl(filename: string, useR2: boolean = true): string {
 }
 
 /**
- * Load data with R2 fallback logic
+ * Load data with R2 first fallback logic
  * @param {string} filename - Data filename
  * @returns {Promise<any>} Parsed JSON data or null
  * @description
- * Tries R2 first, falls back to local if R2 fails.
+ * Tries R2 first for faster CDN delivery, falls back to local if R2 fails.
  * Returns null if both sources fail.
  */
 export async function loadDataWithFallback(filename: string): Promise<any> {
     try {
         const r2Url = getDataUrl(filename, true);
-        let response = await fetch(r2Url);
-
-        if (!response.ok) {
-            const localUrl = getDataUrl(filename, false);
-            response = await fetch(localUrl);
-        }
-
+        const response = await fetch(r2Url);
+        
         if (response.ok) {
             return await response.json();
         }
     } catch (error) {
-        // Both R2 and local failed
     }
-
+    
+    try {
+        const localUrl = getDataUrl(filename, false);
+        const response = await fetch(localUrl);
+        
+        if (response.ok) {
+            return await response.json();
+        }
+    } catch (error) {
+        // Both failed
+    }
+    
     return null;
 }
 

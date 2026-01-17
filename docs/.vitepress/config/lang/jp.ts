@@ -21,6 +21,7 @@ export const ja_JP = <DefaultTheme.Config>{
                 text: "ゲームツール",
                 items: [
                     { text: "FGO 抽出ツール", link: "/ja-JP/Fgo/CharaFinder" },
+                    { text: "FGO カード生成器", link: "/ja-JP/Fgo/CardGenerator" },
                     { text: "アークナイツツール", link: "/ja-JP/Arknights/CharaFinder" },
                     { text: "アークナイツストーリー", link: "/ja-JP/Arknights/StoryTracker" }
                 ]

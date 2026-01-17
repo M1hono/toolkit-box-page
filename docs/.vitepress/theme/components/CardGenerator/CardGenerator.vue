@@ -625,15 +625,15 @@
 </script>
 
 <style scoped>
-    @font-face {
-        font-family: "FGO";
-        src: url("https://arkimage.top/fgo/font/honoka.woff") format("woff"),
-            url("/Font/honoka.woff") format("woff"),
-            url("https://arkimage.top/fgo/font/honoka.ttf") format("truetype"),
-            url("/Font/honoka.ttf") format("truetype");
-        font-weight: normal;
-        font-style: normal;
-    }
+@font-face {
+    font-family: "FGO";
+    src: url("https://arkimage.top/fgo/font/honoka.woff") format("woff"),
+        url("https://arkimage.top/fgo/font/honoka.ttf") format("truetype"),
+        url("/Font/honoka.woff") format("woff"),
+        url("/Font/honoka.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
     .card-generator-app {
         background-color: #ffffff;

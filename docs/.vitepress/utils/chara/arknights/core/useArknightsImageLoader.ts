@@ -75,7 +75,7 @@ export function useArknightsImageLoader() {
                 if (match) {
                     const variant = decodeURIComponent(match[1]);
                     const urls = getVariantImageUrls(variant);
-                    let nextUrl = null;
+                    let nextUrl: string | null = null;
                     if (url === urls.primary && urls.fallback)
                         nextUrl = urls.fallback;
                     else if (url === urls.fallback && urls.secondary)

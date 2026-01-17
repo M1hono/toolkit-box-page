@@ -1,4 +1,4 @@
-name: Sync Images to R2
+name: r2 Sync Workflow
 
 on:
     workflow_dispatch:
@@ -145,11 +145,14 @@ jobs:
                   git config --local user.email "action@github.com"
                   git config --local user.name "GitHub Action"
 
-                  if [ -f "docs/.vitepress/logs/uploaded.json" ] || [ -f "docs/.vitepress/logs/r2-sync-failures.json" ]; then
+                  # Check if any log files exist
+                  if [ -d "docs/.vitepress/logs" ] && [ "$(ls -A docs/.vitepress/logs/)" ]; then
+                    echo "Found log files, adding to git..."
                     git add docs/.vitepress/logs/
                     
                     if ! git diff --cached --quiet; then
-                      git commit -m "Update R2 sync logs (manual trigger) $(date '+%Y-%m-%d %H:%M:%S')"
+                      echo "Changes detected, committing..."
+                      git commit -m "Update R2 sync logs [$(date '+%Y-%m-%d %H:%M:%S')]"
                       
                       echo "Pushing R2 sync logs..."
                       for i in {1..3}; do
@@ -168,7 +171,7 @@ jobs:
                         fi
                       done
                     else
-                      echo "No R2 sync log changes"
+                      echo "No R2 sync log changes to commit"
                     fi
                   else
                     echo "No R2 sync log files found"
@@ -178,27 +181,29 @@ jobs:
               if: always()
               working-directory: docs
               run: |
-                  echo "Sync Summary:"
-                  if [ -f ".vitepress/logs/uploaded.json" ]; then
-                    echo "Upload log file size: $(du -h .vitepress/logs/uploaded.json | cut -f1)"
-                    if command -v jq &> /dev/null; then
-                      echo "Uploaded files count: $(jq 'length' .vitepress/logs/uploaded.json)"
-                    else
-                      echo "Upload log exists (jq not available for count)"
-                    fi
+                  echo "📊 Sync Summary:"
+                  
+                  if [ -d ".vitepress/logs" ]; then
+                    echo "📁 Log files created:"
+                    ls -la .vitepress/logs/
+                    echo ""
+                    
+                    # Count total log files
+                    log_count=$(find .vitepress/logs/ -name "*.json" | wc -l)
+                    echo "📄 Total log files: $log_count"
+                    
+                    # Show file sizes
+                    for file in .vitepress/logs/*.json; do
+                      if [ -f "$file" ]; then
+                        size=$(du -h "$file" | cut -f1)
+                        echo "   $(basename "$file"): $size"
+                      fi
+                    done
+                    
+                    echo ""
+                    echo "✅ All tracker logs will be committed to repository"
                   else
-                    echo "No upload log file found"
+                    echo "❌ No logs directory found"
                   fi
 
-                  if [ -f ".vitepress/logs/r2-sync-failures.json" ]; then
-                    echo "Failure log exists, check artifacts"
-                    if command -v jq &> /dev/null; then
-                      echo "Failure stats: $(jq '.downloadFailures | length' .vitepress/logs/r2-sync-failures.json) download failures, $(jq '.uploadFailures | length' .vitepress/logs/r2-sync-failures.json) upload failures"
-                    else
-                      echo "Failure log exists (jq not available for details)"
-                    fi
-                  else
-                    echo "No failure logs"
-                  fi
-
-                  echo "R2 sync workflow completed"
+                  echo "🎉 R2 sync workflow completed"

@@ -80,7 +80,7 @@ const FRAME_ID_MAP: Record<string, string> = {
 };
 
 /**
- * Load image with R2 fallback logic
+ * Load image with R2-first fallback logic
  * @param {string} assetPath - Relative asset path
  * @returns {Promise<HTMLImageElement>} Promise resolving to loaded image
  * @throws {Error} When both R2 and local images fail to load
@@ -88,19 +88,19 @@ const FRAME_ID_MAP: Record<string, string> = {
 function loadImage(assetPath: string): Promise<HTMLImageElement> {
     return new Promise((resolve, reject) => {
         const img = new Image();
-
+        
         const tryR2 = () => {
             img.onload = () => resolve(img);
             img.onerror = tryLocal;
             img.src = getUIAssetUrl(assetPath, true);
         };
-
+        
         const tryLocal = () => {
             img.onload = () => resolve(img);
             img.onerror = reject;
             img.src = getUIAssetUrl(assetPath, false);
         };
-
+        
         tryR2();
     });
 }

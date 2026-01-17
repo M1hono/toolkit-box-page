@@ -103,7 +103,10 @@ export function useFgoImageLoader() {
             }
 
             try {
-                const response = await fetch("/data/global/fgo/servants.json");
+                let response = await fetch("https://arkimage.top/data/global/fgo/servants.json");
+                if (!response.ok) {
+                    response = await fetch("/data/global/fgo/servants.json");
+                }
                 if (
                     response.ok &&
                     response.headers
