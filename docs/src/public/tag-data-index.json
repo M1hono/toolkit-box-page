@@ -21,8 +21,8 @@
       "giscusLang": "en"
     },
     {
-      "code": "ja",
-      "name": "ja",
+      "code": "ja-JP",
+      "name": "ja-JP",
       "displayName": "日本語",
       "isDefault": false,
       "link": "/ja-JP/",
@@ -31,7 +31,7 @@
       "giscusLang": "ja"
     }
   ],
-  "generatedAt": "2026-01-15T05:47:29.652Z",
+  "generatedAt": "2026-01-18T20:11:55.531Z",
   "summary": {
     "zh-CN": {
       "totalTags": 0,
@@ -43,10 +43,10 @@
       "totalPages": 0,
       "language": "en-US"
     },
-    "ja": {
+    "ja-JP": {
       "totalTags": 0,
       "totalPages": 0,
-      "language": "ja"
+      "language": "ja-JP"
     }
   }
 }

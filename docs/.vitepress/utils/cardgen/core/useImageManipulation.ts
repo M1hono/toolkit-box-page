@@ -54,6 +54,8 @@ export interface UploadedFile {
     image: HTMLImageElement;
     state: ImageState;
     id: string;
+    isGif?: boolean;
+    gifFrames?: any[];
 }
 
 /**

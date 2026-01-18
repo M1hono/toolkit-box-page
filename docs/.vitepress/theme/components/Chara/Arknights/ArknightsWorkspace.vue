@@ -146,12 +146,24 @@
 
         <div v-if="character" class="canvas-footer">
             <label class="color-label">{{ t.bgColor }}</label>
-            <input
-                type="color"
-                :value="backgroundColor"
-                @input="handleColorChange"
-                class="color-input"
-            />
+            <v-menu :close-on-content-click="false">
+                <template #activator="{ props }">
+                    <div
+                        v-bind="props"
+                        class="color-preview"
+                        :style="{ background: backgroundColor }"
+                    />
+                </template>
+                <v-card>
+                    <v-card-text class="pa-2">
+                        <v-color-picker
+                            :model-value="backgroundColor"
+                            mode="rgba"
+                            @update:model-value="handleColorChange"
+                        />
+                    </v-card-text>
+                </v-card>
+            </v-menu>
             <span class="color-value">{{ backgroundColor }}</span>
         </div>
     </div>
@@ -236,9 +248,8 @@
         emit("update:variant", target.value);
     }
 
-    function handleColorChange(e: Event) {
-        const target = e.target as HTMLInputElement;
-        emit("update:backgroundColor", target.value);
+    function handleColorChange(value: string) {
+        emit("update:backgroundColor", value);
     }
 
     function updatePreview() {
@@ -714,22 +725,18 @@
         color: var(--vp-c-text-2);
     }
 
-    .color-input {
+    .color-preview {
         width: 48px;
         height: 36px;
-        padding: 0;
-        border: 1px solid var(--vp-c-divider);
+        border: 2px solid white;
         border-radius: 4px;
         cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
     }
 
-    .color-input::-webkit-color-swatch-wrapper {
-        padding: 2px;
-    }
-
-    .color-input::-webkit-color-swatch {
-        border-radius: 2px;
-        border: none;
+    .color-preview:hover {
+        transform: scale(1.05);
     }
 
     .color-value {

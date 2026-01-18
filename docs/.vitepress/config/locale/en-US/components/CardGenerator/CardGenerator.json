@@ -1,19 +1,4 @@
 {
-    "title": "FGO Card Generator",
-    "cardSettings": "Card Settings",
-    "class": "Class",
-    "variant": "Variant", 
-    "rarity": "Rarity",
-    "state": "State",
-    "frame": "Frame",
-    "servantName": "Servant Name",
-    "className": "Class Name",
-    "goldNumbers": "Gold Numbers",
-    "imageUpload": "Image Upload",
-    "dropHere": "Drop files here",
-    "dragOrClick": "Drag images here or click to select",
-    "imageControls": "Image Controls",
-    "save": "Save",
-    "copy": "Copy",
+    "cardGenerator": "FGO 从者卡片生成器",
     "preview": "Preview"
 }

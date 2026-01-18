@@ -1,12 +1,12 @@
 {
-  "title": "剧情追踪",
-  "searchPlaceholder": "搜索角色名称...",
-  "characterCount": "{count} 个角色",
-  "characterVariant": "角色变体",
-  "storyReader": "剧情阅读器",
-  "textReader": "文本",
-  "akgcc": "akgcc",
-  "storyAppearances": "剧情出场 ({count})",
-  "noCharacterSelected": "未选择角色",
-  "searchPrompt": "搜索角色"
+    "akgcc": "akgcc",
+    "characterCount": "{count} 个角色",
+    "characterVariant": "角色变体",
+    "noCharacterSelected": "未选择角色",
+    "searchPlaceholder": "搜索角色名称...",
+    "searchPrompt": "搜索角色",
+    "storyAppearances": "剧情出场 ({count})",
+    "storyReader": "剧情阅读器",
+    "textReader": "文本",
+    "title": "剧情追踪"
 }

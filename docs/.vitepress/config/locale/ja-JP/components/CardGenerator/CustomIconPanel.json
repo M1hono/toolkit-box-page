@@ -1,0 +1,21 @@
+{
+    "custom": "カスタム",
+    "customIcon": "カスタムアイコン",
+    "default": "デフォルト",
+    "iconSearch": "アイコン検索",
+    "iconSize": "サイズ",
+    "iconX": "X",
+    "iconY": "Y",
+    "iconify": "Iconify",
+    "iconifyColor": "アイコン色",
+    "iconifyName": "アイコン名",
+    "method": "方式",
+    "size": "サイズ",
+    "svg": "SVG",
+    "svgColor": "SVG 色",
+    "svgText": "SVG テキスト",
+    "upload": "アップロード",
+    "url": "URL",
+    "x": "X",
+    "y": "Y"
+}

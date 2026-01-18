@@ -6,8 +6,10 @@
 const fs = require("fs");
 const path = require("path");
 const { S3Client, PutObjectCommand } = require("@aws-sdk/client-s3");
-const { loadUploadTracker } = require("./upload-tracker.cjs");
+const { loadUploaded, saveUploaded } = require("./upload-tracker.cjs");
 const R2_CONFIG = require("../r2-config.cjs");
+
+const WORK_TYPE = 'fgo-assets';
 
 const s3Client = new S3Client({
     region: "auto",
@@ -49,9 +51,9 @@ function getContentType(filename) {
 /**
  * Sync single asset file
  */
-async function syncAssetFile(localPath, r2Key, tracker) {
+async function syncAssetFile(localPath, r2Key, uploadedFiles) {
     try {
-        if (tracker.isUploaded(r2Key)) {
+        if (uploadedFiles[r2Key]) {
             return { result: "skipped" };
         }
 
@@ -68,7 +70,7 @@ async function syncAssetFile(localPath, r2Key, tracker) {
             })
         );
 
-        tracker.markUploaded(r2Key);
+        uploadedFiles[r2Key] = true;
         return { result: "uploaded" };
     } catch (error) {
         console.error(`❌ Failed: ${r2Key} - ${error.message}`);
@@ -110,7 +112,7 @@ function getAllFiles(dir, extensions, baseDir = dir) {
 async function main() {
     console.log("🚀 Starting FGO assets sync to R2...\n");
 
-    const tracker = loadUploadTracker("fgo-assets");
+    const uploadedFiles = loadUploaded(WORK_TYPE);
 
     let totalUploaded = 0;
     let totalSkipped = 0;
@@ -129,7 +131,7 @@ async function main() {
             const result = await syncAssetFile(
                 path.join(fontDir, filename),
                 r2Key,
-                tracker
+                uploadedFiles
             );
 
             if (result.result === "uploaded") totalUploaded++;
@@ -159,7 +161,7 @@ async function main() {
 
             const promises = wave.map(async (file) => {
                 const r2Key = `fgo/servantcardui/${file.relativePath}`;
-                return await syncAssetFile(file.localPath, r2Key, tracker);
+                return await syncAssetFile(file.localPath, r2Key, uploadedFiles);
             });
 
             const results = await Promise.all(promises);
@@ -178,7 +180,7 @@ async function main() {
         console.log(`   UI Assets: ${uiFiles.length} processed`);
     }
 
-    tracker.save();
+    saveUploaded(WORK_TYPE, uploadedFiles);
 
     console.log(`\n🎉 FGO assets sync complete!`);
     console.log(`   📤 Uploaded: ${totalUploaded}`);

@@ -179,7 +179,7 @@
     function updatePreview() {
         if (!previewCanvasRef.value || !props.currentCanvas) return;
 
-        const context = previewCanvasRef.value.getContext("2d");
+        const context = previewCanvasRef.value.getContext("2d", { alpha: true });
         if (!context) return;
 
         const offset = 2;

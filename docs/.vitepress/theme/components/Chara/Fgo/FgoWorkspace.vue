@@ -36,6 +36,7 @@
         tempSelection: SelectionRect;
         isSelecting: boolean;
         isResizing: boolean;
+        backgroundColor: string;
         getResizeDirection: (x: number, y: number, sel?: SelectionRect) => string;
         getCursorForDirection: (direction: string) => string;
         drawSelectionBox: (
@@ -103,18 +104,21 @@
     function draw() {
         const canvas = canvasRef.value;
         if (!canvas) return;
-        const ctx = canvas.getContext("2d");
+        const ctx = canvas.getContext("2d", { alpha: true });
         if (!ctx) return;
 
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        canvas.width = canvas.width; // Force canvas reset
+
+        ctx.fillStyle = props.backgroundColor;
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
 
         const frame = props.diffImages?.[props.currentDiffIndex];
         if (!frame) return;
 
         ctx.drawImage(frame, 0, 0);
-        
-        const selToDraw = (props.isSelecting || props.isResizing) 
-            ? props.tempSelection 
+
+        const selToDraw = (props.isSelecting || props.isResizing)
+            ? props.tempSelection
             : props.selection;
         props.drawSelectionBox(ctx, selToDraw);
         emit("draw");
@@ -146,6 +150,19 @@
     watch(
         () => props.selection,
         () => nextTick(() => draw()),
+        { deep: true }
+    );
+
+    watch(
+        () => props.backgroundColor,
+        () => {
+            nextTick(() => {
+                const canvas = canvasRef.value;
+                if (canvas) {
+                    draw();
+                }
+            });
+        },
         { deep: true }
     );
 

@@ -1,19 +1,4 @@
 {
-    "title": "FGOカード生成器",
-    "cardSettings": "カード設定",
-    "class": "クラス",
-    "variant": "バリエーション",
-    "rarity": "レアリティ",
-    "state": "状態",
-    "frame": "フレーム",
-    "servantName": "サーヴァント名",
-    "className": "クラス名",
-    "goldNumbers": "金色数字",
-    "imageUpload": "画像アップロード",
-    "dropHere": "ファイルをここにドロップ",
-    "dragOrClick": "画像をドラッグまたはクリックして選択",
-    "imageControls": "画像コントロール",
-    "save": "保存",
-    "copy": "コピー",
+    "cardGenerator": "FGO 从者卡片生成器",
     "preview": "プレビュー"
 }

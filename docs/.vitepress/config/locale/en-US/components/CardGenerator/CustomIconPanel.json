@@ -1,0 +1,21 @@
+{
+    "custom": "Custom",
+    "customIcon": "Custom Icon",
+    "default": "Default",
+    "iconSearch": "Search Icons",
+    "iconSize": "Size",
+    "iconX": "X",
+    "iconY": "Y",
+    "iconify": "Iconify",
+    "iconifyColor": "Icon Color",
+    "iconifyName": "Icon Name",
+    "method": "Method",
+    "size": "Size",
+    "svg": "SVG",
+    "svgColor": "SVG Color",
+    "svgText": "SVG Text",
+    "upload": "Upload",
+    "url": "URL",
+    "x": "X",
+    "y": "Y"
+}

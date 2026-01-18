@@ -1,0 +1,10 @@
+{
+    "copy": "复制",
+    "exportConfig": "导出",
+    "imageControls": "控制",
+    "importConfig": "导入",
+    "rotateLeft": "左旋转",
+    "rotateRight": "右旋转",
+    "save": "保存",
+    "scale": "缩放"
+}

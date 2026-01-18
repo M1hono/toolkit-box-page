@@ -19,47 +19,39 @@ export function useFgoFaceDetection() {
     let opencvLoadingPromise: Promise<void> | null = null;
 
     async function loadOpenCV(): Promise<void> {
-        // Return existing promise if already loading
         if (opencvLoadingPromise) {
             return opencvLoadingPromise;
         }
 
         if (window.cv && window.cv.Mat) {
-            console.log("✅ OpenCV already loaded");
             opencvReady.value = true;
             return Promise.resolve();
         }
 
         opencvLoadingPromise = new Promise<void>((resolve) => {
-            // Check if script is already in DOM
             const existingScript = document.querySelector(
                 'script[src*="opencv.js"]'
             );
             if (existingScript) {
-                console.log("⏳ OpenCV script already loading...");
                 const checkReady = setInterval(() => {
                     if (window.cv && window.cv.Mat) {
                         clearInterval(checkReady);
                         opencvReady.value = true;
-                        console.log("✅ OpenCV ready");
                         resolve();
                     }
                 }, 100);
                 return;
             }
 
-            console.log("📥 Loading OpenCV...");
             if (typeof document !== "undefined") {
                 const script = document.createElement("script");
                 script.src = "https://docs.opencv.org/4.5.2/opencv.js";
                 script.async = true;
                 script.onload = () => {
-                    console.log("✅ OpenCV loaded");
                     opencvReady.value = true;
                     resolve();
                 };
                 script.onerror = () => {
-                    console.error("❌ OpenCV load failed");
                     opencvLoadingPromise = null;
                     resolve();
                 };
@@ -74,7 +66,6 @@ export function useFgoFaceDetection() {
 
     async function initFaceDetector() {
         if (!window.cv) {
-            console.warn("⚠️ OpenCV not loaded, skipping face detector init");
             return;
         }
 
@@ -115,18 +106,11 @@ export function useFgoFaceDetection() {
 
                     if (window.cv.FS) {
                         window.cv.FS.writeFile(classifier.name, uint8Array);
-                        console.log(`✅ Loaded classifier: ${classifier.name}`);
                     }
                 } catch (error) {
-                    console.warn(
-                        `⚠️ Failed to load ${classifier.name}:`,
-                        error
-                    );
                 }
             }
-            console.log("✅ Face detector initialized");
         } catch (error) {
-            console.warn("⚠️ Face detector init failed:", error);
         }
     }
 
@@ -150,12 +134,8 @@ export function useFgoFaceDetection() {
                     if (animeData && animeData.length > 0) {
                         faceCascade.load("lbpcascade_animeface.xml");
                         cascadeLoaded = true;
-                        console.log("✅ Using anime face detector");
                     }
                 } catch (e) {
-                    console.log(
-                        "⚠️ Anime detector unavailable, trying general detector"
-                    );
                 }
             }
 
@@ -167,14 +147,11 @@ export function useFgoFaceDetection() {
                     if (generalData && generalData.length > 0) {
                         faceCascade.load("haarcascade_frontalface_default.xml");
                         cascadeLoaded = true;
-                        console.log("✅ Using general face detector");
                     }
                 } catch (e) {
-                    console.warn("⚠️ General detector also unavailable");
                 }
             }
         } catch (error) {
-            console.warn("⚠️ Face detector load failed:", error);
         }
 
         if (!cascadeLoaded) {
@@ -194,7 +171,7 @@ export function useFgoFaceDetection() {
                 new window.cv.Size(30, 30)
             );
 
-            let result = null;
+            let result: SelectionRect | null = null;
             if (faces.size() > 0) {
                 const face = faces.get(0);
                 const centerX = face.x + face.width / 2;
@@ -208,7 +185,6 @@ export function useFgoFaceDetection() {
                     height: Math.min(mat.rows - centerY + size / 2, size),
                 };
 
-                console.log("✅ OpenCV detected face:", result);
             }
 
             gray.delete();
@@ -217,7 +193,6 @@ export function useFgoFaceDetection() {
 
             return result;
         } catch (error) {
-            console.warn("⚠️ Face detection process failed:", error);
             gray.delete();
             faces.delete();
             faceCascade.delete();
@@ -249,7 +224,6 @@ export function useFgoFaceDetection() {
             );
             if (fuzzyMatch) {
                 faceData = faceCoords[fuzzyMatch];
-                console.log("🎯 Fuzzy match successful:", fuzzyMatch);
             }
         }
 

@@ -11,12 +11,24 @@
         <div class="card">
             <div class="row">
                 <div class="card-title">{{ t.background }}</div>
-                <input
-                    class="color"
-                    type="color"
-                    :value="bgColorHex"
-                    @input="onBgColor"
-                />
+                <v-menu :close-on-content-click="false">
+                    <template #activator="{ props }">
+                        <div
+                            v-bind="props"
+                            class="color-preview"
+                            :style="{ background: backgroundColor }"
+                        />
+                    </template>
+                    <v-card>
+                        <v-card-text class="pa-2">
+                            <v-color-picker
+                                :model-value="backgroundColor"
+                                mode="rgba"
+                                @update:model-value="onBgColor"
+                            />
+                        </v-card-text>
+                    </v-card>
+                </v-menu>
             </div>
             <div class="hint">{{ t.bgHint }}</div>
         </div>
@@ -73,10 +85,7 @@
 <script setup lang="ts">
     import { ref, watch, nextTick, computed } from "vue";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
-    import type {
-        ColorRGBA,
-        SelectionRect,
-    } from "../../../../utils/chara/fgo/types";
+    import type { SelectionRect } from "../../../../utils/chara/fgo/types";
 
     const { t } = useSafeI18n("fgo-bottom-controls", {
         background: "Background",
@@ -93,8 +102,7 @@
     });
 
     const props = defineProps<{
-        bgColorHex: string;
-        backgroundColor: ColorRGBA;
+        backgroundColor: string;
         selection: SelectionRect;
         currentCanvas: HTMLCanvasElement | null;
         hasDiffs: boolean;
@@ -106,7 +114,7 @@
             preview: HTMLCanvasElement,
             source: HTMLCanvasElement,
             selection: SelectionRect,
-            bg: ColorRGBA
+            bg: string
         ) => void;
     }>();
 
@@ -122,9 +130,8 @@
 
     const previewCanvasRef = ref<HTMLCanvasElement | null>(null);
 
-    function onBgColor(e: Event) {
-        const el = e.target as HTMLInputElement;
-        emit("update-bg", el.value || "#ffffff");
+    function onBgColor(value: string) {
+        emit("update-bg", value);
     }
 
     const canDrawPreview = computed(
@@ -158,7 +165,6 @@
 
     watch(
         () => [
-            props.bgColorHex,
             props.backgroundColor,
             props.selection,
             props.currentCanvas,
@@ -202,13 +208,18 @@
         color: var(--vp-c-text-3);
     }
 
-    .color {
+    .color-preview {
         width: 48px;
         height: 32px;
-        border: 1px solid var(--vp-c-divider);
+        border: 2px solid white;
         border-radius: 8px;
-        background: transparent;
         cursor: pointer;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: transform 0.2s ease;
+    }
+
+    .color-preview:hover {
+        transform: scale(1.05);
     }
 
     .preview {

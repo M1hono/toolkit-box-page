@@ -41,6 +41,10 @@ export interface FGOCardData {
     atk: number;
     hp: number;
     isGold: boolean;
+    nameColor?: string;
+    subnameColor?: string;
+    atkColor?: string;
+    hpColor?: string;
 }
 
 /**
@@ -88,19 +92,19 @@ const FRAME_ID_MAP: Record<string, string> = {
 function loadImage(assetPath: string): Promise<HTMLImageElement> {
     return new Promise((resolve, reject) => {
         const img = new Image();
-        
+
         const tryR2 = () => {
             img.onload = () => resolve(img);
             img.onerror = tryLocal;
             img.src = getUIAssetUrl(assetPath, true);
         };
-        
+
         const tryLocal = () => {
             img.onload = () => resolve(img);
             img.onerror = reject;
             img.src = getUIAssetUrl(assetPath, false);
         };
-        
+
         tryR2();
     });
 }
@@ -126,10 +130,33 @@ export async function renderFGOCard(
     cardData: FGOCardData,
     uploadedFiles: any[] = [],
     imageTransform?: ImageTransform,
-    uploadedImage?: HTMLImageElement | null
+    uploadedImage?: HTMLImageElement | null,
+    options?: {
+        useNumbersForStats?: boolean;
+        customAtkText?: string;
+        customHpText?: string;
+        customAtkColor?: string;
+        customHpColor?: string;
+        customNameColor?: string;
+        customSubnameColor?: string;
+        useCustomIcon?: boolean;
+        customIconMethod?: string;
+        customIconUrl?: string;
+        customIconSvgText?: string;
+        customIconSvgColor?: string;
+        customIconMdi?: string;
+        customIconMdiColor?: string;
+        customIconifyName?: string;
+        customIconifyColor?: string;
+        customIconFile?: File;
+        customIconSize?: number;
+        customIconX?: number;
+        customIconY?: number;
+    }
 ): Promise<void> {
     ctx.clearRect(0, 0, 500, 850);
 
+    // 1. Draw all images first (GIFs will animate, static images draw once)
     if (uploadedFiles && uploadedFiles.length > 0) {
         for (const file of uploadedFiles) {
             drawImageWithTransform(ctx, file.image, file.state);
@@ -144,10 +171,17 @@ export async function renderFGOCard(
         );
     }
 
+    // 2. Draw Frame on top of images
     await drawFrame(ctx, cardData.frameCategory);
     await drawStars(ctx, cardData.starLevel, cardData.rarityState);
-    await drawClassIcon(ctx, cardData.className, cardData.classVariant);
-    drawText(ctx, cardData);
+
+    if (options?.useCustomIcon) {
+        await drawCustomIcon(ctx, options);
+    } else {
+        await drawClassIcon(ctx, cardData.className, cardData.classVariant);
+    }
+
+    drawText(ctx, cardData, options);
 }
 
 /**
@@ -262,6 +296,87 @@ async function drawClassIcon(
 }
 
 /**
+ * Draw custom icon using selected method
+ * @param {CanvasRenderingContext2D} ctx - Canvas rendering context
+ * @param {Object} options - Custom icon options
+ * @returns {Promise<void>} Promise that resolves when icon is drawn
+ */
+async function drawCustomIcon(ctx: CanvasRenderingContext2D, options: any): Promise<void> {
+    return new Promise<void>((resolve) => {
+        const method = options.customIconMethod || "upload";
+        const iconSize = options.customIconSize || 76;
+        const iconX = options.customIconX || 213;
+        const iconY = options.customIconY || 753;
+        
+        if (method === "upload" && options.customIconFile) {
+            const reader = new FileReader();
+            reader.onload = (e) => {
+                const img = new Image();
+                img.onload = () => {
+                    ctx.drawImage(img, iconX, iconY, iconSize, iconSize);
+                    resolve();
+                };
+                img.onerror = () => resolve();
+                img.src = e.target?.result as string;
+            };
+            reader.onerror = () => resolve();
+            reader.readAsDataURL(options.customIconFile);
+            
+        } else if (method === "url" && options.customIconUrl) {
+            const img = new Image();
+            img.crossOrigin = "anonymous";
+            img.onload = () => {
+                ctx.drawImage(img, iconX, iconY, iconSize, iconSize);
+                resolve();
+            };
+            img.onerror = () => resolve();
+            img.src = options.customIconUrl;
+            
+        } else if (method === "svg" && options.customIconSvgText) {
+            let svgContent = options.customIconSvgText;
+            
+            // Apply color to SVG if specified
+            if (options.customIconSvgColor && options.customIconSvgColor !== 'rgba(0, 0, 0, 1)') {
+                // Add fill attribute to svg tag or modify existing
+                svgContent = svgContent.replace(/<svg/, `<svg fill="${options.customIconSvgColor}"`);
+            }
+            
+            const svgBlob = new Blob([svgContent], { type: 'image/svg+xml' });
+            const svgUrl = URL.createObjectURL(svgBlob);
+            const img = new Image();
+            img.onload = () => {
+                ctx.drawImage(img, iconX, iconY, iconSize, iconSize);
+                URL.revokeObjectURL(svgUrl);
+                resolve();
+            };
+            img.onerror = () => {
+                URL.revokeObjectURL(svgUrl);
+                resolve();
+            };
+            img.src = svgUrl;
+            
+        } else if (method === "iconify" && (options.customIconifyName || options.customIconMdi)) {
+            const iconName = (options.customIconifyName || options.customIconMdi || '').replace(/^mdi:/, '');
+            const colorValue = options.customIconifyColor || options.customIconMdiColor || '#000000';
+            const colorHex = colorValue.replace('#', '').substring(0, 6);
+            
+            const iconifyUrl = `https://api.iconify.design/mdi/${iconName}.svg?color=%23${colorHex}`;
+            const img = new Image();
+            img.crossOrigin = "anonymous";
+            img.onload = () => {
+                ctx.drawImage(img, iconX, iconY, iconSize, iconSize);
+                resolve();
+            };
+            img.onerror = () => resolve();
+            img.src = iconifyUrl;
+            
+        } else {
+            resolve();
+        }
+    });
+}
+
+/**
  * Draw text overlay including class name, servant name, and stats
  * @param {CanvasRenderingContext2D} ctx - Canvas rendering context
  * @param {FGOCardData} cardData - Card data containing text information
@@ -271,46 +386,74 @@ async function drawClassIcon(
  * - Servant name at Y: 753 (small, white text)
  * - ATK/HP stats at Y: 830 (large, gradient text)
  */
-function drawText(ctx: CanvasRenderingContext2D, cardData: FGOCardData): void {
+function drawText(
+    ctx: CanvasRenderingContext2D,
+    cardData: FGOCardData,
+    options?: any
+): void {
     ctx.textAlign = "center";
     ctx.font = "50px FGO";
     ctx.lineWidth = 6;
     ctx.lineJoin = "round";
     ctx.strokeStyle = "black";
     ctx.strokeText(cardData.subname || cardData.className, 250, 727);
-    ctx.fillStyle = "white";
+    const subnameColor = options?.customSubnameColor || cardData.subnameColor || "white";
+    ctx.fillStyle = subnameColor;
     ctx.fillText(cardData.subname || cardData.className, 250, 727);
 
     if (cardData.name) {
         ctx.font = "22px FGO";
         ctx.lineWidth = 4;
         ctx.strokeText(cardData.name, 250, 753);
-        ctx.fillStyle = "white";
+        const nameColor = options?.customNameColor || cardData.nameColor || "white";
+        ctx.fillStyle = nameColor;
         ctx.fillText(cardData.name, 250, 753);
     }
 
     ctx.font = "50px FGO";
 
+    const atkText = (options?.useNumbersForStats === false && options?.customAtkText)
+        ? options.customAtkText
+        : String(cardData.atk);
+    const hpText = (options?.useNumbersForStats === false && options?.customHpText)
+        ? options.customHpText
+        : String(cardData.hp);
+
     ctx.strokeStyle = "black";
-    ctx.strokeText(String(cardData.atk), 130, 830);
+    ctx.strokeText(atkText, 130, 830);
 
-    const gradient = ctx.createLinearGradient(0, 780, 0, 830);
+    // Use custom colors or gradient
+    const hasCustomColors = options?.customAtkColor || options?.customHpColor;
+    
+    if (hasCustomColors) {
+        // Custom colors mode - use solid colors
+        ctx.fillStyle = options?.customAtkColor || cardData.atkColor || "white";
+        ctx.fillText(atkText, 130, 830);
 
-    if (cardData.isGold) {
-        gradient.addColorStop(0.5, "#ffeb04");
-        gradient.addColorStop(0.6, "#b1a300");
-        gradient.addColorStop(1, "#ffeb04");
+        ctx.strokeStyle = "black";
+        ctx.strokeText(hpText, 370, 830);
+        ctx.fillStyle = options?.customHpColor || cardData.hpColor || "white";
+        ctx.fillText(hpText, 370, 830);
     } else {
-        gradient.addColorStop(0.5, "white");
-        gradient.addColorStop(0.6, "#8f8f8f");
-        gradient.addColorStop(1, "white");
+        // Gold/Silver gradient mode
+        const gradient = ctx.createLinearGradient(0, 780, 0, 830);
+
+        if (cardData.isGold) {
+            gradient.addColorStop(0.5, "#ffeb04");
+            gradient.addColorStop(0.6, "#b1a300");
+            gradient.addColorStop(1, "#ffeb04");
+        } else {
+            gradient.addColorStop(0.5, "white");
+            gradient.addColorStop(0.6, "#8f8f8f");
+            gradient.addColorStop(1, "white");
+        }
+
+        ctx.fillStyle = gradient;
+        ctx.fillText(atkText, 130, 830);
+
+        ctx.strokeStyle = "black";
+        ctx.strokeText(hpText, 370, 830);
+        ctx.fillStyle = gradient;
+        ctx.fillText(hpText, 370, 830);
     }
-
-    ctx.fillStyle = gradient;
-    ctx.fillText(String(cardData.atk), 130, 830);
-
-    ctx.strokeStyle = "black";
-    ctx.strokeText(String(cardData.hp), 370, 830);
-    ctx.fillStyle = gradient;
-    ctx.fillText(String(cardData.hp), 370, 830);
 }

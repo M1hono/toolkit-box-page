@@ -1,0 +1,21 @@
+{
+    "custom": "自定义",
+    "customIcon": "自定义图标",
+    "default": "默认",
+    "iconSearch": "搜索图标",
+    "iconSize": "大小",
+    "iconX": "X",
+    "iconY": "Y",
+    "iconify": "Iconify",
+    "iconifyColor": "图标颜色",
+    "iconifyName": "图标名称",
+    "method": "方式",
+    "size": "大小",
+    "svg": "SVG",
+    "svgColor": "SVG 颜色",
+    "svgText": "SVG 文本",
+    "upload": "上传",
+    "url": "URL",
+    "x": "X",
+    "y": "Y"
+}

@@ -1,0 +1,10 @@
+{
+    "copy": "Copy",
+    "exportConfig": "Export",
+    "imageControls": "Controls",
+    "importConfig": "Import",
+    "rotateLeft": "Rotate Left",
+    "rotateRight": "Rotate Right",
+    "save": "Save",
+    "scale": "Scale"
+}

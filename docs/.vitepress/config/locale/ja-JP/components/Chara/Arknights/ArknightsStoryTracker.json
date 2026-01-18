@@ -1,12 +1,12 @@
 {
-  "title": "ストーリートラッカー",
-  "searchPlaceholder": "キャラクター名を検索...",
-  "characterCount": "{count} キャラクター",
-  "characterVariant": "キャラクターバリアント",
-  "storyReader": "ストーリーリーダー",
-  "textReader": "テキスト",
-  "akgcc": "akgcc",
-  "storyAppearances": "ストーリー登場 ({count})",
-  "noCharacterSelected": "キャラクター未選択",
-  "searchPrompt": "キャラクターを検索"
+    "akgcc": "akgcc",
+    "characterCount": "{count} キャラクター",
+    "characterVariant": "キャラクターバリアント",
+    "noCharacterSelected": "キャラクター未選択",
+    "searchPlaceholder": "キャラクター名を検索...",
+    "searchPrompt": "キャラクターを検索",
+    "storyAppearances": "ストーリー登場 ({count})",
+    "storyReader": "ストーリーリーダー",
+    "textReader": "テキスト",
+    "title": "ストーリートラッカー"
 }

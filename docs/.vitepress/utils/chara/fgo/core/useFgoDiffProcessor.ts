@@ -50,9 +50,8 @@ export function useFgoDiffProcessor() {
         const diffBlockSize = 256;
 
         const tempCanvas = document.createElement("canvas");
-        const tempCtx = tempCanvas.getContext("2d");
+        const tempCtx = tempCanvas.getContext("2d", { alpha: true });
         if (!tempCtx) {
-            console.error("Failed to get canvas context");
             return createBasicCanvas(baseImage);
         }
 
@@ -62,17 +61,15 @@ export function useFgoDiffProcessor() {
         try {
             tempCtx.drawImage(baseImage, 0, 0);
         } catch (error) {
-            console.error("Failed to draw image to canvas:", error);
             return createBasicCanvas(baseImage);
         }
 
-        // Create Mat from canvas using a wrapper to handle ImageData properly
         let baseImageMat;
         try {
             const cvCanvas = document.createElement("canvas");
             cvCanvas.width = tempCanvas.width;
             cvCanvas.height = tempCanvas.height;
-            const cvCtx = cvCanvas.getContext("2d")!;
+            const cvCtx = cvCanvas.getContext("2d", { alpha: true })!;
             cvCtx.drawImage(tempCanvas, 0, 0);
 
             const tempId = `opencv-temp-${Date.now()}`;
@@ -130,7 +127,7 @@ export function useFgoDiffProcessor() {
                 const diffCanvas = document.createElement("canvas");
                 diffCanvas.width = 1024;
                 diffCanvas.height = 768;
-                const diffCtx = diffCanvas.getContext("2d")!;
+                const diffCtx = diffCanvas.getContext("2d", { alpha: true })!;
 
                 diffCtx.drawImage(
                     baseImage,
@@ -169,7 +166,6 @@ export function useFgoDiffProcessor() {
             bodyMat.delete();
             baseImageMat.delete();
         } catch (error) {
-            // Silently handle cleanup errors
         }
 
         extractMainColor(baseImage);
@@ -185,7 +181,7 @@ export function useFgoDiffProcessor() {
         baseImage: HTMLImageElement
     ): HTMLCanvasElement[] {
         const canvas = document.createElement("canvas");
-        const ctx = canvas.getContext("2d")!;
+        const ctx = canvas.getContext("2d", { alpha: true })!;
         canvas.width = 1024;
         canvas.height = 768;
 
@@ -204,7 +200,7 @@ export function useFgoDiffProcessor() {
     }
 
     function isTransparentCanvas(canvas: HTMLCanvasElement): boolean {
-        const ctx = canvas.getContext("2d")!;
+        const ctx = canvas.getContext("2d", { alpha: true })!;
         const imageData = ctx.getImageData(0, 0, canvas.width, canvas.height);
         const data = imageData.data;
 
@@ -230,7 +226,6 @@ export function useFgoDiffProcessor() {
                 b: dominantColor[2],
             };
         } catch (error) {
-            console.warn("Main color extraction failed:", error);
         }
     }
 

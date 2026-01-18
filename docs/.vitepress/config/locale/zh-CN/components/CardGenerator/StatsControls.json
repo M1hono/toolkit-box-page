@@ -1,0 +1,11 @@
+{
+    "atk": "ATK",
+    "atkText": "ATK 文本",
+    "goldNumbers": "Gold",
+    "hp": "HP",
+    "hpText": "HP 文本",
+    "resetColors": "重置颜色到默认值",
+    "statsMode": "输入模式",
+    "useNumbers": "数字",
+    "useText": "自定义文本"
+}

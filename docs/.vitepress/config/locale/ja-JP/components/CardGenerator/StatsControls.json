@@ -1,0 +1,11 @@
+{
+    "atk": "ATK",
+    "atkText": "ATK テキスト",
+    "goldNumbers": "Gold",
+    "hp": "HP",
+    "hpText": "HP テキスト",
+    "resetColors": "Reset All Text Colors",
+    "statsMode": "統計モード",
+    "useNumbers": "数字",
+    "useText": "カスタムテキスト"
+}

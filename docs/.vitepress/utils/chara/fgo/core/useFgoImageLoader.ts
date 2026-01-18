@@ -32,7 +32,6 @@ export function useFgoImageLoader() {
     async function loadTranslations() {
         try {
             const langCode = currentLangCode.value;
-            console.log("Loading FGO translations for:", langCode);
 
             try {
                 const translationsRes = await fetch(
@@ -45,10 +44,8 @@ export function useFgoImageLoader() {
                         ?.includes("application/json")
                 ) {
                     translations.value = await translationsRes.json();
-                    console.log("✅ Translations loaded");
                 }
             } catch (e) {
-                console.log("No translation file, using defaults");
             }
 
             try {
@@ -62,13 +59,10 @@ export function useFgoImageLoader() {
                         ?.includes("application/json")
                 ) {
                     noTranslations.value = await noTranslationsRes.json();
-                    console.log("✅ No-translation list loaded");
                 }
             } catch (e) {
-                console.log("No no-translation file, using defaults");
             }
         } catch (error) {
-            console.warn("⚠️ Translation load error:", error);
         }
     }
 
@@ -90,16 +84,9 @@ export function useFgoImageLoader() {
                 ) {
                     const data = await response.json();
                     characterData.value = Object.values(data);
-                    console.log(
-                        "✅ Using local FGO data for",
-                        langCode,
-                        "- characters:",
-                        characterData.value.length
-                    );
                     return;
                 }
             } catch (localError) {
-                console.log("Local data unavailable, trying global...");
             }
 
             try {
@@ -115,26 +102,16 @@ export function useFgoImageLoader() {
                 ) {
                     const data = await response.json();
                     characterData.value = Object.values(data);
-                    console.log(
-                        "✅ Using global FGO data - characters:",
-                        characterData.value.length
-                    );
                     return;
                 }
             } catch (globalError) {
-                console.log("Global data unavailable, using remote API...");
             }
 
             const response = await axios.get(
                 "https://api.atlasacademy.io/export/JP/nice_servant.json"
             );
             characterData.value = response.data;
-            console.log(
-                "✅ Using remote FGO data, characters:",
-                characterData.value.length
-            );
         } catch (error) {
-            console.error("❌ Failed to fetch character data:", error);
         } finally {
             isLoading.value = false;
         }
@@ -170,13 +147,11 @@ export function useFgoImageLoader() {
                 for (const [stage, stageData] of Object.entries(
                     categoryData as any
                 )) {
-                    // Our generated data stores URL as a string.
                     if (typeof stageData === "string" && stageData) {
                         urls[`${category}_${stage}`] = stageData;
                         continue;
                     }
 
-                    // Be compatible with any upstream schema that uses `{ url: string }`.
                     if (
                         stageData &&
                         typeof stageData === "object" &&

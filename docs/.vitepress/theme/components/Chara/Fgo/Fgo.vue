@@ -43,6 +43,7 @@
                     :temp-selection="tempSelection"
                     :is-selecting="isSelecting"
                     :is-resizing="isResizing"
+                    :background-color="backgroundColor"
                     :get-resize-direction="getResizeDirection"
                     :get-cursor-for-direction="getCursorForDirection"
                     :draw-selection-box="drawSelectionBox"
@@ -55,7 +56,6 @@
 
             <div class="bottom" v-if="selectedCharacter">
                 <fgo-bottom-controls
-                    :bg-color-hex="bgColorHex"
                     :background-color="backgroundColor"
                     :selection="selection"
                     :current-canvas="workspaceCanvas"
@@ -186,7 +186,7 @@
     const currentImageKey = ref("");
     const isLocalImage = ref(false);
     const showBatchDialog = ref(false);
-    const bgColorHex = ref("#ffffff");
+    const backgroundColor = ref("#ffffff");
 
     const workspaceRef = ref<InstanceType<typeof FgoWorkspace> | null>(null);
     const workspaceCanvas = ref<HTMLCanvasElement | null>(null);
@@ -212,16 +212,6 @@
         );
     });
 
-    const backgroundColor = computed<ColorRGBA>(() => {
-        const hex = bgColorHex.value
-            .replace("#", "")
-            .padEnd(6, "f")
-            .slice(0, 6);
-        const r = Number.parseInt(hex.slice(0, 2), 16);
-        const g = Number.parseInt(hex.slice(2, 4), 16);
-        const b = Number.parseInt(hex.slice(4, 6), 16);
-        return { r, g, b, a: 1 };
-    });
 
     function handleSearch(query: string) {
         const q = (query || "").trim().toLowerCase();
@@ -239,7 +229,6 @@
             })
             .slice(0, 10)
             .map((char) => {
-                // Extract first face ID from faceCoordinates for icon display
                 const faceCoords = char.imageData?.faceCoordinates;
                 const firstFaceId = faceCoords
                     ? Object.keys(faceCoords)[0]
@@ -332,7 +321,6 @@
             await nextTick();
             workspaceRef.value?.draw?.();
         } catch (error) {
-            // Silent error handling
         }
     }
 
@@ -364,7 +352,6 @@
                     selectionEnd.value = { x: 256, y: 256 };
                     workspaceRef.value?.draw?.();
                 } catch (error) {
-                    // Silent error handling
                 }
             }
         };
@@ -432,7 +419,6 @@
                 selectedCharacter.value.name
             );
         } catch (error) {
-            // Silent error handling
         }
     }
 
@@ -469,8 +455,8 @@
         workspaceRef.value?.draw?.();
     }
 
-    function setBgColor(hex: string) {
-        bgColorHex.value = hex;
+    function setBgColor(color: string) {
+        backgroundColor.value = color;
     }
 
     async function copyToClipboard() {
@@ -485,11 +471,10 @@
         const tempCanvas = document.createElement("canvas");
         tempCanvas.width = sw;
         tempCanvas.height = sh;
-        const ctx = tempCanvas.getContext("2d");
+        const ctx = tempCanvas.getContext("2d", { alpha: true });
         if (!ctx) return;
 
-        const bg = backgroundColor.value;
-        ctx.fillStyle = `rgba(${bg.r}, ${bg.g}, ${bg.b}, ${bg.a})`;
+        ctx.fillStyle = backgroundColor.value;
         ctx.fillRect(0, 0, sw, sh);
         ctx.drawImage(workspaceCanvas.value, sx, sy, sw, sh, 0, 0, sw, sh);
 
@@ -501,7 +486,6 @@
                 new ClipboardItem({ "image/png": blob }),
             ]);
         } catch (error) {
-            // Silent error handling
         }
     }
 

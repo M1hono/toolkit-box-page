@@ -1,0 +1,11 @@
+{
+    "atk": "ATK",
+    "atkText": "ATK Text",
+    "goldNumbers": "Gold",
+    "hp": "HP",
+    "hpText": "HP Text",
+    "resetColors": "Reset All Text Colors",
+    "statsMode": "Stats Mode",
+    "useNumbers": "Numbers",
+    "useText": "Custom Text"
+}

@@ -1,12 +1,12 @@
 {
-  "title": "Story Tracker",
-  "searchPlaceholder": "Search character name...",
-  "characterCount": "{count} character(s)",
-  "characterVariant": "Character Variant",
-  "storyReader": "Story Reader",
-  "textReader": "Text",
-  "akgcc": "akgcc",
-  "storyAppearances": "Story Appearances ({count})",
-  "noCharacterSelected": "No Character Selected",
-  "searchPrompt": "Search for a character"
+    "akgcc": "akgcc",
+    "characterCount": "{count} character(s)",
+    "characterVariant": "Character Variant",
+    "noCharacterSelected": "No Character Selected",
+    "searchPlaceholder": "Search character name...",
+    "searchPrompt": "Search for a character",
+    "storyAppearances": "Story Appearances ({count})",
+    "storyReader": "Story Reader",
+    "textReader": "Text",
+    "title": "Story Tracker"
 }

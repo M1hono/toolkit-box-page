@@ -4,13 +4,13 @@
  */
 
 import JSZip from "jszip";
-import type { SelectionRect, ColorRGBA } from "../types";
+import type { SelectionRect } from "../types";
 
 export function useFgoCanvasOps() {
     async function saveSelectedArea(
         canvas: HTMLCanvasElement,
         selection: SelectionRect,
-        backgroundColor: ColorRGBA,
+        backgroundColor: string,
         filename: string
     ) {
         const offset = 2;
@@ -22,10 +22,9 @@ export function useFgoCanvasOps() {
         const tempCanvas = document.createElement("canvas");
         tempCanvas.width = sourceWidth;
         tempCanvas.height = sourceHeight;
-        const tempCtx = tempCanvas.getContext("2d")!;
+        const tempCtx = tempCanvas.getContext("2d", { alpha: true })!;
 
-        const { r, g, b, a } = backgroundColor;
-        tempCtx.fillStyle = `rgba(${r}, ${g}, ${b}, ${a})`;
+        tempCtx.fillStyle = backgroundColor;
         tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
         tempCtx.drawImage(
             canvas,
@@ -50,15 +49,10 @@ export function useFgoCanvasOps() {
     async function batchProcess(
         diffCanvases: HTMLCanvasElement[],
         selection: SelectionRect | null,
-        backgroundColor: ColorRGBA,
+        backgroundColor: string,
         characterName: string
     ): Promise<number> {
         const isCropped = selection !== null;
-        console.log(
-            `🎨 Starting batch process (${isCropped ? "cropped" : "full"}): ${
-                diffCanvases.length
-            } images`
-        );
 
         const zip = new JSZip();
 
@@ -80,14 +74,7 @@ export function useFgoCanvasOps() {
                         )}.png`,
                         blob
                     );
-                    console.log(
-                        `✅ Added full image ${i + 1}/${diffCanvases.length}`
-                    );
                 } catch (error) {
-                    console.error(
-                        `Failed to process full image ${i + 1}:`,
-                        error
-                    );
                 }
             } else {
                 const offset = 2;
@@ -99,11 +86,10 @@ export function useFgoCanvasOps() {
                 const tempCanvas = document.createElement("canvas");
                 tempCanvas.width = sourceWidth;
                 tempCanvas.height = sourceHeight;
-                const tempCtx = tempCanvas.getContext("2d");
+                const tempCtx = tempCanvas.getContext("2d", { alpha: true });
                 if (!tempCtx) continue;
 
-                const { r, g, b, a } = backgroundColor;
-                tempCtx.fillStyle = `rgba(${r}, ${g}, ${b}, ${a})`;
+                tempCtx.fillStyle = backgroundColor;
                 tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
                 tempCtx.drawImage(
                     sourceCanvas,
@@ -131,19 +117,11 @@ export function useFgoCanvasOps() {
                         )}.png`,
                         blob
                     );
-                    console.log(
-                        `✅ Added cropped image ${i + 1}/${diffCanvases.length}`
-                    );
                 } catch (error) {
-                    console.error(
-                        `Failed to process cropped image ${i + 1}:`,
-                        error
-                    );
                 }
             }
         }
 
-        console.log("📦 Generating ZIP...");
         const content = await zip.generateAsync({
             type: "blob",
             compression: "DEFLATE",
@@ -158,7 +136,6 @@ export function useFgoCanvasOps() {
             link.click();
             document.body.removeChild(link);
             URL.revokeObjectURL(link.href);
-            console.log(`✅ Downloaded: ${link.download}`);
         }
 
         return diffCanvases.length;
@@ -213,7 +190,7 @@ export function useFgoCanvasOps() {
         previewCanvas: HTMLCanvasElement,
         sourceCanvas: HTMLCanvasElement,
         selection: SelectionRect,
-        backgroundColor: ColorRGBA
+        backgroundColor: string
     ) {
         const context = previewCanvas.getContext("2d");
         if (!context) return;
@@ -236,8 +213,7 @@ export function useFgoCanvasOps() {
         }
 
         context.clearRect(0, 0, previewCanvas.width, previewCanvas.height);
-        const { r, g, b, a } = backgroundColor;
-        context.fillStyle = `rgba(${r}, ${g}, ${b}, ${a})`;
+        context.fillStyle = backgroundColor;
         context.fillRect(0, 0, previewCanvas.width, previewCanvas.height);
 
         context.drawImage(
