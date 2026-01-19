@@ -92,6 +92,7 @@ export function useImageManipulation(canvas: Ref<HTMLCanvasElement | null>) {
     const addFile = async (file: File): Promise<void> => {
         return new Promise((resolve, reject) => {
             const img = new Image();
+            img.crossOrigin = "Anonymous";
             img.onload = () => {
                 const aspectRatio = img.width / img.height;
                 const maxWidth = 400;

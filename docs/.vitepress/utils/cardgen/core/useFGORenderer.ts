@@ -92,6 +92,7 @@ const FRAME_ID_MAP: Record<string, string> = {
 function loadImage(assetPath: string): Promise<HTMLImageElement> {
     return new Promise((resolve, reject) => {
         const img = new Image();
+        img.crossOrigin = "Anonymous";
 
         const tryR2 = () => {
             img.onload = () => resolve(img);
@@ -312,6 +313,7 @@ async function drawCustomIcon(ctx: CanvasRenderingContext2D, options: any): Prom
             const reader = new FileReader();
             reader.onload = (e) => {
                 const img = new Image();
+                img.crossOrigin = "Anonymous";
                 img.onload = () => {
                     ctx.drawImage(img, iconX, iconY, iconSize, iconSize);
                     resolve();

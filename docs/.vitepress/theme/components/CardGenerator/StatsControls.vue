@@ -32,7 +32,7 @@
         </v-row>
 
         <v-row dense v-if="useNumbersForStats">
-            <v-col cols="5">
+            <v-col cols="4">
                 <div class="input-with-color">
                     <v-text-field
                         :model-value="cardData.atk"
@@ -68,7 +68,7 @@
                     </v-menu>
                 </div>
             </v-col>
-            <v-col cols="5">
+            <v-col cols="4">
                 <div class="input-with-color">
                     <v-text-field
                         :model-value="cardData.hp"
@@ -102,10 +102,10 @@
                     </v-menu>
                 </div>
             </v-col>
-            <v-col cols="2">
+            <v-col cols="4">
                 <div
-                    class="d-flex align-center justify-center"
-                    style="height: 40px"
+                    class="d-flex align-center justify-start"
+                    style="height: 40px; padding-left: 8px"
                 >
                     <v-switch
                         :model-value="cardData.isGold"
@@ -205,6 +205,30 @@
     </div>
 </template>
 
+<style scoped>
+    @media (max-width: 768px) {
+        .v-switch {
+            font-size: 0.85rem;
+        }
+
+        .v-switch .v-label {
+            font-size: 0.85rem !important;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .v-switch {
+            font-size: 0.8rem;
+        }
+
+        .v-switch .v-label {
+            font-size: 0.8rem !important;
+            white-space: nowrap;
+            overflow: visible;
+        }
+    }
+</style>
+
 <script setup lang="ts">
     import { useSafeI18n } from "../../../utils/i18n/locale";
     import type { FGOCardData } from "../../../utils/cardgen";
@@ -279,5 +303,14 @@
 
     .color-picker-trigger:hover {
         transform: scale(1.1);
+    }
+
+    .v-switch {
+        min-width: fit-content;
+    }
+
+    .v-switch .v-label {
+        white-space: nowrap;
+        overflow: visible;
     }
 </style>
