@@ -1,4 +1,26 @@
 {
   "downloadFailures": [],
-  "uploadFailures": []
+  "uploadFailures": [
+    {
+      "key": "arknights/icons/default.png",
+      "name": "default",
+      "type": "icon",
+      "error": "timeout of 30000ms exceeded",
+      "timestamp": 1768826878656
+    },
+    {
+      "key": "arknights/banners/act47side.png",
+      "name": "act47side",
+      "type": "banner",
+      "error": "timeout of 30000ms exceeded",
+      "timestamp": 1768826910166
+    },
+    {
+      "key": "arknights/banners/act46side.png",
+      "name": "act46side",
+      "type": "banner",
+      "error": "timeout of 30000ms exceeded",
+      "timestamp": 1768826910166
+    }
+  ]
 }
