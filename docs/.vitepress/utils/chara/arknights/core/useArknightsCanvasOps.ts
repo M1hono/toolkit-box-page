@@ -4,6 +4,7 @@
  */
 
 import type { SelectionRect, CanvasSize } from "../types";
+import { isMobile, saveToMobilePhotoAlbum } from "../../../shared/mobile-photo-album";
 
 export function useArknightsCanvasOps() {
     async function downloadCroppedImage(
@@ -37,6 +38,13 @@ export function useArknightsCanvasOps() {
             canvas.height
         );
 
+        // On mobile devices, try to save to Photo Album first
+        if (isMobile()) {
+            const saved = await saveToMobilePhotoAlbum(canvas, filename);
+            if (saved) return;
+        }
+
+        // Fallback to regular download
         const link = document.createElement("a");
         link.download = filename;
         link.href = canvas.toDataURL();
@@ -53,6 +61,13 @@ export function useArknightsCanvasOps() {
         canvas.height = image.height;
         ctx.drawImage(image, 0, 0);
 
+        // On mobile devices, try to save to Photo Album first
+        if (isMobile()) {
+            const saved = await saveToMobilePhotoAlbum(canvas, filename);
+            if (saved) return;
+        }
+
+        // Fallback to regular download
         const link = document.createElement("a");
         link.download = filename;
         link.href = canvas.toDataURL();

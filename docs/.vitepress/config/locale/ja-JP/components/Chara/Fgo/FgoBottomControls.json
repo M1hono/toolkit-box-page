@@ -9,5 +9,8 @@
     "onlineOnly": "オンラインのみ",
     "prev": "前へ",
     "preview": "プレビュー",
-    "save": "保存"
+    "save": "保存",
+    "saveFull": "全保存",
+    "copyFull": "全コピー",
+    "nextVariant": "次のバリエーション"
 }

@@ -9,5 +9,8 @@
     "onlineOnly": "Online Only",
     "prev": "Prev",
     "preview": "Preview",
-    "save": "Save"
+    "save": "Save",
+    "saveFull": "Save Full",
+    "copyFull": "Copy Full",
+    "nextVariant": "Next Variant"
 }

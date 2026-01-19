@@ -5,6 +5,8 @@
 
 import JSZip from "jszip";
 import type { SelectionRect } from "../types";
+import { isMobile, saveToMobilePhotoAlbum } from "../../../shared/mobile-photo-album";
+
 
 export function useFgoCanvasOps() {
     async function saveSelectedArea(
@@ -39,6 +41,13 @@ export function useFgoCanvasOps() {
         );
 
         if (typeof document !== "undefined") {
+            // On mobile devices, try to save to Photo Album first
+            if (isMobile()) {
+                const saved = await saveToMobilePhotoAlbum(tempCanvas, filename);
+                if (saved) return;
+            }
+
+            // Fallback to regular download
             const link = document.createElement("a");
             link.download = filename;
             link.href = tempCanvas.toDataURL();
@@ -229,8 +238,75 @@ export function useFgoCanvasOps() {
         );
     }
 
+    /**
+     * @description Save the full canvas as an image file
+     * @param canvas The canvas to save
+     * @param backgroundColor Background color to apply
+     * @param filename Name for the saved file
+     */
+    async function saveFullImage(
+        canvas: HTMLCanvasElement,
+        backgroundColor: string,
+        filename: string
+    ) {
+        const tempCanvas = document.createElement("canvas");
+        tempCanvas.width = canvas.width;
+        tempCanvas.height = canvas.height;
+        const tempCtx = tempCanvas.getContext("2d", { alpha: true })!;
+
+        tempCtx.fillStyle = backgroundColor;
+        tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+        tempCtx.drawImage(canvas, 0, 0);
+
+        if (typeof document !== "undefined") {
+            // On mobile devices, try to save to Photo Album first
+            if (isMobile()) {
+                const saved = await saveToMobilePhotoAlbum(tempCanvas, filename);
+                if (saved) return;
+            }
+
+            // Fallback to regular download
+            const link = document.createElement("a");
+            link.download = filename;
+            link.href = tempCanvas.toDataURL();
+            link.click();
+        }
+    }
+
+    /**
+     * @description Copy the full canvas to clipboard
+     * @param canvas The canvas to copy
+     * @param backgroundColor Background color to apply
+     */
+    async function copyFullImage(
+        canvas: HTMLCanvasElement,
+        backgroundColor: string
+    ) {
+        const tempCanvas = document.createElement("canvas");
+        tempCanvas.width = canvas.width;
+        tempCanvas.height = canvas.height;
+        const tempCtx = tempCanvas.getContext("2d", { alpha: true })!;
+
+        tempCtx.fillStyle = backgroundColor;
+        tempCtx.fillRect(0, 0, tempCanvas.width, tempCanvas.height);
+        tempCtx.drawImage(canvas, 0, 0);
+
+        try {
+            const blob = await new Promise<Blob>((resolve) =>
+                tempCanvas.toBlob((b) => resolve(b!))
+            );
+            await navigator.clipboard.write([
+                new ClipboardItem({ "image/png": blob }),
+            ]);
+        } catch (error) {
+            console.error('Failed to copy full image to clipboard:', error);
+        }
+    }
+
     return {
         saveSelectedArea,
+        saveFullImage,
+        copyFullImage,
         batchProcess,
         drawSelectionBox,
         drawPreview,

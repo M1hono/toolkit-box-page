@@ -57,25 +57,38 @@
                 >
                     {{ t.next }} ›
                 </button>
-                <button class="btn" @click="$emit('save')" :disabled="!canSave">
+                <button class="btn" @click="handleSave" :disabled="!canSave">
                     {{ t.save }}
                 </button>
-                <button class="btn" @click="$emit('copy')" :disabled="!canCopy">
+                <button class="btn" @click="handleCopy" :disabled="!canCopy">
                     {{ t.copy }}
+                </button>
+                <button class="btn" @click="handleSaveFull" :disabled="!canSave">
+                    {{ t.saveFull }}
+                </button>
+                <button class="btn" @click="handleCopyFull" :disabled="!canCopy">
+                    {{ t.copyFull }}
                 </button>
                 <button
                     class="btn"
-                    @click="$emit('batch')"
+                    @click="handleBatch"
                     :disabled="!canBatch"
                 >
                     {{ t.batch }}
                 </button>
                 <button
                     class="btn"
-                    @click="$emit('detect-face')"
+                    @click="handleDetectFace"
                     :disabled="isLocalImage || !hasDiffs"
                 >
                     {{ isLocalImage ? t.onlineOnly : t.detectFace }}
+                </button>
+                <button
+                    class="btn"
+                    @click="handleNextVariant"
+                    :disabled="!hasVariants"
+                >
+                    {{ t.nextVariant }}
                 </button>
             </div>
         </div>
@@ -96,9 +109,12 @@
         next: "Next",
         save: "Save",
         copy: "Copy",
+        saveFull: "Save Full",
+        copyFull: "Copy Full",
         batch: "Batch",
         detectFace: "Detect Face",
         onlineOnly: "Online Only",
+        nextVariant: "Next Variant",
     });
 
     const props = defineProps<{
@@ -110,6 +126,7 @@
         canSave: boolean;
         canBatch: boolean;
         canCopy: boolean;
+        hasVariants: boolean;
         drawPreview: (
             preview: HTMLCanvasElement,
             source: HTMLCanvasElement,
@@ -124,8 +141,11 @@
         "next-diff": [];
         save: [];
         copy: [];
+        "save-full": [];
+        "copy-full": [];
         batch: [];
         "detect-face": [];
+        "next-variant": [];
     }>();
 
     const previewCanvasRef = ref<HTMLCanvasElement | null>(null);
@@ -160,6 +180,62 @@
 
     function handleNextDiff() {
         emit("next-diff");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle save action and update preview
+     */
+    function handleSave() {
+        emit("save");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle copy action and update preview
+     */
+    function handleCopy() {
+        emit("copy");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle save full action and update preview
+     */
+    function handleSaveFull() {
+        emit("save-full");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle copy full action and update preview
+     */
+    function handleCopyFull() {
+        emit("copy-full");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle batch action and update preview
+     */
+    function handleBatch() {
+        emit("batch");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle detect face action and update preview
+     */
+    function handleDetectFace() {
+        emit("detect-face");
+        nextTick(() => refreshPreview());
+    }
+
+    /**
+     * @description Handle next variant action and update preview
+     */
+    function handleNextVariant() {
+        emit("next-variant");
         nextTick(() => refreshPreview());
     }
 
@@ -243,7 +319,7 @@
     .actions {
         margin-top: 8px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         gap: 6px;
     }
 
@@ -274,7 +350,7 @@
         }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 600px) {
         .actions {
             grid-template-columns: repeat(2, 1fr);
         }

@@ -64,14 +64,18 @@
                     :can-save="canSave"
                     :can-batch="canBatch"
                     :can-copy="canSave"
+                    :has-variants="hasVariants"
                     :draw-preview="drawPreview"
                     @update-bg="setBgColor"
                     @prev-diff="previewPreviousDiff"
                     @next-diff="previewNextDiff"
                     @save="saveSelectedArea"
                     @copy="copyToClipboard"
+                    @save-full="saveFullImage"
+                    @copy-full="copyFullImageToClipboard"
                     @batch="showBatchDialog = true"
                     @detect-face="autoDetectFace"
+                    @next-variant="goToNextVariant"
                 />
             </div>
         </div>
@@ -166,6 +170,8 @@
 
     const {
         saveSelectedArea: saveArea,
+        saveFullImage: saveFullArea,
+        copyFullImage: copyFullArea,
         batchProcess: processBatch,
         drawSelectionBox,
         drawPreview,
@@ -209,6 +215,13 @@
             selectedCharacter.value &&
             hasDiffs.value &&
             diffImages.value.length > 1
+        );
+    });
+
+    const hasVariants = computed(() => {
+        return !!(
+            selectedCharacter.value &&
+            Object.keys(allCharacterImages.value).length > 1
         );
     });
 
@@ -407,6 +420,29 @@
         );
     }
 
+    /**
+     * @description Save the full image without cropping
+     */
+    async function saveFullImage() {
+        if (!workspaceCanvas.value || !selectedCharacter.value) return;
+        await saveFullArea(
+            workspaceCanvas.value,
+            backgroundColor.value,
+            `${selectedCharacter.value.name}_full.png`
+        );
+    }
+
+    /**
+     * @description Copy the full image to clipboard without cropping
+     */
+    async function copyFullImageToClipboard() {
+        if (!workspaceCanvas.value || !selectedCharacter.value) return;
+        await copyFullArea(
+            workspaceCanvas.value,
+            backgroundColor.value
+        );
+    }
+
     async function handleBatchConfirm(type: "cropped" | "full") {
         showBatchDialog.value = false;
         if (!selectedCharacter.value || diffImages.value.length === 0) return;
@@ -444,6 +480,27 @@
             faceDetected.value = true;
             workspaceRef.value?.draw?.();
         }
+    }
+
+    /**
+     * @description Go to the next variant of the current character
+     */
+    async function goToNextVariant() {
+        if (!selectedCharacter.value || isLocalImage.value) return;
+        
+        const imageKeys = Object.keys(allCharacterImages.value);
+        if (imageKeys.length <= 1) return;
+        
+        const currentIndex = imageKeys.indexOf(currentImageKey.value);
+        const nextIndex = (currentIndex + 1) % imageKeys.length;
+        const nextKey = imageKeys[nextIndex];
+        
+        currentImageKey.value = nextKey;
+        await selectImage(nextKey);
+        
+        // Ensure workspace and preview are updated
+        await nextTick();
+        workspaceRef.value?.draw?.();
     }
 
     function updateFromRect(rect: SelectionRect) {

@@ -9,5 +9,8 @@
     "onlineOnly": "仅在线",
     "prev": "上一个",
     "preview": "预览",
-    "save": "保存"
+    "save": "保存",
+    "saveFull": "保存全图",
+    "copyFull": "复制全图",
+    "nextVariant": "下一个变体"
 }
