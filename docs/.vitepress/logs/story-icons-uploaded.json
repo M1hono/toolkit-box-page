@@ -1,354 +1,354 @@
 {
   "arknights/icons/main_5.png": {
     "status": "skipped",
-    "timestamp": 1768826848333
+    "timestamp": 1768840066355
   },
   "arknights/icons/main_6.png": {
     "status": "skipped",
-    "timestamp": 1768826848356
+    "timestamp": 1768840066347
   },
   "arknights/icons/main_9.png": {
     "status": "skipped",
-    "timestamp": 1768826848346
+    "timestamp": 1768840066352
   },
   "arknights/icons/main_3.png": {
     "status": "skipped",
-    "timestamp": 1768826848337
+    "timestamp": 1768840066350
   },
   "arknights/icons/main_8.png": {
     "status": "skipped",
-    "timestamp": 1768826848332
+    "timestamp": 1768840066348
   },
   "arknights/icons/main_1.png": {
     "status": "skipped",
-    "timestamp": 1768826848325
+    "timestamp": 1768840066350
   },
   "arknights/icons/main_2.png": {
     "status": "skipped",
-    "timestamp": 1768826848342
+    "timestamp": 1768840066371
   },
   "arknights/icons/main_0.png": {
     "status": "skipped",
-    "timestamp": 1768826848362
+    "timestamp": 1768840066360
   },
   "arknights/icons/main_4.png": {
     "status": "skipped",
-    "timestamp": 1768826848327
+    "timestamp": 1768840066358
   },
   "arknights/icons/main_7.png": {
     "status": "skipped",
-    "timestamp": 1768826848350
+    "timestamp": 1768840066366
   },
   "arknights/icons/main_11.png": {
     "status": "skipped",
-    "timestamp": 1768826848646
+    "timestamp": 1768840066649
   },
   "arknights/icons/main_15.png": {
     "status": "skipped",
-    "timestamp": 1768826848634
+    "timestamp": 1768840066634
   },
   "arknights/icons/main_14.png": {
     "status": "skipped",
-    "timestamp": 1768826848649
+    "timestamp": 1768840066703
   },
   "arknights/banners/1stact.png": {
     "status": "skipped",
-    "timestamp": 1768826848659
+    "timestamp": 1768840066633
   },
   "arknights/icons/main_16.png": {
     "status": "skipped",
-    "timestamp": 1768826848649
+    "timestamp": 1768840066656
   },
   "arknights/icons/404.png": {
     "status": "skipped",
-    "timestamp": 1768826848655
+    "timestamp": 1768840066647
   },
   "arknights/icons/main_10.png": {
     "status": "skipped",
-    "timestamp": 1768826848650
+    "timestamp": 1768840066640
   },
   "arknights/icons/main_13.png": {
     "status": "skipped",
-    "timestamp": 1768826848638
+    "timestamp": 1768840066696
   },
   "arknights/icons/main_12.png": {
     "status": "skipped",
-    "timestamp": 1768826848648
+    "timestamp": 1768840066662
   },
   "arknights/icons/default.png": {
-    "status": "failed",
-    "timestamp": 1768826878656,
-    "error": "timeout of 30000ms exceeded"
+    "status": "skipped",
+    "timestamp": 1768840067489,
+    "reason": "404"
   },
   "arknights/banners/act17d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878948
+    "timestamp": 1768840067744
   },
   "arknights/banners/act13d5.png": {
     "status": "skipped",
-    "timestamp": 1768826878950
+    "timestamp": 1768840067767
   },
   "arknights/banners/act12d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878945
+    "timestamp": 1768840067763
   },
   "arknights/banners/act11d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878949
+    "timestamp": 1768840067767
   },
   "arknights/banners/act15d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878954
+    "timestamp": 1768840067752
   },
   "arknights/banners/act16d5.png": {
     "status": "skipped",
-    "timestamp": 1768826878951
+    "timestamp": 1768840067754
   },
   "arknights/banners/act5d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878954
+    "timestamp": 1768840067793
   },
   "arknights/banners/act3d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878958
+    "timestamp": 1768840067755
   },
   "arknights/banners/act9d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878952
+    "timestamp": 1768840067766
   },
   "arknights/banners/act18d0.png": {
     "status": "skipped",
-    "timestamp": 1768826878956
+    "timestamp": 1768840067763
   },
   "arknights/banners/act13side.png": {
     "status": "skipped",
-    "timestamp": 1768826879254
+    "timestamp": 1768840068059
   },
   "arknights/banners/act19side.png": {
     "status": "skipped",
-    "timestamp": 1768826879240
+    "timestamp": 1768840068060
   },
   "arknights/banners/act14side.png": {
     "status": "skipped",
-    "timestamp": 1768826879278
+    "timestamp": 1768840068057
   },
   "arknights/banners/act16side.png": {
     "status": "skipped",
-    "timestamp": 1768826879239
+    "timestamp": 1768840068050
   },
   "arknights/banners/act18side.png": {
     "status": "skipped",
-    "timestamp": 1768826879255
+    "timestamp": 1768840068046
   },
   "arknights/banners/act17side.png": {
     "status": "skipped",
-    "timestamp": 1768826879247
+    "timestamp": 1768840068058
   },
   "arknights/banners/act20side.png": {
     "status": "skipped",
-    "timestamp": 1768826879257
+    "timestamp": 1768840068057
   },
   "arknights/banners/act12side.png": {
     "status": "skipped",
-    "timestamp": 1768826879249
+    "timestamp": 1768840068059
   },
   "arknights/banners/act18d3.png": {
     "status": "skipped",
-    "timestamp": 1768826879250
+    "timestamp": 1768840068087
   },
   "arknights/banners/act15side.png": {
     "status": "skipped",
-    "timestamp": 1768826879246
+    "timestamp": 1768840068081
   },
   "arknights/banners/act26side.png": {
     "status": "skipped",
-    "timestamp": 1768826879551
+    "timestamp": 1768840068349
   },
   "arknights/banners/act23side.png": {
     "status": "skipped",
-    "timestamp": 1768826879576
+    "timestamp": 1768840068349
   },
   "arknights/banners/act22side.png": {
     "status": "skipped",
-    "timestamp": 1768826879585
+    "timestamp": 1768840068355
   },
   "arknights/banners/act30side.png": {
     "status": "skipped",
-    "timestamp": 1768826879556
+    "timestamp": 1768840068414
   },
   "arknights/banners/act29side.png": {
     "status": "skipped",
-    "timestamp": 1768826879548
+    "timestamp": 1768840068351
   },
   "arknights/banners/act28side.png": {
     "status": "skipped",
-    "timestamp": 1768826879578
+    "timestamp": 1768840068350
   },
   "arknights/banners/act21side.png": {
     "status": "skipped",
-    "timestamp": 1768826879577
+    "timestamp": 1768840068387
   },
   "arknights/banners/act25side.png": {
     "status": "skipped",
-    "timestamp": 1768826879567
+    "timestamp": 1768840068344
   },
   "arknights/banners/act27side.png": {
     "status": "skipped",
-    "timestamp": 1768826879566
+    "timestamp": 1768840068357
   },
   "arknights/banners/act24side.png": {
     "status": "skipped",
-    "timestamp": 1768826879572
+    "timestamp": 1768840068364
   },
   "arknights/banners/act40side.png": {
     "status": "skipped",
-    "timestamp": 1768826879855
+    "timestamp": 1768840068673
   },
   "arknights/banners/act33side.png": {
     "status": "skipped",
-    "timestamp": 1768826879868
+    "timestamp": 1768840068700
   },
   "arknights/banners/act37side.png": {
     "status": "skipped",
-    "timestamp": 1768826879872
+    "timestamp": 1768840068672
   },
   "arknights/banners/act36side.png": {
     "status": "skipped",
-    "timestamp": 1768826879872
+    "timestamp": 1768840068687
   },
   "arknights/banners/act34side.png": {
     "status": "skipped",
-    "timestamp": 1768826879867
+    "timestamp": 1768840068687
   },
   "arknights/banners/act31side.png": {
     "status": "skipped",
-    "timestamp": 1768826879869
+    "timestamp": 1768840068708
   },
   "arknights/banners/act32side.png": {
     "status": "skipped",
-    "timestamp": 1768826879879
+    "timestamp": 1768840068715
   },
   "arknights/banners/act38side.png": {
     "status": "skipped",
-    "timestamp": 1768826879865
+    "timestamp": 1768840068675
   },
   "arknights/banners/act35side.png": {
     "status": "skipped",
-    "timestamp": 1768826879866
+    "timestamp": 1768840068693
   },
   "arknights/banners/act39side.png": {
     "status": "skipped",
-    "timestamp": 1768826879869
+    "timestamp": 1768840068682
   },
   "arknights/banners/act43side.png": {
     "status": "skipped",
-    "timestamp": 1768826880183
+    "timestamp": 1768840068985
   },
   "arknights/banners/act41side.png": {
     "status": "skipped",
-    "timestamp": 1768826880162
+    "timestamp": 1768840068993
   },
   "arknights/banners/act6d5.png": {
     "status": "skipped",
-    "timestamp": 1768826880148
+    "timestamp": 1768840068990
   },
   "arknights/banners/act42side.png": {
     "status": "skipped",
-    "timestamp": 1768826880165
+    "timestamp": 1768840068978
   },
   "arknights/banners/act44side.png": {
     "status": "skipped",
-    "timestamp": 1768826880166
+    "timestamp": 1768840068996
   },
   "arknights/banners/act45side.png": {
     "status": "skipped",
-    "timestamp": 1768826880178
+    "timestamp": 1768840068981
   },
   "arknights/banners/act4d0.png": {
     "status": "skipped",
-    "timestamp": 1768826880161
+    "timestamp": 1768840068992
   },
   "arknights/banners/act48side.png": {
     "status": "skipped",
-    "timestamp": 1768826886374,
+    "timestamp": 1768840069192,
     "reason": "404"
   },
   "arknights/banners/act47side.png": {
-    "status": "failed",
-    "timestamp": 1768826910166,
-    "error": "timeout of 30000ms exceeded"
+    "status": "skipped",
+    "timestamp": 1768840069122,
+    "reason": "404"
   },
   "arknights/banners/act46side.png": {
-    "status": "failed",
-    "timestamp": 1768826910166,
-    "error": "timeout of 30000ms exceeded"
+    "status": "skipped",
+    "timestamp": 1768840069159,
+    "reason": "404"
   },
   "arknights/banners/act9mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910467
+    "timestamp": 1768840069450
   },
   "arknights/banners/act15d5.png": {
     "status": "skipped",
-    "timestamp": 1768826910464
+    "timestamp": 1768840069473
   },
   "arknights/banners/act7d5.png": {
     "status": "skipped",
-    "timestamp": 1768826910520
+    "timestamp": 1768840069462
   },
   "arknights/banners/act8mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910460
+    "timestamp": 1768840069466
   },
   "arknights/banners/act11mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910479
+    "timestamp": 1768840069503
   },
   "arknights/banners/act7mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910480
+    "timestamp": 1768840069463
   },
   "arknights/banners/act10mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910493
+    "timestamp": 1768840069526
   },
   "arknights/banners/act13d0.png": {
     "status": "skipped",
-    "timestamp": 1768826910464
+    "timestamp": 1768840069476
   },
   "arknights/banners/act10d5.png": {
     "status": "skipped",
-    "timestamp": 1768826910462
+    "timestamp": 1768840069461
   },
   "arknights/banners/act12mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910481
+    "timestamp": 1768840069473
   },
   "arknights/banners/act18mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910803
+    "timestamp": 1768840069792
   },
   "arknights/banners/act17mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910801
+    "timestamp": 1768840069780
   },
   "arknights/banners/act13mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910804
+    "timestamp": 1768840069783
   },
   "arknights/banners/act15mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910811
+    "timestamp": 1768840069788
   },
   "arknights/banners/act19mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910802
+    "timestamp": 1768840069792
   },
   "arknights/banners/act14mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910831
+    "timestamp": 1768840069820
   },
   "arknights/banners/act16mini.png": {
     "status": "skipped",
-    "timestamp": 1768826910830
+    "timestamp": 1768840069804
   }
 }
