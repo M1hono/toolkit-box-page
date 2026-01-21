@@ -114,10 +114,33 @@ async function syncStoryAvatar(charId, cacheDir, uploadedFiles, failures) {
 }
 
 /**
- * Main function with parallel wave processing
+ * Filter out already processed operators
+ */
+function filterUnprocessedOperators(operators, uploadedFiles) {
+    const unprocessed = [];
+    const processed = { uploaded: 0, skipped: 0, failed: 0 };
+
+    for (const charId of operators) {
+        const r2Key = getStoryAvatarKey(charId, false);
+        
+        if (uploadedFiles[r2Key]) {
+            const status = uploadedFiles[r2Key].status;
+            if (status === 'uploaded') processed.uploaded++;
+            else if (status === 'skipped') processed.skipped++;
+            else if (status === 'failed') processed.failed++;
+        } else {
+            unprocessed.push(charId);
+        }
+    }
+
+    return { unprocessed, processed };
+}
+
+/**
+ * Main function with smart filtering and fast processing
  */
 async function main() {
-    console.log("Starting story avatar sync with parallel processing...\n");
+    console.log("Starting story avatar sync with smart filtering...\n");
 
     const uploadedFiles = loadUploaded(WORK_TYPE);
     const failures = loadFailures(WORK_TYPE);
@@ -126,26 +149,36 @@ async function main() {
     const cacheDir = path.resolve(__dirname, "../../.cache/story-avatars");
     ensureDir(cacheDir);
 
-    console.log(`Scan complete: ${operators.length} story avatars\n`);
+    const { unprocessed, processed } = filterUnprocessedOperators(operators, uploadedFiles);
+    
+    console.log(`Total story avatars: ${operators.length}`);
+    console.log(`Already processed: ${processed.uploaded + processed.skipped + processed.failed} (uploaded: ${processed.uploaded}, skipped: ${processed.skipped}, failed: ${processed.failed})`);
+    console.log(`Remaining to process: ${unprocessed.length}\n`);
 
-    const BATCH_SIZE = 20;
-    const MAX_UPLOADS_PER_WAVE = 200;
-    const MAX_UPLOADS_PER_RUN = 500;
-    const WAVE_DELAY = 1000;
+    if (unprocessed.length === 0) {
+        console.log("🎉 All story avatars are already processed!");
+        return;
+    }
+
+    // Optimized batch size for efficiency vs stability
+    const BATCH_SIZE = 15; // Increased for better throughput
+    const MAX_UPLOADS_PER_WAVE = 100; // Match other scripts
+    const MAX_UPLOADS_PER_RUN = 150; // Slightly increased since batches are more efficient
+    const WAVE_DELAY = 1000; // Reduced delay since batches are larger
     
     let totalUploaded = 0, totalSkipped = 0, totalFailed = 0;
     let waveNumber = 1;
     let uploadedInWave = 0;
 
-    for (let i = 0; i < operators.length; i += BATCH_SIZE) {
+    for (let i = 0; i < unprocessed.length; i += BATCH_SIZE) {
         // Stop if reached max uploads for this run
         if (totalUploaded >= MAX_UPLOADS_PER_RUN) {
             console.log(`\nReached max upload limit (${MAX_UPLOADS_PER_RUN}), stopping`);
-            console.log(`Remaining: ${operators.length - i} avatars`);
+            console.log(`Remaining: ${unprocessed.length - i} avatars`);
             break;
         }
 
-        const batch = operators.slice(i, i + BATCH_SIZE);
+        const batch = unprocessed.slice(i, i + BATCH_SIZE);
         
         // Process batch in parallel
         const results = await Promise.all(
@@ -175,7 +208,7 @@ async function main() {
         console.log(`Batch ${Math.floor(i / BATCH_SIZE) + 1}: ${uploaded} uploaded, ${skipped} skipped, ${failed} failed`);
 
         // Check if wave limit reached (only count uploads)
-        if (uploadedInWave >= MAX_UPLOADS_PER_WAVE && i + BATCH_SIZE < operators.length && totalUploaded < MAX_UPLOADS_PER_RUN) {
+        if (uploadedInWave >= MAX_UPLOADS_PER_WAVE && i + BATCH_SIZE < unprocessed.length && totalUploaded < MAX_UPLOADS_PER_RUN) {
             console.log(`\nWave ${waveNumber} complete: ${uploadedInWave} uploads`);
             console.log(`Waiting ${WAVE_DELAY}ms before next wave...\n`);
             await new Promise(resolve => setTimeout(resolve, WAVE_DELAY));

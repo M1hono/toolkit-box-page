@@ -142,21 +142,57 @@ async function main() {
         console.log(`   Fonts: ${fontFiles.length} processed`);
     }
 
-    // 2. Sync UI Assets (wave processing)
+    // 2. Sync UI Assets (smart filtering and fast processing)
     console.log("🎨 Syncing UI assets...");
     const fgoImgsDir = path.join(PUBLIC_DIR, "imgs/fgo");
     const uiFiles = getAllFiles(fgoImgsDir, [".png"]);
 
     if (uiFiles.length > 0) {
-        const WAVE_SIZE = 20;
-        const WAVE_DELAY = 2000;
+        // Filter out already processed files
+        const unprocessedFiles = [];
+        const processedCount = { uploaded: 0, skipped: 0, failed: 0 };
 
-        for (let i = 0; i < uiFiles.length; i += WAVE_SIZE) {
-            const wave = uiFiles.slice(i, i + WAVE_SIZE);
-            const waveNum = Math.floor(i / WAVE_SIZE) + 1;
+        for (const file of uiFiles) {
+            const r2Key = `fgo/servantcardui/${file.relativePath}`;
+            if (uploadedFiles[r2Key]) {
+                const status = uploadedFiles[r2Key].result || uploadedFiles[r2Key].status;
+                if (status === 'uploaded') processedCount.uploaded++;
+                else if (status === 'skipped') processedCount.skipped++;
+                else if (status === 'failed') processedCount.failed++;
+            } else {
+                unprocessedFiles.push(file);
+            }
+        }
+
+        console.log(`   Total UI files: ${uiFiles.length}`);
+        console.log(`   Already processed: ${processedCount.uploaded + processedCount.skipped + processedCount.failed} (uploaded: ${processedCount.uploaded}, skipped: ${processedCount.skipped}, failed: ${processedCount.failed})`);
+        console.log(`   Remaining to process: ${unprocessedFiles.length}\n`);
+
+        if (unprocessedFiles.length === 0) {
+            console.log("   🎉 All FGO UI assets are already processed!");
+        } else {
+            // Optimized batch size for efficiency vs stability  
+            const BATCH_SIZE = 15; // Increased for better throughput
+            const MAX_UPLOADS_PER_WAVE = 100; // Match other scripts
+            const MAX_UPLOADS_PER_RUN = 150; // Slightly increased since batches are more efficient
+            const WAVE_DELAY = 1000; // Reduced delay since batches are larger
+            
+            let waveNumber = 1;
+            let uploadedInWave = 0;
+
+            for (let i = 0; i < unprocessedFiles.length; i += BATCH_SIZE) {
+                // Stop if reached max uploads for this run
+                if (totalUploaded >= MAX_UPLOADS_PER_RUN) {
+                    console.log(`\n   Reached max upload limit (${MAX_UPLOADS_PER_RUN}), stopping`);
+                    console.log(`   Remaining: ${unprocessedFiles.length - i} files`);
+                    break;
+                }
+
+                const wave = unprocessedFiles.slice(i, i + BATCH_SIZE);
+            const batchNum = Math.floor(i / BATCH_SIZE) + 1;
 
             console.log(
-                `   Wave ${waveNum}: Processing ${wave.length} files...`
+                `   Batch ${batchNum}: Processing ${wave.length} files...`
             );
 
             const promises = wave.map(async (file) => {
@@ -167,17 +203,36 @@ async function main() {
             const results = await Promise.all(promises);
 
             results.forEach((result) => {
-                if (result.result === "uploaded") totalUploaded++;
-                else if (result.result === "skipped") totalSkipped++;
-                else totalFailed++;
+                if (result.result === "uploaded") {
+                    totalUploaded++;
+                    uploadedInWave++;
+                } else if (result.result === "skipped") {
+                    totalSkipped++;
+                } else {
+                    totalFailed++;
+                    uploadedInWave++; // Failed also counts towards wave
+                }
             });
 
-            if (i + WAVE_SIZE < uiFiles.length) {
-                await new Promise((resolve) => setTimeout(resolve, WAVE_DELAY));
-            }
-        }
+            const uploaded = results.filter(r => r.result === "uploaded").length;
+            const skipped = results.filter(r => r.result === "skipped").length;
+            const failed = results.filter(r => r.result === "failed").length;
+            console.log(`     ${uploaded} uploaded, ${skipped} skipped, ${failed} failed`);
 
-        console.log(`   UI Assets: ${uiFiles.length} processed`);
+                // Check if wave limit reached
+                if (uploadedInWave >= MAX_UPLOADS_PER_WAVE && i + BATCH_SIZE < unprocessedFiles.length && totalUploaded < MAX_UPLOADS_PER_RUN) {
+                    console.log(`\n   Wave ${waveNumber} complete: ${uploadedInWave} uploads`);
+                    console.log(`   Waiting ${WAVE_DELAY}ms before next wave...\n`);
+                    await new Promise(resolve => setTimeout(resolve, WAVE_DELAY));
+                    waveNumber++;
+                    uploadedInWave = 0;
+                } else if (i + BATCH_SIZE < unprocessedFiles.length) {
+                    await new Promise((resolve) => setTimeout(resolve, 1000));
+                }
+            }
+
+            console.log(`   UI Assets: ${Math.min(unprocessedFiles.length, totalUploaded + totalSkipped + totalFailed)} processed`);
+        }
     }
 
     saveUploaded(WORK_TYPE, uploadedFiles);
