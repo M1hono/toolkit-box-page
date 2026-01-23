@@ -41503,5 +41503,45 @@
   "arknights/variantavatars/char_002_amiya_1%236%241.webp": {
     "status": "skipped",
     "timestamp": 1769014133060
+  },
+  "arknights/variantavatars/avg_npc_017_3%235%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807033,
+    "variant": "avg_npc_017_3#5$1"
+  },
+  "arknights/variantavatars/avg_npc_017_3%232%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807114,
+    "variant": "avg_npc_017_3#2$1"
+  },
+  "arknights/variantavatars/char_362_saga%232%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807120,
+    "variant": "char_362_saga#2$1"
+  },
+  "arknights/variantavatars/avg_npc_017_3%233%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807704,
+    "variant": "avg_npc_017_3#3$1"
+  },
+  "arknights/variantavatars/avg_npc_017_3%234%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807722,
+    "variant": "avg_npc_017_3#4$1"
+  },
+  "arknights/variantavatars/char_362_saga%234%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807740,
+    "variant": "char_362_saga#4$1"
+  },
+  "arknights/variantavatars/char_362_saga%233%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807745,
+    "variant": "char_362_saga#3$1"
+  },
+  "arknights/variantavatars/char_362_saga%235%241.webp": {
+    "status": "uploaded",
+    "timestamp": 1769130807746,
+    "variant": "char_362_saga#5$1"
   }
 }

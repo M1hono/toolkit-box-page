@@ -89974,5 +89974,45 @@
   "arknights/characters/char_002_amiya_1%236%241.png": {
     "status": "skipped",
     "timestamp": 1769013921529
+  },
+  "arknights/characters/avg_npc_017_3%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130803597,
+    "variant": "avg_npc_017_3#2$1"
+  },
+  "arknights/characters/avg_npc_017_3%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130803753,
+    "variant": "avg_npc_017_3#3$1"
+  },
+  "arknights/characters/avg_npc_017_3%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130804168,
+    "variant": "avg_npc_017_3#4$1"
+  },
+  "arknights/characters/avg_npc_017_3%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130804379,
+    "variant": "avg_npc_017_3#5$1"
+  },
+  "arknights/characters/char_362_saga%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130804405,
+    "variant": "char_362_saga#3$1"
+  },
+  "arknights/characters/char_362_saga%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130804451,
+    "variant": "char_362_saga#4$1"
+  },
+  "arknights/characters/char_362_saga%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130804502,
+    "variant": "char_362_saga#5$1"
+  },
+  "arknights/characters/char_362_saga%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1769130804914,
+    "variant": "char_362_saga#2$1"
   }
 }
