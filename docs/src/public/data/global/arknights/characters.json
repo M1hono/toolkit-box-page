@@ -2022,7 +2022,11 @@
   "avg_npc_017_3": {
     "charId": "avg_npc_017_3",
     "validVariants": [
-      "avg_npc_017_3#1$1"
+      "avg_npc_017_3#1$1",
+      "avg_npc_017_3#2$1",
+      "avg_npc_017_3#3$1",
+      "avg_npc_017_3#4$1",
+      "avg_npc_017_3#5$1"
     ],
     "charType": "npc",
     "dialogCount": 0
@@ -3198,7 +3202,11 @@
   "char_362_saga": {
     "charId": "char_362_saga",
     "validVariants": [
-      "char_362_saga#1$1"
+      "char_362_saga#1$1",
+      "char_362_saga#2$1",
+      "char_362_saga#3$1",
+      "char_362_saga#4$1",
+      "char_362_saga#5$1"
     ],
     "charType": "operator",
     "dialogCount": 0
