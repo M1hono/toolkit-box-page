@@ -3628,6 +3628,20 @@
     ]
   },
   {
+    "id": 505900,
+    "name": "花咲翁",
+    "originalName": "花咲翁",
+    "ruby": "ハナサカノオキナ",
+    "className": "caster",
+    "rarity": 5,
+    "searchTerms": [
+      "花咲翁",
+      "花咲翁",
+      "ハナサカノオキナ",
+      "caster"
+    ]
+  },
+  {
     "id": 600100,
     "name": "佐々木小次郎",
     "originalName": "佐々木小次郎",
@@ -4270,6 +4284,20 @@
       "河上彦斎",
       "河上彦斎",
       "カワカミゲンサイ",
+      "assassin"
+    ]
+  },
+  {
+    "id": 605200,
+    "name": "蛇女房",
+    "originalName": "蛇女房",
+    "ruby": "ヘビニョウボウ",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "蛇女房",
+      "蛇女房",
+      "ヘビニョウボウ",
       "assassin"
     ]
   },
@@ -5434,6 +5462,20 @@
       "ジュネス・クレーン",
       "ジュネス・クレーン",
       "ジュネス・クレーン",
+      "alterego"
+    ]
+  },
+  {
+    "id": 1002000,
+    "name": "フローラ",
+    "originalName": "フローラ",
+    "ruby": "フローラ",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "フローラ",
+      "フローラ",
+      "フローラ",
       "alterego"
     ]
   },

@@ -5080,8 +5080,8 @@
         },
         "2003001": {
           "id": 2003001,
-          "faceX": 435,
-          "faceY": 152,
+          "faceX": 441,
+          "faceY": 129,
           "scale": 0.958
         },
         "2003002": {
@@ -22657,6 +22657,56 @@
       }
     }
   },
+  "505900": {
+    "id": 505900,
+    "collectionNo": 462,
+    "name": "花咲翁",
+    "ruby": "ハナサカノオキナ",
+    "className": "caster",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/5059000/5059000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/5059001/5059001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/5059002/5059002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "5059000": {
+          "id": 5059000,
+          "faceX": 350,
+          "faceY": 143,
+          "scale": 1
+        },
+        "5059001": {
+          "id": 5059001,
+          "faceX": 333,
+          "faceY": 150,
+          "scale": 1
+        },
+        "5059002": {
+          "id": 5059002,
+          "faceX": 893,
+          "faceY": 160,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/5059000/5059000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/5059001/5059001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/5059002/5059002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "600100": {
     "id": 600100,
     "collectionNo": 39,
@@ -26619,6 +26669,56 @@
         "costume": {
           "605130": "https://static.atlasacademy.io/JP/CharaFigure/6051300/6051300_merged.png"
         },
+        "story": {}
+      }
+    }
+  },
+  "605200": {
+    "id": 605200,
+    "collectionNo": 463,
+    "name": "蛇女房",
+    "ruby": "ヘビニョウボウ",
+    "className": "assassin",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/6052000/6052000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/6052001/6052001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/6052002/6052002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "6052000": {
+          "id": 6052000,
+          "faceX": 386,
+          "faceY": 154,
+          "scale": 1
+        },
+        "6052001": {
+          "id": 6052001,
+          "faceX": 379,
+          "faceY": 135,
+          "scale": 1
+        },
+        "6052002": {
+          "id": 6052002,
+          "faceX": 385,
+          "faceY": 155,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/6052000/6052000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/6052001/6052001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/6052002/6052002_merged.png"
+        },
+        "costume": {},
         "story": {}
       }
     }
@@ -34981,6 +35081,62 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/10019000/10019000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/10019001/10019001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/10019002/10019002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "1002000": {
+    "id": 1002000,
+    "collectionNo": 464,
+    "name": "フローラ",
+    "ruby": "フローラ",
+    "className": "alterEgo",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/10020000/10020000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/10020001/10020001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/10020002/10020002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "1002000": {
+          "id": 1002000,
+          "faceX": 384,
+          "faceY": 149,
+          "scale": 1
+        },
+        "10020000": {
+          "id": 10020000,
+          "faceX": 379,
+          "faceY": 163,
+          "scale": 1
+        },
+        "10020001": {
+          "id": 10020001,
+          "faceX": 379,
+          "faceY": 163,
+          "scale": 1
+        },
+        "10020002": {
+          "id": 10020002,
+          "faceX": 379,
+          "faceY": 163,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/10020000/10020000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/10020001/10020001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/10020002/10020002_merged.png"
         },
         "costume": {},
         "story": {}
