@@ -5,8 +5,10 @@
 
 import JSZip from "jszip";
 import type { SelectionRect } from "../types";
-import { isMobile, saveToMobilePhotoAlbum } from "../../../shared/mobile-photo-album";
-
+import {
+    isMobile,
+    saveToMobilePhotoAlbum,
+} from "../../../shared/mobile-photo-album";
 
 export function useFgoCanvasOps() {
     async function saveSelectedArea(
@@ -15,11 +17,10 @@ export function useFgoCanvasOps() {
         backgroundColor: string,
         filename: string
     ) {
-        const offset = 2;
-        const sourceX = selection.x + offset;
-        const sourceY = selection.y + offset;
-        const sourceWidth = selection.width - 2 * offset;
-        const sourceHeight = selection.height - 2 * offset;
+        const sourceX = selection.x;
+        const sourceY = selection.y;
+        const sourceWidth = selection.width;
+        const sourceHeight = selection.height;
 
         const tempCanvas = document.createElement("canvas");
         tempCanvas.width = sourceWidth;
@@ -43,7 +44,10 @@ export function useFgoCanvasOps() {
         if (typeof document !== "undefined") {
             // On mobile devices, try to save to Photo Album first
             if (isMobile()) {
-                const saved = await saveToMobilePhotoAlbum(tempCanvas, filename);
+                const saved = await saveToMobilePhotoAlbum(
+                    tempCanvas,
+                    filename
+                );
                 if (saved) return;
             }
 
@@ -83,14 +87,12 @@ export function useFgoCanvasOps() {
                         )}.png`,
                         blob
                     );
-                } catch (error) {
-                }
+                } catch (error) {}
             } else {
-                const offset = 2;
-                const sourceX = selection.x + offset;
-                const sourceY = selection.y + offset;
-                const sourceWidth = selection.width - 2 * offset;
-                const sourceHeight = selection.height - 2 * offset;
+                const sourceX = selection.x;
+                const sourceY = selection.y;
+                const sourceWidth = selection.width;
+                const sourceHeight = selection.height;
 
                 const tempCanvas = document.createElement("canvas");
                 tempCanvas.width = sourceWidth;
@@ -126,8 +128,7 @@ export function useFgoCanvasOps() {
                         )}.png`,
                         blob
                     );
-                } catch (error) {
-                }
+                } catch (error) {}
             }
         }
 
@@ -204,11 +205,10 @@ export function useFgoCanvasOps() {
         const context = previewCanvas.getContext("2d");
         if (!context) return;
 
-        const offset = 2;
-        const sourceX = selection.x + offset;
-        const sourceY = selection.y + offset;
-        const sourceWidth = selection.width - 2 * offset;
-        const sourceHeight = selection.height - 2 * offset;
+        const sourceX = selection.x;
+        const sourceY = selection.y;
+        const sourceWidth = selection.width;
+        const sourceHeight = selection.height;
 
         const aspectRatio = sourceWidth / sourceHeight;
         const previewSize = 200;
@@ -261,7 +261,10 @@ export function useFgoCanvasOps() {
         if (typeof document !== "undefined") {
             // On mobile devices, try to save to Photo Album first
             if (isMobile()) {
-                const saved = await saveToMobilePhotoAlbum(tempCanvas, filename);
+                const saved = await saveToMobilePhotoAlbum(
+                    tempCanvas,
+                    filename
+                );
                 if (saved) return;
             }
 
@@ -299,7 +302,7 @@ export function useFgoCanvasOps() {
                 new ClipboardItem({ "image/png": blob }),
             ]);
         } catch (error) {
-            console.error('Failed to copy full image to clipboard:', error);
+            console.error("Failed to copy full image to clipboard:", error);
         }
     }
 

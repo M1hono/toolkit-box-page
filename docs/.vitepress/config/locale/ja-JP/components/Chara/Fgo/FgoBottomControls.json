@@ -4,13 +4,13 @@
     "batch": "一括",
     "bgHint": "プレビュー/エクスポートに適用",
     "copy": "コピー",
+    "copyFull": "全コピー",
     "detectFace": "顔検出",
     "next": "次へ",
+    "nextVariant": "次のバリエーション",
     "onlineOnly": "オンラインのみ",
     "prev": "前へ",
     "preview": "プレビュー",
     "save": "保存",
-    "saveFull": "全保存",
-    "copyFull": "全コピー",
-    "nextVariant": "次のバリエーション"
+    "saveFull": "全保存"
 }

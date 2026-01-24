@@ -4,13 +4,13 @@
     "batch": "Batch",
     "bgHint": "Applied to preview/export",
     "copy": "Copy",
+    "copyFull": "Copy Full",
     "detectFace": "Detect Face",
     "next": "Next",
+    "nextVariant": "Next Variant",
     "onlineOnly": "Online Only",
     "prev": "Prev",
     "preview": "Preview",
     "save": "Save",
-    "saveFull": "Save Full",
-    "copyFull": "Copy Full",
-    "nextVariant": "Next Variant"
+    "saveFull": "Save Full"
 }

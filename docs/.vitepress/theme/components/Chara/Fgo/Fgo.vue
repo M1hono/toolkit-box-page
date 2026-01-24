@@ -58,7 +58,9 @@
                 <fgo-bottom-controls
                     :background-color="backgroundColor"
                     :selection="selection"
-                    :current-canvas="workspaceCanvas"
+                    :current-canvas="
+                        diffImages[currentDiffIndex] || workspaceCanvas
+                    "
                     :has-diffs="hasDiffs"
                     :is-local-image="isLocalImage"
                     :can-save="canSave"
@@ -225,7 +227,6 @@
         );
     });
 
-
     function handleSearch(query: string) {
         const q = (query || "").trim().toLowerCase();
         if (!q) {
@@ -333,8 +334,7 @@
 
             await nextTick();
             workspaceRef.value?.draw?.();
-        } catch (error) {
-        }
+        } catch (error) {}
     }
 
     async function handleFileUpload(file: File) {
@@ -364,8 +364,7 @@
                     selectionStart.value = { x: 0, y: 0 };
                     selectionEnd.value = { x: 256, y: 256 };
                     workspaceRef.value?.draw?.();
-                } catch (error) {
-                }
+                } catch (error) {}
             }
         };
         reader.readAsDataURL(file);
@@ -411,9 +410,11 @@
     }
 
     async function saveSelectedArea() {
-        if (!workspaceCanvas.value || !selectedCharacter.value) return;
+        if (!selectedCharacter.value || diffImages.value.length === 0) return;
+        const cleanImage = diffImages.value[currentDiffIndex.value];
+        if (!cleanImage) return;
         await saveArea(
-            workspaceCanvas.value,
+            cleanImage,
             selection.value,
             backgroundColor.value,
             `${selectedCharacter.value.name}_selected.png`
@@ -424,9 +425,11 @@
      * @description Save the full image without cropping
      */
     async function saveFullImage() {
-        if (!workspaceCanvas.value || !selectedCharacter.value) return;
+        if (!selectedCharacter.value || diffImages.value.length === 0) return;
+        const cleanImage = diffImages.value[currentDiffIndex.value];
+        if (!cleanImage) return;
         await saveFullArea(
-            workspaceCanvas.value,
+            cleanImage,
             backgroundColor.value,
             `${selectedCharacter.value.name}_full.png`
         );
@@ -437,10 +440,7 @@
      */
     async function copyFullImageToClipboard() {
         if (!workspaceCanvas.value || !selectedCharacter.value) return;
-        await copyFullArea(
-            workspaceCanvas.value,
-            backgroundColor.value
-        );
+        await copyFullArea(workspaceCanvas.value, backgroundColor.value);
     }
 
     async function handleBatchConfirm(type: "cropped" | "full") {
@@ -454,8 +454,7 @@
                 backgroundColor.value,
                 selectedCharacter.value.name
             );
-        } catch (error) {
-        }
+        } catch (error) {}
     }
 
     function autoDetectFace() {
@@ -487,17 +486,17 @@
      */
     async function goToNextVariant() {
         if (!selectedCharacter.value || isLocalImage.value) return;
-        
+
         const imageKeys = Object.keys(allCharacterImages.value);
         if (imageKeys.length <= 1) return;
-        
+
         const currentIndex = imageKeys.indexOf(currentImageKey.value);
         const nextIndex = (currentIndex + 1) % imageKeys.length;
         const nextKey = imageKeys[nextIndex];
-        
+
         currentImageKey.value = nextKey;
         await selectImage(nextKey);
-        
+
         // Ensure workspace and preview are updated
         await nextTick();
         workspaceRef.value?.draw?.();
@@ -517,13 +516,15 @@
     }
 
     async function copyToClipboard() {
-        if (!workspaceCanvas.value || !selectedCharacter.value) return;
+        if (!selectedCharacter.value || diffImages.value.length === 0) return;
 
-        const offset = 2;
-        const sx = selection.value.x + offset;
-        const sy = selection.value.y + offset;
-        const sw = selection.value.width - 2 * offset;
-        const sh = selection.value.height - 2 * offset;
+        const cleanImage = diffImages.value[currentDiffIndex.value];
+        if (!cleanImage) return;
+
+        const sx = selection.value.x;
+        const sy = selection.value.y;
+        const sw = selection.value.width;
+        const sh = selection.value.height;
 
         const tempCanvas = document.createElement("canvas");
         tempCanvas.width = sw;
@@ -533,7 +534,7 @@
 
         ctx.fillStyle = backgroundColor.value;
         ctx.fillRect(0, 0, sw, sh);
-        ctx.drawImage(workspaceCanvas.value, sx, sy, sw, sh, 0, 0, sw, sh);
+        ctx.drawImage(cleanImage, sx, sy, sw, sh, 0, 0, sw, sh);
 
         try {
             const blob = await new Promise<Blob>((resolve) =>
@@ -542,8 +543,7 @@
             await navigator.clipboard.write([
                 new ClipboardItem({ "image/png": blob }),
             ]);
-        } catch (error) {
-        }
+        } catch (error) {}
     }
 
     onMounted(async () => {
