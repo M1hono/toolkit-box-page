@@ -11520,7 +11520,6 @@
       "Serpilia",
       "Yvangelista XI",
       "'Federico'",
-      "Arturia",
       "Richele",
       "Executor",
       "Energetic Young Operator",
@@ -11532,7 +11531,6 @@
       "Serpilia",
       "Yvangelista XI",
       "'Federico'",
-      "Arturia",
       "Richele",
       "Executor",
       "Energetic Young Operator",
@@ -12705,14 +12703,12 @@
     "speakerNames": [
       "Gentle Woman",
       "Anxious Woman",
-      "Yulia",
-      "Federico"
+      "Yulia"
     ],
     "searchNames": [
       "Gentle Woman",
       "Anxious Woman",
-      "Yulia",
-      "Federico"
+      "Yulia"
     ],
     "displayName": "Gentle Woman"
   },

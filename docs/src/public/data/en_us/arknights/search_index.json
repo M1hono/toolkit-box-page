@@ -3502,7 +3502,6 @@
   "Federico": [
     "char_279_excu_4",
     "avg_1032_excu2_1",
-    "avg_npc_1122_1",
     "avg_npc_1118_1",
     "avg_npc_1119_1"
   ],
@@ -4957,14 +4956,13 @@
     "avg_npc_1253_1"
   ],
   "'Federico'": "avg_1032_excu2_1",
+  "Energetic Young Operator": "avg_1032_excu2_1",
+  "Sullen Young Operator": "avg_1032_excu2_1",
   "Arturia": [
-    "avg_1032_excu2_1",
     "avg_npc_490_1",
     "avg_245_cello_1",
     "avg_npc_1120_1"
   ],
-  "Energetic Young Operator": "avg_1032_excu2_1",
-  "Sullen Young Operator": "avg_1032_excu2_1",
   "Gerald": "avg_npc_926_1",
   "Clément": [
     "avg_npc_926_1",
