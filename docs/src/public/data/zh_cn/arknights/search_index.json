@@ -309,20 +309,6 @@
     "avg_1014_nearl2_1",
     "char_148_nearl_ns_1"
   ],
-  "阿米娅": [
-    "char_148_nearl_1",
-    "char_017_homura_3",
-    "char_010_chen_1",
-    "avg_1037_amiya3_1",
-    "avg_npc_1296_1",
-    "avg_npc_1295_1",
-    "char_002_amiya_summer_2",
-    "char_193_frostl_1",
-    "avg_npc_051",
-    "avg_npc_087",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
   "凯尔希": [
     "char_003_kalts_1",
     "char_003_kaltsn07_1",
@@ -2195,6 +2181,16 @@
     "avg_npc_997_1"
   ],
   "富家女": "char_308_swire_1",
+  "阿米娅": [
+    "char_010_chen_1",
+    "avg_1037_amiya3_1",
+    "avg_npc_1295_1",
+    "char_002_amiya_summer_2",
+    "avg_npc_051",
+    "avg_npc_087",
+    "avg_npc_394_1",
+    "char_002_amiya_1"
+  ],
   "魏彦吾": [
     "char_010_chen_1",
     "char_2005_weiyw_1"
