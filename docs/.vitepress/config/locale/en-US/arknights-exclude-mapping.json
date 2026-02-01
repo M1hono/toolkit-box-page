@@ -1,5 +1,24 @@
 {
-  "Ernesto": ["char_010_chen", "char_010_chen_summer", "char_010_chen_1", "avg_1013_spchen_1"],
-  "Lin Yuxia": ["char_010_chen", "char_010_chen_summer", "char_010_chen_1", "avg_1013_spchen_1"],
-  "Grani": ["avg_npc_003", "avg_npc_010"]
+  "Ernesto": [
+    "char_010_chen",
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_1013_spchen_1"
+  ],
+  "Lin Yuxia": [
+    "char_010_chen",
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_1013_spchen_1"
+  ],
+  "Grani": [
+    "avg_npc_003",
+    "avg_npc_010"
+  ],
+  "Arturia": [
+    "avg_1032_excu2_1"
+  ],
+  "Lillia": [
+    "char_003_kalts_1"
+  ]
 }

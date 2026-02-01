@@ -1,5 +1,24 @@
 {
-  "埃内斯托": ["char_010_chen", "char_010_chen_summer", "char_010_chen_1", "avg_1013_spchen_1"],
-  "林雨霞": ["char_010_chen", "char_010_chen_summer", "char_010_chen_1", "avg_1013_spchen_1"],
-  "格拉尼": ["avg_npc_003", "avg_npc_010"]
+  "埃内斯托": [
+    "char_010_chen",
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_1013_spchen_1"
+  ],
+  "林雨霞": [
+    "char_010_chen",
+    "char_010_chen_summer",
+    "char_010_chen_1",
+    "avg_1013_spchen_1"
+  ],
+  "格拉尼": [
+    "avg_npc_003",
+    "avg_npc_010"
+  ],
+  "阿尔图罗": [
+    "avg_1032_excu2_1"
+  ],
+  "莉莉娅": [
+    "char_003_kalts_1"
+  ]
 }

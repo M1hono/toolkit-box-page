@@ -28,13 +28,26 @@ function loadCharacterFixes() {
  * @returns {Object} Exclude mappings
  */
 function loadExcludeMappings(langCode) {
-    const fs = require('fs');
-    const path = require('path');
-    
-    const langMap = { 'zh_CN': 'zh-CN', 'en_US': 'en-US', 'ja_JP': 'ja-JP' };
+    const fs = require("fs");
+    const path = require("path");
+
+    const langMap = { zh_CN: "zh-CN", en_US: "en-US", ja_JP: "ja-JP" };
     const localeCode = langMap[langCode] || langCode;
-    const excludePath = path.resolve(__dirname, `../../.vitepress/config/locale/${localeCode}/arknights-exclude-mapping.json`);
-    return fs.existsSync(excludePath) ? JSON.parse(fs.readFileSync(excludePath, 'utf8')) : {};
+    const excludePath = path.resolve(
+        __dirname,
+        `../../.vitepress/config/locale/${localeCode}/arknights-exclude-mapping.json`
+    );
+    const excludeByIdPath = path.resolve(
+        __dirname,
+        `../../.vitepress/config/locale/${localeCode}/arknights-exclude-mapping-by-id.json`
+    );
+    const nameToIds = fs.existsSync(excludePath)
+        ? JSON.parse(fs.readFileSync(excludePath, "utf8"))
+        : {};
+    const idToNames = fs.existsSync(excludeByIdPath)
+        ? JSON.parse(fs.readFileSync(excludeByIdPath, "utf8"))
+        : {};
+    return { nameToIds, idToNames };
 }
 
 const SPECIAL_ID_MAPPINGS = {
@@ -77,9 +90,16 @@ function applyCharacterFixes(charId) {
 function shouldExcludeMapping(charId, speakerName, langCode = 'zh_CN') {
     if (!charId || !speakerName) return false;
     const excludeMappings = loadExcludeMappings(langCode);
-    const excludeList = excludeMappings[speakerName] || [];
+    const excludeList = excludeMappings.nameToIds[speakerName] || [];
+    const excludeNames = excludeMappings.idToNames[charId] || [];
     const baseCharId = charId.split("#")[0];
-    return excludeList.includes(baseCharId);
+    const excludeBaseNames = excludeMappings.idToNames[baseCharId] || [];
+    return (
+        excludeList.includes(baseCharId) ||
+        excludeList.includes(charId) ||
+        excludeNames.includes(speakerName) ||
+        excludeBaseNames.includes(speakerName)
+    );
 }
 
 /**
