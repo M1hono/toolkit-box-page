@@ -2156,16 +2156,6 @@
     "avg_npc_997_1"
   ],
   "セレブ令嬢": "char_308_swire_1",
-  "アーミヤ": [
-    "char_010_chen_1",
-    "avg_1037_amiya3_1",
-    "avg_npc_1295_1",
-    "char_002_amiya_summer_2",
-    "avg_npc_051",
-    "avg_npc_087",
-    "avg_npc_394_1",
-    "char_002_amiya_1"
-  ],
   "ウェイ": [
     "char_010_chen_1",
     "char_2005_weiyw_1"
@@ -4278,6 +4268,15 @@
   ],
   "ホルン&バグパイプ": "avg_npc_229_1",
   "リタ": "avg_npc_229_1",
+  "アーミヤ": [
+    "avg_1037_amiya3_1",
+    "avg_npc_1295_1",
+    "char_002_amiya_summer_2",
+    "avg_npc_051",
+    "avg_npc_087",
+    "avg_npc_394_1",
+    "char_002_amiya_1"
+  ],
   "クロージャ": [
     "avg_1037_amiya3_1",
     "avg_npc_411_1",
