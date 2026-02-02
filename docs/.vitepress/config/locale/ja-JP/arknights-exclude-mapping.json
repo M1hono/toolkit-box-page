@@ -5,7 +5,7 @@
     "char_010_chen_1",
     "avg_1013_spchen_1"
   ],
-  "リン・ユーシャ": [
+  "ユーシャ": [
     "char_010_chen",
     "char_010_chen_summer",
     "char_010_chen_1",
@@ -28,8 +28,11 @@
     "avg_npc_1296_1",
     "char_193_frostl_1"
   ],
-  "ケルシー": [
+  "チェン": [
     "avg_npc_412_1",
     "char_avg_npc_412_1"
+  ],
+  "スワイヤー": [
+    "avg_npc_997_1"
   ]
 }

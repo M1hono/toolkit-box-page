@@ -303,7 +303,10 @@
     import { useArknightsData } from "../../../../utils/chara/arknights/core/useArknightsData";
     import { useArknightsStoryUtils } from "../../../../utils/chara/arknights/core/useArknightsStoryUtils";
     import type { UnifiedCharacterData } from "../../../../utils/chara/arknights/types";
-    import { getLanguageByCode } from "../../../../config/project-config";
+    import {
+        getLanguageByCode,
+        getLangCodeFromVitepressLang,
+    } from "../../../../config/project-config";
 
     const { t } = useSafeI18n("arknights-story-tracker", {
         title: "Story Tracker",
@@ -343,19 +346,16 @@
     const storyIconErrors = ref<Set<string>>(new Set());
 
     const langCode = computed(() => {
-        const cfg = getLanguageByCode(lang.value);
-        return (
-            cfg?.link
-                ?.split("/")
-                .filter(Boolean)[0]
-                ?.replace("-", "_")
-                .toLowerCase() || "en_us"
-        );
+        const resolved = getLangCodeFromVitepressLang(lang.value);
+        return resolved.replace("-", "_").toLowerCase();
     });
 
     const charaFinderPath = computed(() => {
-        const langPart = lang.value === "root" ? "" : `/${lang.value}`;
-        return `${langPart}/Arknights/CharaFinder`;
+        const resolved = getLangCodeFromVitepressLang(lang.value);
+        const config = getLanguageByCode(resolved);
+        const link = config?.link || "/";
+        const normalized = link.endsWith("/") ? link.slice(0, -1) : link;
+        return `${normalized}/Arknights/CharaFinder`;
     });
 
     const nameSearchItems = computed(() => {
@@ -455,6 +455,43 @@
         return match ? `F${match[1]}-B${match[2]}` : variant;
     }
 
+    /**
+     * Build the query param value for the selected character
+     * @param name - Display name
+     * @param charId - Character ID
+     * @returns Encoded query param value
+     */
+    function buildCharacterParam(name: string, charId: string): string {
+        return `${encodeURIComponent(name)}_${charId}`;
+    }
+
+    /**
+     * Resolve the name and character ID from a query param
+     * @param param - Raw query param value
+     * @returns Resolved name and character ID or null
+     */
+    function resolveCharacterParam(
+        param: string
+    ): { name: string; charId: string } | null {
+        const decoded = decodeURIComponent(param);
+        const direct = names.value[decoded];
+        if (direct) {
+            return { name: direct.displayName || decoded, charId: decoded };
+        }
+        const parts = decoded.split("_");
+        for (let i = 1; i < parts.length; i += 1) {
+            const candidateId = parts.slice(i).join("_");
+            if (names.value[candidateId]) {
+                return { name: parts.slice(0, i).join("_"), charId: candidateId };
+            }
+        }
+        const fallbackIds = getAllCharacterIdsByName(decoded);
+        if (fallbackIds.length > 0) {
+            return { name: decoded, charId: fallbackIds[0] };
+        }
+        return null;
+    }
+
     function handleNameSelect(name: string | null) {
         if (!name) {
             selectedCharacter.value = null;
@@ -501,7 +538,7 @@ Available characters for "${name}":`,
         loadCharacterStories(charId);
 
         if (typeof window !== "undefined") {
-            const routeParam = `${encodeURIComponent(name)}_${charId}`;
+            const routeParam = buildCharacterParam(name, charId);
             window.history.pushState(
                 {},
                 "",
@@ -540,14 +577,11 @@ Available characters for "${name}":`,
             "char"
         );
         if (charParam) {
-            const parts = charParam.split("_");
-            if (parts.length >= 2) {
-                const name = decodeURIComponent(parts[0]);
-                const charId = parts.slice(1).join("_");
-
-                selectedName.value = name;
-                selectedCharacterId.value = charId;
-                loadCharacter(name, charId);
+            const resolved = resolveCharacterParam(charParam);
+            if (resolved) {
+                selectedName.value = resolved.name;
+                selectedCharacterId.value = resolved.charId;
+                loadCharacter(resolved.name, resolved.charId);
             }
         }
     });
