@@ -2674,6 +2674,20 @@
     ]
   },
   {
+    "id": 405500,
+    "name": "Andromeda",
+    "originalName": "Andromeda",
+    "ruby": "Andromeda",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "andromeda",
+      "andromeda",
+      "andromeda",
+      "rider"
+    ]
+  },
+  {
     "id": 500100,
     "name": "Medea",
     "originalName": "Medea",

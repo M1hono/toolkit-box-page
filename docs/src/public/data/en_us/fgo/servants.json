@@ -1378,6 +1378,18 @@
           "faceX": 374,
           "faceY": 156,
           "scale": 1
+        },
+        "1098286100": {
+          "id": 1098286100,
+          "faceX": 380,
+          "faceY": 161,
+          "scale": 1
+        },
+        "1098287400": {
+          "id": 1098287400,
+          "faceX": 380,
+          "faceY": 160,
+          "scale": 1
         }
       }
     },
@@ -4314,6 +4326,12 @@
           "id": 1098271500,
           "faceX": 352,
           "faceY": 128,
+          "scale": 1
+        },
+        "1098286600": {
+          "id": 1098286600,
+          "faceX": 394,
+          "faceY": 258,
           "scale": 1
         }
       }
@@ -8606,6 +8624,18 @@
           "faceX": 394,
           "faceY": 157,
           "scale": 1
+        },
+        "1098286200": {
+          "id": 1098286200,
+          "faceX": 401,
+          "faceY": 136,
+          "scale": 1
+        },
+        "1098287600": {
+          "id": 1098287600,
+          "faceX": 383,
+          "faceY": 159,
+          "scale": 1
         }
       }
     },
@@ -8713,6 +8743,18 @@
           "faceX": 393,
           "faceY": 146,
           "scale": 1
+        },
+        "1098288000": {
+          "id": 1098288000,
+          "faceX": 372,
+          "faceY": 145,
+          "scale": 1
+        },
+        "1098288400": {
+          "id": 1098288400,
+          "faceX": 386,
+          "faceY": 150,
+          "scale": 1
         }
       }
     },
@@ -8789,6 +8831,18 @@
         },
         "1098279910": {
           "id": 1098279910,
+          "faceX": 328,
+          "faceY": 71,
+          "scale": 1
+        },
+        "1098286400": {
+          "id": 1098286400,
+          "faceX": 374,
+          "faceY": 80,
+          "scale": 1
+        },
+        "1098286500": {
+          "id": 1098286500,
           "faceX": 328,
           "faceY": 71,
           "scale": 1
@@ -12635,6 +12689,12 @@
           "faceX": 376,
           "faceY": 90,
           "scale": 1
+        },
+        "1098288300": {
+          "id": 1098288300,
+          "faceX": 387,
+          "faceY": 147,
+          "scale": 1
         }
       }
     },
@@ -13154,6 +13214,12 @@
         "1098278000": {
           "id": 1098278000,
           "faceX": 363,
+          "faceY": 138,
+          "scale": 1
+        },
+        "1098287700": {
+          "id": 1098287700,
+          "faceX": 405,
           "faceY": 138,
           "scale": 1
         }
@@ -14199,6 +14265,30 @@
           "faceX": 368,
           "faceY": 133,
           "scale": 1
+        },
+        "1098288100": {
+          "id": 1098288100,
+          "faceX": 264,
+          "faceY": 26,
+          "scale": 1
+        },
+        "1098288110": {
+          "id": 1098288110,
+          "faceX": 180,
+          "faceY": 53,
+          "scale": 1
+        },
+        "1098288120": {
+          "id": 1098288120,
+          "faceX": 264,
+          "faceY": 26,
+          "scale": 1
+        },
+        "1098288140": {
+          "id": 1098288140,
+          "faceX": 264,
+          "faceY": 26,
+          "scale": 1
         }
       }
     },
@@ -14936,6 +15026,12 @@
         },
         "1098169100": {
           "id": 1098169100,
+          "faceX": 379,
+          "faceY": 130,
+          "scale": 1
+        },
+        "1098287800": {
+          "id": 1098287800,
           "faceX": 379,
           "faceY": 130,
           "scale": 1
@@ -16899,6 +16995,18 @@
           "faceX": 358,
           "faceY": 169,
           "scale": 1
+        },
+        "1098288200": {
+          "id": 1098288200,
+          "faceX": 869,
+          "faceY": 151,
+          "scale": 1
+        },
+        "1098292000": {
+          "id": 1098292000,
+          "faceX": 869,
+          "faceY": 151,
+          "scale": 1
         }
       }
     },
@@ -16996,6 +17104,12 @@
           "id": 1098281720,
           "faceX": 417,
           "faceY": 100,
+          "scale": 1
+        },
+        "1098292300": {
+          "id": 1098292300,
+          "faceX": 386,
+          "faceY": 120,
           "scale": 1
         }
       }
@@ -17204,6 +17318,56 @@
           "1098283600": "https://static.atlasacademy.io/NA/CharaFigure/1098283600/1098283600_merged.png",
           "1098285700": "https://static.atlasacademy.io/NA/CharaFigure/1098285700/1098285700_merged.png"
         }
+      }
+    }
+  },
+  "405500": {
+    "id": 405500,
+    "collectionNo": 406,
+    "name": "Andromeda",
+    "ruby": "Andromeda",
+    "className": "rider",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/4055000/4055000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/4055001/4055001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/4055002/4055002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "4055000": {
+          "id": 4055000,
+          "faceX": 369,
+          "faceY": 159,
+          "scale": 1
+        },
+        "4055001": {
+          "id": 4055001,
+          "faceX": 399,
+          "faceY": 155,
+          "scale": 1
+        },
+        "4055002": {
+          "id": 4055002,
+          "faceX": 397,
+          "faceY": 166,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/4055000/4055000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/4055001/4055001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/4055002/4055002_merged.png"
+        },
+        "costume": {},
+        "story": {}
       }
     }
   },
@@ -27650,6 +27814,12 @@
           "faceX": 406,
           "faceY": 154,
           "scale": 1
+        },
+        "1098287500": {
+          "id": 1098287500,
+          "faceX": 384,
+          "faceY": 164,
+          "scale": 1
         }
       }
     },
@@ -27943,6 +28113,24 @@
         },
         "7042002": {
           "id": 7042002,
+          "faceX": 428,
+          "faceY": 165,
+          "scale": 1
+        },
+        "1098285800": {
+          "id": 1098285800,
+          "faceX": 428,
+          "faceY": 165,
+          "scale": 1
+        },
+        "1098285810": {
+          "id": 1098285810,
+          "faceX": 428,
+          "faceY": 165,
+          "scale": 1
+        },
+        "1098285820": {
+          "id": 1098285820,
           "faceX": 428,
           "faceY": 165,
           "scale": 1
@@ -28401,6 +28589,12 @@
         "1098278110": {
           "id": 1098278110,
           "faceX": 386,
+          "faceY": 160,
+          "scale": 1
+        },
+        "1098287900": {
+          "id": 1098287900,
+          "faceX": 385,
           "faceY": 160,
           "scale": 1
         }
@@ -34079,6 +34273,12 @@
           "id": 1098276300,
           "faceX": 381,
           "faceY": 147,
+          "scale": 1
+        },
+        "1098286300": {
+          "id": 1098286300,
+          "faceX": 379,
+          "faceY": 152,
           "scale": 1
         }
       }
