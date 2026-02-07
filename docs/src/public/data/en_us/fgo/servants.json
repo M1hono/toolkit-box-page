@@ -4553,6 +4553,56 @@
       }
     }
   },
+  "106100": {
+    "id": 106100,
+    "collectionNo": 432,
+    "name": "Richard I",
+    "ruby": "Richard I",
+    "className": "saber",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/1061000/1061000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/1061001/1061001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/1061002/1061002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "1061000": {
+          "id": 1061000,
+          "faceX": 888,
+          "faceY": 142,
+          "scale": 1
+        },
+        "1061001": {
+          "id": 1061001,
+          "faceX": 388,
+          "faceY": 170,
+          "scale": 1
+        },
+        "1061002": {
+          "id": 1061002,
+          "faceX": 720,
+          "faceY": 0,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/1061000/1061000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/1061001/1061001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/1061002/1061002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "200100": {
     "id": 200100,
     "collectionNo": 11,
