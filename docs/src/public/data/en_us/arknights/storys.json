@@ -13049,6 +13049,7 @@
   ],
   "avg_npc_973_1": [
     "activities/act36side/level_act36side_08_end.txt",
+    "activities/act45side/level_act45side_01_beg.txt",
     "obt/memory/story_aroma_1_1.txt",
     "obt/memory/story_ceylon_2_1.txt",
     "obt/memory/story_dagda_1_1.txt",
@@ -14542,6 +14543,8 @@
   ],
   "avg_npc_1255_1": [
     "activities/act42side/level_act42side_st02.txt",
+    "activities/act45side/level_act45side_01_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
     "obt/main/level_st_14-03.txt",
     "obt/memory/story_qiubai_1_1.txt",
     "obt/memory/story_vvana_1_1.txt"
@@ -14761,9 +14764,17 @@
     "activities/act43side/level_act43side_08_end.txt"
   ],
   "avg_369_bena_1": [
+    "activities/act45side/level_act45side_01_beg.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_06_end.txt",
+    "activities/act45side/level_act45side_07_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt",
     "obt/memory/story_bena_1_1.txt"
   ],
   "avg_npc_970_1": [
+    "activities/act45side/level_act45side_st01.txt",
     "obt/main/level_main_15-18_end.txt",
     "obt/memory/story_aroma_1_1.txt",
     "obt/memory/story_excu2_1_1.txt",
@@ -16116,7 +16127,8 @@
     "obt/main/level_st_15-01.txt"
   ],
   "avg_npc_1456_1": [
-    "obt/main/level_st_15-01.txt"
+    "obt/main/level_st_15-01.txt",
+    "obt/memory/story_nymph_1_1.txt"
   ],
   "avg_npc_1731_1": [
     "obt/main/level_st_15-03.txt"
@@ -16953,5 +16965,118 @@
   ],
   "avg_4165_ctrail_1": [
     "obt/memory/story_ctrail_1_1.txt"
+  ],
+  "avg_338_iris_1": [
+    "activities/act45side/level_act45side_01_beg.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_07_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_4182_oblvns_1": [
+    "activities/act45side/level_act45side_01_beg.txt",
+    "activities/act45side/level_act45side_01_end.txt",
+    "activities/act45side/level_act45side_02_end.txt",
+    "activities/act45side/level_act45side_03_beg.txt",
+    "activities/act45side/level_act45side_03_end.txt",
+    "activities/act45side/level_act45side_04_beg.txt",
+    "activities/act45side/level_act45side_04_end.txt",
+    "activities/act45side/level_act45side_05_beg.txt",
+    "activities/act45side/level_act45side_05_end.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_06_end.txt",
+    "activities/act45side/level_act45side_07_beg.txt",
+    "activities/act45side/level_act45side_07_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_290_vigna_1": [
+    "activities/act45side/level_act45side_01_beg.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_06_end.txt",
+    "activities/act45side/level_act45side_07_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_4184_dolris_1": [
+    "activities/act45side/level_act45side_01_beg.txt",
+    "activities/act45side/level_act45side_04_beg.txt",
+    "activities/act45side/level_act45side_04_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_npc_1942_1": [
+    "activities/act45side/level_act45side_01_end.txt",
+    "activities/act45side/level_act45side_02_end.txt",
+    "activities/act45side/level_act45side_04_beg.txt",
+    "activities/act45side/level_act45side_04_end.txt",
+    "activities/act45side/level_act45side_05_end.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt"
+  ],
+  "avg_npc_1937_1": [
+    "activities/act45side/level_act45side_01_end.txt",
+    "activities/act45side/level_act45side_02_end.txt",
+    "activities/act45side/level_act45side_05_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt"
+  ],
+  "avg_npc_1938_1": [
+    "activities/act45side/level_act45side_01_end.txt",
+    "activities/act45side/level_act45side_04_beg.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt"
+  ],
+  "avg_4185_amoris_1": [
+    "activities/act45side/level_act45side_01_end.txt",
+    "activities/act45side/level_act45side_02_beg.txt",
+    "activities/act45side/level_act45side_02_end.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_npc_1260_1": [
+    "activities/act45side/level_act45side_02_beg.txt",
+    "activities/act45side/level_act45side_08_beg.txt"
+  ],
+  "avg_4186_tmoris_1": [
+    "activities/act45side/level_act45side_03_beg.txt",
+    "activities/act45side/level_act45side_03_end.txt",
+    "activities/act45side/level_act45side_06_beg.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_4183_mortis_1": [
+    "activities/act45side/level_act45side_05_beg.txt",
+    "activities/act45side/level_act45side_05_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt",
+    "activities/act45side/level_act45side_08_end.txt",
+    "activities/act45side/level_act45side_st01.txt"
+  ],
+  "avg_npc_1939_1": [
+    "activities/act45side/level_act45side_05_beg.txt",
+    "activities/act45side/level_act45side_05_end.txt",
+    "activities/act45side/level_act45side_08_beg.txt"
+  ],
+  "avg_npc_1940_1": [
+    "activities/act45side/level_act45side_06_end.txt",
+    "activities/act45side/level_act45side_07_beg.txt",
+    "activities/act45side/level_act45side_07_end.txt"
+  ],
+  "avg_npc_1941_1": [
+    "activities/act45side/level_act45side_07_beg.txt",
+    "activities/act45side/level_act45side_07_end.txt"
+  ],
+  "avg_445_wscoot_1": [
+    "obt/memory/story_wscoot_1_1.txt"
+  ],
+  "avg_npc_1641_1": [
+    "obt/memory/story_wscoot_1_1.txt"
   ]
 }

@@ -20,6 +20,7 @@
       "A Haggard Girl",
       "Diner C",
       "Hesitant Woman",
+      "'Gretel'",
       "Immature Reporter"
     ],
     "searchNames": [
@@ -27,6 +28,7 @@
       "A Haggard Girl",
       "Diner C",
       "Hesitant Woman",
+      "'Gretel'",
       "Immature Reporter"
     ],
     "displayName": "Carol"
@@ -278,6 +280,8 @@
       "Uncle Wong",
       "Infected Employee A",
       "Worried Smith",
+      "Uncle De",
+      "Young Cheng",
       "Village Headman"
     ],
     "searchNames": [
@@ -313,6 +317,8 @@
       "Uncle Wong",
       "Infected Employee A",
       "Worried Smith",
+      "Uncle De",
+      "Young Cheng",
       "Village Headman"
     ],
     "displayName": "Villager"
@@ -835,6 +841,7 @@
       "Angry Infected",
       "Fast Food Joint Owner",
       "Local Ruffian",
+      "Newspaper Vendor",
       "Villager B",
       "Strong Pioneer",
       "Shopkeeper",
@@ -867,6 +874,7 @@
       "Angry Infected",
       "Fast Food Joint Owner",
       "Local Ruffian",
+      "Newspaper Vendor",
       "Villager B",
       "Strong Pioneer",
       "Shopkeeper",
@@ -893,6 +901,7 @@
       "Pale Man",
       "Ill-Intentioned Citizen",
       "Nervous Worker",
+      "Penguin Logistics Employee",
       "Nervous Infected",
       "Gordon",
       "Wastelander A"
@@ -902,6 +911,7 @@
       "Pale Man",
       "Ill-Intentioned Citizen",
       "Nervous Worker",
+      "Penguin Logistics Employee",
       "Nervous Infected",
       "Gordon",
       "Wastelander A"
@@ -998,6 +1008,9 @@
       "Cronin's Henchman",
       "Cronin's Bodyguard",
       "Staff",
+      "Busy Security Guard",
+      "Patrolling Guard",
+      "Flustered Guard",
       "Organizing Committee Member",
       "Staff Worker",
       "Security Guard",
@@ -1033,6 +1046,9 @@
       "Cronin's Henchman",
       "Cronin's Bodyguard",
       "Staff",
+      "Busy Security Guard",
+      "Patrolling Guard",
+      "Flustered Guard",
       "Organizing Committee Member",
       "Staff Worker",
       "Security Guard",
@@ -1063,14 +1079,16 @@
       "Little 'Witch' Minnie",
       "Little Girl",
       "Innocent Child",
-      "Innocent Girl"
+      "Innocent Girl",
+      "Diane"
     ],
     "searchNames": [
       "Infected Girl",
       "Little 'Witch' Minnie",
       "Little Girl",
       "Innocent Child",
-      "Innocent Girl"
+      "Innocent Girl",
+      "Diane"
     ],
     "displayName": "Infected Girl"
   },
@@ -1186,6 +1204,8 @@
       "Taran Refugee",
       "Calm Lady",
       "Worried Maid",
+      "Kind Townsperson",
+      "Vigna & Kind Townsperson",
       "Sorrowful Woman",
       "Pained Refugee",
       "Calm Infected",
@@ -1211,6 +1231,8 @@
       "Taran Refugee",
       "Calm Lady",
       "Worried Maid",
+      "Kind Townsperson",
+      "Vigna & Kind Townsperson",
       "Sorrowful Woman",
       "Pained Refugee",
       "Calm Infected",
@@ -1795,6 +1817,8 @@
       "Street Artist",
       "Tired Spectator",
       "Male Tourist A",
+      "Puzzled Islander",
+      "No-Longer-Puzzled Islander",
       "Tabloid Reporter",
       "Messenger",
       "Food Stall Owner",
@@ -1817,6 +1841,8 @@
       "Street Artist",
       "Tired Spectator",
       "Male Tourist A",
+      "Puzzled Islander",
+      "No-Longer-Puzzled Islander",
       "Tabloid Reporter",
       "Messenger",
       "Food Stall Owner",
@@ -2437,6 +2463,8 @@
       "Confused Community Resident",
       "Community Resident",
       "Enthusiastic Spectator",
+      "Experienced Deliveryman",
+      "Excited Fan",
       "Male Tourist",
       "Lungmenite?",
       "Drunk",
@@ -2447,7 +2475,6 @@
       "Curious Youth",
       "Excited Youth",
       "Ordinary Lungmen Citizen",
-      "Excited Fan",
       "Confused Fan",
       "Perplexed Fan",
       "Doctor",
@@ -2495,6 +2522,8 @@
       "Confused Community Resident",
       "Community Resident",
       "Enthusiastic Spectator",
+      "Experienced Deliveryman",
+      "Excited Fan",
       "Male Tourist",
       "Lungmenite?",
       "Drunk",
@@ -2505,7 +2534,6 @@
       "Curious Youth",
       "Excited Youth",
       "Ordinary Lungmen Citizen",
-      "Excited Fan",
       "Confused Fan",
       "Perplexed Fan",
       "Doctor",
@@ -2586,6 +2614,7 @@
       "Jamie",
       "An Infected Knight B",
       "Pinus Sylvestris Knightclub Member",
+      "Robert",
       "Infected Knight"
     ],
     "searchNames": [
@@ -2595,6 +2624,7 @@
       "Jamie",
       "An Infected Knight B",
       "Pinus Sylvestris Knightclub Member",
+      "Robert",
       "Infected Knight"
     ],
     "displayName": "An Infected Knight"
@@ -2621,6 +2651,7 @@
       "Staff Worker",
       "Knight Scout",
       "Red Wine Intern Journalist",
+      "Messenger",
       "Man in Reporter Garb",
       "Rafał",
       "Police Officer",
@@ -2657,6 +2688,7 @@
       "Staff Worker",
       "Knight Scout",
       "Red Wine Intern Journalist",
+      "Messenger",
       "Man in Reporter Garb",
       "Rafał",
       "Police Officer",
@@ -2737,6 +2769,7 @@
       "Corporate Employee",
       "Manager",
       "Red Wine Senior Editor",
+      "Reporter",
       "Office Clerk",
       "Unremarkable Man",
       "HR Employee",
@@ -2771,6 +2804,7 @@
       "Corporate Employee",
       "Manager",
       "Red Wine Senior Editor",
+      "Reporter",
       "Office Clerk",
       "Unremarkable Man",
       "HR Employee",
@@ -4000,6 +4034,7 @@
       "Guerrilla Sarkaz",
       "Starving Mercenary",
       "Scared Sarkaz Soldier",
+      "Infamous Mercenary",
       "Mercenary Captain",
       "Grimm",
       "Black Market Brawler",
@@ -4033,6 +4068,7 @@
       "Guerrilla Sarkaz",
       "Starving Mercenary",
       "Scared Sarkaz Soldier",
+      "Infamous Mercenary",
       "Mercenary Captain",
       "Grimm",
       "Black Market Brawler",
@@ -4340,14 +4376,16 @@
       "An Infected Knight",
       "An Infected Knight A",
       "An Infected Knight B",
-      "Infected Knight-Engineer"
+      "Infected Knight-Engineer",
+      "Joey"
     ],
     "searchNames": [
       "A Hoarse Knight",
       "An Infected Knight",
       "An Infected Knight A",
       "An Infected Knight B",
-      "Infected Knight-Engineer"
+      "Infected Knight-Engineer",
+      "Joey"
     ],
     "displayName": "A Hoarse Knight"
   },
@@ -4392,6 +4430,7 @@
     "speakerNames": [
       "A Competing Knight",
       "A Kazimierz Knight",
+      "Noble Knight",
       "Armor-clad Knight",
       "Zorn",
       "Razor Knight"
@@ -4399,6 +4438,7 @@
     "searchNames": [
       "A Competing Knight",
       "A Kazimierz Knight",
+      "Noble Knight",
       "Armor-clad Knight",
       "Zorn",
       "Razor Knight"
@@ -4418,10 +4458,12 @@
       "Female Lungmenite",
       "Clerk",
       "Spirited Tourist",
+      "Thrilled Fan",
       "Female Tourist",
       "Contestant",
       "Alba",
       "Passerby Diner",
+      "Fan",
       "Camera Crew Leader",
       "Passing Traveler",
       "Rinz",
@@ -4457,10 +4499,12 @@
       "Female Lungmenite",
       "Clerk",
       "Spirited Tourist",
+      "Thrilled Fan",
       "Female Tourist",
       "Contestant",
       "Alba",
       "Passerby Diner",
+      "Fan",
       "Camera Crew Leader",
       "Passing Traveler",
       "Rinz",
@@ -4493,6 +4537,7 @@
       "A Protesting Knight",
       "A Popcorn-Clutching Knight",
       "A Spectating Knight B",
+      "Arbat",
       "Stalker"
     ],
     "searchNames": [
@@ -4501,6 +4546,7 @@
       "A Protesting Knight",
       "A Popcorn-Clutching Knight",
       "A Spectating Knight B",
+      "Arbat",
       "Stalker"
     ],
     "displayName": "An Ingratiating Knight"
@@ -4746,6 +4792,7 @@
       "Street Stall Owner",
       "Second Apprentice",
       "First Apprentice",
+      "Angry Gang Member",
       "Gui"
     ],
     "searchNames": [
@@ -4777,6 +4824,7 @@
       "Street Stall Owner",
       "Second Apprentice",
       "First Apprentice",
+      "Angry Gang Member",
       "Gui"
     ],
     "displayName": "Plowing Villager"
@@ -4873,14 +4921,16 @@
       "Food-Delivering Villager",
       "Roadside Clinic Staff",
       "Errand Runner",
-      "Rescue Squad Leader"
+      "Rescue Squad Leader",
+      "Jolly Gang Member"
     ],
     "searchNames": [
       "Bystander Villager",
       "Food-Delivering Villager",
       "Roadside Clinic Staff",
       "Errand Runner",
-      "Rescue Squad Leader"
+      "Rescue Squad Leader",
+      "Jolly Gang Member"
     ],
     "displayName": "Bystander Villager"
   },
@@ -5740,10 +5790,12 @@
   "char_101_sora_1": {
     "speakerNames": [
       "Sora",
+      "Nyamu Yūtenji & Sora",
       "Penguin Logistics"
     ],
     "searchNames": [
       "Sora",
+      "Nyamu Yūtenji & Sora",
       "Penguin Logistics"
     ],
     "displayName": "Sora"
@@ -6264,6 +6316,7 @@
       "Suspicious Passerby",
       "Suspicious Passersby",
       "Young Bodyguard",
+      "Strange Man",
       "Triad",
       "Muscular Man",
       "Hoodlum",
@@ -6281,6 +6334,7 @@
       "Suspicious Passerby",
       "Suspicious Passersby",
       "Young Bodyguard",
+      "Strange Man",
       "Triad",
       "Muscular Man",
       "Hoodlum",
@@ -6348,6 +6402,7 @@
       "Street Passerby",
       "Panicked Passerby",
       "Umbrella Girl",
+      "Busy Passerby",
       "Dai Pai Dong Waiter"
     ],
     "searchNames": [
@@ -6359,6 +6414,7 @@
       "Street Passerby",
       "Panicked Passerby",
       "Umbrella Girl",
+      "Busy Passerby",
       "Dai Pai Dong Waiter"
     ],
     "displayName": "Snowsweeping Stranger"
@@ -6376,13 +6432,15 @@
       "Hawker",
       "Agitated Hawker",
       "Waiter",
+      "Shouting Vendor",
       "Half-Drunk Martial Artist",
       "Sober Martial Artist",
       "Young Farmer",
       "Lin Yühsia's Subordinate",
       "Tavern Assistant",
       "Tavern Owner",
-      "Traceless Fist Practitioner"
+      "Traceless Fist Practitioner",
+      "Observative Gang Member"
     ],
     "searchNames": [
       "Feeble Apprentice",
@@ -6396,13 +6454,15 @@
       "Hawker",
       "Agitated Hawker",
       "Waiter",
+      "Shouting Vendor",
       "Half-Drunk Martial Artist",
       "Sober Martial Artist",
       "Young Farmer",
       "Lin Yühsia's Subordinate",
       "Tavern Assistant",
       "Tavern Owner",
-      "Traceless Fist Practitioner"
+      "Traceless Fist Practitioner",
+      "Observative Gang Member"
     ],
     "displayName": "Feeble Apprentice"
   },
@@ -7500,6 +7560,8 @@
       "Sarkaz Mercenary",
       "Dejected Man",
       "Kazdelian Outskirter A",
+      "Impatient Sarkaz",
+      "Sarkaz Resident",
       "Parker"
     ],
     "searchNames": [
@@ -7522,6 +7584,8 @@
       "Sarkaz Mercenary",
       "Dejected Man",
       "Kazdelian Outskirter A",
+      "Impatient Sarkaz",
+      "Sarkaz Resident",
       "Parker"
     ],
     "displayName": "Guitar-Playing Singer"
@@ -7655,11 +7719,13 @@
   "avg_npc_1455_1": {
     "speakerNames": [
       "Crafty Merchant",
-      "Old Woman"
+      "Old Woman",
+      "Anxious Old Woman"
     ],
     "searchNames": [
       "Crafty Merchant",
-      "Old Woman"
+      "Old Woman",
+      "Anxious Old Woman"
     ],
     "displayName": "Crafty Merchant"
   },
@@ -7725,13 +7791,15 @@
       "Leisurely Passerby",
       "Pohl",
       "Cold Voice",
-      "Questionable Man"
+      "Questionable Man",
+      "Mitm"
     ],
     "searchNames": [
       "Leisurely Passerby",
       "Pohl",
       "Cold Voice",
-      "Questionable Man"
+      "Questionable Man",
+      "Mitm"
     ],
     "displayName": "Leisurely Passerby"
   },
@@ -7818,6 +7886,7 @@
       "Brooding Gang Leader",
       "Gang Leaders",
       "Kazdelian Outskirter B",
+      "Rhodes Island Employee",
       "Sarkaz Hunter"
     ],
     "searchNames": [
@@ -7831,6 +7900,7 @@
       "Brooding Gang Leader",
       "Gang Leaders",
       "Kazdelian Outskirter B",
+      "Rhodes Island Employee",
       "Sarkaz Hunter"
     ],
     "displayName": "Street Hawker"
@@ -8568,6 +8638,7 @@
       "Anxious Man",
       "Amiable Merchant",
       "Gang Member",
+      "Drunken Man",
       "Londinium Citizen",
       "Londinium Citizen A",
       "Londinium Citizen?",
@@ -8591,6 +8662,7 @@
       "Anxious Man",
       "Amiable Merchant",
       "Gang Member",
+      "Drunken Man",
       "Londinium Citizen",
       "Londinium Citizen A",
       "Londinium Citizen?",
@@ -8623,7 +8695,8 @@
       "Prisoner",
       "Rescued Soldier",
       "Injured Soldier",
-      "Tired Wounded"
+      "Tired Wounded",
+      "Wounded Feline"
     ],
     "searchNames": [
       "Wounded Abandoned Soldier",
@@ -8636,7 +8709,8 @@
       "Prisoner",
       "Rescued Soldier",
       "Injured Soldier",
-      "Tired Wounded"
+      "Tired Wounded",
+      "Wounded Feline"
     ],
     "displayName": "Wounded Abandoned Soldier"
   },
@@ -9520,9 +9594,9 @@
     "speakerNames": [
       "Andante",
       "Woman in Operator Attire",
+      "Flustered Operator",
       "Medic Operator",
       "Logistics Operator",
-      "Flustered Operator",
       "Meticulous Operator",
       "Medical Department Operator",
       "Rhodes Island Operator"
@@ -9530,9 +9604,9 @@
     "searchNames": [
       "Andante",
       "Woman in Operator Attire",
+      "Flustered Operator",
       "Medic Operator",
       "Logistics Operator",
-      "Flustered Operator",
       "Meticulous Operator",
       "Medical Department Operator",
       "Rhodes Island Operator"
@@ -9772,11 +9846,13 @@
   "avg_npc_1638_1": {
     "speakerNames": [
       "Grinning Passerby",
-      "Courteous Gentleman"
+      "Courteous Gentleman",
+      "Elderly Fan"
     ],
     "searchNames": [
       "Grinning Passerby",
-      "Courteous Gentleman"
+      "Courteous Gentleman",
+      "Elderly Fan"
     ],
     "displayName": "Grinning Passerby"
   },
@@ -10603,10 +10679,12 @@
   },
   "avg_201_moeshd_1": {
     "speakerNames": [
-      "Croissant"
+      "Croissant",
+      "Patrolling Guard"
     ],
     "searchNames": [
-      "Croissant"
+      "Croissant",
+      "Patrolling Guard"
     ],
     "displayName": "Croissant"
   },
@@ -10726,6 +10804,8 @@
       "Saluzzo Guard",
       "Mafioso A",
       "Mafioso B",
+      "Lead Mobster",
+      "Francis",
       "Layton",
       "Mafioso G",
       "Arrogant Mafioso"
@@ -10745,6 +10825,8 @@
       "Saluzzo Guard",
       "Mafioso A",
       "Mafioso B",
+      "Lead Mobster",
+      "Francis",
       "Layton",
       "Mafioso G",
       "Arrogant Mafioso"
@@ -10917,6 +10999,11 @@
       "Resolute Bailiff",
       "Angry Bailiff",
       "Bodyguard",
+      "Cautious Mobster",
+      "Nervous Mobster",
+      "Angry Mobster",
+      "Serious Mobster",
+      "Mysterious Mobsters",
       "Fierce Mafioso",
       "Judge's Subordinate",
       "'Judge's' Subordinate"
@@ -10927,6 +11014,11 @@
       "Resolute Bailiff",
       "Angry Bailiff",
       "Bodyguard",
+      "Cautious Mobster",
+      "Nervous Mobster",
+      "Angry Mobster",
+      "Serious Mobster",
+      "Mysterious Mobsters",
       "Fierce Mafioso",
       "Judge's Subordinate",
       "'Judge's' Subordinate"
@@ -11826,7 +11918,9 @@
       "Female Tourist",
       "Child Tourist",
       "Male Tourist",
-      "Dolly"
+      "Dolly",
+      "Eyjafjalla",
+      "Uika Misumi"
     ],
     "searchNames": [
       "Adele",
@@ -11835,7 +11929,9 @@
       "Female Tourist",
       "Child Tourist",
       "Male Tourist",
-      "Dolly"
+      "Dolly",
+      "Eyjafjalla",
+      "Uika Misumi"
     ],
     "displayName": "Adele"
   },
@@ -12015,6 +12111,7 @@
       "Sneaky Siracusan Tourist.",
       "Tourist",
       "Community Resident",
+      "Enthusiastic Boatman",
       "Ah Sam",
       "Ah Hsiang & Ah Sam"
     ],
@@ -12025,6 +12122,7 @@
       "Sneaky Siracusan Tourist.",
       "Tourist",
       "Community Resident",
+      "Enthusiastic Boatman",
       "Ah Sam",
       "Ah Hsiang & Ah Sam"
     ],
@@ -12038,7 +12136,9 @@
       "Passerby B",
       "Passerby A",
       "An Elder by the Roadside",
-      "Hawker"
+      "Hawker",
+      "Another Puzzled Islander",
+      "Another No-Longer-Puzzled Islander"
     ],
     "searchNames": [
       "Elderly Shopkeeper",
@@ -12047,7 +12147,9 @@
       "Passerby B",
       "Passerby A",
       "An Elder by the Roadside",
-      "Hawker"
+      "Hawker",
+      "Another Puzzled Islander",
+      "Another No-Longer-Puzzled Islander"
     ],
     "displayName": "Elderly Shopkeeper"
   },
@@ -14703,6 +14805,7 @@
   },
   "avg_npc_973_1": {
     "speakerNames": [
+      "Perplexed Operator",
       "Rubber",
       "Hourglass",
       "Intern Operator",
@@ -14712,6 +14815,7 @@
       "Records Room Operator"
     ],
     "searchNames": [
+      "Perplexed Operator",
       "Rubber",
       "Hourglass",
       "Intern Operator",
@@ -14720,7 +14824,7 @@
       "HR Operator",
       "Records Room Operator"
     ],
-    "displayName": "Rubber"
+    "displayName": "Perplexed Operator"
   },
   "avg_npc_971_1": {
     "speakerNames": [
@@ -14942,6 +15046,8 @@
     "speakerNames": [
       "Sulking Child",
       "Timid Child",
+      "Ragged Girl",
+      "Ann",
       "Innocent Child",
       "Farmer",
       "Old Man",
@@ -14959,6 +15065,8 @@
     "searchNames": [
       "Sulking Child",
       "Timid Child",
+      "Ragged Girl",
+      "Ann",
       "Innocent Child",
       "Farmer",
       "Old Man",
@@ -15361,11 +15469,13 @@
   "avg_1038_whitw2_1": {
     "speakerNames": [
       "Lappland",
-      "Texas"
+      "Texas",
+      "Caesar"
     ],
     "searchNames": [
       "Lappland",
-      "Texas"
+      "Texas",
+      "Caesar"
     ],
     "displayName": "Lappland"
   },
@@ -16829,6 +16939,7 @@
   "avg_npc_1255_1": {
     "speakerNames": [
       "Liberi",
+      "Florist Lady",
       "Londinium Resident",
       "Clara",
       "Clara & Ian",
@@ -16839,6 +16950,7 @@
     ],
     "searchNames": [
       "Liberi",
+      "Florist Lady",
       "Londinium Resident",
       "Clara",
       "Clara & Ian",
@@ -18557,18 +18669,20 @@
   },
   "avg_npc_970_1": {
     "speakerNames": [
+      "Driver",
       "Engineering Operator",
       "Engineering Department Intern Operator",
       "Measuring Cup",
       "Lunacub"
     ],
     "searchNames": [
+      "Driver",
       "Engineering Operator",
       "Engineering Department Intern Operator",
       "Measuring Cup",
       "Lunacub"
     ],
-    "displayName": "Engineering Operator"
+    "displayName": "Driver"
   },
   "avg_npc_058_2": {
     "speakerNames": [
@@ -18668,10 +18782,16 @@
   },
   "avg_npc_1456_1": {
     "speakerNames": [
-      "Frightened Child"
+      "Frightened Child",
+      "Frail Sarkaz",
+      "Li'l Brick",
+      "Gretel"
     ],
     "searchNames": [
-      "Frightened Child"
+      "Frightened Child",
+      "Frail Sarkaz",
+      "Li'l Brick",
+      "Gretel"
     ],
     "displayName": "Frightened Child"
   },
@@ -20574,5 +20694,175 @@
       "Fowlbeasts"
     ],
     "displayName": "Claudia"
+  },
+  "avg_338_iris_1": {
+    "speakerNames": [
+      "Iris"
+    ],
+    "searchNames": [
+      "Iris"
+    ],
+    "displayName": "Iris"
+  },
+  "avg_4182_oblvns_1": {
+    "speakerNames": [
+      "Sakiko Togawa",
+      "Patrolling Guard & Sakiko Togawa"
+    ],
+    "searchNames": [
+      "Sakiko Togawa",
+      "Patrolling Guard & Sakiko Togawa"
+    ],
+    "displayName": "Sakiko Togawa"
+  },
+  "avg_290_vigna_1": {
+    "speakerNames": [
+      "Vigna",
+      "Sakiko Togawa"
+    ],
+    "searchNames": [
+      "Vigna",
+      "Sakiko Togawa"
+    ],
+    "displayName": "Vigna"
+  },
+  "avg_4184_dolris_1": {
+    "speakerNames": [
+      "Uika Misumi"
+    ],
+    "searchNames": [
+      "Uika Misumi"
+    ],
+    "displayName": "Uika Misumi"
+  },
+  "avg_npc_1942_1": {
+    "speakerNames": [
+      "Morpheus"
+    ],
+    "searchNames": [
+      "Morpheus"
+    ],
+    "displayName": "Morpheus"
+  },
+  "avg_npc_1937_1": {
+    "speakerNames": [
+      "Corettons",
+      "Bumbling Corettons"
+    ],
+    "searchNames": [
+      "Corettons",
+      "Bumbling Corettons"
+    ],
+    "displayName": "Corettons"
+  },
+  "avg_npc_1938_1": {
+    "speakerNames": [
+      "Wolff"
+    ],
+    "searchNames": [
+      "Wolff"
+    ],
+    "displayName": "Wolff"
+  },
+  "avg_4185_amoris_1": {
+    "speakerNames": [
+      "Nyamu Yūtenji",
+      "Lost Girl",
+      "Voice on the Phone",
+      "Voice from the Communicator"
+    ],
+    "searchNames": [
+      "Nyamu Yūtenji",
+      "Lost Girl",
+      "Voice on the Phone",
+      "Voice from the Communicator"
+    ],
+    "displayName": "Nyamu Yūtenji"
+  },
+  "avg_npc_1260_1": {
+    "speakerNames": [
+      "Assistant"
+    ],
+    "searchNames": [
+      "Assistant"
+    ],
+    "displayName": "Assistant"
+  },
+  "avg_4186_tmoris_1": {
+    "speakerNames": [
+      "Umiri Yahata",
+      "Wizened Voice"
+    ],
+    "searchNames": [
+      "Umiri Yahata",
+      "Wizened Voice"
+    ],
+    "displayName": "Umiri Yahata"
+  },
+  "avg_4183_mortis_1": {
+    "speakerNames": [
+      "Mutsumi Wakaba",
+      "'Mutsumi's Mother'",
+      "'Mutsumi'",
+      "Mutsumis"
+    ],
+    "searchNames": [
+      "Mutsumi Wakaba",
+      "'Mutsumi's Mother'",
+      "'Mutsumi'",
+      "Mutsumis"
+    ],
+    "displayName": "Mutsumi Wakaba"
+  },
+  "avg_npc_1939_1": {
+    "speakerNames": [
+      "Mutsumi's Mother"
+    ],
+    "searchNames": [
+      "Mutsumi's Mother"
+    ],
+    "displayName": "Mutsumi's Mother"
+  },
+  "avg_npc_1940_1": {
+    "speakerNames": [
+      "'Father'",
+      "Father",
+      "Mother & Father"
+    ],
+    "searchNames": [
+      "'Father'",
+      "Father",
+      "Mother & Father"
+    ],
+    "displayName": "'Father'"
+  },
+  "avg_npc_1941_1": {
+    "speakerNames": [
+      "Mother",
+      "'Mother'"
+    ],
+    "searchNames": [
+      "Mother",
+      "'Mother'"
+    ],
+    "displayName": "Mother"
+  },
+  "avg_445_wscoot_1": {
+    "speakerNames": [
+      "Windscoot"
+    ],
+    "searchNames": [
+      "Windscoot"
+    ],
+    "displayName": "Windscoot"
+  },
+  "avg_npc_1641_1": {
+    "speakerNames": [
+      "Aunt Wen"
+    ],
+    "searchNames": [
+      "Aunt Wen"
+    ],
+    "displayName": "Aunt Wen"
   }
 }
