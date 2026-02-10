@@ -4122,6 +4122,7 @@
     "activities/act13mini/level_act13mini_st05.txt",
     "obt/memory/story_frncat_1_1.txt",
     "obt/memory/story_hmau_1_1.txt",
+    "obt/memory/story_hmau_2_1.txt",
     "obt/memory/story_lmlee_1_1.txt"
   ],
   "char_225_haak_1": [
@@ -17671,6 +17672,7 @@
     "obt/memory/story_12fce_1_1.txt"
   ],
   "avg_npc_1968_1": [
+    "activities/act49side/level_act49side_01_beg.txt",
     "obt/main/level_spst_16-01.txt"
   ],
   "avg_npc_1983_1": [
@@ -18006,6 +18008,7 @@
   ],
   "avg_225_haak_1": [
     "obt/memory/story_haak_1_1.txt",
+    "obt/memory/story_hmau_2_1.txt",
     "obt/memory/story_lmlee_1_1.txt"
   ],
   "avg_133_mm_1": [
@@ -18132,6 +18135,7 @@
     "obt/memory/story_rope_1_2.txt"
   ],
   "avg_npc_1626_1": [
+    "activities/act49side/level_act49side_01_end.txt",
     "obt/memory/story_saga_1_1.txt"
   ],
   "avg_149_scave_1": [
@@ -18189,6 +18193,7 @@
     "obt/memory/story_wscoot_1_1.txt"
   ],
   "avg_npc_1641_1": [
+    "obt/memory/story_ju_1_1.txt",
     "obt/memory/story_wscoot_1_1.txt"
   ],
   "avg_4171_wulfen_1": [
@@ -18384,5 +18389,118 @@
   ],
   "avg_npc_1910_1": [
     "activities/act44side/level_act44side_st01.txt"
+  ],
+  "avg_1050_chen3_1": [
+    "activities/act49side/level_act49side_01_beg.txt",
+    "activities/act49side/level_act49side_01_end.txt",
+    "activities/act49side/level_act49side_03_beg.txt",
+    "activities/act49side/level_act49side_03_end.txt",
+    "activities/act49side/level_act49side_06_beg.txt",
+    "activities/act49side/level_act49side_06_end.txt",
+    "activities/act49side/level_act49side_08_beg.txt",
+    "activities/act49side/level_act49side_08_end.txt",
+    "activities/act49side/level_act49side_09_beg.txt",
+    "activities/act49side/level_act49side_09_end.txt",
+    "activities/act49side/level_act49side_10_end.txt",
+    "activities/act49side/level_act49side_st01.txt",
+    "activities/act49side/level_act49side_st02.txt"
+  ],
+  "avg_npc_2131_1": [
+    "activities/act49side/level_act49side_01_beg.txt",
+    "activities/act49side/level_act49side_04_end.txt",
+    "activities/act49side/level_act49side_09_end.txt",
+    "activities/act49side/level_act49side_st01.txt",
+    "activities/act49side/level_act49side_st02.txt"
+  ],
+  "avg_npc_2134_1": [
+    "activities/act49side/level_act49side_01_end.txt",
+    "activities/act49side/level_act49side_02_end.txt",
+    "activities/act49side/level_act49side_04_end.txt"
+  ],
+  "avg_npc_2126_1": [
+    "activities/act49side/level_act49side_01_end.txt",
+    "activities/act49side/level_act49side_03_beg.txt",
+    "activities/act49side/level_act49side_05_beg.txt",
+    "activities/act49side/level_act49side_05_end.txt",
+    "activities/act49side/level_act49side_06_end.txt",
+    "activities/act49side/level_act49side_07_end.txt",
+    "activities/act49side/level_act49side_08_end.txt",
+    "activities/act49side/level_act49side_11_end.txt"
+  ],
+  "avg_npc_2128_1": [
+    "activities/act49side/level_act49side_01_end.txt",
+    "activities/act49side/level_act49side_03_beg.txt",
+    "activities/act49side/level_act49side_03_end.txt",
+    "activities/act49side/level_act49side_06_beg.txt",
+    "activities/act49side/level_act49side_06_end.txt",
+    "activities/act49side/level_act49side_08_beg.txt",
+    "activities/act49side/level_act49side_st01.txt",
+    "activities/act49side/level_act49side_st02.txt"
+  ],
+  "avg_2027_wang_1": [
+    "activities/act49side/level_act49side_02_beg.txt",
+    "activities/act49side/level_act49side_02_end.txt",
+    "activities/act49side/level_act49side_04_beg.txt",
+    "activities/act49side/level_act49side_04_end.txt",
+    "activities/act49side/level_act49side_05_beg.txt",
+    "activities/act49side/level_act49side_05_end.txt",
+    "activities/act49side/level_act49side_07_beg.txt",
+    "activities/act49side/level_act49side_07_end.txt",
+    "activities/act49side/level_act49side_10_beg.txt",
+    "activities/act49side/level_act49side_10_end.txt",
+    "activities/act49side/level_act49side_11_beg.txt",
+    "activities/act49side/level_act49side_11_end.txt"
+  ],
+  "avg_npc_2125_1": [
+    "activities/act49side/level_act49side_02_beg.txt",
+    "activities/act49side/level_act49side_02_end.txt",
+    "activities/act49side/level_act49side_05_beg.txt",
+    "activities/act49side/level_act49side_05_end.txt",
+    "activities/act49side/level_act49side_07_beg.txt",
+    "activities/act49side/level_act49side_07_end.txt",
+    "activities/act49side/level_act49side_08_end.txt"
+  ],
+  "avg_npc_2133_1": [
+    "activities/act49side/level_act49side_04_beg.txt"
+  ],
+  "avg_4221_ju_1": [
+    "activities/act49side/level_act49side_04_end.txt",
+    "activities/act49side/level_act49side_09_end.txt",
+    "activities/act49side/level_act49side_st01.txt",
+    "activities/act49side/level_act49side_st02.txt"
+  ],
+  "avg_npc_2127_1": [
+    "activities/act49side/level_act49side_05_beg.txt",
+    "activities/act49side/level_act49side_05_end.txt",
+    "activities/act49side/level_act49side_07_beg.txt",
+    "activities/act49side/level_act49side_07_end.txt",
+    "activities/act49side/level_act49side_08_beg.txt",
+    "activities/act49side/level_act49side_08_end.txt",
+    "activities/act49side/level_act49side_11_end.txt"
+  ],
+  "avg_npc_2132_1": [
+    "activities/act49side/level_act49side_06_end.txt",
+    "activities/act49side/level_act49side_09_beg.txt",
+    "activities/act49side/level_act49side_10_beg.txt",
+    "activities/act49side/level_act49side_11_end.txt",
+    "activities/act49side/level_act49side_st01.txt"
+  ],
+  "avg_npc_2129_1": [
+    "activities/act49side/level_act49side_07_end.txt",
+    "activities/act49side/level_act49side_10_beg.txt",
+    "activities/act49side/level_act49side_10_end.txt",
+    "activities/act49side/level_act49side_11_beg.txt",
+    "activities/act49side/level_act49side_11_end.txt"
+  ],
+  "avg_npc_2130_1": [
+    "activities/act49side/level_act49side_10_end.txt",
+    "activities/act49side/level_act49side_st02.txt"
+  ],
+  "avg_npc_2136_1": [
+    "activities/act49side/level_act49side_10_end.txt",
+    "activities/act49side/level_act49side_st01.txt"
+  ],
+  "avg_npc_1629_1": [
+    "activities/act49side/level_act49side_st01.txt"
   ]
 }
