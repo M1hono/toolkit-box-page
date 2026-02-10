@@ -350,5 +350,10 @@
   "arknights/banners/act16mini.png": {
     "status": "skipped",
     "timestamp": 1769014142398
+  },
+  "arknights/banners/act49side.png": {
+    "status": "skipped",
+    "timestamp": 1770688284259,
+    "reason": "404"
   }
 }

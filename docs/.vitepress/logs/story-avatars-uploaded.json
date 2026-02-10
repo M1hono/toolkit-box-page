@@ -762,5 +762,55 @@
   "arknights/avatars/char_4195_radian.png": {
     "status": "skipped",
     "timestamp": 1769014137440
+  },
+  "arknights/avatars/avg_npc_2129_1.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282566,
+    "charId": "avg_npc_2129_1"
+  },
+  "arknights/avatars/char_2025_shu.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282570,
+    "charId": "char_2025_shu"
+  },
+  "arknights/avatars/char_2023_ling.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282592,
+    "charId": "char_2023_ling"
+  },
+  "arknights/avatars/avg_npc_2125_jie.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282602,
+    "charId": "avg_npc_2125_jie"
+  },
+  "arknights/avatars/char_2027_wang.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282619,
+    "charId": "char_2027_wang"
+  },
+  "arknights/avatars/avg_npc_2129_2.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282629,
+    "charId": "avg_npc_2129_2"
+  },
+  "arknights/avatars/enemy_1582_suisho.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282631,
+    "charId": "enemy_1582_suisho"
+  },
+  "arknights/avatars/char_2024_chyue.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282633,
+    "charId": "char_2024_chyue"
+  },
+  "arknights/avatars/avg_npc_1869_yi.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282643,
+    "charId": "avg_npc_1869_yi"
+  },
+  "arknights/avatars/avg_npc_2127_chun.png": {
+    "status": "uploaded",
+    "timestamp": 1770688282675,
+    "charId": "avg_npc_2127_chun"
   }
 }
