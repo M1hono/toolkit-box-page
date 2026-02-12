@@ -22022,6 +22022,56 @@
       }
     }
   },
+  "505800": {
+    "id": 505800,
+    "collectionNo": 435,
+    "name": "未翻译 (ID: 505800)",
+    "ruby": "小野小町",
+    "className": "caster",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/5058000/5058000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/5058001/5058001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/5058002/5058002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "5058000": {
+          "id": 5058000,
+          "faceX": 974,
+          "faceY": 55,
+          "scale": 1
+        },
+        "5058001": {
+          "id": 5058001,
+          "faceX": 968,
+          "faceY": 33,
+          "scale": 1
+        },
+        "5058002": {
+          "id": 5058002,
+          "faceX": 901,
+          "faceY": 154,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/5058000/5058000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/5058001/5058001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/5058002/5058002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "600100": {
     "id": 600100,
     "collectionNo": 39,
