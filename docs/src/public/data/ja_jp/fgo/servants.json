@@ -13611,6 +13611,56 @@
       }
     }
   },
+  "306400": {
+    "id": 306400,
+    "collectionNo": 465,
+    "name": "デメテル",
+    "ruby": "デメテル",
+    "className": "lancer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/3064000/3064000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/3064001/3064001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/3064002/3064002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "3064000": {
+          "id": 3064000,
+          "faceX": 374,
+          "faceY": 144,
+          "scale": 1
+        },
+        "3064001": {
+          "id": 3064001,
+          "faceX": 375,
+          "faceY": 167,
+          "scale": 1
+        },
+        "3064002": {
+          "id": 3064002,
+          "faceX": 380,
+          "faceY": 152,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/3064000/3064000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/3064001/3064001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/3064002/3064002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "400100": {
     "id": 400100,
     "collectionNo": 23,
@@ -30519,13 +30569,13 @@
       "faceCoordinates": {
         "7051000": {
           "id": 7051000,
-          "faceX": 879,
-          "faceY": 216,
+          "faceX": 951,
+          "faceY": 162,
           "scale": 1
         },
         "7051001": {
           "id": 7051001,
-          "faceX": 879,
+          "faceX": 884,
           "faceY": 216,
           "scale": 1
         },
@@ -40039,7 +40089,7 @@
         },
         "28011001": {
           "id": 28011001,
-          "faceX": 893,
+          "faceX": 885,
           "faceY": 151,
           "scale": 1
         },
@@ -40051,8 +40101,8 @@
         },
         "28011300": {
           "id": 28011300,
-          "faceX": 380,
-          "faceY": 153,
+          "faceX": 378,
+          "faceY": 156,
           "scale": 1
         }
       }
