@@ -3821,7 +3821,9 @@
           "2": "https://static.atlasacademy.io/NA/CharaFigure/1052001/1052001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/1052002/1052002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "105230": "https://static.atlasacademy.io/NA/CharaFigure/1052300/1052300_merged.png"
+        },
         "story": {
           "1098235400": "https://static.atlasacademy.io/NA/CharaFigure/1098235400/1098235400_merged.png"
         }
@@ -3845,6 +3847,12 @@
           "faceY": 152,
           "scale": 1
         },
+        "1052300": {
+          "id": 1052300,
+          "faceX": 376,
+          "faceY": 153,
+          "scale": 1
+        },
         "1098235400": {
           "id": 1098235400,
           "faceX": 383,
@@ -3860,7 +3868,9 @@
           "2": "https://static.atlasacademy.io/NA/CharaFigure/1052001/1052001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/1052002/1052002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "105230": "https://static.atlasacademy.io/NA/CharaFigure/1052300/1052300_merged.png"
+        },
         "story": {
           "1098235400": "https://static.atlasacademy.io/NA/CharaFigure/1098235400/1098235400_merged.png"
         }
@@ -5847,13 +5857,13 @@
         },
         "2016001": {
           "id": 2016001,
-          "faceX": 386,
+          "faceX": 394,
           "faceY": 82,
           "scale": 1
         },
         "2016002": {
           "id": 2016002,
-          "faceX": 392,
+          "faceX": 393,
           "faceY": 84,
           "scale": 1
         },
@@ -22230,6 +22240,12 @@
           "faceX": 354,
           "faceY": 159,
           "scale": 1
+        },
+        "1098287300": {
+          "id": 1098287300,
+          "faceX": 354,
+          "faceY": 157,
+          "scale": 1
         }
       }
     },
@@ -27460,20 +27476,20 @@
       "faceCoordinates": {
         "7035000": {
           "id": 7035000,
-          "faceX": 376,
-          "faceY": 161,
+          "faceX": 397,
+          "faceY": 149,
           "scale": 1
         },
         "7035001": {
           "id": 7035001,
-          "faceX": 410,
-          "faceY": 195,
+          "faceX": 384,
+          "faceY": 176,
           "scale": 1
         },
         "7035002": {
           "id": 7035002,
-          "faceX": 381,
-          "faceY": 178,
+          "faceX": 407,
+          "faceY": 168,
           "scale": 1
         },
         "1098170900": {
@@ -28956,8 +28972,8 @@
         },
         "8001600": {
           "id": 8001600,
-          "faceX": 379,
-          "faceY": 143,
+          "faceX": 380,
+          "faceY": 145,
           "scale": 1
         },
         "8001700": {
@@ -33154,20 +33170,20 @@
         },
         "11003000": {
           "id": 11003000,
-          "faceX": 369,
-          "faceY": 142,
+          "faceX": 361,
+          "faceY": 147,
           "scale": 1
         },
         "11003001": {
           "id": 11003001,
-          "faceX": 368,
-          "faceY": 147,
+          "faceX": 361,
+          "faceY": 151,
           "scale": 1
         },
         "11003002": {
           "id": 11003002,
-          "faceX": 368,
-          "faceY": 147,
+          "faceX": 369,
+          "faceY": 149,
           "scale": 1
         },
         "11003300": {
