@@ -39604,5 +39604,28 @@
         }
       }
     }
+  },
+  "9946280": {
+    "id": 9946280,
+    "collectionNo": 436,
+    "name": "Ｅ－宏玛丽",
+    "ruby": "-",
+    "className": "uOlgaMarieGrandCollection",
+    "rarity": 0,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {},
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {}
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {},
+        "costume": {},
+        "story": {}
+      }
+    }
   }
 }
