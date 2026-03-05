@@ -38775,6 +38775,56 @@
       }
     }
   },
+  "2801000": {
+    "id": 2801000,
+    "collectionNo": 437,
+    "name": "但丁·阿利吉耶里",
+    "ruby": "但丁·阿利吉耶里",
+    "className": "pretender",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/28010000/28010000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/28010001/28010001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/28010002/28010002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "28010000": {
+          "id": 28010000,
+          "faceX": 391,
+          "faceY": 163,
+          "scale": 1
+        },
+        "28010001": {
+          "id": 28010001,
+          "faceX": 391,
+          "faceY": 144,
+          "scale": 1
+        },
+        "28010002": {
+          "id": 28010002,
+          "faceX": 396,
+          "faceY": 142,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/28010000/28010000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/28010001/28010001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/28010002/28010002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "3300100": {
     "id": 3300100,
     "collectionNo": 377,
