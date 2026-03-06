@@ -20,6 +20,14 @@ import {
     PdfViewer,
 } from "@utils/vitepress/componentRegistry/mediaRegistry";
 import {
+    Buttons,
+    Carousels,
+    Steps,
+    Animation,
+    Preview,
+    NotFound,
+} from "@utils/vitepress/componentRegistry/uiRegistry";
+import {
     MnaGuidebookGenerator,
     RunescribingEditor,
     RitualGenerator,
@@ -29,14 +37,6 @@ import ArknightsStoryTracker from "../../theme/components/Chara/Arknights/Arknig
 import Fgo from "../../theme/components/Chara/Fgo/Fgo.vue";
 import CardGenerator from "../../theme/components/CardGenerator/CardGenerator.vue";
 import { JsonTranslator } from "../../theme/components/mc";
-import {
-    Buttons,
-    Carousels,
-    Steps,
-    Animation,
-    Preview,
-    NotFound,
-} from "@utils/vitepress/componentRegistry/uiRegistry";
 import MagicMoveContainer from "@components/ui/MagicMoveContainer.vue";
 import { defineAsyncComponent } from "vue";
 import { LiteTree } from "@lite-tree/vue";
@@ -78,16 +78,14 @@ const components = {
     VChart,
     ShaderEffectBlock,
     MnaGuidebookGenerator,
-    Arknights,
-    ArknightsStoryTracker,
     RunescribingEditor,
     RitualGenerator,
-    JsonTranslator,
+    Arknights,
+    ArknightsStoryTracker,
     Fgo,
     CardGenerator,
+    JsonTranslator,
 };
-
-console.log("Registered components:", Object.keys(components));
 
 /**
  * Registers global components and aliases for VitePress.

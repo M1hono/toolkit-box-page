@@ -16,7 +16,7 @@ export function getLanguageCodes(): string[] {
     return projectConfig.languages.map((lang) => lang.code);
 }
 
-export function getLanguageLinks(): string[] {
+export function getLanguageLinks(): (string | undefined)[] {
     return projectConfig.languages.map((lang) => lang.link);
 }
 
@@ -46,8 +46,8 @@ export function getLanguageByCode(code: string): LanguageConfig | undefined {
     });
 }
 
-export function getLocalesConfig() {
-    const locales: Record<string, any> = {};
+export function getLocalesConfig(): Record<string, { label: string; lang: string; link: string }> {
+    const locales: Record<string, { label: string; lang: string; link: string }> = {};
 
     projectConfig.languages.forEach((lang) => {
         const key = lang.isDefault ? "root" : lang.code;
@@ -93,11 +93,7 @@ export function removeLangFromPath(path: string): string {
     for (const lang of projectConfig.languages) {
         const langLink = lang.link || `/${lang.code}/`;
 
-        if (lang.isDefault && cleanPath.startsWith(langLink)) {
-            return `/${cleanPath.substring(langLink.length)}`;
-        }
-
-        if (!lang.isDefault && cleanPath.startsWith(langLink)) {
+        if (cleanPath.startsWith(langLink)) {
             return `/${cleanPath.substring(langLink.length)}`;
         }
     }
@@ -200,4 +196,40 @@ export function getLangCodeFromLink(path: string): string {
 export function getSearchLocaleKey(langCode: string): string {
     const defaultLang = getDefaultLanguage();
     return langCode === defaultLang.code ? "root" : langCode;
+}
+
+/**
+ * Resolves a language identifier to its URL path segment.
+ * @param identifier - Language code or identifier
+ * @returns The path segment (e.g., "en-US" or "zh-CN") without leading/trailing slashes
+ */
+export function resolveLanguagePathSegment(identifier: string): string {
+    const lang = getLanguageByCode(identifier) ?? getDefaultLanguage();
+    const link = lang.link ?? `/${lang.code}/`;
+    return link.replace(/^\/|\/$/g, "");
+}
+
+/**
+ * Returns all known path segments from configured languages.
+ * Useful for building sets of known language URL prefixes.
+ */
+export function getAllLanguagePathSegments(): Set<string> {
+    const segments = new Set<string>();
+    for (const lang of projectConfig.languages) {
+        const link = lang.link ?? `/${lang.code}/`;
+        const segment = link.replace(/^\/|\/$/g, "");
+        if (segment) {
+            segments.add(segment);
+        }
+    }
+    return segments;
+}
+
+/**
+ * Resolves a language identifier to its full LanguageConfig.
+ * @param identifier - Language code or identifier
+ * @returns The LanguageConfig or undefined if not found
+ */
+export function resolveLanguage(identifier: string): LanguageConfig | undefined {
+    return getLanguageByCode(identifier);
 }
