@@ -1,4 +1,4 @@
-import type { App } from 'vue';
+import type { App } from "vue";
 import {
     comment,
     ArticleMetadata,
@@ -11,39 +11,42 @@ import {
     ChatMessage,
     Bills,
     MarkMapView,
-    VChart
+    VChart,
+    ShaderEffectBlock,
 } from "../../theme/components/content";
-import { YoutubeVideo, BilibiliVideo, PdfViewer } from "../../theme/components/media";
-import { MNavLinks } from "../../theme/components/navigation";
-import { MnaGuidebookGenerator, RunescribingEditor, RitualGenerator } from "../../theme/components/AvalonWard";
-import Arknights from "../../theme/components/Chara/Arknights/Arknights.vue";
-import ArknightsStoryTracker from "../../theme/components/Chara/Arknights/ArknightsStoryTracker.vue";
-import Fgo from "../../theme/components/Chara/Fgo/Fgo.vue";
-import CardGenerator from "../../theme/components/CardGenerator/CardGenerator.vue";
-import { JsonTranslator } from "../../theme/components/mc";
+import {
+    YoutubeVideo,
+    BilibiliVideo,
+    PdfViewer,
+} from "../../theme/components/media";
 import {
     Buttons,
     Carousels,
+    Steps,
     Animation,
     Preview,
     NotFound,
 } from "../../theme/components/ui";
 import MagicMoveContainer from "../../theme/components/ui/MagicMoveContainer.vue";
-import { defineAsyncComponent } from 'vue';
+import { defineAsyncComponent } from "vue";
 import { LiteTree } from "@lite-tree/vue";
 import { TagsPage } from "../../theme/components/content";
 
-const CommitsCounter = defineAsyncComponent(() => import("../../theme/components/content/CommitsCounter.vue"));
-const Contributors = defineAsyncComponent(() => import("../../theme/components/content/Contributors.vue"));
+const CommitsCounter = defineAsyncComponent(
+    () => import("../../theme/components/content/CommitsCounter.vue"),
+);
+const Contributors = defineAsyncComponent(
+    () => import("../../theme/components/content/Contributors.vue"),
+);
 
 const components = {
     MdCarousel: Carousels,
+    VPSteps: Steps,
     YoutubeVideo,
     BilibiliVideo,
     ArticleMetadata,
     Linkcard,
     commitsCounter: CommitsCounter,
-    MNavLinks,
     PdfViewer,
     LiteTree,
     MagicMoveContainer,
@@ -63,20 +66,18 @@ const components = {
     Bills,
     MarkMapView,
     VChart,
-    MnaGuidebookGenerator,
-    Arknights,
-    ArknightsStoryTracker,
-    RunescribingEditor,
-    RitualGenerator,
-    JsonTranslator,
-    Fgo,
-    CardGenerator
+    ShaderEffectBlock,
 };
 
+console.log("Registered components:", Object.keys(components));
+
+/**
+ * Registers global components and aliases for VitePress.
+ */
 export const registerComponents = (app: App) => {
     Object.entries(components).forEach(([name, component]) => {
         if (component) {
             app.component(name, component);
         }
     });
-}; 
+};

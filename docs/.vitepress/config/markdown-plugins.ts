@@ -20,6 +20,7 @@ import { ruby } from "@mdit/plugin-ruby";
 import { demo } from "@mdit/plugin-demo";
 import { dl } from "@mdit/plugin-dl";
 import { stepper } from "../plugins/stepper";
+import { steps } from "../plugins/steps";
 import { vuetifyTimeline } from "../plugins/vuetify-timeline";
 import { tab } from "@mdit/plugin-tab";
 import { mark } from "@mdit/plugin-mark";
@@ -37,7 +38,8 @@ import { dialogPlugin } from "../plugins/dialog";
 import { chatPlugin } from "../plugins/chat-message";
 import { withMarkmap } from "../plugins/markmap";
 import { vueCharts } from "../plugins/vue-charts";
-import { isFeatureEnabled } from "./project-config";
+import { shaderEffect } from "../plugins/shader-effect";
+import { isFeatureEnabled } from "../utils/config/project-config";
 import ts from "typescript";
 
 import fs from "fs";
@@ -99,12 +101,14 @@ export const markdown: MarkdownOptions = {
         md.use(chartGrid);
 
         md.use(tab, stepper);
+        md.use(tab, steps);
         md.use(tab, carousels);
         md.use(tab, iframes);
 
         md.use(card);
         md.use(vueCharts);
         md.use(vuetifyTimeline);
+        md.use(shaderEffect);
         
         if (isFeatureEnabled('markmap')) {
             withMarkmap(md);

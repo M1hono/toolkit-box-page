@@ -1,5 +1,6 @@
 import type { DefaultTheme } from 'vitepress';
-import { getProjectInfo, getLanguageByCode, getLangCodeFromLink, getSearchLocaleKey, isFeatureEnabled } from '../project-config';
+import type { SearchLocalesByProvider } from '../../utils/config/project-config';
+import { getProjectInfo, getLanguageByCode, getLangCodeFromLink, getSearchLocaleKey, isFeatureEnabled } from '../../utils/config/project-config';
 import { getSidebarSync } from '../../utils/sidebar';
 
 const projectInfo = getProjectInfo();
@@ -9,8 +10,8 @@ export const zh_CN = <DefaultTheme.Config>{
     label: langConfig.displayName,
     lang: langConfig.giscusLang,
     link: langConfig.link,
-    title: 'M1hono ToolBox',
-    description: '游戏资源处理工具集 - 集成多种游戏资源提取、处理、翻译工具',
+    title: 'Mihono Vitepress 模版',
+    description: '一个基于 Vitepress 的文档模版',
     themeConfig: {
         nav: [
             {
@@ -18,23 +19,9 @@ export const zh_CN = <DefaultTheme.Config>{
                 link: "/",
             },
             {
-                text: "游戏工具",
-                items: [
-                    { text: "FGO 角色提取", link: "/zh-CN/Fgo/CharaFinder" },
-                    { text: "FGO 卡牌生成器", link: "/zh-CN/Fgo/CardGenerator" },
-                    { text: "明日方舟角色", link: "/zh-CN/Arknights/CharaFinder" },
-                    { text: "明日方舟剧情", link: "/zh-CN/Arknights/StoryTracker" }
-                ]
+                text: "Hero 全配置",
+                link: "/zh-CN/hero/AllConfig",
             },
-            {
-                text: "Minecraft 工具",
-                items: [
-                    { text: "JSON 翻译器", link: "/zh-CN/Mc/JsonTranslator" },
-                    { text: "指南书生成器", link: "/zh-CN/Mna/GuideBookGeneraor" },
-                    { text: "仪式生成器", link: "/zh-CN/Mna/RitualGenerator" },
-                    { text: "符文编辑器", link: "/zh-CN/Mna/RunescribingEditor" }
-                ]
-            }
         ],
         sidebar: isFeatureEnabled('autoSidebar') 
             ? getSidebarSync(getLangCodeFromLink(langConfig.link!)) 
@@ -109,4 +96,31 @@ export const search: DefaultTheme.AlgoliaSearchOptions["locales"] = {
             },
         },
     },
+};
+
+export const localSearch: DefaultTheme.LocalSearchOptions["locales"] = {
+    [getSearchLocaleKey(langConfig.code)]: {
+        translations: {
+            button: {
+                buttonText: "搜索文档",
+                buttonAriaLabel: "搜索文档",
+            },
+            modal: {
+                displayDetails: "显示详细结果",
+                resetButtonTitle: "清除查询条件",
+                backButtonTitle: "关闭搜索",
+                noResultsText: "未找到与 $q 相关的结果",
+                footer: {
+                    selectText: "选择",
+                    navigateText: "切换",
+                    closeText: "关闭",
+                },
+            },
+        },
+    },
+};
+
+export const searchLocales: SearchLocalesByProvider = {
+    algolia: search,
+    local: localSearch,
 };

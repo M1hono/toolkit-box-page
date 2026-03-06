@@ -13,9 +13,3 @@ output.html
 .vitepress/config.mts.timestamp*
 src/.vitepress/*
 *test*.md*
-
-# Story data files - managed by workflow
-src/public/data/*/arknights/story/
-src/public/data/**/story/
-.temp/
-cache/
