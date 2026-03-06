@@ -306,7 +306,7 @@
     import {
         getLanguageByCode,
         getLangCodeFromVitepressLang,
-    } from "../../../../config/project-config";
+    } from "../../../../utils/config/project-config";
 
     const { t } = useSafeI18n("arknights-story-tracker", {
         title: "Story Tracker",

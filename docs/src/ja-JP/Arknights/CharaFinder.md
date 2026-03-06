@@ -3,4 +3,6 @@ aside: false
 sidebar: false
 ---
 
-<Arknights />
+<ClientOnly>
+  <Arknights />
+</ClientOnly>

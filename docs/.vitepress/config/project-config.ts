@@ -8,40 +8,40 @@ export const projectConfig: ProjectConfig = {
     /**
      * Project name， Not important, but can be used in various places like page titles, meta tags, etc.
      */
-    name: "M1honoVitepressTemplate",
+    name: "M1hono Toolkit Box",
 
     /**
      * IMPORTANT: Change this to your repository name for GitHub Pages deployment
      * If deploying to GitHub Pages under a user/organization page, set this to "/"
      * Format: "/your-repo-name/"
      */
-    base: "/M1honoVitepressTemplate/",
+    base: "/",
 
-    keyWords: ["VitePress", "template", "documentation", "wiki", "markdown"],
+    keyWords: ["VitePress", "FGO", "Arknights", "minecraft", "toolkit"],
     version: "2.0.1",
     author: "M1hono",
-    license: "CC BY-SA 4.0",
+    license: "All Rights Reserved",
 
     /**
      * Favicon configuration
      * Can be a local file path (relative to base) or external URL
      */
-    favicon: "logo.png", // or "favicon.ico" or "https://example.com/icon.svg"
+    favicon: "https://tool.mihono.cn/favicon.ico", // or "favicon.ico" or "https://example.com/icon.svg"
 
     /**
      * Logo configuration
      * Can be a simple string path or an object with light/dark theme logos
      */
     logo: {
-        light: "/logo.png",
-        dark: "/logodark.png",
+        light: "/logo.svg",
+        dark: "/logo.svg",
         alt: "Site Logo",
     },
     repository: {
         type: "git",
-        url: "https://github.com/M1hono/M1honoVitepressTemplate",
+        url: "https://github.com/M1hono/toolkit-box-page/",
     },
-    homepage: "https://m1hono.github.io/M1honoVitepressTemplate/",
+    homepage: "https://tool.mihono.cn/",
 
     defaultCurrency: "CNY",
 
@@ -72,6 +72,16 @@ export const projectConfig: ProjectConfig = {
             label: "English",
             fileName: "en.ts",
             giscusLang: "en",
+        },
+        {
+            code: "ja-JP",
+            name: "ja-JP",
+            displayName: "日本語",
+            isDefault: false,
+            link: "/ja-JP/",
+            label: "日本語",
+            fileName: "jp.ts",
+            giscusLang: "ja",
         },
     ],
 
@@ -142,14 +152,14 @@ export const projectConfig: ProjectConfig = {
      */
     features: {
         // Global search toggle. Set false to force-disable search.
-        search: true,
-        gitChangelog: true,
+        search: false,
+        gitChangelog: false,
         mermaid: true,
-        drawio: true,
-        markmap: true,
-        multilingual: true,
+        drawio: false,
+        markmap: false,
+        multilingual: false,
         autoSidebar: true,
-        editLink: true,
+        editLink: false,
     },
 
     /**
@@ -183,7 +193,7 @@ export const projectConfig: ProjectConfig = {
     headerSocialLinks: [
         {
             icon: "github",
-            link: "https://github.com/M1hono/M1honoVitepressTemplate",
+            link: "https://github.com/M1hono/toolkit-box-page/",
             ariaLabel: "GitHub Repository",
         },
     ],
@@ -193,7 +203,7 @@ export const projectConfig: ProjectConfig = {
      */
     editLink: {
         pattern:
-            "https://github.com/M1hono/M1honoVitepressTemplate/edit/main/docs/src/:path",
+            "https://github.com/M1hono/toolkit-box-page/edit/main/docs/src/:path",
         text: "Edit this page on GitHub",
     },
 
@@ -241,9 +251,9 @@ export const projectConfig: ProjectConfig = {
     footerOptions: {
         showIcp: false,
         showPolice: false,
-        showLicense: true,
-        licenseText: "CC BY-SA 4.0",
-        licenseLink: "https://creativecommons.org/licenses/by-sa/4.0/",
+        showLicense: false,
+        licenseText: "All Rights Reserved",
+        licenseLink: "https://en.wikipedia.org/wiki/All_rights_reserved",
         showSiteStats: false,
         siteStatsProvider: "busuanzi",
     },
@@ -279,10 +289,10 @@ export const projectConfig: ProjectConfig = {
      * Giscus comment system configuration
      */
     giscus: {
-        repo: "M1hono/M1honoVitepressTemplate",
-        repoId: "R_kgDOPEMJTw",
+        repo: "M1hono/toolkit-box-page",
+        repoId: "R_kgDONDjwPA",
         category: "General",
-        categoryId: "DIC_kwDOPEMJT84CsYv-",
+        categoryId: "DIC_kwDONDjwPM4C1AMy",
         mapping: "specific",
         strict: true,
         reactionsEnabled: true,

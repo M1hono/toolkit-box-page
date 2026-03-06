@@ -32,11 +32,11 @@ export const footerConfig: FooterConfig = {
     },
     group: [
         createGroupConfig(
-            '外部链接',
+            '资源',
             [
                 createLinkConfig(
-                    'GitHub',
-                    'https://github.com/M1hono/M1honoVitepressTemplate',
+                    'GitHub 仓库',
+                    'https://github.com/M1hono/toolkit-box-page/',
                     'mdi:github',
                     {
                         rel: 'noopener noreferrer',
@@ -47,14 +47,26 @@ export const footerConfig: FooterConfig = {
                     }
                 ),
                 createLinkConfig(
-                    '文档',
-                    'https://vitepress.dev',
-                    'mdi:book-open-page-variant',
+                    '在线站点',
+                    'https://tool.mihono.cn/',
+                    'mdi:compass-outline',
                     {
                         rel: 'noopener noreferrer',
                         iconColors: { 
-                            light: 'rgba(100, 150, 200, 1)',
-                            dark: 'rgba(150, 200, 255, 1)'
+                            light: 'rgba(120, 108, 196, 1)',
+                            dark: 'rgba(181, 170, 255, 1)'
+                        },
+                    }
+                ),
+                createLinkConfig(
+                    'Discord 社区',
+                    'https://discord.gg/uPJHxU46td',
+                    'mdi:discord',
+                    {
+                        rel: 'noopener noreferrer',
+                        iconColors: { 
+                            light: 'rgba(88, 101, 242, 1)',
+                            dark: 'rgba(161, 170, 255, 1)'
                         },
                     }
                 ),
@@ -66,27 +78,38 @@ export const footerConfig: FooterConfig = {
             }
         ),
         createGroupConfig(
-            '资源',
+            '工具索引',
             [
                 createLinkConfig(
-                    '下载',
-                    '/downloads',
-                    'mdi:download',
+                    'FGO',
+                    '/zh-CN/Fgo/',
+                    'mdi:sword-cross',
                     {
                         iconColors: { 
-                            light: 'rgba(100, 200, 150, 1)',
-                            dark: 'rgba(150, 255, 200, 1)'
+                            light: 'rgba(194, 110, 40, 1)',
+                            dark: 'rgba(255, 189, 118, 1)'
                         },
                     }
                 ),
                 createLinkConfig(
-                    '常见问题',
-                    '/faq',
-                    'mdi:help-circle',
+                    '明日方舟',
+                    '/zh-CN/Arknights/',
+                    'mdi:shield-outline',
                     {
                         iconColors: { 
-                            light: 'rgba(200, 100, 150, 1)',
-                            dark: 'rgba(255, 150, 200, 1)'
+                            light: 'rgba(62, 138, 138, 1)',
+                            dark: 'rgba(127, 222, 222, 1)'
+                        },
+                    }
+                ),
+                createLinkConfig(
+                    'Manaweave',
+                    '/zh-CN/Mna/',
+                    'mdi:book-cog-outline',
+                    {
+                        iconColors: { 
+                            light: 'rgba(120, 88, 160, 1)',
+                            dark: 'rgba(198, 162, 255, 1)'
                         },
                     }
                 ),

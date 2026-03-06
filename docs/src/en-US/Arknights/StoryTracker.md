@@ -3,4 +3,6 @@ aside: false
 sidebar: false
 ---
 
-<ArknightsStoryTracker />
+<ClientOnly>
+  <ArknightsStoryTracker />
+</ClientOnly>

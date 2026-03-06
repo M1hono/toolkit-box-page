@@ -1,43 +1,27 @@
-import type { DefaultTheme } from 'vitepress';
-import { getProjectInfo, getLanguageByCode, getLangCodeFromLink, getSearchLocaleKey, isFeatureEnabled } from '../project-config';
-import { getSidebarSync } from '../../utils/sidebar';
+import type { DefaultTheme } from "vitepress";
+import type { SearchLocalesByProvider } from "../../utils/config/project-config";
+import {
+    getProjectInfo,
+    getLanguageByCode,
+    getLangCodeFromLink,
+    getSearchLocaleKey,
+    isFeatureEnabled,
+} from "../../utils/config/project-config";
+import { getSidebarSync } from "../../utils/sidebar";
 
 const projectInfo = getProjectInfo();
-const langConfig = getLanguageByCode('ja-JP')!;
+const langConfig = getLanguageByCode("ja-JP")!;
 
 export const ja_JP = <DefaultTheme.Config>{
     label: langConfig.displayName,
     lang: langConfig.giscusLang,
     link: langConfig.link,
-    title: 'M1hono ToolBox',
-    description: 'ゲームリソース処理ツールキット - 複数のゲームリソース抽出、処理、翻訳ツールを統合',
+    title: "M1hono Toolkit Box",
+    description:
+        "FGO、アークナイツ、Minecraft 言語 JSON、Manaweave ツールを扱う Toolkit Box ドキュメント。",
     themeConfig: {
-        nav: [
-            {
-                text: "ホーム",
-                link: "/",
-            },
-            {
-                text: "ゲームツール",
-                items: [
-                    { text: "FGO 抽出ツール", link: "/ja-JP/Fgo/CharaFinder" },
-                    { text: "FGO カード生成器", link: "/ja-JP/Fgo/CardGenerator" },
-                    { text: "アークナイツツール", link: "/ja-JP/Arknights/CharaFinder" },
-                    { text: "アークナイツストーリー", link: "/ja-JP/Arknights/StoryTracker" }
-                ]
-            },
-            {
-                text: "Minecraft ツール",
-                items: [
-                    { text: "JSON 翻訳ツール", link: "/ja-JP/Mc/JsonTranslator" },
-                    { text: "ガイドブック生成器", link: "/ja-JP/Mna/GuideBookGeneraor" },
-                    { text: "儀式生成器", link: "/ja-JP/Mna/RitualGenerator" },
-                    { text: "ルーン編集器", link: "/ja-JP/Mna/RunescribingEditor" }
-                ]
-            }
-        ],
-        sidebar: isFeatureEnabled('autoSidebar') 
-            ? getSidebarSync(getLangCodeFromLink(langConfig.link!)) 
+        sidebar: isFeatureEnabled("autoSidebar")
+            ? getSidebarSync(getLangCodeFromLink(langConfig.link!))
             : [],
         outline: {
             level: "deep",
@@ -54,10 +38,13 @@ export const ja_JP = <DefaultTheme.Config>{
                 timeStyle: "medium",
             },
         },
-        editLink: isFeatureEnabled('editLink') && projectInfo.editLink ? {
-            pattern: projectInfo.editLink.pattern,
-            text: projectInfo.editLink.text || "GitHub でこのページを編集"
-        } : undefined,
+        editLink:
+            isFeatureEnabled("editLink") && projectInfo.editLink
+                ? {
+                      pattern: projectInfo.editLink.pattern,
+                      text: projectInfo.editLink.text || "GitHub でこのページを編集",
+                  }
+                : undefined,
         langMenuLabel: "言語を切り替え",
         returnToTopLabel: "トップに戻る",
         sidebarMenuLabel: "メニュー",
@@ -103,10 +90,38 @@ export const search: DefaultTheme.AlgoliaSearchOptions["locales"] = {
                 noResultsScreen: {
                     noResultsText: "関連する結果が見つかりません",
                     suggestedQueryText: "検索を試してください",
-                    reportMissingResultsText: "このクエリに結果があると思いますか？",
+                    reportMissingResultsText:
+                        "このクエリに結果があると思いますか？",
                     reportMissingResultsLinkText: "フィードバックを送信",
                 },
             },
         },
     },
+};
+
+export const localSearch: DefaultTheme.LocalSearchOptions["locales"] = {
+    [getSearchLocaleKey(langConfig.code)]: {
+        translations: {
+            button: {
+                buttonText: "ドキュメントを検索",
+                buttonAriaLabel: "ドキュメントを検索",
+            },
+            modal: {
+                displayDetails: "詳細結果を表示",
+                resetButtonTitle: "クエリ条件をクリア",
+                backButtonTitle: "検索を閉じる",
+                noResultsText: "$q に一致する結果がありません",
+                footer: {
+                    selectText: "選択",
+                    navigateText: "切り替え",
+                    closeText: "閉じる",
+                },
+            },
+        },
+    },
+};
+
+export const searchLocales: SearchLocalesByProvider = {
+    algolia: search,
+    local: localSearch,
 };

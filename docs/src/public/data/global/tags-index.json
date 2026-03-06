@@ -21,9 +21,20 @@
       "fileName": "en.ts",
       "giscusLang": "en",
       "dataPath": "/data/en-US/tags.json"
+    },
+    {
+      "code": "ja-JP",
+      "name": "ja-JP",
+      "displayName": "日本語",
+      "isDefault": false,
+      "link": "/ja-JP/",
+      "label": "日本語",
+      "fileName": "jp.ts",
+      "giscusLang": "ja",
+      "dataPath": "/data/ja-JP/tags.json"
     }
   ],
-  "generatedAt": "2026-03-03T23:12:08.691Z",
+  "generatedAt": "2026-03-05T02:02:32.714Z",
   "summary": {
     "zh-CN": {
       "totalTags": 0,
@@ -36,6 +47,12 @@
       "totalPages": 0,
       "language": "en-US",
       "dataPath": "/data/en-US/tags.json"
+    },
+    "ja-JP": {
+      "totalTags": 0,
+      "totalPages": 0,
+      "language": "ja-JP",
+      "dataPath": "/data/ja-JP/tags.json"
     }
   },
   "version": 2

@@ -3,19 +3,19 @@ root: true
 collapsed: false
 ---
 
-# 利用可能なツール
+# Manaweave ツール
 
 ## ガイドブック生成器
-Avalon Ward魔法システムの包括的なガイドブックを作成します。
+元言語と対象言語のガイドブック JSON を読み込み、項目とセクションを編集して出力します。
 
 [ガイドブック生成器を開く](./GuideBookGeneraor.md)
 
 ## 儀式生成器
-ビジュアルエディターでカスタム魔法儀式を設計および生成します。
+儀式グリッドを編集し、`mna:ritual` JSON または KubeJS を出力します。
 
 [儀式生成器を開く](./RitualGenerator.md)
 
-## ルーン編集器
-ルーン文字パターンとチョーク描画を作成するためのビジュアルエディター。
+## ルーン描画エディタ
+7x8 のルーン配置を編集し、`mna:runescribing` JSON または KubeJS を出力します。
 
-[ルーン編集器を開く](./RunescribingEditor.md)
+[ルーン描画エディタを開く](./RunescribingEditor.md)

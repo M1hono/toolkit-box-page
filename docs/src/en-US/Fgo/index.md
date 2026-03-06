@@ -5,25 +5,20 @@ collapsed: false
 
 # Fate/Grand Order Tools
 
-Comprehensive toolkit for FGO servant portrait extraction and processing.
+Pages for FGO servant portrait extraction and card composition.
 
-## Available Tools
+## Pages
 
-### Character Finder
-Servant portrait extraction tool with precise selection controls and aspect ratio presets.
+### Servant Portrait Finder
+Search servant records, choose asset variants, set crop area, and export portrait images.
 
-[Open Character Finder](./CharaFinder.md)
+[Open Servant Portrait Finder](./CharaFinder.md)
 
-## Features
+### Card Generator
+Generate FGO card images from uploaded artwork, text fields, icon overlays, and stat blocks.
 
-- High-resolution servant portrait extraction
-- Custom aspect ratio selection (1:1, 4:3, 3:2, 16:9, custom)
-- Precise pixel-level selection controls
-- Background color customization
-- Batch processing support
-- Face detection for automatic cropping
-- Multi-language servant database
+[Open Card Generator](./CardGenerator.md)
 
-## Technical Details
+## Data Source
 
-This tool integrates with the Atlas Academy API to provide accurate servant data across all FGO servers (NA, JP, CN), enabling efficient portrait extraction for various use cases.
+Bundled FGO image indexes are used together with Atlas Academy JP references where available.

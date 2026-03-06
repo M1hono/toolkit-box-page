@@ -13,6 +13,4 @@ showComment: false
 metadata: false
 ---
 
-Use this page to search, filter, and intersect tags across indexed content.
-
 <TagsPage />

@@ -3,4 +3,6 @@ aside: false
 sidebar: false
 ---
 
-<Fgo/>
+<ClientOnly>
+  <Fgo />
+</ClientOnly>

@@ -3,4 +3,6 @@ aside: false
 sidebar: false
 ---
 
-<CardGenerator />
+<ClientOnly>
+  <ToolkitCardGeneratorApp />
+</ClientOnly>

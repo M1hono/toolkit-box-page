@@ -3,4 +3,6 @@ aside: false
 sidebar: false
 ---
 
-<JsonTranslator/>
+<ClientOnly>
+  <ToolkitJsonTranslatorApp />
+</ClientOnly>

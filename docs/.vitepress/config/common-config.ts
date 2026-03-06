@@ -36,7 +36,8 @@ function generateAvatarUrl(username: string) {
 
 export const commonConfig: UserConfig<DefaultTheme.Config> = {
     title: projectInfo.name,
-    description: "A template for Vitepress documentation",
+    description:
+        "Toolkit Box documentation for FGO assets, Arknights indexing, Minecraft locale JSON, and Manaweave editors.",
     base: projectInfo.base,
 
     srcDir: projectPaths.src,
@@ -49,6 +50,22 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
     ignoreDeadLinks: true,
 
     head: [
+        ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
+        [
+            "link",
+            {
+                rel: "preconnect",
+                href: "https://fonts.gstatic.com",
+                crossorigin: "",
+            },
+        ],
+        [
+            "link",
+            {
+                rel: "stylesheet",
+                href: "https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Sans+Condensed:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Sans+SC:wght@400;500;700&display=swap",
+            },
+        ],
         [
             "link",
             {
@@ -73,7 +90,8 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
             "meta",
             {
                 property: "og:description",
-                content: "A template for Vitepress documentation",
+                content:
+                    "Toolkit Box documentation for FGO assets, Arknights indexing, Minecraft locale JSON, and Manaweave editors.",
             },
         ],
         ["meta", { property: "og:url", content: projectInfo.homepage }],

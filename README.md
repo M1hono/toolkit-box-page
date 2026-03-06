@@ -1,51 +1,37 @@
-# VitePress Template Advanced
+# M1hono Toolkit Box
 
-**A feature-rich VitePress template for creating beautiful documentation websites**
+Toolkit Box is a VitePress-based interface for several game-related utilities:
 
-## Quick Start
+- Fate/Grand Order servant portrait extraction and card generation
+- Arknights operator portrait extraction and story occurrence tracking
+- Minecraft locale JSON editing
+- Manaweave guidebook, ritual recipe, and runescribing recipe editors
 
-This template organizes all configuration and source files within the `docs/` directory for better project structure.
+## Local Development
 
 ```bash
-cd docs/
+cd docs
 yarn install
 yarn dev
 ```
 
-Or with npm:
+## Build
+
 ```bash
-cd docs/
-npm install --legacy-peer-deps
-npm run dev
+cd docs
+yarn build
 ```
 
-## Key Structure
+## Structure
 
-```
+```text
 docs/
-├── .vitepress/          # VitePress configuration
-├── src/                 # Documentation source files
-├── package.json         # Dependencies and scripts
+├── .vitepress/   # theme, config, runtime utilities
+├── src/          # locale content and tool entry pages
+└── package.json  # docs workspace scripts and dependencies
 ```
 
-## Features
+## Deployment Target
 
-- Modern and clean design architecture
-- Comprehensive multi-language support
-- Rich collection of components and plugins
-
-## Quick Deploy
-
-1. Fork this repository
-2. Enable GitHub Pages in repository settings
-3. GitHub Actions will automatically build and deploy your site
-
-Your documentation site will be available at `https://yourusername.github.io/yourrepository/`
-
-## Links
-
-- [Live Demo](http://m1hono.github.io/M1honoVitepressTemplate/)
-
-## License
-
-MIT License
+- Live site: https://tool.mihono.cn/
+- Repository: https://github.com/M1hono/toolkit-box-page/

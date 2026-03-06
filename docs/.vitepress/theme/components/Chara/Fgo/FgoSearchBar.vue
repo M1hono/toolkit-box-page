@@ -97,7 +97,6 @@
     import { useData } from "vitepress";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import type { SearchResult } from "../../../../utils/chara/fgo/types";
-    import { getLanguageByCode } from "../../../../config/project-config";
 
     const { t } = useSafeI18n("fgo-search", {
         title: "FGO Character Portrait Extractor",
@@ -122,7 +121,6 @@
     const fileInputRef = ref<HTMLInputElement | null>(null);
 
     const currentRegion = computed(() => {
-        const langConfig = getLanguageByCode(lang.value);
         if (lang.value === "zh-CN" || lang.value === "root") return "CN";
         if (lang.value === "ja-JP") return "JP";
         return "NA";

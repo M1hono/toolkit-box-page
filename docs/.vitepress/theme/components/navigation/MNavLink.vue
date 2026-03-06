@@ -2,10 +2,15 @@
     import { computed } from "vue";
     import { withBase, useData } from "vitepress";
     import { slugify } from "@mdit-vue/shared";
+    import {
+        resolveThemeValueByMode,
+        useThemeRuntime,
+    } from "@utils/vitepress/runtime/theme";
 
-    import type { NavLink, NavIcon, NavThemeIcon } from "../../../utils/content/navLinkType";
+    import type { NavLink, NavIcon, NavThemeIcon } from "@utils/content/navLinkType";
 
     const { isDark } = useData();
+    const { effectiveDark } = useThemeRuntime(isDark);
 
     const props = defineProps<{
         noIcon?: boolean;
@@ -17,8 +22,17 @@
     }>();
 
     const themeIcon = (icon: NavIcon | NavThemeIcon): NavIcon => {
-        if (typeof icon === "object" && "dark" in icon && "light" in icon) {
-            return isDark.value ? icon.dark : icon.light;
+        if (typeof icon === "object" && !Array.isArray(icon)) {
+            const record = icon as {
+                dark?: NavIcon;
+                light?: NavIcon;
+                value?: NavIcon;
+            };
+            if ("dark" in record || "light" in record || "value" in record) {
+                return (
+                    resolveThemeValueByMode(record, effectiveDark.value) ?? icon
+                );
+            }
         }
         return icon;
     };

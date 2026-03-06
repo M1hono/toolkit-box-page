@@ -5,7 +5,6 @@
 
 import { ref, computed } from "vue";
 import { useData } from "vitepress";
-import { getLanguageByCode } from "../../../../config/project-config";
 import axios from "axios";
 import type { FgoCharacter } from "../types";
 

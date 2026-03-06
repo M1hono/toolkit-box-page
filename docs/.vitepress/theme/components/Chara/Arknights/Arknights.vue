@@ -160,7 +160,7 @@
         SelectionRect,
         CanvasSize,
     } from "../../../../utils/chara/arknights/types";
-    import { getLanguageByCode } from "../../../../config/project-config";
+    import { getLanguageByCode } from "../../../../utils/config/project-config";
 
     const { t } = useSafeI18n("arknights-main", {
         appTitle: "Arknights Character Portrait Extractor",

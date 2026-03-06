@@ -16,19 +16,10 @@ export const en_US = <DefaultTheme.Config>{
     label: langConfig.displayName,
     lang: langConfig.giscusLang,
     link: langConfig.link,
-    title: "Mihono Vitepress Template",
-    description: "A template for Vitepress documentation",
+    title: "M1hono Toolkit Box",
+    description:
+        "Toolkit Box documentation for FGO, Arknights, Minecraft locale JSON, and Manaweave tools.",
     themeConfig: {
-        nav: [
-            {
-                text: "Home",
-                link: "/",
-            },
-            {
-                text: "Hero All Config",
-                link: "/en-US/hero/AllConfig",
-            },
-        ],
         sidebar: isFeatureEnabled("autoSidebar")
             ? getSidebarSync(getLangCodeFromLink(langConfig.link!))
             : [],

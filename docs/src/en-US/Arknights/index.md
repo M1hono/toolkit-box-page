@@ -5,29 +5,20 @@ collapsed: false
 
 # Arknights Tools
 
-Professional toolkit for Arknights game resource extraction and analysis.
+Pages for Arknights asset lookup and story tracking.
 
-## Available Tools
+## Pages
 
-### Character Finder
-Advanced character portrait extraction tool with multi-variant support and image cropping capabilities.
+### Operator Portrait Finder
+Search operator records, select portrait variants, crop images, and export results.
 
-[Open Character Finder](./CharaFinder.md)
+[Open Operator Portrait Finder](./CharaFinder.md)
 
 ### Story Tracker
-Track character story appearances across the game with name-based search and story reader integration.
+Find operator story appearances by name and open related reading links.
 
 [Open Story Tracker](./StoryTracker.md)
 
-## Features
+## Data Source
 
-- Multi-language support (Chinese, English, Japanese)
-- Character variant detection and management
-- Story appearance tracking
-- Integration with external story readers
-- Batch processing capabilities
-- Face detection for automatic portrait cropping
-
-## Technical Details
-
-This toolkit processes data from the official Arknights game repository and provides an intuitive interface for resource extraction and analysis.
+The pages use bundled Arknights character image data and story search indexes.
