@@ -1,7 +1,7 @@
 <script lang="ts" setup>
     import { computed } from "vue";
     import { resolveAssetWithBase } from "@utils/vitepress/api/assetApi";
-    import type { NavLink } from "@utils/config/nav-types";
+    import type { NavLink } from "@utils/config/navTypes";
     import LottieDisplay from "../../hero/image/LottieDisplay.vue";
     import MarkdownIt from "markdown-it";
 

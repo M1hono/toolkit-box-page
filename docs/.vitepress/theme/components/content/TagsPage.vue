@@ -1,40 +1,32 @@
 <template>
     <div class="tags-page">
-        <!-- Page Title -->
-        <div class="page-header">
-            <h1 class="page-title">
-                {{ page.frontmatter.title || t.pageTitle }}
-            </h1>
-        </div>
+        <h1 class="tags-page__title">
+            {{ page.frontmatter.title || t.pageTitle }}
+        </h1>
 
-        <!-- Loading State -->
-        <div v-if="isLoading" class="loading-state">
-            <div class="loading-spinner"></div>
+        <!-- Loading / Error / Empty -->
+        <div v-if="isLoading" class="tags-page__status">
+            <div class="spinner" />
             <p>{{ t.loadingTagData }}</p>
         </div>
 
-        <!-- Error State -->
-        <div v-else-if="loadError" class="error-state">
-            <div class="error-icon">⚠️</div>
+        <div v-else-if="loadError" class="tags-page__status">
             <p>{{ t.loadingError }}</p>
-            <button class="retry-button" @click="loadTagData">
+            <button class="btn btn--outline" @click="loadTagData">
                 {{ t.retry }}
             </button>
         </div>
 
-        <!-- Empty State -->
-        <div v-else-if="totalTags === 0" class="empty-state">
-            <div class="empty-icon">🏷️</div>
+        <div v-else-if="totalTags === 0" class="tags-page__status">
             <p>{{ t.noTagsFound }}</p>
         </div>
 
-        <!-- Main Content -->
         <template v-else>
-            <!-- Search and Filter Controls -->
-            <div class="tags-controls">
-                <div class="search-box">
+            <!-- Toolbar -->
+            <div class="toolbar">
+                <div class="toolbar__search">
                     <svg
-                        class="search-icon"
+                        class="toolbar__search-icon"
                         viewBox="0 0 24 24"
                         fill="none"
                         stroke="currentColor"
@@ -49,229 +41,176 @@
                         v-model="searchQuery"
                         type="text"
                         :placeholder="t.searchPlaceholder"
-                        class="search-input"
                     />
                 </div>
-
-                <div class="view-controls">
+                <div class="toolbar__views">
                     <button
                         :class="[
-                            'view-btn',
-                            { 'view-btn--active': viewMode === 'cloud' },
+                            'toolbar__view-btn',
+                            { active: viewMode === 'cloud' },
                         ]"
                         @click="viewMode = 'cloud'"
                     >
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <path
-                                d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"
-                            />
-                        </svg>
                         {{ t.tagCloud }}
                     </button>
                     <button
                         :class="[
-                            'view-btn',
-                            { 'view-btn--active': viewMode === 'list' },
+                            'toolbar__view-btn',
+                            { active: viewMode === 'list' },
                         ]"
                         @click="viewMode = 'list'"
                     >
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <line x1="8" y1="6" x2="21" y2="6" />
-                            <line x1="8" y1="12" x2="21" y2="12" />
-                            <line x1="8" y1="18" x2="21" y2="18" />
-                            <line x1="3" y1="6" x2="3.01" y2="6" />
-                            <line x1="3" y1="12" x2="3.01" y2="12" />
-                            <line x1="3" y1="18" x2="3.01" y2="18" />
-                        </svg>
                         {{ t.list }}
                     </button>
                 </div>
             </div>
 
-            <!-- Tags Display -->
-            <div v-if="viewMode === 'cloud'" class="tags-cloud">
+            <!-- Cloud view -->
+            <div v-if="viewMode === 'cloud'" class="cloud">
                 <TagBadge
                     v-for="tag in filteredTags"
                     :key="tag.name"
                     :tag="tag.name"
                     :count="tag.count"
                     :clickable="true"
-                    :style="{ fontSize: getTagSize(tag.count) }"
-                    @click="selectTag"
+                    :style="{ fontSize: tagSize(tag.count) }"
+                    @click="toggleTag"
                 />
             </div>
 
-            <div v-else class="tags-list">
+            <!-- List view -->
+            <div v-else class="list">
                 <div
                     v-for="tag in filteredTags"
                     :key="tag.name"
-                    class="tag-item"
-                    @click="selectTag(tag.name)"
+                    class="list__item"
+                    @click="toggleTag(tag.name)"
                 >
-                    <div class="tag-item__header">
+                    <div class="list__item-head">
                         <TagBadge
                             :tag="tag.name"
                             :count="tag.count"
                             :clickable="true"
                         />
-                        <span class="tag-item__pages"
+                        <span class="muted small"
                             >{{ tag.count }} {{ t.pages }}</span
                         >
                     </div>
-                    <div class="tag-item__preview">
-                        <span
-                            v-for="(page, index) in tag.pages.slice(0, 3)"
-                            :key="page.path"
-                            class="page-preview"
-                        >
-                            {{ page.title
-                            }}{{
-                                index < Math.min(tag.pages.length, 3) - 1
-                                    ? ", "
-                                    : ""
-                            }}
-                        </span>
-                        <span v-if="tag.pages.length > 3" class="more-pages">
+                    <p class="list__item-preview muted small">
+                        {{
+                            tag.pages
+                                .slice(0, 3)
+                                .map((p) => p.title)
+                                .join(", ")
+                        }}
+                        <span v-if="tag.pages.length > 3" class="dimmed">
                             {{
                                 t.morePages.replace(
                                     "{count}",
-                                    (tag.pages.length - 3).toString(),
+                                    String(tag.pages.length - 3),
                                 )
                             }}
                         </span>
-                    </div>
+                    </p>
                 </div>
             </div>
 
-            <!-- Selected Tag Pages -->
-            <div v-if="selectedTags.length > 0" class="selected-tag-section">
-                <div class="selected-tag-header">
-                    <h2>
+            <!-- Selected tags results -->
+            <section v-if="selectedTags.length > 0" class="results">
+                <div class="results__header">
+                    <h2 class="results__heading">
                         {{ t.selectedTags }}
                         <TagBadge
                             v-for="tag in selectedTags"
                             :key="tag"
                             :tag="tag"
                             :clickable="true"
-                            @click="selectTag"
+                            @click="toggleTag"
                         />
-                        <span class="selected-count"
+                        <span class="muted small"
                             >({{ selectedTagPages.length }} {{ t.pages }})</span
                         >
                     </h2>
-                    <button class="clear-selection" @click="clearSelection">
-                        <svg
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            stroke="currentColor"
-                            stroke-width="2"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                        >
-                            <line x1="18" y1="6" x2="6" y2="18" />
-                            <line x1="6" y1="6" x2="18" y2="18" />
-                        </svg>
+                    <button class="btn btn--ghost" @click="clearSelection">
                         {{ t.clearSelection }}
                     </button>
                 </div>
 
-                <div v-if="selectedTagPages.length > 0" class="pages-grid">
+                <div v-if="selectedTagPages.length > 0" class="results__list">
                     <a
-                        v-for="page in selectedTagPages"
-                        :key="page.path"
-                        :href="page.path"
-                        class="page-card"
+                        v-for="pg in selectedTagPages"
+                        :key="pg.path"
+                        :href="pg.path"
+                        class="result-row"
                     >
-                        <div class="page-card__header">
-                            <h3 class="page-card__title">{{ page.title }}</h3>
+                        <div class="result-row__head">
+                            <h3 class="result-row__title">{{ pg.title }}</h3>
                             <div
-                                v-if="page.progress"
-                                class="page-card__progress"
+                                v-if="pg.progress != null"
+                                class="result-row__progress"
                             >
-                                <div class="progress-bar">
+                                <div class="progress-track">
                                     <div
                                         class="progress-fill"
-                                        :style="{ width: `${page.progress}%` }"
-                                    ></div>
+                                        :style="{ width: `${pg.progress}%` }"
+                                    />
                                 </div>
-                                <span class="progress-text"
-                                    >{{ page.progress }}%</span
+                                <span class="dimmed small"
+                                    >{{ pg.progress }}%</span
                                 >
                             </div>
                         </div>
-                        <p
-                            v-if="page.description"
-                            class="page-card__description"
-                        >
-                            {{ page.description }}
+                        <p v-if="pg.description" class="result-row__desc muted">
+                            {{ pg.description }}
                         </p>
-                        <div class="page-card__tags">
+                        <div class="result-row__tags">
                             <TagBadge
-                                v-for="tag in page.tags.slice(0, 3)"
-                                :key="tag"
-                                :tag="tag"
-                                :clickable="false"
+                                v-for="tg in pg.tags.slice(0, 3)"
+                                :key="tg"
+                                :tag="tg"
                             />
-                            <span v-if="page.tags.length > 3" class="more-tags">
-                                +{{ page.tags.length - 3 }}
-                            </span>
+                            <span v-if="pg.tags.length > 3" class="dimmed small"
+                                >+{{ pg.tags.length - 3 }}</span
+                            >
                         </div>
                     </a>
                 </div>
 
-                <!-- No matching pages message -->
-                <div v-else class="no-matching-pages">
-                    <div class="no-match-icon">🔍</div>
+                <div v-else class="tags-page__status" style="padding: 3rem 0">
                     <p>{{ t.noMatchingPages }}</p>
-                    <p class="no-match-hint">{{ t.noMatchingPagesHint }}</p>
+                    <p class="dimmed small">{{ t.noMatchingPagesHint }}</p>
                 </div>
-            </div>
+            </section>
 
-            <!-- Statistics -->
-            <div class="tags-stats">
-                <div class="stat-item">
-                    <span class="stat-number">{{ totalTags }}</span>
-                    <span class="stat-label">{{ t.totalTags }}</span>
+            <!-- Stats -->
+            <footer class="stats">
+                <div class="stats__item">
+                    <span class="stats__number">{{ totalTags }}</span>
+                    <span class="muted small">{{ t.totalTags }}</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">{{ totalPages }}</span>
-                    <span class="stat-label">{{ t.totalPages }}</span>
+                <div class="stats__item">
+                    <span class="stats__number">{{ totalPages }}</span>
+                    <span class="muted small">{{ t.totalPages }}</span>
                 </div>
-                <div class="stat-item">
-                    <span class="stat-number">{{ filteredTags.length }}</span>
-                    <span class="stat-label">{{ t.matchingTags }}</span>
+                <div class="stats__item">
+                    <span class="stats__number">{{ filteredTags.length }}</span>
+                    <span class="muted small">{{ t.matchingTags }}</span>
                 </div>
-            </div>
+            </footer>
         </template>
     </div>
 </template>
 
 <script setup lang="ts">
-    // @i18n
-    import { ref, computed, onMounted, watch } from "vue";
+    import { ref, computed, onMounted, onBeforeUnmount, watch } from "vue";
     import { useData, withBase } from "vitepress";
     import TagBadge from "../ui/TagBadge.vue";
     import { useSafeI18n } from "@utils/i18n/locale";
     import {
-        getLanguageByCode,
+        resolveLanguageCode,
         getDefaultLanguage,
-    } from "@config/project-config";
+    } from "@config/project-api";
 
-    // Type definitions
     interface PageInfo {
         title: string;
         path: string;
@@ -285,6 +224,8 @@
         count: number;
         pages: PageInfo[];
     }
+
+    type TagData = Record<string, TagInfo>;
 
     const { t } = useSafeI18n("tags-page", {
         pageTitle: "Tags",
@@ -308,211 +249,145 @@
 
     const { page, lang } = useData();
 
-    const currentLanguage = computed(() => {
-        return getLanguageByCode(lang.value) || getDefaultLanguage();
-    });
-
-    const activeLangCode = computed(() => {
-        return currentLanguage.value.code || getDefaultLanguage().code;
-    });
-
-    type TagData = {
-        [key: string]: {
-            name: string;
-            count: number;
-            pages: PageInfo[];
-        };
-    };
-
     const tagData = ref<TagData>({});
     const isLoading = ref(false);
     const loadError = ref<string | null>(null);
-
     const searchQuery = ref("");
     const viewMode = ref<"cloud" | "list">("cloud");
     const selectedTags = ref<string[]>([]);
 
+    // ── Derived state ────────────────────────────────────────────────────
+
     const filteredTags = computed(() => {
         const tags = Object.values(tagData.value);
-
-        if (!searchQuery.value) {
-            return tags.sort((a, b) => b.count - a.count);
-        }
-
-        const query = searchQuery.value.toLowerCase();
-        return tags
-            .filter((tag) => tag.name.toLowerCase().includes(query))
-            .sort((a, b) => b.count - a.count);
+        const sorted = tags.sort((a, b) => b.count - a.count);
+        if (!searchQuery.value) return sorted;
+        const q = searchQuery.value.toLowerCase();
+        return sorted.filter((tag) => tag.name.toLowerCase().includes(q));
     });
 
-    const selectedTagPages = computed(() => {
-        if (selectedTags.value.length === 0) {
-            return [];
-        }
-
+    const selectedTagPages = computed<PageInfo[]>(() => {
+        if (selectedTags.value.length === 0) return [];
         if (selectedTags.value.length === 1) {
-            const tag = selectedTags.value[0];
-            return tagData.value[tag]?.pages || [];
-        } else {
-            const allPages = new Map<string, PageInfo>();
-
-            selectedTags.value.forEach((tag, index) => {
-                const tagPages = tagData.value[tag]?.pages || [];
-
-                if (index === 0) {
-                    tagPages.forEach((page) => allPages.set(page.path, page));
-                } else {
-                    const currentPaths = new Set(tagPages.map((p) => p.path));
-                    for (const [path, page] of allPages) {
-                        if (!currentPaths.has(path)) {
-                            allPages.delete(path);
-                        }
-                    }
-                }
-            });
-
-            return Array.from(allPages.values());
+            return tagData.value[selectedTags.value[0]]?.pages ?? [];
         }
+        // Intersection of pages across all selected tags
+        const sets = selectedTags.value.map(
+            (tag) =>
+                new Set((tagData.value[tag]?.pages ?? []).map((p) => p.path)),
+        );
+        const first = tagData.value[selectedTags.value[0]]?.pages ?? [];
+        return first.filter((pg) => sets.every((s) => s.has(pg.path)));
     });
 
     const totalTags = computed(() => Object.keys(tagData.value).length);
-    const totalPages = computed(() => {
-        return Object.values(tagData.value).reduce(
-            (sum, tag) => sum + tag.count,
-            0,
-        );
-    });
+    const totalPages = computed(() =>
+        Object.values(tagData.value).reduce((sum, tag) => sum + tag.count, 0),
+    );
 
-    function getTagSize(count: number): string {
-        const maxCount = Math.max(
-            ...Object.values(tagData.value).map((tag) => tag.count),
-        );
-        const minSize = 0.75;
-        const maxSize = 1.5;
-        const ratio = count / maxCount;
-        const size = minSize + (maxSize - minSize) * ratio;
-        return `${size}rem`;
+    const maxCount = computed(() =>
+        Math.max(1, ...Object.values(tagData.value).map((tag) => tag.count)),
+    );
+
+    function tagSize(count: number): string {
+        const ratio = count / maxCount.value;
+        return `${0.75 + 0.75 * ratio}rem`;
     }
 
-    function selectTag(tagName: string) {
-        if (selectedTags.value.includes(tagName)) {
-            selectedTags.value = selectedTags.value.filter(
-                (t) => t !== tagName,
-            );
-        } else {
-            selectedTags.value.push(tagName);
-        }
+    // ── Tag selection with URL sync ──────────────────────────────────────
 
+    function toggleTag(tagName: string) {
+        const next = selectedTags.value.includes(tagName)
+            ? selectedTags.value.filter((t) => t !== tagName)
+            : [...selectedTags.value, tagName];
+        selectedTags.value = next;
+        syncTagsToUrl(next);
+    }
+
+    function clearSelection() {
+        selectedTags.value = [];
+        syncTagsToUrl([]);
+    }
+
+    function syncTagsToUrl(tags: string[]) {
         const url = new URL(window.location.href);
-        if (selectedTags.value.length > 0) {
-            url.searchParams.set("tags", selectedTags.value.join(","));
+        if (tags.length > 0) {
+            url.searchParams.set("tags", tags.join(","));
         } else {
             url.searchParams.delete("tags");
         }
         window.history.pushState({}, "", url.toString());
     }
 
-    function clearSelection() {
-        selectedTags.value = [];
-        const url = new URL(window.location.href);
-        url.searchParams.delete("tags");
-        window.history.pushState({}, "", url.toString());
+    function readTagsFromUrl(): string[] {
+        const param = new URLSearchParams(window.location.search).get("tags");
+        return param ? param.split(",").filter(Boolean) : [];
     }
 
-    // Enhanced tag data loading with language support
+    function onPopState() {
+        selectedTags.value = readTagsFromUrl();
+    }
+
+    // ── Data loading ─────────────────────────────────────────────────────
+
     async function loadTagData() {
         isLoading.value = true;
         loadError.value = null;
 
         try {
-            const langCode = activeLangCode.value;
-            const defaultLangCode = getDefaultLanguage().code;
-            const candidateUrls = Array.from(
+            const langCode = resolveLanguageCode(lang.value);
+            const defaultCode = getDefaultLanguage().code;
+            const urls = Array.from(
                 new Set([
                     withBase(`/data/${langCode}/tags.json`),
-                    withBase(`/data/${defaultLangCode}/tags.json`),
+                    withBase(`/data/${defaultCode}/tags.json`),
                 ]),
             );
 
-            let loadedData: { tags?: TagData } | null = null;
-            let loadedUrl = "";
-
-            for (const candidateUrl of candidateUrls) {
-                const response = await fetch(candidateUrl);
-                if (!response.ok) continue;
-                loadedData = await response.json();
-                loadedUrl = candidateUrl;
+            let loaded: { tags?: TagData } | null = null;
+            for (const url of urls) {
+                const res = await fetch(url);
+                if (!res.ok) continue;
+                loaded = await res.json();
                 break;
             }
 
-            if (loadedData) {
-                tagData.value = loadedData.tags || {};
-                console.log(
-                    `[TagsPage] Loaded ${Object.keys(tagData.value).length} tags for language: ${langCode} from ${loadedUrl}`,
-                );
-            } else {
-                console.warn(
-                    `Tag data not found for ${langCode}, using empty data`,
-                );
-                loadError.value = `${t.loadingError}: ${langCode}`;
-                tagData.value = {};
-            }
-        } catch (error) {
-            console.error("Failed to load tag data:", error);
-            loadError.value = `Failed to load tag data: ${error}`;
+            tagData.value = loaded?.tags ?? {};
+            if (!loaded) loadError.value = t.loadingError;
+        } catch (err) {
+            loadError.value = t.loadingError;
             tagData.value = {};
         } finally {
             isLoading.value = false;
         }
     }
 
-    function getUrlParams() {
-        const urlParams = new URLSearchParams(window.location.search);
-        const tagsParam = urlParams.get("tags");
-        return tagsParam ? tagsParam.split(",") : [];
-    }
+    // ── Lifecycle ────────────────────────────────────────────────────────
 
-    // Watch for language changes and reload tag data
-    watch(lang, (newLang, oldLang) => {
-        if (newLang !== oldLang) {
-            console.log(
-                `[TagsPage] Language changed from ${oldLang} to ${newLang}, reloading tag data`,
-            );
-            loadTagData();
-        }
+    watch(lang, (next, prev) => {
+        if (next !== prev) loadTagData();
     });
 
-    onMounted(async () => {
+    onMounted(() => {
         loadTagData();
+        selectedTags.value = readTagsFromUrl();
+        window.addEventListener("popstate", onPopState);
+    });
 
-        // Set initial selected tags from URL
-        const tagsFromUrl = getUrlParams();
-        if (tagsFromUrl.length > 0) {
-            selectedTags.value = tagsFromUrl;
-        }
-
-        window.addEventListener("popstate", () => {
-            const tagsFromUrl = getUrlParams();
-            selectedTags.value = tagsFromUrl;
-        });
+    onBeforeUnmount(() => {
+        window.removeEventListener("popstate", onPopState);
     });
 </script>
 
 <style scoped>
+    /* ── Layout ─────────────────────────────────────────────────────── */
     .tags-page {
         max-width: 1024px;
         margin: 0 auto;
         padding: 4rem 2rem;
     }
-
-    /* Page Header */
-    .page-header {
-        margin-bottom: 4rem;
-        text-align: left;
-    }
-
-    .page-title {
-        margin: 0;
+    .tags-page__title {
+        margin: 0 0 3.5rem;
         font-size: 2.75rem;
         font-weight: 700;
         letter-spacing: -0.015em;
@@ -520,23 +395,86 @@
         line-height: 1.1;
     }
 
-    /* Controls (Search & View Toggles) */
-    .tags-controls {
-        display: flex;
-        gap: 1rem;
-        margin-bottom: 3rem;
-        align-items: center;
-        border-bottom: 1px solid var(--vp-c-divider);
-        padding-bottom: 1.5rem;
+    /* ── Shared helpers ─────────────────────────────────────────────── */
+    .muted {
+        color: var(--vp-c-text-2);
+    }
+    .dimmed {
+        color: var(--vp-c-text-3);
+    }
+    .small {
+        font-size: 0.85rem;
     }
 
-    .search-box {
+    .btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        padding: 0.45rem 0.85rem;
+        border-radius: 6px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        border: none;
+        transition:
+            background-color 0.2s,
+            color 0.2s;
+    }
+    .btn--outline {
+        background: transparent;
+        color: var(--vp-c-text-1);
+        border: 1px solid var(--vp-c-divider);
+    }
+    .btn--ghost {
+        background: transparent;
+        color: var(--vp-c-text-3);
+    }
+
+    /* ── Status screens ─────────────────────────────────────────────── */
+    .tags-page__status {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 6rem 0;
+        text-align: center;
+        color: var(--vp-c-text-3);
+    }
+    .tags-page__status p {
+        font-size: 0.95rem;
+        color: var(--vp-c-text-2);
+        margin: 0.5rem 0;
+    }
+
+    .spinner {
+        width: 1.5rem;
+        height: 1.5rem;
+        margin-bottom: 1rem;
+        border: 2px solid var(--vp-c-divider);
+        border-top-color: var(--vp-c-text-3);
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    /* ── Toolbar ─────────────────────────────────────────────────────── */
+    .toolbar {
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        margin-bottom: 2.5rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--vp-c-divider);
+    }
+    .toolbar__search {
         position: relative;
         flex: 1;
         max-width: 320px;
     }
-
-    .search-icon {
+    .toolbar__search-icon {
         position: absolute;
         left: 0.85rem;
         top: 50%;
@@ -544,41 +482,32 @@
         width: 1rem;
         height: 1rem;
         color: var(--vp-c-text-3);
+        pointer-events: none;
     }
-
-    .search-input {
+    .toolbar__search input {
         width: 100%;
-        padding: 0.65rem 1rem 0.65rem 2.5rem;
+        padding: 0.6rem 1rem 0.6rem 2.5rem;
         border: 1px solid var(--vp-c-divider);
         border-radius: 8px;
-        background-color: var(--vp-c-bg);
+        background: var(--vp-c-bg);
         color: var(--vp-c-text-1);
         font-size: 0.9rem;
-        transition: border-color 0.2s ease;
+        transition: border-color 0.2s;
     }
-
-    .search-input:focus {
+    .toolbar__search input:focus {
         outline: none;
         border-color: var(--vp-c-text-3);
     }
 
-    .search-input:focus + .search-icon {
-        color: var(--vp-c-text-2);
-    }
-
-    .view-controls {
+    .toolbar__views {
         display: flex;
         gap: 0.25rem;
-        background-color: var(--vp-c-bg-soft);
+        margin-left: auto;
+        background: var(--vp-c-bg-soft);
         padding: 0.25rem;
         border-radius: 8px;
-        margin-left: auto;
     }
-
-    .view-btn {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
+    .toolbar__view-btn {
         padding: 0.4rem 0.8rem;
         border-radius: 6px;
         border: none;
@@ -588,353 +517,177 @@
         font-weight: 500;
         cursor: pointer;
         transition:
-            background-color 0.2s ease,
-            color 0.2s ease;
+            background-color 0.2s,
+            color 0.2s;
     }
-
-    .view-btn svg {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    .view-btn--active {
-        background-color: var(--vp-c-bg);
+    .toolbar__view-btn.active {
+        background: var(--vp-c-bg);
         color: var(--vp-c-text-1);
     }
 
-    html.dark .view-btn--active {
-        background-color: var(--vp-c-bg);
-    }
-
-    /* Tags Displays */
-    .tags-cloud {
+    /* ── Cloud ───────────────────────────────────────────────────────── */
+    .cloud {
         display: flex;
         flex-wrap: wrap;
         gap: 0.75rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
         align-items: center;
     }
 
-    .tags-list {
+    /* ── List ────────────────────────────────────────────────────────── */
+    .list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 1rem;
-        margin-bottom: 4rem;
+        margin-bottom: 3.5rem;
     }
-
-    .tag-item {
+    .list__item {
         padding: 1.25rem;
-        background-color: transparent;
         border: 1px solid var(--vp-c-divider);
         border-radius: 12px;
         cursor: pointer;
     }
-
-    .tag-item__header {
+    .list__item-head {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 0.75rem;
+        margin-bottom: 0.5rem;
     }
-
-    .tag-item__pages {
-        font-size: 0.8rem;
-        color: var(--vp-c-text-3);
-    }
-
-    .tag-item__preview {
-        font-size: 0.85rem;
-        color: var(--vp-c-text-2);
+    .list__item-preview {
+        margin: 0;
         line-height: 1.5;
     }
 
-    .page-preview {
-        color: var(--vp-c-text-2);
+    /* ── Results ─────────────────────────────────────────────────────── */
+    .results {
+        margin: 3.5rem 0;
     }
-
-    .more-pages {
-        color: var(--vp-c-text-3);
-    }
-
-    /* Selected Tag Section */
-    .selected-tag-section {
-        margin: 4rem 0;
-    }
-
-    .selected-tag-header {
+    .results__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 2rem;
-        border-bottom: 1px solid var(--vp-c-divider);
+        margin-bottom: 1.5rem;
         padding-bottom: 1rem;
+        border-bottom: 1px solid var(--vp-c-divider);
     }
-
-    .selected-tag-header h2 {
+    .results__heading {
         margin: 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
         display: flex;
         align-items: center;
         gap: 0.75rem;
         flex-wrap: wrap;
-        font-weight: 600;
         letter-spacing: -0.01em;
     }
 
-    .selected-count {
-        font-size: 0.9rem;
-        color: var(--vp-c-text-3);
-        font-weight: 400;
-    }
-
-    .clear-selection {
-        display: flex;
-        align-items: center;
-        gap: 0.4rem;
-        padding: 0.4rem 0.8rem;
-        background-color: transparent;
-        border: none;
-        color: var(--vp-c-text-3);
-        font-size: 0.875rem;
-        cursor: pointer;
-        transition: color 0.2s ease;
-    }
-
-    .clear-selection svg {
-        width: 1rem;
-        height: 1rem;
-    }
-
-    /* Pages Grid */
-    .pages-grid {
-        display: flex;
-        flex-direction: column;
-        gap: 0;
+    .results__list {
         border-top: 1px solid var(--vp-c-divider);
     }
-
-    .page-card {
+    .result-row {
         display: block;
-        padding: 1.5rem 0;
-        border-bottom: 1px solid var(--vp-c-divider);
+        padding: 1.25rem 0;
         text-decoration: none;
         color: inherit;
-        transition: opacity 0.2s ease;
+        border-bottom: 1px solid var(--vp-c-divider);
+        transition: opacity 0.2s;
     }
-
-    .page-card__header {
+    .result-row:hover {
+        opacity: 0.8;
+    }
+    .result-row__head {
         display: flex;
         align-items: baseline;
         justify-content: space-between;
-        margin-bottom: 0.5rem;
         gap: 1rem;
+        margin-bottom: 0.35rem;
     }
-
-    .page-card__title {
+    .result-row__title {
         margin: 0;
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         font-weight: 600;
         color: var(--vp-c-text-1);
         letter-spacing: -0.01em;
     }
-
-    .page-card__progress {
+    .result-row__progress {
         display: flex;
         align-items: center;
         gap: 0.5rem;
         flex-shrink: 0;
     }
-
-    .progress-bar {
+    .progress-track {
         width: 48px;
         height: 4px;
-        background-color: var(--vp-c-divider);
+        background: var(--vp-c-divider);
         border-radius: 2px;
         overflow: hidden;
     }
-
     .progress-fill {
         height: 100%;
-        background-color: var(--vp-c-text-2);
+        background: var(--vp-c-text-2);
     }
-
-    .progress-text {
-        font-size: 0.75rem;
-        color: var(--vp-c-text-3);
-    }
-
-    .page-card__description {
-        margin: 0 0 1rem 0;
+    .result-row__desc {
+        margin: 0 0 0.75rem;
         font-size: 0.9rem;
-        color: var(--vp-c-text-2);
         line-height: 1.5;
         max-width: 800px;
     }
-
-    .page-card__tags {
+    .result-row__tags {
         display: flex;
         flex-wrap: wrap;
         gap: 0.5rem;
         align-items: center;
     }
 
-    .more-tags {
-        font-size: 0.8rem;
-        color: var(--vp-c-text-3);
-    }
-
-    /* Stats Section */
-    .tags-stats {
+    /* ── Stats ───────────────────────────────────────────────────────── */
+    .stats {
         display: flex;
         gap: 4rem;
-        padding: 3rem 0;
-        margin-top: 4rem;
+        padding: 2.5rem 0;
+        margin-top: 3.5rem;
         border-top: 1px solid var(--vp-c-divider);
     }
-
-    .stat-item {
-        text-align: left;
-    }
-
-    .stat-number {
+    .stats__number {
         display: block;
         font-size: 2rem;
         font-weight: 600;
         color: var(--vp-c-text-1);
         line-height: 1;
-        margin-bottom: 0.5rem;
+        margin-bottom: 0.4rem;
         letter-spacing: -0.02em;
     }
 
-    .stat-label {
-        display: block;
-        font-size: 0.85rem;
-        color: var(--vp-c-text-3);
-    }
-
-    /* States */
-    .loading-state,
-    .error-state,
-    .empty-state {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        padding: 6rem 0;
-        text-align: center;
-        color: var(--vp-c-text-3);
-    }
-
-    .loading-spinner {
-        width: 1.5rem;
-        height: 1.5rem;
-        border: 2px solid var(--vp-c-divider);
-        border-top: 2px solid var(--vp-c-text-3);
-        border-radius: 50%;
-        animation: spin 1s linear infinite;
-        margin-bottom: 1rem;
-    }
-
-    @keyframes spin {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
-
-    .error-icon,
-    .empty-icon {
-        font-size: 2rem;
-        margin-bottom: 1rem;
-        opacity: 0.5;
-    }
-
-    .loading-state p,
-    .error-state p,
-    .empty-state p {
-        font-size: 0.95rem;
-        color: var(--vp-c-text-2);
-    }
-
-    .retry-button {
-        margin-top: 1.5rem;
-        padding: 0.5rem 1rem;
-        background-color: transparent;
-        color: var(--vp-c-text-1);
-        border: 1px solid var(--vp-c-divider);
-        border-radius: 6px;
-        font-size: 0.85rem;
-        cursor: pointer;
-        transition: background-color 0.2s ease;
-    }
-
-    .no-matching-pages {
-        padding: 4rem 0;
-        text-align: center;
-        color: var(--vp-c-text-3);
-    }
-
-    .no-match-icon {
-        display: none;
-    }
-
-    .no-matching-pages p {
-        margin: 0.5rem 0;
-        font-size: 0.95rem;
-    }
-
-    .no-match-hint {
-        font-size: 0.85rem !important;
-        font-style: normal;
-    }
-
-    /* Responsive design */
+    /* ── Responsive ──────────────────────────────────────────────────── */
     @media (max-width: 768px) {
         .tags-page {
             padding: 2rem 1.5rem;
         }
-
-        .page-header {
+        .tags-page__title {
+            font-size: 2rem;
             margin-bottom: 2rem;
         }
-
-        .page-title {
-            font-size: 2rem;
-        }
-
-        .tags-controls {
+        .toolbar {
             flex-direction: column;
             align-items: stretch;
             border-bottom: none;
         }
-
-        .search-box {
+        .toolbar__search {
             max-width: none;
         }
-
-        .view-controls {
+        .toolbar__views {
             margin-left: 0;
             justify-content: center;
         }
-
-        .selected-tag-header {
+        .results__header {
             flex-direction: column;
-            gap: 1rem;
+            gap: 0.75rem;
             align-items: flex-start;
         }
-
-        .clear-selection {
-            padding: 0;
-        }
-
-        .tags-stats {
+        .stats {
             flex-direction: column;
-            gap: 2rem;
+            gap: 1.5rem;
         }
-
-        .page-card__header {
+        .result-row__head {
             flex-direction: column;
             align-items: flex-start;
             gap: 0.25rem;

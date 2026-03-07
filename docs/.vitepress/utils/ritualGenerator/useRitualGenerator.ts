@@ -9,7 +9,7 @@ import type {
     RitualPattern,
     RitualKeyConfig,
     ShowKeysOverlay,
-} from "../types";
+} from "./types";
 
 /**
  * Main composable for Ritual Generator functionality

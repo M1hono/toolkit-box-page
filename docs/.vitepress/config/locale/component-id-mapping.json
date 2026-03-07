@@ -1,6 +1,6 @@
 {
     "description": "Maps component IDs used in useSafeI18n() to their corresponding translation file paths",
-    "generatedAt": "2026-03-06T18:25:14.600Z",
+    "generatedAt": "2026-03-07T10:39:35.554Z",
     "mappings": {
         "fgo-card-generator": "CardGenerator/CardGenerator",
         "fgo-card-settings": "CardGenerator/CardSettings",

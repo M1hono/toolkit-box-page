@@ -1,5 +1,4 @@
 {
-    "commitsOnDate": "{date}に{count}件のコミット",
-    "recentCommits": "最近のコミット：",
-    "repoActivity": "リポジトリのアクティビティ"
+    "commitDataUnavailable": "Commit data unavailable",
+    "commitsOnDate": "{date}に{count}件のコミット"
 }

@@ -1,7 +1,7 @@
 /**
  * Navigation system type definitions.
  *
- * @module utils/config/navTypes
+ * @module utils/config/nav-types
  * @description
  * Centralised TypeScript contracts for the navigation system.
  * All components, composables, and locale config files import from here.

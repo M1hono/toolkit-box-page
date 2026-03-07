@@ -1,0 +1,46 @@
+import { defineAsyncComponent } from "vue";
+
+const Arknights = defineAsyncComponent(
+    () => import("@components/Chara/Arknights/Arknights.vue"),
+);
+const ArknightsStoryTracker = defineAsyncComponent(
+    () => import("@components/Chara/Arknights/ArknightsStoryTracker.vue"),
+);
+const Fgo = defineAsyncComponent(
+    () => import("@components/Chara/Fgo/Fgo.vue"),
+);
+const ToolkitCardGeneratorApp = defineAsyncComponent(
+    () => import("@components/CardGenerator/CardGenerator.vue"),
+);
+const ToolkitJsonTranslatorApp = defineAsyncComponent(
+    () => import("@components/mc/JsonTranslator/JsonTranslator.vue"),
+);
+const MnaGuidebookGenerator = defineAsyncComponent(
+    () =>
+        import(
+            "@components/AvalonWard/MnaGuidebookGenerator/MnaGuidebookGenerator.vue"
+        ),
+);
+const RitualGenerator = defineAsyncComponent(
+    () => import("@components/AvalonWard/RitualGenerator/RitualGenerator.vue"),
+);
+const RunescribingEditor = defineAsyncComponent(
+    () =>
+        import(
+            "@components/AvalonWard/RunescribingEditor/RunescribingEditor.vue"
+        ),
+);
+
+export const components = {
+    Arknights,
+    ArknightsStoryTracker,
+    Fgo,
+    MnaGuidebookGenerator,
+    RitualGenerator,
+    RunescribingEditor,
+    ToolkitCardGeneratorApp,
+    ToolkitGuidebookGeneratorApp: MnaGuidebookGenerator,
+    ToolkitJsonTranslatorApp,
+    ToolkitRitualGeneratorApp: RitualGenerator,
+    ToolkitRunescribingEditorApp: RunescribingEditor,
+};

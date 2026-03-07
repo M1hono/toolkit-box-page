@@ -27,7 +27,7 @@
  */
 
 import { computed, onBeforeUnmount, ref, watchEffect } from "vue";
-import type { NavLink } from "../../../../utils/config/nav-types";
+import type { NavLink } from "../../../../utils/config/navTypes";
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Module-level (global) singleton state

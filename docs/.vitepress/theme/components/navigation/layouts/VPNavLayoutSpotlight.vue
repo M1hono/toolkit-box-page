@@ -2,7 +2,7 @@
     import { computed, onBeforeUnmount, ref } from "vue";
     import { onClickOutside } from "@vueuse/core";
     import VPLink from "vitepress/dist/client/theme-default/components/VPLink.vue";
-    import type { NavItem, NavLink } from "@utils/config/nav-types";
+    import type { NavItem, NavLink } from "@utils/config/navTypes";
     import { resolveAccessibleNavHref } from "@utils/vitepress/api/navigation/NavLinkAccessService";
     import { resolveAssetWithBase } from "@utils/vitepress/api/assetApi";
     import NavHoverPreviewSheet from "./NavHoverPreviewSheet.vue";
