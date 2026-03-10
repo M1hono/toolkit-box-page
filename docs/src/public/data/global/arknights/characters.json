@@ -21206,5 +21206,73 @@
     ],
     "charType": "npc",
     "dialogCount": 0
+  },
+  "avg_4037_demetr_1": {
+    "charId": "avg_4037_demetr_1",
+    "validVariants": [
+      "avg_4037_demetr_1#1$1",
+      "avg_4037_demetr_1#2$1",
+      "avg_4037_demetr_1#3$1",
+      "avg_4037_demetr_1#4$1",
+      "avg_4037_demetr_1#5$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2202_1": {
+    "charId": "avg_npc_2202_1",
+    "validVariants": [
+      "avg_npc_2202_1#1$1",
+      "avg_npc_2202_1#2$1",
+      "avg_npc_2202_1#3$1",
+      "avg_npc_2202_1#4$1",
+      "avg_npc_2202_1#5$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2201_1": {
+    "charId": "avg_npc_2201_1",
+    "validVariants": [
+      "avg_npc_2201_1#1$1",
+      "avg_npc_2201_1#2$1",
+      "avg_npc_2201_1#3$1",
+      "avg_npc_2201_1#4$1",
+      "avg_npc_2201_1#5$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4031_liesel_1": {
+    "charId": "avg_4031_liesel_1",
+    "validVariants": [
+      "avg_4031_liesel_1#1$1",
+      "avg_4031_liesel_1#2$1",
+      "avg_4031_liesel_1#3$1",
+      "avg_4031_liesel_1#4$1",
+      "avg_4031_liesel_1#5$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_757_1": {
+    "charId": "avg_npc_757_1",
+    "validVariants": [
+      "avg_npc_757_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_289_gyuki_1": {
+    "charId": "avg_289_gyuki_1",
+    "validVariants": [
+      "avg_289_gyuki_1#1$1",
+      "avg_289_gyuki_1#2$1",
+      "avg_289_gyuki_1#3$1",
+      "avg_289_gyuki_1#4$1",
+      "avg_289_gyuki_1#5$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
   }
 }
