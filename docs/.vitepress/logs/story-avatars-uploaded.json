@@ -812,5 +812,10 @@
     "status": "uploaded",
     "timestamp": 1770688282675,
     "charId": "avg_npc_2127_chun"
+  },
+  "arknights/avatars/trap_304_izdoc.png": {
+    "status": "skipped",
+    "timestamp": 1773105630469,
+    "reason": "404"
   }
 }
