@@ -7,8 +7,10 @@ import {
     getPaths,
     getLanguageLinks,
     autoDiscoverLanguageModules,
+    projectConfig,
 } from "../utils/config/project-config";
 import { templateCompilerOptions } from "@tresjs/core";
+import llmstxt from "vitepress-plugin-llms";
 
 import { DEFAULT_SIDEBAR_CACHE_DIR, sidebarPlugin } from "../utils/sidebar/";
 import { markdown } from "./markdown-plugins";
@@ -32,6 +34,24 @@ interface Contributor {
 
 function generateAvatarUrl(username: string) {
     return `https://github.com/${username}.png`;
+}
+
+function normalizeLlmsDomain(domain?: string) {
+    return domain?.replace(/\/+$/u, "") || undefined;
+}
+
+function createLlmsSettings() {
+    return {
+        ...projectConfig.llms,
+        domain: normalizeLlmsDomain(
+            projectConfig.llms?.domain || projectInfo.homepage,
+        ),
+        generateLLMsTxt: projectConfig.llms?.generateLLMsTxt ?? true,
+        generateLLMsFullTxt: projectConfig.llms?.generateLLMsFullTxt ?? true,
+        generateLLMFriendlyDocsForEachPage:
+            projectConfig.llms?.generateLLMFriendlyDocsForEachPage ?? true,
+        injectLLMHint: projectConfig.llms?.injectLLMHint ?? true,
+    };
 }
 
 export const commonConfig: UserConfig<DefaultTheme.Config> = {
@@ -222,6 +242,20 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
                     ),
                 },
                 {
+                    find: /^motion-dom$/,
+                    replacement: resolve(
+                        projectPaths.root,
+                        "node_modules/motion-dom/dist/es/index.mjs",
+                    ),
+                },
+                {
+                    find: /^motion-utils$/,
+                    replacement: resolve(
+                        projectPaths.root,
+                        "node_modules/motion-utils/dist/es/index.mjs",
+                    ),
+                },
+                {
                     find: "@utils",
                     replacement: resolve(projectPaths.vitepress, "utils"),
                 },
@@ -275,6 +309,10 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
                 "vitepress-plugin-tabs",
                 "shiki-magic-move",
                 "markdown-it-multiple-choice",
+                "motion-v",
+                "framer-motion",
+                "motion-dom",
+                "motion-utils",
             ],
             external: ["path", "fs", "fast-glob", "gray-matter"],
         },
@@ -309,6 +347,7 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
                       GitChangelogMarkdownSection(),
                   ]
                 : []),
+            ...(isFeatureEnabled("llms") ? [llmstxt(createLlmsSettings())] : []),
             // Conditionally load sidebar plugin based on autoSidebar feature flag
             ...(isFeatureEnabled("autoSidebar")
                 ? [

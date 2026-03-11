@@ -154,12 +154,22 @@ export const projectConfig: ProjectConfig = {
         // Global search toggle. Set false to force-disable search.
         search: false,
         gitChangelog: true,
+        llms: true,
         mermaid: true,
         drawio: false,
         markmap: false,
         multilingual: false,
         autoSidebar: true,
         editLink: false,
+    },
+
+    llms: {
+        domain: "https://tool.mihono.cn",
+        workDir: "en-US",
+        generateLLMsTxt: true,
+        generateLLMsFullTxt: true,
+        generateLLMFriendlyDocsForEachPage: true,
+        injectLLMHint: true,
     },
 
     /**
