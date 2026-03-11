@@ -3990,6 +3990,20 @@
     ]
   },
   {
+    "id": 605000,
+    "name": "Hassan of the Shining Star",
+    "originalName": "Hassan of the Shining Star",
+    "ruby": "Hassan of the Shining Star",
+    "className": "assassin",
+    "rarity": 4,
+    "searchTerms": [
+      "hassan of the shining star",
+      "hassan of the shining star",
+      "hassan of the shining star",
+      "assassin"
+    ]
+  },
+  {
     "id": 700100,
     "name": "Heracles",
     "originalName": "Heracles",
@@ -5190,6 +5204,20 @@
       "mysterious ranmaru x",
       "mysterious ranmaru x",
       "mysterious ranmaru x",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1101300,
+    "name": "Marie Antoinette (Alter)",
+    "originalName": "Marie Antoinette (Alter)",
+    "ruby": "Marie Antoinette (Alter)",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "marie antoinette (alter)",
+      "marie antoinette (alter)",
+      "marie antoinette (alter)",
       "avenger"
     ]
   },

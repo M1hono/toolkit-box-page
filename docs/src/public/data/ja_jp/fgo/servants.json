@@ -4774,19 +4774,19 @@
         "1064001": {
           "id": 1064001,
           "faceX": 911,
-          "faceY": 143,
+          "faceY": 109,
           "scale": 1
         },
         "1064002": {
           "id": 1064002,
-          "faceX": 911,
-          "faceY": 105,
+          "faceX": 906,
+          "faceY": 111,
           "scale": 1
         },
         "1064300": {
           "id": 1064300,
-          "faceX": 911,
-          "faceY": 114,
+          "faceX": 906,
+          "faceY": 111,
           "scale": 1
         }
       }
@@ -4849,6 +4849,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/1065000/1065000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/1065001/1065001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/1065002/1065002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "106600": {
+    "id": 106600,
+    "collectionNo": 466,
+    "name": "ジャック・ド・モレー",
+    "ruby": "ジャック・ド・モレー",
+    "className": "saber",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/1066000/1066000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/1066001/1066001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/1066002/1066002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "1066000": {
+          "id": 1066000,
+          "faceX": 371,
+          "faceY": 123,
+          "scale": 1
+        },
+        "1066001": {
+          "id": 1066001,
+          "faceX": 405,
+          "faceY": 123,
+          "scale": 1
+        },
+        "1066002": {
+          "id": 1066002,
+          "faceX": 878,
+          "faceY": 123,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/1066000/1066000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/1066001/1066001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/1066002/1066002_merged.png"
         },
         "costume": {},
         "story": {}
@@ -23083,8 +23133,8 @@
       "faceCoordinates": {
         "6007000": {
           "id": 6007000,
-          "faceX": 393,
-          "faceY": 135,
+          "faceX": 397,
+          "faceY": 118,
           "scale": 0.98
         },
         "6007001": {
@@ -23101,8 +23151,8 @@
         },
         "6007003": {
           "id": 6007003,
-          "faceX": 506,
-          "faceY": 134,
+          "faceX": 514,
+          "faceY": 112,
           "scale": 0.98
         }
       }
@@ -23430,8 +23480,8 @@
       "faceCoordinates": {
         "6012000": {
           "id": 6012000,
-          "faceX": 431,
-          "faceY": 155,
+          "faceX": 428,
+          "faceY": 154,
           "scale": 0.961
         },
         "6012001": {
@@ -23533,8 +23583,8 @@
         },
         "6013002": {
           "id": 6013002,
-          "faceX": 354,
-          "faceY": 163,
+          "faceX": 358,
+          "faceY": 159,
           "scale": 0.968
         },
         "98109300": {
@@ -38657,8 +38707,8 @@
         },
         "25010001": {
           "id": 25010001,
-          "faceX": 395,
-          "faceY": 190,
+          "faceX": 388,
+          "faceY": 153,
           "scale": 1
         },
         "25010002": {
