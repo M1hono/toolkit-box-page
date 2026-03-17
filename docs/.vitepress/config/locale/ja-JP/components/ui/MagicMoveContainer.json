@@ -1,3 +1,6 @@
 {
-    "loading": "読み込み中..."
+    "lastUpdated": "Last updated on: {date}",
+    "pageViews": "Page views: {count}",
+    "readingTime": "Reading time: {time} minutes",
+    "wordCount": "Word count: {count} words"
 }
