@@ -34721,6 +34721,154 @@
       }
     }
   },
+  "1101700": {
+    "id": 1101700,
+    "collectionNo": 409,
+    "name": "Monte Cristo",
+    "ruby": "Monte Cristo",
+    "className": "avenger",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/11017000/11017000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/11017001/11017001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/11017002/11017002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098289100": "https://static.atlasacademy.io/NA/CharaFigure/1098289100/1098289100_merged.png",
+          "1098289110": "https://static.atlasacademy.io/NA/CharaFigure/1098289110/1098289110_merged.png",
+          "1098289200": "https://static.atlasacademy.io/NA/CharaFigure/1098289200/1098289200_merged.png",
+          "1098289210": "https://static.atlasacademy.io/NA/CharaFigure/1098289210/1098289210_merged.png",
+          "1098289300": "https://static.atlasacademy.io/NA/CharaFigure/1098289300/1098289300_merged.png",
+          "1098289310": "https://static.atlasacademy.io/NA/CharaFigure/1098289310/1098289310_merged.png",
+          "1098289400": "https://static.atlasacademy.io/NA/CharaFigure/1098289400/1098289400_merged.png",
+          "1098289410": "https://static.atlasacademy.io/NA/CharaFigure/1098289410/1098289410_merged.png",
+          "1098291100": "https://static.atlasacademy.io/NA/CharaFigure/1098291100/1098291100_merged.png",
+          "1098291200": "https://static.atlasacademy.io/NA/CharaFigure/1098291200/1098291200_merged.png",
+          "1098291300": "https://static.atlasacademy.io/NA/CharaFigure/1098291300/1098291300_merged.png",
+          "1098294200": "https://static.atlasacademy.io/NA/CharaFigure/1098294200/1098294200_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "11017000": {
+          "id": 11017000,
+          "faceX": 400,
+          "faceY": 163,
+          "scale": 1
+        },
+        "11017001": {
+          "id": 11017001,
+          "faceX": 921,
+          "faceY": 161,
+          "scale": 1
+        },
+        "11017002": {
+          "id": 11017002,
+          "faceX": 895,
+          "faceY": 163,
+          "scale": 1
+        },
+        "1098289100": {
+          "id": 1098289100,
+          "faceX": 399,
+          "faceY": 166,
+          "scale": 1
+        },
+        "1098289110": {
+          "id": 1098289110,
+          "faceX": 400,
+          "faceY": 163,
+          "scale": 1
+        },
+        "1098289200": {
+          "id": 1098289200,
+          "faceX": 954,
+          "faceY": 155,
+          "scale": 1
+        },
+        "1098289210": {
+          "id": 1098289210,
+          "faceX": 954,
+          "faceY": 155,
+          "scale": 1
+        },
+        "1098289300": {
+          "id": 1098289300,
+          "faceX": 409,
+          "faceY": 161,
+          "scale": 1
+        },
+        "1098289310": {
+          "id": 1098289310,
+          "faceX": 921,
+          "faceY": 161,
+          "scale": 1
+        },
+        "1098289400": {
+          "id": 1098289400,
+          "faceX": 895,
+          "faceY": 163,
+          "scale": 1
+        },
+        "1098289410": {
+          "id": 1098289410,
+          "faceX": 895,
+          "faceY": 163,
+          "scale": 1
+        },
+        "1098291100": {
+          "id": 1098291100,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098291200": {
+          "id": 1098291200,
+          "faceX": 897,
+          "faceY": 160,
+          "scale": 1
+        },
+        "1098291300": {
+          "id": 1098291300,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098294200": {
+          "id": 1098294200,
+          "faceX": 1015,
+          "faceY": 195,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/11017000/11017000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/11017001/11017001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/11017002/11017002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098289100": "https://static.atlasacademy.io/NA/CharaFigure/1098289100/1098289100_merged.png",
+          "1098289110": "https://static.atlasacademy.io/NA/CharaFigure/1098289110/1098289110_merged.png",
+          "1098289200": "https://static.atlasacademy.io/NA/CharaFigure/1098289200/1098289200_merged.png",
+          "1098289210": "https://static.atlasacademy.io/NA/CharaFigure/1098289210/1098289210_merged.png",
+          "1098289300": "https://static.atlasacademy.io/NA/CharaFigure/1098289300/1098289300_merged.png",
+          "1098289310": "https://static.atlasacademy.io/NA/CharaFigure/1098289310/1098289310_merged.png",
+          "1098289400": "https://static.atlasacademy.io/NA/CharaFigure/1098289400/1098289400_merged.png",
+          "1098289410": "https://static.atlasacademy.io/NA/CharaFigure/1098289410/1098289410_merged.png",
+          "1098291100": "https://static.atlasacademy.io/NA/CharaFigure/1098291100/1098291100_merged.png",
+          "1098291200": "https://static.atlasacademy.io/NA/CharaFigure/1098291200/1098291200_merged.png",
+          "1098291300": "https://static.atlasacademy.io/NA/CharaFigure/1098291300/1098291300_merged.png",
+          "1098294200": "https://static.atlasacademy.io/NA/CharaFigure/1098294200/1098294200_merged.png"
+        }
+      }
+    }
+  },
   "1101800": {
     "id": 1101800,
     "collectionNo": 403,
@@ -36983,6 +37131,130 @@
         "story": {
           "1098278200": "https://static.atlasacademy.io/NA/CharaFigure/1098278200/1098278200_merged.png",
           "1098278210": "https://static.atlasacademy.io/NA/CharaFigure/1098278210/1098278210_merged.png"
+        }
+      }
+    }
+  },
+  "2800700": {
+    "id": 2800700,
+    "collectionNo": 410,
+    "name": "Alessandro di Cagliostro",
+    "ruby": "Alessandro di Cagliostro",
+    "className": "pretender",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/28007000/28007000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/28007001/28007001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/28007002/28007002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098289500": "https://static.atlasacademy.io/NA/CharaFigure/1098289500/1098289500_merged.png",
+          "1098289510": "https://static.atlasacademy.io/NA/CharaFigure/1098289510/1098289510_merged.png",
+          "1098289520": "https://static.atlasacademy.io/NA/CharaFigure/1098289520/1098289520_merged.png",
+          "1098289530": "https://static.atlasacademy.io/NA/CharaFigure/1098289530/1098289530_merged.png",
+          "1098293100": "https://static.atlasacademy.io/NA/CharaFigure/1098293100/1098293100_merged.png",
+          "1098293900": "https://static.atlasacademy.io/NA/CharaFigure/1098293900/1098293900_merged.png",
+          "1098293910": "https://static.atlasacademy.io/NA/CharaFigure/1098293910/1098293910_merged.png",
+          "1098293920": "https://static.atlasacademy.io/NA/CharaFigure/1098293920/1098293920_merged.png",
+          "1098294100": "https://static.atlasacademy.io/NA/CharaFigure/1098294100/1098294100_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "28007000": {
+          "id": 28007000,
+          "faceX": 913,
+          "faceY": 151,
+          "scale": 1
+        },
+        "28007001": {
+          "id": 28007001,
+          "faceX": 911,
+          "faceY": 151,
+          "scale": 1
+        },
+        "28007002": {
+          "id": 28007002,
+          "faceX": 897,
+          "faceY": 149,
+          "scale": 1
+        },
+        "1098289500": {
+          "id": 1098289500,
+          "faceX": 384,
+          "faceY": 149,
+          "scale": 1
+        },
+        "1098289510": {
+          "id": 1098289510,
+          "faceX": 384,
+          "faceY": 153,
+          "scale": 1
+        },
+        "1098289520": {
+          "id": 1098289520,
+          "faceX": 384,
+          "faceY": 149,
+          "scale": 1
+        },
+        "1098289530": {
+          "id": 1098289530,
+          "faceX": 381,
+          "faceY": 175,
+          "scale": 1
+        },
+        "1098293100": {
+          "id": 1098293100,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098293900": {
+          "id": 1098293900,
+          "faceX": 913,
+          "faceY": 151,
+          "scale": 1
+        },
+        "1098293910": {
+          "id": 1098293910,
+          "faceX": 911,
+          "faceY": 151,
+          "scale": 1
+        },
+        "1098293920": {
+          "id": 1098293920,
+          "faceX": 897,
+          "faceY": 149,
+          "scale": 1
+        },
+        "1098294100": {
+          "id": 1098294100,
+          "faceX": 383,
+          "faceY": 210,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/28007000/28007000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/28007001/28007001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/28007002/28007002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098289500": "https://static.atlasacademy.io/NA/CharaFigure/1098289500/1098289500_merged.png",
+          "1098289510": "https://static.atlasacademy.io/NA/CharaFigure/1098289510/1098289510_merged.png",
+          "1098289520": "https://static.atlasacademy.io/NA/CharaFigure/1098289520/1098289520_merged.png",
+          "1098289530": "https://static.atlasacademy.io/NA/CharaFigure/1098289530/1098289530_merged.png",
+          "1098293100": "https://static.atlasacademy.io/NA/CharaFigure/1098293100/1098293100_merged.png",
+          "1098293900": "https://static.atlasacademy.io/NA/CharaFigure/1098293900/1098293900_merged.png",
+          "1098293910": "https://static.atlasacademy.io/NA/CharaFigure/1098293910/1098293910_merged.png",
+          "1098293920": "https://static.atlasacademy.io/NA/CharaFigure/1098293920/1098293920_merged.png",
+          "1098294100": "https://static.atlasacademy.io/NA/CharaFigure/1098294100/1098294100_merged.png"
         }
       }
     }

@@ -5264,6 +5264,20 @@
     ]
   },
   {
+    "id": 1101700,
+    "name": "Monte Cristo",
+    "originalName": "Monte Cristo",
+    "ruby": "Monte Cristo",
+    "className": "avenger",
+    "rarity": 5,
+    "searchTerms": [
+      "monte cristo",
+      "monte cristo",
+      "monte cristo",
+      "avenger"
+    ]
+  },
+  {
     "id": 1101800,
     "name": "Minamoto-no-Raikou/Ushi Gozen",
     "originalName": "Minamoto-no-Raikou/Ushi Gozen",
@@ -5624,6 +5638,20 @@
       "cait cú mikocer",
       "cait cú mikocer",
       "baobhan sith",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2800700,
+    "name": "Alessandro di Cagliostro",
+    "originalName": "Alessandro di Cagliostro",
+    "ruby": "Alessandro di Cagliostro",
+    "className": "pretender",
+    "rarity": 4,
+    "searchTerms": [
+      "alessandro di cagliostro",
+      "alessandro di cagliostro",
+      "alessandro di cagliostro",
       "pretender"
     ]
   },
