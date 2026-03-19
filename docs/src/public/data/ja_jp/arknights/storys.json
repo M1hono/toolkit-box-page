@@ -16070,6 +16070,7 @@
   ],
   "avg_405_absin_1": [
     "obt/main/level_main_15-02_beg.txt",
+    "obt/main/level_st_16-02.txt",
     "obt/memory/story_absin_1_1.txt"
   ],
   "avg_4093_frston_1": [
@@ -16085,7 +16086,8 @@
     "obt/main/level_main_15-13_beg.txt",
     "obt/main/level_main_15-14_end.txt",
     "obt/main/level_main_15-16_beg.txt",
-    "obt/main/level_main_15-18_end.txt"
+    "obt/main/level_main_15-18_end.txt",
+    "obt/main/level_main_16-03_beg.txt"
   ],
   "avg_npc_1730_1": [
     "obt/main/level_main_15-04_beg.txt",
@@ -16097,7 +16099,17 @@
     "obt/main/level_main_15-15_end.txt",
     "obt/main/level_main_15-15_end_variation01.txt",
     "obt/main/level_main_15-15_end_variation02.txt",
-    "obt/main/level_main_15-16_beg.txt"
+    "obt/main/level_main_15-16_beg.txt",
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-11_end.txt",
+    "obt/main/level_main_16-13_beg.txt",
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_st_16-02.txt"
   ],
   "avg_281_popka_1": [
     "obt/main/level_main_15-04_beg.txt",
@@ -16264,7 +16276,8 @@
   ],
   "avg_440_pinecn_1": [
     "obt/memory/story_bibeak_2_1.txt",
-    "obt/memory/story_pinecn_1_1.txt"
+    "obt/memory/story_pinecn_1_1.txt",
+    "obt/memory/story_pinecn_2_1.txt"
   ],
   "avg_325_bison_1": [
     "obt/memory/story_bison_1_1.txt"
@@ -16468,7 +16481,8 @@
     "obt/memory/story_indigo_1_1.txt"
   ],
   "avg_214_kafka_1": [
-    "obt/memory/story_kafka_1_1.txt"
+    "obt/memory/story_kafka_1_1.txt",
+    "obt/memory/story_pinecn_2_1.txt"
   ],
   "avg_499_kaitou_1": [
     "obt/memory/story_kaitou_1_1.txt"
@@ -17118,5 +17132,174 @@
   ],
   "avg_npc_1641_1": [
     "obt/memory/story_wscoot_1_1.txt"
+  ],
+  "avg_npc_1966_1": [
+    "obt/main/level_main_16-01_beg.txt",
+    "obt/main/level_main_16-04_beg.txt",
+    "obt/main/level_main_16-04_end.txt",
+    "obt/main/level_main_16-05_beg.txt",
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-11_end.txt",
+    "obt/main/level_main_16-13_beg.txt",
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_st_16-01.txt",
+    "obt/main/level_st_16-02.txt"
+  ],
+  "avg_npc_1972_1": [
+    "obt/main/level_main_16-01_beg.txt",
+    "obt/main/level_main_16-03_beg.txt"
+  ],
+  "avg_4207_branch_1": [
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-09_end.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-11_end.txt",
+    "obt/main/level_main_16-13_beg.txt",
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_16-18_end.txt"
+  ],
+  "avg_npc_1964_1": [
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-11_end.txt",
+    "obt/main/level_main_16-16_beg.txt"
+  ],
+  "avg_npc_1963_1": [
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-05_beg.txt",
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-09_end.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-14_beg.txt",
+    "obt/main/level_main_16-16_beg.txt"
+  ],
+  "avg_npc_1969_1": [
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-04_end.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-09_beg.txt",
+    "obt/main/level_main_16-09_end.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-13_beg.txt",
+    "obt/main/level_main_16-14_beg.txt",
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_spst_16-02.txt",
+    "obt/main/level_spst_16-04.txt"
+  ],
+  "avg_npc_1967_1": [
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-09_end.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-14_beg.txt",
+    "obt/main/level_main_16-16_beg.txt"
+  ],
+  "avg_npc_1971_1": [
+    "obt/main/level_main_16-03_beg.txt",
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-09_end.txt",
+    "obt/main/level_main_16-10_beg.txt"
+  ],
+  "avg_npc_1962_1": [
+    "obt/main/level_main_16-04_beg.txt",
+    "obt/main/level_main_16-15_beg.txt",
+    "obt/main/level_main_16-17_beg.txt"
+  ],
+  "avg_npc_1970_1": [
+    "obt/main/level_main_16-04_end.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-09_beg.txt",
+    "obt/main/level_main_16-10_beg.txt",
+    "obt/main/level_main_16-14_beg.txt",
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_spst_16-01.txt",
+    "obt/main/level_spst_16-02.txt"
+  ],
+  "avg_4204_mantra_1": [
+    "obt/main/level_main_16-04_end.txt",
+    "obt/main/level_main_16-05_beg.txt",
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-11_end.txt",
+    "obt/main/level_main_16-13_beg.txt",
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_st_16-01.txt"
+  ],
+  "avg_4208_wintim_1": [
+    "obt/main/level_main_16-04_end.txt",
+    "obt/main/level_main_16-05_beg.txt",
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_16-08_end.txt",
+    "obt/main/level_main_16-12_beg.txt",
+    "obt/main/level_main_16-13_beg.txt",
+    "obt/main/level_main_16-15_beg.txt"
+  ],
+  "avg_npc_1560_1": [
+    "obt/main/level_main_16-06_end.txt",
+    "obt/main/level_main_16-18_end.txt"
+  ],
+  "avg_npc_1974_1": [
+    "obt/main/level_main_16-07_beg.txt"
+  ],
+  "avg_npc_1975_1": [
+    "obt/main/level_main_16-07_beg.txt"
+  ],
+  "avg_npc_1977_1": [
+    "obt/main/level_main_16-15_beg.txt",
+    "obt/main/level_spst_16-03.txt"
+  ],
+  "avg_npc_1973_1": [
+    "obt/main/level_main_16-16_beg.txt"
+  ],
+  "avg_npc_1965_1": [
+    "obt/main/level_main_16-17_beg.txt"
+  ],
+  "avg_npc_1968_1": [
+    "obt/main/level_spst_16-01.txt"
+  ],
+  "avg_npc_1983_1": [
+    "obt/main/level_spst_16-01.txt"
+  ],
+  "avg_npc_1978_1": [
+    "obt/main/level_spst_16-02.txt",
+    "obt/main/level_spst_16-03.txt"
+  ],
+  "avg_npc_1976_1": [
+    "obt/main/level_spst_16-03.txt",
+    "obt/memory/story_mantra_1_1.txt"
+  ],
+  "avg_npc_1982_1": [
+    "obt/main/level_st_16-01.txt",
+    "obt/memory/story_mantra_1_1.txt"
+  ],
+  "avg_npc_1981_1": [
+    "obt/main/level_st_16-01.txt"
+  ],
+  "avg_npc_1984_1": [
+    "obt/main/level_st_16-02.txt"
+  ],
+  "avg_npc_1979_1": [
+    "obt/main/level_st_16-02.txt"
+  ],
+  "avg_npc_1796_1": [
+    "obt/memory/story_pinecn_2_1.txt"
   ]
 }
