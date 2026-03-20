@@ -1178,6 +1178,8 @@
       "Devout Follower",
       "Local Villager",
       "Old Man",
+      "Friendly Villager",
+      "Surviving Villager",
       "Old Villager",
       "Nervous Old Man",
       "Calm Old Man",
@@ -1188,6 +1190,8 @@
       "Devout Follower",
       "Local Villager",
       "Old Man",
+      "Friendly Villager",
+      "Surviving Villager",
       "Old Villager",
       "Nervous Old Man",
       "Calm Old Man",
@@ -1309,6 +1313,7 @@
       "Astute Noble",
       "Timid Citizen",
       "Baird",
+      "Eager Man",
       "Representative Cooper",
       "Laid-Back Baron",
       "Cowell",
@@ -1324,6 +1329,7 @@
       "Anxious Patient",
       "Local Judge B",
       "Senior Project Manager",
+      "Film Studio Boss",
       "Victorian Traveler",
       "Old Judge"
     ],
@@ -1344,6 +1350,7 @@
       "Astute Noble",
       "Timid Citizen",
       "Baird",
+      "Eager Man",
       "Representative Cooper",
       "Laid-Back Baron",
       "Cowell",
@@ -1359,6 +1366,7 @@
       "Anxious Patient",
       "Local Judge B",
       "Senior Project Manager",
+      "Film Studio Boss",
       "Victorian Traveler",
       "Old Judge"
     ],
@@ -2039,6 +2047,7 @@
       "Noble Lady",
       "Noble?",
       "Exhausted Viscount",
+      "Picky Woman",
       "Reserved Viscount",
       "Beautiful Noble",
       "Kind-Faced Noble",
@@ -2065,6 +2074,7 @@
       "Noble Lady",
       "Noble?",
       "Exhausted Viscount",
+      "Picky Woman",
       "Reserved Viscount",
       "Beautiful Noble",
       "Kind-Faced Noble",
@@ -2652,6 +2662,7 @@
       "Knight Scout",
       "Red Wine Intern Journalist",
       "Messenger",
+      "Careless Social Worker",
       "Man in Reporter Garb",
       "Rafał",
       "Police Officer",
@@ -2689,6 +2700,7 @@
       "Knight Scout",
       "Red Wine Intern Journalist",
       "Messenger",
+      "Careless Social Worker",
       "Man in Reporter Garb",
       "Rafał",
       "Police Officer",
@@ -2770,6 +2782,7 @@
       "Manager",
       "Red Wine Senior Editor",
       "Reporter",
+      "Senator's Aide",
       "Office Clerk",
       "Unremarkable Man",
       "HR Employee",
@@ -2805,6 +2818,7 @@
       "Manager",
       "Red Wine Senior Editor",
       "Reporter",
+      "Senator's Aide",
       "Office Clerk",
       "Unremarkable Man",
       "HR Employee",
@@ -3283,6 +3297,7 @@
     "speakerNames": [
       "Enthusiastic Villager",
       "Young Bartender",
+      "Happy Peasant Woman",
       "Kazimierzian Girl",
       "Basket-holding Girl",
       "Veggie",
@@ -3297,6 +3312,7 @@
     "searchNames": [
       "Enthusiastic Villager",
       "Young Bartender",
+      "Happy Peasant Woman",
       "Kazimierzian Girl",
       "Basket-holding Girl",
       "Veggie",
@@ -4624,14 +4640,28 @@
       "'Captain'",
       "Ursus Officer",
       "Ursus Soldier",
-      "Infected Patrol Unit"
+      "Infected Patrol Unit",
+      "Agitated Patrol Unit",
+      "Doubtful Patrol Unit",
+      "Lax Patrol Unit",
+      "Patrol Unit Captain",
+      "Frightened Patrol Unit",
+      "Soldier",
+      "Gendarmerie"
     ],
     "searchNames": [
       "'Soldier'",
       "'Captain'",
       "Ursus Officer",
       "Ursus Soldier",
-      "Infected Patrol Unit"
+      "Infected Patrol Unit",
+      "Agitated Patrol Unit",
+      "Doubtful Patrol Unit",
+      "Lax Patrol Unit",
+      "Patrol Unit Captain",
+      "Frightened Patrol Unit",
+      "Soldier",
+      "Gendarmerie"
     ],
     "displayName": "'Soldier'"
   },
@@ -4639,6 +4669,9 @@
     "speakerNames": [
       "An Infected Refugee",
       "Infected",
+      "Sick Miner",
+      "Despairing Infected",
+      "Flustered Infected",
       "Infected Peddler",
       "Timid Resident",
       "Young Man",
@@ -4648,6 +4681,9 @@
     "searchNames": [
       "An Infected Refugee",
       "Infected",
+      "Sick Miner",
+      "Despairing Infected",
+      "Flustered Infected",
       "Infected Peddler",
       "Timid Resident",
       "Young Man",
@@ -6064,11 +6100,11 @@
       "Ursus Farmer",
       "Reunion Member",
       "Senile Old Man",
+      "Villager",
       "Worn-out Infected",
       "Stranger",
       "Muscular Man",
       "Shadow",
-      "Villager",
       "Raymond",
       "Angry Youth",
       "Uncle Pickett",
@@ -6083,11 +6119,11 @@
       "Ursus Farmer",
       "Reunion Member",
       "Senile Old Man",
+      "Villager",
       "Worn-out Infected",
       "Stranger",
       "Muscular Man",
       "Shadow",
-      "Villager",
       "Raymond",
       "Angry Youth",
       "Uncle Pickett",
@@ -6241,6 +6277,8 @@
       "Driver",
       "Police Officer",
       "Deliveryman",
+      "Anxious Patient",
+      "Julio",
       "Humble Secretary",
       "Millais",
       "Rude Reporter",
@@ -6262,6 +6300,8 @@
       "Driver",
       "Police Officer",
       "Deliveryman",
+      "Anxious Patient",
+      "Julio",
       "Humble Secretary",
       "Millais",
       "Rude Reporter",
@@ -6883,6 +6923,7 @@
       "Logistics Operator",
       "Rhodes Island Messenger",
       "Rhodes Island Landship Operator A",
+      "Engineering Operator C",
       "Human Resources Operator",
       "Rhodes Island Cargo Manager"
     ],
@@ -6896,6 +6937,7 @@
       "Logistics Operator",
       "Rhodes Island Messenger",
       "Rhodes Island Landship Operator A",
+      "Engineering Operator C",
       "Human Resources Operator",
       "Rhodes Island Cargo Manager"
     ],
@@ -7468,6 +7510,7 @@
       "Cheerful Former Desert Bandit",
       "Caravan Head",
       "Calm Woman",
+      "Visitor 05",
       "Worried Villager",
       "Roaming Doctor",
       "Grimed Woman",
@@ -7479,6 +7522,7 @@
       "Cheerful Former Desert Bandit",
       "Caravan Head",
       "Calm Woman",
+      "Visitor 05",
       "Worried Villager",
       "Roaming Doctor",
       "Grimed Woman",
@@ -8442,13 +8486,15 @@
       "'Emperor's Blade'",
       "Grand Duke Vanya",
       "Royal Guard?",
-      "'Emperors' Blade'"
+      "'Emperors' Blade'",
+      "Black Snow"
     ],
     "searchNames": [
       "'Emperor's Blade'",
       "Grand Duke Vanya",
       "Royal Guard?",
-      "'Emperors' Blade'"
+      "'Emperors' Blade'",
+      "Black Snow"
     ],
     "displayName": "'Emperor's Blade'"
   },
@@ -9595,6 +9641,7 @@
       "Andante",
       "Woman in Operator Attire",
       "Flustered Operator",
+      "Rhodes Island Medic Operator",
       "Medic Operator",
       "Logistics Operator",
       "Meticulous Operator",
@@ -9605,6 +9652,7 @@
       "Andante",
       "Woman in Operator Attire",
       "Flustered Operator",
+      "Rhodes Island Medic Operator",
       "Medic Operator",
       "Logistics Operator",
       "Meticulous Operator",
@@ -12499,6 +12547,7 @@
       "Gentle Female Voice",
       "Helpless Plate Resident",
       "Jessica",
+      "Nadie",
       "Chatty Female Patient",
       "Sofia the Former Maid"
     ],
@@ -12509,6 +12558,7 @@
       "Gentle Female Voice",
       "Helpless Plate Resident",
       "Jessica",
+      "Nadie",
       "Chatty Female Patient",
       "Sofia the Former Maid"
     ],
@@ -13634,6 +13684,9 @@
       "Elderly Woman",
       "Old Granny",
       "Old Woman",
+      "Hunched Old Man",
+      "Worried Old Woman",
+      "Timid Old Woman",
       "Old Lady",
       "Grandmother",
       "Ursus Civilian",
@@ -13645,6 +13698,9 @@
       "Elderly Woman",
       "Old Granny",
       "Old Woman",
+      "Hunched Old Man",
+      "Worried Old Woman",
+      "Timid Old Woman",
       "Old Lady",
       "Grandmother",
       "Ursus Civilian",
@@ -13914,10 +13970,12 @@
   },
   "avg_npc_1300_1": {
     "speakerNames": [
-      "Mantra"
+      "Mantra",
+      "Target"
     ],
     "searchNames": [
-      "Mantra"
+      "Mantra",
+      "Target"
     ],
     "displayName": "Mantra"
   },
@@ -14830,11 +14888,13 @@
     "speakerNames": [
       "Curious Operator C",
       "Rhodes Island Engineering Operator",
+      "Engineering Operator B",
       "Engineering Operator"
     ],
     "searchNames": [
       "Curious Operator C",
       "Rhodes Island Engineering Operator",
+      "Engineering Operator B",
       "Engineering Operator"
     ],
     "displayName": "Curious Operator C"
@@ -14910,10 +14970,12 @@
   },
   "avg_487_bobb_1": {
     "speakerNames": [
-      "Eliseo"
+      "Eliseo",
+      "Senator's Aide"
     ],
     "searchNames": [
-      "Eliseo"
+      "Eliseo",
+      "Senator's Aide"
     ],
     "displayName": "Eliseo"
   },
@@ -15433,10 +15495,12 @@
   },
   "avg_1502_crosly_1": {
     "speakerNames": [
-      "Lyudmila"
+      "Lyudmila",
+      "Crownslayer"
     ],
     "searchNames": [
-      "Lyudmila"
+      "Lyudmila",
+      "Crownslayer"
     ],
     "displayName": "Lyudmila"
   },
@@ -17148,10 +17212,14 @@
   },
   "avg_4191_tippi_1": {
     "speakerNames": [
-      "Tippi"
+      "Tippi",
+      "Script Supervisor & Tippi",
+      "Matthew & Tippi"
     ],
     "searchNames": [
-      "Tippi"
+      "Tippi",
+      "Script Supervisor & Tippi",
+      "Matthew & Tippi"
     ],
     "displayName": "Tippi"
   },
@@ -17175,19 +17243,27 @@
   },
   "avg_npc_1844_1": {
     "speakerNames": [
-      "Camera Assistant"
+      "Camera Assistant",
+      "Cinematographer",
+      "Matthew"
     ],
     "searchNames": [
-      "Camera Assistant"
+      "Camera Assistant",
+      "Cinematographer",
+      "Matthew"
     ],
     "displayName": "Camera Assistant"
   },
   "avg_npc_1846_1": {
     "speakerNames": [
-      "Unlucky Stagehand"
+      "Unlucky Stagehand",
+      "Script Supervisor",
+      "Eileen"
     ],
     "searchNames": [
-      "Unlucky Stagehand"
+      "Unlucky Stagehand",
+      "Script Supervisor",
+      "Eileen"
     ],
     "displayName": "Unlucky Stagehand"
   },
@@ -18553,10 +18629,12 @@
   },
   "avg_405_absin_1": {
     "speakerNames": [
-      "Absinthe"
+      "Absinthe",
+      "Rosa"
     ],
     "searchNames": [
-      "Absinthe"
+      "Absinthe",
+      "Rosa"
     ],
     "displayName": "Absinthe"
   },
@@ -18581,11 +18659,13 @@
   "avg_npc_1730_1": {
     "speakerNames": [
       "Communicator",
-      "Raidian"
+      "Raidian",
+      "Rhodes Island Medic Operator"
     ],
     "searchNames": [
       "Communicator",
-      "Raidian"
+      "Raidian",
+      "Rhodes Island Medic Operator"
     ],
     "displayName": "Communicator"
   },
@@ -18673,14 +18753,16 @@
       "Engineering Operator",
       "Engineering Department Intern Operator",
       "Measuring Cup",
-      "Lunacub"
+      "Lunacub",
+      "Engineering Operator A"
     ],
     "searchNames": [
       "Driver",
       "Engineering Operator",
       "Engineering Department Intern Operator",
       "Measuring Cup",
-      "Lunacub"
+      "Lunacub",
+      "Engineering Operator A"
     ],
     "displayName": "Driver"
   },
@@ -19610,12 +19692,14 @@
     "speakerNames": [
       "Kafka",
       "Silence",
-      "Laurens"
+      "Laurens",
+      "Pinecone / Kafka"
     ],
     "searchNames": [
       "Kafka",
       "Silence",
-      "Laurens"
+      "Laurens",
+      "Pinecone / Kafka"
     ],
     "displayName": "Kafka"
   },
@@ -20781,10 +20865,12 @@
   },
   "avg_npc_1260_1": {
     "speakerNames": [
-      "Assistant"
+      "Assistant",
+      "Pure Heart Medical HR Staff"
     ],
     "searchNames": [
-      "Assistant"
+      "Assistant",
+      "Pure Heart Medical HR Staff"
     ],
     "displayName": "Assistant"
   },
@@ -20864,5 +20950,340 @@
       "Aunt Wen"
     ],
     "displayName": "Aunt Wen"
+  },
+  "avg_npc_1966_1": {
+    "speakerNames": [
+      "Eloysius",
+      "Imperial Guard?",
+      "Raidian",
+      "Silent Soldier"
+    ],
+    "searchNames": [
+      "Eloysius",
+      "Imperial Guard?",
+      "Raidian",
+      "Silent Soldier"
+    ],
+    "displayName": "Eloysius"
+  },
+  "avg_npc_1972_1": {
+    "speakerNames": [
+      "Far North Soldier",
+      "Hesitant Soldier"
+    ],
+    "searchNames": [
+      "Far North Soldier",
+      "Hesitant Soldier"
+    ],
+    "displayName": "Far North Soldier"
+  },
+  "avg_4207_branch_1": {
+    "speakerNames": [
+      "Young Miner",
+      "Vetochki",
+      "Young Infected"
+    ],
+    "searchNames": [
+      "Young Miner",
+      "Vetochki",
+      "Young Infected"
+    ],
+    "displayName": "Young Miner"
+  },
+  "avg_npc_1964_1": {
+    "speakerNames": [
+      "Elderly Woman",
+      "Piercing Sound",
+      "Old Woman",
+      "Nadia",
+      "'Babushka'",
+      "Vetochki",
+      "Mantra"
+    ],
+    "searchNames": [
+      "Elderly Woman",
+      "Piercing Sound",
+      "Old Woman",
+      "Nadia",
+      "'Babushka'",
+      "Vetochki",
+      "Mantra"
+    ],
+    "displayName": "Elderly Woman"
+  },
+  "avg_npc_1963_1": {
+    "speakerNames": [
+      "Youthful Miner",
+      "Rankin",
+      "Rankin?"
+    ],
+    "searchNames": [
+      "Youthful Miner",
+      "Rankin",
+      "Rankin?"
+    ],
+    "displayName": "Youthful Miner"
+  },
+  "avg_npc_1969_1": {
+    "speakerNames": [
+      "Excited Miner",
+      "Angry Miner",
+      "Calmed Miner",
+      "Hesitant Miner",
+      "Terrified Miner",
+      "Tired Miner",
+      "Sad Miner",
+      "Miner Scout",
+      "Anxious Miner",
+      "Miner C & Miner D",
+      "Staunch Miner",
+      "Pious Miner",
+      "Miner",
+      "Timid Miner",
+      "Skeptical Miner",
+      "Infected Miner"
+    ],
+    "searchNames": [
+      "Excited Miner",
+      "Angry Miner",
+      "Calmed Miner",
+      "Hesitant Miner",
+      "Terrified Miner",
+      "Tired Miner",
+      "Sad Miner",
+      "Miner Scout",
+      "Anxious Miner",
+      "Miner C & Miner D",
+      "Staunch Miner",
+      "Pious Miner",
+      "Miner",
+      "Timid Miner",
+      "Skeptical Miner",
+      "Infected Miner"
+    ],
+    "displayName": "Excited Miner"
+  },
+  "avg_npc_1967_1": {
+    "speakerNames": [
+      "Nikto"
+    ],
+    "searchNames": [
+      "Nikto"
+    ],
+    "displayName": "Nikto"
+  },
+  "avg_npc_1971_1": {
+    "speakerNames": [
+      "Hawley",
+      "Twisted Figure"
+    ],
+    "searchNames": [
+      "Hawley",
+      "Twisted Figure"
+    ],
+    "displayName": "Hawley"
+  },
+  "avg_npc_1962_1": {
+    "speakerNames": [
+      "Grand Duchess Elisabeth"
+    ],
+    "searchNames": [
+      "Grand Duchess Elisabeth"
+    ],
+    "displayName": "Grand Duchess Elisabeth"
+  },
+  "avg_npc_1970_1": {
+    "speakerNames": [
+      "Anxious Miner",
+      "Jolly Miner",
+      "Calm Miner",
+      "Young Miner",
+      "Dazed Miner",
+      "Worried Miner",
+      "Curious Miner",
+      "Miner",
+      "Fearful Miner"
+    ],
+    "searchNames": [
+      "Anxious Miner",
+      "Jolly Miner",
+      "Calm Miner",
+      "Young Miner",
+      "Dazed Miner",
+      "Worried Miner",
+      "Curious Miner",
+      "Miner",
+      "Fearful Miner"
+    ],
+    "displayName": "Anxious Miner"
+  },
+  "avg_4204_mantra_1": {
+    "speakerNames": [
+      "Mantra",
+      "Mantra?"
+    ],
+    "searchNames": [
+      "Mantra",
+      "Mantra?"
+    ],
+    "displayName": "Mantra"
+  },
+  "avg_4208_wintim_1": {
+    "speakerNames": [
+      "Ksenia?",
+      "Ksenia"
+    ],
+    "searchNames": [
+      "Ksenia?",
+      "Ksenia"
+    ],
+    "displayName": "Ksenia?"
+  },
+  "avg_npc_1560_1": {
+    "speakerNames": [
+      "Meticulous Operator",
+      "Anxious Operator"
+    ],
+    "searchNames": [
+      "Meticulous Operator",
+      "Anxious Operator"
+    ],
+    "displayName": "Meticulous Operator"
+  },
+  "avg_npc_1974_1": {
+    "speakerNames": [
+      "Worried Researcher"
+    ],
+    "searchNames": [
+      "Worried Researcher"
+    ],
+    "displayName": "Worried Researcher"
+  },
+  "avg_npc_1975_1": {
+    "speakerNames": [
+      "Excited Researcher"
+    ],
+    "searchNames": [
+      "Excited Researcher"
+    ],
+    "displayName": "Excited Researcher"
+  },
+  "avg_npc_1977_1": {
+    "speakerNames": [
+      "Solemn Ursine Officer",
+      "Officer"
+    ],
+    "searchNames": [
+      "Solemn Ursine Officer",
+      "Officer"
+    ],
+    "displayName": "Solemn Ursine Officer"
+  },
+  "avg_npc_1973_1": {
+    "speakerNames": [
+      "Impatient Guard"
+    ],
+    "searchNames": [
+      "Impatient Guard"
+    ],
+    "displayName": "Impatient Guard"
+  },
+  "avg_npc_1965_1": {
+    "speakerNames": [
+      "Yurodstvo"
+    ],
+    "searchNames": [
+      "Yurodstvo"
+    ],
+    "displayName": "Yurodstvo"
+  },
+  "avg_npc_1968_1": {
+    "speakerNames": [
+      "Talulah"
+    ],
+    "searchNames": [
+      "Talulah"
+    ],
+    "displayName": "Talulah"
+  },
+  "avg_npc_1983_1": {
+    "speakerNames": [
+      "Nine"
+    ],
+    "searchNames": [
+      "Nine"
+    ],
+    "displayName": "Nine"
+  },
+  "avg_npc_1978_1": {
+    "speakerNames": [
+      "Army Officer",
+      "Cold Soldier"
+    ],
+    "searchNames": [
+      "Army Officer",
+      "Cold Soldier"
+    ],
+    "displayName": "Army Officer"
+  },
+  "avg_npc_1976_1": {
+    "speakerNames": [
+      "Soldier",
+      "Angry Soldier",
+      "Listener"
+    ],
+    "searchNames": [
+      "Soldier",
+      "Angry Soldier",
+      "Listener"
+    ],
+    "displayName": "Soldier"
+  },
+  "avg_npc_1982_1": {
+    "speakerNames": [
+      "Respectful Servant",
+      "New Visitor"
+    ],
+    "searchNames": [
+      "Respectful Servant",
+      "New Visitor"
+    ],
+    "displayName": "Respectful Servant"
+  },
+  "avg_npc_1981_1": {
+    "speakerNames": [
+      "Jittery Noble"
+    ],
+    "searchNames": [
+      "Jittery Noble"
+    ],
+    "displayName": "Jittery Noble"
+  },
+  "avg_npc_1984_1": {
+    "speakerNames": [
+      "Witte"
+    ],
+    "searchNames": [
+      "Witte"
+    ],
+    "displayName": "Witte"
+  },
+  "avg_npc_1979_1": {
+    "speakerNames": [
+      "Worker?"
+    ],
+    "searchNames": [
+      "Worker?"
+    ],
+    "displayName": "Worker?"
+  },
+  "avg_npc_1796_1": {
+    "speakerNames": [
+      "Ederson"
+    ],
+    "searchNames": [
+      "Ederson"
+    ],
+    "displayName": "Ederson"
   }
 }

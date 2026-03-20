@@ -374,7 +374,10 @@
     "avg_133_mm_1"
   ],
   "Natalya": "char_197_poca_1",
-  "Rosa": "char_197_poca_1",
+  "Rosa": [
+    "char_197_poca_1",
+    "avg_405_absin_1"
+  ],
   "Matterhorn": [
     "char_197_poca_1",
     "char_199_yak_1",
@@ -413,7 +416,8 @@
   "Engineering Operator B": [
     "char_013_riop",
     "avg_npc_012",
-    "avg_npc_090"
+    "avg_npc_090",
+    "avg_npc_971_1"
   ],
   "Greypaw": "char_013_riop",
   "Guard Operator B": "char_013_riop",
@@ -493,7 +497,8 @@
   ],
   "Engineering Operator A": [
     "avg_npc_012",
-    "avg_npc_090"
+    "avg_npc_090",
+    "avg_npc_970_1"
   ],
   "Rhodes Island Field Personnel": "avg_npc_012",
   "Dario": "avg_npc_012",
@@ -582,7 +587,11 @@
     "char_016_medic",
     "avg_npc_501_1"
   ],
-  "Rhodes Island Medic Operator": "char_016_medic",
+  "Rhodes Island Medic Operator": [
+    "char_016_medic",
+    "avg_npc_501_1",
+    "avg_npc_1730_1"
+  ],
   "Absinthe": [
     "char_405_absin_4",
     "avg_405_absin_1"
@@ -634,7 +643,10 @@
     "avg_npc_497_1"
   ],
   "Carl": "avg_npc_002",
-  "Angry Miner": "avg_npc_002",
+  "Angry Miner": [
+    "avg_npc_002",
+    "avg_npc_1969_1"
+  ],
   "Luca": "avg_npc_002",
   "Diner B": "avg_npc_002",
   "Kazimierz Ruffian": "avg_npc_002",
@@ -864,6 +876,11 @@
     "avg_npc_495_1",
     "avg_npc_661_1"
   ],
+  "Friendly Villager": [
+    "avg_npc_092",
+    "avg_npc_462_1"
+  ],
+  "Surviving Villager": "avg_npc_092",
   "Old Villager": "avg_npc_092",
   "Nervous Old Man": "avg_npc_092",
   "Calm Old Man": "avg_npc_092",
@@ -968,6 +985,7 @@
     "avg_npc_177",
     "avg_npc_863_1"
   ],
+  "Eager Man": "avg_npc_177",
   "Representative Cooper": "avg_npc_177",
   "Laid-Back Baron": "avg_npc_177",
   "Cowell": "avg_npc_177",
@@ -992,9 +1010,13 @@
   "Extremely Serious Councilor": "avg_npc_177",
   "Wealthy Man": "avg_npc_177",
   "Noblewoman and Wealthy Man": "avg_npc_177",
-  "Anxious Patient": "avg_npc_177",
+  "Anxious Patient": [
+    "avg_npc_177",
+    "avg_npc_523_1"
+  ],
   "Local Judge B": "avg_npc_177",
   "Senior Project Manager": "avg_npc_177",
+  "Film Studio Boss": "avg_npc_177",
   "Victorian Traveler": "avg_npc_177",
   "Old Judge": "avg_npc_177",
   "Ivan": "avg_npc_080",
@@ -1045,7 +1067,10 @@
   "Passing Merchant": "avg_npc_006",
   "Diligent Miner": "avg_npc_006",
   "Saloon Keeper": "avg_npc_006",
-  "Tired Miner": "avg_npc_006",
+  "Tired Miner": [
+    "avg_npc_006",
+    "avg_npc_1969_1"
+  ],
   "Depressed Worker": "avg_npc_006",
   "Old Officer Vincent": "avg_npc_006",
   "Quartz": [
@@ -1067,7 +1092,10 @@
     "avg_npc_1000_1"
   ],
   "Old Worker": "avg_npc_006",
-  "Nine": "avg_npc_043_1",
+  "Nine": [
+    "avg_npc_043_1",
+    "avg_npc_1983_1"
+  ],
   "Cannot": "avg_npc_208",
   "Councilor": "avg_npc_068",
   "Townsfolk": [
@@ -1380,6 +1408,7 @@
   "Noble Lady": "avg_npc_175",
   "Noble?": "avg_npc_175",
   "Exhausted Viscount": "avg_npc_175",
+  "Picky Woman": "avg_npc_175",
   "Reserved Viscount": "avg_npc_175",
   "Beautiful Noble": "avg_npc_175",
   "Kind-Faced Noble": "avg_npc_175",
@@ -1751,6 +1780,7 @@
   ],
   "Knight Scout": "avg_npc_223",
   "Red Wine Intern Journalist": "avg_npc_223",
+  "Careless Social Worker": "avg_npc_223",
   "Man in Reporter Garb": "avg_npc_223",
   "Rafał": [
     "avg_npc_223",
@@ -1827,6 +1857,10 @@
     "avg_npc_109"
   ],
   "Red Wine Senior Editor": "avg_npc_222",
+  "Senator's Aide": [
+    "avg_npc_222",
+    "avg_487_bobb_1"
+  ],
   "Office Clerk": "avg_npc_222",
   "Unremarkable Man": "avg_npc_222",
   "HR Employee": "avg_npc_222",
@@ -1917,7 +1951,10 @@
   "Strong Townsfolk": "avg_npc_001",
   "Edgar": "avg_npc_001",
   "Irritable Infected": "avg_npc_001",
-  "Timid Miner": "avg_npc_001",
+  "Timid Miner": [
+    "avg_npc_001",
+    "avg_npc_1969_1"
+  ],
   "Diner D": "avg_npc_001",
   "Abel": [
     "avg_npc_001",
@@ -2051,6 +2088,7 @@
   ],
   "Czcibor": "avg_npc_627_1",
   "Young Bartender": "avg_npc_004",
+  "Happy Peasant Woman": "avg_npc_004",
   "Kazimierzian Girl": "avg_npc_004",
   "Basket-holding Girl": "avg_npc_004",
   "Veggie": "avg_npc_004",
@@ -2538,7 +2576,26 @@
   "Ursus Officer": "avg_npc_082",
   "Ursus Soldier": "avg_npc_082",
   "Infected Patrol Unit": "avg_npc_082",
+  "Agitated Patrol Unit": "avg_npc_082",
+  "Doubtful Patrol Unit": "avg_npc_082",
+  "Lax Patrol Unit": "avg_npc_082",
+  "Patrol Unit Captain": "avg_npc_082",
+  "Frightened Patrol Unit": "avg_npc_082",
+  "Soldier": [
+    "avg_npc_082",
+    "avg_npc_164",
+    "avg_npc_1637_1",
+    "avg_npc_1976_1"
+  ],
+  "Gendarmerie": [
+    "avg_npc_082",
+    "avg_npc_1133_1",
+    "avg_npc_1134_1"
+  ],
   "An Infected Refugee": "avg_npc_094",
+  "Sick Miner": "avg_npc_094",
+  "Despairing Infected": "avg_npc_094",
+  "Flustered Infected": "avg_npc_094",
   "Infected Peddler": "avg_npc_094",
   "Timid Resident": "avg_npc_094",
   "Young Man": "avg_npc_094",
@@ -3170,6 +3227,7 @@
     "avg_npc_970_1"
   ],
   "Deliveryman": "avg_npc_523_1",
+  "Julio": "avg_npc_523_1",
   "Humble Secretary": "avg_npc_523_1",
   "Millais": "avg_npc_523_1",
   "Rude Reporter": "avg_npc_523_1",
@@ -3331,7 +3389,11 @@
   "Worker 'Motor'": "avg_npc_1186_1",
   "Strange Lady": "avg_npc_1186_1",
   "Somewhat Familiar Woman": "avg_npc_1186_1",
-  "Miner": "avg_npc_1186_1",
+  "Miner": [
+    "avg_npc_1186_1",
+    "avg_npc_1969_1",
+    "avg_npc_1970_1"
+  ],
   "Barrenlands Settler": "avg_npc_1186_1",
   "Weary Miner": "avg_npc_1186_1",
   "Ninth Auntie": "avg_npc_1186_1",
@@ -3388,6 +3450,7 @@
   "Fallon": "avg_npc_972_1",
   "Flustered HR Operator": "avg_npc_972_1",
   "Rhodes Island Landship Operator A": "avg_npc_972_1",
+  "Engineering Operator C": "avg_npc_972_1",
   "Rhodes Island Cargo Manager": "avg_npc_972_1",
   "Cheery Legatus": "avg_npc_360_1",
   "Reserved Legatus": "avg_npc_360_1",
@@ -3647,10 +3710,6 @@
   "Swept-Up Trader": "avg_npc_164",
   "Swept-Up Trader?": "avg_npc_164",
   "Arrogant Merchant": "avg_npc_164",
-  "Soldier": [
-    "avg_npc_164",
-    "avg_npc_1637_1"
-  ],
   "Vengeful Merchant": "avg_npc_164",
   "Dispirited Straggler": "avg_npc_164",
   "Blitz": "char_457_blitz_1",
@@ -3663,6 +3722,7 @@
     "avg_npc_1240_1",
     "avg_npc_400_1"
   ],
+  "Visitor 05": "avg_npc_163",
   "Worried Villager": "avg_npc_163",
   "Roaming Doctor": "avg_npc_163",
   "Grimed Woman": "avg_npc_163",
@@ -3798,7 +3858,8 @@
     "avg_npc_1455_1",
     "avg_2025_shu_1",
     "avg_npc_1242_1",
-    "avg_npc_093"
+    "avg_npc_093",
+    "avg_npc_1964_1"
   ],
   "Anxious Old Woman": "avg_npc_1455_1",
   "'Ermengarde'": "avg_npc_869_1",
@@ -3954,7 +4015,6 @@
   "Indiscreet Townsfolk": "avg_npc_462_1",
   "Helping Townsfolk": "avg_npc_462_1",
   "Excitable Townsfolk": "avg_npc_462_1",
-  "Friendly Villager": "avg_npc_462_1",
   "Villagers": "avg_npc_462_1",
   "Friendly Woman": "avg_npc_462_1",
   "Mon3tr": [
@@ -4021,7 +4081,11 @@
   ],
   "Royal Guard?": "avg_npc_077",
   "'Emperors' Blade'": "avg_npc_077",
-  "Witte": "avg_npc_076",
+  "Black Snow": "avg_npc_077",
+  "Witte": [
+    "avg_npc_076",
+    "avg_npc_1984_1"
+  ],
   "Islam Witte": "avg_npc_076",
   "Passenger": "char_472_pasngr_n_1",
   "Old José": "avg_npc_181",
@@ -4181,7 +4245,8 @@
   ],
   "Talulah": [
     "char_011_talula_1",
-    "avg_npc_078"
+    "avg_npc_078",
+    "avg_npc_1968_1"
   ],
   "Talulah?": "char_011_talula_1",
   "'Deathless Black Snake'": "char_011_talula_1",
@@ -4483,7 +4548,10 @@
   "Andante": "avg_npc_501_1",
   "Woman in Operator Attire": "avg_npc_501_1",
   "Flustered Operator": "avg_npc_501_1",
-  "Meticulous Operator": "avg_npc_501_1",
+  "Meticulous Operator": [
+    "avg_npc_501_1",
+    "avg_npc_1560_1"
+  ],
   "Passerby Infected": "avg_npc_499_1",
   "Excited Afterglow Resident": "avg_npc_499_1",
   "Happy Leithanian Tourist": "avg_npc_499_1",
@@ -4902,7 +4970,10 @@
     "char_1502_crowns",
     "avg_1502_crosly_1"
   ],
-  "Crownslayer": "char_1502_crowns",
+  "Crownslayer": [
+    "char_1502_crowns",
+    "avg_1502_crosly_1"
+  ],
   "Projekt Red": "char_144_red_7",
   "Fionn": "avg_npc_725_1",
   "Selmon": "avg_npc_724_1",
@@ -5297,6 +5368,7 @@
   ],
   "Gentle Female Voice": "avg_npc_1043_1",
   "Helpless Plate Resident": "avg_npc_1043_1",
+  "Nadie": "avg_npc_1043_1",
   "Chatty Female Patient": "avg_npc_1043_1",
   "Sofia the Former Maid": "avg_npc_1043_1",
   "Blacksteel Intelligence Squad Member": "avg_npc_1040_1",
@@ -5312,10 +5384,6 @@
   "Brandt": "avg_npc_1117_1",
   "Grimmacht": "avg_npc_1115_1",
   "'Grimmacht'": "avg_npc_1115_1",
-  "Gendarmerie": [
-    "avg_npc_1133_1",
-    "avg_npc_1134_1"
-  ],
   "Gendarmerie B": "avg_npc_1133_1",
   "Gendarmerie C": "avg_npc_1133_1",
   "Tired Security Guard": "avg_npc_1133_1",
@@ -5378,7 +5446,10 @@
   "Curious Staffer": "avg_npc_282_1",
   "Elder Devotee": "avg_npc_1160_1",
   "Angry MP": "avg_npc_1157_1",
-  "Silent Soldier": "avg_npc_1158_1",
+  "Silent Soldier": [
+    "avg_npc_1158_1",
+    "avg_npc_1966_1"
+  ],
   "Lead Soldier": "avg_npc_1158_1",
   "Victorian Soldiers": "avg_npc_1158_1",
   "Somber Soldier": "avg_npc_414_1",
@@ -5606,8 +5677,14 @@
   "Pelirrojo": "avg_npc_1215_1",
   "Street Sculptor": "avg_npc_1215_1",
   "Armed Soldier": "avg_npc_1216_1",
-  "Elderly Woman": "avg_npc_093",
+  "Elderly Woman": [
+    "avg_npc_093",
+    "avg_npc_1964_1"
+  ],
   "Old Granny": "avg_npc_093",
+  "Hunched Old Man": "avg_npc_093",
+  "Worried Old Woman": "avg_npc_093",
+  "Timid Old Woman": "avg_npc_093",
   "Old Lady": "avg_npc_093",
   "Grandmother": "avg_npc_093",
   "Ursus Civilian": "avg_npc_093",
@@ -5665,7 +5742,12 @@
   "Qui'sartuštaj": "avg_npc_654_1",
   "Julie": "avg_npc_1299_1",
   "Assassin": "avg_npc_1299_1",
-  "Mantra": "avg_npc_1300_1",
+  "Mantra": [
+    "avg_npc_1300_1",
+    "avg_npc_1964_1",
+    "avg_4204_mantra_1"
+  ],
+  "Target": "avg_npc_1300_1",
   "Pith": [
     "avg_npc_1310_1",
     "avg_npc_095"
@@ -6376,9 +6458,15 @@
     "avg_npc_1833_1",
     "avg_4025_aprot2_1"
   ],
+  "Script Supervisor & Tippi": "avg_4191_tippi_1",
+  "Matthew & Tippi": "avg_4191_tippi_1",
   "Marion": "avg_npc_1839_1",
   "Camera Assistant": "avg_npc_1844_1",
+  "Cinematographer": "avg_npc_1844_1",
+  "Matthew": "avg_npc_1844_1",
   "Unlucky Stagehand": "avg_npc_1846_1",
+  "Script Supervisor": "avg_npc_1846_1",
+  "Eileen": "avg_npc_1846_1",
   "Dalton": "avg_npc_1837_1",
   "Dalton?": "avg_npc_1837_1",
   "Panicking Staff": "avg_npc_1845_1",
@@ -6585,7 +6673,10 @@
   "Pained 'Beepy'": "avg_npc_1726_1",
   "Originium-Infested Machine": "avg_npc_1726_1",
   "Friston-3": "avg_4093_frston_1",
-  "Raidian": "avg_npc_1730_1",
+  "Raidian": [
+    "avg_npc_1730_1",
+    "avg_npc_1966_1"
+  ],
   "Civilight Eterna": "avg_4134_cetsyr_1",
   "Theresa's Phantom": "avg_4134_cetsyr_1",
   "Originium Entity": [
@@ -6694,6 +6785,7 @@
   "Humus": "avg_491_humus_1",
   "Indigo": "avgnew_469_indigo_1",
   "Laurens": "avg_214_kafka_1",
+  "Pinecone / Kafka": "avg_214_kafka_1",
   "Heinz": "avg_499_kaitou_1",
   "Cuora": "char_150_snakekiller_1",
   "Cardigan and Cuora": "char_150_snakekiller_1",
@@ -6856,6 +6948,7 @@
   "Wolff": "avg_npc_1938_1",
   "Nyamu Yūtenji": "avg_4185_amoris_1",
   "Lost Girl": "avg_4185_amoris_1",
+  "Pure Heart Medical HR Staff": "avg_npc_1260_1",
   "Umiri Yahata": "avg_4186_tmoris_1",
   "Wizened Voice": "avg_4186_tmoris_1",
   "Mutsumi Wakaba": "avg_4183_mortis_1",
@@ -6866,5 +6959,68 @@
   "Mother & Father": "avg_npc_1940_1",
   "'Mother'": "avg_npc_1941_1",
   "Windscoot": "avg_445_wscoot_1",
-  "Aunt Wen": "avg_npc_1641_1"
+  "Aunt Wen": "avg_npc_1641_1",
+  "Eloysius": "avg_npc_1966_1",
+  "Imperial Guard?": "avg_npc_1966_1",
+  "Far North Soldier": "avg_npc_1972_1",
+  "Hesitant Soldier": "avg_npc_1972_1",
+  "Young Miner": [
+    "avg_4207_branch_1",
+    "avg_npc_1970_1"
+  ],
+  "Vetochki": [
+    "avg_4207_branch_1",
+    "avg_npc_1964_1"
+  ],
+  "Young Infected": "avg_4207_branch_1",
+  "Piercing Sound": "avg_npc_1964_1",
+  "Nadia": "avg_npc_1964_1",
+  "'Babushka'": "avg_npc_1964_1",
+  "Youthful Miner": "avg_npc_1963_1",
+  "Rankin": "avg_npc_1963_1",
+  "Rankin?": "avg_npc_1963_1",
+  "Excited Miner": "avg_npc_1969_1",
+  "Calmed Miner": "avg_npc_1969_1",
+  "Hesitant Miner": "avg_npc_1969_1",
+  "Terrified Miner": "avg_npc_1969_1",
+  "Sad Miner": "avg_npc_1969_1",
+  "Miner Scout": "avg_npc_1969_1",
+  "Anxious Miner": [
+    "avg_npc_1969_1",
+    "avg_npc_1970_1"
+  ],
+  "Miner C & Miner D": "avg_npc_1969_1",
+  "Staunch Miner": "avg_npc_1969_1",
+  "Pious Miner": "avg_npc_1969_1",
+  "Skeptical Miner": "avg_npc_1969_1",
+  "Infected Miner": "avg_npc_1969_1",
+  "Nikto": "avg_npc_1967_1",
+  "Hawley": "avg_npc_1971_1",
+  "Twisted Figure": "avg_npc_1971_1",
+  "Grand Duchess Elisabeth": "avg_npc_1962_1",
+  "Jolly Miner": "avg_npc_1970_1",
+  "Calm Miner": "avg_npc_1970_1",
+  "Dazed Miner": "avg_npc_1970_1",
+  "Worried Miner": "avg_npc_1970_1",
+  "Curious Miner": "avg_npc_1970_1",
+  "Fearful Miner": "avg_npc_1970_1",
+  "Mantra?": "avg_4204_mantra_1",
+  "Ksenia?": "avg_4208_wintim_1",
+  "Ksenia": "avg_4208_wintim_1",
+  "Anxious Operator": "avg_npc_1560_1",
+  "Worried Researcher": "avg_npc_1974_1",
+  "Excited Researcher": "avg_npc_1975_1",
+  "Solemn Ursine Officer": "avg_npc_1977_1",
+  "Officer": "avg_npc_1977_1",
+  "Impatient Guard": "avg_npc_1973_1",
+  "Yurodstvo": "avg_npc_1965_1",
+  "Army Officer": "avg_npc_1978_1",
+  "Cold Soldier": "avg_npc_1978_1",
+  "Angry Soldier": "avg_npc_1976_1",
+  "Listener": "avg_npc_1976_1",
+  "Respectful Servant": "avg_npc_1982_1",
+  "New Visitor": "avg_npc_1982_1",
+  "Jittery Noble": "avg_npc_1981_1",
+  "Worker?": "avg_npc_1979_1",
+  "Ederson": "avg_npc_1796_1"
 }
