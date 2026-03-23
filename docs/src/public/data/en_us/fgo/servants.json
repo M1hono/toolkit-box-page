@@ -12768,6 +12768,12 @@
           "faceY": 90,
           "scale": 1
         },
+        "1098269340": {
+          "id": 1098269340,
+          "faceX": 367,
+          "faceY": 161,
+          "scale": 1
+        },
         "1098288300": {
           "id": 1098288300,
           "faceX": 387,
@@ -15356,6 +15362,18 @@
           "id": 1098288700,
           "faceX": 370,
           "faceY": 146,
+          "scale": 1
+        },
+        "1098292200": {
+          "id": 1098292200,
+          "faceX": 392,
+          "faceY": 168,
+          "scale": 1
+        },
+        "1098292210": {
+          "id": 1098292210,
+          "faceX": 392,
+          "faceY": 168,
           "scale": 1
         }
       }
@@ -37935,6 +37953,106 @@
           "1098214400": "https://static.atlasacademy.io/NA/CharaFigure/1098214400/1098214400_merged.png",
           "1098214500": "https://static.atlasacademy.io/NA/CharaFigure/1098214500/1098214500_merged.png",
           "1098214600": "https://static.atlasacademy.io/NA/CharaFigure/1098214600/1098214600_merged.png"
+        }
+      }
+    }
+  },
+  "9945590": {
+    "id": 9945590,
+    "collectionNo": 411,
+    "name": "E-Flare Marie",
+    "ruby": "-",
+    "className": "uOlgaMarieFlareCollection",
+    "rarity": 0,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {},
+        "costume": {},
+        "story": {
+          "98005000": "https://static.atlasacademy.io/NA/CharaFigure/98005000/98005000_merged.png",
+          "1098124800": "https://static.atlasacademy.io/NA/CharaFigure/1098124800/1098124800_merged.png",
+          "1098253200": "https://static.atlasacademy.io/NA/CharaFigure/1098253200/1098253200_merged.png",
+          "1098253210": "https://static.atlasacademy.io/NA/CharaFigure/1098253210/1098253210_merged.png",
+          "1098273900": "https://static.atlasacademy.io/NA/CharaFigure/1098273900/1098273900_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "98005000": {
+          "id": 98005000,
+          "faceX": 403,
+          "faceY": 145,
+          "scale": 1
+        },
+        "1098124800": {
+          "id": 1098124800,
+          "faceX": 386,
+          "faceY": 147,
+          "scale": 1
+        },
+        "1098253200": {
+          "id": 1098253200,
+          "faceX": 383,
+          "faceY": 99,
+          "scale": 1
+        },
+        "1098253210": {
+          "id": 1098253210,
+          "faceX": 379,
+          "faceY": 259,
+          "scale": 1
+        },
+        "1098273900": {
+          "id": 1098273900,
+          "faceX": 380,
+          "faceY": 97,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {},
+        "costume": {},
+        "story": {
+          "98005000": "https://static.atlasacademy.io/NA/CharaFigure/98005000/98005000_merged.png",
+          "1098124800": "https://static.atlasacademy.io/NA/CharaFigure/1098124800/1098124800_merged.png",
+          "1098253200": "https://static.atlasacademy.io/NA/CharaFigure/1098253200/1098253200_merged.png",
+          "1098253210": "https://static.atlasacademy.io/NA/CharaFigure/1098253210/1098253210_merged.png",
+          "1098273900": "https://static.atlasacademy.io/NA/CharaFigure/1098273900/1098273900_merged.png"
+        }
+      }
+    }
+  },
+  "9945600": {
+    "id": 9945600,
+    "collectionNo": 412,
+    "name": "E-Aqua Marie",
+    "ruby": "-",
+    "className": "uOlgaMarieAquaCollection",
+    "rarity": 0,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {},
+        "costume": {},
+        "story": {
+          "1098292100": "https://static.atlasacademy.io/NA/CharaFigure/1098292100/1098292100_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "1098292100": {
+          "id": 1098292100,
+          "faceX": 900,
+          "faceY": 83,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {},
+        "costume": {},
+        "story": {
+          "1098292100": "https://static.atlasacademy.io/NA/CharaFigure/1098292100/1098292100_merged.png"
         }
       }
     }

@@ -5752,5 +5752,33 @@
       "-",
       "beastiv"
     ]
+  },
+  {
+    "id": 9945590,
+    "name": "E-Flare Marie",
+    "originalName": "E-Flare Marie",
+    "ruby": "-",
+    "className": "uOlgaMarieFlareCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "e-flare marie",
+      "e-flare marie",
+      "-",
+      "uolgamarieflarecollection"
+    ]
+  },
+  {
+    "id": 9945600,
+    "name": "E-Aqua Marie",
+    "originalName": "E-Aqua Marie",
+    "ruby": "-",
+    "className": "uOlgaMarieAquaCollection",
+    "rarity": 0,
+    "searchTerms": [
+      "e-aqua marie",
+      "e-aqua marie",
+      "-",
+      "uolgamarieaquacollection"
+    ]
   }
 ]
