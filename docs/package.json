@@ -57,16 +57,16 @@
         "docs:sidebar": "tsx .vitepress/scripts/build-sidebar.mjs",
         "docs:tags": "tsx .vitepress/scripts/generate-tag-data.mjs",
         "docs:preview": "tsx --tsconfig tsconfig.json ./node_modules/vitepress/dist/node/cli.js preview",
-        "locale": "tsx .vitepress/scripts/locale-key-sync.mjs",
-        "frontmatter": "tsx .vitepress/scripts/update-frontmatter.mjs",
         "sync-config": "tsx .vitepress/scripts/sync-config-to-frontmatter.mjs",
         "index": "tsx .vitepress/scripts/create-indexes.mjs",
         "dev": "tsx --tsconfig tsconfig.json ./node_modules/vitepress/dist/node/cli.js dev",
-        "build": "yarn locale && tsx .vitepress/scripts/build-sidebar.mjs && tsx .vitepress/scripts/generate-tag-data.mjs && tsx --tsconfig tsconfig.json ./node_modules/vitepress/dist/node/cli.js build",
+        "build": "tsx .vitepress/scripts/locale-key-sync.mjs && tsx .vitepress/scripts/build-sidebar.mjs && tsx .vitepress/scripts/generate-tag-data.mjs && tsx --tsconfig tsconfig.json ./node_modules/vitepress/dist/node/cli.js build",
         "preview": "tsx --tsconfig tsconfig.json ./node_modules/vitepress/dist/node/cli.js preview",
         "sidebar": "tsx .vitepress/scripts/build-sidebar.mjs",
         "tags": "tsx .vitepress/scripts/generate-tag-data.mjs",
-        "title": "notsxde .vitepress/scripts/update-index-titles.mjs",
+        "locale": "tsx .vitepress/scripts/locale-key-sync.mjs",
+        "title": "tsx .vitepress/scripts/update-index-titles.mjs",
+        "frontmatter": "tsx .vitepress/scripts/update-frontmatter.mjs",
         "data:arknights": "node scripts/arknights/main-fetcher.cjs",
         "data:fgo": "node scripts/fgo/main-fetcher.cjs",
         "data:story": "node scripts/arknights/syncStoryData.cjs",
@@ -144,6 +144,9 @@
     "resolutions": {
         "framer-motion": "12.35.0",
         "motion-dom": "12.35.0",
-        "motion-utils": "12.29.2"
+        "motion-utils": "12.29.2",
+        "minimatch": "9.0.5",
+        "brace-expansion": "2.0.1",
+        "balanced-match": "1.0.2"
     }
 }
