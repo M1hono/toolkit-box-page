@@ -1,6 +1,6 @@
 {
     "description": "Maps component IDs used in useSafeI18n() to their corresponding translation file paths",
-    "generatedAt": "2026-03-26T08:12:08.430Z",
+    "generatedAt": "2026-03-28T19:16:36.515Z",
     "mappings": {
         "fgo-card-generator": "CardGenerator/CardGenerator",
         "fgo-card-settings": "CardGenerator/CardSettings",
@@ -29,9 +29,6 @@
         "mna-section-editor": "AvalonWard/MnaGuidebookGenerator/MnaSectionEditor",
         "mna-settings-panel": "AvalonWard/MnaGuidebookGenerator/MnaSettingsPanel",
         "mna-translation-panel": "AvalonWard/MnaGuidebookGenerator/MnaTranslationPanel",
-        "rune-canvas": "AvalonWard/RunescribingEditor/RuneCanvas",
-        "rune-controls": "AvalonWard/RunescribingEditor/RuneControls",
-        "runescribing-editor": "AvalonWard/RunescribingEditor/RunescribingEditor",
         "ritual-code-preview": "AvalonWard/RitualGenerator/RitualCodePreview",
         "ritual-command-editor": "AvalonWard/RitualGenerator/RitualCommandEditor",
         "ritual-generator": "AvalonWard/RitualGenerator/RitualGenerator",
@@ -39,6 +36,9 @@
         "ritual-keys-editor": "AvalonWard/RitualGenerator/RitualKeysEditor",
         "ritual-manaweave-editor": "AvalonWard/RitualGenerator/RitualManaweaveEditor",
         "ritual-parameters-editor": "AvalonWard/RitualGenerator/RitualParametersEditor",
+        "rune-canvas": "AvalonWard/RunescribingEditor/RuneCanvas",
+        "rune-controls": "AvalonWard/RunescribingEditor/RuneControls",
+        "runescribing-editor": "AvalonWard/RunescribingEditor/RunescribingEditor",
         "arknights-main": "Chara/Arknights/Arknights",
         "arknights-batch-dialog": "Chara/Arknights/ArknightsBatchDialog",
         "arknights-controls": "Chara/Arknights/ArknightsControlPanel",

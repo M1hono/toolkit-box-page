@@ -312,6 +312,7 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
         optimizeDeps: {
             exclude: [
                 "@nolebase/vitepress-plugin-enhanced-readabilities",
+                "@nolebase/ui",
                 "@nolebase/vitepress-plugin-inline-link-preview",
                 "shiki-magic-move",
             ],
@@ -333,6 +334,7 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
         ssr: {
             noExternal: [
                 "vuetify",
+                "@nolebase/ui",
                 "@nolebase/vitepress-plugin-enhanced-readabilities",
                 "@nolebase/vitepress-plugin-inline-link-preview",
                 "@nolebase/markdown-it-bi-directional-links",
