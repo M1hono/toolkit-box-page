@@ -248,16 +248,28 @@ export function sidebarPlugin(config: SidebarPluginConfig): Plugin {
                 );
             }
 
-            server.middlewares.use("/__sidebar-sync", (req, res, next) => {
-                if (req.method !== "POST") { next(); return; }
-                res.statusCode = 202;
-                res.setHeader("Content-Type", "application/json");
-                res.end(JSON.stringify({ ok: true }));
-                clearCache();
-                generateSidebarsForAllLanguages().then(() => {
-                    triggerVitePressReload(server);
-                });
-            });
+            server.middlewares.use(
+                "/__sidebar-sync",
+                async (req: { method?: string }, res: { statusCode: number; setHeader: (k: string, v: string) => void; end: (s: string) => void }, next: () => void) => {
+                    if (req.method !== "POST") { next(); return; }
+
+                    try {
+                        clearCache();
+                        await generateSidebarsForAllLanguages();
+                        await triggerVitePressReload(server);
+                        res.statusCode = 200;
+                        res.setHeader("Content-Type", "application/json");
+                        res.end(JSON.stringify({ ok: true }));
+                    } catch (error) {
+                        res.statusCode = 500;
+                        res.setHeader("Content-Type", "application/json");
+                        res.end(JSON.stringify({
+                            ok: false,
+                            error: error instanceof Error ? error.message : String(error),
+                        }));
+                    }
+                }
+            );
 
             if (hotRestartOnIndexChange) {
                 const handleSidebarSourceEvent = (filePath: string) => {
