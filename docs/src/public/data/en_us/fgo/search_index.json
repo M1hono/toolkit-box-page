@@ -4592,6 +4592,20 @@
     ]
   },
   {
+    "id": 704900,
+    "name": "Sizuki Soujyuro",
+    "originalName": "Sizuki Soujyuro",
+    "ruby": "Sizuki Soujyuro",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "sizuki soujyuro",
+      "sizuki soujyuro",
+      "sizuki soujyuro",
+      "berserker"
+    ]
+  },
+  {
     "id": 800100,
     "name": "Mash Kyrielight",
     "originalName": "Mash Kyrielight",
@@ -5554,6 +5568,20 @@
       "wandjina",
       "wandjina",
       "wandjina",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501400,
+    "name": "Aozaki Aoko",
+    "originalName": "Aozaki Aoko",
+    "ruby": "Aozaki Aoko",
+    "className": "foreigner",
+    "rarity": 5,
+    "searchTerms": [
+      "aozaki aoko",
+      "aozaki aoko",
+      "aozaki aoko",
       "foreigner"
     ]
   },
