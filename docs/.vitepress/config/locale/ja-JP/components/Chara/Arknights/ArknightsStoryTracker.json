@@ -2,10 +2,10 @@
     "akgcc": "akgcc",
     "characterCount": "{count} キャラクター",
     "characterVariant": "キャラクターバリアント",
-    "noCharacterSelected": "キャラクター未選択",
+    "noCharacterSelected": "No Character Selected",
     "searchPlaceholder": "キャラクター名を検索...",
-    "searchPrompt": "キャラクターを検索",
-    "storyAppearances": "ストーリー登場 ({count})",
+    "searchPrompt": "Search for a character",
+    "storyAppearances": "Story Appearances ({count})",
     "storyReader": "ストーリーリーダー",
     "textReader": "テキスト",
     "title": "ストーリートラッカー"

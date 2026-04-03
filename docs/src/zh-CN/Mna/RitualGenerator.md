@@ -4,5 +4,5 @@ sidebar: false
 layoutClass: fullwidth-layout
 ---
 <ClientOnly>
-  <RitualGenerator />
+  /\<RitualGenerator /\>/
 </ClientOnly>

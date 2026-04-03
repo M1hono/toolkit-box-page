@@ -5,5 +5,5 @@ layoutClass: fullwidth-layout
 ---
 
 <ClientOnly>
-  <RunescribingEditor />
+  /\<RunescribingEditor /\>/
 </ClientOnly>

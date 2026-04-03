@@ -1,0 +1,16 @@
+{
+  "componentTagWhitelist": [
+    "Arknights",
+    "ArknightsStoryTracker",
+    "ClientOnly",
+    "Fgo",
+    "TagsPage",
+    "Test",
+    "ToolkitCardGeneratorApp",
+    "ToolkitGuidebookGeneratorApp",
+    "ToolkitJsonTranslatorApp",
+    "ToolkitRitualGeneratorApp",
+    "ToolkitRunescribingEditorApp"
+  ],
+  "renderUnknownComponentTagsAsText": true
+}

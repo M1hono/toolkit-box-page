@@ -5,5 +5,5 @@ layoutClass: fullwidth-layout
 ---
 
 <ClientOnly>
-  <ToolkitJsonTranslatorApp />
+  /\<ToolkitJsonTranslatorApp /\>/
 </ClientOnly>

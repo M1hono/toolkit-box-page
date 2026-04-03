@@ -5,5 +5,5 @@ layoutClass: fullwidth-layout
 ---
 
 <ClientOnly>
-  <ArknightsStoryTracker />
+  /\<ArknightsStoryTracker /\>/
 </ClientOnly>
