@@ -22,5 +22,7 @@
         "sidebarrc"
     ],
     "svg.preview.background": "transparent",
-    "AndreaNovelHelper.workspaceDisabled": true
+    "AndreaNovelHelper.workspaceDisabled": true,
+    "m1hono.vitepress.previewPort": 5174,
+    "m1hono.devServerPort": 5174
 } 

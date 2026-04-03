@@ -5,5 +5,5 @@ layoutClass: fullwidth-layout
 layout: doc
 ---
 <ClientOnly>
-  /\<MnaGuidebookGenerator /\>/
+  <MnaGuidebookGenerator />
 </ClientOnly>
