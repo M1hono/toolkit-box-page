@@ -5,5 +5,5 @@ layoutClass: fullwidth-layout
 ---
 
 <ClientOnly>
-  /\<ToolkitCardGeneratorApp /\>/
+  <ToolkitCardGeneratorApp />
 </ClientOnly>

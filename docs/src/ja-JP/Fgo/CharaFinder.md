@@ -5,5 +5,5 @@ layoutClass: fullwidth-layout
 ---
 
 <ClientOnly>
-  /\<Fgo /\>/
+  <Fgo />
 </ClientOnly>
