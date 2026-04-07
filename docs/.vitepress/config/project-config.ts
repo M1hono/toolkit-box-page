@@ -18,7 +18,7 @@ export const projectConfig: ProjectConfig = {
     base: "/",
 
     keyWords: ["VitePress", "FGO", "Arknights", "minecraft", "toolkit"],
-    version: "2.0.1",
+    version: "2.1.0",
     author: "M1hono",
     license: "All Rights Reserved",
 

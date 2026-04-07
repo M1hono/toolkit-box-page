@@ -1,8 +1,16 @@
-# VitePress Template Advanced - Configuration Guide
+# Toolkit Box Documentation - Configuration Guide
 
 ## Overview
 
 This guide covers the core configuration system: how to modify project settings, add new languages, and configure sidebar tags.
+
+Current release: `2.1.0`
+
+## Release Highlights
+
+- Crychic-synced `viewControl` traversal handling for root-controlled and child-controlled sidebar trees
+- refreshed shared navigation layouts used by Toolkit Box
+- fixed config-time filesystem bridging for sidebar generation before alias resolution is available
 
 ## Table of Contents
 

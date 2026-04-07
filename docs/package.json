@@ -1,7 +1,7 @@
 {
     "name": "toolkit-box-page",
-    "description": "A feature-rich VitePress template with advanced plugins and configurations",
-    "version": "1.0.1",
+    "description": "Toolkit Box documentation site and game utility pages built on the M1hono VitePress stack",
+    "version": "2.1.0",
     "type": "module",
     "engines": {
         "node": ">=20.19.0"
