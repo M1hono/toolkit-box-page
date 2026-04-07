@@ -817,5 +817,40 @@
     "status": "skipped",
     "timestamp": 1773105630469,
     "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2166.png": {
+    "status": "skipped",
+    "timestamp": 1775525773725,
+    "reason": "404"
+  },
+  "arknights/avatars/char_1051_headb2.png": {
+    "status": "skipped",
+    "timestamp": 1775525773729,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2178.png": {
+    "status": "skipped",
+    "timestamp": 1775525773729,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2182.png": {
+    "status": "skipped",
+    "timestamp": 1775525773735,
+    "reason": "404"
+  },
+  "arknights/avatars/char_115_headbr.png": {
+    "status": "uploaded",
+    "timestamp": 1775525774878,
+    "charId": "char_115_headbr"
+  },
+  "arknights/avatars/char_194_leto.png": {
+    "status": "uploaded",
+    "timestamp": 1775525774972,
+    "charId": "char_194_leto"
+  },
+  "arknights/avatars/char_1502_crosly.png": {
+    "status": "uploaded",
+    "timestamp": 1775525775017,
+    "charId": "char_1502_crosly"
   }
 }
