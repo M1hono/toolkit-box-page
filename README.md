@@ -11,7 +11,8 @@ Current release: `2.1.0`
 
 ## Release Highlights
 
-- Synced the current Crychic sidebar runtime, including `viewControl`-based root and child traversal rules.
+- Synced the current Crychic sidebar runtime, including `collapseControl` for parent-controlled folding in the current sidebar view.
+- Kept `viewControl` for advanced nested-root traversal ownership and child escape rules.
 - Refreshed the shared navigation dropdown layouts used across the site header.
 - Fixed the config-time filesystem bridge used by sidebar generation so builds stay portable across case-sensitive environments.
 

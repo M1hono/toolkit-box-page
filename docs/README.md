@@ -8,7 +8,8 @@ Current release: `2.1.0`
 
 ## Release Highlights
 
-- Crychic-synced `viewControl` traversal handling for root-controlled and child-controlled sidebar trees
+- Crychic-synced `collapseControl` traversal handling for parent-controlled folding in the current sidebar view
+- advanced `viewControl` handling for nested-root traversal ownership and child escape behavior
 - refreshed shared navigation layouts used by Toolkit Box
 - fixed config-time filesystem bridging for sidebar generation before alias resolution is available
 

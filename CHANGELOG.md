@@ -2,6 +2,17 @@
 
 All notable changes to this repository are documented in this file.
 
+## [Unreleased]
+
+### Added
+
+- Added `collapseControl` support for parent-controlled child folder folding in the current generated sidebar view.
+- Added regression coverage for collapse overrides and controller-preserving nested-root traversal.
+
+### Changed
+
+- Stopped parent-controlled nested roots from rewriting the child root's own `maxDepth` and local `viewControl`.
+
 ## [2.1.0] - 2026-04-07
 
 ### Added
