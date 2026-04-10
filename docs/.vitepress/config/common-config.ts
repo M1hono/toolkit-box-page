@@ -352,11 +352,16 @@ export const commonConfig: UserConfig<DefaultTheme.Config> = {
                 "@nolebase/ui",
                 "@nolebase/vitepress-plugin-inline-link-preview",
                 "shiki-magic-move",
+                // Mermaid's parser pulls in langium. Excluding the stack avoids
+                // dev-only prebundle failures when esbuild parses published
+                // source maps from langium.
+                "mermaid",
+                "@mermaid-js/parser",
+                "langium",
             ],
             include: [
                 "vue",
                 "@vueuse/core",
-                "mermaid",
                 "vitepress-plugin-nprogress",
                 "vitepress-plugin-tabs/client",
                 "@lite-tree/vue",

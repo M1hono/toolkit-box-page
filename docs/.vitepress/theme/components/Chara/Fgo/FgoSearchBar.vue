@@ -30,7 +30,11 @@
                     @update:model-value="handleSelect"
                 >
                     <template #item="{ props, item }">
-                        <v-list-item v-bind="props" class="search-result-item">
+                        <v-list-item
+                            v-if="hasRenderableSearchItem(item)"
+                            v-bind="props"
+                            class="search-result-item"
+                        >
                             <template #prepend>
                                 <v-avatar
                                     size="48"
@@ -38,8 +42,8 @@
                                     class="servant-avatar"
                                 >
                                     <v-img
-                                        :src="getServantIcon(item.raw)"
-                                        :alt="item.raw.name"
+                                        :src="getServantIcon(item)"
+                                        :alt="getServantName(item)"
                                         cover
                                     >
                                         <template #error>
@@ -53,10 +57,10 @@
                                 </v-avatar>
                             </template>
                             <v-list-item-title class="result-name">{{
-                                item.raw.name
+                                getServantName(item)
                             }}</v-list-item-title>
                             <v-list-item-subtitle class="result-jp-name">{{
-                                item.raw.jpName
+                                getServantJpName(item)
                             }}</v-list-item-subtitle>
                         </v-list-item>
                     </template>
@@ -93,7 +97,7 @@
 </template>
 
 <script setup lang="ts">
-    import { ref, computed, watch } from "vue";
+    import { ref, computed, watch, nextTick } from "vue";
     import { useData } from "vitepress";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import type { SearchResult } from "../../../../utils/chara/fgo/types";
@@ -127,13 +131,48 @@
     });
 
     const resultsWithDisplay = computed(() => {
-        return props.searchResults.map((r) => ({
-            ...r,
-            displayText: `${r.name} (${r.jpName})`,
-        }));
+        return props.searchResults
+            .filter(isSearchResultLike)
+            .map((r) => ({
+                ...r,
+                displayText: `${r.name} (${r.jpName})`,
+            }));
     });
 
-    function getServantIcon(result: any): string {
+    function isSearchResultLike(value: unknown): value is SearchResult {
+        return !!(
+            value &&
+            typeof value === "object" &&
+            typeof (value as SearchResult).id === "number" &&
+            typeof (value as SearchResult).name === "string" &&
+            typeof (value as SearchResult).jpName === "string"
+        );
+    }
+
+    function resolveSearchResult(item: unknown): SearchResult | null {
+        const rawCandidate =
+            item && typeof item === "object" && "raw" in item
+                ? (item as { raw?: unknown }).raw
+                : item;
+
+        return isSearchResultLike(rawCandidate) ? rawCandidate : null;
+    }
+
+    function hasRenderableSearchItem(item: unknown): boolean {
+        return resolveSearchResult(item) !== null;
+    }
+
+    function getServantName(item: unknown): string {
+        return resolveSearchResult(item)?.name ?? "";
+    }
+
+    function getServantJpName(item: unknown): string {
+        return resolveSearchResult(item)?.jpName ?? "";
+    }
+
+    function getServantIcon(item: unknown): string {
+        const result = resolveSearchResult(item);
+        if (!result) return "";
         const iconId = result.faceId || `${result.id}0`;
         return `https://static.atlasacademy.io/${currentRegion.value}/Faces/f_${iconId}.png`;
     }
@@ -142,11 +181,12 @@
         emit("search", newValue);
     });
 
-    function handleSelect(value: number | null) {
+    async function handleSelect(value: number | null) {
         if (!value) return;
         const result = props.searchResults.find((r) => r.id === value);
         if (result) {
             emit("select", result);
+            await nextTick();
             selectedValue.value = null;
             searchQuery.value = "";
         }
