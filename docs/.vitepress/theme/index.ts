@@ -24,6 +24,7 @@ import VPBreadcrumb from "./components/navigation/Breadcrumb/VPBreadcrumb.vue";
 
 import { getProjectInfo, isFeatureEnabled } from "@config/project-config";
 import { useDirectoryLandingRouteSync } from "@utils/sidebar/runtime";
+import { setDirectoryLandingSidebar } from "@utils/sidebar/shared/directoryLandingRouteResolver";
 import {
     applyThemePageStyles,
     installThemeSiteBootstraps,
@@ -86,11 +87,11 @@ export default {
     },
 
     setup() {
-        const route = useRoute();
-        const router = useRouter();
-        const { isDark, frontmatter } = useData();
-        const { effectiveDark } = getThemeRuntime(isDark);
-        const projectInfo = getProjectInfo();
+		const route = useRoute();
+		const router = useRouter();
+		const { isDark, frontmatter, theme } = useData();
+		const { effectiveDark } = getThemeRuntime(isDark);
+		const projectInfo = getProjectInfo();
 
         watch(
             effectiveDark,
@@ -98,6 +99,14 @@ export default {
                 if (inBrowser) {
                     syncVuetifyTheme(dark);
                 }
+            },
+            { immediate: true },
+        );
+
+        watch(
+            () => theme.value.sidebar,
+            (sidebar) => {
+                setDirectoryLandingSidebar(sidebar as any);
             },
             { immediate: true },
         );

@@ -8,10 +8,10 @@ Current release: `2.1.0`
 
 ## Release Highlights
 
-- Crychic-synced `collapseControl` traversal handling for parent-controlled folding in the current sidebar view
-- advanced `viewControl` handling for nested-root traversal ownership and child escape behavior
+- Markdown-driven `useChildrenCollapsed` support for current-tree folding with depth-aware inheritance
+- legacy sidebar JSON config and sync workflow retired from the runtime
 - refreshed shared navigation layouts used by Toolkit Box
-- fixed config-time filesystem bridging for sidebar generation before alias resolution is available
+- regression coverage for GitBook retention and `.sidebarrc.yml` cache invalidation
 
 ## Table of Contents
 
@@ -209,7 +209,7 @@ Create `.vitepress/config/lang/fr.ts`:
 
 ```typescript
 import type { DefaultTheme } from "vitepress";
-import { getSidebarSyncWithTags } from "../../utils/config/sidebar-tags-integration";
+import { getSidebarSync } from "../../utils/sidebar";
 import { getProjectInfo, getLanguageByCode } from "../project-config";
 
 const projectInfo = getProjectInfo();
@@ -223,7 +223,7 @@ export const fr_FR = <DefaultTheme.Config>{
     description: projectInfo.description,
     themeConfig: {
         nav: [],
-        sidebar: getSidebarSyncWithTags(langConfig.code),
+        sidebar: getSidebarSync(langConfig.code),
         outline: {
             level: "deep",
             label: "Contenu de la page",
