@@ -1220,6 +1220,8 @@
       "Aunt Danka",
       "Pasado",
       "Apathetic Passerby",
+      "Neighbor B",
+      "Ilsa's Mother",
       "Lively Female Patient",
       "Townsfolk B",
       "Information Broker",
@@ -1247,6 +1249,8 @@
       "Aunt Danka",
       "Pasado",
       "Apathetic Passerby",
+      "Neighbor B",
+      "Ilsa's Mother",
       "Lively Female Patient",
       "Townsfolk B",
       "Information Broker",
@@ -1306,6 +1310,7 @@
       "Bankrupt Merchant",
       "Eager Investor",
       "High-status Magnate",
+      "Leisurely Tourist",
       "Officer-in-Charge",
       "Wildly Ambitious Baron",
       "Obscured Merchant",
@@ -1343,6 +1348,7 @@
       "Bankrupt Merchant",
       "Eager Investor",
       "High-status Magnate",
+      "Leisurely Tourist",
       "Officer-in-Charge",
       "Wildly Ambitious Baron",
       "Obscured Merchant",
@@ -2043,6 +2049,7 @@
       "Curious Tourist",
       "Graceful MP",
       "Reserved MP",
+      "Impatient Tourist",
       "Pretentious Noblewoman",
       "Noble Lady",
       "Noble?",
@@ -2070,6 +2077,7 @@
       "Curious Tourist",
       "Graceful MP",
       "Reserved MP",
+      "Impatient Tourist",
       "Pretentious Noblewoman",
       "Noble Lady",
       "Noble?",
@@ -3337,6 +3345,7 @@
       "An Observing Knight",
       "Annoyed Tourist",
       "A Spectating Knight A",
+      "Chilly Knight",
       "Patrolling Knight",
       "Search Team Member"
     ],
@@ -3350,6 +3359,7 @@
       "An Observing Knight",
       "Annoyed Tourist",
       "A Spectating Knight A",
+      "Chilly Knight",
       "Patrolling Knight",
       "Search Team Member"
     ],
@@ -3457,6 +3467,7 @@
       "Urtican Subject?",
       "Destitute Noble",
       "Haughty Broker",
+      "Victorian Butler",
       "Haggard Noble",
       "Fuze",
       "Berman",
@@ -3474,6 +3485,7 @@
       "Urtican Subject?",
       "Destitute Noble",
       "Haughty Broker",
+      "Victorian Butler",
       "Haggard Noble",
       "Fuze",
       "Berman",
@@ -5036,6 +5048,12 @@
       "Common Kjerag Man",
       "Server",
       "Paleroche Commoner",
+      "Shouting Villager",
+      "Stout Villager",
+      "Paleroche Messenger",
+      "Agitated Local",
+      "Kind Local",
+      "Barkeep",
       "Bystander Villager",
       "Chief Kaj",
       "Shopkeep"
@@ -5052,6 +5070,12 @@
       "Common Kjerag Man",
       "Server",
       "Paleroche Commoner",
+      "Shouting Villager",
+      "Stout Villager",
+      "Paleroche Messenger",
+      "Agitated Local",
+      "Kind Local",
+      "Barkeep",
       "Bystander Villager",
       "Chief Kaj",
       "Shopkeep"
@@ -5095,10 +5119,12 @@
   },
   "avg_npc_252": {
     "speakerNames": [
-      "Sharp"
+      "Sharp",
+      "Degenbrecher"
     ],
     "searchNames": [
-      "Sharp"
+      "Sharp",
+      "Degenbrecher"
     ],
     "displayName": "Sharp"
   },
@@ -5107,13 +5133,29 @@
       "Devotee",
       "Elder A",
       "Elder B",
-      "Elder C"
+      "Elder C",
+      "Vine-Bead Court Cleric",
+      "Local Cleric",
+      "Kjerag Village Lookout",
+      "Vine-Bead Court Envoy",
+      "Elderly Cleric",
+      "Royal Minister",
+      "Pious Cleric",
+      "Kjerag Doctor"
     ],
     "searchNames": [
       "Devotee",
       "Elder A",
       "Elder B",
-      "Elder C"
+      "Elder C",
+      "Vine-Bead Court Cleric",
+      "Local Cleric",
+      "Kjerag Village Lookout",
+      "Vine-Bead Court Envoy",
+      "Elderly Cleric",
+      "Royal Minister",
+      "Pious Cleric",
+      "Kjerag Doctor"
     ],
     "displayName": "Devotee"
   },
@@ -5152,10 +5194,12 @@
   },
   "avg_206_gnosis_1": {
     "speakerNames": [
-      "Gnosis"
+      "Gnosis",
+      "Enciodes"
     ],
     "searchNames": [
-      "Gnosis"
+      "Gnosis",
+      "Enciodes"
     ],
     "displayName": "Gnosis"
   },
@@ -5163,11 +5207,15 @@
     "speakerNames": [
       "Talkative Noblewoman",
       "Beautiful Woman",
+      "Freya",
+      "Rushed Local",
       "Station Staff"
     ],
     "searchNames": [
       "Talkative Noblewoman",
       "Beautiful Woman",
+      "Freya",
+      "Rushed Local",
       "Station Staff"
     ],
     "displayName": "Talkative Noblewoman"
@@ -5231,6 +5279,8 @@
       "Calm Local",
       "Common Kjerag Man",
       "Common Kjerag Woman",
+      "Kjerag Woman",
+      "Chosen Saintess",
       "Harold & Depressed Passerby",
       "Depressed Passerby",
       "No-Longer-Depressed Passerby",
@@ -5246,6 +5296,8 @@
       "Calm Local",
       "Common Kjerag Man",
       "Common Kjerag Woman",
+      "Kjerag Woman",
+      "Chosen Saintess",
       "Harold & Depressed Passerby",
       "Depressed Passerby",
       "No-Longer-Depressed Passerby",
@@ -5266,12 +5318,14 @@
     "speakerNames": [
       "Aurora's Sister",
       "Conductor",
-      "Station Steward"
+      "Station Steward",
+      "Pious Local"
     ],
     "searchNames": [
       "Aurora's Sister",
       "Conductor",
-      "Station Steward"
+      "Station Steward",
+      "Pious Local"
     ],
     "displayName": "Aurora's Sister"
   },
@@ -5288,10 +5342,18 @@
   },
   "avg_npc_270_1": {
     "speakerNames": [
-      "Browntail Family Noble"
+      "Browntail Family Noble",
+      "Browntail Butler",
+      "Nosy Local",
+      "Excited Local",
+      "Local Girl"
     ],
     "searchNames": [
-      "Browntail Family Noble"
+      "Browntail Family Noble",
+      "Browntail Butler",
+      "Nosy Local",
+      "Excited Local",
+      "Local Girl"
     ],
     "displayName": "Browntail Family Noble"
   },
@@ -5327,6 +5389,12 @@
       "Lively Local",
       "Vintner?",
       "Bold Man",
+      "Investigator",
+      "Male Villager",
+      "Eager Kjerag Villager",
+      "Angered Local",
+      "Anxious Local",
+      "Staff",
       "Station Staff",
       "Bulky Youth",
       "Youth",
@@ -5345,6 +5413,12 @@
       "Lively Local",
       "Vintner?",
       "Bold Man",
+      "Investigator",
+      "Male Villager",
+      "Eager Kjerag Villager",
+      "Angered Local",
+      "Anxious Local",
+      "Staff",
       "Station Staff",
       "Bulky Youth",
       "Youth",
@@ -5361,9 +5435,12 @@
       "Burdenbeast Herder",
       "Kjerag Elder",
       "Old Herdsman",
+      "Elderly Kjerag Villager",
+      "Barkeeper",
       "Lara's Father",
       "Old Man",
       "Nail-Tender",
+      "Souvenir Shop Owner",
       "Hawker A"
     ],
     "searchNames": [
@@ -5374,9 +5451,12 @@
       "Burdenbeast Herder",
       "Kjerag Elder",
       "Old Herdsman",
+      "Elderly Kjerag Villager",
+      "Barkeeper",
       "Lara's Father",
       "Old Man",
       "Nail-Tender",
+      "Souvenir Shop Owner",
       "Hawker A"
     ],
     "displayName": "Senior Subject"
@@ -5400,6 +5480,10 @@
       "Silverash Clan Warriors",
       "Kjerag Warrior",
       "Guard?",
+      "Rescuer",
+      "Browntail Guard",
+      "Flippant Kjerag Guard",
+      "Feline Clansman",
       "Agile Kjerag Warrior",
       "Mountaineer"
     ],
@@ -5421,6 +5505,10 @@
       "Silverash Clan Warriors",
       "Kjerag Warrior",
       "Guard?",
+      "Rescuer",
+      "Browntail Guard",
+      "Flippant Kjerag Guard",
+      "Feline Clansman",
       "Agile Kjerag Warrior",
       "Mountaineer"
     ],
@@ -5441,6 +5529,10 @@
       "Silverash Clan Warrior D",
       "Paleroche Clan Warriors",
       "Kjerag Hunter",
+      "Attacker",
+      "Browntail Guard",
+      "Cautious Kjerag Guard",
+      "Paleroche Warrior",
       "Warriors",
       "Kjerag Warrior"
     ],
@@ -5458,6 +5550,10 @@
       "Silverash Clan Warrior D",
       "Paleroche Clan Warriors",
       "Kjerag Hunter",
+      "Attacker",
+      "Browntail Guard",
+      "Cautious Kjerag Guard",
+      "Paleroche Warrior",
       "Warriors",
       "Kjerag Warrior"
     ],
@@ -5467,12 +5563,18 @@
     "speakerNames": [
       "Soldier Leader",
       "Silverash Clan Sergeant",
-      "Paleroche Clan Warrior"
+      "Paleroche Clan Warrior",
+      "Browntail Guard",
+      "Silverash Clan Guard",
+      "Impatient Kjerag Guard"
     ],
     "searchNames": [
       "Soldier Leader",
       "Silverash Clan Sergeant",
-      "Paleroche Clan Warrior"
+      "Paleroche Clan Warrior",
+      "Browntail Guard",
+      "Silverash Clan Guard",
+      "Impatient Kjerag Guard"
     ],
     "displayName": "Soldier Leader"
   },
@@ -5481,6 +5583,7 @@
       "Kjerag Noble",
       "Kjerag Noble A",
       "Hospitable Villager",
+      "Male Browntail Noble",
       "Old Noble",
       "Teacher"
     ],
@@ -5488,6 +5591,7 @@
       "Kjerag Noble",
       "Kjerag Noble A",
       "Hospitable Villager",
+      "Male Browntail Noble",
       "Old Noble",
       "Teacher"
     ],
@@ -5495,10 +5599,12 @@
   },
   "avg_npc_269": {
     "speakerNames": [
-      "Servant"
+      "Servant",
+      "Chosen Saintess"
     ],
     "searchNames": [
-      "Servant"
+      "Servant",
+      "Chosen Saintess"
     ],
     "displayName": "Servant"
   },
@@ -5580,11 +5686,17 @@
   "avg_npc_285_1": {
     "speakerNames": [
       "Paleroche Clan Officer",
-      "Browntail Clan Warrior"
+      "Browntail Clan Warrior",
+      "Silverash Clan Guard",
+      "Paleroche Guard",
+      "Kjerag Guard"
     ],
     "searchNames": [
       "Paleroche Clan Officer",
-      "Browntail Clan Warrior"
+      "Browntail Clan Warrior",
+      "Silverash Clan Guard",
+      "Paleroche Guard",
+      "Kjerag Guard"
     ],
     "displayName": "Paleroche Clan Officer"
   },
@@ -5625,6 +5737,9 @@
   "avg_npc_274_1": {
     "speakerNames": [
       "Kjerag Noble B",
+      "Ursus Clansman",
+      "Zalak Clanswoman",
+      "Female Browntail Noble",
       "Fretful Wife",
       "Chief's Wife",
       "Karlan Trade Manager",
@@ -5632,6 +5747,9 @@
     ],
     "searchNames": [
       "Kjerag Noble B",
+      "Ursus Clansman",
+      "Zalak Clanswoman",
+      "Female Browntail Noble",
       "Fretful Wife",
       "Chief's Wife",
       "Karlan Trade Manager",
@@ -6818,6 +6936,7 @@
       "Calm Mercenary",
       "Disdainful Mercenary",
       "Nervous Mercenary",
+      "Victorian Agent",
       "Victorian Mercenary",
       "Former Defense Forces Soldier",
       "Nervous Soldier",
@@ -6841,6 +6960,7 @@
       "Calm Mercenary",
       "Disdainful Mercenary",
       "Nervous Mercenary",
+      "Victorian Agent",
       "Victorian Mercenary",
       "Former Defense Forces Soldier",
       "Nervous Soldier",
@@ -8799,6 +8919,8 @@
       "Excited Soldier",
       "Impetuous Soldier",
       "Stressed Soldier",
+      "Victorian Guard",
+      "Victorian Guard A",
       "Indistinct Officer",
       "High-Ranking Officer",
       "Victorian Sergeant",
@@ -8820,6 +8942,8 @@
       "Excited Soldier",
       "Impetuous Soldier",
       "Stressed Soldier",
+      "Victorian Guard",
+      "Victorian Guard A",
       "Indistinct Officer",
       "High-Ranking Officer",
       "Victorian Sergeant",
@@ -8927,6 +9051,7 @@
       "Drunken MP",
       "Defense Force Patrol",
       "Excited Soldier",
+      "Victorian Guard B",
       "Adjutant Hill",
       "'Adjutant Hill'",
       "Stern Officer",
@@ -8943,6 +9068,7 @@
       "Drunken MP",
       "Defense Force Patrol",
       "Excited Soldier",
+      "Victorian Guard B",
       "Adjutant Hill",
       "'Adjutant Hill'",
       "Stern Officer",
@@ -8968,6 +9094,8 @@
       "Lanky Inventor",
       "Angry Resident",
       "No Longer Angry Resident",
+      "Neighbor A",
+      "Concerned Passerby",
       "New Teacher",
       "Ivy",
       "Haggard Woman",
@@ -8989,6 +9117,8 @@
       "Lanky Inventor",
       "Angry Resident",
       "No Longer Angry Resident",
+      "Neighbor A",
+      "Concerned Passerby",
       "New Teacher",
       "Ivy",
       "Haggard Woman",
@@ -9206,6 +9336,7 @@
       "Rowdy MP",
       "Downtrodden Man",
       "Wronged Worker",
+      "Factory Foreman",
       "Londinium Worker",
       "Londinium Workers",
       "Londinium Worker B",
@@ -9222,6 +9353,7 @@
       "Rowdy MP",
       "Downtrodden Man",
       "Wronged Worker",
+      "Factory Foreman",
       "Londinium Worker",
       "Londinium Workers",
       "Londinium Worker B",
@@ -9436,7 +9568,8 @@
       "Sniper",
       "Agent B",
       "Columbian Soldier A",
-      "Columbian Soldier B"
+      "Columbian Soldier B",
+      "Maylander Foundation Agent"
     ],
     "searchNames": [
       "Columbian Military Officer",
@@ -9445,7 +9578,8 @@
       "Sniper",
       "Agent B",
       "Columbian Soldier A",
-      "Columbian Soldier B"
+      "Columbian Soldier B",
+      "Maylander Foundation Agent"
     ],
     "displayName": "Columbian Military Officer"
   },
@@ -9641,6 +9775,7 @@
       "Andante",
       "Woman in Operator Attire",
       "Flustered Operator",
+      "Rhodes Island Medic",
       "Rhodes Island Medic Operator",
       "Medic Operator",
       "Logistics Operator",
@@ -9652,6 +9787,7 @@
       "Andante",
       "Woman in Operator Attire",
       "Flustered Operator",
+      "Rhodes Island Medic",
       "Rhodes Island Medic Operator",
       "Medic Operator",
       "Logistics Operator",
@@ -10998,6 +11134,8 @@
       "Young Isidro",
       "Zola",
       "Luna",
+      "Rose",
+      "Ilsa & Rose",
       "Mischievous Student",
       "Note-Passing Student",
       "Selene",
@@ -11009,6 +11147,8 @@
       "Young Isidro",
       "Zola",
       "Luna",
+      "Rose",
+      "Ilsa & Rose",
       "Mischievous Student",
       "Note-Passing Student",
       "Selene",
@@ -11221,11 +11361,13 @@
   "avg_npc_726_1": {
     "speakerNames": [
       "Duke of Caster",
+      "Victorian Noble",
       "Indra",
       "Siege"
     ],
     "searchNames": [
       "Duke of Caster",
+      "Victorian Noble",
       "Indra",
       "Siege"
     ],
@@ -12958,11 +13100,15 @@
     "speakerNames": [
       "Passionate Villager",
       "Shopkeeper",
+      "Female Villager",
+      "Silverash Clan Servant",
       "Curious Staffer"
     ],
     "searchNames": [
       "Passionate Villager",
       "Shopkeeper",
+      "Female Villager",
+      "Silverash Clan Servant",
       "Curious Staffer"
     ],
     "displayName": "Passionate Villager"
@@ -12982,12 +13128,16 @@
     "speakerNames": [
       "Seasoned Soldier",
       "Sickly Soldier",
-      "Angry MP"
+      "Angry MP",
+      "Newly Married Man",
+      "Lisburn"
     ],
     "searchNames": [
       "Seasoned Soldier",
       "Sickly Soldier",
-      "Angry MP"
+      "Angry MP",
+      "Newly Married Man",
+      "Lisburn"
     ],
     "displayName": "Seasoned Soldier"
   },
@@ -13682,6 +13832,7 @@
   "avg_npc_093": {
     "speakerNames": [
       "Elderly Woman",
+      "Elderly Local",
       "Old Granny",
       "Old Woman",
       "Hunched Old Man",
@@ -13696,6 +13847,7 @@
     ],
     "searchNames": [
       "Elderly Woman",
+      "Elderly Local",
       "Old Granny",
       "Old Woman",
       "Hunched Old Man",
@@ -15118,6 +15270,7 @@
       "Curious Girl",
       "Hope",
       "Composed Child",
+      "Ilsa",
       "Repulsed Child",
       "Enthusiastic Student",
       "Hollering Student",
@@ -15137,6 +15290,7 @@
       "Curious Girl",
       "Hope",
       "Composed Child",
+      "Ilsa",
       "Repulsed Child",
       "Enthusiastic Student",
       "Hollering Student",
@@ -16534,10 +16688,18 @@
   "avg_npc_1337_1": {
     "speakerNames": [
       "Solemn Servant",
+      "Victorian Officer",
+      "Duke of Caster",
+      "Caster's Guard",
+      "Victorian Commander",
       "Flag Officer"
     ],
     "searchNames": [
       "Solemn Servant",
+      "Victorian Officer",
+      "Duke of Caster",
+      "Caster's Guard",
+      "Victorian Commander",
       "Flag Officer"
     ],
     "displayName": "Solemn Servant"
@@ -17904,11 +18066,13 @@
   "avg_npc_051": {
     "speakerNames": [
       "Amiya",
-      "Small Cautus"
+      "Small Cautus",
+      "Child"
     ],
     "searchNames": [
       "Amiya",
-      "Small Cautus"
+      "Small Cautus",
+      "Child"
     ],
     "displayName": "Amiya"
   },
@@ -18690,11 +18854,13 @@
   "avg_4134_cetsyr_1": {
     "speakerNames": [
       "Civilight Eterna",
-      "Theresa's Phantom"
+      "Theresa's Phantom",
+      "Shadow"
     ],
     "searchNames": [
       "Civilight Eterna",
-      "Theresa's Phantom"
+      "Theresa's Phantom",
+      "Shadow"
     ],
     "displayName": "Civilight Eterna"
   },
@@ -18865,12 +19031,14 @@
   "avg_npc_1456_1": {
     "speakerNames": [
       "Frightened Child",
+      "Timid Sick Child",
       "Frail Sarkaz",
       "Li'l Brick",
       "Gretel"
     ],
     "searchNames": [
       "Frightened Child",
+      "Timid Sick Child",
       "Frail Sarkaz",
       "Li'l Brick",
       "Gretel"
@@ -19594,14 +19762,14 @@
   },
   "avg_npc_599_1": {
     "speakerNames": [
-      "Stray Storm Cloudbeast",
-      "Cloudbeast"
+      "Cloudbeast",
+      "Stray Storm Cloudbeast"
     ],
     "searchNames": [
-      "Stray Storm Cloudbeast",
-      "Cloudbeast"
+      "Cloudbeast",
+      "Stray Storm Cloudbeast"
     ],
-    "displayName": "Stray Storm Cloudbeast"
+    "displayName": "Cloudbeast"
   },
   "avg_253_greyy_1": {
     "speakerNames": [
@@ -20549,7 +20717,8 @@
       "Yakuza Captain",
       "Anguished Yakuza",
       "Jirou",
-      "Yakuza B"
+      "Yakuza B",
+      "Yakuza Boss"
     ],
     "searchNames": [
       "Fierce Yakuza",
@@ -20558,7 +20727,8 @@
       "Yakuza Captain",
       "Anguished Yakuza",
       "Jirou",
-      "Yakuza B"
+      "Yakuza B",
+      "Yakuza Boss"
     ],
     "displayName": "Fierce Yakuza"
   },
@@ -20578,7 +20748,9 @@
       "Bold Yakuza",
       "Posturing Yakuza",
       "Yakuza A",
-      "Yakuza C"
+      "Yakuza C",
+      "Cool-Headed Yakuza",
+      "Yakuza Boss & Fearful Yakuza"
     ],
     "searchNames": [
       "Fierce Yakuza",
@@ -20586,7 +20758,9 @@
       "Bold Yakuza",
       "Posturing Yakuza",
       "Yakuza A",
-      "Yakuza C"
+      "Yakuza C",
+      "Cool-Headed Yakuza",
+      "Yakuza Boss & Fearful Yakuza"
     ],
     "displayName": "Fierce Yakuza"
   },
@@ -20652,13 +20826,19 @@
       "Father",
       "Eager Staff",
       "Sharp-Eyed Staff",
-      "Diet Candidate"
+      "Diet Candidate",
+      "Confused Resident",
+      "Confused Resident & Perplexed Resident",
+      "Angry Stall Owner"
     ],
     "searchNames": [
       "Father",
       "Eager Staff",
       "Sharp-Eyed Staff",
-      "Diet Candidate"
+      "Diet Candidate",
+      "Confused Resident",
+      "Confused Resident & Perplexed Resident",
+      "Angry Stall Owner"
     ],
     "displayName": "Father"
   },
@@ -20666,12 +20846,14 @@
     "speakerNames": [
       "Mother",
       "Surprised Fan",
-      "Confused Fan"
+      "Confused Fan",
+      "Perplexed Resident"
     ],
     "searchNames": [
       "Mother",
       "Surprised Fan",
-      "Confused Fan"
+      "Confused Fan",
+      "Perplexed Resident"
     ],
     "displayName": "Mother"
   },
@@ -20706,10 +20888,14 @@
   },
   "avg_npc_759_1": {
     "speakerNames": [
-      "Angry Mother"
+      "Angry Mother",
+      "Sad Stall Owner",
+      "??"
     ],
     "searchNames": [
-      "Angry Mother"
+      "Angry Mother",
+      "Sad Stall Owner",
+      "??"
     ],
     "displayName": "Angry Mother"
   },
@@ -20759,10 +20945,14 @@
   },
   "avg_npc_758_1": {
     "speakerNames": [
-      "Auctioneer's Voice"
+      "Auctioneer's Voice",
+      "Friendly Stall Owner",
+      "Suzuki"
     ],
     "searchNames": [
-      "Auctioneer's Voice"
+      "Auctioneer's Voice",
+      "Friendly Stall Owner",
+      "Suzuki"
     ],
     "displayName": "Auctioneer's Voice"
   },
@@ -21285,5 +21475,231 @@
       "Ederson"
     ],
     "displayName": "Ederson"
+  },
+  "avg_npc_2014_1": {
+    "speakerNames": [
+      "Old Cleric",
+      "Excited Cleric",
+      "Clerics",
+      "Vine-Bead Apprentice Cleric",
+      "Young Cleric"
+    ],
+    "searchNames": [
+      "Old Cleric",
+      "Excited Cleric",
+      "Clerics",
+      "Vine-Bead Apprentice Cleric",
+      "Young Cleric"
+    ],
+    "displayName": "Old Cleric"
+  },
+  "avg_npc_1998_1": {
+    "speakerNames": [
+      "Vine-Bead Court Elder",
+      "Adso",
+      "Victorian Reporter"
+    ],
+    "searchNames": [
+      "Vine-Bead Court Elder",
+      "Adso",
+      "Victorian Reporter"
+    ],
+    "displayName": "Vine-Bead Court Elder"
+  },
+  "avg_1047_halo2_1": {
+    "speakerNames": [
+      "Elena",
+      "Carolin",
+      "Kjerag Mail Carrier"
+    ],
+    "searchNames": [
+      "Elena",
+      "Carolin",
+      "Kjerag Mail Carrier"
+    ],
+    "displayName": "Elena"
+  },
+  "avg_npc_2007_1": {
+    "speakerNames": [
+      "Energy Section Researcher",
+      "Rhine Lab Researcher"
+    ],
+    "searchNames": [
+      "Energy Section Researcher",
+      "Rhine Lab Researcher"
+    ],
+    "displayName": "Energy Section Researcher"
+  },
+  "avg_npc_2004_1": {
+    "speakerNames": [
+      "Kjerag Girl",
+      "Young Kjerag Child"
+    ],
+    "searchNames": [
+      "Kjerag Girl",
+      "Young Kjerag Child"
+    ],
+    "displayName": "Kjerag Girl"
+  },
+  "avg_npc_2006_1": {
+    "speakerNames": [
+      "Victorian Reporter",
+      "Angry Local",
+      "Alberta"
+    ],
+    "searchNames": [
+      "Victorian Reporter",
+      "Angry Local",
+      "Alberta"
+    ],
+    "displayName": "Victorian Reporter"
+  },
+  "avg_npc_2011_1": {
+    "speakerNames": [
+      "Columbian Ambassador"
+    ],
+    "searchNames": [
+      "Columbian Ambassador"
+    ],
+    "displayName": "Columbian Ambassador"
+  },
+  "avg_npc_2012_1": {
+    "speakerNames": [
+      "Victorian Ambassador",
+      "Gnosis"
+    ],
+    "searchNames": [
+      "Victorian Ambassador",
+      "Gnosis"
+    ],
+    "displayName": "Victorian Ambassador"
+  },
+  "avg_npc_2002_1": {
+    "speakerNames": [
+      "Kjerag Boy",
+      "Local Child",
+      "Older Kjerag Child"
+    ],
+    "searchNames": [
+      "Kjerag Boy",
+      "Local Child",
+      "Older Kjerag Child"
+    ],
+    "displayName": "Kjerag Boy"
+  },
+  "avg_npc_2010_1": {
+    "speakerNames": [
+      "Enya"
+    ],
+    "searchNames": [
+      "Enya"
+    ],
+    "displayName": "Enya"
+  },
+  "avg_4211_snhunt_1": {
+    "speakerNames": [
+      "Young Huntress",
+      "Joanna",
+      "Savage Beast"
+    ],
+    "searchNames": [
+      "Young Huntress",
+      "Joanna",
+      "Savage Beast"
+    ],
+    "displayName": "Young Huntress"
+  },
+  "avg_npc_1999_1": {
+    "speakerNames": [
+      "Carolin",
+      "Elderly Cleric",
+      "Agitated Woman",
+      "Monch"
+    ],
+    "searchNames": [
+      "Carolin",
+      "Elderly Cleric",
+      "Agitated Woman",
+      "Monch"
+    ],
+    "displayName": "Carolin"
+  },
+  "avg_npc_1161_1": {
+    "speakerNames": [
+      "Karlan Trade Employee",
+      "Gnosis"
+    ],
+    "searchNames": [
+      "Karlan Trade Employee",
+      "Gnosis"
+    ],
+    "displayName": "Karlan Trade Employee"
+  },
+  "avg_npc_2013_1": {
+    "speakerNames": [
+      "Caster's Personal Guard Captain"
+    ],
+    "searchNames": [
+      "Caster's Personal Guard Captain"
+    ],
+    "displayName": "Caster's Personal Guard Captain"
+  },
+  "avg_1045_svash2_1": {
+    "speakerNames": [
+      "Enciodes"
+    ],
+    "searchNames": [
+      "Enciodes"
+    ],
+    "displayName": "Enciodes"
+  },
+  "avg_npc_2009_1": {
+    "speakerNames": [
+      "Kjeragandr",
+      "Passing Girl"
+    ],
+    "searchNames": [
+      "Kjeragandr",
+      "Passing Girl"
+    ],
+    "displayName": "Kjeragandr"
+  },
+  "avg_npc_2000_1": {
+    "speakerNames": [
+      "Kjerag Researcher",
+      "Local Researcher"
+    ],
+    "searchNames": [
+      "Kjerag Researcher",
+      "Local Researcher"
+    ],
+    "displayName": "Kjerag Researcher"
+  },
+  "avg_1046_sbell2_1": {
+    "speakerNames": [
+      "Enya"
+    ],
+    "searchNames": [
+      "Enya"
+    ],
+    "displayName": "Enya"
+  },
+  "avg_npc_2005_1": {
+    "speakerNames": [
+      "Local Girl"
+    ],
+    "searchNames": [
+      "Local Girl"
+    ],
+    "displayName": "Local Girl"
+  },
+  "avg_npc_2050_1": {
+    "speakerNames": [
+      "Lava"
+    ],
+    "searchNames": [
+      "Lava"
+    ],
+    "displayName": "Lava"
   }
 }
