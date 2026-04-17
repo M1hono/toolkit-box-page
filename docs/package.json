@@ -62,7 +62,6 @@
         "tags": "tsx .vitepress/scripts/generate-tag-data.mjs",
         "locale": "tsx .vitepress/scripts/locale-key-sync.mjs",
         "title": "tsx .vitepress/scripts/update-index-titles.mjs",
-        "frontmatter": "tsx .vitepress/scripts/update-frontmatter.mjs",
         "data:arknights": "node scripts/arknights/main-fetcher.cjs",
         "data:fgo": "node scripts/fgo/main-fetcher.cjs",
         "data:story": "node scripts/arknights/syncStoryData.cjs",
