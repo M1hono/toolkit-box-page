@@ -1,6 +1,12 @@
 {
-    "outputFormat": "Output Format",
+    "copy": "Copy",
     "copyCode": "Copy Code",
+    "fullRecipe": "Full Recipe",
     "lockSizeToSeeOutput": "Lock size and configure the ritual to see output.",
+    "lockSizeToSeeShape": "Lock size and define at least one active pattern cell to see shape output.",
+    "onlyShape": "Only Shape",
+    "outputFormat": "Output Format",
+    "shapeData": "Shape Data",
+    "shapeValidationError": "Invalid shape. Ensure pattern has at least one non-zero value.",
     "validationError": "Invalid configuration. Ensure pattern has at least one non-zero value and all keys have an item defined."
 }

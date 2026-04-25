@@ -1,13 +1,14 @@
 {
-    "customCategories": "Custom Categories",
-    "newCategory": "New Category",
-    "newCategoryPlaceholder": "Enter category name",
-    "settings": "Settings",
-    "sourceFile": "Source File",
-    "sourceFileHint": "Original language (e.g., en_us.json)",
-    "targetFile": "Target File",
-    "targetFileHint": "Translation file (e.g., zh_cn.json)",
-    "totalEntries": "Total",
-    "translated": "Translated",
-    "untranslated": "Untranslated"
+    "customCategories": "自定义分类",
+    "newCategory": "新分类",
+    "newCategoryPlaceholder": "输入分类名称",
+    "settings": "设置",
+    "settingsHint": "导入源语言和目标语言文件，然后整理分类后再编辑条目。",
+    "sourceFile": "源语言文件",
+    "sourceFileHint": "原始语言文件（如 en_us.json）",
+    "targetFile": "目标语言文件",
+    "targetFileHint": "翻译文件（如 zh_cn.json）",
+    "totalEntries": "总条目",
+    "translated": "已翻译",
+    "untranslated": "未翻译"
 }

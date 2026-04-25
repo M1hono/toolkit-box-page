@@ -4,6 +4,7 @@
     "createFromSource": "Create from Source",
     "delete": "Delete",
     "fix": "Fix",
+    "issuesHint": "Track untranslated, orphaned, and structurally mismatched entries without leaving the editor.",
     "mismatchWarning": "These entries have structural differences between source and target.",
     "mismatches": "Mismatches",
     "noMismatches": "No structural mismatches",

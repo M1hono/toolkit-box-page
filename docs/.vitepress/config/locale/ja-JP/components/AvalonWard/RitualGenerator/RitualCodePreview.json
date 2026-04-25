@@ -1,6 +1,12 @@
 {
-    "copyCode": "Copy Code",
-    "lockSizeToSeeOutput": "Lock size and configure the ritual to see output.",
-    "outputFormat": "Output Format",
-    "validationError": "Invalid configuration. Ensure pattern has at least one non-zero value and all keys have an item defined."
+    "copy": "コピー",
+    "copyCode": "コードをコピー",
+    "fullRecipe": "完全レシピ",
+    "lockSizeToSeeOutput": "サイズを固定して儀式設定を完了すると出力を確認できます。",
+    "lockSizeToSeeShape": "サイズを固定し、1 つ以上の非ゼロパターンセルを定義すると形状出力を確認できます。",
+    "onlyShape": "形状のみ",
+    "outputFormat": "出力形式",
+    "shapeData": "形状データ",
+    "shapeValidationError": "形状が無効です。パターンに少なくとも 1 つの非ゼロ値が必要です。",
+    "validationError": "設定が無効です。パターンに少なくとも 1 つの非ゼロ値があり、すべてのキーにアイテムが設定されていることを確認してください。"
 }

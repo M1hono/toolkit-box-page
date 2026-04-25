@@ -1,5 +1,7 @@
 {
     "instructionClick": "Left click to toggle cells. Right click for custom values.",
     "instructionWarning": "Pattern must have at least one non-zero value. Reagents must be placed on active pattern cells.",
-    "title": "Ritual Pattern Generator"
+    "reagentPrompt": "Enter reagent key (single character):",
+    "title": "Ritual Pattern Generator",
+    "valuePrompt": "Enter value (number):"
 }

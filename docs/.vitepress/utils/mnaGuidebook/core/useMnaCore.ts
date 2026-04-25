@@ -5,14 +5,17 @@
 
 import { ref, reactive, computed } from "vue";
 import type { EntryCollection, GeneratorConfig, Entry } from "../types.js";
+import { DEFAULT_CATEGORIES, DEFAULT_GUIDEBOOK_VERSION } from "../constants.js";
+import { formatMnaMessage, type MnaMessageMap } from "../i18n.js";
 
-export function useMnaCore() {
+export function useMnaCore(messages: MnaMessageMap) {
     // Basic configuration
     const config = reactive<GeneratorConfig>({
         modId: "mna",
         language: "zh_cn",
         sourceLanguage: "en_us",
         isPackAddition: false,
+        guidebookVersion: DEFAULT_GUIDEBOOK_VERSION,
     });
 
     // Core state
@@ -33,18 +36,7 @@ export function useMnaCore() {
     const jsonOutput = ref("");
 
     // Default MNA categories
-    const defaultCategories = [
-        "basics",
-        "rituals",
-        "spells",
-        "items",
-        "blocks",
-        "mobs",
-        "mechanics",
-        "world",
-        "enchants",
-        "artifice",
-    ];
+    const defaultCategories = [...DEFAULT_CATEGORIES];
 
     const tierOptions = [1, 2, 3, 4, 5];
 
@@ -53,10 +45,11 @@ export function useMnaCore() {
         id: "",
         name: "",
         category: "basics",
-        icon: "",
-        advancement: "",
+        index: 0,
+        tier: 1,
+        required_advancement: "",
         sections: [],
-        sortnum: 0,
+        related_recipes: [],
     });
 
     // Computed properties
@@ -112,20 +105,21 @@ export function useMnaCore() {
         id: "",
         name: "",
         category: "basics",
-        icon: "",
-        advancement: "",
+        index: 0,
+        tier: 1,
+        required_advancement: "",
         sections: [],
-        sortnum: 0,
+        related_recipes: [],
     });
 
     const createNewEntry = (entryId: string) => {
         if (!entryId.trim()) {
-            updateStatus("Please enter an entry ID", true);
+            updateStatus(messages.pleaseEnterEntryId, true);
             return false;
         }
 
         if (entries.value[entryId]) {
-            updateStatus("Entry already exists", true);
+            updateStatus(messages.entryAlreadyExists, true);
             return false;
         }
 
@@ -136,13 +130,15 @@ export function useMnaCore() {
         newEntry.name = entryId;
         Object.assign(currentEntryData, newEntry);
 
-        updateStatus(`Created new entry: ${entryId} - add sections and save`);
+        updateStatus(
+            formatMnaMessage(messages.createdNewEntryStatus, { entry: entryId })
+        );
         return true;
     };
 
     const saveCurrentEntry = () => {
         if (!currentEntryId.value) {
-            updateStatus("Please enter an entry ID", true);
+            updateStatus(messages.pleaseEnterEntryId, true);
             return false;
         }
 
@@ -150,31 +146,49 @@ export function useMnaCore() {
             !currentEntryData.sections ||
             currentEntryData.sections.length === 0
         ) {
-            updateStatus("Entry must have at least one section", true);
+            updateStatus(messages.entryMustHaveSection, true);
+            return false;
+        }
+
+        if (
+            !currentEntryData.sections.some((section) => section.type === "title")
+        ) {
+            updateStatus(messages.entryMustHaveTitleSection, true);
             return false;
         }
 
         // Create MNA-compatible entry structure
         const newEntry: any = {
-            index: currentEntryData.sortnum || 0,
             category: currentEntryData.category || "basics",
             sections: JSON.parse(
                 JSON.stringify(currentEntryData.sections || [])
             ),
         };
 
-        // Add tier if > 1
-        if (currentEntryData.sortnum && currentEntryData.sortnum > 1) {
-            newEntry.tier = currentEntryData.sortnum;
+        if (Number.isFinite(currentEntryData.index)) {
+            newEntry.index = currentEntryData.index;
         }
 
-        // Add advancement if present
-        if (currentEntryData.advancement) {
-            newEntry.required_advancement = currentEntryData.advancement;
+        if (currentEntryData.tier > 1) {
+            newEntry.tier = currentEntryData.tier;
+        }
+
+        if (currentEntryData.required_advancement.trim()) {
+            newEntry.required_advancement = currentEntryData.required_advancement.trim();
+        }
+
+        if (currentEntryData.related_recipes.length > 0) {
+            newEntry.related_recipes = JSON.parse(
+                JSON.stringify(currentEntryData.related_recipes)
+            );
         }
 
         entries.value[currentEntryId.value] = newEntry;
-        updateStatus(`Entry "${currentEntryId.value}" saved successfully`);
+        updateStatus(
+            formatMnaMessage(messages.entrySavedStatus, {
+                entry: currentEntryId.value,
+            })
+        );
         generateJson();
         return true;
     };
@@ -188,13 +202,18 @@ export function useMnaCore() {
             id: entryId,
             name: entryId,
             category: entry.category || "basics",
-            icon: "",
-            advancement: entry.required_advancement || "",
+            index: entry.index || 0,
+            tier: entry.tier || 1,
+            required_advancement: entry.required_advancement || "",
             sections: JSON.parse(JSON.stringify(entry.sections || [])),
-            sortnum: entry.index || 0,
+            related_recipes: JSON.parse(
+                JSON.stringify(entry.related_recipes || [])
+            ),
         });
 
-        updateStatus(`Editing entry: ${entryId}`);
+        updateStatus(
+            formatMnaMessage(messages.editingEntryStatus, { entry: entryId })
+        );
         return true;
     };
 
@@ -208,7 +227,9 @@ export function useMnaCore() {
                 Object.assign(currentEntryData, createEmptyEntry());
             }
 
-            updateStatus(`Entry "${entryId}" deleted`);
+            updateStatus(
+                formatMnaMessage(messages.entryDeletedStatus, { entry: entryId })
+            );
             generateJson();
             return true;
         }
@@ -251,7 +272,14 @@ export function useMnaCore() {
 
     // JSON operations
     const generateJson = () => {
-        jsonOutput.value = JSON.stringify(entries.value, null, 2);
+        jsonOutput.value = JSON.stringify(
+            {
+                version: config.guidebookVersion || DEFAULT_GUIDEBOOK_VERSION,
+                ...entries.value,
+            },
+            null,
+            2
+        );
     };
 
     const downloadJson = () => {
@@ -267,7 +295,11 @@ export function useMnaCore() {
         link.click();
         URL.revokeObjectURL(url);
 
-        updateStatus(`Downloaded ${config.language}.json`);
+        updateStatus(
+            formatMnaMessage(messages.downloadedLanguageJson, {
+                language: config.language,
+            })
+        );
     };
 
     return {

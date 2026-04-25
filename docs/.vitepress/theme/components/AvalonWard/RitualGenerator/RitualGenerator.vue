@@ -54,11 +54,16 @@
 
                         <ritual-code-preview
                             :output-format="ritualState.outputFormat"
+                            :shape-only="ritualState.shapeOnly"
                             :json-preview="jsonPreview"
                             :kjs-code="kjsCode"
+                            :pattern-rows="patternRows"
+                            :display-pattern-rows="displayPatternRows"
+                            :reagent-rows="reagentRows"
                             :is-valid="ritualState.isValid"
                             :locked="ritualState.locked"
                             @update:output-format="ritualState.outputFormat = $event"
+                            @update:shape-only="ritualState.shapeOnly = $event"
                             class="panel-item"
                         />
                     </div>
@@ -114,6 +119,8 @@
             "Left click to toggle cells. Right click for custom values.",
         instructionWarning:
             "Pattern must have at least one non-zero value. Reagents must be placed on active pattern cells.",
+        reagentPrompt: "Enter reagent key (single character):",
+        valuePrompt: "Enter value (number):",
     });
 
     const {
@@ -122,6 +129,9 @@
         runeLetters,
         jsonPreview,
         kjsCode,
+        patternRows,
+        displayPatternRows,
+        reagentRows,
         initializeGrids,
         generateRandomRunes,
         validateForm,
@@ -175,7 +185,7 @@
         } else if (ritualState.activeLayer === "reagents") {
             if (ritualState.pattern[row][col] !== 0) {
                 const value = prompt(
-                    "Enter reagent key (single character):",
+                    t.reagentPrompt,
                     ritualState.reagents[row][col]
                 );
                 if (value !== null) {
@@ -202,7 +212,7 @@
 
         if (ritualState.activeLayer === "pattern") {
             const value = prompt(
-                "Enter value (number):",
+                t.valuePrompt,
                 ritualState.pattern[row][col].toString()
             );
             if (value !== null) {
@@ -215,7 +225,7 @@
             updateReagentsToMatchPattern();
         } else if (ritualState.activeLayer === "displayPattern") {
             const value = prompt(
-                "Enter value (number):",
+                t.valuePrompt,
                 ritualState.displayPattern[row][col].toString()
             );
             if (value !== null) {
@@ -332,6 +342,8 @@
     );
 
     watch(() => ritualState.keys, validateForm, { deep: true });
+    watch(() => ritualState.parameters, validateForm, { deep: true });
+    watch(() => ritualState.shapeOnly, validateForm);
     watch(
         () => ritualState.locked,
         () => {
@@ -344,34 +356,300 @@
 
 <style scoped>
     .ritual-generator-app {
-        background-color: #ffffff;
+        --ritual-shell-bg: var(--vp-c-bg);
+        --ritual-accent: #d6a038;
+        --ritual-accent-soft: color-mix(in srgb, var(--ritual-accent) 20%, var(--vp-c-bg) 80%);
+        --ritual-surface: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+        --ritual-surface-muted: color-mix(
+            in srgb,
+            var(--vp-c-bg) 84%,
+            var(--vp-c-bg-soft) 16%
+        );
+        --ritual-border: color-mix(in srgb, var(--vp-c-divider) 84%, var(--vp-c-text-3) 16%);
+        --ritual-border-strong: color-mix(
+            in srgb,
+            var(--vp-c-divider) 68%,
+            var(--vp-c-text-2) 32%
+        );
+        --ritual-grid-stage: color-mix(
+            in srgb,
+            var(--vp-c-bg-soft) 70%,
+            var(--vp-c-bg) 30%
+        );
+        --ritual-grid-cell: color-mix(in srgb, var(--vp-c-bg) 88%, var(--vp-c-bg-soft) 12%);
+        --ritual-grid-active: color-mix(in srgb, var(--ritual-accent) 16%, var(--vp-c-bg) 84%);
+        --ritual-grid-special: color-mix(
+            in srgb,
+            var(--ritual-accent) 28%,
+            var(--vp-c-bg) 72%
+        );
+        --ritual-grid-label-bg: color-mix(in srgb, var(--vp-c-bg) 76%, transparent);
+        --ritual-control-bg: color-mix(in srgb, var(--vp-c-bg) 94%, var(--vp-c-bg-soft) 6%);
+        --ritual-control-bg-hover: color-mix(
+            in srgb,
+            var(--vp-c-bg) 90%,
+            var(--vp-c-bg-soft) 10%
+        );
+        --ritual-control-bg-disabled: color-mix(
+            in srgb,
+            var(--vp-c-bg) 86%,
+            var(--vp-c-bg-soft) 14%
+        );
+        --ritual-code-bg: color-mix(in srgb, var(--vp-c-bg) 96%, var(--vp-c-bg-soft) 4%);
+        background-color: var(--ritual-shell-bg);
         min-height: 100vh;
     }
 
-    :root.dark .ritual-generator-app {
-        background-color: #1b1b1f;
-    }
-
-    .v-card {
-        border: 1px solid var(--vp-c-divider);
-        box-shadow: none !important;
-    }
-
-    .v-card .v-card {
-        border: 1px solid var(--vp-c-divider-light);
-    }
-
-    .v-card,
-    .v-sheet,
-    .v-alert,
-    .v-chip,
-    .v-btn,
-    .v-text-field .v-field,
-    .v-textarea .v-field,
-    .v-slider,
-    .v-tabs {
+    :deep(.v-card),
+    :deep(.v-sheet),
+    :deep(.v-alert),
+    :deep(.v-chip),
+    :deep(.v-btn),
+    :deep(.v-text-field .v-field),
+    :deep(.v-textarea .v-field),
+    :deep(.v-slider),
+    :deep(.v-tabs),
+    :deep(.v-list-item),
+    :deep(.v-switch) {
         border-radius: 4px !important;
         box-shadow: none !important;
+    }
+
+    :deep(.v-card) {
+        border: 1px solid var(--ritual-border);
+        background: var(--ritual-surface);
+    }
+
+    :deep(.v-card-title) {
+        padding: 16px 20px 13px !important;
+        border-bottom: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
+        background: var(--ritual-surface-muted);
+        color: var(--vp-c-text-1);
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+        min-height: 0;
+    }
+
+    :deep(.v-card-text) {
+        color: var(--vp-c-text-1);
+        padding: 18px 20px 20px !important;
+    }
+
+    :deep(.v-field) {
+        background: var(--ritual-control-bg);
+        min-height: 48px;
+        transition:
+            background-color 0.18s ease,
+            border-color 0.18s ease;
+    }
+
+    :deep(.v-field:hover) {
+        background: var(--ritual-control-bg-hover);
+    }
+
+    :deep(.v-field__outline) {
+        color: var(--ritual-border-strong);
+    }
+
+    :deep(.v-field:hover .v-field__outline) {
+        color: color-mix(in srgb, var(--vp-c-text-2) 36%, var(--ritual-border-strong));
+    }
+
+    :deep(.v-field.v-field--focused .v-field__outline) {
+        color: var(--ritual-accent);
+    }
+
+    :deep(.v-field__overlay),
+    :deep(.v-field__underlay) {
+        background: transparent !important;
+    }
+
+    :deep(.v-field--disabled) {
+        background: var(--ritual-control-bg-disabled);
+    }
+
+    :deep(.v-field__field) {
+        align-items: center;
+    }
+
+    :deep(.v-field__input) {
+        min-height: 48px;
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+        color: var(--vp-c-text-1);
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    :deep(.v-field__append-inner),
+    :deep(.v-field__prepend-inner) {
+        align-items: center;
+        color: var(--vp-c-text-2);
+    }
+
+    :deep(.v-input .v-label),
+    :deep(.v-input .v-messages),
+    :deep(.v-input .v-field__input),
+    :deep(.v-input input::placeholder),
+    :deep(.v-input textarea::placeholder) {
+        color: var(--vp-c-text-1);
+    }
+
+    :deep(.v-input .v-label) {
+        color: var(--vp-c-text-3);
+        letter-spacing: 0.01em;
+    }
+
+    :deep(.v-field--focused .v-label),
+    :deep(.v-field--active .v-label) {
+        color: var(--vp-c-text-2);
+    }
+
+    :deep(.v-input__details) {
+        padding-top: 6px;
+        min-height: 22px;
+    }
+
+    :deep(.v-btn--variant-outlined) {
+        border-color: var(--ritual-border-strong);
+    }
+
+    :deep(.v-btn--variant-outlined:not(.v-btn--disabled):hover) {
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 58%, var(--vp-c-bg));
+    }
+
+    :deep(.v-btn.v-btn--disabled) {
+        opacity: 1 !important;
+        color: var(--vp-c-text-3) !important;
+        border-color: color-mix(in srgb, var(--ritual-border-strong) 76%, transparent) !important;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 78%, var(--vp-c-bg)) !important;
+    }
+
+    :deep(.v-btn.v-btn--disabled .v-btn__overlay),
+    :deep(.v-btn.v-btn--disabled .v-btn__underlay) {
+        display: none;
+    }
+
+    :deep(.toolbar-action) {
+        background: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+        color: var(--vp-c-text-1) !important;
+        min-height: 34px;
+        padding-inline: 10px;
+    }
+
+    :deep(.toolbar-action .v-btn__overlay),
+    :deep(.toolbar-action .v-btn__underlay) {
+        display: none;
+    }
+
+    :deep(.toolbar-action:not(.v-btn--disabled):hover) {
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 58%, transparent) !important;
+    }
+
+    :deep(.toolbar-action.v-btn--disabled) {
+        background: transparent !important;
+        border-color: transparent !important;
+        color: var(--vp-c-text-3) !important;
+        opacity: 1 !important;
+    }
+
+    :deep(.v-tabs) {
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+    }
+
+    :deep(.v-tab) {
+        text-transform: none;
+        min-height: 42px;
+        font-weight: 600;
+        color: var(--vp-c-text-2);
+    }
+
+    :deep(.v-tab.v-tab--selected) {
+        color: var(--ritual-accent);
+        background: color-mix(in srgb, var(--ritual-accent) 14%, var(--vp-c-bg) 86%);
+    }
+
+    :deep(.v-selection-control) {
+        min-height: 36px;
+    }
+
+    :deep(.v-selection-control .v-label),
+    :deep(.v-list-item-title) {
+        color: var(--vp-c-text-1);
+        line-height: 1.45;
+    }
+
+    :deep(.text-warning),
+    :deep(.text-primary) {
+        color: var(--ritual-accent) !important;
+    }
+
+    :deep(.bg-warning),
+    :deep(.bg-primary) {
+        background-color: var(--ritual-accent) !important;
+    }
+
+    :deep(.v-list) {
+        background: transparent;
+    }
+
+    :deep(.ritual-field-stack) {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    :deep(.ritual-field-label) {
+        color: var(--vp-c-text-2);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    :deep(.ritual-native-input) {
+        display: block;
+        width: 100%;
+        min-height: 46px;
+        padding: 12px 14px;
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
+        border-radius: 12px;
+        background: var(--ritual-control-bg);
+        color: var(--vp-c-text-1);
+        font-size: 0.95rem;
+        line-height: 1.55;
+        box-sizing: border-box;
+        transition:
+            border-color 0.18s ease,
+            background-color 0.18s ease;
+    }
+
+    :deep(.ritual-native-input:hover) {
+        background: var(--ritual-control-bg-hover);
+    }
+
+    :deep(.ritual-native-input:disabled) {
+        background: var(--ritual-control-bg-disabled);
+        color: var(--vp-c-text-3);
+        cursor: not-allowed;
+    }
+
+    :deep(.ritual-native-input:focus) {
+        border-color: var(--ritual-accent);
+        box-shadow: 0 0 0 1px color-mix(in srgb, var(--ritual-accent) 42%, transparent);
+    }
+
+    :deep(.ritual-native-input::placeholder) {
+        color: var(--vp-c-text-3);
+    }
+
+    :deep(.ritual-native-input--mono) {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     }
 
     .v-container {
@@ -386,10 +664,9 @@
 
     .main-layout {
         display: grid;
-        grid-template-columns: 2fr 1fr;
-        gap: 16px;
-        padding: 0 24px;
-        min-height: auto;
+        grid-template-columns: minmax(640px, 1.14fr) minmax(320px, 0.86fr);
+        gap: 18px;
+        padding: 0 24px 24px;
         align-items: start;
     }
 
@@ -403,20 +680,22 @@
     .right-panel {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 14px;
         padding-left: 0;
         position: sticky;
-        top: 24px;
+        top: 18px;
     }
 
     .panel-item {
         width: 100%;
+        min-width: 0;
     }
 
     @media (max-width: 1024px) {
         .main-layout {
             grid-template-columns: 1fr;
             padding: 0 16px;
+            gap: 16px;
         }
 
         .left-panel,
@@ -435,5 +714,3 @@
         border-color: var(--vp-c-divider) !important;
     }
 </style>
-
-<style scoped></style>

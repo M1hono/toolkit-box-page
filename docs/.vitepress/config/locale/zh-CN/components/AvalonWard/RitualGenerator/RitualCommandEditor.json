@@ -1,5 +1,5 @@
 {
-    "command": "Command",
-    "commandPlaceholder": "Enter command to execute on ritual completion",
-    "optional": "Optional"
+    "command": "命令",
+    "commandPlaceholder": "输入仪式完成时执行的命令",
+    "optional": "可选"
 }

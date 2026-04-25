@@ -7,12 +7,12 @@
 -->
 
 <template>
-    <v-card flat>
+    <v-card flat class="ritual-keys-editor">
         <v-card-title class="text-h6">{{ t.reagentKeys }}</v-card-title>
-        <v-card-text>
+        <v-card-text class="pa-5">
             <div
                 v-if="Object.keys(keys).length === 0"
-                class="text-center text-grey pa-4"
+                class="empty-state text-center pa-4"
             >
                 {{ t.noKeys }}
             </div>
@@ -22,17 +22,22 @@
                     :key="'key-' + key"
                     class="key-item mb-4"
                 >
-                    <div class="d-flex align-center mb-2">
-                        <v-chip color="primary" class="mr-3">{{ key }}</v-chip>
-                        <v-text-field
-                            :model-value="keys[key].item"
-                            @update:model-value="updateKeyItem(key, $event)"
+                    <div class="key-item__header mb-3">
+                        <v-chip variant="outlined" class="key-chip mr-3">{{
+                            key
+                        }}</v-chip>
+                        <input
+                            :value="keys[key].item"
+                            @input="
+                                updateKeyItem(
+                                    key,
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
                             :placeholder="t.itemIdPlaceholder"
-                            variant="outlined"
-                            density="compact"
-                            hide-details
-                            class="flex-grow-1"
-                        ></v-text-field>
+                            type="text"
+                            class="ritual-native-input key-item__input"
+                        />
                     </div>
                     <div class="key-options">
                         <v-row dense>
@@ -43,6 +48,7 @@
                                         updateKeyOption(key, 'optional', $event)
                                     "
                                     :label="t.optional"
+                                    color="warning"
                                     density="compact"
                                     hide-details
                                 ></v-checkbox>
@@ -54,6 +60,7 @@
                                         updateKeyOption(key, 'consume', $event)
                                     "
                                     :label="t.consume"
+                                    color="warning"
                                     density="compact"
                                     hide-details
                                 ></v-checkbox>
@@ -69,6 +76,7 @@
                                         )
                                     "
                                     :label="t.dynamic"
+                                    color="warning"
                                     density="compact"
                                     hide-details
                                 ></v-checkbox>
@@ -84,6 +92,7 @@
                                         )
                                     "
                                     :label="t.dynamicSource"
+                                    color="warning"
                                     density="compact"
                                     hide-details
                                 ></v-checkbox>
@@ -99,6 +108,7 @@
                                         )
                                     "
                                     :label="t.manualReturn"
+                                    color="warning"
                                     density="compact"
                                     hide-details
                                 ></v-checkbox>
@@ -166,23 +176,49 @@
 </script>
 
 <style scoped>
-    .v-card {
-        border: 1px solid #bdbdbd;
-        box-shadow: none !important;
-    }
-
-    .key-item {
-        padding: 12px;
-        background-color: rgba(var(--v-theme-surface), 0.5);
+    .empty-state {
+        color: var(--vp-c-text-2);
+        border: 1px dashed color-mix(in srgb, var(--ritual-border) 80%, transparent);
         border-radius: 12px;
-        border: 1px solid #e0e0e0;
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--ritual-surface-muted) 8%);
     }
 
-    .v-card,
-    .v-text-field .v-field,
-    .v-btn,
-    .v-chip,
+    .keys-list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
     .key-item {
-        border-radius: 12px !important;
+        padding: 14px;
+        background-color: color-mix(
+            in srgb,
+            var(--vp-c-bg) 92%,
+            var(--ritual-surface-muted) 8%
+        );
+        border-radius: 12px;
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
+    }
+
+    .key-item__header {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .key-item__input {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .key-chip {
+        min-width: 36px;
+        justify-content: center;
+        color: var(--vp-c-text-1);
+        font-weight: 700;
+    }
+
+    .key-options :deep(.v-selection-control) {
+        margin: 0;
     }
 </style>

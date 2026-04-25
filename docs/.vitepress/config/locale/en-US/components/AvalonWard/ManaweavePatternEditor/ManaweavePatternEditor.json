@@ -1,0 +1,8 @@
+{
+    "customValuePrompt": "Enter an integer value for this cell",
+    "recipeConfiguration": "Recipe Configuration",
+    "requiredFaction": "Required Faction",
+    "requiredFactionPlaceholder": "e.g. mna:none",
+    "tier": "Tier",
+    "title": "Manaweaving Pattern Recipe Editor"
+}

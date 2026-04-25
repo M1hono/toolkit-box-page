@@ -4,14 +4,19 @@
  */
 
 import { ref, computed } from "vue";
-import type { EntryCollection, Entry } from "../types.js";
+import type { EntryCollection, Entry, GeneratorConfig } from "../types.js";
+import { DEFAULT_GUIDEBOOK_VERSION } from "../constants.js";
+import { renderGuidebookSegments } from "../richTextPreview.js";
+import { formatMnaMessage, type MnaMessageMap } from "../i18n.js";
 
 export function useMnaTranslation(
     entries: { value: EntryCollection },
     sourceEntries: { value: EntryCollection },
     currentEntryData: Entry,
     currentEntryId: { value: string },
-    updateStatus: (msg: string, isError?: boolean) => void
+    config: GeneratorConfig,
+    updateStatus: (msg: string, isError?: boolean) => void,
+    messages: MnaMessageMap
 ) {
     // File import/export operations
     const importData = async (
@@ -31,11 +36,21 @@ export function useMnaTranslation(
             
             const json = JSON.parse(text);
             console.log('[MNA] Parsed JSON, keys:', Object.keys(json).length);
+
+            if (typeof json.version === "string" && json.version.trim()) {
+                config.guidebookVersion = json.version.trim();
+            } else if (!config.guidebookVersion) {
+                config.guidebookVersion = DEFAULT_GUIDEBOOK_VERSION;
+            }
             
             const cleanedJson: any = {};
 
             // Process and validate entries
             Object.entries(json).forEach(([key, entry]) => {
+                if (key === "version") {
+                    return;
+                }
+
                 if (!entry) {
                     console.log('[MNA] Skipping null/undefined entry:', key);
                     return;
@@ -49,10 +64,12 @@ export function useMnaTranslation(
                         category: "basics",
                         tier: 1,
                         index: 0,
+                        required_advancement: "",
                         sections: [{
                             type: "text",
                             json: [{ text: entry }]
-                        }]
+                        }],
+                        related_recipes: [],
                     };
                     return;
                 }
@@ -109,21 +126,32 @@ export function useMnaTranslation(
                 sourceEntries.value = cleanedJson;
                 console.log(`[MNA] Source imported: ${validEntries} entries`, Object.keys(cleanedJson).slice(0, 5));
                 updateStatus(
-                    `Source language (${filename}) imported: ${validEntries} entries`
+                    formatMnaMessage(messages.sourceImportedStatus, {
+                        filename,
+                        count: validEntries,
+                    })
                 );
             } else {
                 // Replace the entire object to trigger reactivity
                 entries.value = cleanedJson;
                 console.log(`[MNA] Target imported: ${validEntries} entries`, Object.keys(cleanedJson).slice(0, 5));
                 updateStatus(
-                    `Target language (${filename}) imported: ${validEntries} entries`
+                    formatMnaMessage(messages.targetImportedStatus, {
+                        filename,
+                        count: validEntries,
+                    })
                 );
             }
 
             console.log('[MNA] Import complete, entries.value:', Object.keys(entries.value).length, 'sourceEntries.value:', Object.keys(sourceEntries.value).length);
             return true;
         } catch (error) {
-            updateStatus(`Import failed: ${error.message}`, true);
+            updateStatus(
+                formatMnaMessage(messages.importFailedStatus, {
+                    message: error instanceof Error ? error.message : String(error),
+                }),
+                true
+            );
             return false;
         }
     };
@@ -138,13 +166,20 @@ export function useMnaTranslation(
             id: entryId,
             name: entryId,
             category: sourceEntry.category || "basics",
-            icon: "",
-            advancement: sourceEntry.required_advancement || "",
+            index: sourceEntry.index || 0,
+            tier: sourceEntry.tier || 1,
+            required_advancement: sourceEntry.required_advancement || "",
             sections: [], // Start empty for translation
-            sortnum: sourceEntry.index || 0,
+            related_recipes: JSON.parse(
+                JSON.stringify(sourceEntry.related_recipes || [])
+            ),
         });
 
-        updateStatus(`Started translating: ${entryId}`);
+        updateStatus(
+            formatMnaMessage(messages.startedTranslatingStatus, {
+                entry: entryId,
+            })
+        );
         return true;
     };
 
@@ -161,7 +196,9 @@ export function useMnaTranslation(
         });
 
         updateStatus(
-            `Filled ${sourceEntry.sections.length} sections from source`
+            formatMnaMessage(messages.filledSectionsFromSourceStatus, {
+                count: sourceEntry.sections.length,
+            })
         );
         return true;
     };
@@ -185,7 +222,11 @@ export function useMnaTranslation(
             }
         });
 
-        updateStatus(`Found ${newEntries.length} new entries to translate`);
+        updateStatus(
+            formatMnaMessage(messages.foundNewEntriesStatus, {
+                count: newEntries.length,
+            })
+        );
         return newEntries;
     };
 
@@ -232,7 +273,11 @@ export function useMnaTranslation(
             }
         });
 
-        updateStatus(`Found ${changedEntries.length} entries with changes`);
+        updateStatus(
+            formatMnaMessage(messages.foundChangedEntriesStatus, {
+                count: changedEntries.length,
+            })
+        );
         return changedEntries;
     };
 
@@ -300,8 +345,18 @@ export function useMnaTranslation(
             }
         });
 
-        const summary = updates.length > 0 ? `\n${updates.slice(0, 5).join('\n')}${updates.length > 5 ? '\n...' : ''}` : '';
-        updateStatus(`Auto-updated ${updatedCount} entries from source${summary}`);
+        const summary =
+            updates.length > 0
+                ? `\n${updates.slice(0, 5).join("\n")}${
+                      updates.length > 5 ? "\n..." : ""
+                  }`
+                : "";
+        updateStatus(
+            formatMnaMessage(messages.autoUpdatedEntriesStatus, {
+                count: updatedCount,
+                summary,
+            })
+        );
         return updatedCount;
     };
 
@@ -319,6 +374,11 @@ export function useMnaTranslation(
         if (sourceData.required_advancement) {
             newEntry.required_advancement = sourceData.required_advancement;
         }
+        if (sourceData.related_recipes?.length) {
+            newEntry.related_recipes = JSON.parse(
+                JSON.stringify(sourceData.related_recipes)
+            );
+        }
 
         entries.value[entryId] = newEntry;
 
@@ -328,40 +388,24 @@ export function useMnaTranslation(
             id: entryId,
             name: entryId,
             category: newEntry.category,
-            icon: "",
-            advancement: newEntry.required_advancement || "",
+            index: newEntry.index || 0,
+            tier: newEntry.tier || 1,
+            required_advancement: newEntry.required_advancement || "",
             sections: newEntry.sections,
-            sortnum: newEntry.index,
+            related_recipes: newEntry.related_recipes || [],
         });
 
         updateStatus(
-            `Created "${entryId}" with ${newEntry.sections.length} sections from source`
+            formatMnaMessage(messages.createdFromSourceStatus, {
+                entry: entryId,
+                count: newEntry.sections.length,
+            })
         );
         return true;
     };
 
     // Format JSON text for display
-    const formatJsonText = (jsonArray: any[]) => {
-        if (!jsonArray || !Array.isArray(jsonArray)) return "";
-
-        return jsonArray
-            .map((segment) => {
-                if (!segment) return "";
-
-                let formatted = segment.text || "";
-                if (segment.color) {
-                    formatted = `<span class="text-${segment.color}">${formatted}</span>`;
-                }
-                if (segment.italic) {
-                    formatted = `<em>${formatted}</em>`;
-                }
-                if (segment.bold) {
-                    formatted = `<strong>${formatted}</strong>`;
-                }
-                return formatted;
-            })
-            .join("");
-    };
+    const formatJsonText = (jsonArray: any[]) => renderGuidebookSegments(jsonArray);
 
     return {
         // Methods

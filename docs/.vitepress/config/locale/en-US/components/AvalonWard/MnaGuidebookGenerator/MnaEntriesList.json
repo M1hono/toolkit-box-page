@@ -4,6 +4,7 @@
     "createFirstEntry": "Create your first entry above.",
     "delete": "Delete",
     "edit": "Edit",
+    "entriesHint": "Search, create, and jump between guidebook entries from one compact list.",
     "entriesList": "Entries List",
     "filterEntries": "Filter entries",
     "itemsPerPage": "Items per page",

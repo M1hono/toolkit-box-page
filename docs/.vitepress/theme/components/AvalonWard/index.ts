@@ -4,5 +4,6 @@
  */
 
 export { default as MnaGuidebookGenerator } from "./MnaGuidebookGenerator/MnaGuidebookGenerator.vue";
+export { default as ManaweavePatternEditor } from "./ManaweavePatternEditor/ManaweavePatternEditor.vue";
 export { default as RunescribingEditor } from "./RunescribingEditor/RunescribingEditor.vue";
 export { default as RitualGenerator } from "./RitualGenerator/RitualGenerator.vue";

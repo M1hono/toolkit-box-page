@@ -8,10 +8,15 @@
 
 <template>
     <v-card flat class="translation-panel">
-        <v-card-title class="d-flex justify-space-between align-center">
-            <div class="d-flex align-center">
-                <v-icon color="warning" class="mr-2">mdi-translate</v-icon>
-                <span class="text-h6">{{ t.untranslatedEntries }}</span>
+        <v-card-title class="translation-panel__header">
+            <div>
+                <div class="d-flex align-center">
+                    <v-icon color="warning" class="mr-2">mdi-translate</v-icon>
+                    <span class="text-h6">{{ t.untranslatedEntries }}</span>
+                </div>
+                <div class="translation-panel__hint">
+                    {{ t.translationHint }}
+                </div>
             </div>
             <v-chip 
                 v-if="totalUntranslated > 0" 
@@ -137,6 +142,7 @@
         sections: "Sections",
         startTranslating: "Start",
         createFromSource: "Copy & Edit",
+        translationHint: "Use this queue to create missing entries from the source file without losing context.",
     });
 
     const props = defineProps<{
@@ -166,25 +172,42 @@
 
 <style scoped>
     .translation-panel {
-        border: 1px solid var(--vp-c-divider);
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 64%, var(--vp-c-warning-1) 36%);
         box-shadow: none !important;
-        border-radius: 4px !important;
+        border-radius: 16px !important;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 70%, var(--vp-c-bg));
+    }
+
+    .translation-panel__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .translation-panel__hint {
+        margin-top: 8px;
+        color: var(--vp-c-text-2);
+        font-size: 0.92rem;
+        line-height: 1.45;
     }
 
     .untranslated-item {
-        transition: border-color 0.2s ease;
-        border-radius: 4px !important;
+        transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+        border-radius: 14px !important;
         box-shadow: none !important;
-        border: 1px solid var(--vp-c-divider);
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 84%, transparent);
+        background: color-mix(in srgb, var(--vp-c-bg) 72%, var(--vp-c-bg-soft) 28%);
     }
 
     .untranslated-item:hover {
-        border-color: rgb(var(--v-theme-warning));
-        background-color: rgba(var(--v-theme-warning), 0.02);
+        transform: translateY(-1px);
+        border-color: color-mix(in srgb, var(--vp-c-warning-1) 46%, var(--vp-c-divider));
+        background-color: color-mix(in srgb, var(--vp-c-warning-soft) 60%, var(--vp-c-bg));
     }
 
     .entry-highlight {
-        border-left: 2px solid rgb(var(--v-theme-success));
+        border-left: 2px solid color-mix(in srgb, var(--vp-c-success-1) 78%, var(--vp-c-success-2));
     }
 
     .v-card,

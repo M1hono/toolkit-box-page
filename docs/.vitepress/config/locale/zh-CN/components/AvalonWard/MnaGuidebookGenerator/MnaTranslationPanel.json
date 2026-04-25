@@ -1,13 +1,14 @@
 {
-    "allTranslated": "All Translated!",
-    "category": "Category",
-    "createFromSource": "Copy & Edit",
-    "itemsPerPage": "Items per page",
-    "missingTranslationFor": "Missing translation for:",
-    "sections": "Sections",
-    "startTranslating": "Start",
-    "tier": "Tier",
-    "totalEntries": "total entries",
-    "translationComplete": "All entries have been translated successfully.",
-    "untranslatedEntries": "Untranslated Entries"
+    "allTranslated": "已全部翻译完成！",
+    "category": "分类",
+    "createFromSource": "复制并编辑",
+    "itemsPerPage": "每页数量",
+    "missingTranslationFor": "缺少翻译：",
+    "sections": "段落",
+    "startTranslating": "开始",
+    "tier": "阶级",
+    "totalEntries": "条目总数",
+    "translationComplete": "所有条目均已成功翻译。",
+    "translationHint": "使用这个队列从源文件创建缺失条目，同时保持当前上下文。",
+    "untranslatedEntries": "未翻译条目"
 }

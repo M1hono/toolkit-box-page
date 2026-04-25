@@ -21,6 +21,12 @@ const MnaGuidebookGenerator = defineAsyncComponent(
             "@components/AvalonWard/MnaGuidebookGenerator/MnaGuidebookGenerator.vue"
         ),
 );
+const ManaweavePatternEditor = defineAsyncComponent(
+    () =>
+        import(
+            "@components/AvalonWard/ManaweavePatternEditor/ManaweavePatternEditor.vue"
+        ),
+);
 const RitualGenerator = defineAsyncComponent(
     () => import("@components/AvalonWard/RitualGenerator/RitualGenerator.vue"),
 );
@@ -36,11 +42,13 @@ export const components = {
     ArknightsStoryTracker,
     Fgo,
     MnaGuidebookGenerator,
+    ManaweavePatternEditor,
     RitualGenerator,
     RunescribingEditor,
     ToolkitCardGeneratorApp,
     ToolkitGuidebookGeneratorApp: MnaGuidebookGenerator,
     ToolkitJsonTranslatorApp,
+    ToolkitManaweavePatternEditorApp: ManaweavePatternEditor,
     ToolkitRitualGeneratorApp: RitualGenerator,
     ToolkitRunescribingEditorApp: RunescribingEditor,
 };

@@ -15,6 +15,11 @@ collapsed: false
 
 [打开仪式生成器](./RitualGenerator.md)
 
+## 法力编织图样配方编辑器
+编辑 11x11 的法力编织图样配方网格，并复制可直接使用的 JSON 或 KubeJS 输出。
+
+[打开法力编织图样配方编辑器](./ManaweavePatternEditor.md)
+
 ## 符文编辑器
 编辑 7x8 符文布局并导出 `mna:runescribing` JSON 或 KubeJS 数据。
 

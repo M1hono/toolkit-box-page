@@ -1,0 +1,10 @@
+{
+    "copy": "コピー",
+    "copyCode": "コードをコピー",
+    "defineShapeToSeeShape": "図形データを表示するには、少なくとも 1 つの非ゼロセルを設定してください。",
+    "fullRecipe": "完全なレシピ",
+    "onlyShape": "図形のみ",
+    "outputFormat": "出力形式",
+    "pattern": "pattern",
+    "shapeData": "図形データ"
+}

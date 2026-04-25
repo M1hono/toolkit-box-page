@@ -1,16 +1,21 @@
 {
     "addSection": "Add Section",
-    "clearForm": "Clear Form",
     "editSection": "Edit Section",
     "editingEntry": "Editing Entry",
     "entryCategory": "Category",
-    "entryName": "Entry ID",
+    "entryName": "Entry Key",
     "fillFromSource": "Fill from Source",
     "index": "Index",
+    "items": "items",
+    "linkedTo": "Linked to",
     "noEntrySelected": "No Entry Selected",
     "noSections": "No sections added. Click \"Add Section\" to start.",
+    "requiredAdvancement": "Required Advancement",
+    "requiredAdvancementPlaceholder": "mna:tier_0/vinteum_bar",
     "saveEntry": "Save Entry",
     "sections": "Sections",
     "selectOrCreateEntry": "Select an entry from the list or create a new one to start editing.",
-    "tier": "Tier"
+    "startsOnNewPage": "Starts on new page",
+    "tier": "Tier",
+    "untitled": "Untitled"
 }

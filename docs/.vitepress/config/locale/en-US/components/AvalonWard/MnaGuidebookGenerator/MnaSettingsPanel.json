@@ -3,6 +3,7 @@
     "newCategory": "New Category",
     "newCategoryPlaceholder": "Enter category name",
     "settings": "Settings",
+    "settingsHint": "Import source and target language files, then curate categories before editing entries.",
     "sourceFile": "Source File",
     "sourceFileHint": "Original language (e.g., en_us.json)",
     "targetFile": "Target File",

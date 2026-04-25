@@ -1,0 +1,8 @@
+{
+    "customValuePrompt": "このセルに整数値を入力してください",
+    "recipeConfiguration": "レシピ設定",
+    "requiredFaction": "必要な勢力",
+    "requiredFactionPlaceholder": "例: mna:none",
+    "tier": "ティア",
+    "title": "マナウィーブパターンレシピ編集"
+}

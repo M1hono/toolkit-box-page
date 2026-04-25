@@ -1,0 +1,10 @@
+{
+    "copy": "Copy",
+    "copyCode": "Copy Code",
+    "defineShapeToSeeShape": "Define at least one non-zero cell to see shape data.",
+    "fullRecipe": "Full Recipe",
+    "onlyShape": "Only Shape",
+    "outputFormat": "Output Format",
+    "pattern": "pattern",
+    "shapeData": "Shape Data"
+}

@@ -1,10 +1,10 @@
 {
-    "consume": "Consume",
-    "dynamic": "Dynamic",
-    "dynamicSource": "Dynamic Source",
-    "itemIdPlaceholder": "Item ID (required)",
-    "manualReturn": "Manual Return",
-    "noKeys": "No keys defined. Add reagents to the grid first.",
-    "optional": "Optional",
-    "reagentKeys": "Reagent Keys"
+    "consume": "消耗",
+    "dynamic": "动态",
+    "dynamicSource": "动态来源",
+    "itemIdPlaceholder": "物品 ID（必填）",
+    "manualReturn": "手动返还",
+    "noKeys": "尚未定义键。请先在网格中添加试剂。",
+    "optional": "可选",
+    "reagentKeys": "试剂键"
 }

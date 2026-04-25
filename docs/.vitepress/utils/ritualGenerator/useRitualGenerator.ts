@@ -3,13 +3,17 @@
  * @description Manages ritual patterns, validation, and code generation
  */
 
-import { reactive, computed, nextTick } from "vue";
+import { reactive, computed } from "vue";
+import { normalizeManaweavePatterns } from "../manaweavePatternEditor";
 import type {
     RitualState,
-    RitualPattern,
     RitualKeyConfig,
     ShowKeysOverlay,
 } from "./types";
+
+const DEFAULT_INNER_COLOR = "0xffd24a";
+const DEFAULT_OUTER_COLOR = "0xffd24a";
+const DEFAULT_BEAM_COLOR = "0xffd24a";
 
 /**
  * Main composable for Ritual Generator functionality
@@ -20,6 +24,7 @@ export function useRitualGenerator() {
         gridSize: 3,
         maxGridSize: 11,
         locked: false,
+        shapeOnly: false,
         activeLayer: "pattern",
         pattern: [],
         displayPattern: [],
@@ -27,9 +32,9 @@ export function useRitualGenerator() {
         keys: {},
         parameters: {
             tier: 1,
-            innerColor: "0xffffff",
-            outerColor: "0x00ff00",
-            beamColor: "0xffffff",
+            innerColor: DEFAULT_INNER_COLOR,
+            outerColor: DEFAULT_OUTER_COLOR,
+            beamColor: DEFAULT_BEAM_COLOR,
             connectBeam: true,
             displayIndexes: true,
             kittable: true,
@@ -85,13 +90,21 @@ export function useRitualGenerator() {
 
     const jsonPreview = computed(() => {
         if (!state.locked) return "";
-        return generateJson();
+        return state.shapeOnly ? generateShapeJson() : generateJson();
     });
 
     const kjsCode = computed(() => {
         if (!state.locked) return "";
-        return generateKjsCode();
+        return state.shapeOnly ? generateShapeKjsCode() : generateKjsCode();
     });
+
+    const patternRows = computed(() => numericGridRowStrings(state.pattern));
+
+    const displayPatternRows = computed(() =>
+        numericGridRowStrings(state.displayPattern)
+    );
+
+    const reagentRows = computed(() => reagentRowStrings());
 
     /**
      * Initializes grid arrays based on current grid size
@@ -118,6 +131,7 @@ export function useRitualGenerator() {
 
         state.keys = {};
         generateRandomRunes();
+        validateForm();
     };
 
     /**
@@ -141,25 +155,28 @@ export function useRitualGenerator() {
      * Validates the current ritual configuration
      */
     const validateForm = () => {
-        let valid = true;
+        let valid = hasNonZeroPatternCell();
 
-        let hasNonZero = false;
-        for (let i = 0; i < state.gridSize; i++) {
-            for (let j = 0; j < state.gridSize; j++) {
-                if (state.pattern[i][j] !== 0) {
-                    hasNonZero = true;
-                    break;
-                }
-            }
-            if (hasNonZero) break;
+        if (state.shapeOnly) {
+            state.isValid = valid;
+            return;
         }
-        if (!hasNonZero) valid = false;
 
-        for (const key in state.keys) {
-            if (!state.keys[key].item) {
+        const reagentSymbols = getUsedReagentSymbols();
+        if (reagentSymbols.size === 0) {
+            valid = false;
+        }
+
+        for (const symbol of Array.from(reagentSymbols)) {
+            const config = state.keys[symbol];
+            if (!config?.item?.trim()) {
                 valid = false;
                 break;
             }
+        }
+
+        if (!state.parameters.createsItem.trim()) {
+            valid = false;
         }
 
         state.isValid = valid;
@@ -170,66 +187,90 @@ export function useRitualGenerator() {
      * @returns Formatted JSON string
      */
     const generateJson = (): string => {
-        const json: any = {
+        const manaweavePatterns = normalizeManaweavePatterns(
+            state.manaweavePatterns
+        );
+        const json: Record<string, unknown> = {
             type: "mna:ritual",
             tier: state.parameters.tier,
+            pattern: cloneGrid(state.pattern),
+            reagents: reagentRowStrings(),
+            createsItem: state.parameters.createsItem.trim(),
         };
 
-        const formattedPattern = [];
-        for (let i = 0; i < state.gridSize; i++) {
-            formattedPattern.push(state.pattern[i].join(", "));
+        if (!isDisplayPatternSameAsPattern()) {
+            json.displayPattern = cloneGrid(state.displayPattern);
         }
-        json.pattern = formattedPattern;
+
+        const formattedKeys: Record<string, Record<string, unknown>> = {};
+        for (const symbol of getOrderedReagentSymbols()) {
+            const config = state.keys[symbol];
+            if (!config?.item?.trim()) {
+                continue;
+            }
+
+            const keyObject: Record<string, unknown> = {
+                item: config.item.trim(),
+            };
+            if (config.optional) keyObject.optional = true;
+            if (!config.consume) keyObject.consume = false;
+            if (config.is_dynamic) keyObject.is_dynamic = true;
+            if (config.dynamic_source) keyObject.dynamic_source = true;
+            if (config.manual_return) keyObject.manual_return = true;
+            formattedKeys[symbol] = keyObject;
+        }
+
+        if (Object.keys(formattedKeys).length > 0) {
+            json.keys = formattedKeys;
+        }
+
+        const parameters: Record<string, unknown> = {};
+        if (state.parameters.innerColor !== DEFAULT_INNER_COLOR) {
+            parameters.innerColor = state.parameters.innerColor;
+        }
+        if (state.parameters.outerColor !== DEFAULT_OUTER_COLOR) {
+            parameters.outerColor = state.parameters.outerColor;
+        }
+        if (state.parameters.beamColor !== DEFAULT_BEAM_COLOR) {
+            parameters.beamColor = state.parameters.beamColor;
+        }
+        if (!state.parameters.connectBeam) {
+            parameters.connectBeam = false;
+        }
+        if (!state.parameters.displayIndexes) {
+            parameters.displayIndexes = false;
+        }
+        if (!state.parameters.kittable) {
+            parameters.kittable = false;
+        }
+
+        if (Object.keys(parameters).length > 0) {
+            json.parameters = parameters;
+        }
+
+        if (manaweavePatterns.length > 0) {
+            json.manaweave = manaweavePatterns;
+        }
+
+        if (state.command.trim()) {
+            json.command = state.command.trim();
+        }
+
+        return customStringify(json);
+    };
+
+    const generateShapeJson = (): string => {
+        const json: Record<string, unknown> = {
+            pattern: cloneGrid(state.pattern),
+        };
 
         if (!isDisplayPatternSameAsPattern()) {
-            const formattedDisplayPattern = [];
-            for (let i = 0; i < state.gridSize; i++) {
-                formattedDisplayPattern.push(
-                    state.displayPattern[i].join(", ")
-                );
-            }
-            json.displayPattern = formattedDisplayPattern;
+            json.displayPattern = cloneGrid(state.displayPattern);
         }
 
-        const reagentStrings = state.reagents.map((row) => row.join(""));
-        json.reagents = reagentStrings;
-
-        const formattedKeys: { [key: string]: any } = {};
-        Object.keys(state.keys).forEach((key) => {
-            if (state.keys[key].item) {
-                const keyObj: any = { item: state.keys[key].item };
-                if (state.keys[key].optional) keyObj.optional = true;
-                if (!state.keys[key].consume) keyObj.consume = false;
-                if (state.keys[key].is_dynamic) keyObj.is_dynamic = true;
-                if (state.keys[key].dynamic_source)
-                    keyObj.dynamic_source = true;
-                if (state.keys[key].manual_return) keyObj.manual_return = true;
-                formattedKeys[key] = keyObj;
-            }
-        });
-        json.keys = formattedKeys;
-
-        const params: any = {};
-        if (state.parameters.innerColor !== "0xffffff")
-            params.innerColor = state.parameters.innerColor;
-        if (state.parameters.outerColor !== "0x00ff00")
-            params.outerColor = state.parameters.outerColor;
-        if (state.parameters.beamColor !== "0xffffff")
-            params.beamColor = state.parameters.beamColor;
-        if (!state.parameters.connectBeam) params.connectBeam = false;
-        if (!state.parameters.displayIndexes) params.displayIndexes = false;
-        if (!state.parameters.kittable) params.kittable = false;
-
-        if (Object.keys(params).length > 0) {
-            json.parameters = params;
-        }
-
-        if (state.manaweavePatterns.length > 0) {
-            json.manaweave = state.manaweavePatterns;
-        }
-
-        if (state.command) {
-            json.command = state.command;
+        const reagentRows = reagentRowStrings();
+        if (reagentRows.some((row) => row.trim().length > 0)) {
+            json.reagents = reagentRows;
         }
 
         return customStringify(json);
@@ -240,106 +281,122 @@ export function useRitualGenerator() {
      * @returns KubeJS code string
      */
     const generateKjsCode = (): string => {
-        let hasValidPattern = false;
-        for (let i = 0; i < state.gridSize && !hasValidPattern; i++) {
-            for (let j = 0; j < state.gridSize; j++) {
-                if (state.pattern[i][j] !== 0) {
-                    hasValidPattern = true;
-                    break;
-                }
-            }
+        const manaweavePatterns = normalizeManaweavePatterns(
+            state.manaweavePatterns
+        );
+        if (!hasNonZeroPatternCell()) {
+            return "// Invalid ritual: pattern must contain at least one non-zero cell";
         }
 
-        if (!hasValidPattern) {
-            return "// Invalid pattern: At least one non-zero value is required";
+        const reagentSymbols = getOrderedReagentSymbols();
+        if (reagentSymbols.length === 0) {
+            return "// Invalid ritual: reagentRows must reference at least one reagent symbol";
         }
 
-        let code = "event.recipes.mna.ritual(\n";
-
-        code += "    [";
-        for (let i = 0; i < state.gridSize; i++) {
-            if (i === 0) {
-                code += "[" + state.pattern[i].join(", ") + "]";
-            } else {
-                code += ",\n        [" + state.pattern[i].join(", ") + "]";
-            }
+        if (!state.parameters.createsItem.trim()) {
+            return "// Invalid ritual: outputItem is required";
         }
-        code += "],";
 
-        code += "\n    [";
-        const reagentStrings = state.reagents.map((row) => row.join(""));
-        for (let i = 0; i < reagentStrings.length; i++) {
-            if (i === 0) {
-                code += '"' + reagentStrings[i] + '"';
-            } else {
-                code += ',\n        "' + reagentStrings[i] + '"';
-            }
-        }
-        code += "],";
-
-        code += "\n    {";
-        Object.keys(state.keys).forEach((key, index, array) => {
-            code += ` ${key} : {`;
-            code += `\n        item : "${state.keys[key].item}"`;
-            if (state.keys[key].optional) code += ",\n        optional : true";
-            if (!state.keys[key].consume) code += ",\n        consume : false";
-            if (state.keys[key].is_dynamic)
-                code += ",\n        is_dynamic : true";
-            if (state.keys[key].dynamic_source)
-                code += ",\n        dynamic_source : true";
-            if (state.keys[key].manual_return)
-                code += ",\n        manual_return : true";
-            code += "\n    }";
-            if (index < array.length - 1) code += ",";
-        });
-        code += " }";
+        const lines: string[] = [
+            "event.recipes.mna.ritual()",
+            `    .tier(${state.parameters.tier})`,
+            ...formatStringBlock(
+                "patternRows",
+                numericGridRowStrings(state.pattern)
+            ),
+        ];
 
         if (!isDisplayPatternSameAsPattern()) {
-            code += ",\n    [";
-            for (let i = 0; i < state.gridSize; i++) {
-                if (i === 0) {
-                    code += "[" + state.displayPattern[i].join(", ") + "]";
-                } else {
-                    code +=
-                        ",\n        [" +
-                        state.displayPattern[i].join(", ") +
-                        "]";
-                }
+            lines.push(
+                ...formatStringBlock(
+                    "displayPatternRows",
+                    numericGridRowStrings(state.displayPattern)
+                )
+            );
+        }
+
+        lines.push(...formatStringBlock("reagentRows", reagentRowStrings()));
+
+        for (const symbol of reagentSymbols) {
+            const config = state.keys[symbol];
+            if (!config?.item?.trim()) {
+                return `// Invalid ritual: reagent '${symbol}' is missing an item or tag binding`;
             }
-            code += "]";
+            lines.push(...formatReagentLines(symbol, config));
         }
 
-        code += `,\n    ${state.parameters.tier}`;
-        code += ',\n    "mna:none"';
-        code += `,\n    ${state.parameters.createsItem}`;
+        lines.push(
+            `    .outputItem(${JSON.stringify(
+                state.parameters.createsItem.trim()
+            )})`
+        );
 
-        if (state.manaweavePatterns.length > 0) {
-            code += ",\n    [\n";
-            state.manaweavePatterns.forEach((pattern, index) => {
-                code += `        "${pattern}"`;
-                if (index < state.manaweavePatterns.length - 1) {
-                    code += ",\n";
+        if (manaweavePatterns.length > 0) {
+            lines.push(
+                `    .manaweavePatterns(${manaweavePatterns
+                    .map((pattern) => JSON.stringify(pattern))
+                    .join(", ")})`
+            );
+        }
+
+        if (state.parameters.innerColor !== DEFAULT_INNER_COLOR) {
+            lines.push(`    .innerColor(${state.parameters.innerColor})`);
+        }
+        if (state.parameters.outerColor !== DEFAULT_OUTER_COLOR) {
+            lines.push(`    .outerColor(${state.parameters.outerColor})`);
+        }
+        if (state.parameters.beamColor !== DEFAULT_BEAM_COLOR) {
+            lines.push(`    .beamColor(${state.parameters.beamColor})`);
+        }
+        if (!state.parameters.connectBeam) {
+            lines.push("    .connectBeam(false)");
+        }
+        if (!state.parameters.displayIndexes) {
+            lines.push("    .displayIndexes(false)");
+        }
+        if (!state.parameters.kittable) {
+            lines.push("    .kittable(false)");
+        }
+        if (state.command.trim()) {
+            lines.push(`    .command(${JSON.stringify(state.command.trim())})`);
+        }
+
+        return lines.join("\n");
+    };
+
+    const generateShapeKjsCode = (): string => {
+        const lines: string[] = ["const ritualShape = {", "    patternRows: ["];
+        numericGridRowStrings(state.pattern).forEach((row, index, rows) => {
+            const suffix = index < rows.length - 1 ? "," : "";
+            lines.push(`        ${JSON.stringify(row)}${suffix}`);
+        });
+        lines.push("    ]");
+
+        if (!isDisplayPatternSameAsPattern()) {
+            lines[lines.length - 1] += ",";
+            lines.push("    displayPatternRows: [");
+            numericGridRowStrings(state.displayPattern).forEach(
+                (row, index, rows) => {
+                    const suffix = index < rows.length - 1 ? "," : "";
+                    lines.push(`        ${JSON.stringify(row)}${suffix}`);
                 }
+            );
+            lines.push("    ]");
+        }
+
+        const reagentRows = reagentRowStrings();
+        if (reagentRows.some((row) => row.trim().length > 0)) {
+            lines[lines.length - 1] += ",";
+            lines.push("    reagentRows: [");
+            reagentRows.forEach((row, index, rows) => {
+                const suffix = index < rows.length - 1 ? "," : "";
+                lines.push(`        ${JSON.stringify(row)}${suffix}`);
             });
-            code += "\n    ]";
-        } else {
-            code += ",\n    []";
+            lines.push("    ]");
         }
 
-        code += `,\n    "${state.parameters.innerColor}"`;
-        code += `,\n    "${state.parameters.outerColor}"`;
-        code += `,\n    "${state.parameters.beamColor}"`;
-        code += `,\n    ${state.parameters.connectBeam}`;
-        code += `,\n    ${state.parameters.displayIndexes}`;
-        code += `,\n    ${state.parameters.kittable}`;
-
-        if (state.command) {
-            code += `,\n    "${state.command}"`;
-        }
-
-        code += "\n)";
-
-        return code;
+        lines.push("};");
+        return lines.join("\n");
     };
 
     /**
@@ -357,56 +414,176 @@ export function useRitualGenerator() {
         return true;
     };
 
+    const hasNonZeroPatternCell = (): boolean => {
+        for (let i = 0; i < state.gridSize; i++) {
+            for (let j = 0; j < state.gridSize; j++) {
+                if (state.pattern[i][j] !== 0) {
+                    return true;
+                }
+            }
+        }
+        return false;
+    };
+
+    const reagentRowStrings = (): string[] =>
+        state.reagents.map((row) => row.join(""));
+
+    const numericGridRowStrings = (grid: number[][]): string[] =>
+        grid.map((row) => row.join(" "));
+
+    const getUsedReagentSymbols = (): Set<string> => {
+        const symbols = new Set<string>();
+        for (const row of state.reagents) {
+            for (const cell of row) {
+                if (cell.trim()) {
+                    symbols.add(cell);
+                }
+            }
+        }
+        return symbols;
+    };
+
+    const getOrderedReagentSymbols = (): string[] =>
+        Array.from(getUsedReagentSymbols()).sort();
+
+    const cloneGrid = (grid: number[][]): number[][] =>
+        grid.map((row) => [...row]);
+
+    const formatStringBlock = (
+        methodName: string,
+        rows: string[]
+    ): string[] => {
+        const lines = [`    .${methodName}(`];
+        rows.forEach((row, index) => {
+            const suffix = index < rows.length - 1 ? "," : "";
+            lines.push(`        ${JSON.stringify(row)}${suffix}`);
+        });
+        lines.push("    )");
+        return lines;
+    };
+
+    const formatReagentLines = (
+        symbol: string,
+        config: RitualKeyConfig
+    ): string[] => {
+        const lines: string[] = [];
+        const item = JSON.stringify(config.item.trim());
+        const symbolLiteral = `'${symbol}'`;
+        const specialFlags = [
+            config.is_dynamic,
+            config.dynamic_source,
+            config.manual_return,
+        ].filter(Boolean).length;
+
+        if (specialFlags > 1) {
+            lines.push(
+                `    // Review reagent '${symbol}': multiple special flags were selected; keeping the first supported chain form`
+            );
+        }
+
+        const hasBaseFlagMix =
+            config.optional || !config.consume;
+        const hasSpecialMode =
+            config.dynamic_source || config.is_dynamic || config.manual_return;
+
+        if (hasSpecialMode && hasBaseFlagMix) {
+            lines.push(
+                `    // Review reagent '${symbol}': optional/consume flags are not representable together with the selected special reagent helper`
+            );
+        }
+
+        if (config.dynamic_source) {
+            lines.push(
+                `    .dynamicSourceReagent(${symbolLiteral}, ${item})`
+            );
+            return lines;
+        }
+
+        if (config.is_dynamic) {
+            lines.push(`    .dynamicReagent(${symbolLiteral}, ${item})`);
+            return lines;
+        }
+
+        if (config.manual_return) {
+            lines.push(
+                `    .manualReturnReagent(${symbolLiteral}, ${item})`
+            );
+            return lines;
+        }
+
+        if (hasBaseFlagMix) {
+            lines.push(
+                `    .reagent(${symbolLiteral}, ${item}, ${config.optional}, ${config.consume})`
+            );
+            return lines;
+        }
+
+        lines.push(`    .reagent(${symbolLiteral}, ${item})`);
+        return lines;
+    };
+
     /**
      * Custom JSON stringifier with formatted arrays
      * @param obj - Object to stringify
      * @returns Formatted JSON string
      */
-    const customStringify = (obj: any): string => {
-        const formatJson = (obj: any, indent = 0): string => {
+    const customStringify = (obj: unknown): string => {
+        const formatJson = (value: unknown, indent = 0): string => {
             const indentStr = " ".repeat(indent);
 
-            if (Array.isArray(obj)) {
-                if (typeof obj[0] === "string" && obj[0].includes(",")) {
+            if (Array.isArray(value)) {
+                const isNumericGrid = value.every(
+                    (row) =>
+                        Array.isArray(row) &&
+                        row.every((cell) => typeof cell === "number")
+                );
+                if (isNumericGrid) {
                     let result = "[\n";
-                    obj.forEach((row, index) => {
-                        result += `${indentStr}  [${row}]${
-                            index < obj.length - 1 ? "," : ""
+                    value.forEach((row, index) => {
+                        result += `${indentStr}  [${(row as number[]).join(", ")}]${
+                            index < value.length - 1 ? "," : ""
                         }\n`;
                     });
                     result += `${indentStr}]`;
                     return result;
-                } else {
-                    return JSON.stringify(obj, null, 2)
-                        .split("\n")
-                        .map((line) => indentStr + line)
-                        .join("\n");
                 }
-            } else if (typeof obj === "object" && obj !== null) {
+
+                const isStringList = value.every(
+                    (entry) => typeof entry === "string"
+                );
+                if (isStringList) {
+                    let result = "[\n";
+                    value.forEach((entry, index) => {
+                        result += `${indentStr}  ${JSON.stringify(entry)}${
+                            index < value.length - 1 ? "," : ""
+                        }\n`;
+                    });
+                    result += `${indentStr}]`;
+                    return result;
+                }
+
+                return JSON.stringify(value, null, 2)
+                    .split("\n")
+                    .map((line) => indentStr + line)
+                    .join("\n");
+            }
+
+            if (typeof value === "object" && value !== null) {
                 let result = "{\n";
-                const keys = Object.keys(obj);
-                keys.forEach((key, index) => {
-                    const value = obj[key];
+                const entries = Object.entries(value as Record<string, unknown>);
+                entries.forEach(([key, entryValue], index) => {
                     result += `${indentStr}  "${key}": `;
-
-                    if (key === "pattern" || key === "displayPattern") {
-                        result += formatJson(value, indent + 2);
-                    } else if (typeof value === "object" && value !== null) {
-                        result += formatJson(value, indent + 2);
-                    } else {
-                        result += JSON.stringify(value);
-                    }
-
-                    if (index < keys.length - 1) {
+                    result += formatJson(entryValue, indent + 2);
+                    if (index < entries.length - 1) {
                         result += ",";
                     }
                     result += "\n";
                 });
                 result += `${indentStr}}`;
                 return result;
-            } else {
-                return JSON.stringify(obj);
             }
+
+            return JSON.stringify(value);
         };
 
         return formatJson(obj);
@@ -419,11 +596,16 @@ export function useRitualGenerator() {
         gridContainerStyle,
         jsonPreview,
         kjsCode,
+        patternRows,
+        displayPatternRows,
+        reagentRows,
         initializeGrids,
         generateRandomRunes,
         validateForm,
         generateJson,
+        generateShapeJson,
         generateKjsCode,
+        generateShapeKjsCode,
         isDisplayPatternSameAsPattern,
         customStringify,
     };

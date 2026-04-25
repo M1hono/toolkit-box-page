@@ -99,6 +99,10 @@ const enNav: NavItem[] = [
                                     link: "/Mna/RitualGenerator",
                                 },
                                 {
+                                    text: "Manaweaving Pattern Recipe Editor",
+                                    link: "/Mna/ManaweavePatternEditor",
+                                },
+                                {
                                     text: "Runescribing Recipe Editor",
                                     link: "/Mna/RunescribingEditor",
                                 },

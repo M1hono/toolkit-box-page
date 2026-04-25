@@ -1,5 +1,5 @@
 {
-    "command": "Command",
-    "commandPlaceholder": "Enter command to execute on ritual completion",
-    "optional": "Optional"
+    "command": "コマンド",
+    "commandPlaceholder": "儀式完了時に実行するコマンドを入力",
+    "optional": "任意"
 }

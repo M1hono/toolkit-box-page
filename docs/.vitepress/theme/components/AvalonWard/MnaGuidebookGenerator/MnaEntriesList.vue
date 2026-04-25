@@ -8,10 +8,15 @@
 
 <template>
     <v-card flat class="entries-list-panel">
-        <v-card-title class="d-flex justify-space-between align-center">
-            <div class="d-flex align-center">
-                <v-icon color="primary" class="mr-2">mdi-book-multiple</v-icon>
-                <span class="text-h6">{{ t.entriesList }}</span>
+        <v-card-title class="entries-list-panel__header">
+            <div>
+                <div class="d-flex align-center">
+                    <v-icon color="primary" class="mr-2">mdi-book-multiple</v-icon>
+                    <span class="text-h6">{{ t.entriesList }}</span>
+                </div>
+                <div class="entries-list-panel__hint">
+                    {{ t.entriesHint }}
+                </div>
             </div>
             <v-chip 
                 v-if="totalEntriesCount > 0" 
@@ -183,6 +188,7 @@
         sections: "Sections",
         edit: "Edit",
         delete: "Delete",
+        entriesHint: "Search, create, and jump between guidebook entries from one compact list.",
     });
 
     const props = defineProps<{
@@ -226,9 +232,24 @@
 
 <style scoped>
     .entries-list-panel {
-        border: 1px solid var(--vp-c-divider);
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 82%, var(--vp-c-text-3) 18%);
         box-shadow: none !important;
-        border-radius: 4px !important;
+        border-radius: 16px !important;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 62%, var(--vp-c-bg) 38%);
+    }
+
+    .entries-list-panel__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .entries-list-panel__hint {
+        margin-top: 8px;
+        color: var(--vp-c-text-2);
+        font-size: 0.92rem;
+        line-height: 1.45;
     }
 
     .add-entry-btn {
@@ -255,21 +276,23 @@
     }
 
     .entry-item {
-        transition: border-color 0.2s ease;
-        border-radius: 4px !important;
+        transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+        border-radius: 14px !important;
         box-shadow: none !important;
-        border: 1px solid var(--vp-c-divider);
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 84%, transparent);
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
     }
 
     .entry-item:hover {
-        border-color: rgb(var(--v-theme-primary));
-        background-color: rgba(var(--v-theme-primary), 0.02);
+        transform: translateY(-1px);
+        border-color: color-mix(in srgb, var(--vp-c-text-2) 34%, var(--vp-c-divider));
+        background-color: color-mix(in srgb, var(--vp-c-bg) 88%, var(--vp-c-bg-soft) 12%);
     }
 
     .entry-selected {
-        border-color: rgb(var(--v-theme-primary));
-        border-width: 2px;
-        background-color: rgba(var(--v-theme-primary), 0.04);
+        border-color: color-mix(in srgb, var(--vp-c-text-1) 28%, var(--vp-c-divider));
+        border-width: 1px;
+        background-color: color-mix(in srgb, var(--vp-c-bg) 84%, var(--vp-c-bg-soft) 16%);
     }
 
     .v-card,
@@ -282,7 +305,7 @@
     }
 
     .content-container {
-        min-height: 400px;
+        min-height: 320px;
         display: flex;
         flex-direction: column;
     }
@@ -292,7 +315,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        min-height: 400px;
+        min-height: 280px;
     }
 
     .entries-container {
@@ -303,10 +326,10 @@
 
     .entries-list {
         flex: 1;
-        max-height: 500px;
+        max-height: min(56vh, 720px);
         overflow-y: auto;
         overflow-x: hidden;
-        padding-right: 4px;
+        padding-right: 6px;
     }
 
     /* Custom scrollbar */
@@ -322,5 +345,13 @@
     .entries-list::-webkit-scrollbar-thumb {
         background: var(--vp-c-divider);
         border-radius: 3px;
+    }
+
+    :deep(.v-field) {
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+    }
+
+    :deep(.v-chip) {
+        font-weight: 600;
     }
 </style>

@@ -1,12 +1,12 @@
 {
-    "beamColor": "Beam Color",
-    "connectBeam": "Connect Beam",
-    "createdItem": "Created Item",
-    "createdItemPlaceholder": "e.g. minecraft:diamond",
-    "displayIndexes": "Display Indexes",
-    "innerColor": "Inner Color",
-    "kittable": "Kittable",
-    "outerColor": "Outer Color",
-    "parameters": "Parameters",
-    "tier": "Tier"
+    "beamColor": "ビーム色",
+    "connectBeam": "ビームを接続",
+    "createdItem": "生成アイテム",
+    "createdItemPlaceholder": "例: minecraft:diamond",
+    "displayIndexes": "インデックスを表示",
+    "innerColor": "内側の色",
+    "kittable": "キット化可能",
+    "outerColor": "外側の色",
+    "parameters": "パラメータ",
+    "tier": "ティア"
 }

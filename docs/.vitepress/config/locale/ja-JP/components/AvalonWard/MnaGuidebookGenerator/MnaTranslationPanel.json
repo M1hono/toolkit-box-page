@@ -1,13 +1,14 @@
 {
-    "allTranslated": "All Translated!",
-    "category": "Category",
-    "createFromSource": "Copy & Edit",
-    "itemsPerPage": "Items per page",
-    "missingTranslationFor": "Missing translation for:",
-    "sections": "Sections",
-    "startTranslating": "Start",
-    "tier": "Tier",
-    "totalEntries": "total entries",
-    "translationComplete": "All entries have been translated successfully.",
-    "untranslatedEntries": "Untranslated Entries"
+    "allTranslated": "すべて翻訳済みです！",
+    "category": "カテゴリ",
+    "createFromSource": "コピーして編集",
+    "itemsPerPage": "1 ページあたりの件数",
+    "missingTranslationFor": "翻訳が不足しています：",
+    "sections": "セクション",
+    "startTranslating": "開始",
+    "tier": "ティア",
+    "totalEntries": "総項目数",
+    "translationComplete": "すべての項目が正常に翻訳されました。",
+    "translationHint": "このキューを使って、コンテキストを失わずにソースファイルから不足項目を作成します。",
+    "untranslatedEntries": "未翻訳の項目"
 }

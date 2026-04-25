@@ -1,0 +1,10 @@
+{
+    "copy": "复制",
+    "copyCode": "复制代码",
+    "defineShapeToSeeShape": "请先定义至少一个非零格子以查看图样数据。",
+    "fullRecipe": "完整配方",
+    "onlyShape": "仅图样",
+    "outputFormat": "输出格式",
+    "pattern": "pattern",
+    "shapeData": "图样数据"
+}

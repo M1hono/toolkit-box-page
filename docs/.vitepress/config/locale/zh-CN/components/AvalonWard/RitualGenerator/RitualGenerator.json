@@ -1,5 +1,7 @@
 {
-    "instructionClick": "Left click to toggle cells. Right click for custom values.",
-    "instructionWarning": "Pattern must have at least one non-zero value. Reagents must be placed on active pattern cells.",
-    "title": "Ritual Pattern Generator"
+    "instructionClick": "左键切换单元，右键输入自定义数值。",
+    "instructionWarning": "图案至少需要一个非零值，且试剂必须放在有效图案单元上。",
+    "reagentPrompt": "输入试剂键（单个字符）：",
+    "title": "仪式图案生成器",
+    "valuePrompt": "输入数值："
 }

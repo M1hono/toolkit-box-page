@@ -13,32 +13,27 @@
             </div>
 
             <div class="canvas-controls mt-4">
-                <v-alert
-                    type="info"
-                    variant="tonal"
-                    class="mb-4"
-                    :text="t.instructions"
-                ></v-alert>
+                <div class="canvas-note mb-4">
+                    <v-icon size="18">mdi-information-outline</v-icon>
+                    <span>{{ t.instructions }}</span>
+                </div>
 
                 <div class="sensitivity-control">
-                    <v-row align="center">
-                        <v-col cols="6">
-                            <span class="text-body-2">
-                                {{ t.clickTolerance }}: {{ clickTolerance }}
-                            </span>
-                        </v-col>
-                        <v-col cols="6">
-                            <v-slider
-                                v-model="clickTolerance"
-                                :min="5"
-                                :max="20"
-                                :step="1"
-                                @input="redrawGrid"
-                                thumb-label
-                                density="compact"
-                            ></v-slider>
-                        </v-col>
-                    </v-row>
+                    <div class="sensitivity-control__header">
+                        <span class="text-body-2">{{ t.clickTolerance }}</span>
+                        <code class="sensitivity-control__value">{{
+                            clickTolerance
+                        }}</code>
+                    </div>
+                    <v-slider
+                        v-model="clickTolerance"
+                        :min="5"
+                        :max="20"
+                        :step="1"
+                        @input="redrawGrid"
+                        density="compact"
+                        hide-details
+                    ></v-slider>
                 </div>
 
                 <div v-if="showDebug" class="debug-info mt-4">
@@ -102,14 +97,32 @@ Vertical Value: ${props.values.vValue}`;
     watch(() => props.canvasState, redrawGrid, { deep: true });
     watch(clickTolerance, redrawGrid);
 
+    const resolveCssColor = (variableName: string, fallback: string): string => {
+        if (typeof document === "undefined") {
+            return fallback;
+        }
+
+        return (
+            getComputedStyle(document.documentElement)
+                .getPropertyValue(variableName)
+                .trim() || fallback
+        );
+    };
+
     function redrawGrid() {
         if (!ctx.value) return;
 
         const { canvasWidth, canvasHeight, rows, cols, cellWidth, cellHeight } =
             props.constants;
+        const gridColor = resolveCssColor("--rune-canvas-grid", "#555555");
+        const activeColor = resolveCssColor("--rune-canvas-active", "#d6a038");
+        const highlightColor = resolveCssColor(
+            "--rune-canvas-highlight",
+            "#ffb84a"
+        );
 
         ctx.value.clearRect(0, 0, canvasWidth, canvasHeight);
-        ctx.value.strokeStyle = "#444444";
+        ctx.value.strokeStyle = gridColor;
         ctx.value.lineWidth = 1;
 
         // Draw vertical grid lines
@@ -134,9 +147,9 @@ Vertical Value: ${props.values.vValue}`;
         for (let r = 0; r <= rows; r++) {
             for (let c = 0; c < cols; c++) {
                 if (props.canvasState.hLines[r][c] === true) {
-                    drawHorizontalLine(r, c, "#00AA00", 3);
+                    drawHorizontalLine(r, c, activeColor, 3);
                 } else if (props.canvasState.hLines[r][c] === false) {
-                    drawHorizontalLine(r, c, "#555555", 1);
+                    drawHorizontalLine(r, c, gridColor, 1);
                 }
             }
         }
@@ -145,9 +158,9 @@ Vertical Value: ${props.values.vValue}`;
         for (let r = 0; r < rows; r++) {
             for (let c = 0; c <= cols; c++) {
                 if (props.canvasState.vLines[r][c] === true) {
-                    drawVerticalLine(r, c, "#00AA00", 3);
+                    drawVerticalLine(r, c, activeColor, 3);
                 } else if (props.canvasState.vLines[r][c] === false) {
-                    drawVerticalLine(r, c, "#555555", 1);
+                    drawVerticalLine(r, c, gridColor, 1);
                 }
             }
         }
@@ -156,9 +169,9 @@ Vertical Value: ${props.values.vValue}`;
         if (props.canvasState.currentHighlight) {
             const highlight = props.canvasState.currentHighlight;
             if (highlight.type === "h") {
-                drawHorizontalLine(highlight.row, highlight.col, "#FFAA00", 3);
+                drawHorizontalLine(highlight.row, highlight.col, highlightColor, 3);
             } else {
-                drawVerticalLine(highlight.row, highlight.col, "#FFAA00", 3);
+                drawVerticalLine(highlight.row, highlight.col, highlightColor, 3);
             }
         }
     }
@@ -171,16 +184,8 @@ Vertical Value: ${props.values.vValue}`;
     ) {
         if (!ctx.value) return;
 
-        let finalColor = color;
-        if (color === "#FFAA00" && typeof document !== "undefined") {
-            finalColor =
-                getComputedStyle(document.documentElement)
-                    .getPropertyValue("--highlight-color")
-                    .trim() || "#FFAA00";
-        }
-
         const { cellWidth, cellHeight } = props.constants;
-        ctx.value.strokeStyle = finalColor;
+        ctx.value.strokeStyle = color;
         ctx.value.lineWidth = width;
         const x1 = col * cellWidth;
         const x2 = (col + 1) * cellWidth;
@@ -199,16 +204,8 @@ Vertical Value: ${props.values.vValue}`;
     ) {
         if (!ctx.value) return;
 
-        let finalColor = color;
-        if (color === "#FFAA00" && typeof document !== "undefined") {
-            finalColor =
-                getComputedStyle(document.documentElement)
-                    .getPropertyValue("--highlight-color")
-                    .trim() || "#FFAA00";
-        }
-
         const { cellWidth, cellHeight } = props.constants;
-        ctx.value.strokeStyle = finalColor;
+        ctx.value.strokeStyle = color;
         ctx.value.lineWidth = width;
         const x = col * cellWidth;
         const y1 = row * cellHeight;
@@ -418,26 +415,75 @@ Vertical Value: ${props.values.vValue}`;
 
 <style scoped>
     .editor-canvas {
-        background-color: #ffffff;
+        display: block;
+        width: min(100%, 450px);
+        max-width: 100%;
+        height: auto;
+        background-color: var(--vp-c-bg);
         border-radius: 12px;
         cursor: pointer;
-        border: 2px solid #e0e0e0;
+        border: 1px solid var(--rune-border);
         box-shadow: none;
     }
 
     .canvas-wrapper {
-        background-color: #f5f5f5;
+        background-color: var(--rune-surface-muted);
         padding: 20px;
         border-radius: 12px;
-        border: 1px solid #e0e0e0;
+        border: 1px solid var(--rune-border);
+        overflow: hidden;
     }
 
-    :root.dark .canvas-wrapper {
-        background-color: #2d3748;
+    .canvas-note {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 14px;
+        border: 1px solid var(--rune-border);
+        border-radius: 10px;
+        background: color-mix(in srgb, var(--rune-surface-muted) 84%, var(--vp-c-bg) 16%);
+        color: var(--vp-c-text-2);
     }
 
-    :root.dark .editor-canvas {
-        background-color: #1a1a1a;
-        border-color: #4a5568;
+    .sensitivity-control {
+        padding: 14px 16px;
+        border: 1px solid var(--rune-border);
+        border-radius: 12px;
+        background: color-mix(in srgb, var(--rune-surface) 88%, var(--vp-c-bg) 12%);
+    }
+
+    .sensitivity-control__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
+        margin-bottom: 8px;
+    }
+
+    .sensitivity-control__value {
+        padding: 4px 8px;
+        border: 1px solid var(--rune-border);
+        border-radius: 999px;
+        background: var(--vp-c-bg);
+        color: var(--vp-c-text-1);
+        font-size: 0.85rem;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+    }
+
+    .sensitivity-control :deep(.v-slider-track) {
+        color: color-mix(in srgb, var(--rune-border-strong) 72%, transparent);
+    }
+
+    .sensitivity-control :deep(.v-slider-track__background) {
+        opacity: 1;
+    }
+
+    .sensitivity-control :deep(.v-slider-track__fill) {
+        color: var(--rune-accent);
+    }
+
+    .sensitivity-control :deep(.v-slider-thumb__surface) {
+        color: var(--rune-accent);
+        border: 2px solid var(--vp-c-bg);
     }
 </style>

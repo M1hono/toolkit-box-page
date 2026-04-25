@@ -135,19 +135,27 @@
         "cell-right-click": [row: number, col: number, event: MouseEvent];
     }>();
 
-    const gridContainerStyle = computed(() => {
-        const minSize = 30;
-        const maxSize = 60;
-        const cellSize = Math.min(
-            Math.max(minSize, 600 / props.gridSize),
+    const getGridCellSize = () => {
+        const targetSize =
+            props.gridSize <= 5 ? 360 : props.gridSize <= 9 ? 440 : 520;
+        const minSize = 24;
+        const maxSize = 120;
+
+        return Math.min(
+            Math.max(minSize, targetSize / props.gridSize),
             maxSize
         );
+    };
+
+    const gridContainerStyle = computed(() => {
+        const cellSize = getGridCellSize();
         const totalSize = props.gridSize * cellSize;
+        const minCellSize = 24;
 
         return {
             width: `${totalSize}px`,
             height: `${totalSize}px`,
-            minWidth: `${props.gridSize * minSize}px`,
+            minWidth: `${props.gridSize * minCellSize}px`,
         };
     });
 
@@ -237,12 +245,7 @@
      * @returns Style object
      */
     const getCellStyle = (row: number, col: number) => {
-        const minSize = 30;
-        const maxSize = 60;
-        const cellSize = Math.min(
-            Math.max(minSize, 600 / props.gridSize),
-            maxSize
-        );
+        const cellSize = getGridCellSize();
 
         return {
             width: `${cellSize}px`,
@@ -343,12 +346,13 @@
     .grid-wrapper {
         display: flex;
         justify-content: center;
-        padding: 35px;
-        background-color: #34495e;
+        align-items: center;
+        min-height: clamp(320px, 42vw, 560px);
+        padding: clamp(20px, 3vw, 32px);
+        background-color: var(--ritual-grid-stage);
         border-radius: 12px;
         position: relative;
-        margin-bottom: 20px;
-        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
     }
 
     .grid-container {
@@ -368,75 +372,65 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid rgba(255, 255, 255, 0.15);
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 86%, transparent);
         box-sizing: border-box;
         transition: all 0.2s ease;
         overflow: hidden;
         cursor: pointer;
-        background-color: #2c3e50;
+        background-color: var(--ritual-grid-cell);
     }
 
     .grid-cell.cell-active {
-        background-color: #f1c40f !important;
-        box-shadow: 0 0 8px rgba(241, 196, 15, 0.4);
+        background-color: var(--ritual-grid-active) !important;
     }
 
     .grid-cell.cell-special {
-        background-color: #2ecc71 !important;
-        box-shadow: 0 0 8px rgba(46, 204, 113, 0.4);
+        background-color: var(--ritual-grid-special) !important;
     }
 
     .grid-cell.cell-center {
-        border: 2px solid rgba(255, 255, 255, 0.7);
-        box-shadow: 0 0 12px rgba(255, 255, 255, 0.3);
+        border: 2px solid color-mix(in srgb, var(--vp-c-text-1) 68%, transparent);
     }
 
     .grid-cell:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         z-index: 2;
-        box-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
-    }
-
-    /* Dark mode adjustments */
-    :root.dark .grid-wrapper {
-        background-color: #4a5568;
-    }
-
-    :root.dark .grid-cell {
-        background-color: #2d3748;
-        border-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0 0 0 1px color-mix(in srgb, var(--vp-c-text-1) 18%, transparent);
     }
 
     .cell-value {
         position: absolute;
-        top: 2px;
-        left: 2px;
-        font-size: 0.7em;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.4);
-        padding: 1px 3px;
-        border-radius: 3px;
+        top: 4px;
+        left: 4px;
+        font-size: 0.68rem;
+        color: var(--vp-c-text-1);
+        background-color: var(--ritual-grid-label-bg);
+        padding: 1px 5px;
+        border-radius: 999px;
         z-index: 2;
+        line-height: 1.2;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     }
 
     .reagent-char {
-        font-size: 1.2em;
-        font-weight: bold;
-        color: white;
-        text-shadow: 0 0 3px rgba(0, 0, 0, 0.7);
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--vp-c-text-1);
         z-index: 2;
     }
 
     .reagent-overlay {
         position: absolute;
-        bottom: 2px;
-        right: 2px;
-        font-size: 0.7em;
-        color: #fff;
-        background-color: rgba(0, 0, 0, 0.6);
-        padding: 1px 4px;
-        border-radius: 3px;
+        bottom: 4px;
+        right: 4px;
+        font-size: 0.68rem;
+        color: var(--vp-c-text-1);
+        background-color: var(--ritual-grid-label-bg);
+        padding: 1px 5px;
+        border-radius: 999px;
         z-index: 2;
+        line-height: 1.2;
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     }
 
     .rune-image {
@@ -488,7 +482,7 @@
     }
 
     .indicator {
-        color: rgba(255, 255, 255, 0.7);
+        color: var(--vp-c-text-2);
         font-size: 0.8em;
         font-family: "Courier New", monospace;
     }

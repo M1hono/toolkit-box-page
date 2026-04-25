@@ -1,12 +1,12 @@
 {
-    "beamColor": "Beam Color",
-    "connectBeam": "Connect Beam",
-    "createdItem": "Created Item",
-    "createdItemPlaceholder": "e.g. minecraft:diamond",
-    "displayIndexes": "Display Indexes",
-    "innerColor": "Inner Color",
-    "kittable": "Kittable",
-    "outerColor": "Outer Color",
-    "parameters": "Parameters",
-    "tier": "Tier"
+    "beamColor": "光束颜色",
+    "connectBeam": "连接光束",
+    "createdItem": "产出物品",
+    "createdItemPlaceholder": "例如：minecraft:diamond",
+    "displayIndexes": "显示索引",
+    "innerColor": "内圈颜色",
+    "kittable": "可封装为套件",
+    "outerColor": "外圈颜色",
+    "parameters": "参数",
+    "tier": "阶级"
 }

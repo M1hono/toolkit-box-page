@@ -9,5 +9,6 @@
     "tier": "Tier",
     "totalEntries": "total entries",
     "translationComplete": "All entries have been translated successfully.",
+    "translationHint": "Use this queue to create missing entries from the source file without losing context.",
     "untranslatedEntries": "Untranslated Entries"
 }

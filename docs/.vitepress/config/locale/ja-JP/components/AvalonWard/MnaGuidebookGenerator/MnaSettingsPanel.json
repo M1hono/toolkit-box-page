@@ -1,13 +1,14 @@
 {
-    "customCategories": "Custom Categories",
-    "newCategory": "New Category",
-    "newCategoryPlaceholder": "Enter category name",
-    "settings": "Settings",
-    "sourceFile": "Source File",
-    "sourceFileHint": "Original language (e.g., en_us.json)",
-    "targetFile": "Target File",
-    "targetFileHint": "Translation file (e.g., zh_cn.json)",
-    "totalEntries": "Total",
-    "translated": "Translated",
-    "untranslated": "Untranslated"
+    "customCategories": "カスタムカテゴリ",
+    "newCategory": "新しいカテゴリ",
+    "newCategoryPlaceholder": "カテゴリ名を入力",
+    "settings": "設定",
+    "settingsHint": "元言語と翻訳先の言語ファイルを読み込み、カテゴリを整理してからエントリを編集します。",
+    "sourceFile": "元言語ファイル",
+    "sourceFileHint": "元の言語ファイル（例: en_us.json）",
+    "targetFile": "翻訳先ファイル",
+    "targetFileHint": "翻訳ファイル（例: zh_cn.json）",
+    "totalEntries": "総数",
+    "translated": "翻訳済み",
+    "untranslated": "未翻訳"
 }

@@ -5,10 +5,13 @@
 
 import { ref, reactive, nextTick } from "vue";
 import type { Entry } from "../types.js";
+import { renderGuidebookSegments } from "../richTextPreview.js";
+import { formatMnaMessage, type MnaMessageMap } from "../i18n.js";
 
 export function useMnaSections(
     currentEntryData: Entry,
-    updateStatus: (msg: string, isError?: boolean) => void
+    updateStatus: (msg: string, isError?: boolean) => void,
+    messages: MnaMessageMap
 ) {
     // Current section being edited
     const currentSection = reactive({
@@ -175,7 +178,7 @@ export function useMnaSections(
     const addSection = () => {
         // Validate section before adding
         if (currentSection.type === "title" && !currentSection.value.trim()) {
-            updateStatus("Title section requires a value", true);
+            updateStatus(messages.titleSectionRequiresValue, true);
             return false;
         }
 
@@ -188,7 +191,7 @@ export function useMnaSections(
             }
             if (!currentSection.json || currentSection.json.length === 0) {
                 updateStatus(
-                    "Text section requires at least one text segment",
+                    messages.textSectionRequiresSegment,
                     true
                 );
                 return false;
@@ -199,7 +202,7 @@ export function useMnaSections(
             currentSection.type === "image" &&
             !currentSection.location.trim()
         ) {
-            updateStatus("Image section requires a location", true);
+            updateStatus(messages.imageSectionRequiresLocation, true);
             return false;
         }
 
@@ -207,7 +210,7 @@ export function useMnaSections(
             currentSection.type === "recipe" &&
             !currentSection.location.trim()
         ) {
-            updateStatus("Recipe section requires a location", true);
+            updateStatus(messages.recipeSectionRequiresLocation, true);
             return false;
         }
 
@@ -225,14 +228,14 @@ export function useMnaSections(
                         currentSection.locations.length === 0
                     ) {
                         updateStatus(
-                            "Item section requires at least one item location",
+                            messages.itemSectionRequiresLocation,
                             true
                         );
                         return false;
                     }
                 } else {
                     updateStatus(
-                        "Item section requires at least one item location",
+                        messages.itemSectionRequiresLocation,
                         true
                     );
                     return false;
@@ -259,7 +262,11 @@ export function useMnaSections(
         }
 
         resetCurrentSection(currentSection.type);
-        updateStatus(`Added ${sectionToAdd.type} section`);
+        updateStatus(
+            formatMnaMessage(messages.addedSectionStatus, {
+                type: sectionToAdd.type,
+            })
+        );
         return true;
     };
 
@@ -271,7 +278,11 @@ export function useMnaSections(
         ) {
             const removedType = currentEntryData.sections[index].type;
             currentEntryData.sections.splice(index, 1);
-            updateStatus(`Removed ${removedType} section`);
+            updateStatus(
+                formatMnaMessage(messages.removedSectionStatus, {
+                    type: removedType,
+                })
+            );
             return true;
         }
         return false;
@@ -320,7 +331,11 @@ export function useMnaSections(
         currentSection.editingIndex = index;
         removeSection(index);
 
-        updateStatus(`Editing ${sectionCopy.type} section`);
+        updateStatus(
+            formatMnaMessage(messages.editingSectionStatus, {
+                type: sectionCopy.type,
+            })
+        );
         return true;
     };
 
@@ -357,32 +372,12 @@ export function useMnaSections(
             currentSection.newPage = sourceSection.newPage || false;
         }
 
-        updateStatus(`Applied structure from source section`);
+        updateStatus(messages.appliedStructureFromSourceSection);
         return true;
     };
 
     // Utility function for formatting JSON text
-    const formatJsonText = (jsonArray: any[]) => {
-        if (!jsonArray || !Array.isArray(jsonArray)) return "";
-
-        return jsonArray
-            .map((segment) => {
-                if (!segment) return "";
-
-                let formatted = segment.text || "";
-                if (segment.color) {
-                    formatted = `<span class="text-${segment.color}">${formatted}</span>`;
-                }
-                if (segment.italic) {
-                    formatted = `<em>${formatted}</em>`;
-                }
-                if (segment.bold) {
-                    formatted = `<strong>${formatted}</strong>`;
-                }
-                return formatted;
-            })
-            .join("");
-    };
+    const formatJsonText = (jsonArray: any[]) => renderGuidebookSegments(jsonArray);
 
     return {
         // State

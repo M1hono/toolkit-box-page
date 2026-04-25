@@ -1,0 +1,5 @@
+{
+    "clear": "Clear",
+    "grid": "Pattern Grid",
+    "instructions": "Left click toggles 0/1. Right click sets a custom integer value."
+}

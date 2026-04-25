@@ -1,11 +1,11 @@
 {
-    "displayPattern": "Display Pattern",
-    "gridSize": "Grid Size",
-    "lockSize": "Lock Size",
-    "locked": "Size Locked",
-    "maxSize": "Max Size",
-    "pattern": "Pattern",
-    "randomizeRunes": "Randomize Runes",
-    "reagents": "Reagents",
-    "showKeys": "Show Keys"
+    "displayPattern": "表示パターン",
+    "gridSize": "グリッドサイズ",
+    "lockSize": "サイズを固定",
+    "locked": "サイズ固定済み",
+    "maxSize": "最大サイズ",
+    "pattern": "パターン",
+    "randomizeRunes": "ルーンをランダム化",
+    "reagents": "試薬",
+    "showKeys": "キーを表示"
 }

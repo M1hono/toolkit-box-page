@@ -35,6 +35,7 @@ export interface RitualState {
     gridSize: number;
     maxGridSize: number;
     locked: boolean;
+    shapeOnly: boolean;
     activeLayer: LayerType;
     pattern: number[][];
     displayPattern: number[][];

@@ -5,11 +5,13 @@
 
 import { ref, computed } from "vue";
 import type { EntryCollection } from "../types.js";
+import { formatMnaMessage, type MnaMessageMap } from "../i18n.js";
 
 export function useMnaMismatch(
     entries: { value: EntryCollection },
     sourceEntries: { value: EntryCollection },
     updateStatus: (msg: string, isError?: boolean) => void,
+    messages: MnaMessageMap,
     generateJson: () => void
 ) {
     // Mismatch management state
@@ -188,7 +190,7 @@ export function useMnaMismatch(
 
     const deleteSelectedMissingKeys = () => {
         if (selectedMissingKeys.value.length === 0) {
-            updateStatus("Please select orphaned entries to delete", true);
+            updateStatus(messages.selectOrphanedToDelete, true);
             return false;
         }
 
@@ -203,9 +205,9 @@ export function useMnaMismatch(
         selectedMissingKeys.value = [];
 
         updateStatus(
-            `Deleted ${deletedCount} orphaned ${
-                deletedCount > 1 ? "entries" : "entry"
-            }`
+            formatMnaMessage(messages.deletedOrphanedCount, {
+                count: deletedCount,
+            })
         );
         generateJson();
         return true;
@@ -218,7 +220,11 @@ export function useMnaMismatch(
             if (index > -1) {
                 selectedMissingKeys.value.splice(index, 1);
             }
-            updateStatus(`Deleted orphaned entry: ${key}`);
+            updateStatus(
+                formatMnaMessage(messages.deletedOrphanedSingle, {
+                    entry: key,
+                })
+            );
             generateJson();
             return true;
         }
@@ -251,7 +257,9 @@ export function useMnaMismatch(
 
         if (targetEntry && sourceEntry) {
             targetEntry.category = sourceEntry.category;
-            updateStatus(`Fixed category for: ${key}`);
+            updateStatus(
+                formatMnaMessage(messages.fixedCategoryFor, { entry: key })
+            );
             generateJson();
             return true;
         }
@@ -291,7 +299,9 @@ export function useMnaMismatch(
             );
 
             targetEntry.sections = newSections;
-            updateStatus(`Fixed structure for: ${key}`);
+            updateStatus(
+                formatMnaMessage(messages.fixedStructureFor, { entry: key })
+            );
             generateJson();
             return true;
         }
@@ -305,7 +315,9 @@ export function useMnaMismatch(
         if (targetEntry && sourceEntry) {
             targetEntry.index = sourceEntry.index;
             targetEntry.tier = sourceEntry.tier;
-            updateStatus(`Fixed content properties for: ${key}`);
+            updateStatus(
+                formatMnaMessage(messages.fixedContentFor, { entry: key })
+            );
             generateJson();
             return true;
         }
@@ -315,7 +327,7 @@ export function useMnaMismatch(
     // Batch operations
     const fixSelectedMismatches = () => {
         if (selectedMismatchEntries.value.length === 0) {
-            updateStatus("Please select mismatch entries to fix", true);
+            updateStatus(messages.selectMismatchToFix, true);
             return false;
         }
 
@@ -348,16 +360,14 @@ export function useMnaMismatch(
 
         selectedMismatchEntries.value = [];
         updateStatus(
-            `Fixed ${fixedCount} mismatch ${
-                fixedCount > 1 ? "entries" : "entry"
-            }`
+            formatMnaMessage(messages.fixedMismatchCount, { count: fixedCount })
         );
         return fixedCount > 0;
     };
 
     const deleteSelectedMismatches = () => {
         if (selectedMismatchEntries.value.length === 0) {
-            updateStatus("Please select mismatch entries to delete", true);
+            updateStatus(messages.selectMismatchToDelete, true);
             return false;
         }
 
@@ -372,9 +382,9 @@ export function useMnaMismatch(
         selectedMismatchEntries.value = [];
 
         updateStatus(
-            `Deleted ${deletedCount} mismatch ${
-                deletedCount > 1 ? "entries" : "entry"
-            }`
+            formatMnaMessage(messages.deletedMismatchCount, {
+                count: deletedCount,
+            })
         );
         generateJson();
         return true;

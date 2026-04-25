@@ -99,6 +99,10 @@ const jaNav: NavItem[] = [
                                     link: "/Mna/RitualGenerator",
                                 },
                                 {
+                                    text: "マナウィーブパターンレシピ編集",
+                                    link: "/Mna/ManaweavePatternEditor",
+                                },
+                                {
                                     text: "ルーン配方編集",
                                     link: "/Mna/RunescribingEditor",
                                 },

@@ -1,6 +1,12 @@
 {
-    "outputFormat": "输出格式",
+    "copy": "复制",
     "copyCode": "复制代码",
-    "lockSizeToSeeOutput": "锁定尺寸并配置仪式以查看输出。",
-    "validationError": "配置无效。确保图案至少有一个非零值，且所有按键都有定义的物品。"
+    "fullRecipe": "完整配方",
+    "lockSizeToSeeOutput": "锁定尺寸并完成仪式配置后即可查看输出。",
+    "lockSizeToSeeShape": "锁定尺寸并至少定义一个非零图案单元后即可查看形状输出。",
+    "onlyShape": "仅形状",
+    "outputFormat": "输出格式",
+    "shapeData": "形状数据",
+    "shapeValidationError": "形状无效。请确保图案至少包含一个非零值。",
+    "validationError": "配置无效。请确保图案至少包含一个非零值，且所有键都已绑定物品。"
 }

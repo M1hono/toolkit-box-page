@@ -31,10 +31,12 @@
                             :config="config"
                             :values="values"
                             :output-format="outputFormat"
+                            :shape-only="shapeOnly"
                             @clear-grid="clearGrid"
                             @fill-grid="fillGrid"
                             @update:config="handleConfigUpdate"
                             @update:output-format="outputFormat = $event"
+                            @update:shape-only="shapeOnly = $event"
                             class="panel-item"
                         />
                     </div>
@@ -109,6 +111,7 @@
         requiredFaction: "mna:none",
     });
     const outputFormat = ref<OutputFormat>("json");
+    const shapeOnly = ref(false);
 
     // Methods
     function clearGrid() {
@@ -130,37 +133,71 @@
 
 <style scoped>
     .runescribing-editor-app {
-        background-color: #ffffff;
+        --rune-shell-bg: var(--vp-c-bg);
+        --rune-accent: #d6a038;
+        --rune-accent-soft: color-mix(in srgb, var(--rune-accent) 20%, var(--vp-c-bg) 80%);
+        --rune-surface: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+        --rune-surface-muted: color-mix(
+            in srgb,
+            var(--vp-c-bg) 84%,
+            var(--vp-c-bg-soft) 16%
+        );
+        --rune-border: color-mix(in srgb, var(--vp-c-divider) 84%, var(--vp-c-text-3) 16%);
+        --rune-border-strong: color-mix(
+            in srgb,
+            var(--vp-c-divider) 68%,
+            var(--vp-c-text-2) 32%
+        );
+        --rune-control-bg: color-mix(in srgb, var(--vp-c-bg) 94%, var(--vp-c-bg-soft) 6%);
+        --rune-control-bg-hover: color-mix(
+            in srgb,
+            var(--vp-c-bg) 90%,
+            var(--vp-c-bg-soft) 10%
+        );
+        --rune-control-bg-disabled: color-mix(
+            in srgb,
+            var(--vp-c-bg) 86%,
+            var(--vp-c-bg-soft) 14%
+        );
+        --rune-code-bg: color-mix(in srgb, var(--vp-c-bg) 96%, var(--vp-c-bg-soft) 4%);
+        --rune-canvas-grid: color-mix(in srgb, var(--vp-c-text-3) 58%, var(--vp-c-bg) 42%);
+        --rune-canvas-active: var(--rune-accent);
+        --rune-canvas-highlight: color-mix(in srgb, var(--rune-accent) 82%, white 18%);
+        background-color: var(--rune-shell-bg);
         min-height: 100vh;
     }
 
-    :root.dark .runescribing-editor-app {
-        background-color: #1b1b1f;
-    }
-
-    .v-card {
-        border: 1px solid #bdbdbd;
-        box-shadow: none !important;
-    }
-
-    .v-card .v-card {
-        border: 1px solid #e0e0e0;
-    }
-
-    .v-card,
-    .v-sheet,
-    .v-alert,
-    .v-chip,
-    .v-btn,
-    .v-text-field .v-field,
-    .v-textarea .v-field,
-    .v-slider {
+    :deep(.v-card),
+    :deep(.v-sheet),
+    :deep(.v-alert),
+    :deep(.v-chip),
+    :deep(.v-btn),
+    :deep(.v-text-field .v-field),
+    :deep(.v-textarea .v-field),
+    :deep(.v-slider) {
         border-radius: 4px !important;
         box-shadow: none !important;
     }
 
-    .v-card {
-        border: 1px solid var(--vp-c-divider);
+    :deep(.v-card) {
+        border: 1px solid var(--rune-border);
+        background: var(--rune-surface);
+    }
+
+    :deep(.v-card-title) {
+        padding: 16px 20px 13px !important;
+        border-bottom: 1px solid color-mix(in srgb, var(--rune-border) 84%, transparent);
+        background: var(--rune-surface-muted);
+        color: var(--vp-c-text-1);
+        font-size: 1rem !important;
+        font-weight: 600 !important;
+        line-height: 1.35;
+        min-height: 0;
+    }
+
+    :deep(.v-card-text) {
+        color: var(--vp-c-text-1);
+        padding: 18px 20px 20px !important;
     }
 
     .v-container {
@@ -175,10 +212,9 @@
 
     .main-layout {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 16px;
-        padding: 0 24px;
-        min-height: auto;
+        grid-template-columns: minmax(620px, 1.05fr) minmax(360px, 0.95fr);
+        gap: 18px;
+        padding: 0 24px 24px;
         align-items: start;
     }
 
@@ -192,12 +228,15 @@
     .right-panel {
         display: flex;
         flex-direction: column;
-        gap: 16px;
+        gap: 14px;
         padding-left: 0;
+        position: sticky;
+        top: 18px;
     }
 
     .panel-item {
         width: 100%;
+        min-width: 0;
     }
 
     @media (max-width: 1024px) {
@@ -210,7 +249,8 @@
         .left-panel,
         .right-panel {
             padding: 0;
-            gap: 16px;
+            gap: 14px;
+            position: static;
         }
     }
 
@@ -220,5 +260,184 @@
 
     .theme-divider {
         border-color: var(--vp-c-divider) !important;
+    }
+
+    :deep(.v-field) {
+        background: var(--rune-control-bg);
+        min-height: 48px;
+        transition:
+            background-color 0.18s ease,
+            border-color 0.18s ease;
+    }
+
+    :deep(.v-field:hover) {
+        background: var(--rune-control-bg-hover);
+    }
+
+    :deep(.v-field__outline) {
+        color: var(--rune-border-strong);
+    }
+
+    :deep(.v-field:hover .v-field__outline) {
+        color: color-mix(in srgb, var(--vp-c-text-2) 34%, var(--rune-border-strong));
+    }
+
+    :deep(.v-field.v-field--focused .v-field__outline) {
+        color: var(--rune-accent);
+    }
+
+    :deep(.v-field__overlay),
+    :deep(.v-field__underlay) {
+        background: transparent !important;
+    }
+
+    :deep(.v-field--disabled) {
+        background: var(--rune-control-bg-disabled);
+    }
+
+    :deep(.v-field__field) {
+        align-items: center;
+    }
+
+    :deep(.v-field__input) {
+        min-height: 48px;
+        padding-top: 11px !important;
+        padding-bottom: 11px !important;
+        color: var(--vp-c-text-1);
+        font-size: 0.95rem;
+        line-height: 1.45;
+    }
+
+    :deep(.v-input .v-label),
+    :deep(.v-input .v-messages),
+    :deep(.v-input .v-field__input),
+    :deep(.v-input input::placeholder),
+    :deep(.v-input textarea::placeholder) {
+        color: var(--vp-c-text-1);
+    }
+
+    :deep(.v-input .v-label) {
+        color: var(--vp-c-text-3);
+        letter-spacing: 0.01em;
+    }
+
+    :deep(.v-field--focused .v-label),
+    :deep(.v-field--active .v-label) {
+        color: var(--vp-c-text-2);
+    }
+
+    :deep(.v-input__details) {
+        padding-top: 6px;
+        min-height: 22px;
+    }
+
+    :deep(.v-btn--variant-outlined) {
+        border-color: var(--rune-border-strong);
+    }
+
+    :deep(.v-btn--variant-outlined:not(.v-btn--disabled):hover) {
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 58%, var(--vp-c-bg));
+    }
+
+    :deep(.v-btn.v-btn--disabled) {
+        opacity: 1 !important;
+        color: var(--vp-c-text-3) !important;
+        border-color: color-mix(in srgb, var(--rune-border-strong) 76%, transparent) !important;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 78%, var(--vp-c-bg)) !important;
+    }
+
+    :deep(.v-btn.v-btn--disabled .v-btn__overlay),
+    :deep(.v-btn.v-btn--disabled .v-btn__underlay) {
+        display: none;
+    }
+
+    :deep(.toolbar-action) {
+        background: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+        color: var(--vp-c-text-1) !important;
+        min-height: 34px;
+        padding-inline: 10px;
+    }
+
+    :deep(.toolbar-action .v-btn__overlay),
+    :deep(.toolbar-action .v-btn__underlay) {
+        display: none;
+    }
+
+    :deep(.toolbar-action:not(.v-btn--disabled):hover) {
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 58%, transparent) !important;
+    }
+
+    :deep(.toolbar-action.v-btn--disabled) {
+        background: transparent !important;
+        border-color: transparent !important;
+        color: var(--vp-c-text-3) !important;
+        opacity: 1 !important;
+    }
+
+    :deep(.text-warning),
+    :deep(.text-primary) {
+        color: var(--rune-accent) !important;
+    }
+
+    :deep(.bg-warning),
+    :deep(.bg-primary) {
+        background-color: var(--rune-accent) !important;
+    }
+
+    :deep(.rune-field-stack) {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    :deep(.rune-field-label) {
+        color: var(--vp-c-text-2);
+        font-size: 0.76rem;
+        font-weight: 700;
+        letter-spacing: 0.06em;
+        line-height: 1.2;
+        text-transform: uppercase;
+    }
+
+    :deep(.rune-native-input) {
+        display: block;
+        width: 100%;
+        min-height: 46px;
+        padding: 12px 14px;
+        border: 1px solid color-mix(in srgb, var(--rune-border) 84%, transparent);
+        border-radius: 12px;
+        background: var(--rune-control-bg);
+        color: var(--vp-c-text-1);
+        font-size: 0.95rem;
+        line-height: 1.55;
+        box-sizing: border-box;
+        transition:
+            border-color 0.18s ease,
+            background-color 0.18s ease;
+    }
+
+    :deep(.rune-native-input:hover) {
+        background: var(--rune-control-bg-hover);
+    }
+
+    :deep(.rune-native-input:disabled) {
+        background: var(--rune-control-bg-disabled);
+        color: var(--vp-c-text-3);
+        cursor: not-allowed;
+    }
+
+    :deep(.rune-native-input:focus) {
+        border-color: var(--rune-accent);
+        box-shadow: 0 0 0 1px color-mix(in srgb, var(--rune-accent) 42%, transparent);
+    }
+
+    :deep(.rune-native-input::placeholder) {
+        color: var(--vp-c-text-3);
+    }
+
+    :deep(.rune-native-input--mono) {
+        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
     }
 </style>

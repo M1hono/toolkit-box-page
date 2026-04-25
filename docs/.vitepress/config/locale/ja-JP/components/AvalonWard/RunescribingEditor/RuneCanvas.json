@@ -1,4 +1,4 @@
 {
-    "clickTolerance": "Click Tolerance",
-    "instructions": "Click on the lines to toggle them on/off."
+    "clickTolerance": "クリック許容範囲",
+    "instructions": "線をクリックしてオン / オフを切り替えます。"
 }

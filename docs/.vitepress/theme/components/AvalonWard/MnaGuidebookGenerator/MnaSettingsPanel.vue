@@ -8,17 +8,20 @@
 
 <template>
     <v-card flat class="settings-panel">
-        <v-card-title class="d-flex justify-space-between align-center">
+        <v-card-title class="settings-panel__header">
             <div>
                 <v-icon color="primary" class="mr-2">mdi-cog</v-icon>
                 <span class="text-h6">{{ t.settings }}</span>
+                <div class="settings-panel__hint">
+                    {{ t.settingsHint }}
+                </div>
             </div>
         </v-card-title>
 
         <v-card-text class="pa-4">
             <!-- File Import/Export -->
             <v-row dense>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-file-input
                         @update:model-value="handleSourceFile"
                         :label="t.sourceFile"
@@ -30,7 +33,7 @@
                         persistent-hint
                     ></v-file-input>
                 </v-col>
-                <v-col cols="6">
+                <v-col cols="12" md="6">
                     <v-file-input
                         @update:model-value="handleTargetFile"
                         :label="t.targetFile"
@@ -47,26 +50,38 @@
             <!-- Translation Status -->
             <v-row v-if="hasSourceData" dense class="mt-4">
                 <v-col cols="4">
-                    <v-card variant="tonal" color="primary">
+                    <v-card flat class="status-card">
                         <v-card-text class="text-center pa-3">
-                            <div class="text-h5">{{ sourceEntriesCount }}</div>
-                            <div class="text-caption">{{ t.totalEntries }}</div>
+                            <div class="text-h5 status-card__value">
+                                {{ sourceEntriesCount }}
+                            </div>
+                            <div class="text-caption status-card__label">
+                                {{ t.totalEntries }}
+                            </div>
                         </v-card-text>
                     </v-card>
                 </v-col>
                 <v-col cols="4">
-                    <v-card variant="tonal" color="success">
+                    <v-card flat class="status-card">
                         <v-card-text class="text-center pa-3">
-                            <div class="text-h5">{{ targetEntriesCount }}</div>
-                            <div class="text-caption">{{ t.translated }}</div>
+                            <div class="text-h5 status-card__value">
+                                {{ targetEntriesCount }}
+                            </div>
+                            <div class="text-caption status-card__label">
+                                {{ t.translated }}
+                            </div>
                         </v-card-text>
                     </v-card>
                 </v-col>
                 <v-col cols="4">
-                    <v-card variant="tonal" color="warning">
+                    <v-card flat class="status-card">
                         <v-card-text class="text-center pa-3">
-                            <div class="text-h5">{{ untranslatedCount }}</div>
-                            <div class="text-caption">{{ t.untranslated }}</div>
+                            <div class="text-h5 status-card__value">
+                                {{ untranslatedCount }}
+                            </div>
+                            <div class="text-caption status-card__label">
+                                {{ t.untranslated }}
+                            </div>
                         </v-card-text>
                     </v-card>
                 </v-col>
@@ -90,7 +105,7 @@
                 ></v-text-field>
                 <v-btn
                     @click="addCategory"
-                    color="primary"
+                    variant="outlined"
                     :disabled="!newCategory"
                 >
                     <v-icon>mdi-plus</v-icon>
@@ -119,6 +134,7 @@
     import { ref, computed } from "vue";
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import type { GeneratorConfig } from "../../../../utils/mnaGuidebook";
+    import { DEFAULT_CATEGORIES } from "../../../../utils/mnaGuidebook/constants.js";
 
     const { t } = useSafeI18n("mna-settings-panel", {
         settings: "Settings",
@@ -132,6 +148,7 @@
         customCategories: "Custom Categories",
         newCategory: "New Category",
         newCategoryPlaceholder: "Enter category name",
+        settingsHint: "Import source and target language files, then curate categories before editing entries.",
     });
 
     const props = defineProps<{
@@ -154,10 +171,7 @@
 
     const newCategory = ref('');
 
-    const defaultCategories = [
-        "basics", "rituals", "spells", "items", "blocks",
-        "mobs", "mechanics", "world", "enchants", "artifice"
-    ];
+    const defaultCategories = DEFAULT_CATEGORIES;
 
     const allCategories = computed(() => props.allCategories || [
         ...defaultCategories,
@@ -206,9 +220,23 @@
 
 <style scoped>
     .settings-panel {
-        border: 1px solid var(--vp-c-divider);
-        border-radius: 4px !important;
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 82%, var(--vp-c-text-3) 18%);
+        border-radius: 16px !important;
         box-shadow: none !important;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 62%, var(--vp-c-bg) 38%);
+    }
+
+    .settings-panel__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .settings-panel__hint {
+        margin-top: 8px;
+        color: var(--vp-c-text-2);
+        font-size: 0.92rem;
+        line-height: 1.5;
     }
 
     .v-card,
@@ -222,5 +250,39 @@
 
     .gap-2 {
         gap: 8px;
+    }
+
+    .status-card {
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 82%, transparent);
+        border-radius: 12px !important;
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+    }
+
+    .status-card__value {
+        font-weight: 600;
+        color: var(--vp-c-text-1);
+    }
+
+    .status-card__label {
+        color: var(--vp-c-text-2);
+        letter-spacing: 0.01em;
+    }
+
+    :deep(.v-file-input .v-field),
+    :deep(.v-text-field .v-field) {
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+    }
+
+    :deep(.v-input__details) {
+        padding-top: 6px;
+        min-height: 24px;
+    }
+
+    :deep(.v-messages) {
+        line-height: 1.35;
+    }
+
+    :deep(.v-chip) {
+        margin-bottom: 4px;
     }
 </style>

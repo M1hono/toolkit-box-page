@@ -8,10 +8,15 @@
 
 <template>
     <v-card flat class="mismatch-manager">
-        <v-card-title class="d-flex justify-space-between align-center">
-            <div class="d-flex align-center">
-                <v-icon color="warning" class="mr-2">mdi-alert</v-icon>
-                <span class="text-h6">{{ t.title }}</span>
+        <v-card-title class="mismatch-manager__header">
+            <div>
+                <div class="d-flex align-center">
+                    <v-icon color="warning" class="mr-2">mdi-alert</v-icon>
+                    <span class="text-h6">{{ t.title }}</span>
+                </div>
+                <div class="mismatch-manager__hint">
+                    {{ t.issuesHint }}
+                </div>
             </div>
             <v-chip 
                 v-if="totalIssuesCount > 0" 
@@ -327,6 +332,7 @@
         createFromSource: "Create from Source",
         delete: "Delete",
         fix: "Fix",
+        issuesHint: "Track untranslated, orphaned, and structurally mismatched entries without leaving the editor.",
     });
 
     const props = defineProps<{
@@ -412,34 +418,53 @@
 
 <style scoped>
     .mismatch-manager {
-        border: 1px solid var(--vp-c-divider);
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 82%, var(--vp-c-text-3) 18%);
         box-shadow: none !important;
-        border-radius: 4px !important;
-        min-height: 300px;
+        border-radius: 16px !important;
+        min-height: 260px;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 62%, var(--vp-c-bg) 38%);
+    }
+
+    .mismatch-manager__header {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .mismatch-manager__hint {
+        margin-top: 8px;
+        color: var(--vp-c-text-2);
+        font-size: 0.92rem;
+        line-height: 1.45;
     }
 
     .untranslated-entry,
     .orphaned-entry,
     .mismatch-entry {
-        border: 1px solid var(--vp-c-divider);
-        border-radius: 4px !important;
+        border: 1px solid color-mix(in srgb, var(--vp-c-divider) 84%, transparent);
+        border-radius: 14px !important;
         box-shadow: none !important;
-        transition: border-color 0.2s ease;
+        transition: border-color 0.2s ease, transform 0.2s ease, background-color 0.2s ease;
+        background: color-mix(in srgb, var(--vp-c-bg) 72%, var(--vp-c-bg-soft) 28%);
     }
 
     .untranslated-entry:hover {
-        border-color: rgb(var(--v-theme-error));
-        background-color: rgba(var(--v-theme-error), 0.02);
+        transform: translateY(-1px);
+        border-color: color-mix(in srgb, var(--vp-c-text-2) 34%, var(--vp-c-divider));
+        background-color: color-mix(in srgb, var(--vp-c-bg) 88%, var(--vp-c-bg-soft) 12%);
     }
 
     .orphaned-entry:hover {
-        border-color: rgb(var(--v-theme-warning));
-        background-color: rgba(var(--v-theme-warning), 0.02);
+        transform: translateY(-1px);
+        border-color: color-mix(in srgb, var(--vp-c-text-2) 34%, var(--vp-c-divider));
+        background-color: color-mix(in srgb, var(--vp-c-bg) 88%, var(--vp-c-bg-soft) 12%);
     }
 
     .mismatch-entry:hover {
-        border-color: rgb(var(--v-theme-info));
-        background-color: rgba(var(--v-theme-info), 0.02);
+        transform: translateY(-1px);
+        border-color: color-mix(in srgb, var(--vp-c-text-2) 34%, var(--vp-c-divider));
+        background-color: color-mix(in srgb, var(--vp-c-bg) 88%, var(--vp-c-bg-soft) 12%);
     }
 
     .v-card,
@@ -454,7 +479,7 @@
     }
 
     .v-window {
-        max-height: 50vh;
+        max-height: min(52vh, 640px);
         overflow-y: auto;
     }
 
@@ -469,5 +494,14 @@
 
     .gap-2 {
         gap: 8px;
+    }
+
+    :deep(.v-tab) {
+        text-transform: none;
+        border-radius: 999px;
+    }
+
+    :deep(.v-tab.v-tab--selected) {
+        background: color-mix(in srgb, var(--vp-c-bg) 86%, var(--vp-c-bg-soft) 14%);
     }
 </style>

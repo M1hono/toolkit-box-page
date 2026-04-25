@@ -1,5 +1,7 @@
 {
-    "instructionClick": "Left click to toggle cells. Right click for custom values.",
-    "instructionWarning": "Pattern must have at least one non-zero value. Reagents must be placed on active pattern cells.",
-    "title": "Ritual Pattern Generator"
+    "instructionClick": "左クリックでセルを切り替え、右クリックでカスタム値を入力します。",
+    "instructionWarning": "パターンには少なくとも 1 つの非ゼロ値が必要で、試薬は有効なパターンセルに配置する必要があります。",
+    "reagentPrompt": "試薬キーを入力してください（1 文字）：",
+    "title": "儀式パターン生成器",
+    "valuePrompt": "数値を入力してください："
 }

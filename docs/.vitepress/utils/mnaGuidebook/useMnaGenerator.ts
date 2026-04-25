@@ -8,12 +8,13 @@ import { useMnaSections } from "./core/useMnaSections.js";
 import { useMnaTranslation } from "./core/useMnaTranslation.js";
 import { useMnaMismatch } from "./core/useMnaMismatch.js";
 import { useMnaPagination } from "./core/useMnaPagination.js";
+import type { MnaMessageMap } from "./i18n.js";
 
 /**
  * Main composable that orchestrates all MNA functionality
  * @returns Comprehensive MNA generator functionality
  */
-export function useMnaGenerator() {
+export function useMnaGenerator(messages: MnaMessageMap) {
     // Core functionality
     const {
         config,
@@ -46,10 +47,14 @@ export function useMnaGenerator() {
         removeCategory,
         generateJson,
         downloadJson,
-    } = useMnaCore();
+    } = useMnaCore(messages);
 
     // Section editing functionality
-    const sectionsComposable = useMnaSections(currentEntryData, updateStatus);
+    const sectionsComposable = useMnaSections(
+        currentEntryData,
+        updateStatus,
+        messages
+    );
     
     const {
         currentSection,
@@ -76,7 +81,9 @@ export function useMnaGenerator() {
         sourceEntries,
         currentEntryData,
         currentEntryId,
-        updateStatus
+        config,
+        updateStatus,
+        messages
     );
 
     const { getSourceSection } = translationComposable;
@@ -95,6 +102,7 @@ export function useMnaGenerator() {
         entries,
         sourceEntries,
         updateStatus,
+        messages,
         generateJson
     );
 

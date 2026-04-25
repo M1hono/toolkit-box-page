@@ -1,10 +1,10 @@
 {
-    "consume": "Consume",
-    "dynamic": "Dynamic",
-    "dynamicSource": "Dynamic Source",
-    "itemIdPlaceholder": "Item ID (required)",
-    "manualReturn": "Manual Return",
-    "noKeys": "No keys defined. Add reagents to the grid first.",
-    "optional": "Optional",
-    "reagentKeys": "Reagent Keys"
+    "consume": "消費する",
+    "dynamic": "動的",
+    "dynamicSource": "動的ソース",
+    "itemIdPlaceholder": "アイテム ID（必須）",
+    "manualReturn": "手動返却",
+    "noKeys": "キーがまだ定義されていません。先にグリッドへ試薬を追加してください。",
+    "optional": "任意",
+    "reagentKeys": "試薬キー"
 }

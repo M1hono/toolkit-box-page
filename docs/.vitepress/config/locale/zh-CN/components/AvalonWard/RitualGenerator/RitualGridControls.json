@@ -1,11 +1,11 @@
 {
-    "displayPattern": "Display Pattern",
-    "gridSize": "Grid Size",
-    "lockSize": "Lock Size",
-    "locked": "Size Locked",
-    "maxSize": "Max Size",
-    "pattern": "Pattern",
-    "randomizeRunes": "Randomize Runes",
-    "reagents": "Reagents",
-    "showKeys": "Show Keys"
+    "displayPattern": "显示图案",
+    "gridSize": "网格尺寸",
+    "lockSize": "锁定尺寸",
+    "locked": "尺寸已锁定",
+    "maxSize": "最大尺寸",
+    "pattern": "图案",
+    "randomizeRunes": "随机符文",
+    "reagents": "试剂",
+    "showKeys": "显示键位"
 }

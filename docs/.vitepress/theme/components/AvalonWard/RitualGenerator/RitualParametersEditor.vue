@@ -7,121 +7,171 @@
 -->
 
 <template>
-    <v-card flat>
+    <v-card flat class="ritual-parameters-editor">
         <v-card-title class="text-h6">{{ t.parameters }}</v-card-title>
-        <v-card-text>
-            <v-text-field
-                :model-value="parameters.tier"
-                @update:model-value="updateParameter('tier', Number($event))"
-                :label="t.tier"
-                type="number"
-                :min="1"
-                :max="10"
-                variant="outlined"
-                density="compact"
-                class="mb-4"
-            ></v-text-field>
-
-            <v-text-field
-                :model-value="parameters.innerColor"
-                @update:model-value="updateParameter('innerColor', $event)"
-                :label="t.innerColor"
-                variant="outlined"
-                density="compact"
-                class="mb-4"
-            >
-                <template #append>
-                    <v-btn
-                        icon
-                        size="small"
-                        variant="text"
-                        class="color-picker-btn"
-                        @click="$refs.innerColorPicker.click()"
-                    >
-                        <v-icon color="primary">mdi-palette</v-icon>
-                    </v-btn>
+        <v-card-text class="pa-5">
+            <div class="parameter-stack ritual-field-stack">
+                <div class="parameter-field">
+                    <span class="parameter-field__label ritual-field-label">{{
+                        t.tier
+                    }}</span>
                     <input
-                        ref="innerColorPicker"
-                        type="color"
-                        :value="innerColorHex"
-                        @input="updateInnerColorFromHex(($event.target as HTMLInputElement).value)"
-                        class="color-picker-input"
+                        :value="parameters.tier"
+                        @input="
+                            updateNumericParameter(
+                                'tier',
+                                ($event.target as HTMLInputElement).value
+                            )
+                        "
+                        type="number"
+                        min="1"
+                        max="10"
+                        class="ritual-native-input ritual-native-input--mono"
                     />
-                </template>
-            </v-text-field>
+                </div>
 
-            <v-text-field
-                :model-value="parameters.outerColor"
-                @update:model-value="updateParameter('outerColor', $event)"
-                :label="t.outerColor"
-                variant="outlined"
-                density="compact"
-                class="mb-4"
-            >
-                <template #append>
-                    <v-btn
-                        icon
-                        size="small"
-                        variant="text"
-                        class="color-picker-btn"
-                        @click="$refs.outerColorPicker.click()"
-                    >
-                        <v-icon color="primary">mdi-palette</v-icon>
-                    </v-btn>
+                <div class="parameter-field">
+                    <span class="parameter-field__label ritual-field-label">{{
+                        t.innerColor
+                    }}</span>
+                    <div class="parameter-field__control">
+                        <input
+                            :value="parameters.innerColor"
+                            @input="
+                                updateParameter(
+                                    'innerColor',
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
+                            type="text"
+                            class="ritual-native-input ritual-native-input--mono parameter-input"
+                        />
+                        <v-btn
+                            icon
+                            size="small"
+                            variant="text"
+                            class="color-picker-btn toolbar-action"
+                            @click="$refs.innerColorPicker.click()"
+                        >
+                            <v-icon>mdi-palette</v-icon>
+                        </v-btn>
+                        <input
+                            ref="innerColorPicker"
+                            type="color"
+                            :value="innerColorHex"
+                            @input="
+                                updateInnerColorFromHex(
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
+                            class="color-picker-input"
+                        />
+                    </div>
+                </div>
+
+                <div class="parameter-field">
+                    <span class="parameter-field__label ritual-field-label">{{
+                        t.outerColor
+                    }}</span>
+                    <div class="parameter-field__control">
+                        <input
+                            :value="parameters.outerColor"
+                            @input="
+                                updateParameter(
+                                    'outerColor',
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
+                            type="text"
+                            class="ritual-native-input ritual-native-input--mono parameter-input"
+                        />
+                        <v-btn
+                            icon
+                            size="small"
+                            variant="text"
+                            class="color-picker-btn toolbar-action"
+                            @click="$refs.outerColorPicker.click()"
+                        >
+                            <v-icon>mdi-palette</v-icon>
+                        </v-btn>
+                        <input
+                            ref="outerColorPicker"
+                            type="color"
+                            :value="outerColorHex"
+                            @input="
+                                updateOuterColorFromHex(
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
+                            class="color-picker-input"
+                        />
+                    </div>
+                </div>
+
+                <div class="parameter-field">
+                    <span class="parameter-field__label ritual-field-label">{{
+                        t.beamColor
+                    }}</span>
+                    <div class="parameter-field__control">
+                        <input
+                            :value="parameters.beamColor"
+                            @input="
+                                updateParameter(
+                                    'beamColor',
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
+                            type="text"
+                            class="ritual-native-input ritual-native-input--mono parameter-input"
+                        />
+                        <v-btn
+                            icon
+                            size="small"
+                            variant="text"
+                            class="color-picker-btn toolbar-action"
+                            @click="$refs.beamColorPicker.click()"
+                        >
+                            <v-icon>mdi-palette</v-icon>
+                        </v-btn>
+                        <input
+                            ref="beamColorPicker"
+                            type="color"
+                            :value="beamColorHex"
+                            @input="
+                                updateBeamColorFromHex(
+                                    ($event.target as HTMLInputElement).value
+                                )
+                            "
+                            class="color-picker-input"
+                        />
+                    </div>
+                </div>
+
+                <div class="parameter-field">
+                    <span class="parameter-field__label ritual-field-label">{{
+                        t.createdItem
+                    }}</span>
                     <input
-                        ref="outerColorPicker"
-                        type="color"
-                        :value="outerColorHex"
-                        @input="updateOuterColorFromHex(($event.target as HTMLInputElement).value)"
-                        class="color-picker-input"
+                        :value="parameters.createsItem"
+                        @input="
+                            updateParameter(
+                                'createsItem',
+                                ($event.target as HTMLInputElement).value
+                            )
+                        "
+                        :placeholder="t.createdItemPlaceholder"
+                        type="text"
+                        class="ritual-native-input parameter-input"
                     />
-                </template>
-            </v-text-field>
+                </div>
+            </div>
 
-            <v-text-field
-                :model-value="parameters.beamColor"
-                @update:model-value="updateParameter('beamColor', $event)"
-                :label="t.beamColor"
-                variant="outlined"
-                density="compact"
-                class="mb-4"
-            >
-                <template #append>
-                    <v-btn
-                        icon
-                        size="small"
-                        variant="text"
-                        class="color-picker-btn"
-                        @click="$refs.beamColorPicker.click()"
-                    >
-                        <v-icon color="primary">mdi-palette</v-icon>
-                    </v-btn>
-                    <input
-                        ref="beamColorPicker"
-                        type="color"
-                        :value="beamColorHex"
-                        @input="updateBeamColorFromHex(($event.target as HTMLInputElement).value)"
-                        class="color-picker-input"
-                    />
-                </template>
-            </v-text-field>
-
-            <v-text-field
-                :model-value="parameters.createsItem"
-                @update:model-value="updateParameter('createsItem', $event)"
-                :label="t.createdItem"
-                :placeholder="t.createdItemPlaceholder"
-                variant="outlined"
-                density="compact"
-                class="mb-4"
-            ></v-text-field>
-
-            <div class="parameter-toggles">
+            <div class="parameter-toggles mt-4">
                 <v-switch
                     :model-value="parameters.connectBeam"
                     @update:model-value="updateParameter('connectBeam', $event)"
                     :label="t.connectBeam"
-                    color="primary"
+                    color="warning"
                     density="compact"
                     hide-details
                     class="mb-2"
@@ -132,7 +182,7 @@
                         updateParameter('displayIndexes', $event)
                     "
                     :label="t.displayIndexes"
-                    color="primary"
+                    color="warning"
                     density="compact"
                     hide-details
                     class="mb-2"
@@ -141,7 +191,7 @@
                     :model-value="parameters.kittable"
                     @update:model-value="updateParameter('kittable', $event)"
                     :label="t.kittable"
-                    color="primary"
+                    color="warning"
                     density="compact"
                     hide-details
                 ></v-switch>
@@ -196,13 +246,24 @@
         emit("update:parameters", newParams);
     };
 
+    const updateNumericParameter = (
+        key: keyof RitualParameters,
+        rawValue: string
+    ) => {
+        const parsedValue = Number.parseInt(rawValue, 10);
+        updateParameter(
+            key,
+            Number.isFinite(parsedValue) ? parsedValue : props.parameters[key]
+        );
+    };
+
     /**
      * Converts parameter color to hex format
      * @param paramColor - Parameter color string
      * @returns Hex color string
      */
     const hexFromParameterColor = (paramColor: string): string => {
-        if (!paramColor) return "#ffffff";
+        if (!paramColor) return "#ffd24a";
 
         if (paramColor.startsWith("0x")) {
             return "#" + paramColor.substring(2);
@@ -217,7 +278,7 @@
      * @returns Parameter color string
      */
     const parameterColorFromHex = (hexColor: string): string => {
-        if (!hexColor) return "0xffffff";
+        if (!hexColor) return "0xffd24a";
 
         if (hexColor.startsWith("#")) {
             return "0x" + hexColor.substring(1);
@@ -252,16 +313,20 @@
 </script>
 
 <style scoped>
-    .v-card {
-        border: 1px solid #bdbdbd;
-        box-shadow: none !important;
+    .parameter-field {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
     }
 
-    .v-card,
-    .v-text-field .v-field,
-    .v-btn,
-    .v-switch {
-        border-radius: 12px !important;
+    .parameter-field__control {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .parameter-input {
+        flex: 1 1 auto;
     }
 
     .color-picker-input {
@@ -273,18 +338,37 @@
     }
 
     .color-picker-btn {
-        transition: all 0.2s ease;
+        align-self: stretch;
+        width: 40px;
+        min-width: 40px;
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
+        border-radius: 12px;
+        color: var(--vp-c-text-2) !important;
+        transition:
+            border-color 0.18s ease,
+            color 0.18s ease;
     }
 
     .color-picker-btn:hover {
-        background-color: rgba(var(--v-theme-primary), 0.1);
-        transform: scale(1.1);
+        color: var(--vp-c-text-1) !important;
+    }
+
+    .color-picker-btn :deep(.v-icon) {
+        font-size: 1rem;
     }
 
     .parameter-toggles {
-        padding: 12px;
-        background-color: rgba(var(--v-theme-surface), 0.3);
+        padding: 14px;
+        background-color: color-mix(in srgb, var(--vp-c-bg) 92%, var(--ritual-surface-muted) 8%);
         border-radius: 12px;
-        border: 1px solid rgba(var(--v-theme-surface-variant), 0.2);
+        border: 1px solid color-mix(in srgb, var(--ritual-border) 84%, transparent);
+    }
+
+    .parameter-toggles :deep(.v-selection-control) {
+        margin: 0;
+    }
+
+    .parameter-toggles :deep(.v-label) {
+        font-size: 0.94rem;
     }
 </style>

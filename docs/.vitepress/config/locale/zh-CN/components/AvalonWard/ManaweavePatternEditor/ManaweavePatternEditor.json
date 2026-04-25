@@ -1,0 +1,8 @@
+{
+    "customValuePrompt": "为这个格子输入整数值",
+    "recipeConfiguration": "配方配置",
+    "requiredFaction": "所需阵营",
+    "requiredFactionPlaceholder": "例如：mna:none",
+    "tier": "阶级",
+    "title": "法力编织图样配方编辑器"
+}

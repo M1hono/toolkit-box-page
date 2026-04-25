@@ -37,21 +37,23 @@
                 <!-- Quick Actions -->
                 <v-row class="mb-4 mx-0">
                     <v-col cols="12" class="px-6">
-                        <div class="d-flex gap-3 flex-wrap">
+                        <div class="actions-bar d-flex gap-3 flex-wrap">
                             <v-btn
                                 @click="generateJson"
-                                color="primary"
+                                variant="text"
                                 :disabled="Object.keys(entries).length === 0"
                                 prepend-icon="mdi-code-json"
+                                class="toolbar-action"
                             >
                                 {{ t.generateJson }}
                             </v-btn>
 
                             <v-btn
                                 @click="downloadJson"
-                                color="success"
+                                variant="text"
                                 :disabled="!jsonOutput"
                                 prepend-icon="mdi-download"
+                                class="toolbar-action"
                             >
                                 {{ t.downloadJson }}
                             </v-btn>
@@ -59,8 +61,9 @@
                             <v-btn
                                 v-if="hasSourceData"
                                 @click="handleAutoUpdate"
-                                color="warning"
+                                variant="text"
                                 prepend-icon="mdi-sync"
+                                class="toolbar-action"
                             >
                                 {{ t.autoUpdate }}
                                 <v-badge
@@ -198,10 +201,55 @@
         entriesUpdated: "entries updated",
         pleaseEnterEntryId: "Please enter an entry ID",
         entryCreated: "Entry created successfully",
+        entryAlreadyExists: "Entry already exists",
+        createdNewEntryStatus: "Created new entry: {entry} - add sections and save",
+        entryMustHaveSection: "Entry must have at least one section",
+        entryMustHaveTitleSection:
+            "Entry must contain at least one title section",
+        entrySavedStatus: 'Entry "{entry}" saved successfully',
+        editingEntryStatus: "Editing entry: {entry}",
+        entryDeletedStatus: 'Entry "{entry}" deleted',
+        downloadedLanguageJson: "Downloaded {language}.json",
+        titleSectionRequiresValue: "Title section requires a value",
+        textSectionRequiresSegment:
+            "Text section requires at least one text segment",
+        imageSectionRequiresLocation: "Image section requires a location",
+        recipeSectionRequiresLocation: "Recipe section requires a location",
+        itemSectionRequiresLocation:
+            "Item section requires at least one item location",
+        addedSectionStatus: "Added {type} section",
+        removedSectionStatus: "Removed {type} section",
+        editingSectionStatus: "Editing {type} section",
+        appliedStructureFromSourceSection:
+            "Applied structure from source section",
+        selectOrphanedToDelete: "Please select orphaned entries to delete",
+        deletedOrphanedCount: "Deleted {count} orphaned entries",
+        deletedOrphanedSingle: "Deleted orphaned entry: {entry}",
+        fixedCategoryFor: "Fixed category for: {entry}",
+        fixedStructureFor: "Fixed structure for: {entry}",
+        fixedContentFor: "Fixed content properties for: {entry}",
+        selectMismatchToFix: "Please select mismatch entries to fix",
+        fixedMismatchCount: "Fixed {count} mismatch entries",
+        selectMismatchToDelete: "Please select mismatch entries to delete",
+        deletedMismatchCount: "Deleted {count} mismatch entries",
+        sourceImportedStatus:
+            "Source language ({filename}) imported: {count} entries",
+        targetImportedStatus:
+            "Target language ({filename}) imported: {count} entries",
+        importFailedStatus: "Import failed: {message}",
+        startedTranslatingStatus: "Started translating: {entry}",
+        filledSectionsFromSourceStatus:
+            "Filled {count} sections from source",
+        foundNewEntriesStatus: "Found {count} new entries to translate",
+        foundChangedEntriesStatus: "Found {count} entries with changes",
+        autoUpdatedEntriesStatus:
+            "Auto-updated {count} entries from source{summary}",
+        createdFromSourceStatus:
+            'Created "{entry}" with {count} sections from source',
     });
 
     // Get all functionality from the organized composables
-    const mnaGenerator = useMnaGenerator();
+    const mnaGenerator = useMnaGenerator(t);
 
     // Destructure for easier access
     const {
@@ -402,8 +450,26 @@
 </script>
 
 <style scoped>
-    .mna-guidebook-app {
-        background-color: var(--vp-c-bg);
+.mna-guidebook-app {
+        --mna-shell-bg: var(--vp-c-bg);
+        --mna-panel-bg: color-mix(in srgb, var(--vp-c-bg) 90%, var(--vp-c-bg-soft) 10%);
+        --mna-panel-bg-strong: color-mix(
+            in srgb,
+            var(--vp-c-bg) 82%,
+            var(--vp-c-bg-soft) 18%
+        );
+        --mna-panel-border: color-mix(
+            in srgb,
+            var(--vp-c-divider) 84%,
+            var(--vp-c-text-3) 16%
+        );
+        --mna-panel-border-strong: color-mix(
+            in srgb,
+            var(--vp-c-divider) 66%,
+            var(--vp-c-text-2) 34%
+        );
+        --mna-panel-muted: color-mix(in srgb, var(--vp-c-bg-soft) 72%, var(--vp-c-bg) 28%);
+        background: var(--mna-shell-bg);
         min-height: 100vh;
     }
 
@@ -415,7 +481,13 @@
         border-color: var(--vp-c-divider) !important;
     }
 
-    /* Modern clean style - limited rounded corners (4-8px max), no shadows */
+    .actions-bar {
+        padding: 6px 4px;
+        border: 1px solid var(--mna-panel-border);
+        border-radius: 14px;
+        background: color-mix(in srgb, var(--vp-c-bg) 94%, var(--vp-c-bg-soft) 6%);
+    }
+
     .v-card,
     .v-sheet,
     .v-alert,
@@ -429,7 +501,6 @@
         box-shadow: none !important;
     }
 
-    /* Remove shadows from all components */
     :deep(.v-card),
     :deep(.v-sheet),
     :deep(.v-alert),
@@ -437,22 +508,114 @@
         box-shadow: none !important;
     }
 
-    /* Borders instead of shadows for depth */
     :deep(.v-card) {
-        border: 1px solid var(--vp-c-divider);
+        border: 1px solid var(--mna-panel-border);
+        background: var(--mna-panel-bg);
     }
 
-    /* Use Vuetify's default pagination styling */
+    :deep(.v-card-title) {
+        padding: 18px 20px;
+        border-bottom: 1px solid color-mix(in srgb, var(--mna-panel-border) 86%, transparent);
+        background: var(--mna-panel-muted);
+        line-height: 1.35;
+        min-height: 0;
+    }
+
+    :deep(.v-card-text) {
+        color: var(--vp-c-text-1);
+    }
+
+    :deep(.v-field) {
+        background: color-mix(in srgb, var(--vp-c-bg) 92%, var(--vp-c-bg-soft) 8%);
+    }
+
+    :deep(.v-field__outline) {
+        color: var(--mna-panel-border-strong);
+    }
+
+    :deep(.v-field:hover .v-field__outline) {
+        color: color-mix(in srgb, var(--vp-c-text-2) 38%, var(--mna-panel-border-strong));
+    }
+
+    :deep(.v-field.v-field--focused .v-field__outline) {
+        color: var(--vp-c-brand-1);
+    }
+
+    :deep(.v-input .v-label),
+    :deep(.v-input .v-messages),
+    :deep(.v-input .v-field__input) {
+        color: var(--vp-c-text-1);
+    }
+
+    :deep(.v-input__details) {
+        padding-top: 6px;
+        min-height: 22px;
+    }
+
+    :deep(.v-messages) {
+        min-height: 16px;
+        line-height: 1.35;
+    }
+
+    :deep(.v-btn--variant-outlined) {
+        border-color: color-mix(in srgb, var(--mna-panel-border-strong) 72%, transparent);
+    }
+
+    :deep(.v-btn--variant-outlined:not(.v-btn--disabled):hover) {
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 54%, var(--vp-c-bg));
+    }
+
+    :deep(.v-btn.v-btn--disabled) {
+        opacity: 1 !important;
+        box-shadow: none !important;
+        color: var(--vp-c-text-2) !important;
+        border-color: color-mix(in srgb, var(--mna-panel-border-strong) 72%, transparent) !important;
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 82%, var(--vp-c-bg)) !important;
+    }
+
+    :deep(.v-btn.v-btn--disabled .v-btn__overlay),
+    :deep(.v-btn.v-btn--disabled .v-btn__underlay) {
+        display: none;
+    }
+
+    :deep(.toolbar-action) {
+        background: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+        color: var(--vp-c-text-1) !important;
+        min-height: 36px;
+        padding-inline: 10px;
+    }
+
+    :deep(.toolbar-action .v-btn__overlay),
+    :deep(.toolbar-action .v-btn__underlay) {
+        display: none;
+    }
+
+    :deep(.toolbar-action:not(.v-btn--disabled):hover) {
+        background: color-mix(in srgb, var(--vp-c-bg-soft) 60%, transparent) !important;
+    }
+
+    :deep(.toolbar-action.v-btn--disabled) {
+        background: transparent !important;
+        border-color: transparent !important;
+        color: var(--vp-c-text-3) !important;
+        opacity: 1 !important;
+    }
+
+    :deep(.v-chip--variant-outlined) {
+        border-color: color-mix(in srgb, var(--mna-panel-border-strong) 78%, transparent);
+    }
+
     :deep(.v-pagination) {
         justify-content: center;
     }
 
     .main-layout {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 24px;
-        padding: 0 24px;
-        min-height: calc(100vh - 140px);
+        grid-template-columns: minmax(320px, 0.92fr) minmax(420px, 1.08fr);
+        gap: 18px;
+        padding: 0 24px 24px;
         align-items: start;
     }
 
@@ -460,55 +623,21 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding-right: 0;
-        height: calc(100vh - 180px);
-    }
-
-    .left-panel > * {
-        flex-shrink: 0;
     }
 
     .right-panel {
         display: flex;
         flex-direction: column;
         gap: 16px;
-        padding-left: 0;
-        height: calc(100vh - 180px);
-    }
-
-    .right-panel > * {
-        flex-shrink: 0;
     }
 
     .panel-item {
         width: 100%;
-        flex-shrink: 0;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .panel-item:last-child {
-        flex: 1;
-        min-height: 0;
+        min-width: 0;
     }
 
     .flex-grow-1 {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        overflow-y: auto;
-    }
-
-    /* Ensure all panels fill available space */
-    :deep(.v-card) {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-
-    :deep(.v-card-text) {
-        flex: 1;
-        overflow-y: auto;
+        min-height: 360px;
     }
 
     .gap-3 {
@@ -524,19 +653,8 @@
 
         .left-panel,
         .right-panel {
-            padding: 0;
             gap: 16px;
             margin-bottom: 16px;
-            max-height: none;
-            overflow-y: visible;
-        }
-
-        .right-panel {
-            order: 2;
-        }
-
-        .left-panel {
-            order: 1;
         }
     }
 

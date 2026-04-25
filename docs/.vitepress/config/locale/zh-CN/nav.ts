@@ -99,6 +99,10 @@ const zhNav: NavItem[] = [
                                     link: "/Mna/RitualGenerator",
                                 },
                                 {
+                                    text: "法力编织图样配方编辑器",
+                                    link: "/Mna/ManaweavePatternEditor",
+                                },
+                                {
                                     text: "符文配方编辑器",
                                     link: "/Mna/RunescribingEditor",
                                 },
