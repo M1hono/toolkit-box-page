@@ -173,6 +173,18 @@ export function useRitualGenerator() {
                 valid = false;
                 break;
             }
+
+            if (config.is_dynamic && config.dynamic_source) {
+                valid = false;
+                break;
+            }
+        }
+
+        const dynamicSourceCount = Array.from(reagentSymbols).filter(
+            (symbol) => state.keys[symbol]?.dynamic_source
+        ).length;
+        if (dynamicSourceCount > 1) {
+            valid = false;
         }
 
         if (!state.parameters.createsItem.trim()) {
@@ -466,60 +478,40 @@ export function useRitualGenerator() {
         symbol: string,
         config: RitualKeyConfig
     ): string[] => {
-        const lines: string[] = [];
-        const item = JSON.stringify(config.item.trim());
-        const symbolLiteral = `'${symbol}'`;
-        const specialFlags = [
-            config.is_dynamic,
-            config.dynamic_source,
-            config.manual_return,
-        ].filter(Boolean).length;
-
-        if (specialFlags > 1) {
-            lines.push(
-                `    // Review reagent '${symbol}': multiple special flags were selected; keeping the first supported chain form`
-            );
+        if (config.is_dynamic && config.dynamic_source) {
+            return [
+                `    // Invalid ritual: reagent '${symbol}' cannot be both dynamic and dynamicSource`,
+            ];
         }
 
-        const hasBaseFlagMix =
-            config.optional || !config.consume;
-        const hasSpecialMode =
-            config.dynamic_source || config.is_dynamic || config.manual_return;
+        return [`    .reagent(${formatReagentExpression(symbol, config)})`];
+    };
 
-        if (hasSpecialMode && hasBaseFlagMix) {
-            lines.push(
-                `    // Review reagent '${symbol}': optional/consume flags are not representable together with the selected special reagent helper`
-            );
+    const formatReagentExpression = (
+        symbol: string,
+        config: RitualKeyConfig
+    ): string => {
+        const chain = [
+            `MnaRitualReagent.of(${JSON.stringify(symbol)}, ${JSON.stringify(config.item.trim())})`,
+        ];
+
+        if (config.optional) {
+            chain.push("optional()");
         }
-
-        if (config.dynamic_source) {
-            lines.push(
-                `    .dynamicSourceReagent(${symbolLiteral}, ${item})`
-            );
-            return lines;
+        if (!config.consume) {
+            chain.push("keep()");
         }
-
         if (config.is_dynamic) {
-            lines.push(`    .dynamicReagent(${symbolLiteral}, ${item})`);
-            return lines;
+            chain.push("dynamic()");
         }
-
+        if (config.dynamic_source) {
+            chain.push("dynamicSource()");
+        }
         if (config.manual_return) {
-            lines.push(
-                `    .manualReturnReagent(${symbolLiteral}, ${item})`
-            );
-            return lines;
+            chain.push("manualReturn()");
         }
 
-        if (hasBaseFlagMix) {
-            lines.push(
-                `    .reagent(${symbolLiteral}, ${item}, ${config.optional}, ${config.consume})`
-            );
-            return lines;
-        }
-
-        lines.push(`    .reagent(${symbolLiteral}, ${item})`);
-        return lines;
+        return chain.join(".");
     };
 
     /**
