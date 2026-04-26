@@ -4616,7 +4616,7 @@
         "1061000": {
           "id": 1061000,
           "faceX": 888,
-          "faceY": 142,
+          "faceY": 148,
           "scale": 1
         },
         "1061001": {
@@ -18435,6 +18435,56 @@
       }
     }
   },
+  "405600": {
+    "id": 405600,
+    "collectionNo": 468,
+    "name": "ヒッポリュテ",
+    "ruby": "ヒッポリュテ",
+    "className": "rider",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/4056000/4056000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/4056001/4056001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/4056002/4056002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "4056000": {
+          "id": 4056000,
+          "faceX": 385,
+          "faceY": 163,
+          "scale": 1
+        },
+        "4056001": {
+          "id": 4056001,
+          "faceX": 385,
+          "faceY": 163,
+          "scale": 1
+        },
+        "4056002": {
+          "id": 4056002,
+          "faceX": 385,
+          "faceY": 163,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/4056000/4056000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/4056001/4056001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/4056002/4056002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "405700": {
     "id": 405700,
     "collectionNo": 452,
@@ -22704,6 +22754,56 @@
           "1098296000": "https://static.atlasacademy.io/JP/CharaFigure/1098296000/1098296000_merged.png",
           "1098297800": "https://static.atlasacademy.io/JP/CharaFigure/1098297800/1098297800_merged.png"
         }
+      }
+    }
+  },
+  "505600": {
+    "id": 505600,
+    "collectionNo": 467,
+    "name": "フランソワ・プレラーティ",
+    "ruby": "フランソワ・プレラーティ",
+    "className": "caster",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/5056000/5056000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/5056001/5056001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/5056002/5056002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "5056000": {
+          "id": 5056000,
+          "faceX": 354,
+          "faceY": 157,
+          "scale": 1
+        },
+        "5056001": {
+          "id": 5056001,
+          "faceX": 356,
+          "faceY": 153,
+          "scale": 1
+        },
+        "5056002": {
+          "id": 5056002,
+          "faceX": 356,
+          "faceY": 154,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/5056000/5056000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/5056001/5056001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/5056002/5056002_merged.png"
+        },
+        "costume": {},
+        "story": {}
       }
     }
   },
@@ -40437,8 +40537,8 @@
         },
         "40001002": {
           "id": 40001002,
-          "faceX": 914,
-          "faceY": 100,
+          "faceX": 912,
+          "faceY": 104,
           "scale": 1
         },
         "40001300": {
