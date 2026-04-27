@@ -72,6 +72,8 @@ jobs:
 
       - name: Build with VitePress
         working-directory: docs
+        env:
+          M1HONO_FORCE_GIT_CHANGELOG: "1"
         run: yarn build
 
       - name: Upload build artifact
