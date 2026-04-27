@@ -114,6 +114,10 @@ const enNav: NavItem[] = [
         },
     },
     {
+        text: "Self",
+        link: "/Self/",
+    },
+    {
         text: "Resources",
         dropdown: {
             layout: "columns",

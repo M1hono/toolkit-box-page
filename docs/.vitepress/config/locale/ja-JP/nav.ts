@@ -114,6 +114,10 @@ const jaNav: NavItem[] = [
         },
     },
     {
+        text: "Self",
+        link: "/Self/",
+    },
+    {
         text: "リソース",
         dropdown: {
             layout: "columns",

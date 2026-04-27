@@ -83,7 +83,7 @@ featuresConfig:
 hero:
   name: "ZH-CN / TOOLKIT BOX"
   text: "TOOLKIT\nBOX"
-  tagline: "M1hono 编写的 Toolkit Box，覆盖 FGO 从者立绘检索与卡牌生成、明日方舟干员立绘检索与剧情追踪、Minecraft 语言 JSON 编辑，以及 Manaweave 指南书、仪式与符文工具。"
+  tagline: "M1hono 编写的 Toolkit Box，覆盖 FGO 从者立绘检索与卡牌生成、明日方舟干员立绘检索与剧情追踪、Minecraft 语言 JSON 编辑、Manaweave 指南书、仪式与符文工具，以及 Self 个人工具。"
   typography:
     type: none
   background:
@@ -252,6 +252,11 @@ features:
     details: "指南书、仪式与符文编辑入口。"
     icon: "MNA"
     link: /zh-CN/Mna/
+    linkText: "打开"
+  - title: "Self 工具"
+    details: "用于存放个人工作流小工具的独立模块。"
+    icon: "SELF"
+    link: /zh-CN/Self/
     linkText: "打开"
 gitChangelog: false
 ---

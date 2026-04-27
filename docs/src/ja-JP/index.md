@@ -83,7 +83,7 @@ featuresConfig:
 hero:
   name: "JA-JP / TOOLKIT BOX"
   text: "TOOLKIT\nBOX"
-  tagline: "M1hono が作成した Toolkit Box です。FGO サーヴァント立ち絵検索とカード生成、アークナイツオペレーター立ち絵検索とストーリー追跡、Minecraft 言語 JSON 編集、Manaweave ガイドブック・儀式・ルーン編集を扱います。"
+  tagline: "M1hono が作成した Toolkit Box です。FGO サーヴァント立ち絵検索とカード生成、アークナイツオペレーター立ち絵検索とストーリー追跡、Minecraft 言語 JSON 編集、Manaweave ガイドブック・儀式・ルーン編集、Self 個人ツールを扱います。"
   typography:
     type: none
   background:
@@ -252,6 +252,11 @@ features:
     details: "ガイドブック、儀式、ルーン編集の入口です。"
     icon: "MNA"
     link: /ja-JP/Mna/
+    linkText: "開く"
+  - title: "Self ツール"
+    details: "個人用の小さなワークフローツールを置く独立モジュールです。"
+    icon: "SELF"
+    link: /ja-JP/Self/
     linkText: "開く"
 gitChangelog: false
 ---

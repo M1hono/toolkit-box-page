@@ -114,6 +114,10 @@ const zhNav: NavItem[] = [
         },
     },
     {
+        text: "Self",
+        link: "/Self/",
+    },
+    {
         text: "资源",
         dropdown: {
             layout: "columns",

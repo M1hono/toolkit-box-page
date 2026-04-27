@@ -83,7 +83,7 @@ featuresConfig:
 hero:
   name: "M1HONO / TOOLKIT BOX"
   text: "TOOLKIT\nBOX"
-  tagline: "Toolkit Box written by M1hono. Documentation surface for FGO servant portrait lookup and card generation, Arknights operator portrait lookup and story tracking, Minecraft locale JSON editing, and Manaweave guidebook, ritual, and rune tools."
+  tagline: "Toolkit Box written by M1hono. Documentation surface for FGO servant portrait lookup and card generation, Arknights operator portrait lookup and story tracking, Minecraft locale JSON editing, Manaweave guidebook, ritual, rune tools, and Self personal utilities."
   typography:
     type: none
   background:
@@ -242,6 +242,11 @@ features:
     details: "Guidebook, ritual, and rune editing tools."
     icon: "MNA"
     link: /en-US/Mna/
+    linkText: "Open"
+  - title: "Self"
+    details: "Personal utility module reserved for small workflow tools."
+    icon: "SELF"
+    link: /en-US/Self/
     linkText: "Open"
   - title: "Repository"
     details: "Source, issues, and deployment target."
