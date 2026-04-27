@@ -1,0 +1,44 @@
+{
+    "schemaVersion": 1,
+    "generatedAt": "1970-01-01T00:00:00.000Z",
+    "templates": [
+        {
+            "id": "generic-frame",
+            "name": "Generic Frame",
+            "sourcePreset": "generic",
+            "manifestUrl": "/self/poster-studio/templates/generic-frame/template.json",
+            "rootUrl": "/self/poster-studio/templates/generic-frame",
+            "sizes": {
+                "curseforge": {
+                    "width": 400,
+                    "height": 400,
+                    "frame": "frames/curseforge.png"
+                },
+                "mcmod": {
+                    "width": 720,
+                    "height": 450,
+                    "frame": "frames/mcmod.png"
+                }
+            }
+        },
+        {
+            "id": "theme-clear-frame",
+            "name": "Theme Clear Frame",
+            "sourcePreset": "kubejs",
+            "manifestUrl": "/self/poster-studio/templates/theme-clear-frame/template.json",
+            "rootUrl": "/self/poster-studio/templates/theme-clear-frame",
+            "sizes": {
+                "curseforge": {
+                    "width": 400,
+                    "height": 400,
+                    "frame": "frames/curseforge.png"
+                },
+                "mcmod": {
+                    "width": 720,
+                    "height": 450,
+                    "frame": "frames/mcmod.png"
+                }
+            }
+        }
+    ]
+}

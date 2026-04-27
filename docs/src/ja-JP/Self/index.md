@@ -9,7 +9,11 @@ collapsed: false
 
 ## ツール
 
-まだ具体的なツールは追加していません。今後のツールはこのディレクトリ内の独立ページとして追加し、ここに入口をまとめます。
+### Mod Poster Studio
+
+汎用画像編集と Mod 公開用カバーテンプレートの作業台です。
+
+[Mod Poster Studio を開く](./PosterStudio.md)
 
 ## ルール
 

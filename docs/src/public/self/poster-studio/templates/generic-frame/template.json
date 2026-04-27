@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "id": "generic-frame",
+    "name": "Generic Frame",
+    "kind": "poster-template",
+    "sourcePreset": "generic",
+    "sizes": {
+        "curseforge": {
+            "width": 400,
+            "height": 400,
+            "frame": "frames/curseforge.png"
+        },
+        "mcmod": {
+            "width": 720,
+            "height": 450,
+            "frame": "frames/mcmod.png"
+        }
+    },
+    "slots": [
+        { "id": "background", "type": "image", "required": false },
+        { "id": "title", "type": "text", "required": false },
+        { "id": "texture", "type": "effect", "required": false }
+    ],
+    "parameters": [
+        { "id": "frameTint", "type": "color", "default": "#ffffff" },
+        { "id": "textureStrength", "type": "number", "default": 0.16, "min": 0, "max": 1 }
+    ]
+}

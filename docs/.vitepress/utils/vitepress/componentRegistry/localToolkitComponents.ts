@@ -36,6 +36,9 @@ const RunescribingEditor = defineAsyncComponent(
             "@components/AvalonWard/RunescribingEditor/RunescribingEditor.vue"
         ),
 );
+const PosterStudioApp = defineAsyncComponent(
+    () => import("@components/Self/PosterStudio/PosterStudioApp.vue"),
+);
 
 export const components = {
     Arknights,
@@ -45,6 +48,7 @@ export const components = {
     ManaweavePatternEditor,
     RitualGenerator,
     RunescribingEditor,
+    PosterStudioApp,
     ToolkitCardGeneratorApp,
     ToolkitGuidebookGeneratorApp: MnaGuidebookGenerator,
     ToolkitJsonTranslatorApp,

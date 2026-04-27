@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "theme-clear-frame",
+    "name": "Theme Clear Frame",
+    "kind": "poster-template",
+    "sourcePreset": "kubejs",
+    "sizes": {
+        "curseforge": {
+            "width": 400,
+            "height": 400,
+            "frame": "frames/curseforge.png"
+        },
+        "mcmod": {
+            "width": 720,
+            "height": 450,
+            "frame": "frames/mcmod.png"
+        }
+    },
+    "slots": [
+        { "id": "background", "type": "image", "required": false },
+        { "id": "centerIcon", "type": "image", "required": false },
+        { "id": "title", "type": "text", "required": false },
+        { "id": "texture", "type": "effect", "required": false }
+    ],
+    "parameters": [
+        { "id": "frameTint", "type": "color", "default": "#8a5a1f" },
+        { "id": "accentTint", "type": "color", "default": "#d59a27" },
+        { "id": "textureStrength", "type": "number", "default": 0.18, "min": 0, "max": 1 }
+    ]
+}
