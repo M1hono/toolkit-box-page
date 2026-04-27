@@ -63,6 +63,38 @@ test("PosterCanvas has a bottom tool dock and pixel-aware image tools", () => {
     assert.match(source, /globalCompositeOperation/);
 });
 
+test("PosterCanvas only keeps brush and eraser drawing while a press is active", () => {
+    const source = readFileSync(
+        path.join(
+            repoRoot,
+            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
+        ),
+        "utf8",
+    );
+
+    assert.match(source, /@click="handleLayerClick\(layer\.id, \$event\)"/);
+    assert.match(source, /@mousedown="handleLayerPointerStart\(layer\.id, \$event\)"/);
+    assert.match(source, /@mouseup="stopToolStroke"/);
+    assert.match(source, /@mouseleave="stopToolStroke"/);
+    assert.match(source, /drawingLayerId/);
+    assert.match(source, /drawingLayerId\.value !== id/);
+    assert.doesNotMatch(source, /@click="handleLayerPointer\(layer\.id, \$event\)"/);
+});
+
+test("PosterCanvas paint brush uses pixel-aligned square stamps", () => {
+    const source = readFileSync(
+        path.join(
+            repoRoot,
+            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
+        ),
+        "utf8",
+    );
+
+    assert.match(source, /function paintImageLayerAtPointer/);
+    assert.match(source, /sample\.context\.fillRect\(/);
+    assert.doesNotMatch(source, /sample\.context\.arc\(/);
+});
+
 test("PosterCanvas skips locked or transparent layers during canvas hit testing", () => {
     const source = readFileSync(
         path.join(

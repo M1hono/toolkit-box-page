@@ -14,9 +14,11 @@
                 :config="stageConfig"
                 class="konva-stage"
                 @mousedown="handleStagePointer"
-                @mouseup="isDrawing = false"
+                @mouseup="stopToolStroke"
+                @mouseleave="stopToolStroke"
                 @touchstart="handleStagePointer"
-                @touchend="isDrawing = false"
+                @touchend="stopToolStroke"
+                @touchcancel="stopToolStroke"
             >
                 <v-layer>
                     <v-group :config="viewportConfig">
@@ -32,10 +34,10 @@
                                 v-if="isImageLikeLayer(layer)"
                                 :ref="(node) => setLayerNode(layer.id, node)"
                                 :config="imageConfig(layer)"
-                                @click="handleLayerPointer(layer.id, $event)"
-                                @tap="handleLayerPointer(layer.id, $event)"
-                                @mousedown="handleLayerPointer(layer.id, $event)"
-                                @touchstart="handleLayerPointer(layer.id, $event)"
+                                @click="handleLayerClick(layer.id, $event)"
+                                @tap="handleLayerClick(layer.id, $event)"
+                                @mousedown="handleLayerPointerStart(layer.id, $event)"
+                                @touchstart="handleLayerPointerStart(layer.id, $event)"
                                 @mousemove="handleToolDrag(layer.id, $event)"
                                 @touchmove="handleToolDrag(layer.id, $event)"
                                 @dragstart="handleImageDragStart(layer.id, $event)"
@@ -46,8 +48,8 @@
                                 v-else-if="layer.type === 'text'"
                                 :ref="(node) => setLayerNode(layer.id, node)"
                                 :config="textConfig(layer)"
-                                @click="handleLayerPointer(layer.id, $event)"
-                                @tap="handleLayerPointer(layer.id, $event)"
+                                @click="handleLayerClick(layer.id, $event)"
+                                @tap="handleLayerClick(layer.id, $event)"
                                 @dragend="handleDragEnd(layer.id, $event)"
                                 @transformend="handleTransformEnd(layer.id)"
                             />
@@ -55,8 +57,8 @@
                                 v-else-if="layer.type === 'shape' && layer.shape === 'ellipse'"
                                 :ref="(node) => setLayerNode(layer.id, node)"
                                 :config="ellipseConfig(layer)"
-                                @click="handleLayerPointer(layer.id, $event)"
-                                @tap="handleLayerPointer(layer.id, $event)"
+                                @click="handleLayerClick(layer.id, $event)"
+                                @tap="handleLayerClick(layer.id, $event)"
                                 @dragend="handleDragEnd(layer.id, $event)"
                                 @transformend="handleTransformEnd(layer.id)"
                             />
@@ -64,8 +66,8 @@
                                 v-else-if="layer.type === 'shape'"
                                 :ref="(node) => setLayerNode(layer.id, node)"
                                 :config="shapeRectConfig(layer)"
-                                @click="handleLayerPointer(layer.id, $event)"
-                                @tap="handleLayerPointer(layer.id, $event)"
+                                @click="handleLayerClick(layer.id, $event)"
+                                @tap="handleLayerClick(layer.id, $event)"
                                 @dragend="handleDragEnd(layer.id, $event)"
                                 @transformend="handleTransformEnd(layer.id)"
                             />
@@ -143,6 +145,7 @@
     const canvasScale = ref(1);
     let resizeObserver: ResizeObserver | undefined;
     const isDrawing = ref(false);
+    const drawingLayerId = ref<string>();
     const layerNodes = new Map<string, any>();
     const imageElements = reactive<Record<string, HTMLImageElement>>({});
     const imageHitCanvases = new Map<string, HTMLCanvasElement>();
@@ -303,11 +306,12 @@
 
     function handleStagePointer(event: any) {
         if (event.target === event.target.getStage()) {
+            stopToolStroke();
             emit("update:selectedLayerId", undefined);
         }
     }
 
-    function handleLayerPointer(id: string, event: any) {
+    function handleLayerClick(id: string, event: any) {
         event.cancelBubble = true;
 
         const layer = props.document.layers.find((item) => item.id === id);
@@ -317,20 +321,12 @@
             return;
         }
 
-        if (props.activeTool === "paintBrush" && isImageLikeLayer(layer)) {
-            isDrawing.value = true;
-            paintImageLayerAtPointer(id, event);
-            return;
-        }
-
         if (props.activeTool === "magicWand" && isImageLikeLayer(layer)) {
             applyMagicWandErase(id, event);
             return;
         }
 
-        if (props.activeTool === "pixelEraser" && isImageLikeLayer(layer)) {
-            isDrawing.value = true;
-            eraseImageLayerAtPointer(id, event);
+        if (props.activeTool === "paintBrush" || props.activeTool === "pixelEraser") {
             return;
         }
 
@@ -342,8 +338,39 @@
         selectLayer(id);
     }
 
+    function handleLayerPointerStart(id: string, event: any) {
+        event.cancelBubble = true;
+
+        const layer = props.document.layers.find((item) => item.id === id);
+
+        if (!layer || layer.locked || !isImageLikeLayer(layer)) {
+            return;
+        }
+
+        if (props.activeTool === "paintBrush") {
+            startToolStroke(id);
+            paintImageLayerAtPointer(id, event);
+            return;
+        }
+
+        if (props.activeTool === "pixelEraser") {
+            startToolStroke(id);
+            eraseImageLayerAtPointer(id, event);
+        }
+    }
+
+    function startToolStroke(id: string) {
+        isDrawing.value = true;
+        drawingLayerId.value = id;
+    }
+
+    function stopToolStroke() {
+        isDrawing.value = false;
+        drawingLayerId.value = undefined;
+    }
+
     function handleToolDrag(id: string, event: any) {
-        if (!isDrawing.value) {
+        if (!isDrawing.value || drawingLayerId.value !== id || !isPointerStillPressed(event)) {
             return;
         }
 
@@ -355,6 +382,21 @@
         if (props.activeTool === "pixelEraser") {
             eraseImageLayerAtPointer(id, event);
         }
+    }
+
+    function isPointerStillPressed(event: any) {
+        const sourceEvent = event.evt;
+
+        if (
+            typeof MouseEvent !== "undefined" &&
+            sourceEvent instanceof MouseEvent &&
+            sourceEvent.buttons === 0
+        ) {
+            stopToolStroke();
+            return false;
+        }
+
+        return true;
     }
 
     function handleImageDragStart(id: string, event: any) {
@@ -567,9 +609,13 @@
         sample.context.globalCompositeOperation = "source-over";
         sample.context.fillStyle = props.brushColor;
         sample.context.imageSmoothingEnabled = false;
-        sample.context.beginPath();
-        sample.context.arc(sample.x, sample.y, brushSize / 2, 0, Math.PI * 2);
-        sample.context.fill();
+        const halfBrush = Math.floor(brushSize / 2);
+        sample.context.fillRect(
+            sample.x - halfBrush,
+            sample.y - halfBrush,
+            brushSize,
+            brushSize,
+        );
         sample.context.restore();
         updateRasterLayerFromCanvas(id, sample.canvas);
     }
@@ -909,6 +955,11 @@
         createCheckerPattern();
         updateCanvasScale();
 
+        window.addEventListener("mouseup", stopToolStroke);
+        window.addEventListener("touchend", stopToolStroke);
+        window.addEventListener("touchcancel", stopToolStroke);
+        window.addEventListener("blur", stopToolStroke);
+
         if (typeof ResizeObserver !== "undefined" && boardRef.value) {
             resizeObserver = new ResizeObserver(updateCanvasScale);
             resizeObserver.observe(boardRef.value);
@@ -916,6 +967,10 @@
     });
 
     onBeforeUnmount(() => {
+        window.removeEventListener("mouseup", stopToolStroke);
+        window.removeEventListener("touchend", stopToolStroke);
+        window.removeEventListener("touchcancel", stopToolStroke);
+        window.removeEventListener("blur", stopToolStroke);
         resizeObserver?.disconnect();
     });
 
