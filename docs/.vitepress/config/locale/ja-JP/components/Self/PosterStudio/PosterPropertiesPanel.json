@@ -1,9 +1,23 @@
 {
+    "align": "配置",
+    "alignCenter": "中央揃え",
+    "alignLeft": "左揃え",
+    "alignRight": "右揃え",
     "blend": "合成",
+    "color": "色",
+    "fontFamily": "フォント",
+    "fontSize": "サイズ",
+    "height": "高さ",
     "locked": "ロック",
     "name": "名前",
     "noLayerSelected": "レイヤー未選択",
     "opacity": "不透明度",
     "properties": "プロパティ",
-    "rotation": "回転"
+    "rotation": "回転",
+    "textContent": "内容",
+    "textLayer": "テキスト",
+    "transform": "変形",
+    "width": "幅",
+    "x": "X",
+    "y": "Y"
 }

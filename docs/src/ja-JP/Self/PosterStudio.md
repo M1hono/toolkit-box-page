@@ -2,9 +2,8 @@
 aside: false
 sidebar: false
 layoutClass: fullwidth-layout
+buttons: false
 ---
-
-# Mod Poster Studio
 
 <ClientOnly>
   <PosterStudioApp />

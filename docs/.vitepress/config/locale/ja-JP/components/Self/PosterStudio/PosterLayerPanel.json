@@ -1,3 +1,10 @@
 {
-    "layers": "レイヤー"
+    "deleteLayer": "レイヤーを削除",
+    "hideLayer": "レイヤーを非表示",
+    "layers": "レイヤー",
+    "lockLayer": "レイヤーをロック",
+    "moveDown": "下へ移動",
+    "moveUp": "上へ移動",
+    "showLayer": "レイヤーを表示",
+    "unlockLayer": "レイヤーのロック解除"
 }

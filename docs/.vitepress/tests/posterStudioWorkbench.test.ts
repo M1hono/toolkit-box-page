@@ -31,6 +31,73 @@ test("PosterStudioApp renders the plain three-column workbench shell", () => {
     assert.doesNotMatch(source, /gradient/i);
 });
 
+test("PosterStudioApp wires layer editing commands", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
+
+    assert.match(source, /@reorder-layer="reorderLayer"/);
+    assert.match(source, /@update-layer="updateLayerById"/);
+    assert.match(source, /@remove-layer="removeLayerById"/);
+    assert.match(source, /moveLayer/);
+    assert.match(source, /removeLayer/);
+});
+
+test("PosterLayerPanel supports drag sorting and common layer buttons", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterLayerPanel.vue"), "utf8");
+
+    assert.match(source, /draggable="true"/);
+    assert.match(source, /@dragstart/);
+    assert.match(source, /@drop/);
+    assert.match(source, /reorderLayer/);
+    for (const icon of [
+        "mdi-arrow-up",
+        "mdi-arrow-down",
+        "mdi-eye-outline",
+        "mdi-lock-outline",
+        "mdi-delete-outline",
+    ]) {
+        assert.match(source, new RegExp(icon));
+    }
+});
+
+test("PosterCanvas scales responsively instead of overflowing narrow screens", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterCanvas.vue"), "utf8");
+
+    assert.match(source, /ResizeObserver/);
+    assert.match(source, /canvasScale/);
+    assert.match(source, /<v-group/);
+});
+
+test("PosterPropertiesPanel exposes numeric transform fields", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterPropertiesPanel.vue"), "utf8");
+
+    for (const key of ["x", "y", "width", "height"]) {
+        assert.match(source, new RegExp(`\\b${key}: Number\\(\\$event\\)`));
+    }
+});
+
+test("PosterPropertiesPanel uses external field labels and text controls", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterPropertiesPanel.vue"), "utf8");
+
+    assert.match(source, /class="field-label"/);
+    assert.match(source, /:aria-label="t\.name"/);
+    assert.match(source, /textLayer/);
+    assert.match(source, /v-textarea/);
+    assert.match(source, /mdi-format-align-left/);
+});
+
+test("PosterStudioApp renders the bottom editor tool dock", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
+
+    assert.match(source, /class="tool-dock"/);
+    assert.match(source, /v-model="activeTool"/);
+    assert.match(source, /mdi-auto-fix/);
+    assert.match(source, /mdi-eraser/);
+    assert.match(source, /:active-tool="activeTool"/);
+    assert.match(source, /activeTool === 'pixelEraser'/);
+    assert.match(source, /activeTool === 'magicWand'/);
+    assert.match(source, /selectHint/);
+});
+
 test("PosterStudioApp declares starter layer config before the initial document", () => {
     const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
     const configIndex = source.indexOf("const starterLayerConfig");

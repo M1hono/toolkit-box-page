@@ -2,7 +2,13 @@
     "canvas": "画布",
     "defaultCanvasTitle": "Mod Poster Studio",
     "defaultLayerName": "标题",
+    "eraserSize": "橡皮擦",
     "exportPng": "导出 PNG",
+    "selectHint": "选择、移动和变换图层",
     "subtitle": "通用图片编辑器与模组发布图模板",
-    "title": "Mod Poster Studio"
+    "title": "Mod Poster Studio",
+    "toolMagicWand": "魔棒",
+    "toolPixelEraser": "像素橡皮擦",
+    "toolSelect": "选择",
+    "wandTolerance": "容差"
 }

@@ -1,10 +1,17 @@
 import assert from "node:assert/strict";
+import { readFileSync } from "node:fs";
+import path from "node:path";
 import test from "node:test";
 
 import {
     createDocumentFromTemplate,
     validateTemplateManifest,
 } from "../utils/posterStudio/templates";
+
+const publicRoot = path.resolve(
+    import.meta.dirname,
+    "../../src/public/self/poster-studio",
+);
 
 const manifest = {
     schemaVersion: 1,
@@ -47,4 +54,17 @@ test("createDocumentFromTemplate adds a frame layer for the selected size", () =
     assert.equal(doc.canvas.width, 720);
     assert.equal(doc.layers.some((layer) => layer.name === "Frame"), true);
     assert.equal(doc.templateId, "theme-clear-frame");
+});
+
+test("generic and theme clear templates use distinct frame assets", () => {
+    for (const frame of ["curseforge.png", "mcmod.png"]) {
+        const generic = readFileSync(
+            path.join(publicRoot, "templates/generic-frame/frames", frame),
+        );
+        const themed = readFileSync(
+            path.join(publicRoot, "templates/theme-clear-frame/frames", frame),
+        );
+
+        assert.notDeepEqual(themed, generic);
+    }
 });

@@ -8,9 +8,12 @@ const repoRoot = path.resolve(import.meta.dirname, "../..");
 test("PosterStudio pages exist for every supported locale", () => {
     for (const locale of ["en-US", "zh-CN", "ja-JP"]) {
         const pagePath = path.join(repoRoot, "src", locale, "Self", "PosterStudio.md");
+        const source = readFileSync(pagePath, "utf8");
 
         assert.equal(existsSync(pagePath), true);
-        assert.match(readFileSync(pagePath, "utf8"), /<PosterStudioApp \/>/);
+        assert.match(source, /<PosterStudioApp \/>/);
+        assert.match(source, /buttons: false/);
+        assert.doesNotMatch(source, /^#\s/m);
     }
 });
 

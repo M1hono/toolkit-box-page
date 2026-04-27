@@ -1,9 +1,23 @@
 {
+    "align": "对齐",
+    "alignCenter": "居中",
+    "alignLeft": "左对齐",
+    "alignRight": "右对齐",
     "blend": "混合",
+    "color": "颜色",
+    "fontFamily": "字体",
+    "fontSize": "字号",
+    "height": "高度",
     "locked": "锁定",
     "name": "名称",
     "noLayerSelected": "未选择图层",
     "opacity": "不透明度",
     "properties": "属性",
-    "rotation": "旋转"
+    "rotation": "旋转",
+    "textContent": "内容",
+    "textLayer": "文字",
+    "transform": "变换",
+    "width": "宽度",
+    "x": "X",
+    "y": "Y"
 }

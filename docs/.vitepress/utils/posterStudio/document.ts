@@ -138,6 +138,19 @@ export function moveLayer(
     });
 }
 
+export function removeLayer(doc: PosterDocument, id: string): PosterDocument {
+    const nextLayers = doc.layers.filter((layer) => layer.id !== id);
+
+    if (nextLayers.length === doc.layers.length) {
+        return doc;
+    }
+
+    return touchDocument({
+        ...doc,
+        layers: nextLayers,
+    });
+}
+
 function appendLayer(doc: PosterDocument, layer: PosterLayer): PosterDocument {
     return touchDocument({
         ...doc,

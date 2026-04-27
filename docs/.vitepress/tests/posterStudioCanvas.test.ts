@@ -41,3 +41,36 @@ test("PosterCanvas renders image and shape layers", () => {
     assert.match(source, /shapeRectConfig/);
     assert.match(source, /ellipseConfig/);
 });
+
+test("PosterCanvas has a bottom tool dock and pixel-aware image tools", () => {
+    const source = readFileSync(
+        path.join(
+            repoRoot,
+            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
+        ),
+        "utf8",
+    );
+
+    assert.match(source, /activeTool/);
+    assert.match(source, /pixelEraser/);
+    assert.match(source, /magicWand/);
+    assert.match(source, /getImagePixelAlpha/);
+    assert.match(source, /findLayerAtPointer/);
+    assert.match(source, /eraseImageLayerAtPointer/);
+    assert.match(source, /applyMagicWandErase/);
+});
+
+test("PosterCanvas skips locked or transparent layers during canvas hit testing", () => {
+    const source = readFileSync(
+        path.join(
+            repoRoot,
+            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
+        ),
+        "utf8",
+    );
+
+    assert.match(source, /getImagePixelAlpha\(id, event\) <= 8/);
+    assert.match(source, /findLayerAtPointer\(id\)/);
+    assert.match(source, /layer\.locked/);
+    assert.match(source, /!layer\.visible \|\| layer\.locked/);
+});

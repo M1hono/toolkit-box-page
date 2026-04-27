@@ -6,6 +6,7 @@ import {
     addTextLayer,
     createPosterDocument,
     moveLayer,
+    removeLayer,
     updateLayer,
 } from "../utils/posterStudio/document";
 
@@ -46,6 +47,18 @@ test("moveLayer reorders layers without mutating original document", () => {
 
     assert.equal(doc.layers[0].name, "Bottom");
     assert.equal(moved.layers[1].name, "Bottom");
+});
+
+test("removeLayer deletes one layer without mutating the original document", () => {
+    let doc = createPosterDocument("curseforge");
+    doc = addTextLayer(doc, { name: "Keep", text: "A" });
+    doc = addTextLayer(doc, { name: "Remove", text: "B" });
+
+    const removed = removeLayer(doc, doc.layers[1].id);
+
+    assert.equal(doc.layers.length, 2);
+    assert.equal(removed.layers.length, 1);
+    assert.equal(removed.layers[0].name, "Keep");
 });
 
 test("updateLayer merges transform values", () => {

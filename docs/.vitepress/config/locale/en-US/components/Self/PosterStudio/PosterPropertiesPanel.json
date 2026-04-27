@@ -1,9 +1,23 @@
 {
+    "align": "Align",
+    "alignCenter": "Center",
+    "alignLeft": "Left",
+    "alignRight": "Right",
     "blend": "Blend",
+    "color": "Color",
+    "fontFamily": "Font",
+    "fontSize": "Size",
+    "height": "Height",
     "locked": "Locked",
     "name": "Name",
     "noLayerSelected": "No layer selected",
     "opacity": "Opacity",
     "properties": "Properties",
-    "rotation": "Rotation"
+    "rotation": "Rotation",
+    "textContent": "Content",
+    "textLayer": "Text",
+    "transform": "Transform",
+    "width": "Width",
+    "x": "X",
+    "y": "Y"
 }

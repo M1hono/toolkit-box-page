@@ -1,3 +1,10 @@
 {
-    "layers": "图层"
+    "deleteLayer": "删除图层",
+    "hideLayer": "隐藏图层",
+    "layers": "图层",
+    "lockLayer": "锁定图层",
+    "moveDown": "下移",
+    "moveUp": "上移",
+    "showLayer": "显示图层",
+    "unlockLayer": "解锁图层"
 }

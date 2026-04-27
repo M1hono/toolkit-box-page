@@ -2,7 +2,13 @@
     "canvas": "キャンバス",
     "defaultCanvasTitle": "Mod Poster Studio",
     "defaultLayerName": "タイトル",
+    "eraserSize": "消しゴム",
     "exportPng": "PNGを書き出し",
+    "selectHint": "レイヤーを選択、移動、変形",
     "subtitle": "汎用画像編集とMod公開画像テンプレート",
-    "title": "Mod Poster Studio"
+    "title": "Mod Poster Studio",
+    "toolMagicWand": "魔法の杖",
+    "toolPixelEraser": "ピクセル消しゴム",
+    "toolSelect": "選択",
+    "wandTolerance": "許容差"
 }

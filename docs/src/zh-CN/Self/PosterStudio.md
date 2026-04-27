@@ -2,9 +2,8 @@
 aside: false
 sidebar: false
 layoutClass: fullwidth-layout
+buttons: false
 ---
-
-# 模组封面工作台
 
 <ClientOnly>
   <PosterStudioApp />

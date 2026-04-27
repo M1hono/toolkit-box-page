@@ -2,7 +2,12 @@
     <v-card class="poster-panel fill-height">
         <v-card-title class="panel-title">{{ t.assets }}</v-card-title>
         <v-card-text class="panel-body">
-            <v-tabs v-model="tab" density="compact" class="asset-tabs">
+            <v-tabs
+                v-model="tab"
+                density="compact"
+                show-arrows
+                class="asset-tabs"
+            >
                 <v-tab value="templates">{{ t.templates }}</v-tab>
                 <v-tab value="frames">{{ t.frames }}</v-tab>
                 <v-tab value="icons">{{ t.gameIcons }}</v-tab>
@@ -235,6 +240,12 @@
     border: 1px solid var(--vp-c-divider);
 }
 
+.asset-tabs :deep(.v-tab) {
+    min-width: 78px;
+    padding: 0 10px;
+    letter-spacing: 0;
+}
+
 .import-box {
     display: grid;
     gap: 8px;
@@ -265,6 +276,8 @@
 .asset-list {
     display: grid;
     gap: 8px;
+    max-height: 58vh;
+    overflow: auto;
 }
 
 .asset-row {
@@ -308,9 +321,11 @@
 
 .asset-grid {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(34px, 1fr));
     gap: 6px;
     margin-top: 12px;
+    max-height: 58vh;
+    overflow: auto;
 }
 
 .icon-tile {

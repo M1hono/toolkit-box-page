@@ -1,3 +1,10 @@
 {
-    "layers": "Layers"
+    "deleteLayer": "Delete layer",
+    "hideLayer": "Hide layer",
+    "layers": "Layers",
+    "lockLayer": "Lock layer",
+    "moveDown": "Move down",
+    "moveUp": "Move up",
+    "showLayer": "Show layer",
+    "unlockLayer": "Unlock layer"
 }

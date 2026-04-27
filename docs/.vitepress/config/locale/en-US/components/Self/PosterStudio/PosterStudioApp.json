@@ -2,7 +2,13 @@
     "canvas": "Canvas",
     "defaultCanvasTitle": "Mod Poster Studio",
     "defaultLayerName": "Title",
+    "eraserSize": "Eraser",
     "exportPng": "Export PNG",
+    "selectHint": "Select, move, and transform layers",
     "subtitle": "General image editor and mod poster templates",
-    "title": "Mod Poster Studio"
+    "title": "Mod Poster Studio",
+    "toolMagicWand": "Magic wand",
+    "toolPixelEraser": "Pixel eraser",
+    "toolSelect": "Select",
+    "wandTolerance": "Tolerance"
 }

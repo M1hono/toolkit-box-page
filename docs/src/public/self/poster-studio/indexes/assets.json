@@ -3,18 +3,6 @@
     "generatedAt": "1970-01-01T00:00:00.000Z",
     "assets": [
         {
-            "id": "game-icons-2ce5e63733be7364a3e3cf963172b233",
-            "name": "2ce5e63733be7364a3e3cf963172b233",
-            "kind": "icon",
-            "mime": "image/png",
-            "width": 531,
-            "height": 292,
-            "url": "/self/poster-studio/assets/game-icons/2ce5e63733be7364a3e3cf963172b233.png",
-            "source": "built-in",
-            "sourcePath": "/Users/gedwen/Downloads/icons/2ce5e63733be7364a3e3cf963172b233.png",
-            "createdAt": 0
-        },
-        {
             "id": "game-icons-ffffff-transparent-1x1-andymeneely-police-badge",
             "name": "police-badge",
             "kind": "icon",

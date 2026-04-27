@@ -56,8 +56,96 @@
                                 <PosterCanvas
                                     v-model:document="document"
                                     v-model:selected-layer-id="selectedLayerId"
+                                    :active-tool="activeTool"
+                                    :eraser-size="eraserSize"
+                                    :wand-tolerance="wandTolerance"
                                 />
                             </v-card-text>
+                            <div class="tool-dock">
+                                <v-btn-toggle
+                                    v-model="activeTool"
+                                    class="tool-toggle"
+                                    divided
+                                    density="compact"
+                                    mandatory
+                                    variant="outlined"
+                                >
+                                    <v-btn
+                                        value="select"
+                                        :aria-label="t.toolSelect"
+                                        :title="t.toolSelect"
+                                    >
+                                        <v-icon>mdi-cursor-default-click-outline</v-icon>
+                                    </v-btn>
+                                    <v-btn
+                                        value="magicWand"
+                                        :aria-label="t.toolMagicWand"
+                                        :title="t.toolMagicWand"
+                                    >
+                                        <v-icon>mdi-auto-fix</v-icon>
+                                    </v-btn>
+                                    <v-btn
+                                        value="pixelEraser"
+                                        :aria-label="t.toolPixelEraser"
+                                        :title="t.toolPixelEraser"
+                                    >
+                                        <v-icon>mdi-eraser</v-icon>
+                                    </v-btn>
+                                </v-btn-toggle>
+                                <div class="tool-dock__controls" aria-live="polite">
+                                    <div
+                                        v-if="activeTool === 'select'"
+                                        class="tool-status"
+                                    >
+                                        <v-icon size="16">mdi-cursor-move</v-icon>
+                                        <span>{{ t.selectHint }}</span>
+                                    </div>
+                                    <div
+                                        v-else-if="activeTool === 'pixelEraser'"
+                                        class="tool-setting"
+                                    >
+                                        <span class="tool-setting__label">
+                                            {{ t.eraserSize }}
+                                        </span>
+                                        <v-slider
+                                            v-model="eraserSize"
+                                            class="tool-slider"
+                                            density="compact"
+                                            hide-details
+                                            :aria-label="t.eraserSize"
+                                            :max="72"
+                                            :min="4"
+                                            :step="1"
+                                            thumb-label
+                                        />
+                                        <span class="tool-setting__value">
+                                            {{ eraserSize }} px
+                                        </span>
+                                    </div>
+                                    <div
+                                        v-else-if="activeTool === 'magicWand'"
+                                        class="tool-setting"
+                                    >
+                                        <span class="tool-setting__label">
+                                            {{ t.wandTolerance }}
+                                        </span>
+                                        <v-slider
+                                            v-model="wandTolerance"
+                                            class="tool-slider"
+                                            density="compact"
+                                            hide-details
+                                            :aria-label="t.wandTolerance"
+                                            :max="96"
+                                            :min="0"
+                                            :step="1"
+                                            thumb-label
+                                        />
+                                        <span class="tool-setting__value">
+                                            {{ wandTolerance }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
                         </v-card>
                     </section>
 
@@ -66,6 +154,9 @@
                             :layers="document.layers"
                             :selected-layer-id="selectedLayerId"
                             @select-layer="selectedLayerId = $event"
+                            @reorder-layer="reorderLayer"
+                            @update-layer="updateLayerById"
+                            @remove-layer="removeLayerById"
                         />
                         <PosterPropertiesPanel
                             :layer="selectedLayer"
@@ -92,6 +183,8 @@
         addImageLayer,
         addTextLayer,
         createPosterDocument,
+        moveLayer,
+        removeLayer,
         updateLayer,
     } from "../../../../utils/posterStudio/document";
     import {
@@ -113,11 +206,19 @@
     import PosterLayerPanel from "./PosterLayerPanel.vue";
     import PosterPropertiesPanel from "./PosterPropertiesPanel.vue";
 
+    type PosterCanvasTool = "select" | "magicWand" | "pixelEraser";
+
     const { t } = useSafeI18n("poster-studio-app", {
         title: "Mod Poster Studio",
         subtitle: "General image editor and mod poster templates",
         exportPng: "Export PNG",
         canvas: "Canvas",
+        toolSelect: "Select",
+        toolMagicWand: "Magic wand",
+        toolPixelEraser: "Pixel eraser",
+        eraserSize: "Eraser",
+        wandTolerance: "Tolerance",
+        selectHint: "Select, move, and transform layers",
         defaultLayerName: "Title",
         defaultCanvasTitle: "Mod Poster Studio",
     });
@@ -142,6 +243,9 @@
     const importedAssets = ref<PosterAsset[]>([]);
     const templates = ref<PosterTemplateIndexItem[]>([]);
     const exporting = ref(false);
+    const activeTool = ref<PosterCanvasTool>("select");
+    const eraserSize = ref(20);
+    const wandTolerance = ref(28);
     const storage = shallowRef<PosterStudioStorage>(createMemoryPosterStudioStorage());
 
     const selectedLayer = computed(
@@ -251,6 +355,28 @@
         document.value = updateLayer(document.value, selectedLayerId.value, patch);
     }
 
+    function updateLayerById(id: string, patch: Partial<PosterLayer>) {
+        document.value = updateLayer(document.value, id, patch);
+    }
+
+    function reorderLayer(id: string, targetIndex: number) {
+        document.value = moveLayer(document.value, id, targetIndex);
+        selectedLayerId.value = id;
+    }
+
+    function removeLayerById(id: string) {
+        const removedIndex = document.value.layers.findIndex((layer) => layer.id === id);
+        document.value = removeLayer(document.value, id);
+
+        if (selectedLayerId.value !== id) {
+            return;
+        }
+
+        const fallbackIndex = Math.min(removedIndex, document.value.layers.length - 1);
+        selectedLayerId.value =
+            fallbackIndex >= 0 ? document.value.layers[fallbackIndex]?.id : undefined;
+    }
+
     function createStarterDocument(preset: PosterCanvasPreset): PosterDocument {
         const layerConfig = starterLayerConfig[preset];
 
@@ -282,7 +408,9 @@
 }
 
 .poster-shell {
+    width: min(100%, 1680px);
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .poster-header {
@@ -314,8 +442,9 @@
 
 .poster-workbench {
     display: grid;
-    grid-template-columns: 280px minmax(0, 1fr) 320px;
+    grid-template-columns: minmax(240px, 280px) minmax(560px, 1fr) minmax(280px, 300px);
     gap: 16px;
+    align-items: start;
     min-height: calc(100vh - 112px);
     padding: 16px 24px 24px;
 }
@@ -327,12 +456,17 @@
 
 .poster-side-panel {
     display: grid;
-    grid-template-rows: minmax(220px, 1fr) minmax(280px, 1fr);
+    grid-template-rows: auto auto;
     gap: 16px;
+    align-content: start;
 }
 
 .poster-panel {
     border: 1px solid var(--vp-c-divider);
+}
+
+.poster-stage-panel .poster-panel {
+    height: auto !important;
 }
 
 .panel-title {
@@ -345,11 +479,81 @@
 
 .stage-body {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    min-height: 560px;
+    min-height: 520px;
     padding: 16px;
     background: var(--vp-c-bg-soft);
+}
+
+.tool-dock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    padding: 10px 12px;
+    border-top: 1px solid var(--vp-c-divider);
+    background: var(--vp-c-bg);
+}
+
+.tool-toggle {
+    flex: 0 0 auto;
+}
+
+.tool-toggle :deep(.v-btn) {
+    width: 42px;
+    min-width: 42px;
+    height: 36px;
+}
+
+.tool-dock__controls {
+    display: flex;
+    flex: 1 1 260px;
+    align-items: center;
+    min-width: 0;
+}
+
+.tool-status,
+.tool-setting {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-width: 0;
+}
+
+.tool-status {
+    gap: 8px;
+    color: var(--vp-c-text-2);
+    font-size: 13px;
+}
+
+.tool-setting {
+    display: grid;
+    grid-template-columns: max-content minmax(120px, 1fr) 52px;
+    gap: 10px;
+}
+
+.tool-setting__label,
+.tool-setting__value {
+    color: var(--vp-c-text-2);
+    font-size: 12px;
+    font-weight: 650;
+    letter-spacing: 0;
+    white-space: nowrap;
+}
+
+.tool-setting__value {
+    display: inline-grid;
+    min-height: 28px;
+    place-items: center;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 4px;
+    background: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
+}
+
+.tool-slider {
+    min-width: 0;
 }
 
 :deep(.v-card),
@@ -365,10 +569,11 @@
     border: 1px solid var(--vp-c-divider);
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1180px) {
     .poster-header {
         align-items: flex-start;
         flex-direction: column;
+        padding: 18px 0 14px;
     }
 
     .poster-actions {
@@ -377,7 +582,9 @@
 
     .poster-workbench {
         grid-template-columns: 1fr;
+        gap: 16px;
         min-height: auto;
+        padding: 16px 0 24px;
     }
 
     .poster-side-panel {
@@ -385,7 +592,23 @@
     }
 
     .stage-body {
-        min-height: 420px;
+        min-height: 0;
+        padding: 12px;
+    }
+
+    .tool-dock,
+    .tool-dock__controls {
+        align-items: stretch;
+    }
+
+    .tool-setting {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-setting__value {
+        width: max-content;
+        min-width: 52px;
+        padding: 0 8px;
     }
 }
 </style>

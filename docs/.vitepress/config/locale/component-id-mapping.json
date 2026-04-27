@@ -1,6 +1,6 @@
 {
     "description": "Maps component IDs used in useSafeI18n() to their corresponding translation file paths",
-    "generatedAt": "2026-04-27T09:09:49.342Z",
+    "generatedAt": "2026-04-27T09:48:34.447Z",
     "mappings": {
         "fgo-card-generator": "CardGenerator/CardGenerator",
         "fgo-card-settings": "CardGenerator/CardSettings",
@@ -41,6 +41,11 @@
         "ritual-keys-editor": "AvalonWard/RitualGenerator/RitualKeysEditor",
         "ritual-manaweave-editor": "AvalonWard/RitualGenerator/RitualManaweaveEditor",
         "ritual-parameters-editor": "AvalonWard/RitualGenerator/RitualParametersEditor",
+        "poster-studio-asset-panel": "Self/PosterStudio/PosterAssetPanel",
+        "poster-studio-canvas": "Self/PosterStudio/PosterCanvas",
+        "poster-studio-layer-panel": "Self/PosterStudio/PosterLayerPanel",
+        "poster-studio-properties-panel": "Self/PosterStudio/PosterPropertiesPanel",
+        "poster-studio-app": "Self/PosterStudio/PosterStudioApp",
         "arknights-main": "Chara/Arknights/Arknights",
         "arknights-batch-dialog": "Chara/Arknights/ArknightsBatchDialog",
         "arknights-controls": "Chara/Arknights/ArknightsControlPanel",
@@ -53,6 +58,10 @@
         "fgo-controls": "Chara/Fgo/FgoControlPanel",
         "fgo-search": "Chara/Fgo/FgoSearchBar",
         "fgo-top-controls": "Chara/Fgo/FgoTopControls",
+        "rune-canvas": "AvalonWard/RunescribingEditor/RuneCanvas",
+        "rune-controls": "AvalonWard/RunescribingEditor/RuneControls",
+        "runescribing-editor": "AvalonWard/RunescribingEditor/RunescribingEditor",
+        "hero-model3d": "hero/image/Model3D",
         "json-entries-list": "mc/JsonTranslator/JsonEntriesList",
         "json-entry-editor": "mc/JsonTranslator/JsonEntryEditor",
         "json-import-panel": "mc/JsonTranslator/JsonImportPanel",
@@ -60,15 +69,6 @@
         "json-output-panel": "mc/JsonTranslator/JsonOutputPanel",
         "json-search-bar": "mc/JsonTranslator/JsonSearchBar",
         "json-translator": "mc/JsonTranslator/JsonTranslator",
-        "json-untranslated-panel": "mc/JsonTranslator/JsonUntranslatedPanel",
-        "poster-studio-asset-panel": "Self/PosterStudio/PosterAssetPanel",
-        "poster-studio-canvas": "Self/PosterStudio/PosterCanvas",
-        "poster-studio-layer-panel": "Self/PosterStudio/PosterLayerPanel",
-        "poster-studio-properties-panel": "Self/PosterStudio/PosterPropertiesPanel",
-        "poster-studio-app": "Self/PosterStudio/PosterStudioApp",
-        "rune-canvas": "AvalonWard/RunescribingEditor/RuneCanvas",
-        "rune-controls": "AvalonWard/RunescribingEditor/RuneControls",
-        "runescribing-editor": "AvalonWard/RunescribingEditor/RunescribingEditor",
-        "hero-model3d": "hero/image/Model3D"
+        "json-untranslated-panel": "mc/JsonTranslator/JsonUntranslatedPanel"
     }
 }
