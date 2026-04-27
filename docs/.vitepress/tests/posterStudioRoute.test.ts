@@ -34,3 +34,11 @@ test("PosterStudioApp is registered as a local toolkit component", () => {
     assert.match(registry, /const PosterStudioApp = defineAsyncComponent/);
     assert.match(registry, /PosterStudioApp,/);
 });
+
+test("PickAID keeps PosterStudioApp as a component tag", () => {
+    const settings = JSON.parse(
+        readFileSync(path.join(repoRoot, ".pickAIDExtension/settings.json"), "utf8"),
+    ) as { componentTagWhitelist?: string[] };
+
+    assert.equal(settings.componentTagWhitelist?.includes("PosterStudioApp"), true);
+});

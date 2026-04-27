@@ -358,7 +358,7 @@
 <template>
     <div v-if="isMetadata" class="word">
         <div>
-            <v-row v-if="hasMetrics" no-gutters>
+            <v-row v-if="hasMetrics" density="compact">
                 <v-col v-for="key in visibleMetricKeys" :key="key">
                     <v-btn
                         class="mx-0 btn btn-icon"
@@ -390,7 +390,7 @@
                 </v-col>
             </v-row>
 
-            <v-row v-if="contextItems.length > 0" no-gutters>
+            <v-row v-if="contextItems.length > 0" density="compact">
                 <v-col v-for="item in contextItems" :key="item.key">
                     <v-tooltip
                         v-if="item.hoverLines && item.hoverLines.length > 0"

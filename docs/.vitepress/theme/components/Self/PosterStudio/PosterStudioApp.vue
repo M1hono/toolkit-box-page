@@ -122,13 +122,6 @@
         defaultCanvasTitle: "Mod Poster Studio",
     });
 
-    const document = ref(createStarterDocument("mcmod"));
-    const selectedLayerId = ref<string | undefined>(document.value.layers[0]?.id);
-    const builtInAssets = ref<PosterAsset[]>([]);
-    const importedAssets = ref<PosterAsset[]>([]);
-    const templates = ref<PosterTemplateIndexItem[]>([]);
-    const exporting = ref(false);
-    const storage = shallowRef<PosterStudioStorage>(createMemoryPosterStudioStorage());
     const starterLayerConfig: Record<
         PosterCanvasPreset,
         { width: number; fontSize: number }
@@ -142,6 +135,14 @@
             fontSize: 32,
         },
     };
+
+    const document = ref(createStarterDocument("mcmod"));
+    const selectedLayerId = ref<string | undefined>(document.value.layers[0]?.id);
+    const builtInAssets = ref<PosterAsset[]>([]);
+    const importedAssets = ref<PosterAsset[]>([]);
+    const templates = ref<PosterTemplateIndexItem[]>([]);
+    const exporting = ref(false);
+    const storage = shallowRef<PosterStudioStorage>(createMemoryPosterStudioStorage());
 
     const selectedLayer = computed(
         () =>
