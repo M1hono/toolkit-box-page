@@ -1,14 +1,20 @@
 {
+    "blankLayer": "Blank layer",
+    "brushColor": "Color",
+    "brushSize": "Brush",
     "canvas": "Canvas",
     "defaultCanvasTitle": "Mod Poster Studio",
     "defaultLayerName": "Title",
     "eraserSize": "Eraser",
     "exportPng": "Export PNG",
     "selectHint": "Select, move, and transform layers",
+    "solidBackground": "Solid background",
     "subtitle": "General image editor and mod poster templates",
     "title": "Mod Poster Studio",
     "toolMagicWand": "Magic wand",
+    "toolPaintBrush": "Brush",
     "toolPixelEraser": "Pixel eraser",
     "toolSelect": "Select",
+    "transparentBackground": "Transparent",
     "wandTolerance": "Tolerance"
 }

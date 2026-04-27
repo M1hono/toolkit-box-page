@@ -19,6 +19,16 @@ export interface AddImageLayerInput {
     effects?: PosterEffect[];
 }
 
+export interface AddBlankImageLayerInput {
+    name: string;
+    src?: string;
+    x?: number;
+    y?: number;
+    width: number;
+    height: number;
+    effects?: PosterEffect[];
+}
+
 export interface AddTextLayerInput {
     name: string;
     text: string;
@@ -62,6 +72,19 @@ export function createPosterDocument(preset: PosterCanvasPreset): PosterDocument
     };
 }
 
+export function updateCanvas(
+    doc: PosterDocument,
+    patch: Partial<PosterCanvas>,
+): PosterDocument {
+    return touchDocument({
+        ...doc,
+        canvas: {
+            ...doc.canvas,
+            ...patch,
+        },
+    });
+}
+
 export function addImageLayer(
     doc: PosterDocument,
     input: AddImageLayerInput,
@@ -69,6 +92,22 @@ export function addImageLayer(
     const layer: PosterImageLayer = {
         ...createBaseLayer("image", input.name, input.width, input.height),
         assetId: input.assetId,
+        src: input.src,
+        x: input.x ?? 0,
+        y: input.y ?? 0,
+        effects: input.effects ?? [],
+    };
+
+    return appendLayer(doc, layer);
+}
+
+export function addBlankImageLayer(
+    doc: PosterDocument,
+    input: AddBlankImageLayerInput,
+): PosterDocument {
+    const layer: PosterImageLayer = {
+        ...createBaseLayer("image", input.name, input.width, input.height),
+        assetId: "__blank-raster",
         src: input.src,
         x: input.x ?? 0,
         y: input.y ?? 0,

@@ -118,6 +118,80 @@
                     </div>
                 </div>
 
+                <div v-if="imageLikeLayer" class="property-section">
+                    <div class="section-title">{{ t.effects }}</div>
+                    <div class="effect-presets">
+                        <button
+                            v-for="preset in effectPresets"
+                            :key="preset.id"
+                            class="effect-preset"
+                            type="button"
+                            @click="applyEffectPreset(preset.id)"
+                        >
+                            <v-icon size="15">{{ preset.icon }}</v-icon>
+                            <span>{{ preset.label }}</span>
+                        </button>
+                    </div>
+                    <div v-if="layer.effects.length > 0" class="effect-stack">
+                        <div
+                            v-for="effect in layer.effects"
+                            :key="effect.id"
+                            class="effect-item"
+                            :class="{ disabled: effect.enabled === false }"
+                        >
+                            <div class="effect-row">
+                                <span>{{ effectLabel(effect.id) }}</span>
+                                <div class="effect-actions">
+                                    <button
+                                        class="effect-action"
+                                        type="button"
+                                        :aria-label="effect.enabled === false ? t.enableEffect : t.disableEffect"
+                                        @click="toggleEffect(effect.id)"
+                                    >
+                                        <v-icon size="14">
+                                            {{ effect.enabled === false ? "mdi-eye-off-outline" : "mdi-eye-outline" }}
+                                        </v-icon>
+                                    </button>
+                                    <button
+                                        class="effect-action"
+                                        type="button"
+                                        :aria-label="t.removeEffect"
+                                        @click="removeEffect(effect.id)"
+                                    >
+                                        <v-icon size="14">mdi-close</v-icon>
+                                    </button>
+                                </div>
+                            </div>
+                            <div
+                                v-if="effect.enabled !== false"
+                                class="effect-controls"
+                            >
+                                <div
+                                    v-for="control in effectControls(effect)"
+                                    :key="`${effect.id}-${control.param}`"
+                                    class="effect-control"
+                                >
+                                    <div class="effect-control__heading">
+                                        <span>{{ control.label }}</span>
+                                        <span>{{ formatEffectValue(control, effect.params[control.param]) }}</span>
+                                    </div>
+                                    <v-slider
+                                        class="effect-slider"
+                                        density="compact"
+                                        hide-details
+                                        :aria-label="`${effectLabel(effect.id)} ${control.label}`"
+                                        :max="control.max"
+                                        :min="control.min"
+                                        :model-value="numberParam(effect.params[control.param], control.fallback)"
+                                        :step="control.step"
+                                        @update:model-value="updateEffectParam(effect.id, control.param, Number($event))"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div class="section-title">{{ t.transform }}</div>
                 <div class="transform-grid">
                     <div class="field-block">
@@ -236,11 +310,21 @@
     import { computed } from "vue";
 
     import { useSafeI18n } from "../../../../utils/i18n/locale";
-    import type { PosterLayer } from "../../../../utils/posterStudio";
+    import type { PosterEffect, PosterLayer } from "../../../../utils/posterStudio";
 
     const props = defineProps<{
         layer?: PosterLayer;
     }>();
+
+    interface EffectControl {
+        param: string;
+        label: string;
+        min: number;
+        max: number;
+        step: number;
+        fallback: number;
+        format: "number" | "percent" | "signedPercent" | "px";
+    }
 
     const emit = defineEmits<{
         updateLayer: [patch: Partial<PosterLayer>];
@@ -268,14 +352,270 @@
         alignCenter: "Center",
         alignRight: "Right",
         transform: "Transform",
+        effects: "Effects",
+        effectFrosted: "Frosted",
+        effectDustGrain: "White grain",
+        effectSoftBlur: "Soft blur",
+        effectFilmNoise: "Film noise",
+        effectPunch: "Punch",
+        effectRadius: "Radius",
+        effectAmount: "Amount",
+        effectDensity: "Density",
+        effectSize: "Grain size",
+        effectBrightness: "Brightness",
+        effectContrast: "Contrast",
+        effectSaturation: "Saturation",
+        effectOpacity: "Effect opacity",
+        enableEffect: "Enable effect",
+        disableEffect: "Disable effect",
+        removeEffect: "Remove effect",
     });
     const blendModes = ["Normal", "Multiply", "Screen", "Overlay"];
     const textLayer = computed(() =>
         props.layer?.type === "text" ? props.layer : undefined,
     );
+    const imageLikeLayer = computed(() =>
+        props.layer &&
+        (props.layer.type === "image" ||
+            props.layer.type === "frame" ||
+            props.layer.type === "icon")
+            ? props.layer
+            : undefined,
+    );
+    const effectPresets = computed(() => [
+        {
+            id: "frosted",
+            label: t.effectFrosted,
+            icon: "mdi-texture-box",
+        },
+        {
+            id: "dustGrain",
+            label: t.effectDustGrain,
+            icon: "mdi-dots-grid",
+        },
+        {
+            id: "softBlur",
+            label: t.effectSoftBlur,
+            icon: "mdi-blur",
+        },
+        {
+            id: "filmNoise",
+            label: t.effectFilmNoise,
+            icon: "mdi-grain",
+        },
+        {
+            id: "punch",
+            label: t.effectPunch,
+            icon: "mdi-contrast-circle",
+        },
+    ]);
 
     function updateLayer(patch: Partial<PosterLayer>) {
         emit("updateLayer", patch);
+    }
+
+    function applyEffectPreset(preset: string) {
+        emit("updateLayer", {
+            effects: createPresetEffects(preset),
+        });
+    }
+
+    function toggleEffect(id: string) {
+        if (!props.layer) return;
+
+        emit("updateLayer", {
+            effects: props.layer.effects.map((effect) =>
+                effect.id === id
+                    ? {
+                        ...effect,
+                        enabled: effect.enabled === false,
+                    }
+                    : effect,
+            ),
+        });
+    }
+
+    function removeEffect(id: string) {
+        if (!props.layer) return;
+
+        emit("updateLayer", {
+            effects: props.layer.effects.filter((effect) => effect.id !== id),
+        });
+    }
+
+    function updateEffectParam(id: string, param: string, value: number) {
+        if (!props.layer) return;
+
+        emit("updateLayer", {
+            effects: props.layer.effects.map((effect) =>
+                effect.id === id
+                    ? {
+                        ...effect,
+                        params: {
+                            ...effect.params,
+                            [param]: value,
+                        },
+                    }
+                    : effect,
+            ),
+        });
+    }
+
+    function effectControls(effect: PosterEffect): EffectControl[] {
+        if (effect.id === "blur") {
+            return [
+                control("radius", t.effectRadius, 0, 12, 0.5, 3, "px"),
+            ];
+        }
+
+        if (effect.id === "noise") {
+            return [
+                control("amount", t.effectAmount, 0, 0.25, 0.005, 0.08, "percent"),
+            ];
+        }
+
+        if (effect.id === "dustGrain") {
+            return [
+                control("density", t.effectDensity, 0, 0.5, 0.01, 0.14, "percent"),
+                control("opacity", t.effectOpacity, 0, 0.35, 0.01, 0.16, "percent"),
+                control("size", t.effectSize, 0.4, 3, 0.1, 1.1, "px"),
+            ];
+        }
+
+        if (effect.id === "adjust") {
+            return [
+                control("brightness", t.effectBrightness, -0.5, 0.5, 0.01, 0, "signedPercent"),
+                control("contrast", t.effectContrast, -0.5, 0.5, 0.01, 0, "signedPercent"),
+                control("saturation", t.effectSaturation, -0.5, 0.8, 0.01, 0, "signedPercent"),
+            ];
+        }
+
+        return [];
+    }
+
+    function control(
+        param: string,
+        label: string,
+        min: number,
+        max: number,
+        step: number,
+        fallback: number,
+        format: EffectControl["format"],
+    ): EffectControl {
+        return {
+            param,
+            label,
+            min,
+            max,
+            step,
+            fallback,
+            format,
+        };
+    }
+
+    function formatEffectValue(control: EffectControl, value: unknown) {
+        const numericValue = numberParam(value, control.fallback);
+
+        if (control.format === "px") {
+            return `${formatNumber(numericValue)} px`;
+        }
+
+        if (control.format === "percent") {
+            return `${Math.round(numericValue * 100)}%`;
+        }
+
+        if (control.format === "signedPercent") {
+            const rounded = Math.round(numericValue * 100);
+
+            return `${rounded > 0 ? "+" : ""}${rounded}%`;
+        }
+
+        return formatNumber(numericValue);
+    }
+
+    function numberParam(value: unknown, fallback: number): number {
+        return typeof value === "number" && Number.isFinite(value) ? value : fallback;
+    }
+
+    function formatNumber(value: number) {
+        return Number.isInteger(value) ? String(value) : value.toFixed(1);
+    }
+
+    function createPresetEffects(preset: string): PosterEffect[] {
+        if (preset === "frosted") {
+            return [
+                effect("blur", { radius: 4 }),
+                effect("noise", { amount: 0.045, seed: 11 }),
+                effect("dustGrain", {
+                    density: 0.18,
+                    size: 0.9,
+                    opacity: 0.12,
+                    seed: 43,
+                    color: "#ffffff",
+                }),
+            ];
+        }
+
+        if (preset === "dustGrain") {
+            return [
+                effect("dustGrain", {
+                    density: 0.34,
+                    size: 1.05,
+                    opacity: 0.18,
+                    seed: 42,
+                    color: "#ffffff",
+                }),
+            ];
+        }
+
+        if (preset === "softBlur") {
+            return [effect("blur", { radius: 3 })];
+        }
+
+        if (preset === "filmNoise") {
+            return [
+                effect("noise", { amount: 0.08, seed: 7 }),
+                effect("dustGrain", {
+                    density: 0.12,
+                    size: 0.8,
+                    opacity: 0.1,
+                    seed: 13,
+                    color: "#ffffff",
+                }),
+            ];
+        }
+
+        return [
+            effect("adjust", {
+                brightness: 0.02,
+                contrast: 0.18,
+                saturation: 0.18,
+                hue: 0,
+            }),
+        ];
+    }
+
+    function effect(id: string, params: PosterEffect["params"]): PosterEffect {
+        return {
+            id,
+            enabled: true,
+            params,
+        };
+    }
+
+    function effectLabel(id: string) {
+        const preset = effectPresets.value.find((item) => item.id === id);
+
+        if (preset) {
+            return preset.label;
+        }
+
+        if (id === "blur") return t.effectSoftBlur;
+        if (id === "noise") return t.effectFilmNoise;
+        if (id === "adjust") return t.effectPunch;
+        if (id === "dustGrain") return t.effectDustGrain;
+
+        return id;
     }
 </script>
 
@@ -358,6 +698,122 @@
     flex: 1 1 0;
     min-width: 0;
     height: 38px;
+}
+
+.effect-presets {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+}
+
+.effect-preset,
+.effect-item {
+    display: flex;
+    align-items: center;
+    min-width: 0;
+    min-height: 34px;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 4px;
+    background: var(--vp-c-bg);
+    color: var(--vp-c-text-1);
+    font: inherit;
+    font-size: 12px;
+}
+
+.effect-preset {
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 0 8px;
+    cursor: pointer;
+}
+
+.effect-preset:hover {
+    border-color: var(--vp-c-brand-1);
+}
+
+.effect-preset span,
+.effect-row span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.effect-stack {
+    display: grid;
+    gap: 6px;
+}
+
+.effect-item {
+    display: grid;
+    align-items: stretch;
+}
+
+.effect-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    min-height: 34px;
+    padding: 0 6px 0 10px;
+    color: var(--vp-c-text-1);
+    font-size: 12px;
+}
+
+.effect-item.disabled {
+    color: var(--vp-c-text-3);
+}
+
+.effect-controls {
+    display: grid;
+    gap: 6px;
+    padding: 0 8px 8px;
+    border-top: 1px solid var(--vp-c-divider);
+}
+
+.effect-control {
+    display: grid;
+    gap: 2px;
+    min-width: 0;
+    padding-top: 6px;
+}
+
+.effect-control__heading {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    color: var(--vp-c-text-2);
+    font-size: 11px;
+    font-weight: 650;
+    letter-spacing: 0;
+    line-height: 1.2;
+}
+
+.effect-slider {
+    min-width: 0;
+    padding-right: 12px;
+}
+
+.effect-actions {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 2px;
+}
+
+.effect-action {
+    display: grid;
+    width: 24px;
+    height: 24px;
+    place-items: center;
+    border: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: var(--vp-c-text-2);
+    cursor: pointer;
+}
+
+.effect-action:hover {
+    background: var(--vp-c-bg-soft);
+    color: var(--vp-c-text-1);
 }
 
 .lock-toggle {

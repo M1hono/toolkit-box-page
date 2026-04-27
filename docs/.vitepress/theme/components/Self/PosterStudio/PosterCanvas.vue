@@ -20,7 +20,11 @@
             >
                 <v-layer>
                     <v-group :config="viewportConfig">
-                        <v-rect :config="backgroundConfig" />
+                        <v-image
+                            v-if="isTransparentBackground()"
+                            :config="checkerImageConfig"
+                        />
+                        <v-rect v-else :config="backgroundConfig" />
                         <v-rect :config="canvasGuideConfig" />
 
                         <template v-for="layer in props.document.layers" :key="layer.id">
@@ -101,8 +105,10 @@
 
     import { useSafeI18n } from "../../../../utils/i18n/locale";
     import { updateLayer } from "../../../../utils/posterStudio/document";
+    import { createDustGrainPoints } from "../../../../utils/posterStudio/effects";
     import type {
         PosterDocument,
+        PosterEffect,
         PosterFrameLayer,
         PosterIconLayer,
         PosterImageLayer,
@@ -111,13 +117,15 @@
         PosterTextLayer,
     } from "../../../../utils/posterStudio/types";
 
-    type PosterCanvasTool = "select" | "magicWand" | "pixelEraser";
+    type PosterCanvasTool = "select" | "paintBrush" | "magicWand" | "pixelEraser";
     type RasterLayer = PosterImageLayer | PosterFrameLayer | PosterIconLayer;
 
     const props = defineProps<{
         document: PosterDocument;
         selectedLayerId?: string;
         activeTool: PosterCanvasTool;
+        brushSize: number;
+        brushColor: string;
         eraserSize: number;
         wandTolerance: number;
     }>();
@@ -138,6 +146,8 @@
     const layerNodes = new Map<string, any>();
     const imageElements = reactive<Record<string, HTMLImageElement>>({});
     const imageHitCanvases = new Map<string, HTMLCanvasElement>();
+    const imageRenderKeys = new Map<string, string>();
+    const checkerPattern = ref<HTMLImageElement>();
 
     const stageConfig = computed(() => ({
         width: Math.round(props.document.canvas.width * canvasScale.value),
@@ -151,14 +161,27 @@
         scaleY: canvasScale.value,
     }));
 
-    const backgroundConfig = computed(() => ({
-        x: 0,
-        y: 0,
-        width: props.document.canvas.width,
-        height: props.document.canvas.height,
-        fill: "#f4f4f4",
-        listening: false,
-    }));
+    const backgroundConfig = computed(() => {
+        return {
+            x: 0,
+            y: 0,
+            width: props.document.canvas.width,
+            height: props.document.canvas.height,
+            fill: props.document.canvas.background ?? "#f4f4f4",
+            listening: false,
+        };
+    });
+
+    const checkerImageConfig = computed(() => {
+        return {
+            x: 0,
+            y: 0,
+            width: props.document.canvas.width,
+            height: props.document.canvas.height,
+            image: checkerPattern.value,
+            listening: false,
+        };
+    });
 
     const canvasGuideConfig = computed(() => ({
         x: 0,
@@ -205,6 +228,7 @@
             fontSize: textLayer.fontSize,
             fill: textLayer.color,
             align: textLayer.align,
+            globalCompositeOperation: toKonvaBlendMode(textLayer.blendMode),
         };
     }
 
@@ -223,6 +247,7 @@
             visible: imageLayer.visible,
             draggable: !imageLayer.locked && props.activeTool === "select",
             image: imageElements[imageLayer.id],
+            globalCompositeOperation: toKonvaBlendMode(imageLayer.blendMode),
         };
     }
 
@@ -243,6 +268,7 @@
             fill: shapeLayer.fill,
             stroke: shapeLayer.stroke,
             strokeWidth: shapeLayer.strokeWidth,
+            globalCompositeOperation: toKonvaBlendMode(shapeLayer.blendMode),
         };
     }
 
@@ -263,6 +289,7 @@
             fill: shapeLayer.fill,
             stroke: shapeLayer.stroke,
             strokeWidth: shapeLayer.strokeWidth,
+            globalCompositeOperation: toKonvaBlendMode(shapeLayer.blendMode),
         };
     }
 
@@ -290,8 +317,14 @@
             return;
         }
 
-        if (isImageLikeLayer(layer) && getImagePixelAlpha(id, event) <= 8) {
-            emit("update:selectedLayerId", findLayerAtPointer(id));
+        if (props.activeTool === "paintBrush" && isImageLikeLayer(layer)) {
+            isDrawing.value = true;
+            paintImageLayerAtPointer(id, event);
+            return;
+        }
+
+        if (props.activeTool === "magicWand" && isImageLikeLayer(layer)) {
+            applyMagicWandErase(id, event);
             return;
         }
 
@@ -301,8 +334,8 @@
             return;
         }
 
-        if (props.activeTool === "magicWand" && isImageLikeLayer(layer)) {
-            applyMagicWandErase(id, event);
+        if (isImageLikeLayer(layer) && getImagePixelAlpha(id, event) <= 8) {
+            emit("update:selectedLayerId", findLayerAtPointer(id));
             return;
         }
 
@@ -310,11 +343,18 @@
     }
 
     function handleToolDrag(id: string, event: any) {
-        if (!isDrawing.value || props.activeTool !== "pixelEraser") {
+        if (!isDrawing.value) {
             return;
         }
 
-        eraseImageLayerAtPointer(id, event);
+        if (props.activeTool === "paintBrush") {
+            paintImageLayerAtPointer(id, event);
+            return;
+        }
+
+        if (props.activeTool === "pixelEraser") {
+            eraseImageLayerAtPointer(id, event);
+        }
     }
 
     function handleImageDragStart(id: string, event: any) {
@@ -378,15 +418,21 @@
                 continue;
             }
 
-            if (imageElements[layer.id]) {
+            const renderKey = createLayerImageRenderKey(layer);
+
+            if (imageRenderKeys.get(layer.id) === renderKey && imageElements[layer.id]) {
                 continue;
             }
 
             const image = new window.Image();
             image.crossOrigin = "anonymous";
-            image.onload = () => {
-                imageElements[layer.id] = image;
+            image.onload = async () => {
+                imageRenderKeys.set(layer.id, renderKey);
                 cacheImageCanvas(layer.id, image);
+                imageElements[layer.id] = await renderLayerImageElement(
+                    layer as RasterLayer,
+                    image,
+                );
             };
             image.src = layer.src;
         }
@@ -405,6 +451,31 @@
         context.imageSmoothingEnabled = false;
         context.drawImage(image, 0, 0);
         imageHitCanvases.set(id, canvas);
+    }
+
+    async function renderLayerImageElement(
+        layer: RasterLayer,
+        image: HTMLImageElement,
+    ): Promise<HTMLImageElement> {
+        const effects = layer.effects.filter((effect) => effect.enabled !== false);
+
+        if (effects.length === 0) {
+            return image;
+        }
+
+        const canvas = window.document.createElement("canvas");
+        canvas.width = Math.max(1, Math.round(layer.width));
+        canvas.height = Math.max(1, Math.round(layer.height));
+        const context = canvas.getContext("2d", { willReadFrequently: true });
+
+        if (!context) {
+            return image;
+        }
+
+        context.drawImage(image, 0, 0, canvas.width, canvas.height);
+        applyCanvasEffects(canvas, effects);
+
+        return loadImageFromDataUrl(canvas.toDataURL("image/png"));
     }
 
     function getImagePixelAlpha(id: string, event: any): number {
@@ -483,6 +554,26 @@
         return undefined;
     }
 
+    function paintImageLayerAtPointer(id: string, event: any) {
+        const layer = props.document.layers.find((item) => item.id === id);
+        const sample = getImageSample(id, event);
+
+        if (!layer || layer.locked || !sample) {
+            return;
+        }
+
+        const brushSize = Math.max(1, Math.round(props.brushSize));
+        sample.context.save();
+        sample.context.globalCompositeOperation = "source-over";
+        sample.context.fillStyle = props.brushColor;
+        sample.context.imageSmoothingEnabled = false;
+        sample.context.beginPath();
+        sample.context.arc(sample.x, sample.y, brushSize / 2, 0, Math.PI * 2);
+        sample.context.fill();
+        sample.context.restore();
+        updateRasterLayerFromCanvas(id, sample.canvas);
+    }
+
     function eraseImageLayerAtPointer(id: string, event: any) {
         const layer = props.document.layers.find((item) => item.id === id);
         const sample = getImageSample(id, event);
@@ -557,9 +648,14 @@
     function updateRasterLayerFromCanvas(id: string, canvas: HTMLCanvasElement) {
         const nextSrc = canvas.toDataURL("image/png");
         const image = new window.Image();
-        image.onload = () => {
-            imageElements[id] = image;
+        image.onload = async () => {
             cacheImageCanvas(id, image);
+            const layer = props.document.layers.find((item) => item.id === id);
+            imageElements[id] =
+                layer && isImageLikeLayer(layer)
+                    ? await renderLayerImageElement(layer, image)
+                    : image;
+            imageRenderKeys.delete(id);
         };
         image.src = nextSrc;
 
@@ -582,6 +678,206 @@
 
     function isPointInLayerBounds(layer: PosterLayer, point: { x: number; y: number }) {
         return point.x >= 0 && point.y >= 0 && point.x <= layer.width && point.y <= layer.height;
+    }
+
+    function createLayerImageRenderKey(layer: PosterLayer) {
+        if (!isImageLikeLayer(layer)) {
+            return "";
+        }
+
+        return [
+            layer.src ?? "",
+            layer.width,
+            layer.height,
+            JSON.stringify(layer.effects),
+        ].join("|");
+    }
+
+    function toKonvaBlendMode(blendMode: string | undefined) {
+        switch ((blendMode ?? "Normal").toLowerCase()) {
+            case "multiply":
+                return "multiply";
+            case "screen":
+                return "screen";
+            case "overlay":
+                return "overlay";
+            default:
+                return "source-over";
+        }
+    }
+
+    function isTransparentBackground() {
+        return props.document.canvas.background === "transparent";
+    }
+
+    function applyCanvasEffects(canvas: HTMLCanvasElement, effects: PosterEffect[]) {
+        const filter = createCanvasFilter(effects);
+
+        if (filter !== "none") {
+            applyCanvasFilter(canvas, filter);
+        }
+
+        for (const effect of effects) {
+            if (effect.id === "noise") {
+                applyNoiseEffect(canvas, effect.params);
+            }
+
+            if (effect.id === "dustGrain") {
+                applyDustGrainEffect(canvas, effect.params);
+            }
+        }
+    }
+
+    function createCanvasFilter(effects: PosterEffect[]) {
+        const filterParts: string[] = [];
+
+        for (const effect of effects) {
+            if (effect.id === "adjust") {
+                filterParts.push(
+                    `brightness(${1 + numberParam(effect.params.brightness, 0)})`,
+                    `contrast(${1 + numberParam(effect.params.contrast, 0)})`,
+                    `saturate(${1 + numberParam(effect.params.saturation, 0)})`,
+                    `hue-rotate(${numberParam(effect.params.hue, 0)}deg)`,
+                );
+            }
+
+            if (effect.id === "blur") {
+                filterParts.push(`blur(${numberParam(effect.params.radius, 0)}px)`);
+            }
+        }
+
+        return filterParts.length > 0 ? filterParts.join(" ") : "none";
+    }
+
+    function applyCanvasFilter(canvas: HTMLCanvasElement, filter: string) {
+        const source = window.document.createElement("canvas");
+        source.width = canvas.width;
+        source.height = canvas.height;
+        const sourceContext = source.getContext("2d");
+        const context = canvas.getContext("2d");
+
+        if (!sourceContext || !context) {
+            return;
+        }
+
+        sourceContext.drawImage(canvas, 0, 0);
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        context.filter = filter;
+        context.drawImage(source, 0, 0);
+        context.filter = "none";
+    }
+
+    function applyNoiseEffect(canvas: HTMLCanvasElement, params: Record<string, unknown>) {
+        const context = canvas.getContext("2d", { willReadFrequently: true });
+
+        if (!context) {
+            return;
+        }
+
+        const imageData = context.getImageData(0, 0, canvas.width, canvas.height);
+        const amount = Math.max(0, Math.min(1, numberParam(params.amount, 0.08)));
+        let random = createSeededRandom(numberParam(params.seed, 1));
+
+        for (let index = 0; index < imageData.data.length; index += 4) {
+            const delta = (random() - 0.5) * 255 * amount;
+            imageData.data[index] = clampByte(imageData.data[index] + delta);
+            imageData.data[index + 1] = clampByte(imageData.data[index + 1] + delta);
+            imageData.data[index + 2] = clampByte(imageData.data[index + 2] + delta);
+        }
+
+        context.putImageData(imageData, 0, 0);
+    }
+
+    function applyDustGrainEffect(canvas: HTMLCanvasElement, params: Record<string, unknown>) {
+        const context = canvas.getContext("2d");
+
+        if (!context) {
+            return;
+        }
+
+        const points = createDustGrainPoints({
+            seed: numberParam(params.seed, 42),
+            density: numberParam(params.density, 0.14),
+            width: canvas.width,
+            height: canvas.height,
+            size: numberParam(params.size, 1.1),
+            opacity: numberParam(params.opacity, 0.16),
+        });
+
+        context.save();
+        context.fillStyle = stringParam(params.color, "#ffffff");
+
+        for (const point of points) {
+            context.globalAlpha = point.alpha;
+            context.beginPath();
+            context.arc(point.x, point.y, point.radius, 0, Math.PI * 2);
+            context.fill();
+        }
+
+        context.restore();
+    }
+
+    function loadImageFromDataUrl(src: string): Promise<HTMLImageElement> {
+        return new Promise((resolve) => {
+            const image = new window.Image();
+            image.onload = () => resolve(image);
+            image.src = src;
+        });
+    }
+
+    function createCheckerPattern() {
+        if (typeof window === "undefined") {
+            return;
+        }
+
+        const canvas = window.document.createElement("canvas");
+        const tileSize = 8;
+        canvas.width = props.document.canvas.width;
+        canvas.height = props.document.canvas.height;
+        const context = canvas.getContext("2d");
+
+        if (!context) {
+            return;
+        }
+
+        context.fillStyle = "#fbfbfb";
+        context.fillRect(0, 0, canvas.width, canvas.height);
+
+        for (let y = 0; y < canvas.height; y += tileSize) {
+            for (let x = 0; x < canvas.width; x += tileSize) {
+                if ((x / tileSize + y / tileSize) % 2 === 0) {
+                    context.fillStyle = "#c9ced6";
+                    context.fillRect(x, y, tileSize, tileSize);
+                }
+            }
+        }
+
+        const image = new window.Image();
+        image.onload = () => {
+            checkerPattern.value = image;
+        };
+        image.src = canvas.toDataURL("image/png");
+    }
+
+    function numberParam(value: unknown, fallback: number): number {
+        return typeof value === "number" && Number.isFinite(value) ? value : fallback;
+    }
+
+    function stringParam(value: unknown, fallback: string): string {
+        return typeof value === "string" ? value : fallback;
+    }
+
+    function createSeededRandom(seed: number) {
+        let state = seed >>> 0;
+
+        return () => {
+            state = (state * 1664525 + 1013904223) >>> 0;
+            return state / 0x100000000;
+        };
+    }
+
+    function clampByte(value: number) {
+        return Math.max(0, Math.min(255, Math.round(value)));
     }
 
     function syncTransformer() {
@@ -610,6 +906,7 @@
     }
 
     onMounted(() => {
+        createCheckerPattern();
         updateCanvasScale();
 
         if (typeof ResizeObserver !== "undefined" && boardRef.value) {
@@ -628,7 +925,10 @@
     watch(() => props.document, () => nextTick(syncTransformer), { deep: true });
     watch(
         () => [props.document.canvas.width, props.document.canvas.height],
-        () => nextTick(updateCanvasScale),
+        () => {
+            createCheckerPattern();
+            nextTick(updateCanvasScale);
+        },
     );
     watch(() => props.document.layers, loadLayerImages, { deep: true, immediate: true });
 </script>

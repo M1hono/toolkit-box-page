@@ -58,6 +58,9 @@ test("PosterCanvas has a bottom tool dock and pixel-aware image tools", () => {
     assert.match(source, /findLayerAtPointer/);
     assert.match(source, /eraseImageLayerAtPointer/);
     assert.match(source, /applyMagicWandErase/);
+    assert.match(source, /paintImageLayerAtPointer/);
+    assert.match(source, /renderLayerImageElement/);
+    assert.match(source, /globalCompositeOperation/);
 });
 
 test("PosterCanvas skips locked or transparent layers during canvas hit testing", () => {
@@ -73,4 +76,19 @@ test("PosterCanvas skips locked or transparent layers during canvas hit testing"
     assert.match(source, /findLayerAtPointer\(id\)/);
     assert.match(source, /layer\.locked/);
     assert.match(source, /!layer\.visible \|\| layer\.locked/);
+});
+
+test("PosterCanvas uses an image-backed checker pattern for transparent preview", () => {
+    const source = readFileSync(
+        path.join(
+            repoRoot,
+            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
+        ),
+        "utf8",
+    );
+
+    assert.match(source, /ref<HTMLImageElement>/);
+    assert.match(source, /checkerImageConfig/);
+    assert.match(source, /toDataURL\("image\/png"\)/);
+    assert.match(source, /v-if="isTransparentBackground\(\)"/);
 });

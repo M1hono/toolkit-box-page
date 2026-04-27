@@ -2,11 +2,15 @@ import { renderPixiEffectPreview } from "./effectRenderers";
 import type {
     PosterAsset,
     PosterDocument,
+    PosterFrameLayer,
+    PosterIconLayer,
     PosterImageLayer,
     PosterLayer,
     PosterShapeLayer,
     PosterTextLayer,
 } from "./types";
+
+type RasterLayer = PosterImageLayer | PosterFrameLayer | PosterIconLayer;
 
 export interface PosterExportOptions {
     pixelRatio?: number;
@@ -70,8 +74,11 @@ async function exportWithBrowserCanvas(
     }
 
     context.scale(pixelRatio, pixelRatio);
-    context.fillStyle = document.canvas.background ?? "#f4f4f4";
-    context.fillRect(0, 0, document.canvas.width, document.canvas.height);
+
+    if (!isTransparentBackground(document.canvas.background)) {
+        context.fillStyle = document.canvas.background ?? "#f4f4f4";
+        context.fillRect(0, 0, document.canvas.width, document.canvas.height);
+    }
 
     for (const layer of document.layers) {
         if (!layer.visible) {
@@ -93,6 +100,7 @@ async function exportWithBrowserCanvas(
 function drawTextLayer(context: CanvasRenderingContext2D, layer: PosterTextLayer) {
     context.save();
     applyLayerTransform(context, layer);
+    applyLayerComposite(context, layer);
     context.globalAlpha = layer.opacity;
     context.fillStyle = layer.color;
     context.font = `${layer.fontWeight ?? 700} ${layer.fontSize}px ${layer.fontFamily}`;
@@ -105,6 +113,7 @@ function drawTextLayer(context: CanvasRenderingContext2D, layer: PosterTextLayer
 function drawShapeLayer(context: CanvasRenderingContext2D, layer: PosterShapeLayer) {
     context.save();
     applyLayerTransform(context, layer);
+    applyLayerComposite(context, layer);
     context.globalAlpha = layer.opacity;
     context.fillStyle = layer.fill;
 
@@ -135,7 +144,7 @@ function drawShapeLayer(context: CanvasRenderingContext2D, layer: PosterShapeLay
 
 async function drawImageLayer(
     context: CanvasRenderingContext2D,
-    layer: PosterImageLayer,
+    layer: RasterLayer,
     assets: PosterAsset[],
 ) {
     const source = await loadImageSource(layer, assets);
@@ -159,6 +168,7 @@ async function drawImageLayer(
 
     context.save();
     applyLayerTransform(context, layer);
+    applyLayerComposite(context, layer);
     context.globalAlpha = layer.opacity;
     context.drawImage(drawSource, 0, 0, layer.width, layer.height);
     context.restore();
@@ -173,12 +183,34 @@ function applyLayerTransform(
     context.scale(layer.scaleX, layer.scaleY);
 }
 
-function isImageLikeLayer(layer: PosterLayer): layer is PosterImageLayer {
+function applyLayerComposite(
+    context: CanvasRenderingContext2D,
+    layer: PosterLayer,
+) {
+    context.globalCompositeOperation = toCanvasCompositeOperation(layer.blendMode);
+}
+
+function toCanvasCompositeOperation(
+    blendMode: string | undefined,
+): GlobalCompositeOperation {
+    switch ((blendMode ?? "Normal").toLowerCase()) {
+        case "multiply":
+            return "multiply";
+        case "screen":
+            return "screen";
+        case "overlay":
+            return "overlay";
+        default:
+            return "source-over";
+    }
+}
+
+function isImageLikeLayer(layer: PosterLayer): layer is RasterLayer {
     return layer.type === "image" || layer.type === "frame" || layer.type === "icon";
 }
 
 function loadImageSource(
-    layer: PosterImageLayer,
+    layer: RasterLayer,
     assets: PosterAsset[],
 ): Promise<HTMLImageElement | undefined> {
     const asset = assets.find((item) => item.id === layer.assetId);
@@ -206,16 +238,31 @@ function exportFallbackDataUrl(
         .filter((layer): layer is PosterTextLayer => layer.visible && layer.type === "text")
         .map(
             (layer) =>
-                `<text x="${layer.x}" y="${layer.y}" font-size="${layer.fontSize}" fill="${escapeXml(
+                `<text x="${layer.x}" y="${layer.y}" font-size="${layer.fontSize}" style="${toSvgBlendStyle(
+                    layer.blendMode,
+                )}" fill="${escapeXml(
                     layer.color,
                 )}">${escapeXml(layer.text)}</text>`,
         )
         .join("");
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${plan.width}" height="${plan.height}" viewBox="0 0 ${plan.width} ${plan.height}"><rect width="100%" height="100%" fill="${escapeXml(
-        document.canvas.background ?? "#f4f4f4",
-    )}"/>${text}</svg>`;
+    const background = isTransparentBackground(document.canvas.background)
+        ? ""
+        : `<rect width="100%" height="100%" fill="${escapeXml(
+            document.canvas.background ?? "#f4f4f4",
+        )}"/>`;
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${plan.width}" height="${plan.height}" viewBox="0 0 ${plan.width} ${plan.height}">${background}${text}</svg>`;
 
     return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+}
+
+function isTransparentBackground(background: string | undefined): boolean {
+    return background === "transparent";
+}
+
+function toSvgBlendStyle(blendMode: string | undefined): string {
+    const operation = toCanvasCompositeOperation(blendMode);
+
+    return operation === "source-over" ? "" : `mix-blend-mode:${operation}`;
 }
 
 function canUseBrowserCanvas(): boolean {

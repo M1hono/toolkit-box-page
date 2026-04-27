@@ -2,11 +2,13 @@ import assert from "node:assert/strict";
 import test from "node:test";
 
 import {
+    addBlankImageLayer,
     addImageLayer,
     addTextLayer,
     createPosterDocument,
     moveLayer,
     removeLayer,
+    updateCanvas,
     updateLayer,
 } from "../utils/posterStudio/document";
 
@@ -36,6 +38,31 @@ test("addImageLayer and addTextLayer append editable layers", () => {
     assert.equal(doc.layers[0].type, "image");
     assert.equal(doc.layers[1].type, "text");
     assert.equal(doc.layers[1].name, "Title");
+});
+
+test("addBlankImageLayer creates a transparent full-canvas raster layer", () => {
+    let doc = createPosterDocument("mcmod");
+    doc = addBlankImageLayer(doc, {
+        name: "Paint",
+        width: doc.canvas.width,
+        height: doc.canvas.height,
+        src: "data:image/png;base64,transparent",
+    });
+
+    assert.equal(doc.layers[0].type, "image");
+    assert.equal(doc.layers[0].name, "Paint");
+    assert.equal(doc.layers[0].width, 720);
+    assert.equal(doc.layers[0].height, 450);
+    assert.equal(doc.layers[0].assetId, "__blank-raster");
+    assert.equal(doc.layers[0].src, "data:image/png;base64,transparent");
+});
+
+test("updateCanvas can mark a document background transparent", () => {
+    const doc = updateCanvas(createPosterDocument("curseforge"), {
+        background: "transparent",
+    });
+
+    assert.equal(doc.canvas.background, "transparent");
 });
 
 test("moveLayer reorders layers without mutating original document", () => {

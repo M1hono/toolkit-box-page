@@ -85,6 +85,17 @@ test("PosterPropertiesPanel uses external field labels and text controls", () =>
     assert.match(source, /mdi-format-align-left/);
 });
 
+test("PosterPropertiesPanel exposes raster effect presets", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterPropertiesPanel.vue"), "utf8");
+
+    assert.match(source, /effectPresets/);
+    assert.match(source, /applyEffectPreset/);
+    assert.match(source, /dustGrain/);
+    assert.match(source, /frosted/);
+    assert.match(source, /effectControls/);
+    assert.match(source, /updateEffectParam/);
+});
+
 test("PosterStudioApp renders the bottom editor tool dock", () => {
     const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
 
@@ -92,10 +103,22 @@ test("PosterStudioApp renders the bottom editor tool dock", () => {
     assert.match(source, /v-model="activeTool"/);
     assert.match(source, /mdi-auto-fix/);
     assert.match(source, /mdi-eraser/);
+    assert.match(source, /mdi-brush/);
     assert.match(source, /:active-tool="activeTool"/);
     assert.match(source, /activeTool === 'pixelEraser'/);
     assert.match(source, /activeTool === 'magicWand'/);
+    assert.match(source, /activeTool === 'paintBrush'/);
+    assert.match(source, /:aria-pressed="activeTool === 'paintBrush'"/);
     assert.match(source, /selectHint/);
+});
+
+test("PosterStudioApp wires blank layer and transparent background commands", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
+
+    assert.match(source, /addBlankLayer/);
+    assert.match(source, /addBlankImageLayer/);
+    assert.match(source, /toggleTransparentBackground/);
+    assert.match(source, /transparentBackground/);
 });
 
 test("PosterStudioApp declares starter layer config before the initial document", () => {

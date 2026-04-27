@@ -27,6 +27,22 @@
                             720 x 450
                         </v-btn>
                         <v-btn
+                            variant="outlined"
+                            size="small"
+                            @click="addBlankLayer"
+                        >
+                            <v-icon start>mdi-layers-plus</v-icon>
+                            {{ t.blankLayer }}
+                        </v-btn>
+                        <v-btn
+                            :variant="transparentBackground ? 'flat' : 'outlined'"
+                            size="small"
+                            @click="toggleTransparentBackground"
+                        >
+                            <v-icon start>mdi-checkerboard</v-icon>
+                            {{ transparentBackground ? t.transparentBackground : t.solidBackground }}
+                        </v-btn>
+                        <v-btn
                             color="primary"
                             variant="flat"
                             size="small"
@@ -57,6 +73,8 @@
                                     v-model:document="document"
                                     v-model:selected-layer-id="selectedLayerId"
                                     :active-tool="activeTool"
+                                    :brush-size="brushSize"
+                                    :brush-color="brushColor"
                                     :eraser-size="eraserSize"
                                     :wand-tolerance="wandTolerance"
                                 />
@@ -73,13 +91,23 @@
                                     <v-btn
                                         value="select"
                                         :aria-label="t.toolSelect"
+                                        :aria-pressed="activeTool === 'select'"
                                         :title="t.toolSelect"
                                     >
                                         <v-icon>mdi-cursor-default-click-outline</v-icon>
                                     </v-btn>
                                     <v-btn
+                                        value="paintBrush"
+                                        :aria-label="t.toolPaintBrush"
+                                        :aria-pressed="activeTool === 'paintBrush'"
+                                        :title="t.toolPaintBrush"
+                                    >
+                                        <v-icon>mdi-brush</v-icon>
+                                    </v-btn>
+                                    <v-btn
                                         value="magicWand"
                                         :aria-label="t.toolMagicWand"
+                                        :aria-pressed="activeTool === 'magicWand'"
                                         :title="t.toolMagicWand"
                                     >
                                         <v-icon>mdi-auto-fix</v-icon>
@@ -87,6 +115,7 @@
                                     <v-btn
                                         value="pixelEraser"
                                         :aria-label="t.toolPixelEraser"
+                                        :aria-pressed="activeTool === 'pixelEraser'"
                                         :title="t.toolPixelEraser"
                                     >
                                         <v-icon>mdi-eraser</v-icon>
@@ -99,6 +128,32 @@
                                     >
                                         <v-icon size="16">mdi-cursor-move</v-icon>
                                         <span>{{ t.selectHint }}</span>
+                                    </div>
+                                    <div
+                                        v-else-if="activeTool === 'paintBrush'"
+                                        class="tool-setting tool-setting--brush"
+                                    >
+                                        <span class="tool-setting__label">
+                                            {{ t.brushSize }}
+                                        </span>
+                                        <v-slider
+                                            v-model="brushSize"
+                                            class="tool-slider"
+                                            density="compact"
+                                            hide-details
+                                            :aria-label="t.brushSize"
+                                            :max="96"
+                                            :min="1"
+                                            :step="1"
+                                            thumb-label
+                                        />
+                                        <span class="tool-setting__value">
+                                            {{ brushSize }} px
+                                        </span>
+                                        <label class="tool-color" :title="t.brushColor">
+                                            <span>{{ t.brushColor }}</span>
+                                            <input v-model="brushColor" type="color" />
+                                        </label>
                                     </div>
                                     <div
                                         v-else-if="activeTool === 'pixelEraser'"
@@ -180,11 +235,13 @@
         type PosterTemplateIndexItem,
     } from "../../../../utils/posterStudio/assets";
     import {
+        addBlankImageLayer,
         addImageLayer,
         addTextLayer,
         createPosterDocument,
         moveLayer,
         removeLayer,
+        updateCanvas,
         updateLayer,
     } from "../../../../utils/posterStudio/document";
     import {
@@ -206,7 +263,7 @@
     import PosterLayerPanel from "./PosterLayerPanel.vue";
     import PosterPropertiesPanel from "./PosterPropertiesPanel.vue";
 
-    type PosterCanvasTool = "select" | "magicWand" | "pixelEraser";
+    type PosterCanvasTool = "select" | "paintBrush" | "magicWand" | "pixelEraser";
 
     const { t } = useSafeI18n("poster-studio-app", {
         title: "Mod Poster Studio",
@@ -214,11 +271,17 @@
         exportPng: "Export PNG",
         canvas: "Canvas",
         toolSelect: "Select",
+        toolPaintBrush: "Brush",
         toolMagicWand: "Magic wand",
         toolPixelEraser: "Pixel eraser",
+        brushSize: "Brush",
+        brushColor: "Color",
         eraserSize: "Eraser",
         wandTolerance: "Tolerance",
         selectHint: "Select, move, and transform layers",
+        blankLayer: "Blank layer",
+        transparentBackground: "Transparent",
+        solidBackground: "Solid background",
         defaultLayerName: "Title",
         defaultCanvasTitle: "Mod Poster Studio",
     });
@@ -244,6 +307,8 @@
     const templates = ref<PosterTemplateIndexItem[]>([]);
     const exporting = ref(false);
     const activeTool = ref<PosterCanvasTool>("select");
+    const brushSize = ref(18);
+    const brushColor = ref("#2f6fed");
     const eraserSize = ref(20);
     const wandTolerance = ref(28);
     const storage = shallowRef<PosterStudioStorage>(createMemoryPosterStudioStorage());
@@ -252,6 +317,9 @@
         () =>
             document.value.layers.find((layer) => layer.id === selectedLayerId.value) ??
             undefined,
+    );
+    const transparentBackground = computed(
+        () => document.value.canvas.background === "transparent",
     );
 
     onMounted(async () => {
@@ -274,6 +342,28 @@
     function resetDocument(preset: PosterCanvasPreset) {
         document.value = createStarterDocument(preset);
         selectedLayerId.value = document.value.layers[0]?.id;
+    }
+
+    function addBlankLayer() {
+        const nextDocument = addBlankImageLayer(document.value, {
+            name: t.blankLayer,
+            src: createTransparentLayerSrc(
+                document.value.canvas.width,
+                document.value.canvas.height,
+            ),
+            width: document.value.canvas.width,
+            height: document.value.canvas.height,
+        });
+
+        document.value = nextDocument;
+        selectedLayerId.value = nextDocument.layers[nextDocument.layers.length - 1]?.id;
+        activeTool.value = "paintBrush";
+    }
+
+    function toggleTransparentBackground() {
+        document.value = updateCanvas(document.value, {
+            background: transparentBackground.value ? undefined : "transparent",
+        });
     }
 
     async function addFileToCanvas(file: File) {
@@ -399,6 +489,18 @@
 
         return Math.min(value, Math.round(canvasSize * 0.72));
     }
+
+    function createTransparentLayerSrc(width: number, height: number) {
+        if (typeof window === "undefined") {
+            return undefined;
+        }
+
+        const canvas = window.document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+
+        return canvas.toDataURL("image/png");
+    }
 </script>
 
 <style scoped>
@@ -506,6 +608,11 @@
     height: 36px;
 }
 
+.tool-toggle :deep(.v-btn--active) {
+    background: var(--vp-c-bg-soft);
+    color: var(--vp-c-brand-1);
+}
+
 .tool-dock__controls {
     display: flex;
     flex: 1 1 260px;
@@ -533,6 +640,10 @@
     gap: 10px;
 }
 
+.tool-setting--brush {
+    grid-template-columns: max-content minmax(120px, 1fr) 58px auto;
+}
+
 .tool-setting__label,
 .tool-setting__value {
     color: var(--vp-c-text-2);
@@ -550,6 +661,27 @@
     border-radius: 4px;
     background: var(--vp-c-bg-soft);
     color: var(--vp-c-text-1);
+}
+
+.tool-color {
+    display: inline-grid;
+    grid-template-columns: auto 28px;
+    gap: 8px;
+    align-items: center;
+    color: var(--vp-c-text-2);
+    font-size: 12px;
+    font-weight: 650;
+    white-space: nowrap;
+}
+
+.tool-color input {
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 4px;
+    background: transparent;
+    cursor: pointer;
 }
 
 .tool-slider {
@@ -602,6 +734,10 @@
     }
 
     .tool-setting {
+        grid-template-columns: 1fr;
+    }
+
+    .tool-setting--brush {
         grid-template-columns: 1fr;
     }
 
