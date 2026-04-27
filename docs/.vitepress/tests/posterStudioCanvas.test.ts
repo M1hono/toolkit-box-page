@@ -42,7 +42,7 @@ test("PosterCanvas renders image and shape layers", () => {
     assert.match(source, /ellipseConfig/);
 });
 
-test("PosterCanvas has a bottom tool dock and pixel-aware image tools", () => {
+test("PosterCanvas keeps magic wand editing without raster brush tools", () => {
     const source = readFileSync(
         path.join(
             repoRoot,
@@ -52,47 +52,18 @@ test("PosterCanvas has a bottom tool dock and pixel-aware image tools", () => {
     );
 
     assert.match(source, /activeTool/);
-    assert.match(source, /pixelEraser/);
     assert.match(source, /magicWand/);
     assert.match(source, /getImagePixelAlpha/);
     assert.match(source, /findLayerAtPointer/);
-    assert.match(source, /eraseImageLayerAtPointer/);
     assert.match(source, /applyMagicWandErase/);
-    assert.match(source, /paintImageLayerAtPointer/);
     assert.match(source, /renderLayerImageElement/);
     assert.match(source, /globalCompositeOperation/);
-});
-
-test("PosterCanvas only keeps brush and eraser drawing while a press is active", () => {
-    const source = readFileSync(
-        path.join(
-            repoRoot,
-            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
-        ),
-        "utf8",
-    );
-
-    assert.match(source, /@click="handleLayerClick\(layer\.id, \$event\)"/);
-    assert.match(source, /@mousedown="handleLayerPointerStart\(layer\.id, \$event\)"/);
-    assert.match(source, /@mouseup="stopToolStroke"/);
-    assert.match(source, /@mouseleave="stopToolStroke"/);
-    assert.match(source, /drawingLayerId/);
-    assert.match(source, /drawingLayerId\.value !== id/);
-    assert.doesNotMatch(source, /@click="handleLayerPointer\(layer\.id, \$event\)"/);
-});
-
-test("PosterCanvas paint brush uses pixel-aligned square stamps", () => {
-    const source = readFileSync(
-        path.join(
-            repoRoot,
-            ".vitepress/theme/components/Self/PosterStudio/PosterCanvas.vue",
-        ),
-        "utf8",
-    );
-
-    assert.match(source, /function paintImageLayerAtPointer/);
-    assert.match(source, /sample\.context\.fillRect\(/);
-    assert.doesNotMatch(source, /sample\.context\.arc\(/);
+    assert.doesNotMatch(source, /paintBrush/);
+    assert.doesNotMatch(source, /pixelEraser/);
+    assert.doesNotMatch(source, /paintImageLayerAtPointer/);
+    assert.doesNotMatch(source, /eraseImageLayerAtPointer/);
+    assert.doesNotMatch(source, /isDrawing/);
+    assert.doesNotMatch(source, /drawingLayerId/);
 });
 
 test("PosterCanvas skips locked or transparent layers during canvas hit testing", () => {

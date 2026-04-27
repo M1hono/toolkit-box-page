@@ -73,9 +73,6 @@
                                     v-model:document="document"
                                     v-model:selected-layer-id="selectedLayerId"
                                     :active-tool="activeTool"
-                                    :brush-size="brushSize"
-                                    :brush-color="brushColor"
-                                    :eraser-size="eraserSize"
                                     :wand-tolerance="wandTolerance"
                                 />
                             </v-card-text>
@@ -97,28 +94,12 @@
                                         <v-icon>mdi-cursor-default-click-outline</v-icon>
                                     </v-btn>
                                     <v-btn
-                                        value="paintBrush"
-                                        :aria-label="t.toolPaintBrush"
-                                        :aria-pressed="activeTool === 'paintBrush'"
-                                        :title="t.toolPaintBrush"
-                                    >
-                                        <v-icon>mdi-brush</v-icon>
-                                    </v-btn>
-                                    <v-btn
                                         value="magicWand"
                                         :aria-label="t.toolMagicWand"
                                         :aria-pressed="activeTool === 'magicWand'"
                                         :title="t.toolMagicWand"
                                     >
                                         <v-icon>mdi-auto-fix</v-icon>
-                                    </v-btn>
-                                    <v-btn
-                                        value="pixelEraser"
-                                        :aria-label="t.toolPixelEraser"
-                                        :aria-pressed="activeTool === 'pixelEraser'"
-                                        :title="t.toolPixelEraser"
-                                    >
-                                        <v-icon>mdi-eraser</v-icon>
                                     </v-btn>
                                 </v-btn-toggle>
                                 <div class="tool-dock__controls" aria-live="polite">
@@ -128,54 +109,6 @@
                                     >
                                         <v-icon size="16">mdi-cursor-move</v-icon>
                                         <span>{{ t.selectHint }}</span>
-                                    </div>
-                                    <div
-                                        v-else-if="activeTool === 'paintBrush'"
-                                        class="tool-setting tool-setting--brush"
-                                    >
-                                        <span class="tool-setting__label">
-                                            {{ t.brushSize }}
-                                        </span>
-                                        <v-slider
-                                            v-model="brushSize"
-                                            class="tool-slider"
-                                            density="compact"
-                                            hide-details
-                                            :aria-label="t.brushSize"
-                                            :max="96"
-                                            :min="1"
-                                            :step="1"
-                                            thumb-label
-                                        />
-                                        <span class="tool-setting__value">
-                                            {{ brushSize }} px
-                                        </span>
-                                        <label class="tool-color" :title="t.brushColor">
-                                            <span>{{ t.brushColor }}</span>
-                                            <input v-model="brushColor" type="color" />
-                                        </label>
-                                    </div>
-                                    <div
-                                        v-else-if="activeTool === 'pixelEraser'"
-                                        class="tool-setting"
-                                    >
-                                        <span class="tool-setting__label">
-                                            {{ t.eraserSize }}
-                                        </span>
-                                        <v-slider
-                                            v-model="eraserSize"
-                                            class="tool-slider"
-                                            density="compact"
-                                            hide-details
-                                            :aria-label="t.eraserSize"
-                                            :max="72"
-                                            :min="4"
-                                            :step="1"
-                                            thumb-label
-                                        />
-                                        <span class="tool-setting__value">
-                                            {{ eraserSize }} px
-                                        </span>
                                     </div>
                                     <div
                                         v-else-if="activeTool === 'magicWand'"
@@ -263,7 +196,7 @@
     import PosterLayerPanel from "./PosterLayerPanel.vue";
     import PosterPropertiesPanel from "./PosterPropertiesPanel.vue";
 
-    type PosterCanvasTool = "select" | "paintBrush" | "magicWand" | "pixelEraser";
+    type PosterCanvasTool = "select" | "magicWand";
 
     const { t } = useSafeI18n("poster-studio-app", {
         title: "Mod Poster Studio",
@@ -271,12 +204,7 @@
         exportPng: "Export PNG",
         canvas: "Canvas",
         toolSelect: "Select",
-        toolPaintBrush: "Brush",
         toolMagicWand: "Magic wand",
-        toolPixelEraser: "Pixel eraser",
-        brushSize: "Brush",
-        brushColor: "Color",
-        eraserSize: "Eraser",
         wandTolerance: "Tolerance",
         selectHint: "Select, move, and transform layers",
         blankLayer: "Blank layer",
@@ -307,9 +235,6 @@
     const templates = ref<PosterTemplateIndexItem[]>([]);
     const exporting = ref(false);
     const activeTool = ref<PosterCanvasTool>("select");
-    const brushSize = ref(18);
-    const brushColor = ref("#2f6fed");
-    const eraserSize = ref(20);
     const wandTolerance = ref(28);
     const storage = shallowRef<PosterStudioStorage>(createMemoryPosterStudioStorage());
 
@@ -357,7 +282,7 @@
 
         document.value = nextDocument;
         selectedLayerId.value = nextDocument.layers[nextDocument.layers.length - 1]?.id;
-        activeTool.value = "paintBrush";
+        activeTool.value = "select";
     }
 
     function toggleTransparentBackground() {
@@ -656,10 +581,6 @@
     gap: 10px;
 }
 
-.tool-setting--brush {
-    grid-template-columns: max-content minmax(120px, 1fr) 58px auto;
-}
-
 .tool-setting__label,
 .tool-setting__value {
     color: var(--vp-c-text-2);
@@ -677,27 +598,6 @@
     border-radius: 4px;
     background: var(--vp-c-bg-soft);
     color: var(--vp-c-text-1);
-}
-
-.tool-color {
-    display: inline-grid;
-    grid-template-columns: auto 28px;
-    gap: 8px;
-    align-items: center;
-    color: var(--vp-c-text-2);
-    font-size: 12px;
-    font-weight: 650;
-    white-space: nowrap;
-}
-
-.tool-color input {
-    width: 28px;
-    height: 28px;
-    padding: 0;
-    border: 1px solid var(--vp-c-divider);
-    border-radius: 4px;
-    background: transparent;
-    cursor: pointer;
 }
 
 .tool-slider {
@@ -774,10 +674,6 @@
     }
 
     .tool-setting {
-        grid-template-columns: 1fr;
-    }
-
-    .tool-setting--brush {
         grid-template-columns: 1fr;
     }
 

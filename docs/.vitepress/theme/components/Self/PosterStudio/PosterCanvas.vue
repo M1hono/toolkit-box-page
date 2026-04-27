@@ -14,11 +14,7 @@
                 :config="stageConfig"
                 class="konva-stage"
                 @mousedown="handleStagePointer"
-                @mouseup="stopToolStroke"
-                @mouseleave="stopToolStroke"
                 @touchstart="handleStagePointer"
-                @touchend="stopToolStroke"
-                @touchcancel="stopToolStroke"
             >
                 <v-layer>
                     <v-group :config="viewportConfig">
@@ -36,10 +32,6 @@
                                 :config="imageConfig(layer)"
                                 @click="handleLayerClick(layer.id, $event)"
                                 @tap="handleLayerClick(layer.id, $event)"
-                                @mousedown="handleLayerPointerStart(layer.id, $event)"
-                                @touchstart="handleLayerPointerStart(layer.id, $event)"
-                                @mousemove="handleToolDrag(layer.id, $event)"
-                                @touchmove="handleToolDrag(layer.id, $event)"
                                 @dragstart="handleImageDragStart(layer.id, $event)"
                                 @dragend="handleDragEnd(layer.id, $event)"
                                 @transformend="handleTransformEnd(layer.id)"
@@ -119,16 +111,13 @@
         PosterTextLayer,
     } from "../../../../utils/posterStudio/types";
 
-    type PosterCanvasTool = "select" | "paintBrush" | "magicWand" | "pixelEraser";
+    type PosterCanvasTool = "select" | "magicWand";
     type RasterLayer = PosterImageLayer | PosterFrameLayer | PosterIconLayer;
 
     const props = defineProps<{
         document: PosterDocument;
         selectedLayerId?: string;
         activeTool: PosterCanvasTool;
-        brushSize: number;
-        brushColor: string;
-        eraserSize: number;
         wandTolerance: number;
     }>();
     const { t } = useSafeI18n("poster-studio-canvas", {
@@ -144,8 +133,6 @@
     const boardRef = ref<HTMLElement>();
     const canvasScale = ref(1);
     let resizeObserver: ResizeObserver | undefined;
-    const isDrawing = ref(false);
-    const drawingLayerId = ref<string>();
     const layerNodes = new Map<string, any>();
     const imageElements = reactive<Record<string, HTMLImageElement>>({});
     const imageHitCanvases = new Map<string, HTMLCanvasElement>();
@@ -306,7 +293,6 @@
 
     function handleStagePointer(event: any) {
         if (event.target === event.target.getStage()) {
-            stopToolStroke();
             emit("update:selectedLayerId", undefined);
         }
     }
@@ -326,77 +312,12 @@
             return;
         }
 
-        if (props.activeTool === "paintBrush" || props.activeTool === "pixelEraser") {
-            return;
-        }
-
         if (isImageLikeLayer(layer) && getImagePixelAlpha(id, event) <= 8) {
             emit("update:selectedLayerId", findLayerAtPointer(id));
             return;
         }
 
         selectLayer(id);
-    }
-
-    function handleLayerPointerStart(id: string, event: any) {
-        event.cancelBubble = true;
-
-        const layer = props.document.layers.find((item) => item.id === id);
-
-        if (!layer || layer.locked || !isImageLikeLayer(layer)) {
-            return;
-        }
-
-        if (props.activeTool === "paintBrush") {
-            startToolStroke(id);
-            paintImageLayerAtPointer(id, event);
-            return;
-        }
-
-        if (props.activeTool === "pixelEraser") {
-            startToolStroke(id);
-            eraseImageLayerAtPointer(id, event);
-        }
-    }
-
-    function startToolStroke(id: string) {
-        isDrawing.value = true;
-        drawingLayerId.value = id;
-    }
-
-    function stopToolStroke() {
-        isDrawing.value = false;
-        drawingLayerId.value = undefined;
-    }
-
-    function handleToolDrag(id: string, event: any) {
-        if (!isDrawing.value || drawingLayerId.value !== id || !isPointerStillPressed(event)) {
-            return;
-        }
-
-        if (props.activeTool === "paintBrush") {
-            paintImageLayerAtPointer(id, event);
-            return;
-        }
-
-        if (props.activeTool === "pixelEraser") {
-            eraseImageLayerAtPointer(id, event);
-        }
-    }
-
-    function isPointerStillPressed(event: any) {
-        const sourceEvent = event.evt;
-
-        if (
-            typeof MouseEvent !== "undefined" &&
-            sourceEvent instanceof MouseEvent &&
-            sourceEvent.buttons === 0
-        ) {
-            stopToolStroke();
-            return false;
-        }
-
-        return true;
     }
 
     function handleImageDragStart(id: string, event: any) {
@@ -594,49 +515,6 @@
         }
 
         return undefined;
-    }
-
-    function paintImageLayerAtPointer(id: string, event: any) {
-        const layer = props.document.layers.find((item) => item.id === id);
-        const sample = getImageSample(id, event);
-
-        if (!layer || layer.locked || !sample) {
-            return;
-        }
-
-        const brushSize = Math.max(1, Math.round(props.brushSize));
-        sample.context.save();
-        sample.context.globalCompositeOperation = "source-over";
-        sample.context.fillStyle = props.brushColor;
-        sample.context.imageSmoothingEnabled = false;
-        const halfBrush = Math.floor(brushSize / 2);
-        sample.context.fillRect(
-            sample.x - halfBrush,
-            sample.y - halfBrush,
-            brushSize,
-            brushSize,
-        );
-        sample.context.restore();
-        updateRasterLayerFromCanvas(id, sample.canvas);
-    }
-
-    function eraseImageLayerAtPointer(id: string, event: any) {
-        const layer = props.document.layers.find((item) => item.id === id);
-        const sample = getImageSample(id, event);
-
-        if (!layer || layer.locked || !sample) {
-            return;
-        }
-
-        const brushSize = Math.max(1, Math.round(props.eraserSize));
-        const halfBrush = Math.floor(brushSize / 2);
-        sample.context.clearRect(
-            sample.x - halfBrush,
-            sample.y - halfBrush,
-            brushSize,
-            brushSize,
-        );
-        updateRasterLayerFromCanvas(id, sample.canvas);
     }
 
     function applyMagicWandErase(id: string, event: any) {
@@ -955,11 +833,6 @@
         createCheckerPattern();
         updateCanvasScale();
 
-        window.addEventListener("mouseup", stopToolStroke);
-        window.addEventListener("touchend", stopToolStroke);
-        window.addEventListener("touchcancel", stopToolStroke);
-        window.addEventListener("blur", stopToolStroke);
-
         if (typeof ResizeObserver !== "undefined" && boardRef.value) {
             resizeObserver = new ResizeObserver(updateCanvasScale);
             resizeObserver.observe(boardRef.value);
@@ -967,10 +840,6 @@
     });
 
     onBeforeUnmount(() => {
-        window.removeEventListener("mouseup", stopToolStroke);
-        window.removeEventListener("touchend", stopToolStroke);
-        window.removeEventListener("touchcancel", stopToolStroke);
-        window.removeEventListener("blur", stopToolStroke);
         resizeObserver?.disconnect();
     });
 

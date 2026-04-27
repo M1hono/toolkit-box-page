@@ -96,20 +96,21 @@ test("PosterPropertiesPanel exposes raster effect presets", () => {
     assert.match(source, /updateEffectParam/);
 });
 
-test("PosterStudioApp renders the bottom editor tool dock", () => {
+test("PosterStudioApp renders the bottom editor tool dock without brush or eraser", () => {
     const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
 
     assert.match(source, /class="tool-dock"/);
     assert.match(source, /v-model="activeTool"/);
     assert.match(source, /mdi-auto-fix/);
-    assert.match(source, /mdi-eraser/);
-    assert.match(source, /mdi-brush/);
     assert.match(source, /:active-tool="activeTool"/);
-    assert.match(source, /activeTool === 'pixelEraser'/);
     assert.match(source, /activeTool === 'magicWand'/);
-    assert.match(source, /activeTool === 'paintBrush'/);
-    assert.match(source, /:aria-pressed="activeTool === 'paintBrush'"/);
     assert.match(source, /selectHint/);
+    assert.doesNotMatch(source, /mdi-eraser/);
+    assert.doesNotMatch(source, /mdi-brush/);
+    assert.doesNotMatch(source, /paintBrush/);
+    assert.doesNotMatch(source, /pixelEraser/);
+    assert.doesNotMatch(source, /brushSize/);
+    assert.doesNotMatch(source, /eraserSize/);
 });
 
 test("PosterStudioApp gives Vuetify sliders visible dark theme contrast", () => {
