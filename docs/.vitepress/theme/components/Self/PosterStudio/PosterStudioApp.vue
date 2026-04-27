@@ -505,8 +505,24 @@
 
 <style scoped>
 .poster-studio-app {
+    --poster-slider-fill: #2f6fed;
+    --poster-slider-thumb: #ffffff;
+    --poster-slider-thumb-border: #2f6fed;
+    --poster-slider-thumb-shadow: 0 0 0 1px rgba(47, 111, 237, 0.18),
+        0 2px 6px rgba(15, 23, 42, 0.22);
+    --poster-slider-track: rgba(31, 41, 55, 0.18);
+
     min-height: 100vh;
     background: var(--vp-c-bg);
+}
+
+:global(html.dark .poster-studio-app) {
+    --poster-slider-fill: #8fb7ff;
+    --poster-slider-thumb: #dbe8ff;
+    --poster-slider-thumb-border: #8fb7ff;
+    --poster-slider-thumb-shadow: 0 0 0 2px rgba(143, 183, 255, 0.3),
+        0 2px 8px rgba(0, 0, 0, 0.55);
+    --poster-slider-track: rgba(220, 229, 246, 0.32);
 }
 
 .poster-shell {
@@ -686,6 +702,30 @@
 
 .tool-slider {
     min-width: 0;
+}
+
+.poster-studio-app :deep(.v-slider-track__background) {
+    height: 6px !important;
+    border-radius: 999px;
+    background-color: var(--poster-slider-track) !important;
+    opacity: 1 !important;
+}
+
+.poster-studio-app :deep(.v-slider-track__fill) {
+    height: 6px !important;
+    border-radius: 999px;
+    background-color: var(--poster-slider-fill) !important;
+    opacity: 1 !important;
+}
+
+.poster-studio-app :deep(.v-slider-thumb__surface) {
+    border: 2px solid var(--poster-slider-thumb-border) !important;
+    background-color: var(--poster-slider-thumb) !important;
+    box-shadow: var(--poster-slider-thumb-shadow) !important;
+}
+
+.poster-studio-app :deep(.v-slider-thumb__surface::before) {
+    background: transparent !important;
 }
 
 :deep(.v-card),

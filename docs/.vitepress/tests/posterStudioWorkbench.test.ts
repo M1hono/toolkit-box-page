@@ -112,6 +112,15 @@ test("PosterStudioApp renders the bottom editor tool dock", () => {
     assert.match(source, /selectHint/);
 });
 
+test("PosterStudioApp gives Vuetify sliders visible dark theme contrast", () => {
+    const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
+
+    assert.match(source, /--poster-slider-track/);
+    assert.match(source, /:global\(html\.dark \.poster-studio-app\)/);
+    assert.match(source, /v-slider-track__fill/);
+    assert.match(source, /v-slider-thumb__surface/);
+});
+
 test("PosterStudioApp wires blank layer and transparent background commands", () => {
     const source = readFileSync(path.join(componentRoot, "PosterStudioApp.vue"), "utf8");
 
