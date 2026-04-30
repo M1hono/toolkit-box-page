@@ -2128,6 +2128,20 @@
     ]
   },
   {
+    "id": 305800,
+    "name": "阿育王",
+    "originalName": "阿育王",
+    "ruby": "阿育王",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "阿育王",
+      "阿育王",
+      "阿育王",
+      "lancer"
+    ]
+  },
+  {
     "id": 400100,
     "name": "歌果",
     "originalName": "歌果",
@@ -4718,6 +4732,20 @@
     ]
   },
   {
+    "id": 705100,
+    "name": "莉莉丝",
+    "originalName": "莉莉丝",
+    "ruby": "莉莉丝",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "莉莉丝",
+      "莉莉丝",
+      "莉莉丝",
+      "berserker"
+    ]
+  },
+  {
     "id": 800100,
     "name": "玛修·基列莱特",
     "originalName": "玛修·基列莱特",
@@ -4966,6 +4994,20 @@
       "上杉谦信",
       "上杉谦信",
       "上杉谦信",
+      "ruler"
+    ]
+  },
+  {
+    "id": 901900,
+    "name": "梅塔特隆·贞德",
+    "originalName": "梅塔特隆·贞德",
+    "ruby": "梅塔特隆·贞德",
+    "className": "ruler",
+    "rarity": 5,
+    "searchTerms": [
+      "梅塔特隆·贞德",
+      "梅塔特隆·贞德",
+      "梅塔特隆·贞德",
       "ruler"
     ]
   },

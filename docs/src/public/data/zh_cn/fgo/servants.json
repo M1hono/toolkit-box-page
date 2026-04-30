@@ -13134,6 +13134,56 @@
       }
     }
   },
+  "305800": {
+    "id": 305800,
+    "collectionNo": 439,
+    "name": "阿育王",
+    "ruby": "阿育王",
+    "className": "lancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3058000/3058000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3058001/3058001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3058002/3058002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "3058000": {
+          "id": 3058000,
+          "faceX": 910,
+          "faceY": 141,
+          "scale": 1
+        },
+        "3058001": {
+          "id": 3058001,
+          "faceX": 857,
+          "faceY": 114,
+          "scale": 1
+        },
+        "3058002": {
+          "id": 3058002,
+          "faceX": 942,
+          "faceY": 123,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3058000/3058000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3058001/3058001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3058002/3058002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "400100": {
     "id": 400100,
     "collectionNo": 23,
@@ -29737,6 +29787,56 @@
       }
     }
   },
+  "705100": {
+    "id": 705100,
+    "collectionNo": 440,
+    "name": "莉莉丝",
+    "ruby": "莉莉丝",
+    "className": "berserker",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/7051000/7051000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/7051001/7051001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/7051002/7051002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "7051000": {
+          "id": 7051000,
+          "faceX": 879,
+          "faceY": 216,
+          "scale": 1
+        },
+        "7051001": {
+          "id": 7051001,
+          "faceX": 879,
+          "faceY": 216,
+          "scale": 1
+        },
+        "7051002": {
+          "id": 7051002,
+          "faceX": 938,
+          "faceY": 155,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/7051000/7051000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/7051001/7051001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/7051002/7051002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "800100": {
     "id": 800100,
     "collectionNo": 1,
@@ -32102,6 +32202,56 @@
           "1098285410": "https://static.atlasacademy.io/CN/CharaFigure/1098285410/1098285410_merged.png",
           "1098285420": "https://static.atlasacademy.io/CN/CharaFigure/1098285420/1098285420_merged.png"
         }
+      }
+    }
+  },
+  "901900": {
+    "id": 901900,
+    "collectionNo": 438,
+    "name": "梅塔特隆·贞德",
+    "ruby": "梅塔特隆·贞德",
+    "className": "ruler",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/9019000/9019000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/9019001/9019001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/9019002/9019002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "9019000": {
+          "id": 9019000,
+          "faceX": 367,
+          "faceY": 157,
+          "scale": 1
+        },
+        "9019001": {
+          "id": 9019001,
+          "faceX": 979,
+          "faceY": 202,
+          "scale": 1
+        },
+        "9019002": {
+          "id": 9019002,
+          "faceX": 892,
+          "faceY": 160,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/9019000/9019000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/9019001/9019001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/9019002/9019002_merged.png"
+        },
+        "costume": {},
+        "story": {}
       }
     }
   },
