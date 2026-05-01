@@ -852,5 +852,30 @@
     "status": "uploaded",
     "timestamp": 1775525775017,
     "charId": "char_1502_crosly"
+  },
+  "arknights/avatars/char_4228_closur.png": {
+    "status": "skipped",
+    "timestamp": 1777601864161,
+    "reason": "404"
+  },
+  "arknights/avatars/char_349_chiave.png": {
+    "status": "uploaded",
+    "timestamp": 1777601865779,
+    "charId": "char_349_chiave"
+  },
+  "arknights/avatars/char_1021_kroos2.png": {
+    "status": "uploaded",
+    "timestamp": 1777601865866,
+    "charId": "char_1021_kroos2"
+  },
+  "arknights/avatars/char_356_broca.png": {
+    "status": "uploaded",
+    "timestamp": 1777601865882,
+    "charId": "char_356_broca"
+  },
+  "arknights/avatars/char_610_acfend.png": {
+    "status": "uploaded",
+    "timestamp": 1777601865886,
+    "charId": "char_610_acfend"
   }
 }
