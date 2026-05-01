@@ -2063,6 +2063,7 @@
     "activities/act23side/level_act23side_06_end.txt",
     "activities/act23side/level_act23side_07_beg.txt",
     "activities/act23side/level_act23side_07_end.txt",
+    "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_st02.txt"
   ],
   "avg_npc_300_1": [
@@ -2333,6 +2334,7 @@
     "activities/act23side/level_act23side_02_beg.txt",
     "activities/act23side/level_act23side_02_end.txt",
     "activities/act23side/level_act23side_05_beg.txt",
+    "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_st01.txt",
     "activities/act30side/level_act30side_02_end.txt",
     "activities/act32side/level_act32side_02_end.txt",
@@ -4155,6 +4157,7 @@
     "activities/act23side/level_act23side_06_end.txt",
     "activities/act23side/level_act23side_07_beg.txt",
     "activities/act23side/level_act23side_07_end.txt",
+    "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_09_end.txt",
     "activities/act23side/level_act23side_st01.txt",
     "activities/act23side/level_act23side_st02.txt",
@@ -4245,6 +4248,7 @@
     "activities/act16d5/level_act16d5_st02.txt",
     "activities/act19mini/level_act19mini_st03.txt",
     "activities/act19mini/level_act19mini_st05.txt",
+    "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_st01.txt",
     "activities/act31side/level_act31side_05_end.txt",
     "activities/act31side/level_act31side_st03.txt",
@@ -4463,13 +4467,15 @@
     "activities/act13mini/level_act13mini_st06.txt",
     "obt/main/level_main_15-12_end.txt",
     "obt/main/level_main_15-13_beg.txt",
+    "obt/memory/story_closur_1_1.txt",
     "obt/memory/story_therex_1_1.txt"
   ],
   "avg_286_cast3_1": [
     "activities/act13mini/level_act13mini_st06.txt",
     "obt/main/level_main_15-12_end.txt",
     "obt/main/level_main_15-13_beg.txt",
-    "obt/memory/story_cast3_1_1.txt"
+    "obt/memory/story_cast3_1_1.txt",
+    "obt/memory/story_closur_1_1.txt"
   ],
   "avg_npc_212_1": [
     "activities/act13side/level_act13side_01_beg.txt",
@@ -9559,6 +9565,7 @@
     "activities/act23side/level_act23side_03_end.txt",
     "activities/act23side/level_act23side_04_beg.txt",
     "activities/act23side/level_act23side_04_end.txt",
+    "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_08_end.txt",
     "activities/act23side/level_act23side_st01.txt",
     "obt/memory/story_bdhkgt_1_1.txt"
@@ -9573,6 +9580,7 @@
     "activities/act23side/level_act23side_04_end.txt",
     "activities/act23side/level_act23side_07_beg.txt",
     "activities/act23side/level_act23side_07_end.txt",
+    "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_08_end.txt",
     "activities/act23side/level_act23side_09_end.txt",
     "activities/act23side/level_act23side_st01.txt",
@@ -17193,6 +17201,7 @@
   ],
   "avg_171_bldsk_1": [
     "obt/main/level_main_10-04_end.txt",
+    "obt/main/level_main_15-02_beg.txt",
     "obt/main/level_main_15-04_beg.txt",
     "obt/main/level_main_15-10_end.txt",
     "obt/main/level_main_15-12_end.txt",
@@ -17555,6 +17564,8 @@
     "obt/main/level_main_15-06_beg.txt",
     "obt/main/level_main_15-06_end.txt",
     "obt/main/level_main_15-07_beg.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/main/level_main_tr28_end.txt",
     "obt/main/level_st_14-03.txt",
     "obt/memory/story_cetsyr_1_1.txt"
   ],
@@ -17580,12 +17591,23 @@
     "obt/main/level_main_16-16_beg.txt",
     "obt/main/level_main_16-17_beg.txt",
     "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-09_end.txt",
+    "obt/main/level_main_17-11_end.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_tr28_end.txt",
     "obt/main/level_st_16-01.txt",
-    "obt/main/level_st_16-02.txt"
+    "obt/main/level_st_16-02.txt",
+    "obt/main/level_st_17-03.txt",
+    "obt/main/level_st_17-04.txt"
   ],
   "avg_npc_1973_1": [
     "obt/main/level_main_16-01_beg.txt",
-    "obt/main/level_main_16-16_beg.txt"
+    "obt/main/level_main_16-16_beg.txt",
+    "obt/main/level_main_17-01_beg.txt"
   ],
   "avg_npc_1972_1": [
     "obt/main/level_main_16-01_beg.txt",
@@ -17601,6 +17623,10 @@
     "obt/main/level_main_16-16_beg.txt",
     "obt/main/level_main_16-17_beg.txt",
     "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_tr28_end.txt",
+    "obt/main/level_st_17-03.txt",
     "obt/memory/story_branch_1_1.txt"
   ],
   "avg_npc_1964_1": [
@@ -17633,8 +17659,16 @@
     "obt/main/level_main_16-16_beg.txt",
     "obt/main/level_main_16-17_beg.txt",
     "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-11_end.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt",
     "obt/main/level_spst_16-02.txt",
-    "obt/main/level_spst_16-04.txt"
+    "obt/main/level_spst_16-04.txt",
+    "obt/main/level_st_17-02.txt"
   ],
   "avg_npc_1967_1": [
     "obt/main/level_main_16-03_beg.txt",
@@ -17657,7 +17691,9 @@
   "avg_npc_1962_1": [
     "obt/main/level_main_16-04_beg.txt",
     "obt/main/level_main_16-15_beg.txt",
-    "obt/main/level_main_16-17_beg.txt"
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_17-09_end.txt",
+    "obt/main/level_st_17-02.txt"
   ],
   "avg_npc_1970_1": [
     "obt/main/level_main_16-04_end.txt",
@@ -17669,8 +17705,12 @@
     "obt/main/level_main_16-16_beg.txt",
     "obt/main/level_main_16-17_beg.txt",
     "obt/main/level_main_16-18_end.txt",
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-07_end.txt",
     "obt/main/level_spst_16-01.txt",
-    "obt/main/level_spst_16-02.txt"
+    "obt/main/level_spst_16-02.txt",
+    "obt/main/level_st_17-01.txt"
   ],
   "avg_4204_mantra_1": [
     "obt/main/level_main_16-04_end.txt",
@@ -17699,10 +17739,17 @@
     "obt/main/level_main_16-18_end.txt"
   ],
   "avg_npc_1974_1": [
-    "obt/main/level_main_16-07_beg.txt"
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-14_beg.txt"
   ],
   "avg_npc_1975_1": [
-    "obt/main/level_main_16-07_beg.txt"
+    "obt/main/level_main_16-07_beg.txt",
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_st_17-01.txt"
   ],
   "avg_npc_1977_1": [
     "activities/act51side/level_act51side_08_beg.txt",
@@ -17711,7 +17758,8 @@
     "obt/main/level_spst_16-03.txt"
   ],
   "avg_npc_1965_1": [
-    "obt/main/level_main_16-17_beg.txt"
+    "obt/main/level_main_16-17_beg.txt",
+    "obt/main/level_main_17-09_end.txt"
   ],
   "avg_npc_058_2": [
     "obt/main/level_spst_08-02.txt"
@@ -17725,14 +17773,32 @@
     "obt/main/level_spst_16-01.txt"
   ],
   "avg_npc_1983_1": [
-    "obt/main/level_spst_16-01.txt"
+    "obt/main/level_spst_16-01.txt",
+    "obt/main/level_st_17-04.txt"
   ],
   "avg_npc_1978_1": [
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_main_tr28_end.txt",
     "obt/main/level_spst_16-02.txt",
     "obt/main/level_spst_16-03.txt"
   ],
   "avg_npc_1976_1": [
+    "obt/main/level_main_17-01_beg.txt",
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/main/level_main_17-17_end.txt",
     "obt/main/level_spst_16-03.txt",
+    "obt/main/level_st_17-01.txt",
+    "obt/main/level_st_17-02.txt",
+    "obt/main/level_st_17-04.txt",
     "obt/memory/story_botany_1_1.txt",
     "obt/memory/story_mantra_1_1.txt",
     "obt/memory/story_wintim_1_1.txt"
@@ -17755,7 +17821,8 @@
     "obt/main/level_st_13-02.txt"
   ],
   "avg_npc_1334_1": [
-    "obt/main/level_st_14-02.txt"
+    "obt/main/level_st_14-02.txt",
+    "obt/memory/story_closur_1_1.txt"
   ],
   "avg_npc_1344_1": [
     "obt/main/level_st_14-02.txt"
@@ -17770,6 +17837,7 @@
     "obt/memory/story_nymph_1_1.txt"
   ],
   "avg_npc_1731_1": [
+    "obt/main/level_main_17-06_beg.txt",
     "obt/main/level_st_15-03.txt"
   ],
   "avg_npc_1982_1": [
@@ -18837,5 +18905,241 @@
   ],
   "avg_npc_2185_1": [
     "activities/act51side/level_act51side_st02.txt"
+  ],
+  "avg_npc_2236_1": [
+    "obt/main/level_main_17-01_beg.txt",
+    "obt/main/level_main_17-03_end.txt"
+  ],
+  "avg_npc_2235_1": [
+    "obt/main/level_main_17-01_beg.txt",
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_st_17-03.txt"
+  ],
+  "avg_npc_2231_1": [
+    "obt/main/level_main_17-01_beg.txt",
+    "obt/main/level_main_tr28_end.txt",
+    "obt/main/level_st_17-03.txt"
+  ],
+  "avg_npc_2245_1": [
+    "obt/main/level_main_17-01_beg.txt"
+  ],
+  "avg_npc_2169_1": [
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-09_end.txt",
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_st_17-01.txt"
+  ],
+  "avg_4228_closur_1": [
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-09_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-11_end.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_main_tr28_end.txt",
+    "obt/main/level_st_17-02.txt",
+    "obt/memory/story_closur_1_1.txt"
+  ],
+  "avg_188_helage_1": [
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-09_end.txt",
+    "obt/main/level_main_tr28_end.txt",
+    "obt/main/level_st_17-01.txt",
+    "obt/main/level_st_17-03.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2246_1": [
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_main_tr28_end.txt",
+    "obt/main/level_st_17-03.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2259_1": [
+    "obt/main/level_main_17-02_beg.txt"
+  ],
+  "avg_npc_2260_1": [
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2228_1": [
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-15_beg.txt"
+  ],
+  "avg_npc_2249_1": [
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/main/level_main_17-17_end.txt"
+  ],
+  "avg_4226_veen_1": [
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_st_17-02.txt",
+    "obt/main/level_st_17-03.txt"
+  ],
+  "avg_npc_2232_1": [
+    "obt/main/level_main_17-03_end.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-10_beg.txt"
+  ],
+  "avg_4225_tanya_1": [
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-11_end.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt"
+  ],
+  "avg_npc_2225_1": [
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-11_end.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_st_17-02.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2223_1": [
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-10_beg.txt"
+  ],
+  "avg_npc_2227_1": [
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-15_beg.txt"
+  ],
+  "avg_npc_2248_1": [
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2238_1": [
+    "obt/main/level_main_17-06_beg.txt"
+  ],
+  "avg_npc_2226_1": [
+    "obt/main/level_main_17-06_beg.txt"
+  ],
+  "avg_npc_2222_1": [
+    "obt/main/level_main_17-06_beg.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-10_beg.txt"
+  ],
+  "avg_npc_2247_1": [
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-11_end.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_st_17-02.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2239_1": [
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-15_beg.txt"
+  ],
+  "avg_npc_2240_1": [
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_main_17-15_beg.txt"
+  ],
+  "avg_npc_2241_1": [
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt"
+  ],
+  "avg_npc_2229_1": [
+    "obt/main/level_main_17-08_beg.txt",
+    "obt/main/level_main_17-11_end.txt"
+  ],
+  "avg_npc_2230_1": [
+    "obt/main/level_main_17-09_end.txt",
+    "obt/main/level_st_17-02.txt"
+  ],
+  "avg_npc_2243_1": [
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-14_beg.txt"
+  ],
+  "avg_npc_2242_1": [
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_main_17-15_beg.txt",
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_st_17-02.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2258_1": [
+    "obt/main/level_main_17-17_beg.txt"
+  ],
+  "avg_npc_2244_1": [
+    "obt/main/level_main_17-17_end.txt"
+  ],
+  "avg_npc_2237_1": [
+    "obt/main/level_main_17-17_end.txt",
+    "obt/main/level_st_17-02.txt"
+  ],
+  "avg_npc_2224_1": [
+    "obt/main/level_st_17-01.txt"
+  ],
+  "avg_1052_kalts2_1": [
+    "obt/main/level_st_17-02.txt",
+    "obt/main/level_st_17-04.txt"
+  ],
+  "avg_npc_2233_1": [
+    "obt/main/level_st_17-02.txt"
+  ],
+  "avg_npc_2234_1": [
+    "obt/main/level_st_17-02.txt"
+  ],
+  "avg_394_hadiya_1": [
+    "obt/memory/story_hadiya_1_1.txt"
   ]
 }

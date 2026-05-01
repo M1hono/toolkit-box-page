@@ -21562,5 +21562,309 @@
     ],
     "charType": "npc",
     "dialogCount": 0
+  },
+  "avg_npc_2236_1": {
+    "charId": "avg_npc_2236_1",
+    "validVariants": [
+      "avg_npc_2236_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2235_1": {
+    "charId": "avg_npc_2235_1",
+    "validVariants": [
+      "avg_npc_2235_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2231_1": {
+    "charId": "avg_npc_2231_1",
+    "validVariants": [
+      "avg_npc_2231_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2245_1": {
+    "charId": "avg_npc_2245_1",
+    "validVariants": [
+      "avg_npc_2245_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2169_1": {
+    "charId": "avg_npc_2169_1",
+    "validVariants": [
+      "avg_npc_2169_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4228_closur_1": {
+    "charId": "avg_4228_closur_1",
+    "validVariants": [
+      "avg_4228_closur_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_188_helage_1": {
+    "charId": "avg_188_helage_1",
+    "validVariants": [
+      "avg_188_helage_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2246_1": {
+    "charId": "avg_npc_2246_1",
+    "validVariants": [
+      "avg_npc_2246_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2259_1": {
+    "charId": "avg_npc_2259_1",
+    "validVariants": [
+      "avg_npc_2259_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2260_1": {
+    "charId": "avg_npc_2260_1",
+    "validVariants": [
+      "avg_npc_2260_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2228_1": {
+    "charId": "avg_npc_2228_1",
+    "validVariants": [
+      "avg_npc_2228_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2249_1": {
+    "charId": "avg_npc_2249_1",
+    "validVariants": [
+      "avg_npc_2249_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4226_veen_1": {
+    "charId": "avg_4226_veen_1",
+    "validVariants": [
+      "avg_4226_veen_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2232_1": {
+    "charId": "avg_npc_2232_1",
+    "validVariants": [
+      "avg_npc_2232_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4225_tanya_1": {
+    "charId": "avg_4225_tanya_1",
+    "validVariants": [
+      "avg_4225_tanya_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2225_1": {
+    "charId": "avg_npc_2225_1",
+    "validVariants": [
+      "avg_npc_2225_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2223_1": {
+    "charId": "avg_npc_2223_1",
+    "validVariants": [
+      "avg_npc_2223_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2227_1": {
+    "charId": "avg_npc_2227_1",
+    "validVariants": [
+      "avg_npc_2227_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2248_1": {
+    "charId": "avg_npc_2248_1",
+    "validVariants": [
+      "avg_npc_2248_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2238_1": {
+    "charId": "avg_npc_2238_1",
+    "validVariants": [
+      "avg_npc_2238_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2226_1": {
+    "charId": "avg_npc_2226_1",
+    "validVariants": [
+      "avg_npc_2226_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2222_1": {
+    "charId": "avg_npc_2222_1",
+    "validVariants": [
+      "avg_npc_2222_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2247_1": {
+    "charId": "avg_npc_2247_1",
+    "validVariants": [
+      "avg_npc_2247_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2239_1": {
+    "charId": "avg_npc_2239_1",
+    "validVariants": [
+      "avg_npc_2239_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2240_1": {
+    "charId": "avg_npc_2240_1",
+    "validVariants": [
+      "avg_npc_2240_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2241_1": {
+    "charId": "avg_npc_2241_1",
+    "validVariants": [
+      "avg_npc_2241_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2229_1": {
+    "charId": "avg_npc_2229_1",
+    "validVariants": [
+      "avg_npc_2229_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2230_1": {
+    "charId": "avg_npc_2230_1",
+    "validVariants": [
+      "avg_npc_2230_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2243_1": {
+    "charId": "avg_npc_2243_1",
+    "validVariants": [
+      "avg_npc_2243_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2242_1": {
+    "charId": "avg_npc_2242_1",
+    "validVariants": [
+      "avg_npc_2242_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2258_1": {
+    "charId": "avg_npc_2258_1",
+    "validVariants": [
+      "avg_npc_2258_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2244_1": {
+    "charId": "avg_npc_2244_1",
+    "validVariants": [
+      "avg_npc_2244_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2237_1": {
+    "charId": "avg_npc_2237_1",
+    "validVariants": [
+      "avg_npc_2237_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2224_1": {
+    "charId": "avg_npc_2224_1",
+    "validVariants": [
+      "avg_npc_2224_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_1052_kalts2_1": {
+    "charId": "avg_1052_kalts2_1",
+    "validVariants": [
+      "avg_1052_kalts2_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2233_1": {
+    "charId": "avg_npc_2233_1",
+    "validVariants": [
+      "avg_npc_2233_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2234_1": {
+    "charId": "avg_npc_2234_1",
+    "validVariants": [
+      "avg_npc_2234_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_394_hadiya_1": {
+    "charId": "avg_394_hadiya_1",
+    "validVariants": [
+      "avg_394_hadiya_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
   }
 }
