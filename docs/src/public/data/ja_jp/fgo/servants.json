@@ -4622,7 +4622,7 @@
         "1061001": {
           "id": 1061001,
           "faceX": 388,
-          "faceY": 170,
+          "faceY": 162,
           "scale": 1
         },
         "1061002": {
@@ -37179,6 +37179,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/11019000/11019000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/11019001/11019001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/11019002/11019002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "1102000": {
+    "id": 1102000,
+    "collectionNo": 469,
+    "name": "ジョン・ラックランド",
+    "ruby": "ジョン・ラックランド",
+    "className": "avenger",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/11020000/11020000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/11020001/11020001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/11020002/11020002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "11020000": {
+          "id": 11020000,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "11020001": {
+          "id": 11020001,
+          "faceX": 367,
+          "faceY": 168,
+          "scale": 1
+        },
+        "11020002": {
+          "id": 11020002,
+          "faceX": 947,
+          "faceY": 151,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/11020000/11020000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/11020001/11020001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/11020002/11020002_merged.png"
         },
         "costume": {},
         "story": {}
