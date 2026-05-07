@@ -439,8 +439,10 @@
      * @description Copy the full image to clipboard without cropping
      */
     async function copyFullImageToClipboard() {
-        if (!workspaceCanvas.value || !selectedCharacter.value) return;
-        await copyFullArea(workspaceCanvas.value, backgroundColor.value);
+        if (!selectedCharacter.value || diffImages.value.length === 0) return;
+        const cleanImage = diffImages.value[currentDiffIndex.value];
+        if (!cleanImage) return;
+        await copyFullArea(cleanImage, backgroundColor.value);
     }
 
     async function handleBatchConfirm(type: "cropped" | "full") {

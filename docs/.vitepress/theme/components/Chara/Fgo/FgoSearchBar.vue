@@ -125,8 +125,8 @@
     const fileInputRef = ref<HTMLInputElement | null>(null);
 
     const currentRegion = computed(() => {
-        if (lang.value === "zh-CN" || lang.value === "root") return "CN";
-        if (lang.value === "ja-JP") return "JP";
+        if (lang.value === "zh-CN" || lang.value === "zh") return "CN";
+        if (lang.value === "ja-JP" || lang.value === "ja") return "JP";
         return "NA";
     });
 
