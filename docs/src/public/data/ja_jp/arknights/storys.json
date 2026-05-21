@@ -17429,5 +17429,195 @@
   ],
   "avg_npc_2050_1": [
     "obt/memory/story_lava2_1_1.txt"
+  ],
+  "avg_4212_nasti_1": [
+    "activities/act47side/level_act47side_01_beg.txt",
+    "activities/act47side/level_act47side_01_end.txt",
+    "activities/act47side/level_act47side_02_beg.txt",
+    "activities/act47side/level_act47side_02_end.txt",
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_06_beg.txt",
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_08_end.txt",
+    "activities/act47side/level_act47side_st01.txt",
+    "activities/act47side/level_act47side_st02.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2037_1": [
+    "activities/act47side/level_act47side_01_beg.txt",
+    "activities/act47side/level_act47side_01_end.txt",
+    "activities/act47side/level_act47side_02_beg.txt",
+    "activities/act47side/level_act47side_02_end.txt",
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_06_beg.txt",
+    "activities/act47side/level_act47side_06_end.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st02.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2045_1": [
+    "activities/act47side/level_act47side_01_beg.txt",
+    "activities/act47side/level_act47side_08_end.txt"
+  ],
+  "avg_npc_2039_1": [
+    "activities/act47side/level_act47side_01_beg.txt",
+    "activities/act47side/level_act47side_01_end.txt",
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st01.txt",
+    "activities/act47side/level_act47side_st02.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2044_1": [
+    "activities/act47side/level_act47side_01_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_06_end.txt",
+    "activities/act47side/level_act47side_07_end.txt"
+  ],
+  "avg_npc_2041_1": [
+    "activities/act47side/level_act47side_01_beg.txt",
+    "activities/act47side/level_act47side_01_end.txt",
+    "activities/act47side/level_act47side_02_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2034_1": [
+    "activities/act47side/level_act47side_01_end.txt",
+    "activities/act47side/level_act47side_02_beg.txt",
+    "activities/act47side/level_act47side_02_end.txt",
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_06_end.txt",
+    "activities/act47side/level_act47side_st01.txt",
+    "activities/act47side/level_act47side_st02.txt"
+  ],
+  "avg_4214_cairn_1": [
+    "activities/act47side/level_act47side_02_beg.txt",
+    "activities/act47side/level_act47side_02_end.txt",
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_06_end.txt",
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_08_end.txt",
+    "activities/act47side/level_act47side_st01.txt",
+    "activities/act47side/level_act47side_st02.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2040_1": [
+    "activities/act47side/level_act47side_02_beg.txt",
+    "activities/act47side/level_act47side_03_end.txt",
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_06_end.txt",
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_08_beg.txt"
+  ],
+  "avg_npc_2048_1": [
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_06_beg.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st02.txt"
+  ],
+  "avg_npc_2043_1": [
+    "activities/act47side/level_act47side_03_beg.txt"
+  ],
+  "avg_npc_2052_1": [
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_st02.txt"
+  ],
+  "avg_npc_2035_1": [
+    "activities/act47side/level_act47side_03_beg.txt",
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_06_beg.txt",
+    "activities/act47side/level_act47side_06_end.txt",
+    "activities/act47side/level_act47side_st02.txt"
+  ],
+  "avg_npc_2042_1": [
+    "activities/act47side/level_act47side_04_beg.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st01.txt"
+  ],
+  "avg_npc_2046_1": [
+    "activities/act47side/level_act47side_04_end.txt",
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_06_beg.txt",
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_st02.txt"
+  ],
+  "avg_npc_2038_1": [
+    "activities/act47side/level_act47side_05_beg.txt",
+    "activities/act47side/level_act47side_05_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2032_1": [
+    "activities/act47side/level_act47side_06_beg.txt"
+  ],
+  "avg_npc_2047_1": [
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_08_end.txt"
+  ],
+  "avg_4213_skybx_1": [
+    "activities/act47side/level_act47side_07_beg.txt",
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_npc_2049_1": [
+    "activities/act47side/level_act47side_07_end.txt"
+  ],
+  "avg_npc_2036_1": [
+    "activities/act47side/level_act47side_07_end.txt",
+    "activities/act47side/level_act47side_08_beg.txt",
+    "activities/act47side/level_act47side_08_end.txt"
+  ],
+  "avg_npc_2033_1": [
+    "activities/act47side/level_act47side_st02.txt"
+  ],
+  "avg_npc_2051_1": [
+    "activities/act47side/level_act47side_st03.txt"
+  ],
+  "avg_4023_rfalcn_1": [
+    "obt/memory/story_rfalcn_1_1.txt"
   ]
 }
