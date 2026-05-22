@@ -57,7 +57,10 @@
     "avg_npc_008",
     "avg_npc_284_1"
   ],
-  "Hoodlum B": "avg_npc_008",
+  "Hoodlum B": [
+    "avg_npc_008",
+    "avg_npc_1044_1"
+  ],
   "Bandit Leader": [
     "avg_npc_008",
     "avg_npc_007"
@@ -129,7 +132,10 @@
     "avg_npc_007",
     "avg_npc_305_1"
   ],
-  "Hoodlum A": "avg_npc_007",
+  "Hoodlum A": [
+    "avg_npc_007",
+    "avg_npc_1044_1"
+  ],
   "Knife-Wielding Bandit": "avg_npc_007",
   "Apprehensive Bandit": "avg_npc_007",
   "Vulgar Bandit": "avg_npc_007",
@@ -654,6 +660,7 @@
   "Diner B": "avg_npc_002",
   "Kazimierz Ruffian": "avg_npc_002",
   "Gangster Messenger": "avg_npc_002",
+  "Traveling Merchant": "avg_npc_002",
   "Miners?": "avg_npc_002",
   "Infected Employee": "avg_npc_002",
   "Infected Employees": "avg_npc_002",
@@ -680,7 +687,11 @@
     "avg_npc_416_1",
     "avg_npc_496_1"
   ],
-  "Gordon": "avg_npc_329_1",
+  "Gordon": [
+    "avg_npc_329_1",
+    "avg_npc_2034_1",
+    "avg_4213_skybx_1"
+  ],
   "Wastelander A": "avg_npc_329_1",
   "Loud-Mouthed Man": "avg_npc_195",
   "Boil Brawler": "avg_npc_195",
@@ -746,6 +757,7 @@
     "avg_npc_020",
     "avg_npc_222",
     "avg_npc_277_1",
+    "avg_npc_1041_1",
     "avg_4123_ela_1",
     "avg_npc_1211_1",
     "avg_npc_1847_1",
@@ -853,7 +865,8 @@
   ],
   "Unfamiliar Man": [
     "avg_npc_031",
-    "avg_npc_242"
+    "avg_npc_242",
+    "avg_npc_1000_1"
   ],
   "Fat Kwan": "avg_npc_031",
   "Mafioso F": "avg_npc_031",
@@ -884,7 +897,8 @@
     "avg_npc_034",
     "avg_npc_279_1",
     "avg_npc_495_1",
-    "avg_npc_661_1"
+    "avg_npc_661_1",
+    "avg_npc_2042_1"
   ],
   "Friendly Villager": [
     "avg_npc_092",
@@ -1018,6 +1032,7 @@
     "avg_npc_177",
     "avg_npc_176",
     "avg_npc_165",
+    "avg_npc_164",
     "avg_npc_497_1"
   ],
   "Extremely Serious Councilor": "avg_npc_177",
@@ -1873,6 +1888,7 @@
     "avg_npc_1161_1"
   ],
   "Mysterious Visitor": "avg_npc_222",
+  "Investor": "avg_npc_222",
   "Corporate Employee": [
     "avg_npc_222",
     "avg_npc_109"
@@ -2083,6 +2099,10 @@
   "'Sargonian'": "avg_npc_072",
   "Shy Archosauria": "avg_npc_072",
   "Gentle Villager": "avg_npc_072",
+  "Worried Villager": [
+    "avg_npc_072",
+    "avg_npc_163"
+  ],
   "Zumama": "char_416_zumama_1",
   "Eunectes": [
     "char_416_zumama_1",
@@ -3196,6 +3216,11 @@
     "avg_npc_530_1",
     "avg_npc_529_1"
   ],
+  "Underground Researcher": "avg_npc_530_1",
+  "Rhine Staff": [
+    "avg_npc_530_1",
+    "avg_npc_529_1"
+  ],
   "Rhine Lab Tech B": "avg_npc_530_1",
   "Apprehensive Rhine Lab Tech": "avg_npc_530_1",
   "Ecological Section Researcher A": "avg_npc_530_1",
@@ -3262,12 +3287,18 @@
   "Eikthyrnir": "avg_npc_968_1",
   "Rhine Lab Researcher": [
     "avg_npc_529_1",
-    "avg_npc_2007_1"
+    "avg_npc_2007_1",
+    "avg_npc_2049_1",
+    "avg_npc_2051_1"
   ],
   "Rhine Researcher": "avg_npc_529_1",
-  "Rhine Staff": "avg_npc_529_1",
   "Business Clerk": "avg_npc_529_1",
+  "Veteran Researcher": [
+    "avg_npc_529_1",
+    "avg_4212_nasti_1"
+  ],
   "Rhine Reception": "avg_npc_529_1",
+  "Helen the Secretary": "avg_npc_529_1",
   "Rhine Lab Tech A": "avg_npc_529_1",
   "Ecological Section Researcher B": "avg_npc_529_1",
   "Ecological Section Researcher": "avg_npc_529_1",
@@ -3766,6 +3797,8 @@
   "Doubtful Former Desert Bandit": "avg_npc_165",
   "Fake Liquor Seller": "avg_npc_165",
   "Wary Villager": "avg_npc_165",
+  "Impatient Villager": "avg_npc_165",
+  "Sargonian": "avg_npc_165",
   "Sargonian Janissary": "avg_npc_165",
   "Stoic Sister": "avg_npc_370_1",
   "Panicked Nun": "avg_npc_370_1",
@@ -3832,8 +3865,10 @@
     "avg_npc_400_1"
   ],
   "Visitor 05": "avg_npc_163",
-  "Worried Villager": "avg_npc_163",
   "Roaming Doctor": "avg_npc_163",
+  "Savra Girl": "avg_npc_163",
+  "Aisha": "avg_npc_163",
+  "Telara": "avg_npc_163",
   "Grimed Woman": "avg_npc_163",
   "Anum": "avg_npc_163",
   "Picale": "avg_npc_159_1",
@@ -4031,7 +4066,8 @@
   "Qalaiša": "avg_npc_1452_1",
   "Gentle Woman": [
     "avg_npc_1452_1",
-    "avg_npc_1122_1"
+    "avg_npc_1122_1",
+    "avg_npc_2037_1"
   ],
   "Northwind Witch": "avg_npc_1452_1",
   "Dying Nachzehrer": "avg_npc_1341_1",
@@ -4573,6 +4609,12 @@
   ],
   "Liz?": "avg_179_cgbird_1",
   "'Daughter'": "avgnew_147_shining_1",
+  "Væla": [
+    "avg_npc_1296_1",
+    "avg_npc_2048_1",
+    "avg_npc_2035_1",
+    "avg_npc_2036_1"
+  ],
   "Feist": [
     "avg_4072_ironmn_1",
     "avg_4040_rockr_1",
@@ -4600,10 +4642,15 @@
     "avg_npc_526_1"
   ],
   "Sniper": "avg_npc_901_1",
-  "Agent B": "avg_npc_901_1",
+  "Agent B": [
+    "avg_npc_901_1",
+    "avg_npc_2047_1"
+  ],
   "Columbian Soldier A": "avg_npc_901_1",
   "Columbian Soldier B": "avg_npc_901_1",
   "Maylander Foundation Agent": "avg_npc_901_1",
+  "Propeller Paradise Police": "avg_npc_901_1",
+  "Propeller Paradise Police A": "avg_npc_901_1",
   "Respectful Attendant": "avg_npc_498_1",
   "Drunken Infected": "avg_npc_498_1",
   "Skittish Infected": "avg_npc_498_1",
@@ -5156,8 +5203,16 @@
     "avg_npc_893_1",
     "avg_npc_1840_1"
   ],
-  "Jara": "avg_npc_893_1",
-  "Nasti": "avg_npc_891_1",
+  "Jara": [
+    "avg_npc_893_1",
+    "avg_npc_1840_1"
+  ],
+  "Nasti": [
+    "avg_npc_891_1",
+    "avg_4212_nasti_1",
+    "avg_npc_2052_1",
+    "avg_npc_2032_1"
+  ],
   "Mountain": [
     "avg_264_f12yin_1",
     "char_264_mountain_1"
@@ -5376,6 +5431,11 @@
   "Male Instrument Shop Owner": "avg_npc_1000_1",
   "Sneaky Siracusan Tourist.": "avg_npc_1000_1",
   "Enthusiastic Boatman": "avg_npc_1000_1",
+  "Oakley!": "avg_npc_1000_1",
+  "Oakley": [
+    "avg_npc_1000_1",
+    "avg_4214_cairn_1"
+  ],
   "Ah Sam": "avg_npc_1000_1",
   "Ah Hsiang & Ah Sam": "avg_npc_1000_1",
   "An Elder by the Roadside": "avg_npc_1002_1",
@@ -5848,7 +5908,10 @@
   "Brave Boy": "avg_npc_1302_1",
   "'Ascalon'": "avg_4132_ascln_1",
   "Pensive Child": "avg_npc_1304_1",
-  "Young Banshee": "avg_npc_1304_1",
+  "Young Banshee": [
+    "avg_npc_1304_1",
+    "avg_npc_2052_1"
+  ],
   "'Teacher'": "avg_npc_1308_1",
   "Babel Squad Member": "avg_npc_1308_1",
   "Dying Assassin": "avg_npc_1308_1",
@@ -6001,6 +6064,7 @@
   "Nameless Mummy": "avg_npc_1479_1",
   "Zubayr": "avg_npc_1479_1",
   "Foreign Traveler": "avg_npc_1486_1",
+  "Philae": "avg_npc_1486_1",
   "Extravagant Man": "avg_npc_804_1",
   "Extravagant Traveler": "avg_npc_804_1",
   "Bejeweled Citizen": "avg_npc_804_1",
@@ -6453,6 +6517,7 @@
   "Warm Young Dragon": "avg_npc_1684_1",
   "Solemn Wakewoman": "avg_npc_1691_1",
   "Decrepit Old Man": "avg_npc_1254_1",
+  "Martin Barn": "avg_npc_1254_1",
   "Ian": "avg_npc_1254_1",
   "Anxious Old Man": "avg_npc_1254_1",
   "Old Clerk": "avg_npc_1254_1",
@@ -7032,6 +7097,7 @@
   "Jirou": "avg_npc_1906_1",
   "Yakuza B": "avg_npc_1906_1",
   "Yakuza Boss": "avg_npc_1906_1",
+  "Asai": "avg_npc_1906_1",
   "Unruffled Priest": [
     "avg_npc_1902_1",
     "avg_npc_1900_1"
@@ -7063,9 +7129,11 @@
   "Angry Stall Owner": "avg_npc_1908_1",
   "Surprised Fan": "avg_npc_1911_1",
   "Perplexed Resident": "avg_npc_1911_1",
+  "Woman with a Strange Expression": "avg_npc_1911_1",
   "Sarasa": "avg_npc_1900_1",
   "Kami of Happy Returns": "avg_npc_1903_1",
   "Calm Passerby": "avg_npc_1912_1",
+  "Riko": "avg_npc_1912_1",
   "Angry Mother": "avg_npc_759_1",
   "Sad Stall Owner": "avg_npc_759_1",
   "Excited Child": "avg_npc_762_1",
@@ -7198,5 +7266,36 @@
   "Kjeragandr": "avg_npc_2009_1",
   "Passing Girl": "avg_npc_2009_1",
   "Kjerag Researcher": "avg_npc_2000_1",
-  "Local Researcher": "avg_npc_2000_1"
+  "Local Researcher": "avg_npc_2000_1",
+  "Sky?": "avg_npc_2037_1",
+  "Mercia": "avg_npc_2037_1",
+  "Tester A": "avg_npc_2045_1",
+  "Tester": [
+    "avg_npc_2045_1",
+    "avg_npc_2044_1"
+  ],
+  "Sky Jagger": "avg_npc_2039_1",
+  "Excited Young Man": "avg_npc_2039_1",
+  "Tester B": "avg_npc_2044_1",
+  "Aspen": "avg_npc_2041_1",
+  "Oakley?": "avg_4214_cairn_1",
+  "Ferne": "avg_4214_cairn_1",
+  "Unknown Entity": "avg_npc_2040_1",
+  "Space Finbeast": "avg_npc_2040_1",
+  "Gargoyle": "avg_npc_2043_1",
+  "Feeble Banshee": "avg_npc_2035_1",
+  "Gustave": "avg_npc_2042_1",
+  "Maylander Agent": "avg_npc_2046_1",
+  "Council Member": "avg_npc_2046_1",
+  "Agent": [
+    "avg_npc_2046_1",
+    "avg_npc_2047_1"
+  ],
+  "Agents A & B": "avg_npc_2046_1",
+  "Scientific Consultant": "avg_npc_2038_1",
+  "Scientific Consultant?": "avg_npc_2038_1",
+  "Senior Agent": "avg_npc_2047_1",
+  "Væla?": "avg_npc_2036_1",
+  "Nasti?": "avg_npc_2033_1",
+  "Kestrel": "avg_4023_rfalcn_1"
 }

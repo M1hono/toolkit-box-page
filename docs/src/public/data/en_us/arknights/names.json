@@ -853,6 +853,7 @@
       "Diner B",
       "Kazimierz Ruffian",
       "Gangster Messenger",
+      "Traveling Merchant",
       "Miners?",
       "Infected Employee",
       "Infected Employees",
@@ -886,6 +887,7 @@
       "Diner B",
       "Kazimierz Ruffian",
       "Gangster Messenger",
+      "Traveling Merchant",
       "Miners?",
       "Infected Employee",
       "Infected Employees",
@@ -2786,6 +2788,7 @@
       "Travel-Stained Lawyer",
       "Karlan Trade Employee",
       "Mysterious Visitor",
+      "Investor",
       "Corporate Employee",
       "Manager",
       "Red Wine Senior Editor",
@@ -2822,6 +2825,7 @@
       "Travel-Stained Lawyer",
       "Karlan Trade Employee",
       "Mysterious Visitor",
+      "Investor",
       "Corporate Employee",
       "Manager",
       "Red Wine Senior Editor",
@@ -3138,7 +3142,8 @@
       "Black Market Resident",
       "'Sargonian'",
       "Shy Archosauria",
-      "Gentle Villager"
+      "Gentle Villager",
+      "Worried Villager"
     ],
     "searchNames": [
       "Archosauria C",
@@ -3147,7 +3152,8 @@
       "Black Market Resident",
       "'Sargonian'",
       "Shy Archosauria",
-      "Gentle Villager"
+      "Gentle Villager",
+      "Worried Villager"
     ],
     "displayName": "Archosauria C"
   },
@@ -6063,6 +6069,8 @@
       "Rhine Staff?",
       "Researcher",
       "Rhine Staff A",
+      "Underground Researcher",
+      "Rhine Staff",
       "Rhine Lab Tech B",
       "Apprehensive Rhine Lab Tech",
       "Ecological Section Researcher A",
@@ -6078,6 +6086,8 @@
       "Rhine Staff?",
       "Researcher",
       "Rhine Staff A",
+      "Underground Researcher",
+      "Rhine Staff",
       "Rhine Lab Tech B",
       "Apprehensive Rhine Lab Tech",
       "Ecological Section Researcher A",
@@ -6269,9 +6279,11 @@
       "Rhine Staff",
       "Business Clerk",
       "Rhine Staff B",
-      "Rhine Reception",
-      "Rhine Lab Tech A",
+      "Veteran Researcher",
       "Researcher",
+      "Rhine Reception",
+      "Helen the Secretary",
+      "Rhine Lab Tech A",
       "Ecological Section Researcher B",
       "Ecological Section Researcher",
       "Researcher B",
@@ -6286,9 +6298,11 @@
       "Rhine Staff",
       "Business Clerk",
       "Rhine Staff B",
-      "Rhine Reception",
-      "Rhine Lab Tech A",
+      "Veteran Researcher",
       "Researcher",
+      "Rhine Reception",
+      "Helen the Secretary",
+      "Rhine Lab Tech A",
       "Ecological Section Researcher B",
       "Ecological Section Researcher",
       "Researcher B",
@@ -7451,6 +7465,8 @@
       "Doubtful Former Desert Bandit",
       "Fake Liquor Seller",
       "Wary Villager",
+      "Impatient Villager",
+      "Sargonian",
       "Mayor",
       "Sargonian Janissary"
     ],
@@ -7463,6 +7479,8 @@
       "Doubtful Former Desert Bandit",
       "Fake Liquor Seller",
       "Wary Villager",
+      "Impatient Villager",
+      "Sargonian",
       "Mayor",
       "Sargonian Janissary"
     ],
@@ -7593,6 +7611,7 @@
       "Villager",
       "Swept-Up Trader",
       "Swept-Up Trader?",
+      "Mayor",
       "Arrogant Merchant",
       "Soldier",
       "Vengeful Merchant",
@@ -7606,6 +7625,7 @@
       "Villager",
       "Swept-Up Trader",
       "Swept-Up Trader?",
+      "Mayor",
       "Arrogant Merchant",
       "Soldier",
       "Vengeful Merchant",
@@ -7633,6 +7653,9 @@
       "Visitor 05",
       "Worried Villager",
       "Roaming Doctor",
+      "Savra Girl",
+      "Aisha",
+      "Telara",
       "Grimed Woman",
       "Anum"
     ],
@@ -7645,6 +7668,9 @@
       "Visitor 05",
       "Worried Villager",
       "Roaming Doctor",
+      "Savra Girl",
+      "Aisha",
+      "Telara",
       "Grimed Woman",
       "Anum"
     ],
@@ -9529,10 +9555,12 @@
   },
   "avg_npc_1296_1": {
     "speakerNames": [
-      "Theresa"
+      "Theresa",
+      "Væla"
     ],
     "searchNames": [
-      "Theresa"
+      "Theresa",
+      "Væla"
     ],
     "displayName": "Theresa"
   },
@@ -9569,7 +9597,9 @@
       "Agent B",
       "Columbian Soldier A",
       "Columbian Soldier B",
-      "Maylander Foundation Agent"
+      "Maylander Foundation Agent",
+      "Propeller Paradise Police",
+      "Propeller Paradise Police A"
     ],
     "searchNames": [
       "Columbian Military Officer",
@@ -9579,7 +9609,9 @@
       "Agent B",
       "Columbian Soldier A",
       "Columbian Soldier B",
-      "Maylander Foundation Agent"
+      "Maylander Foundation Agent",
+      "Propeller Paradise Police",
+      "Propeller Paradise Police A"
     ],
     "displayName": "Columbian Military Officer"
   },
@@ -12302,6 +12334,9 @@
       "Tourist",
       "Community Resident",
       "Enthusiastic Boatman",
+      "Unfamiliar Man",
+      "Oakley!",
+      "Oakley",
       "Ah Sam",
       "Ah Hsiang & Ah Sam"
     ],
@@ -12313,6 +12348,9 @@
       "Tourist",
       "Community Resident",
       "Enthusiastic Boatman",
+      "Unfamiliar Man",
+      "Oakley!",
+      "Oakley",
       "Ah Sam",
       "Ah Hsiang & Ah Sam"
     ],
@@ -12613,12 +12651,14 @@
     "speakerNames": [
       "Bank Manager",
       "Bank Employee",
-      "Sylvia"
+      "Sylvia",
+      "Staff"
     ],
     "searchNames": [
       "Bank Manager",
       "Bank Employee",
-      "Sylvia"
+      "Sylvia",
+      "Staff"
     ],
     "displayName": "Bank Manager"
   },
@@ -12644,6 +12684,8 @@
       "Hard-hearted Hoodlum",
       "Guileful Gangster",
       "Miles",
+      "Hoodlum A",
+      "Hoodlum B",
       "Young Man With Bruised Face"
     ],
     "searchNames": [
@@ -12658,6 +12700,8 @@
       "Hard-hearted Hoodlum",
       "Guileful Gangster",
       "Miles",
+      "Hoodlum A",
+      "Hoodlum B",
       "Young Man With Bruised Face"
     ],
     "displayName": "Sneaky Snowfield Bandit"
@@ -14624,10 +14668,12 @@
   },
   "avg_npc_1486_1": {
     "speakerNames": [
-      "Foreign Traveler"
+      "Foreign Traveler",
+      "Philae"
     ],
     "searchNames": [
-      "Foreign Traveler"
+      "Foreign Traveler",
+      "Philae"
     ],
     "displayName": "Foreign Traveler"
   },
@@ -16669,6 +16715,7 @@
   "avg_npc_1254_1": {
     "speakerNames": [
       "Decrepit Old Man",
+      "Martin Barn",
       "Ian",
       "Silent Old Man",
       "Anxious Old Man",
@@ -16677,6 +16724,7 @@
     ],
     "searchNames": [
       "Decrepit Old Man",
+      "Martin Barn",
       "Ian",
       "Silent Old Man",
       "Anxious Old Man",
@@ -17468,10 +17516,12 @@
   },
   "avg_npc_1840_1": {
     "speakerNames": [
-      "Marianne"
+      "Marianne",
+      "Jara"
     ],
     "searchNames": [
-      "Marianne"
+      "Marianne",
+      "Jara"
     ],
     "displayName": "Marianne"
   },
@@ -20718,7 +20768,8 @@
       "Anguished Yakuza",
       "Jirou",
       "Yakuza B",
-      "Yakuza Boss"
+      "Yakuza Boss",
+      "Asai"
     ],
     "searchNames": [
       "Fierce Yakuza",
@@ -20728,7 +20779,8 @@
       "Anguished Yakuza",
       "Jirou",
       "Yakuza B",
-      "Yakuza Boss"
+      "Yakuza Boss",
+      "Asai"
     ],
     "displayName": "Fierce Yakuza"
   },
@@ -20847,13 +20899,15 @@
       "Mother",
       "Surprised Fan",
       "Confused Fan",
-      "Perplexed Resident"
+      "Perplexed Resident",
+      "Woman with a Strange Expression"
     ],
     "searchNames": [
       "Mother",
       "Surprised Fan",
       "Confused Fan",
-      "Perplexed Resident"
+      "Perplexed Resident",
+      "Woman with a Strange Expression"
     ],
     "displayName": "Mother"
   },
@@ -20879,10 +20933,12 @@
   },
   "avg_npc_1912_1": {
     "speakerNames": [
-      "Calm Passerby"
+      "Calm Passerby",
+      "Riko"
     ],
     "searchNames": [
-      "Calm Passerby"
+      "Calm Passerby",
+      "Riko"
     ],
     "displayName": "Calm Passerby"
   },
@@ -21701,5 +21757,259 @@
       "Lava"
     ],
     "displayName": "Lava"
+  },
+  "avg_4212_nasti_1": {
+    "speakerNames": [
+      "Nasti",
+      "Veteran Researcher"
+    ],
+    "searchNames": [
+      "Nasti",
+      "Veteran Researcher"
+    ],
+    "displayName": "Nasti"
+  },
+  "avg_npc_2037_1": {
+    "speakerNames": [
+      "Sky?",
+      "Gentle Woman",
+      "Mercia"
+    ],
+    "searchNames": [
+      "Sky?",
+      "Gentle Woman",
+      "Mercia"
+    ],
+    "displayName": "Sky?"
+  },
+  "avg_npc_2045_1": {
+    "speakerNames": [
+      "Tester A",
+      "Tester"
+    ],
+    "searchNames": [
+      "Tester A",
+      "Tester"
+    ],
+    "displayName": "Tester A"
+  },
+  "avg_npc_2039_1": {
+    "speakerNames": [
+      "Sky Jagger",
+      "Excited Young Man"
+    ],
+    "searchNames": [
+      "Sky Jagger",
+      "Excited Young Man"
+    ],
+    "displayName": "Sky Jagger"
+  },
+  "avg_npc_2044_1": {
+    "speakerNames": [
+      "Tester B",
+      "Tester"
+    ],
+    "searchNames": [
+      "Tester B",
+      "Tester"
+    ],
+    "displayName": "Tester B"
+  },
+  "avg_npc_2041_1": {
+    "speakerNames": [
+      "Aspen"
+    ],
+    "searchNames": [
+      "Aspen"
+    ],
+    "displayName": "Aspen"
+  },
+  "avg_npc_2034_1": {
+    "speakerNames": [
+      "Gordon"
+    ],
+    "searchNames": [
+      "Gordon"
+    ],
+    "displayName": "Gordon"
+  },
+  "avg_4214_cairn_1": {
+    "speakerNames": [
+      "Oakley?",
+      "Ferne",
+      "Oakley"
+    ],
+    "searchNames": [
+      "Oakley?",
+      "Ferne",
+      "Oakley"
+    ],
+    "displayName": "Oakley?"
+  },
+  "avg_npc_2040_1": {
+    "speakerNames": [
+      "Unknown Entity",
+      "Space Finbeast"
+    ],
+    "searchNames": [
+      "Unknown Entity",
+      "Space Finbeast"
+    ],
+    "displayName": "Unknown Entity"
+  },
+  "avg_npc_2048_1": {
+    "speakerNames": [
+      "Væla"
+    ],
+    "searchNames": [
+      "Væla"
+    ],
+    "displayName": "Væla"
+  },
+  "avg_npc_2043_1": {
+    "speakerNames": [
+      "Gargoyle"
+    ],
+    "searchNames": [
+      "Gargoyle"
+    ],
+    "displayName": "Gargoyle"
+  },
+  "avg_npc_2052_1": {
+    "speakerNames": [
+      "Young Banshee",
+      "Nasti"
+    ],
+    "searchNames": [
+      "Young Banshee",
+      "Nasti"
+    ],
+    "displayName": "Young Banshee"
+  },
+  "avg_npc_2035_1": {
+    "speakerNames": [
+      "Væla",
+      "Feeble Banshee"
+    ],
+    "searchNames": [
+      "Væla",
+      "Feeble Banshee"
+    ],
+    "displayName": "Væla"
+  },
+  "avg_npc_2042_1": {
+    "speakerNames": [
+      "Gustave",
+      "Old Man"
+    ],
+    "searchNames": [
+      "Gustave",
+      "Old Man"
+    ],
+    "displayName": "Gustave"
+  },
+  "avg_npc_2046_1": {
+    "speakerNames": [
+      "Maylander Agent",
+      "Council Member",
+      "Agent",
+      "Agents A & B"
+    ],
+    "searchNames": [
+      "Maylander Agent",
+      "Council Member",
+      "Agent",
+      "Agents A & B"
+    ],
+    "displayName": "Maylander Agent"
+  },
+  "avg_npc_2038_1": {
+    "speakerNames": [
+      "Scientific Consultant",
+      "Scientific Consultant?"
+    ],
+    "searchNames": [
+      "Scientific Consultant",
+      "Scientific Consultant?"
+    ],
+    "displayName": "Scientific Consultant"
+  },
+  "avg_npc_2032_1": {
+    "speakerNames": [
+      "Nasti"
+    ],
+    "searchNames": [
+      "Nasti"
+    ],
+    "displayName": "Nasti"
+  },
+  "avg_npc_2047_1": {
+    "speakerNames": [
+      "Agent",
+      "Senior Agent",
+      "Agent B"
+    ],
+    "searchNames": [
+      "Agent",
+      "Senior Agent",
+      "Agent B"
+    ],
+    "displayName": "Agent"
+  },
+  "avg_4213_skybx_1": {
+    "speakerNames": [
+      "Gordon"
+    ],
+    "searchNames": [
+      "Gordon"
+    ],
+    "displayName": "Gordon"
+  },
+  "avg_npc_2049_1": {
+    "speakerNames": [
+      "Rhine Lab Researcher"
+    ],
+    "searchNames": [
+      "Rhine Lab Researcher"
+    ],
+    "displayName": "Rhine Lab Researcher"
+  },
+  "avg_npc_2036_1": {
+    "speakerNames": [
+      "Væla?",
+      "Væla"
+    ],
+    "searchNames": [
+      "Væla?",
+      "Væla"
+    ],
+    "displayName": "Væla?"
+  },
+  "avg_npc_2033_1": {
+    "speakerNames": [
+      "Nasti?"
+    ],
+    "searchNames": [
+      "Nasti?"
+    ],
+    "displayName": "Nasti?"
+  },
+  "avg_npc_2051_1": {
+    "speakerNames": [
+      "Rhine Lab Researcher"
+    ],
+    "searchNames": [
+      "Rhine Lab Researcher"
+    ],
+    "displayName": "Rhine Lab Researcher"
+  },
+  "avg_4023_rfalcn_1": {
+    "speakerNames": [
+      "Kestrel"
+    ],
+    "searchNames": [
+      "Kestrel"
+    ],
+    "displayName": "Kestrel"
   }
 }
