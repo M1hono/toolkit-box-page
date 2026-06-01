@@ -4755,6 +4755,7 @@
     "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_08_end.txt",
     "activities/act23side/level_act23side_st01.txt",
+    "activities/act23side/level_act23side_st02.txt",
     "activities/act23side/level_act23side_st03.txt",
     "obt/memory/story_qiubai_1_1.txt"
   ],
@@ -4768,8 +4769,10 @@
     "activities/act23side/level_act23side_05_beg.txt",
     "activities/act23side/level_act23side_06_end.txt",
     "activities/act23side/level_act23side_07_beg.txt",
+    "activities/act23side/level_act23side_08_end.txt",
     "activities/act23side/level_act23side_09_beg.txt",
-    "activities/act23side/level_act23side_09_end.txt"
+    "activities/act23side/level_act23side_09_end.txt",
+    "activities/act23side/level_act23side_st03.txt"
   ],
   "avg_npc_797_1": [
     "activities/act14mini/level_act14mini_st01.txt",
@@ -6082,6 +6085,7 @@
     "activities/act23side/level_act23side_08_beg.txt",
     "activities/act23side/level_act23side_08_end.txt",
     "activities/act23side/level_act23side_st01.txt",
+    "activities/act23side/level_act23side_st03.txt",
     "activities/act31side/level_act31side_04_end.txt",
     "activities/act40side/level_act40side_09_end.txt",
     "obt/memory/story_ling_1_1.txt"
@@ -9502,6 +9506,7 @@
     "activities/act23side/level_act23side_09_beg.txt",
     "activities/act23side/level_act23side_09_end.txt",
     "activities/act23side/level_act23side_st01.txt",
+    "activities/act23side/level_act23side_st02.txt",
     "activities/act23side/level_act23side_st03.txt",
     "activities/act31side/level_act31side_01_end.txt",
     "activities/act31side/level_act31side_04_beg.txt",
@@ -16510,6 +16515,13 @@
     "obt/memory/story_nblade_1_1.txt"
   ],
   "char_278_orchid_1": [
+    "activities/act50side/level_act50side_01_beg.txt",
+    "activities/act50side/level_act50side_01_end.txt",
+    "activities/act50side/level_act50side_02_beg.txt",
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_st01.txt",
     "activities/act7d5/level_act7d5_st05.txt",
     "obt/main/level_main_15-04_beg.txt",
     "obt/main/level_main_15-10_beg.txt",
@@ -16531,6 +16543,8 @@
     "obt/memory/story_spot_1_1.txt"
   ],
   "char_283_midn_1": [
+    "activities/act50side/level_act50side_st01.txt",
+    "activities/act50side/level_act50side_st02.txt",
     "activities/act7d5/level_act7d5_st05.txt",
     "obt/memory/story_ethan_1_1.txt",
     "obt/memory/story_midn_1_1.txt",
@@ -17539,9 +17553,22 @@
     "obt/main/level_main_16-16_beg.txt",
     "obt/main/level_main_16-17_beg.txt",
     "obt/main/level_main_16-18_end.txt",
-    "obt/main/level_st_16-02.txt"
+    "obt/main/level_main_17-02_beg.txt",
+    "obt/main/level_main_17-04_beg.txt",
+    "obt/main/level_main_17-05_end.txt",
+    "obt/main/level_main_17-07_end.txt",
+    "obt/main/level_main_17-10_beg.txt",
+    "obt/main/level_main_17-12_beg.txt",
+    "obt/main/level_main_17-13_beg.txt",
+    "obt/main/level_main_17-14_beg.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/main/level_main_tr28_end.txt",
+    "obt/main/level_st_16-02.txt",
+    "obt/main/level_st_17-02.txt"
   ],
   "avg_281_popka_1": [
+    "activities/act50side/level_act50side_st01.txt",
+    "activities/act50side/level_act50side_st02.txt",
     "obt/main/level_main_15-04_beg.txt",
     "obt/main/level_main_15-10_beg.txt",
     "obt/memory/story_orchid_2_1.txt",
@@ -17558,7 +17585,9 @@
     "obt/main/level_main_15-15_end_variation01.txt",
     "obt/main/level_main_15-15_end_variation02.txt",
     "obt/main/level_main_15-16_beg.txt",
-    "obt/main/level_main_15-18_end.txt"
+    "obt/main/level_main_15-18_end.txt",
+    "obt/main/level_main_17-16_end.txt",
+    "obt/memory/story_closur_1_1.txt"
   ],
   "avg_4134_cetsyr_1": [
     "obt/main/level_main_15-06_beg.txt",
@@ -17578,6 +17607,7 @@
   ],
   "avg_npc_1559_1": [
     "obt/main/level_main_15-18_end.txt",
+    "obt/memory/story_beagle_1_1.txt",
     "obt/memory/story_branch_1_1.txt"
   ],
   "avg_npc_1966_1": [
@@ -18034,6 +18064,7 @@
     "obt/memory/story_clour_1_1.txt"
   ],
   "avg_120_hibisc_1": [
+    "obt/memory/story_beagle_1_1.txt",
     "obt/memory/story_clour_1_1.txt",
     "obt/memory/story_hibisc_1_1.txt"
   ],
@@ -19141,5 +19172,165 @@
   ],
   "avg_394_hadiya_1": [
     "obt/memory/story_hadiya_1_1.txt"
+  ],
+  "avg_npc_2100_1": [
+    "activities/act50side/level_act50side_01_beg.txt",
+    "activities/act50side/level_act50side_01_end.txt",
+    "activities/act50side/level_act50side_02_beg.txt",
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_04_beg.txt",
+    "activities/act50side/level_act50side_04_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_beg.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st01.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_npc_2109_1": [
+    "activities/act50side/level_act50side_01_beg.txt",
+    "activities/act50side/level_act50side_02_beg.txt"
+  ],
+  "avg_npc_2108_1": [
+    "activities/act50side/level_act50side_01_beg.txt",
+    "activities/act50side/level_act50side_02_beg.txt",
+    "activities/act50side/level_act50side_08_beg.txt"
+  ],
+  "avg_npc_2107_1": [
+    "activities/act50side/level_act50side_01_beg.txt",
+    "activities/act50side/level_act50side_01_end.txt",
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_st01.txt"
+  ],
+  "avg_npc_2104_1": [
+    "activities/act50side/level_act50side_01_end.txt",
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_04_beg.txt",
+    "activities/act50side/level_act50side_06_beg.txt"
+  ],
+  "avg_npc_2102_1": [
+    "activities/act50side/level_act50side_01_end.txt",
+    "activities/act50side/level_act50side_07_beg.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_end.txt"
+  ],
+  "avg_npc_2106_1": [
+    "activities/act50side/level_act50side_01_end.txt",
+    "activities/act50side/level_act50side_02_beg.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_st01.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_npc_2103_1": [
+    "activities/act50side/level_act50side_02_beg.txt",
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st01.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_4215_buddyc_1": [
+    "activities/act50side/level_act50side_02_beg.txt",
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_04_beg.txt",
+    "activities/act50side/level_act50side_04_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_beg.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_npc_2101_1": [
+    "activities/act50side/level_act50side_02_end.txt",
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_04_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_npc_2110_1": [
+    "activities/act50side/level_act50side_03_beg.txt",
+    "activities/act50side/level_act50side_05_beg.txt"
+  ],
+  "avg_4215_buddyd_1": [
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_beg.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_1049_catap2_1": [
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_04_beg.txt",
+    "activities/act50side/level_act50side_04_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_beg.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_1048_orchd2_1": [
+    "activities/act50side/level_act50side_03_end.txt",
+    "activities/act50side/level_act50side_04_beg.txt",
+    "activities/act50side/level_act50side_04_end.txt",
+    "activities/act50side/level_act50side_05_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt",
+    "activities/act50side/level_act50side_06_beg.txt",
+    "activities/act50side/level_act50side_06_end.txt",
+    "activities/act50side/level_act50side_07_beg.txt",
+    "activities/act50side/level_act50side_07_end.txt",
+    "activities/act50side/level_act50side_08_beg.txt",
+    "activities/act50side/level_act50side_08_end.txt",
+    "activities/act50side/level_act50side_st02.txt"
+  ],
+  "avg_1049_catap2a_1": [
+    "activities/act50side/level_act50side_04_beg.txt",
+    "activities/act50side/level_act50side_05_end.txt"
+  ],
+  "avg_npc_2111_1": [
+    "activities/act50side/level_act50side_04_end.txt"
+  ],
+  "avg_npc_2112_1": [
+    "activities/act50side/level_act50side_st01.txt"
+  ],
+  "avg_122_beagle_1": [
+    "obt/memory/story_beagle_1_1.txt"
   ]
 }

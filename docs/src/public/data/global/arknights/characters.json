@@ -21866,5 +21866,149 @@
     ],
     "charType": "npc",
     "dialogCount": 0
+  },
+  "avg_npc_2100_1": {
+    "charId": "avg_npc_2100_1",
+    "validVariants": [
+      "avg_npc_2100_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2109_1": {
+    "charId": "avg_npc_2109_1",
+    "validVariants": [
+      "avg_npc_2109_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2108_1": {
+    "charId": "avg_npc_2108_1",
+    "validVariants": [
+      "avg_npc_2108_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2107_1": {
+    "charId": "avg_npc_2107_1",
+    "validVariants": [
+      "avg_npc_2107_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2104_1": {
+    "charId": "avg_npc_2104_1",
+    "validVariants": [
+      "avg_npc_2104_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2102_1": {
+    "charId": "avg_npc_2102_1",
+    "validVariants": [
+      "avg_npc_2102_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2106_1": {
+    "charId": "avg_npc_2106_1",
+    "validVariants": [
+      "avg_npc_2106_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2103_1": {
+    "charId": "avg_npc_2103_1",
+    "validVariants": [
+      "avg_npc_2103_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4215_buddyc_1": {
+    "charId": "avg_4215_buddyc_1",
+    "validVariants": [
+      "avg_4215_buddyc_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2101_1": {
+    "charId": "avg_npc_2101_1",
+    "validVariants": [
+      "avg_npc_2101_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2110_1": {
+    "charId": "avg_npc_2110_1",
+    "validVariants": [
+      "avg_npc_2110_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_4215_buddyd_1": {
+    "charId": "avg_4215_buddyd_1",
+    "validVariants": [
+      "avg_4215_buddyd_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_1049_catap2_1": {
+    "charId": "avg_1049_catap2_1",
+    "validVariants": [
+      "avg_1049_catap2_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_1048_orchd2_1": {
+    "charId": "avg_1048_orchd2_1",
+    "validVariants": [
+      "avg_1048_orchd2_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_1049_catap2a_1": {
+    "charId": "avg_1049_catap2a_1",
+    "validVariants": [
+      "avg_1049_catap2a_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2111_1": {
+    "charId": "avg_npc_2111_1",
+    "validVariants": [
+      "avg_npc_2111_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_npc_2112_1": {
+    "charId": "avg_npc_2112_1",
+    "validVariants": [
+      "avg_npc_2112_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
+  },
+  "avg_122_beagle_1": {
+    "charId": "avg_122_beagle_1",
+    "validVariants": [
+      "avg_122_beagle_1#1$1"
+    ],
+    "charType": "npc",
+    "dialogCount": 0
   }
 }
