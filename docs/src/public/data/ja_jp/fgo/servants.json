@@ -9475,6 +9475,56 @@
       }
     }
   },
+  "205500": {
+    "id": 205500,
+    "collectionNo": 470,
+    "name": "ウルズ",
+    "ruby": "ウルズ",
+    "className": "archer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/2055000/2055000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/2055001/2055001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/2055002/2055002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "2055000": {
+          "id": 2055000,
+          "faceX": 881,
+          "faceY": 162,
+          "scale": 1
+        },
+        "2055001": {
+          "id": 2055001,
+          "faceX": 875,
+          "faceY": 152,
+          "scale": 1
+        },
+        "2055002": {
+          "id": 2055002,
+          "faceX": 881,
+          "faceY": 160,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/2055000/2055000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/2055001/2055001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/2055002/2055002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "300100": {
     "id": 300100,
     "collectionNo": 17,
@@ -37355,8 +37405,8 @@
       "faceCoordinates": {
         "9935300": {
           "id": 9935300,
-          "faceX": 378,
-          "faceY": 150,
+          "faceX": 392,
+          "faceY": 144,
           "scale": 1
         },
         "9935310": {

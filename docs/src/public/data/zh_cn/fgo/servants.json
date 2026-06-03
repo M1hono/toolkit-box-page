@@ -38975,6 +38975,66 @@
       }
     }
   },
+  "2801100": {
+    "id": 2801100,
+    "collectionNo": 441,
+    "name": "堤丰·厄斐墨洛斯",
+    "ruby": "堤丰·厄斐墨洛斯",
+    "className": "pretender",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/28011000/28011000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/28011001/28011001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/28011002/28011002_merged.png"
+        },
+        "costume": {
+          "2801130": "https://static.atlasacademy.io/CN/CharaFigure/28011300/28011300_merged.png"
+        },
+        "story": {}
+      },
+      "faceCoordinates": {
+        "28011000": {
+          "id": 28011000,
+          "faceX": 384,
+          "faceY": 160,
+          "scale": 1
+        },
+        "28011001": {
+          "id": 28011001,
+          "faceX": 893,
+          "faceY": 151,
+          "scale": 1
+        },
+        "28011002": {
+          "id": 28011002,
+          "faceX": 901,
+          "faceY": 157,
+          "scale": 1
+        },
+        "28011300": {
+          "id": 28011300,
+          "faceX": 380,
+          "faceY": 153,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/28011000/28011000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/28011001/28011001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/28011002/28011002_merged.png"
+        },
+        "costume": {
+          "2801130": "https://static.atlasacademy.io/CN/CharaFigure/28011300/28011300_merged.png"
+        },
+        "story": {}
+      }
+    }
+  },
   "3300100": {
     "id": 3300100,
     "collectionNo": 377,
