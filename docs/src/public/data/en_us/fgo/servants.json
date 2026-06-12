@@ -26429,7 +26429,9 @@
           "2": "https://static.atlasacademy.io/NA/CharaFigure/7013001/7013001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/7013002/7013002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "701330": "https://static.atlasacademy.io/NA/CharaFigure/7013300/7013300_merged.png"
+        },
         "story": {
           "98116200": "https://static.atlasacademy.io/NA/CharaFigure/98116200/98116200_merged.png",
           "1098119200": "https://static.atlasacademy.io/NA/CharaFigure/1098119200/1098119200_merged.png",
@@ -26456,6 +26458,12 @@
           "id": 7013002,
           "faceX": 376,
           "faceY": 160,
+          "scale": 1
+        },
+        "7013300": {
+          "id": 7013300,
+          "faceX": 938,
+          "faceY": 122,
           "scale": 1
         },
         "98116200": {
@@ -26503,7 +26511,9 @@
           "2": "https://static.atlasacademy.io/NA/CharaFigure/7013001/7013001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/7013002/7013002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "701330": "https://static.atlasacademy.io/NA/CharaFigure/7013300/7013300_merged.png"
+        },
         "story": {
           "98116200": "https://static.atlasacademy.io/NA/CharaFigure/98116200/98116200_merged.png",
           "1098119200": "https://static.atlasacademy.io/NA/CharaFigure/1098119200/1098119200_merged.png",
@@ -33536,6 +33546,56 @@
           "1098267700": "https://static.atlasacademy.io/NA/CharaFigure/1098267700/1098267700_merged.png",
           "1098271700": "https://static.atlasacademy.io/NA/CharaFigure/1098271700/1098271700_merged.png"
         }
+      }
+    }
+  },
+  "1001700": {
+    "id": 1001700,
+    "collectionNo": 416,
+    "name": "Hibiki & Chikagi",
+    "ruby": "Hibiki & Chikagi",
+    "className": "alterEgo",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/10017000/10017000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/10017001/10017001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/10017002/10017002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "10017000": {
+          "id": 10017000,
+          "faceX": 380,
+          "faceY": 148,
+          "scale": 1
+        },
+        "10017001": {
+          "id": 10017001,
+          "faceX": 892,
+          "faceY": 144,
+          "scale": 1
+        },
+        "10017002": {
+          "id": 10017002,
+          "faceX": 480,
+          "faceY": 144,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/10017000/10017000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/10017001/10017001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/10017002/10017002_merged.png"
+        },
+        "costume": {},
+        "story": {}
       }
     }
   },
