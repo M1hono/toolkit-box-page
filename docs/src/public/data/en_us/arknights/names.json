@@ -1835,6 +1835,7 @@
       "Male Tourist A",
       "Puzzled Islander",
       "No-Longer-Puzzled Islander",
+      "Knightsports Fan",
       "Tabloid Reporter",
       "Messenger",
       "Food Stall Owner",
@@ -1859,6 +1860,7 @@
       "Male Tourist A",
       "Puzzled Islander",
       "No-Longer-Puzzled Islander",
+      "Knightsports Fan",
       "Tabloid Reporter",
       "Messenger",
       "Food Stall Owner",
@@ -3353,7 +3355,8 @@
       "A Spectating Knight A",
       "Chilly Knight",
       "Patrolling Knight",
-      "Search Team Member"
+      "Search Team Member",
+      "A Bought-Out Knight"
     ],
     "searchNames": [
       "Noble's Mercenary",
@@ -3367,7 +3370,8 @@
       "A Spectating Knight A",
       "Chilly Knight",
       "Patrolling Knight",
-      "Search Team Member"
+      "Search Team Member",
+      "A Bought-Out Knight"
     ],
     "displayName": "Noble's Mercenary"
   },
@@ -4519,7 +4523,8 @@
       "Slum Infected",
       "Female Resident",
       "Ye Zizhen",
-      "Staged(?) Female Passerby"
+      "Staged(?) Female Passerby",
+      "'Basalt_Moon'"
     ],
     "searchNames": [
       "A Sensible Spectator",
@@ -4560,7 +4565,8 @@
       "Slum Infected",
       "Female Resident",
       "Ye Zizhen",
-      "Staged(?) Female Passerby"
+      "Staged(?) Female Passerby",
+      "'Basalt_Moon'"
     ],
     "displayName": "A Sensible Spectator"
   },
@@ -6238,7 +6244,8 @@
       "Uncle Pickett",
       "Haggard Worker",
       "Darrell",
-      "Barkeeper"
+      "Barkeeper",
+      "Old Harry"
     ],
     "searchNames": [
       "Ursus Caravan Member",
@@ -6257,7 +6264,8 @@
       "Uncle Pickett",
       "Haggard Worker",
       "Darrell",
-      "Barkeeper"
+      "Barkeeper",
+      "Old Harry"
     ],
     "displayName": "Ursus Caravan Member"
   },
@@ -6999,13 +7007,17 @@
       "Sandbeast",
       "Young Sandbeast",
       "Little Sandbeast",
-      "'Rory' (for now)"
+      "'Rory' (for now)",
+      "Big Sandbeast?",
+      "Big Sandbeast"
     ],
     "searchNames": [
       "Sandbeast",
       "Young Sandbeast",
       "Little Sandbeast",
-      "'Rory' (for now)"
+      "'Rory' (for now)",
+      "Big Sandbeast?",
+      "Big Sandbeast"
     ],
     "displayName": "Sandbeast"
   },
@@ -7058,6 +7070,7 @@
       "Rhodes Island Messenger",
       "Rhodes Island Landship Operator A",
       "Engineering Operator C",
+      "Enthusiastic Logistics Operator",
       "Human Resources Operator",
       "Rhodes Island Cargo Manager"
     ],
@@ -7072,6 +7085,7 @@
       "Rhodes Island Messenger",
       "Rhodes Island Landship Operator A",
       "Engineering Operator C",
+      "Enthusiastic Logistics Operator",
       "Human Resources Operator",
       "Rhodes Island Cargo Manager"
     ],
@@ -9125,6 +9139,8 @@
       "New Teacher",
       "Ivy",
       "Haggard Woman",
+      "Melancholy Lady",
+      "Bailey",
       "Florist"
     ],
     "searchNames": [
@@ -9148,6 +9164,8 @@
       "New Teacher",
       "Ivy",
       "Haggard Woman",
+      "Melancholy Lady",
+      "Bailey",
       "Florist"
     ],
     "displayName": "Panicked Woman"
@@ -9635,7 +9653,9 @@
       "Graf's Attendant",
       "Jif",
       "Nervous Townsperson",
-      "Curious Messenger"
+      "Curious Messenger",
+      "Sneaking Man",
+      "Patel"
     ],
     "searchNames": [
       "Respectful Attendant",
@@ -9656,7 +9676,9 @@
       "Graf's Attendant",
       "Jif",
       "Nervous Townsperson",
-      "Curious Messenger"
+      "Curious Messenger",
+      "Sneaking Man",
+      "Patel"
     ],
     "displayName": "Respectful Attendant"
   },
@@ -13359,14 +13381,14 @@
   },
   "avg_npc_1241_1": {
     "speakerNames": [
-      "Assistant Minister of Engineering",
+      "Assistant Minister of Works",
       "Assistant Minister Wan"
     ],
     "searchNames": [
-      "Assistant Minister of Engineering",
+      "Assistant Minister of Works",
       "Assistant Minister Wan"
     ],
-    "displayName": "Assistant Minister of Engineering"
+    "displayName": "Assistant Minister of Works"
   },
   "avg_npc_1245_1": {
     "speakerNames": [
@@ -14526,11 +14548,13 @@
   "avg_npc_1482_1": {
     "speakerNames": [
       "Mysterious Animal",
-      "Mio"
+      "Mio",
+      "Titi"
     ],
     "searchNames": [
       "Mysterious Animal",
-      "Mio"
+      "Mio",
+      "Titi"
     ],
     "displayName": "Mysterious Animal"
   },
@@ -14623,6 +14647,7 @@
       "Museum Staff",
       "Incredibly Bored Citizen",
       "Museum Ticketer",
+      "Flippant Noble",
       "Doting Servant",
       "Servant in Bushes",
       "Kindly Servant"
@@ -14638,6 +14663,7 @@
       "Museum Staff",
       "Incredibly Bored Citizen",
       "Museum Ticketer",
+      "Flippant Noble",
       "Doting Servant",
       "Servant in Bushes",
       "Kindly Servant"
@@ -14712,6 +14738,7 @@
       "Museum Receptionist",
       "Extremely Idle Citizen",
       "Waiter",
+      "Impatient Noble",
       "King's Brother",
       "New King",
       "Kindly Servant"
@@ -14722,6 +14749,7 @@
       "Museum Receptionist",
       "Extremely Idle Citizen",
       "Waiter",
+      "Impatient Noble",
       "King's Brother",
       "New King",
       "Kindly Servant"
@@ -14976,6 +15004,8 @@
       "Intern Operator C",
       "Operator Barty",
       "Engineering Operator A",
+      "Doubting HR Operator",
+      "Meticulous Operator",
       "Guard Operator",
       "Operator Passerby",
       "Office Operator A",
@@ -15004,6 +15034,8 @@
       "Intern Operator C",
       "Operator Barty",
       "Engineering Operator A",
+      "Doubting HR Operator",
+      "Meticulous Operator",
       "Guard Operator",
       "Operator Passerby",
       "Office Operator A",
@@ -18035,6 +18067,7 @@
       "Intern Operator A",
       "Rookie Engineering Operator",
       "Celica",
+      "Worried Medic Operator",
       "Field Operator A",
       "Field Operator",
       "Engineering Operator",
@@ -18066,6 +18099,7 @@
       "Intern Operator A",
       "Rookie Engineering Operator",
       "Celica",
+      "Worried Medic Operator",
       "Field Operator A",
       "Field Operator",
       "Engineering Operator",
@@ -19558,14 +19592,16 @@
   },
   "avg_181_flower_1": {
     "speakerNames": [
-      "Perfumer",
-      "Lena"
+      "Lena",
+      "Steros",
+      "Perfumer"
     ],
     "searchNames": [
-      "Perfumer",
-      "Lena"
+      "Lena",
+      "Steros",
+      "Perfumer"
     ],
-    "displayName": "Perfumer"
+    "displayName": "Lena"
   },
   "avg_193_frostl_1": {
     "speakerNames": [
@@ -22011,5 +22047,312 @@
       "Kestrel"
     ],
     "displayName": "Kestrel"
+  },
+  "avg_npc_2081_1": {
+    "speakerNames": [
+      "Depressed Man",
+      "Guerrilla Squad Member D",
+      "Minoan Captive"
+    ],
+    "searchNames": [
+      "Depressed Man",
+      "Guerrilla Squad Member D",
+      "Minoan Captive"
+    ],
+    "displayName": "Depressed Man"
+  },
+  "avg_npc_2068_1": {
+    "speakerNames": [
+      "Kassandra",
+      "Titi"
+    ],
+    "searchNames": [
+      "Kassandra",
+      "Titi"
+    ],
+    "displayName": "Kassandra"
+  },
+  "avg_npc_2085_1": {
+    "speakerNames": [
+      "Acolyte"
+    ],
+    "searchNames": [
+      "Acolyte"
+    ],
+    "displayName": "Acolyte"
+  },
+  "avg_npc_2070_1": {
+    "speakerNames": [
+      "Hekádemos",
+      "Jailer"
+    ],
+    "searchNames": [
+      "Hekádemos",
+      "Jailer"
+    ],
+    "displayName": "Hekádemos"
+  },
+  "avg_4056_titi_1": {
+    "speakerNames": [
+      "Titi",
+      "Pallas",
+      "'Outlander'"
+    ],
+    "searchNames": [
+      "Titi",
+      "Pallas",
+      "'Outlander'"
+    ],
+    "displayName": "Titi"
+  },
+  "avg_npc_2069_1": {
+    "speakerNames": [
+      "Lykeion"
+    ],
+    "searchNames": [
+      "Lykeion"
+    ],
+    "displayName": "Lykeion"
+  },
+  "avg_npc_2074_1": {
+    "speakerNames": [
+      "Sober Craftsman",
+      "Craftsman",
+      "Innkeeper"
+    ],
+    "searchNames": [
+      "Sober Craftsman",
+      "Craftsman",
+      "Innkeeper"
+    ],
+    "displayName": "Sober Craftsman"
+  },
+  "avg_npc_2087_1": {
+    "speakerNames": [
+      "Craftsmen Rep"
+    ],
+    "searchNames": [
+      "Craftsmen Rep"
+    ],
+    "displayName": "Craftsmen Rep"
+  },
+  "avg_npc_2086_1": {
+    "speakerNames": [
+      "Craftsmen Rep",
+      "Fruit Farmer Rep"
+    ],
+    "searchNames": [
+      "Craftsmen Rep",
+      "Fruit Farmer Rep"
+    ],
+    "displayName": "Craftsmen Rep"
+  },
+  "avg_4166_varkis_1": {
+    "speakerNames": [
+      "Xanthos",
+      "Pallas",
+      "Titi",
+      "Concerned Villager",
+      "Guerrilla Squad Member B",
+      "Guerrilla Squad Member C",
+      "Sargonian Officer",
+      "Ferryman",
+      "Lykeion"
+    ],
+    "searchNames": [
+      "Xanthos",
+      "Pallas",
+      "Titi",
+      "Concerned Villager",
+      "Guerrilla Squad Member B",
+      "Guerrilla Squad Member C",
+      "Sargonian Officer",
+      "Ferryman",
+      "Lykeion"
+    ],
+    "displayName": "Xanthos"
+  },
+  "avgnew_482_pallas_1": {
+    "speakerNames": [
+      "Pallas",
+      "Gossiper",
+      "Bored Listener",
+      "'Kereseira'"
+    ],
+    "searchNames": [
+      "Pallas",
+      "Gossiper",
+      "Bored Listener",
+      "'Kereseira'"
+    ],
+    "displayName": "Pallas"
+  },
+  "avg_1022_flwr2_1": {
+    "speakerNames": [
+      "Lena"
+    ],
+    "searchNames": [
+      "Lena"
+    ],
+    "displayName": "Lena"
+  },
+  "avg_npc_2067_1": {
+    "speakerNames": [
+      "Lydia",
+      "Períandros",
+      "Kassandra",
+      "Lena",
+      "Dignified Woman"
+    ],
+    "searchNames": [
+      "Lydia",
+      "Períandros",
+      "Kassandra",
+      "Lena",
+      "Dignified Woman"
+    ],
+    "displayName": "Lydia"
+  },
+  "avg_npc_2077_1": {
+    "speakerNames": [
+      "Behnui",
+      "Lydia",
+      "Pompous Noble"
+    ],
+    "searchNames": [
+      "Behnui",
+      "Lydia",
+      "Pompous Noble"
+    ],
+    "displayName": "Behnui"
+  },
+  "avg_npc_2079_1": {
+    "speakerNames": [
+      "Stray Tourist",
+      "Cynisca"
+    ],
+    "searchNames": [
+      "Stray Tourist",
+      "Cynisca"
+    ],
+    "displayName": "Stray Tourist"
+  },
+  "avg_npc_2078_1": {
+    "speakerNames": [
+      "Friendly Tourist",
+      "Períandros"
+    ],
+    "searchNames": [
+      "Friendly Tourist",
+      "Períandros"
+    ],
+    "displayName": "Friendly Tourist"
+  },
+  "avg_npc_2072_1": {
+    "speakerNames": [
+      "Drunken Craftsman",
+      "Minoan Girl"
+    ],
+    "searchNames": [
+      "Drunken Craftsman",
+      "Minoan Girl"
+    ],
+    "displayName": "Drunken Craftsman"
+  },
+  "avg_npc_2088_1": {
+    "speakerNames": [
+      "Peace Officer"
+    ],
+    "searchNames": [
+      "Peace Officer"
+    ],
+    "displayName": "Peace Officer"
+  },
+  "avg_npc_2090_1": {
+    "speakerNames": [
+      "Burdenbeast",
+      "Frightened Burdenbeasts",
+      "Massive Burdenbeast"
+    ],
+    "searchNames": [
+      "Burdenbeast",
+      "Frightened Burdenbeasts",
+      "Massive Burdenbeast"
+    ],
+    "displayName": "Burdenbeast"
+  },
+  "avg_npc_2080_1": {
+    "speakerNames": [
+      "Melitta"
+    ],
+    "searchNames": [
+      "Melitta"
+    ],
+    "displayName": "Melitta"
+  },
+  "avg_npc_2089_1": {
+    "speakerNames": [
+      "Jailer"
+    ],
+    "searchNames": [
+      "Jailer"
+    ],
+    "displayName": "Jailer"
+  },
+  "avg_npc_2076_1": {
+    "speakerNames": [
+      "Beggar?",
+      "Ithakos's Father"
+    ],
+    "searchNames": [
+      "Beggar?",
+      "Ithakos's Father"
+    ],
+    "displayName": "Beggar?"
+  },
+  "avg_npc_2075_1": {
+    "speakerNames": [
+      "Clerk"
+    ],
+    "searchNames": [
+      "Clerk"
+    ],
+    "displayName": "Clerk"
+  },
+  "avg_npc_2084_1": {
+    "speakerNames": [
+      "Guerrilla Squad Member A"
+    ],
+    "searchNames": [
+      "Guerrilla Squad Member A"
+    ],
+    "displayName": "Guerrilla Squad Member A"
+  },
+  "avg_npc_2082_1": {
+    "speakerNames": [
+      "'Agamem Soldier'"
+    ],
+    "searchNames": [
+      "'Agamem Soldier'"
+    ],
+    "displayName": "'Agamem Soldier'"
+  },
+  "avg_npc_2073_1": {
+    "speakerNames": [
+      "Minoan Villager"
+    ],
+    "searchNames": [
+      "Minoan Villager"
+    ],
+    "displayName": "Minoan Villager"
+  },
+  "avg_4171_wulfen_1": {
+    "speakerNames": [
+      "Muriel"
+    ],
+    "searchNames": [
+      "Muriel"
+    ],
+    "displayName": "Muriel"
   }
 }

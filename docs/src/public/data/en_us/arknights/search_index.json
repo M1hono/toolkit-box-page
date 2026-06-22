@@ -1289,6 +1289,7 @@
   "Male Tourist A": "avg_npc_021",
   "Puzzled Islander": "avg_npc_021",
   "No-Longer-Puzzled Islander": "avg_npc_021",
+  "Knightsports Fan": "avg_npc_021",
   "Tabloid Reporter": "avg_npc_021",
   "Messenger": [
     "avg_npc_021",
@@ -1952,7 +1953,9 @@
     "char_214_kafka_1",
     "avg_npc_136",
     "avg_npc_137",
-    "avg_252_bibeak_1"
+    "avg_252_bibeak_1",
+    "avg_npc_2070_1",
+    "avg_npc_2089_1"
   ],
   "Prison Supervisor": "avg_npc_134",
   "B-Zone Prisoner A": "avg_npc_133",
@@ -2139,7 +2142,11 @@
   "Kazimierzian Girl": "avg_npc_004",
   "Basket-holding Girl": "avg_npc_004",
   "Veggie": "avg_npc_004",
-  "Lydia": "avg_npc_004",
+  "Lydia": [
+    "avg_npc_004",
+    "avg_npc_2067_1",
+    "avg_npc_2077_1"
+  ],
   "Runaway Girl": "avg_npc_004",
   "An Infected Woman": "avg_npc_004",
   "Timid Woman": "avg_npc_004",
@@ -2165,6 +2172,7 @@
   "A Spectating Knight A": "avg_npc_217",
   "Chilly Knight": "avg_npc_217",
   "Patrolling Knight": "avg_npc_217",
+  "A Bought-Out Knight": "avg_npc_217",
   "Ill Refugee": "avg_npc_626_1",
   "Enthusiastic Infected": "avg_npc_626_1",
   "Zeno": "avg_npc_626_1",
@@ -2578,7 +2586,8 @@
   "Female Lungmenite": "avg_npc_032",
   "Clerk": [
     "avg_npc_032",
-    "avg_npc_696_1"
+    "avg_npc_696_1",
+    "avg_npc_2075_1"
   ],
   "Spirited Tourist": "avg_npc_032",
   "Thrilled Fan": "avg_npc_032",
@@ -2603,6 +2612,7 @@
   "Female Resident": "avg_npc_032",
   "Ye Zizhen": "avg_npc_032",
   "Staged(?) Female Passerby": "avg_npc_032",
+  "'Basalt_Moon'": "avg_npc_032",
   "An Ingratiating Knight": "avg_npc_218",
   "A Cheering Knight": "avg_npc_218",
   "A Spectating Knight B": "avg_npc_218",
@@ -2657,7 +2667,8 @@
   "Innkeeper": [
     "avg_npc_787_1",
     "avg_npc_797_1",
-    "avg_npc_140"
+    "avg_npc_140",
+    "avg_npc_2074_1"
   ],
   "Shanhaizhong Member": [
     "avg_npc_787_1",
@@ -3284,6 +3295,7 @@
   "Uncle Pickett": "avg_npc_081",
   "Haggard Worker": "avg_npc_081",
   "Darrell": "avg_npc_081",
+  "Old Harry": "avg_npc_081",
   "Eikthyrnir": "avg_npc_968_1",
   "Rhine Lab Researcher": [
     "avg_npc_529_1",
@@ -3580,6 +3592,8 @@
   "Young Sandbeast": "avg_npc_1188_1",
   "Little Sandbeast": "avg_npc_1188_1",
   "'Rory' (for now)": "avg_npc_1188_1",
+  "Big Sandbeast?": "avg_npc_1188_1",
+  "Big Sandbeast": "avg_npc_1188_1",
   "A Sandbeast": "avg_npc_1187_1",
   "Yet Another Sandbeast": "avg_npc_1189_1",
   "Pack of Sandbeasts": "avg_npc_1189_1",
@@ -3592,6 +3606,7 @@
   "Flustered HR Operator": "avg_npc_972_1",
   "Rhodes Island Landship Operator A": "avg_npc_972_1",
   "Engineering Operator C": "avg_npc_972_1",
+  "Enthusiastic Logistics Operator": "avg_npc_972_1",
   "Rhodes Island Cargo Manager": "avg_npc_972_1",
   "Cheery Legatus": "avg_npc_360_1",
   "Reserved Legatus": "avg_npc_360_1",
@@ -3928,7 +3943,10 @@
     "avg_npc_1163_1",
     "avg_194_leto_1"
   ],
-  "Burdenbeast": "avg_npc_1163_1",
+  "Burdenbeast": [
+    "avg_npc_1163_1",
+    "avg_npc_2090_1"
+  ],
   "Wild Burdenbeast": "avg_npc_1163_1",
   "Blocking Burdenbeast": "avg_npc_1163_1",
   "Overwhelmed Girl": "avg_4146_nymph_1",
@@ -4429,6 +4447,8 @@
   "New Teacher": "avg_npc_418_1",
   "Ivy": "avg_npc_418_1",
   "Haggard Woman": "avg_npc_418_1",
+  "Melancholy Lady": "avg_npc_418_1",
+  "Bailey": "avg_npc_418_1",
   "Florist": "avg_npc_418_1",
   "Nowell": [
     "avg_npc_1066_1",
@@ -4671,6 +4691,8 @@
   "Jif": "avg_npc_498_1",
   "Nervous Townsperson": "avg_npc_498_1",
   "Curious Messenger": "avg_npc_498_1",
+  "Sneaking Man": "avg_npc_498_1",
+  "Patel": "avg_npc_498_1",
   "Siracusan Mafioso": "avg_npc_600_1",
   "Anguished Man": "avg_npc_600_1",
   "Mysterious Man": "avg_npc_1663_1",
@@ -4714,6 +4736,7 @@
   "Rhodes Island Medic": "avg_npc_501_1",
   "Meticulous Operator": [
     "avg_npc_501_1",
+    "avg_npc_090",
     "avg_npc_1560_1"
   ],
   "Passerby Infected": "avg_npc_499_1",
@@ -4928,7 +4951,12 @@
   "Joyce": "avg_128_plosis_1",
   "Transmitter": "avg_npc_533_1",
   "Kristen": "avg_npc_537_1",
-  "Pallas": "avg_482_pallas_1",
+  "Pallas": [
+    "avg_482_pallas_1",
+    "avg_4056_titi_1",
+    "avg_4166_varkis_1",
+    "avgnew_482_pallas_1"
+  ],
   "Erato": [
     "avg_482_pallas_1",
     "avg_4043_erato_1"
@@ -5701,7 +5729,7 @@
     "avg_npc_1247_1"
   ],
   "Rustic Youth": "avg_4119_wanqin_1",
-  "Assistant Minister of Engineering": "avg_npc_1241_1",
+  "Assistant Minister of Works": "avg_npc_1241_1",
   "Assistant Minister Wan": "avg_npc_1241_1",
   "Veteran Tumu Tianshi": [
     "avg_npc_1245_1",
@@ -6023,6 +6051,12 @@
     "avg_npc_1482_1",
     "avg_npc_1901_1"
   ],
+  "Titi": [
+    "avg_npc_1482_1",
+    "avg_npc_2068_1",
+    "avg_4056_titi_1",
+    "avg_4166_varkis_1"
+  ],
   "Slumbering Citizen": "avg_4140_lasher_1",
   "Aloof Citizen": "avg_4140_lasher_1",
   "Lazvar": "avg_4140_lasher_1",
@@ -6053,6 +6087,7 @@
   ],
   "Incredibly Bored Citizen": "avg_npc_1491_1",
   "Museum Ticketer": "avg_npc_1491_1",
+  "Flippant Noble": "avg_npc_1491_1",
   "Doting Servant": "avg_npc_1491_1",
   "Servant in Bushes": "avg_npc_1491_1",
   "Kindly Servant": [
@@ -6074,6 +6109,7 @@
   "Gathering Staff": "avg_npc_1490_1",
   "Museum Receptionist": "avg_npc_1490_1",
   "Extremely Idle Citizen": "avg_npc_1490_1",
+  "Impatient Noble": "avg_npc_1490_1",
   "King's Brother": "avg_npc_1490_1",
   "New King": "avg_npc_1490_1",
   "Ajani": "avg_npc_1485_1",
@@ -6137,6 +6173,7 @@
     "avg_npc_090",
     "avg_npc_088"
   ],
+  "Doubting HR Operator": "avg_npc_090",
   "Operator Passerby": "avg_npc_090",
   "Piston": "avg_npc_090",
   "Rhodes Island Sniper": "avg_npc_089",
@@ -6785,6 +6822,7 @@
   "Celine": "avg_npc_088",
   "Rookie Engineering Operator": "avg_npc_088",
   "Celica": "avg_npc_088",
+  "Worried Medic Operator": "avg_npc_088",
   "Assistant Operator": "avg_npc_088",
   "Aciddrop": [
     "avg_123_fang_1",
@@ -6947,7 +6985,12 @@
   "Queen": "avg_npc_1493_1",
   "Former Queen": "avg_npc_1493_1",
   "Prince": "avg_npc_1496_1",
-  "Lena": "avg_181_flower_1",
+  "Lena": [
+    "avg_181_flower_1",
+    "avg_1022_flwr2_1",
+    "avg_npc_2067_1"
+  ],
+  "Steros": "avg_181_flower_1",
   "La Pluma": "avg_421_crow_1",
   "Cantabile": "avg_497_ctable_1",
   "Jackie": [
@@ -7297,5 +7340,57 @@
   "Senior Agent": "avg_npc_2047_1",
   "Væla?": "avg_npc_2036_1",
   "Nasti?": "avg_npc_2033_1",
-  "Kestrel": "avg_4023_rfalcn_1"
+  "Kestrel": "avg_4023_rfalcn_1",
+  "Depressed Man": "avg_npc_2081_1",
+  "Guerrilla Squad Member D": "avg_npc_2081_1",
+  "Minoan Captive": "avg_npc_2081_1",
+  "Kassandra": [
+    "avg_npc_2068_1",
+    "avg_npc_2067_1"
+  ],
+  "Acolyte": "avg_npc_2085_1",
+  "Hekádemos": "avg_npc_2070_1",
+  "'Outlander'": "avg_4056_titi_1",
+  "Lykeion": [
+    "avg_npc_2069_1",
+    "avg_4166_varkis_1"
+  ],
+  "Sober Craftsman": "avg_npc_2074_1",
+  "Craftsman": "avg_npc_2074_1",
+  "Craftsmen Rep": [
+    "avg_npc_2087_1",
+    "avg_npc_2086_1"
+  ],
+  "Fruit Farmer Rep": "avg_npc_2086_1",
+  "Xanthos": "avg_4166_varkis_1",
+  "Concerned Villager": "avg_4166_varkis_1",
+  "Guerrilla Squad Member B": "avg_4166_varkis_1",
+  "Guerrilla Squad Member C": "avg_4166_varkis_1",
+  "Sargonian Officer": "avg_4166_varkis_1",
+  "Ferryman": "avg_4166_varkis_1",
+  "Gossiper": "avgnew_482_pallas_1",
+  "Bored Listener": "avgnew_482_pallas_1",
+  "'Kereseira'": "avgnew_482_pallas_1",
+  "Períandros": [
+    "avg_npc_2067_1",
+    "avg_npc_2078_1"
+  ],
+  "Dignified Woman": "avg_npc_2067_1",
+  "Behnui": "avg_npc_2077_1",
+  "Pompous Noble": "avg_npc_2077_1",
+  "Stray Tourist": "avg_npc_2079_1",
+  "Cynisca": "avg_npc_2079_1",
+  "Friendly Tourist": "avg_npc_2078_1",
+  "Drunken Craftsman": "avg_npc_2072_1",
+  "Minoan Girl": "avg_npc_2072_1",
+  "Peace Officer": "avg_npc_2088_1",
+  "Frightened Burdenbeasts": "avg_npc_2090_1",
+  "Massive Burdenbeast": "avg_npc_2090_1",
+  "Melitta": "avg_npc_2080_1",
+  "Beggar?": "avg_npc_2076_1",
+  "Ithakos's Father": "avg_npc_2076_1",
+  "Guerrilla Squad Member A": "avg_npc_2084_1",
+  "'Agamem Soldier'": "avg_npc_2082_1",
+  "Minoan Villager": "avg_npc_2073_1",
+  "Muriel": "avg_4171_wulfen_1"
 }
