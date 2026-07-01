@@ -3595,20 +3595,20 @@
       "faceCoordinates": {
         "1049000": {
           "id": 1049000,
-          "faceX": 373,
-          "faceY": 149,
+          "faceX": 375,
+          "faceY": 152,
           "scale": 1
         },
         "1049001": {
           "id": 1049001,
-          "faceX": 373,
-          "faceY": 149,
+          "faceX": 375,
+          "faceY": 152,
           "scale": 1
         },
         "1049002": {
           "id": 1049002,
           "faceX": 379,
-          "faceY": 149,
+          "faceY": 152,
           "scale": 1
         },
         "1098118000": {
@@ -13725,7 +13725,9 @@
           "2": "https://static.atlasacademy.io/JP/CharaFigure/3064001/3064001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/3064002/3064002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "306430": "https://static.atlasacademy.io/JP/CharaFigure/3064300/3064300_merged.png"
+        },
         "story": {}
       },
       "faceCoordinates": {
@@ -13746,6 +13748,12 @@
           "faceX": 380,
           "faceY": 152,
           "scale": 1
+        },
+        "3064300": {
+          "id": 3064300,
+          "faceX": 374,
+          "faceY": 166,
+          "scale": 1
         }
       }
     },
@@ -13756,7 +13764,9 @@
           "2": "https://static.atlasacademy.io/JP/CharaFigure/3064001/3064001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/3064002/3064002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "306430": "https://static.atlasacademy.io/JP/CharaFigure/3064300/3064300_merged.png"
+        },
         "story": {}
       }
     }
@@ -35387,6 +35397,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/10020000/10020000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/10020001/10020001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/10020002/10020002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "1002200": {
+    "id": 1002200,
+    "collectionNo": 471,
+    "name": "アスカラポス",
+    "ruby": "アスカラポス",
+    "className": "alterEgo",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/10022000/10022000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/10022001/10022001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/10022002/10022002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "10022000": {
+          "id": 10022000,
+          "faceX": 357,
+          "faceY": 114,
+          "scale": 1
+        },
+        "10022001": {
+          "id": 10022001,
+          "faceX": 341,
+          "faceY": 111,
+          "scale": 1
+        },
+        "10022002": {
+          "id": 10022002,
+          "faceX": 891,
+          "faceY": 141,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/10022000/10022000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/10022001/10022001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/10022002/10022002_merged.png"
         },
         "costume": {},
         "story": {}
