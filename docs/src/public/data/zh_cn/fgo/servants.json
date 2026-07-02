@@ -13184,6 +13184,56 @@
       }
     }
   },
+  "305900": {
+    "id": 305900,
+    "collectionNo": 442,
+    "name": "因陀罗",
+    "ruby": "因陀罗",
+    "className": "lancer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3059000/3059000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3059001/3059001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3059002/3059002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "3059000": {
+          "id": 3059000,
+          "faceX": 386,
+          "faceY": 88,
+          "scale": 1
+        },
+        "3059001": {
+          "id": 3059001,
+          "faceX": 307,
+          "faceY": 116,
+          "scale": 1
+        },
+        "3059002": {
+          "id": 3059002,
+          "faceX": 359,
+          "faceY": 114,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3059000/3059000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3059001/3059001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3059002/3059002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "400100": {
     "id": 400100,
     "collectionNo": 23,
