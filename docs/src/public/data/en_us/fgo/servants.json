@@ -37921,6 +37921,56 @@
       }
     }
   },
+  "3300200": {
+    "id": 3300200,
+    "collectionNo": 417,
+    "name": "Ereshkigal",
+    "ruby": "Ereshkigal",
+    "className": "beastEresh",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/33002000/33002000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/33002001/33002001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/33002002/33002002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "33002000": {
+          "id": 33002000,
+          "faceX": 412,
+          "faceY": 138,
+          "scale": 1
+        },
+        "33002001": {
+          "id": 33002001,
+          "faceX": 399,
+          "faceY": 121,
+          "scale": 1
+        },
+        "33002002": {
+          "id": 33002002,
+          "faceX": 389,
+          "faceY": 142,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/33002000/33002000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/33002001/33002001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/33002002/33002002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "9935400": {
     "id": 9935400,
     "collectionNo": 149,

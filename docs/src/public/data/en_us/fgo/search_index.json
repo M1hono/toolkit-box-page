@@ -5726,6 +5726,20 @@
     ]
   },
   {
+    "id": 3300200,
+    "name": "Ereshkigal",
+    "originalName": "Ereshkigal",
+    "ruby": "Ereshkigal",
+    "className": "beastEresh",
+    "rarity": 5,
+    "searchTerms": [
+      "ereshkigal",
+      "ereshkigal",
+      "ereshkigal",
+      "beasteresh"
+    ]
+  },
+  {
     "id": 9935400,
     "name": "Tiamat",
     "originalName": "Tiamat",
