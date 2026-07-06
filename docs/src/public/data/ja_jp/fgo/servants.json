@@ -4905,6 +4905,56 @@
       }
     }
   },
+  "106700": {
+    "id": 106700,
+    "collectionNo": 472,
+    "name": "グレイ・リリィ",
+    "ruby": "グレイ・リリィ",
+    "className": "saber",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/1067000/1067000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/1067001/1067001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/1067002/1067002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "1067000": {
+          "id": 1067000,
+          "faceX": 355,
+          "faceY": 159,
+          "scale": 1
+        },
+        "1067001": {
+          "id": 1067001,
+          "faceX": 355,
+          "faceY": 159,
+          "scale": 1
+        },
+        "1067002": {
+          "id": 1067002,
+          "faceX": 355,
+          "faceY": 159,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/1067000/1067000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/1067001/1067001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/1067002/1067002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "200100": {
     "id": 200100,
     "collectionNo": 11,
@@ -13705,6 +13755,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/3062000/3062000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/3062001/3062001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/3062002/3062002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "306300": {
+    "id": 306300,
+    "collectionNo": 473,
+    "name": "グレイ・リリィ",
+    "ruby": "グレイ・リリィ",
+    "className": "lancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/3063000/3063000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/3063001/3063001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/3063002/3063002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "3063000": {
+          "id": 3063000,
+          "faceX": 361,
+          "faceY": 234,
+          "scale": 1
+        },
+        "3063001": {
+          "id": 3063001,
+          "faceX": 361,
+          "faceY": 234,
+          "scale": 1
+        },
+        "3063002": {
+          "id": 3063002,
+          "faceX": 361,
+          "faceY": 234,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/3063000/3063000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/3063001/3063001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/3063002/3063002_merged.png"
         },
         "costume": {},
         "story": {}
