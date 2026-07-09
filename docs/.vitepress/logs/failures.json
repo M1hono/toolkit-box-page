@@ -1,4 +1,11 @@
 {
   "downloadFailures": [],
-  "uploadFailures": []
+  "uploadFailures": [
+    {
+      "key": "arknights/characters/%24ill_amiya_normal%231%241.png",
+      "variant": "$ill_amiya_normal#1$1",
+      "error": "Request failed with status code 429",
+      "timestamp": 1783563206215
+    }
+  ]
 }

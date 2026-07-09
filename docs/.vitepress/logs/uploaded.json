@@ -90879,5 +90879,10 @@
     "status": "skipped",
     "timestamp": 1780282540686,
     "reason": "404"
+  },
+  "arknights/characters/%24ill_amiya_normal%231%241.png": {
+    "status": "failed",
+    "timestamp": 1783563206215,
+    "error": "Request failed with status code 429"
   }
 }
