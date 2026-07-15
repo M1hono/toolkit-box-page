@@ -2058,6 +2058,20 @@
     ]
   },
   {
+    "id": 305500,
+    "name": "Dobrynya Nikitich (Lancer)",
+    "originalName": "Dobrynya Nikitich (Lancer)",
+    "ruby": "Dobrynya Nikitich (Lancer)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "dobrynya nikitich (lancer)",
+      "dobrynya nikitich (lancer)",
+      "dobrynya nikitich (lancer)",
+      "lancer"
+    ]
+  },
+  {
     "id": 400100,
     "name": "Medusa",
     "originalName": "Medusa",
@@ -5334,6 +5348,20 @@
     ]
   },
   {
+    "id": 1101900,
+    "name": "Xu Fu (Avenger)",
+    "originalName": "Xu Fu (Avenger)",
+    "ruby": "Xu Fu (Avenger)",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "xu fu (avenger)",
+      "xu fu (avenger)",
+      "xu fu (avenger)",
+      "avenger"
+    ]
+  },
+  {
     "id": 1700100,
     "name": "Solomon",
     "originalName": "Solomon",
@@ -5414,6 +5442,20 @@
       "archetype: earth",
       "archetype: earth",
       "archetype: earth",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2300900,
+    "name": "Mysterious Executor C.I.E.L",
+    "originalName": "Mysterious Executor C.I.E.L",
+    "ruby": "Mysterious Executor C.I.E.L",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "mysterious executor c.i.e.l",
+      "mysterious executor c.i.e.l",
+      "mysterious executor c.i.e.l",
       "mooncancer"
     ]
   },
