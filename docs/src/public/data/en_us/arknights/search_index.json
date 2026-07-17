@@ -820,6 +820,7 @@
   ],
   "Innocent Girl": [
     "avg_npc_045_nn_1",
+    "avg_npc_142",
     "avg_npc_992_1"
   ],
   "Diane": [
@@ -1555,6 +1556,8 @@
   "Liang Xun": "avg_npc_295_1",
   "Unfrivolous Man": "avg_npc_295_1",
   "Liang Xun?": "avg_npc_295_1",
+  "Ch'en Chao-ch'ien & Ch'en & Liang Xun": "avg_npc_295_1",
+  "Ch'en Chao-ch'ien & Liang Xun": "avg_npc_295_1",
   "Miss Du": "avg_npc_296_1",
   "Du Yaoye": "avg_npc_296_1",
   "Jieyun": [
@@ -1637,6 +1640,7 @@
     "avg_4083_chimes_1"
   ],
   "Exhausted L.G.D. Officer": "char_015_lmg",
+  "L.G.D. Officer On Duty": "char_015_lmg",
   "Frivolous L.G.D. Officer": "char_015_lmg",
   "Serious L.G.D. Officer": "char_015_lmg",
   "L.G.D. Officer?": "char_015_lmg",
@@ -1832,6 +1836,7 @@
   "City Council Administrator": "avg_npc_223",
   "Professor's Assistant": "avg_npc_223",
   "Retained Lawyer": "avg_npc_223",
+  "Mr. Wong": "avg_npc_223",
   "Government Official": "avg_npc_223",
   "Boy": [
     "avg_npc_223",
@@ -1902,6 +1907,15 @@
   "Office Clerk": "avg_npc_222",
   "Unremarkable Man": "avg_npc_222",
   "HR Employee": "avg_npc_222",
+  "Anxious Man": [
+    "avg_npc_222",
+    "avg_npc_626_1",
+    "avg_npc_416_1",
+    "avg_npc_1042_1",
+    "avg_npc_1043_1",
+    "avg_npc_1616_1"
+  ],
+  "Mr. Lau": "avg_npc_222",
   "Raythean Industries Representative": "avg_npc_222",
   "Chang": "avg_npc_222",
   "Prosecutor": "avg_npc_222",
@@ -2176,13 +2190,6 @@
   "Ill Refugee": "avg_npc_626_1",
   "Enthusiastic Infected": "avg_npc_626_1",
   "Zeno": "avg_npc_626_1",
-  "Anxious Man": [
-    "avg_npc_626_1",
-    "avg_npc_416_1",
-    "avg_npc_1042_1",
-    "avg_npc_1043_1",
-    "avg_npc_1616_1"
-  ],
   "Farone": "avg_npc_626_1",
   "Fierce Infected": "avg_npc_626_1",
   "Gus": "avg_npc_626_1",
@@ -2288,7 +2295,9 @@
     "avg_1013_spchen_1",
     "avg_npc_662_1",
     "avg_npc_790_1",
-    "avg_npc_086"
+    "avg_npc_086",
+    "avg_1050_chen3_1",
+    "avg_4221_ju_1"
   ],
   "Ch'en & Lin Yühsia": "char_010_chen_summer",
   "Female Tourist C": "char_010_chen_summer",
@@ -2327,7 +2336,8 @@
   "Terrified Female Tourist": "avg_npc_202",
   "Excited Tourist": [
     "avg_npc_202",
-    "avg_npc_524_1"
+    "avg_npc_524_1",
+    "avg_npc_1629_1"
   ],
   "Waitress": "avg_npc_202",
   "Honor Student": "avg_npc_036",
@@ -2685,13 +2695,17 @@
   "Anxious Shanhaizhong Member": "avg_npc_794_1",
   "Restless Shanhaizhong Member": "avg_npc_794_1",
   "Calm Shanhaizhong Member": "avg_npc_794_1",
+  "Determined Shanhaizhong Member": "avg_npc_794_1",
   "Passing Villager B": "avg_npc_797_1",
   "Aggressive Villager": "avg_npc_797_1",
   "Nervous Villager": [
     "avg_npc_797_1",
     "avg_npc_140"
   ],
-  "Panicked Student": "avg_npc_797_1",
+  "Panicked Student": [
+    "avg_npc_797_1",
+    "avg_npc_1626_1"
+  ],
   "Arrogant Man": "avg_npc_797_1",
   "Blacksmith": "avg_npc_797_1",
   "Warehouse Guard": "avg_npc_797_1",
@@ -2736,10 +2750,14 @@
   ],
   "Humble Worker": "avg_npc_140",
   "Proprietor": "avg_npc_140",
+  "Bewildered Mountain Dweller": "avg_npc_140",
+  "Old Wood": "avg_npc_140",
   "Stonemason": "avg_npc_140",
   "Street Stall Owner": "avg_npc_140",
   "Second Apprentice": "avg_npc_140",
   "First Apprentice": "avg_npc_140",
+  "Humble Woodcutter": "avg_npc_140",
+  "Humble Woodcutter?": "avg_npc_140",
   "Angry Gang Member": "avg_npc_140",
   "Astonished Villager": "avg_npc_141",
   "Reporting Villager": "avg_npc_141",
@@ -2779,6 +2797,7 @@
   "Roadside Inn Staff": "avg_npc_799_1",
   "Retired Soldier": "avg_npc_799_1",
   "Guest": "avg_npc_799_1",
+  "Returned Peddler": "avg_npc_799_1",
   "Food-Delivering Villager": "avg_npc_798_1",
   "Roadside Clinic Staff": "avg_npc_798_1",
   "Errand Runner": "avg_npc_798_1",
@@ -3401,7 +3420,10 @@
   "Suspicious Passerby": "avg_npc_305_1",
   "Suspicious Passersby": "avg_npc_305_1",
   "Young Bodyguard": "avg_npc_305_1",
-  "Strange Man": "avg_npc_305_1",
+  "Strange Man": [
+    "avg_npc_305_1",
+    "avg_npc_1639_1"
+  ],
   "Triad": "avg_npc_305_1",
   "Fierce Man": "avg_npc_305_1",
   "Street Thug": "avg_npc_305_1",
@@ -3494,6 +3516,10 @@
     "avg_2023_ling_1",
     "char_2014_nian_1"
   ],
+  "Jun": [
+    "avgnew_2015_dusk_1",
+    "avg_npc_2126_1"
+  ],
   "Shu": [
     "avgnew_2014_nian_1",
     "avg_2025_shu_1"
@@ -3508,6 +3534,14 @@
     "avg_npc_240",
     "avg_npc_051"
   ],
+  "Little Wood": "avg_npc_142",
+  "Gentle Voice": "avg_npc_142",
+  "Ju": [
+    "avg_npc_142",
+    "avg_npc_2131_1",
+    "avg_4221_ju_1"
+  ],
+  "Ju & Little Wood": "avg_npc_142",
   "Sickly Child": "avg_npc_142",
   "Yi": [
     "char_1011_purgatory_1",
@@ -4815,6 +4849,7 @@
   "Grinning Passerby": "avg_npc_1638_1",
   "Courteous Gentleman": "avg_npc_1638_1",
   "Elderly Fan": "avg_npc_1638_1",
+  "Frantic Townsperson": "avg_npc_1874_1",
   "Heartless Swordswoman": "avg_npc_1866_1",
   "Sword-Bearing Woman": "avg_npc_1866_1",
   "Flustered Waiter": "avg_npc_1866_1",
@@ -4829,21 +4864,36 @@
   "Brash Child": "avg_npc_1642_1",
   "Cocky Boy": "avg_npc_1642_1",
   "Unruly Child": "avg_npc_1642_1",
+  "Helpless Young Man": "avg_npc_1642_1",
   "Kindly Man": "avg_npc_1869_1",
   "Refined Woman": "avg_npc_1625_1",
   "Reserved Man": "avg_npc_1630_1",
   "Frustrated Middle-Aged Man": "avg_npc_1630_1",
   "Exhausted Judicial Official": "avg_npc_1630_1",
   "Judicial Jailer": "avg_npc_1630_1",
-  "Judicial Officer": "avg_npc_1630_1",
+  "Judicial Officer": [
+    "avg_npc_1630_1",
+    "avg_npc_1633_1"
+  ],
+  "Confused Guard": "avg_npc_1630_1",
+  "Ministry of Works Official": [
+    "avg_npc_1630_1",
+    "avg_npc_1632_1"
+  ],
   "Brocade-Robed Mandarin": "avg_npc_1630_1",
   "Old Luo": "avg_npc_1639_1",
   "Regular Customer": "avg_npc_1639_1",
+  "Old Man from Neighboring Town": "avg_npc_1639_1",
+  "Old Wood & Old Man from Neighboring Town": "avg_npc_1639_1",
   "Injured Old Man": "avg_npc_1639_1",
   "Chen Xiuqing": "avg_npc_1639_1",
+  "Pawnbroker": "avg_npc_1639_1",
   "Old Beggar": "avg_npc_1639_1",
   "Spirited Youth": "avg_npc_1622_1",
-  "Diligent Student": "avg_npc_1622_1",
+  "Diligent Student": [
+    "avg_npc_1622_1",
+    "avg_npc_1626_1"
+  ],
   "Confused Child": "avg_npc_1643_1",
   "Girl in the Mountains": "avg_npc_1643_1",
   "Quiet Weiqi Player": "avg_npc_1868_1",
@@ -4861,6 +4911,11 @@
   ],
   "Heroine": "avg_2024_chyue_1",
   "Feminine Voice": "avg_4121_zuole_1",
+  "Ch'en & Liang Xun & Zuo Le": "avg_4121_zuole_1",
+  "Restless Soldier": [
+    "avg_4121_zuole_1",
+    "avg_npc_795_1"
+  ],
   "'Bai Jin'": "avg_npc_1872_1",
   "Liang": "avg_npc_1870_1",
   "Waregeists": "avg_npc_1870_1",
@@ -4882,6 +4937,10 @@
     "avg_npc_796_1"
   ],
   "Yumen Sentry B": "avg_npc_796_1",
+  "Runner": [
+    "avg_npc_796_1",
+    "avg_npc_1637_1"
+  ],
   "Patrol Battalion Soldier B": "avg_npc_796_1",
   "Centurion": "avg_npc_796_1",
   "Burly Man": [
@@ -4904,6 +4963,11 @@
   "Stern Judicial Official": "avg_npc_1632_1",
   "Judicial Officer B": "avg_npc_1632_1",
   "Nervous Mandarin": "avg_npc_1632_1",
+  "Skeptical Ministry of Works Official": "avg_npc_1632_1",
+  "Ministry of Rites Official": "avg_npc_1632_1",
+  "Military Supervisory Censor": "avg_npc_1632_1",
+  "Stern Yanese Mandarin": "avg_npc_1632_1",
+  "Stern Yanese Mandarin?": "avg_npc_1632_1",
   "Ferdinand": [
     "avg_npc_522_1",
     "avg_npc_899_1",
@@ -5206,7 +5270,10 @@
   "Frantic Soldier": "avg_npc_406_1",
   "Dublinn Soldier A": "avg_npc_406_1",
   "Dublinn Soldier B": "avg_npc_406_1",
-  "Aloof Woman": "avg_npc_786_1",
+  "Aloof Woman": [
+    "avg_npc_786_1",
+    "avg_npc_2128_1"
+  ],
   "Shanhaizhong Boss?": "avg_npc_786_1",
   "Shanhaizhong Boss": "avg_npc_786_1",
   "Ya": "avg_npc_786_1",
@@ -5769,7 +5836,10 @@
   "Hardworking Farmer": "avg_npc_1242_1",
   "Rustic Farmer": "avg_npc_1242_1",
   "Ignorant Girl": "avg_npc_1242_1",
-  "Wang": "avg_npc_1237_1",
+  "Wang": [
+    "avg_npc_1237_1",
+    "avg_2027_wang_1"
+  ],
   "Tecno": [
     "avg_npc_1212_1",
     "avg_4125_rdoc_1",
@@ -6490,6 +6560,8 @@
   "Junior Drillmaster": "avg_npc_1615_1",
   "Baizao Lecturer": "avg_npc_1631_1",
   "Judicial Officer A": "avg_npc_1631_1",
+  "Tired Official": "avg_npc_1631_1",
+  "Sky Mirror Pavilion Librarian": "avg_npc_1631_1",
   "Cautious Student": "avg_npc_1628_1",
   "Stern Professor": "avg_npc_1620_1",
   "Professor Jing": "avg_npc_1620_1",
@@ -6508,7 +6580,16 @@
   "Patrolling Guardsman": "avg_npc_1637_1",
   "Guard B": "avg_npc_1637_1",
   "Guard Chief": "avg_npc_1637_1",
+  "Patrol Battalion Guard": "avg_npc_1637_1",
+  "Vigilant Patrol Battalion Guard": "avg_npc_1637_1",
+  "Patrol Battalion Sentry Officer": "avg_npc_1637_1",
+  "Nervous Patrol Battalion Guard": "avg_npc_1637_1",
+  "Baizao Soldier": "avg_npc_1637_1",
+  "Exhausted Guard": "avg_npc_1637_1",
+  "Exhausted Sentry": "avg_npc_1637_1",
+  "Tired Guard": "avg_npc_1637_1",
   "Calm Mandarin": "avg_npc_1633_1",
+  "Anxious Ministry of Works Official": "avg_npc_1633_1",
   "Imperial Guard": "avg_npc_1634_1",
   "Culann": "avg_npc_1697_1",
   "Friendly Resident": "avg_npc_1688_1",
@@ -7058,6 +7139,7 @@
   "Qanipalaat": "avg_466_qanik_1",
   "Yumen Field Medic": "avg_npc_1640_1",
   "Rope": "char_236_rope",
+  "Diligent Student & Panicked Student": "avg_npc_1626_1",
   "Scavenger": "avg_149_scave_1",
   "Corroserum": "avg_489_serum_1",
   "Meteor": [
@@ -7212,6 +7294,7 @@
   "Mother & Father": "avg_npc_1940_1",
   "'Mother'": "avg_npc_1941_1",
   "Windscoot": "avg_445_wscoot_1",
+  "Town Chief": "avg_npc_1641_1",
   "Aunt Wen": "avg_npc_1641_1",
   "Eloysius": "avg_npc_1966_1",
   "Imperial Guard?": "avg_npc_1966_1",
@@ -7375,7 +7458,10 @@
     "avg_npc_2067_1",
     "avg_npc_2078_1"
   ],
-  "Dignified Woman": "avg_npc_2067_1",
+  "Dignified Woman": [
+    "avg_npc_2067_1",
+    "avg_npc_2126_1"
+  ],
   "Behnui": "avg_npc_2077_1",
   "Pompous Noble": "avg_npc_2077_1",
   "Stray Tourist": "avg_npc_2079_1",
@@ -7392,5 +7478,30 @@
   "Guerrilla Squad Member A": "avg_npc_2084_1",
   "'Agamem Soldier'": "avg_npc_2082_1",
   "Minoan Villager": "avg_npc_2073_1",
-  "Muriel": "avg_4171_wulfen_1"
+  "Muriel": "avg_4171_wulfen_1",
+  "Ch'en Chao-ch'ien & Ch'en": "avg_1050_chen3_1",
+  "Ch'en Hui-chieh": "avg_1050_chen3_1",
+  "Plain-Dressed Elder": "avg_npc_2131_1",
+  "Hou": "avg_npc_2131_1",
+  "Ju & Hou": "avg_npc_2131_1",
+  "Masked Candleholder": "avg_npc_2134_1",
+  "Patrolling Candleholder": "avg_npc_2134_1",
+  "Exhausted Candleholder": "avg_npc_2134_1",
+  "Ch'en Chao-ch'ien": "avg_npc_2128_1",
+  "Jie": "avg_npc_2125_1",
+  "Chun": [
+    "avg_npc_2125_1",
+    "avg_npc_2127_1"
+  ],
+  "Overwhelmed Soldier": "avg_npc_2133_1",
+  "Peculiar-looking Artisan": "avg_4221_ju_1",
+  "Quiet Candleholder": "avg_npc_2127_1",
+  "True Lung": "avg_npc_2132_1",
+  "Shadowy Figure": "avg_npc_2132_1",
+  "Wang?": "avg_npc_2129_1",
+  "Sui": "avg_npc_2129_1",
+  "Sui?": "avg_npc_2129_1",
+  "Taraxacum": "avg_npc_2130_1",
+  "Border Guard": "avg_npc_2136_1",
+  "Yanese Soldier": "avg_npc_2136_1"
 }

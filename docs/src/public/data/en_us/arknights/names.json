@@ -2258,12 +2258,16 @@
     "speakerNames": [
       "Liang Xun",
       "Unfrivolous Man",
-      "Liang Xun?"
+      "Liang Xun?",
+      "Ch'en Chao-ch'ien & Ch'en & Liang Xun",
+      "Ch'en Chao-ch'ien & Liang Xun"
     ],
     "searchNames": [
       "Liang Xun",
       "Unfrivolous Man",
-      "Liang Xun?"
+      "Liang Xun?",
+      "Ch'en Chao-ch'ien & Ch'en & Liang Xun",
+      "Ch'en Chao-ch'ien & Liang Xun"
     ],
     "displayName": "Liang Xun"
   },
@@ -2390,6 +2394,7 @@
       "L.G.D. Officer B",
       "L.G.D. Officer",
       "Exhausted L.G.D. Officer",
+      "L.G.D. Officer On Duty",
       "Frivolous L.G.D. Officer",
       "Serious L.G.D. Officer",
       "L.G.D. Officer?",
@@ -2412,6 +2417,7 @@
       "L.G.D. Officer B",
       "L.G.D. Officer",
       "Exhausted L.G.D. Officer",
+      "L.G.D. Officer On Duty",
       "Frivolous L.G.D. Officer",
       "Serious L.G.D. Officer",
       "L.G.D. Officer?",
@@ -2682,6 +2688,7 @@
       "City Council Administrator",
       "Professor's Assistant",
       "Retained Lawyer",
+      "Mr. Wong",
       "Government Official",
       "Boy",
       "Local Official",
@@ -2720,6 +2727,7 @@
       "City Council Administrator",
       "Professor's Assistant",
       "Retained Lawyer",
+      "Mr. Wong",
       "Government Official",
       "Boy",
       "Local Official",
@@ -2799,6 +2807,8 @@
       "Office Clerk",
       "Unremarkable Man",
       "HR Employee",
+      "Anxious Man",
+      "Mr. Lau",
       "Raythean Industries Representative",
       "Chang",
       "Prosecutor",
@@ -2836,6 +2846,8 @@
       "Office Clerk",
       "Unremarkable Man",
       "HR Employee",
+      "Anxious Man",
+      "Mr. Lau",
       "Raythean Industries Representative",
       "Chang",
       "Prosecutor",
@@ -4761,7 +4773,8 @@
       "Greedy Shanhaizhong Member",
       "Anxious Shanhaizhong Member",
       "Restless Shanhaizhong Member",
-      "Calm Shanhaizhong Member"
+      "Calm Shanhaizhong Member",
+      "Determined Shanhaizhong Member"
     ],
     "searchNames": [
       "Panicked Shanhaizhong Member",
@@ -4775,7 +4788,8 @@
       "Greedy Shanhaizhong Member",
       "Anxious Shanhaizhong Member",
       "Restless Shanhaizhong Member",
-      "Calm Shanhaizhong Member"
+      "Calm Shanhaizhong Member",
+      "Determined Shanhaizhong Member"
     ],
     "displayName": "Panicked Shanhaizhong Member"
   },
@@ -4848,10 +4862,14 @@
       "Townsfolk",
       "Humble Worker",
       "Proprietor",
+      "Bewildered Mountain Dweller",
+      "Old Wood",
       "Stonemason",
       "Street Stall Owner",
       "Second Apprentice",
       "First Apprentice",
+      "Humble Woodcutter",
+      "Humble Woodcutter?",
       "Angry Gang Member",
       "Gui"
     ],
@@ -4880,10 +4898,14 @@
       "Townsfolk",
       "Humble Worker",
       "Proprietor",
+      "Bewildered Mountain Dweller",
+      "Old Wood",
       "Stonemason",
       "Street Stall Owner",
       "Second Apprentice",
       "First Apprentice",
+      "Humble Woodcutter",
+      "Humble Woodcutter?",
       "Angry Gang Member",
       "Gui"
     ],
@@ -4955,7 +4977,8 @@
       "Well-Traveled Man",
       "Roadside Inn Staff",
       "Retired Soldier",
-      "Guest"
+      "Guest",
+      "Returned Peddler"
     ],
     "searchNames": [
       "Bystander Villager",
@@ -4971,7 +4994,8 @@
       "Well-Traveled Man",
       "Roadside Inn Staff",
       "Retired Soldier",
-      "Guest"
+      "Guest",
+      "Returned Peddler"
     ],
     "displayName": "Bystander Villager"
   },
@@ -6687,11 +6711,13 @@
   "avgnew_2015_dusk_1": {
     "speakerNames": [
       "Dusk",
-      "Nian"
+      "Nian",
+      "Jun"
     ],
     "searchNames": [
       "Dusk",
-      "Nian"
+      "Nian",
+      "Jun"
     ],
     "displayName": "Dusk"
   },
@@ -6738,12 +6764,22 @@
     "speakerNames": [
       "Child",
       "Little Girl",
-      "Sickly Child"
+      "Little Wood",
+      "Gentle Voice",
+      "Ju",
+      "Ju & Little Wood",
+      "Sickly Child",
+      "Innocent Girl"
     ],
     "searchNames": [
       "Child",
       "Little Girl",
-      "Sickly Child"
+      "Little Wood",
+      "Gentle Voice",
+      "Ju",
+      "Ju & Little Wood",
+      "Sickly Child",
+      "Innocent Girl"
     ],
     "displayName": "Child"
   },
@@ -10096,10 +10132,12 @@
   },
   "avg_npc_1874_1": {
     "speakerNames": [
-      "Hu Jun"
+      "Hu Jun",
+      "Frantic Townsperson"
     ],
     "searchNames": [
-      "Hu Jun"
+      "Hu Jun",
+      "Frantic Townsperson"
     ],
     "displayName": "Hu Jun"
   },
@@ -10144,13 +10182,15 @@
       "Mischievous Kid",
       "Brash Child",
       "Cocky Boy",
-      "Unruly Child"
+      "Unruly Child",
+      "Helpless Young Man"
     ],
     "searchNames": [
       "Mischievous Kid",
       "Brash Child",
       "Cocky Boy",
-      "Unruly Child"
+      "Unruly Child",
+      "Helpless Young Man"
     ],
     "displayName": "Mischievous Kid"
   },
@@ -10181,6 +10221,8 @@
       "Exhausted Judicial Official",
       "Judicial Jailer",
       "Judicial Officer",
+      "Confused Guard",
+      "Ministry of Works Official",
       "Brocade-Robed Mandarin"
     ],
     "searchNames": [
@@ -10189,6 +10231,8 @@
       "Exhausted Judicial Official",
       "Judicial Jailer",
       "Judicial Officer",
+      "Confused Guard",
+      "Ministry of Works Official",
       "Brocade-Robed Mandarin"
     ],
     "displayName": "Reserved Man"
@@ -10198,16 +10242,24 @@
       "Butler",
       "Old Luo",
       "Regular Customer",
+      "Strange Man",
+      "Old Man from Neighboring Town",
+      "Old Wood & Old Man from Neighboring Town",
       "Injured Old Man",
       "Chen Xiuqing",
+      "Pawnbroker",
       "Old Beggar"
     ],
     "searchNames": [
       "Butler",
       "Old Luo",
       "Regular Customer",
+      "Strange Man",
+      "Old Man from Neighboring Town",
+      "Old Wood & Old Man from Neighboring Town",
       "Injured Old Man",
       "Chen Xiuqing",
+      "Pawnbroker",
       "Old Beggar"
     ],
     "displayName": "Butler"
@@ -10287,11 +10339,15 @@
   "avg_4121_zuole_1": {
     "speakerNames": [
       "Zuo Le",
-      "Feminine Voice"
+      "Feminine Voice",
+      "Ch'en & Liang Xun & Zuo Le",
+      "Restless Soldier"
     ],
     "searchNames": [
       "Zuo Le",
-      "Feminine Voice"
+      "Feminine Voice",
+      "Ch'en & Liang Xun & Zuo Le",
+      "Restless Soldier"
     ],
     "displayName": "Zuo Le"
   },
@@ -10333,6 +10389,7 @@
       "Yumen Sentry A",
       "Millenion",
       "Patrol Battalion Soldier",
+      "Restless Soldier",
       "Patrol Battalion Soldier A"
     ],
     "searchNames": [
@@ -10341,6 +10398,7 @@
       "Yumen Sentry A",
       "Millenion",
       "Patrol Battalion Soldier",
+      "Restless Soldier",
       "Patrol Battalion Soldier A"
     ],
     "displayName": "Yumen Sentry"
@@ -10351,6 +10409,7 @@
       "Yumen Sentry B",
       "Patrol Battalion Soldier",
       "Patrol Battalion Soldier A",
+      "Runner",
       "Patrol Battalion Soldier B",
       "Centurion"
     ],
@@ -10359,6 +10418,7 @@
       "Yumen Sentry B",
       "Patrol Battalion Soldier",
       "Patrol Battalion Soldier A",
+      "Runner",
       "Patrol Battalion Soldier B",
       "Centurion"
     ],
@@ -10414,13 +10474,25 @@
       "Sui Regulator Visitor",
       "Stern Judicial Official",
       "Judicial Officer B",
-      "Nervous Mandarin"
+      "Nervous Mandarin",
+      "Ministry of Works Official",
+      "Skeptical Ministry of Works Official",
+      "Ministry of Rites Official",
+      "Military Supervisory Censor",
+      "Stern Yanese Mandarin",
+      "Stern Yanese Mandarin?"
     ],
     "searchNames": [
       "Sui Regulator Visitor",
       "Stern Judicial Official",
       "Judicial Officer B",
-      "Nervous Mandarin"
+      "Nervous Mandarin",
+      "Ministry of Works Official",
+      "Skeptical Ministry of Works Official",
+      "Ministry of Rites Official",
+      "Military Supervisory Censor",
+      "Stern Yanese Mandarin",
+      "Stern Yanese Mandarin?"
     ],
     "displayName": "Sui Regulator Visitor"
   },
@@ -16347,11 +16419,15 @@
   "avg_npc_1631_1": {
     "speakerNames": [
       "Baizao Lecturer",
-      "Judicial Officer A"
+      "Judicial Officer A",
+      "Tired Official",
+      "Sky Mirror Pavilion Librarian"
     ],
     "searchNames": [
       "Baizao Lecturer",
-      "Judicial Officer A"
+      "Judicial Officer A",
+      "Tired Official",
+      "Sky Mirror Pavilion Librarian"
     ],
     "displayName": "Baizao Lecturer"
   },
@@ -16451,23 +16527,45 @@
       "Soldier",
       "Patrolling Guardsman",
       "Guard B",
-      "Guard Chief"
+      "Guard Chief",
+      "Patrol Battalion Guard",
+      "Vigilant Patrol Battalion Guard",
+      "Patrol Battalion Sentry Officer",
+      "Nervous Patrol Battalion Guard",
+      "Baizao Soldier",
+      "Exhausted Guard",
+      "Exhausted Sentry",
+      "Runner",
+      "Tired Guard"
     ],
     "searchNames": [
       "Patrolling Soldier",
       "Soldier",
       "Patrolling Guardsman",
       "Guard B",
-      "Guard Chief"
+      "Guard Chief",
+      "Patrol Battalion Guard",
+      "Vigilant Patrol Battalion Guard",
+      "Patrol Battalion Sentry Officer",
+      "Nervous Patrol Battalion Guard",
+      "Baizao Soldier",
+      "Exhausted Guard",
+      "Exhausted Sentry",
+      "Runner",
+      "Tired Guard"
     ],
     "displayName": "Patrolling Soldier"
   },
   "avg_npc_1633_1": {
     "speakerNames": [
-      "Calm Mandarin"
+      "Calm Mandarin",
+      "Judicial Officer",
+      "Anxious Ministry of Works Official"
     ],
     "searchNames": [
-      "Calm Mandarin"
+      "Calm Mandarin",
+      "Judicial Officer",
+      "Anxious Ministry of Works Official"
     ],
     "displayName": "Calm Mandarin"
   },
@@ -20229,14 +20327,20 @@
   },
   "avg_npc_1626_1": {
     "speakerNames": [
+      "Diligent Student",
+      "Panicked Student",
+      "Diligent Student & Panicked Student",
       "Young Boy",
       "Tianshi Apprentice"
     ],
     "searchNames": [
+      "Diligent Student",
+      "Panicked Student",
+      "Diligent Student & Panicked Student",
       "Young Boy",
       "Tianshi Apprentice"
     ],
-    "displayName": "Young Boy"
+    "displayName": "Diligent Student"
   },
   "avg_149_scave_1": {
     "speakerNames": [
@@ -21226,12 +21330,14 @@
   },
   "avg_npc_1641_1": {
     "speakerNames": [
+      "Town Chief",
       "Aunt Wen"
     ],
     "searchNames": [
+      "Town Chief",
       "Aunt Wen"
     ],
-    "displayName": "Aunt Wen"
+    "displayName": "Town Chief"
   },
   "avg_npc_1966_1": {
     "speakerNames": [
@@ -22354,5 +22460,174 @@
       "Muriel"
     ],
     "displayName": "Muriel"
+  },
+  "avg_1050_chen3_1": {
+    "speakerNames": [
+      "Ch'en",
+      "Ch'en Chao-ch'ien & Ch'en",
+      "Ch'en Hui-chieh"
+    ],
+    "searchNames": [
+      "Ch'en",
+      "Ch'en Chao-ch'ien & Ch'en",
+      "Ch'en Hui-chieh"
+    ],
+    "displayName": "Ch'en"
+  },
+  "avg_npc_2131_1": {
+    "speakerNames": [
+      "Plain-Dressed Elder",
+      "Hou",
+      "Ju",
+      "Ju & Hou"
+    ],
+    "searchNames": [
+      "Plain-Dressed Elder",
+      "Hou",
+      "Ju",
+      "Ju & Hou"
+    ],
+    "displayName": "Plain-Dressed Elder"
+  },
+  "avg_npc_2134_1": {
+    "speakerNames": [
+      "Masked Candleholder",
+      "Patrolling Candleholder",
+      "Exhausted Candleholder"
+    ],
+    "searchNames": [
+      "Masked Candleholder",
+      "Patrolling Candleholder",
+      "Exhausted Candleholder"
+    ],
+    "displayName": "Masked Candleholder"
+  },
+  "avg_npc_2126_1": {
+    "speakerNames": [
+      "Dignified Woman",
+      "Jun"
+    ],
+    "searchNames": [
+      "Dignified Woman",
+      "Jun"
+    ],
+    "displayName": "Dignified Woman"
+  },
+  "avg_npc_2128_1": {
+    "speakerNames": [
+      "Aloof Woman",
+      "Ch'en Chao-ch'ien"
+    ],
+    "searchNames": [
+      "Aloof Woman",
+      "Ch'en Chao-ch'ien"
+    ],
+    "displayName": "Aloof Woman"
+  },
+  "avg_2027_wang_1": {
+    "speakerNames": [
+      "Wang"
+    ],
+    "searchNames": [
+      "Wang"
+    ],
+    "displayName": "Wang"
+  },
+  "avg_npc_2125_1": {
+    "speakerNames": [
+      "Jie",
+      "Chun"
+    ],
+    "searchNames": [
+      "Jie",
+      "Chun"
+    ],
+    "displayName": "Jie"
+  },
+  "avg_npc_2133_1": {
+    "speakerNames": [
+      "Overwhelmed Soldier"
+    ],
+    "searchNames": [
+      "Overwhelmed Soldier"
+    ],
+    "displayName": "Overwhelmed Soldier"
+  },
+  "avg_4221_ju_1": {
+    "speakerNames": [
+      "Ju",
+      "Peculiar-looking Artisan",
+      "Ch'en"
+    ],
+    "searchNames": [
+      "Ju",
+      "Peculiar-looking Artisan",
+      "Ch'en"
+    ],
+    "displayName": "Ju"
+  },
+  "avg_npc_2127_1": {
+    "speakerNames": [
+      "Quiet Candleholder",
+      "Chun"
+    ],
+    "searchNames": [
+      "Quiet Candleholder",
+      "Chun"
+    ],
+    "displayName": "Quiet Candleholder"
+  },
+  "avg_npc_2132_1": {
+    "speakerNames": [
+      "True Lung",
+      "Shadowy Figure"
+    ],
+    "searchNames": [
+      "True Lung",
+      "Shadowy Figure"
+    ],
+    "displayName": "True Lung"
+  },
+  "avg_npc_2129_1": {
+    "speakerNames": [
+      "Wang?",
+      "Sui",
+      "Sui?"
+    ],
+    "searchNames": [
+      "Wang?",
+      "Sui",
+      "Sui?"
+    ],
+    "displayName": "Wang?"
+  },
+  "avg_npc_2130_1": {
+    "speakerNames": [
+      "Taraxacum"
+    ],
+    "searchNames": [
+      "Taraxacum"
+    ],
+    "displayName": "Taraxacum"
+  },
+  "avg_npc_2136_1": {
+    "speakerNames": [
+      "Border Guard",
+      "Yanese Soldier"
+    ],
+    "searchNames": [
+      "Border Guard",
+      "Yanese Soldier"
+    ],
+    "displayName": "Border Guard"
+  },
+  "avg_npc_1629_1": {
+    "speakerNames": [
+      "Excited Tourist"
+    ],
+    "searchNames": [
+      "Excited Tourist"
+    ],
+    "displayName": "Excited Tourist"
   }
 }
