@@ -39313,6 +39313,66 @@
       }
     }
   },
+  "4000100": {
+    "id": 4000100,
+    "collectionNo": 444,
+    "name": "Ｕ－奥尔加玛丽",
+    "ruby": "Ｕ－奥尔加玛丽",
+    "className": "unBeastOlgaMarie",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/40001000/40001000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/40001001/40001001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/40001002/40001002_merged.png"
+        },
+        "costume": {
+          "4000130": "https://static.atlasacademy.io/CN/CharaFigure/40001300/40001300_merged.png"
+        },
+        "story": {}
+      },
+      "faceCoordinates": {
+        "40001000": {
+          "id": 40001000,
+          "faceX": 901,
+          "faceY": 94,
+          "scale": 1
+        },
+        "40001001": {
+          "id": 40001001,
+          "faceX": 905,
+          "faceY": 95,
+          "scale": 1
+        },
+        "40001002": {
+          "id": 40001002,
+          "faceX": 914,
+          "faceY": 100,
+          "scale": 1
+        },
+        "40001300": {
+          "id": 40001300,
+          "faceX": 905,
+          "faceY": 105,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/40001000/40001000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/40001001/40001001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/40001002/40001002_merged.png"
+        },
+        "costume": {
+          "4000130": "https://static.atlasacademy.io/CN/CharaFigure/40001300/40001300_merged.png"
+        },
+        "story": {}
+      }
+    }
+  },
   "9935400": {
     "id": 9935400,
     "collectionNo": 149,

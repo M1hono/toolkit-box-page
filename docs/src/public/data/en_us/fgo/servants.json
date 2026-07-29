@@ -35959,6 +35959,56 @@
       }
     }
   },
+  "2300600": {
+    "id": 2300600,
+    "collectionNo": 421,
+    "name": "BB Dubai",
+    "ruby": "BB Dubai",
+    "className": "moonCancer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23006000/23006000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23006001/23006001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23006002/23006002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "23006000": {
+          "id": 23006000,
+          "faceX": 384,
+          "faceY": 155,
+          "scale": 1
+        },
+        "23006001": {
+          "id": 23006001,
+          "faceX": 968,
+          "faceY": 162,
+          "scale": 1
+        },
+        "23006002": {
+          "id": 23006002,
+          "faceX": 863,
+          "faceY": 164,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23006000/23006000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23006001/23006001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23006002/23006002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "2300900": {
     "id": 2300900,
     "collectionNo": 418,
@@ -36023,6 +36073,56 @@
           "2300930": "https://static.atlasacademy.io/NA/CharaFigure/23009300/23009300_merged.png",
           "2300940": "https://static.atlasacademy.io/NA/CharaFigure/23009400/23009400_merged.png"
         },
+        "story": {}
+      }
+    }
+  },
+  "2301000": {
+    "id": 2301000,
+    "collectionNo": 422,
+    "name": "Tenochtitlan (Moon Cancer)",
+    "ruby": "Tenochtitlan (Moon Cancer)",
+    "className": "moonCancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23010000/23010000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23010001/23010001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23010002/23010002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "23010000": {
+          "id": 23010000,
+          "faceX": 420,
+          "faceY": 206,
+          "scale": 1
+        },
+        "23010001": {
+          "id": 23010001,
+          "faceX": 420,
+          "faceY": 207,
+          "scale": 1
+        },
+        "23010002": {
+          "id": 23010002,
+          "faceX": 420,
+          "faceY": 206,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23010000/23010000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23010001/23010001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23010002/23010002_merged.png"
+        },
+        "costume": {},
         "story": {}
       }
     }
@@ -36238,8 +36338,8 @@
   "2500300": {
     "id": 2500300,
     "collectionNo": 222,
-    "name": "Mysterious Heroine XX",
-    "ruby": "Mysterious Heroine XX",
+    "name": "Mysterious Heroine XX (Alter)",
+    "ruby": "Mysterious Heroine XX (Alter)",
     "className": "foreigner",
     "rarity": 4,
     "imageData": {
@@ -37264,6 +37364,56 @@
           "1098292940": "https://static.atlasacademy.io/NA/CharaFigure/1098292940/1098292940_merged.png",
           "1098292950": "https://static.atlasacademy.io/NA/CharaFigure/1098292950/1098292950_merged.png"
         }
+      }
+    }
+  },
+  "2501600": {
+    "id": 2501600,
+    "collectionNo": 423,
+    "name": "Mysterious Heroine XX (Alter)",
+    "ruby": "Mysterious Heroine XX (Alter)",
+    "className": "foreigner",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/25016000/25016000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/25016001/25016001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/25016002/25016002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "25016000": {
+          "id": 25016000,
+          "faceX": 907,
+          "faceY": 146,
+          "scale": 1
+        },
+        "25016001": {
+          "id": 25016001,
+          "faceX": 923,
+          "faceY": 121,
+          "scale": 1
+        },
+        "25016002": {
+          "id": 25016002,
+          "faceX": 933,
+          "faceY": 115,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/25016000/25016000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/25016001/25016001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/25016002/25016002_merged.png"
+        },
+        "costume": {},
+        "story": {}
       }
     }
   },

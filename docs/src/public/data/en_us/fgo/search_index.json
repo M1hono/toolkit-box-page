@@ -5446,6 +5446,20 @@
     ]
   },
   {
+    "id": 2300600,
+    "name": "BB Dubai",
+    "originalName": "BB Dubai",
+    "ruby": "BB Dubai",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "bb dubai",
+      "bb dubai",
+      "bb dubai",
+      "mooncancer"
+    ]
+  },
+  {
     "id": 2300900,
     "name": "Mysterious Executor C.I.E.L",
     "originalName": "Mysterious Executor C.I.E.L",
@@ -5456,6 +5470,20 @@
       "mysterious executor c.i.e.l",
       "mysterious executor c.i.e.l",
       "mysterious executor c.i.e.l",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2301000,
+    "name": "Tenochtitlan (Moon Cancer)",
+    "originalName": "Tenochtitlan (Moon Cancer)",
+    "ruby": "Tenochtitlan (Moon Cancer)",
+    "className": "moonCancer",
+    "rarity": 4,
+    "searchTerms": [
+      "tenochtitlan (moon cancer)",
+      "tenochtitlan (moon cancer)",
+      "tenochtitlan (moon cancer)",
       "mooncancer"
     ]
   },
@@ -5489,15 +5517,15 @@
   },
   {
     "id": 2500300,
-    "name": "Mysterious Heroine XX",
-    "originalName": "Mysterious Heroine XX",
-    "ruby": "Mysterious Heroine XX",
+    "name": "Mysterious Heroine XX (Alter)",
+    "originalName": "Mysterious Heroine XX (Alter)",
+    "ruby": "Mysterious Heroine XX (Alter)",
     "className": "foreigner",
     "rarity": 4,
     "searchTerms": [
-      "mysterious heroine xx",
-      "mysterious heroine xx",
-      "mysterious heroine xx",
+      "mysterious heroine xx (alter)",
+      "mysterious heroine xx (alter)",
+      "mysterious heroine xx (alter)",
       "foreigner"
     ]
   },
@@ -5652,6 +5680,20 @@
       "aozaki aoko",
       "aozaki aoko",
       "aozaki aoko",
+      "foreigner"
+    ]
+  },
+  {
+    "id": 2501600,
+    "name": "Mysterious Heroine XX (Alter)",
+    "originalName": "Mysterious Heroine XX (Alter)",
+    "ruby": "Mysterious Heroine XX (Alter)",
+    "className": "foreigner",
+    "rarity": 4,
+    "searchTerms": [
+      "mysterious heroine xx (alter)",
+      "mysterious heroine xx (alter)",
+      "mysterious heroine xx (alter)",
       "foreigner"
     ]
   },
