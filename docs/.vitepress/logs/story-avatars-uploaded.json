@@ -877,5 +877,10 @@
     "status": "uploaded",
     "timestamp": 1777601865886,
     "charId": "char_610_acfend"
+  },
+  "arknights/avatars/char_1015_aglna2.png": {
+    "status": "skipped",
+    "timestamp": 1785550016816,
+    "reason": "404"
   }
 }
