@@ -27083,6 +27083,56 @@
       }
     }
   },
+  "605300": {
+    "id": 605300,
+    "collectionNo": 474,
+    "name": "ハサン・サッバーハ",
+    "ruby": "ハサン・サッバーハ",
+    "className": "assassin",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/6053000/6053000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/6053001/6053001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/6053002/6053002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "6053000": {
+          "id": 6053000,
+          "faceX": 381,
+          "faceY": 156,
+          "scale": 1
+        },
+        "6053001": {
+          "id": 6053001,
+          "faceX": 896,
+          "faceY": 141,
+          "scale": 1
+        },
+        "6053002": {
+          "id": 6053002,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/6053000/6053000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/6053001/6053001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/6053002/6053002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "700100": {
     "id": 700100,
     "collectionNo": 47,
