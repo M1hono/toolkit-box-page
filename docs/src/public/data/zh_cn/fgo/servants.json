@@ -4695,6 +4695,56 @@
       }
     }
   },
+  "106300": {
+    "id": 106300,
+    "collectionNo": 445,
+    "name": "Passionlip",
+    "ruby": "Passionlip",
+    "className": "saber",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/1063000/1063000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/1063001/1063001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/1063002/1063002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "1063000": {
+          "id": 1063000,
+          "faceX": 905,
+          "faceY": 137,
+          "scale": 1
+        },
+        "1063001": {
+          "id": 1063001,
+          "faceX": 885,
+          "faceY": 138,
+          "scale": 1
+        },
+        "1063002": {
+          "id": 1063002,
+          "faceX": 897,
+          "faceY": 135,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/1063000/1063000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/1063001/1063001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/1063002/1063002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "200100": {
     "id": 200100,
     "collectionNo": 11,
@@ -9216,6 +9266,56 @@
       }
     }
   },
+  "205400": {
+    "id": 205400,
+    "collectionNo": 450,
+    "name": "幼体／提亚马特",
+    "ruby": "幼体／提亚马特",
+    "className": "archer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/2054000/2054000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/2054001/2054001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/2054002/2054002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "2054000": {
+          "id": 2054000,
+          "faceX": 407,
+          "faceY": 147,
+          "scale": 1
+        },
+        "2054001": {
+          "id": 2054001,
+          "faceX": 377,
+          "faceY": 173,
+          "scale": 1
+        },
+        "2054002": {
+          "id": 2054002,
+          "faceX": 904,
+          "faceY": 131,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/2054000/2054000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/2054001/2054001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/2054002/2054002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "300100": {
     "id": 300100,
     "collectionNo": 17,
@@ -13236,6 +13336,56 @@
           "1": "https://static.atlasacademy.io/CN/CharaFigure/3059000/3059000_merged.png",
           "2": "https://static.atlasacademy.io/CN/CharaFigure/3059001/3059001_merged.png",
           "3": "https://static.atlasacademy.io/CN/CharaFigure/3059002/3059002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "306000": {
+    "id": 306000,
+    "collectionNo": 449,
+    "name": "美游·艾德费尔特",
+    "ruby": "美游·艾德费尔特",
+    "className": "lancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3060000/3060000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3060001/3060001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3060002/3060002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "3060000": {
+          "id": 3060000,
+          "faceX": 396,
+          "faceY": 156,
+          "scale": 1
+        },
+        "3060001": {
+          "id": 3060001,
+          "faceX": 396,
+          "faceY": 156,
+          "scale": 1
+        },
+        "3060002": {
+          "id": 3060002,
+          "faceX": 397,
+          "faceY": 157,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/3060000/3060000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/3060001/3060001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/3060002/3060002_merged.png"
         },
         "costume": {},
         "story": {}
@@ -17961,6 +18111,56 @@
           "1": "https://static.atlasacademy.io/CN/CharaFigure/4055000/4055000_merged.png",
           "2": "https://static.atlasacademy.io/CN/CharaFigure/4055001/4055001_merged.png",
           "3": "https://static.atlasacademy.io/CN/CharaFigure/4055002/4055002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "405800": {
+    "id": 405800,
+    "collectionNo": 446,
+    "name": "克里姆希尔德",
+    "ruby": "克里姆希尔德",
+    "className": "rider",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/4058000/4058000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/4058001/4058001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/4058002/4058002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "4058000": {
+          "id": 4058000,
+          "faceX": 388,
+          "faceY": 150,
+          "scale": 1
+        },
+        "4058001": {
+          "id": 4058001,
+          "faceX": 388,
+          "faceY": 150,
+          "scale": 1
+        },
+        "4058002": {
+          "id": 4058002,
+          "faceX": 402,
+          "faceY": 148,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/4058000/4058000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/4058001/4058001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/4058002/4058002_merged.png"
         },
         "costume": {},
         "story": {}
@@ -29923,6 +30123,56 @@
       }
     }
   },
+  "705200": {
+    "id": 705200,
+    "collectionNo": 447,
+    "name": "吾绰",
+    "ruby": "吾绰",
+    "className": "berserker",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/7052000/7052000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/7052001/7052001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/7052002/7052002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "7052000": {
+          "id": 7052000,
+          "faceX": 410,
+          "faceY": 145,
+          "scale": 1
+        },
+        "7052001": {
+          "id": 7052001,
+          "faceX": 410,
+          "faceY": 145,
+          "scale": 1
+        },
+        "7052002": {
+          "id": 7052002,
+          "faceX": 410,
+          "faceY": 145,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/7052000/7052000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/7052001/7052001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/7052002/7052002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "800100": {
     "id": 800100,
     "collectionNo": 1,
@@ -34361,6 +34611,56 @@
       }
     }
   },
+  "1001900": {
+    "id": 1001900,
+    "collectionNo": 451,
+    "name": "热内斯·克莱恩",
+    "ruby": "热内斯·克莱恩",
+    "className": "alterEgo",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/10019000/10019000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/10019001/10019001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/10019002/10019002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "10019000": {
+          "id": 10019000,
+          "faceX": 376,
+          "faceY": 155,
+          "scale": 1
+        },
+        "10019001": {
+          "id": 10019001,
+          "faceX": 373,
+          "faceY": 145,
+          "scale": 1
+        },
+        "10019002": {
+          "id": 10019002,
+          "faceX": 898,
+          "faceY": 126,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/10019000/10019000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/10019001/10019001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/10019002/10019002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "1100100": {
     "id": 1100100,
     "collectionNo": 107,
@@ -36909,6 +37209,66 @@
           "3": "https://static.atlasacademy.io/CN/CharaFigure/23010002/23010002_merged.png"
         },
         "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "2301100": {
+    "id": 2301100,
+    "collectionNo": 448,
+    "name": "玉兔",
+    "ruby": "玉兔",
+    "className": "moonCancer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/23011000/23011000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/23011001/23011001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/23011002/23011002_merged.png"
+        },
+        "costume": {
+          "2301130": "https://static.atlasacademy.io/CN/CharaFigure/23011300/23011300_merged.png"
+        },
+        "story": {}
+      },
+      "faceCoordinates": {
+        "23011000": {
+          "id": 23011000,
+          "faceX": 396,
+          "faceY": 114,
+          "scale": 1
+        },
+        "23011001": {
+          "id": 23011001,
+          "faceX": 375,
+          "faceY": 158,
+          "scale": 1
+        },
+        "23011002": {
+          "id": 23011002,
+          "faceX": 883,
+          "faceY": 142,
+          "scale": 1
+        },
+        "23011300": {
+          "id": 23011300,
+          "faceX": 386,
+          "faceY": 174,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/23011000/23011000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/23011001/23011001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/23011002/23011002_merged.png"
+        },
+        "costume": {
+          "2301130": "https://static.atlasacademy.io/CN/CharaFigure/23011300/23011300_merged.png"
+        },
         "story": {}
       }
     }

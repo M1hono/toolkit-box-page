@@ -756,6 +756,20 @@
     ]
   },
   {
+    "id": 106300,
+    "name": "Passionlip",
+    "originalName": "Passionlip",
+    "ruby": "Passionlip",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "passionlip",
+      "passionlip",
+      "passionlip",
+      "saber"
+    ]
+  },
+  {
     "id": 200100,
     "name": "卫宫",
     "originalName": "卫宫",
@@ -1438,6 +1452,20 @@
       "图坦卡蒙",
       "图坦卡蒙",
       "图坦卡蒙",
+      "archer"
+    ]
+  },
+  {
+    "id": 205400,
+    "name": "幼体／提亚马特",
+    "originalName": "幼体／提亚马特",
+    "ruby": "幼体／提亚马特",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "幼体／提亚马特",
+      "幼体／提亚马特",
+      "幼体／提亚马特",
       "archer"
     ]
   },
@@ -2156,6 +2184,20 @@
     ]
   },
   {
+    "id": 306000,
+    "name": "美游·艾德费尔特",
+    "originalName": "美游·艾德费尔特",
+    "ruby": "美游·艾德费尔特",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "美游·艾德费尔特",
+      "美游·艾德费尔特",
+      "美游·艾德费尔特",
+      "lancer"
+    ]
+  },
+  {
     "id": 400100,
     "name": "歌果",
     "originalName": "歌果",
@@ -2796,6 +2838,20 @@
       "安德洛墨达",
       "安德洛墨达",
       "安德洛墨达",
+      "rider"
+    ]
+  },
+  {
+    "id": 405800,
+    "name": "克里姆希尔德",
+    "originalName": "克里姆希尔德",
+    "ruby": "克里姆希尔德",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "克里姆希尔德",
+      "克里姆希尔德",
+      "克里姆希尔德",
       "rider"
     ]
   },
@@ -4760,6 +4816,20 @@
     ]
   },
   {
+    "id": 705200,
+    "name": "吾绰",
+    "originalName": "吾绰",
+    "ruby": "吾绰",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "吾绰",
+      "吾绰",
+      "吾绰",
+      "berserker"
+    ]
+  },
+  {
     "id": 800100,
     "name": "玛修·基列莱特",
     "originalName": "玛修·基列莱特",
@@ -5264,6 +5334,20 @@
     ]
   },
   {
+    "id": 1001900,
+    "name": "热内斯·克莱恩",
+    "originalName": "热内斯·克莱恩",
+    "ruby": "热内斯·克莱恩",
+    "className": "alterEgo",
+    "rarity": 4,
+    "searchTerms": [
+      "热内斯·克莱恩",
+      "热内斯·克莱恩",
+      "热内斯·克莱恩",
+      "alterego"
+    ]
+  },
+  {
     "id": 1100100,
     "name": "安哥拉曼纽",
     "originalName": "安哥拉曼纽",
@@ -5666,6 +5750,20 @@
       "特诺奇蒂特兰",
       "特诺奇蒂特兰",
       "特诺奇蒂特兰",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2301100,
+    "name": "玉兔",
+    "originalName": "玉兔",
+    "ruby": "玉兔",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "玉兔",
+      "玉兔",
+      "玉兔",
       "mooncancer"
     ]
   },
