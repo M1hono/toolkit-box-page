@@ -3740,6 +3740,20 @@
     ]
   },
   {
+    "id": 506000,
+    "name": "ビショーネ",
+    "originalName": "ビショーネ",
+    "ruby": "ビショーネ",
+    "className": "caster",
+    "rarity": 4,
+    "searchTerms": [
+      "ビショーネ",
+      "ビショーネ",
+      "ビショーネ",
+      "caster"
+    ]
+  },
+  {
     "id": 600100,
     "name": "佐々木小次郎",
     "originalName": "佐々木小次郎",
@@ -5058,6 +5072,20 @@
     ]
   },
   {
+    "id": 705300,
+    "name": "紅閻魔",
+    "originalName": "紅閻魔",
+    "ruby": "ベニエンマ",
+    "className": "berserker",
+    "rarity": 5,
+    "searchTerms": [
+      "紅閻魔",
+      "紅閻魔",
+      "ベニエンマ",
+      "berserker"
+    ]
+  },
+  {
     "id": 800100,
     "name": "マシュ・キリエライト",
     "originalName": "マシュ・キリエライト",
@@ -6064,6 +6092,20 @@
       "玉兎",
       "玉兎",
       "ギョクト",
+      "mooncancer"
+    ]
+  },
+  {
+    "id": 2301200,
+    "name": "キングプロテア",
+    "originalName": "キングプロテア",
+    "ruby": "キングプロテア",
+    "className": "moonCancer",
+    "rarity": 5,
+    "searchTerms": [
+      "キングプロテア",
+      "キングプロテア",
+      "キングプロテア",
       "mooncancer"
     ]
   },
