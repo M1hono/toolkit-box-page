@@ -1968,6 +1968,8 @@
       "A Leithanian Nobleman",
       "Elegant Ambassador",
       "Tipsy Businessman",
+      "Czarek",
+      "Paunchy Businessman",
       "Theater Manager",
       "Announcer",
       "Enthusiastic Merchant",
@@ -2005,6 +2007,8 @@
       "A Leithanian Nobleman",
       "Elegant Ambassador",
       "Tipsy Businessman",
+      "Czarek",
+      "Paunchy Businessman",
       "Theater Manager",
       "Announcer",
       "Enthusiastic Merchant",
@@ -2102,6 +2106,7 @@
     "speakerNames": [
       "Hostile Man",
       "Refugee Artisan",
+      "Restaurant Owner",
       "Taran Refugee",
       "Tempersome Taran Refugee",
       "Excited Taran Refugee",
@@ -2163,6 +2168,7 @@
     "searchNames": [
       "Hostile Man",
       "Refugee Artisan",
+      "Restaurant Owner",
       "Taran Refugee",
       "Tempersome Taran Refugee",
       "Excited Taran Refugee",
@@ -2667,6 +2673,9 @@
       "Mid-level Manager",
       "Uniformed Worker",
       "Kazimierzian Staff Member",
+      "Secretary",
+      "Auditor",
+      "Kazimierzian Representative",
       "Witness",
       "Snobby Official",
       "Researcher",
@@ -2706,6 +2715,9 @@
       "Mid-level Manager",
       "Uniformed Worker",
       "Kazimierzian Staff Member",
+      "Secretary",
+      "Auditor",
+      "Kazimierzian Representative",
       "Witness",
       "Snobby Official",
       "Researcher",
@@ -5259,12 +5271,14 @@
   "avg_npc_271_1": {
     "speakerNames": [
       "Scathing Nobleman",
+      "Travel-Stained Man",
       "Receiving Attendant",
       "Scholar",
       "Commissioner Wong"
     ],
     "searchNames": [
       "Scathing Nobleman",
+      "Travel-Stained Man",
       "Receiving Attendant",
       "Scholar",
       "Commissioner Wong"
@@ -7105,6 +7119,7 @@
       "Logistics Operator",
       "Rhodes Island Messenger",
       "Rhodes Island Landship Operator A",
+      "Rhodes Island Operator",
       "Engineering Operator C",
       "Enthusiastic Logistics Operator",
       "Human Resources Operator",
@@ -7120,6 +7135,7 @@
       "Logistics Operator",
       "Rhodes Island Messenger",
       "Rhodes Island Landship Operator A",
+      "Rhodes Island Operator",
       "Engineering Operator C",
       "Enthusiastic Logistics Operator",
       "Human Resources Operator",
@@ -7265,6 +7281,7 @@
       "Reserved Hospital Attendant",
       "Panicked Underling of Patia",
       "Devout Citizen",
+      "Foreign Young Man",
       "Liberi Citizen",
       "Milkman",
       "Liberi Passerby",
@@ -7278,6 +7295,7 @@
       "Reserved Hospital Attendant",
       "Panicked Underling of Patia",
       "Devout Citizen",
+      "Foreign Young Man",
       "Liberi Citizen",
       "Milkman",
       "Liberi Passerby",
@@ -9679,6 +9697,7 @@
       "Neurotic Infected",
       "Passionate Infected",
       "Dispirited Infected",
+      "Timpani",
       "Enraged Passerby?",
       "Noble Attendant",
       "Messenger",
@@ -9702,6 +9721,7 @@
       "Neurotic Infected",
       "Passionate Infected",
       "Dispirited Infected",
+      "Timpani",
       "Enraged Passerby?",
       "Noble Attendant",
       "Messenger",
@@ -9870,6 +9890,7 @@
       "Medic Operator",
       "Logistics Operator",
       "Meticulous Operator",
+      "Dr. Li",
       "Medical Department Operator",
       "Rhodes Island Operator"
     ],
@@ -9882,6 +9903,7 @@
       "Medic Operator",
       "Logistics Operator",
       "Meticulous Operator",
+      "Dr. Li",
       "Medical Department Operator",
       "Rhodes Island Operator"
     ],
@@ -9892,6 +9914,7 @@
       "Passerby Infected",
       "Worn-out Infected",
       "Excited Afterglow Resident",
+      "Paola",
       "Happy Leithanian Tourist",
       "Community Musician",
       "Dejected Babel Member",
@@ -9908,6 +9931,7 @@
       "Passerby Infected",
       "Worn-out Infected",
       "Excited Afterglow Resident",
+      "Paola",
       "Happy Leithanian Tourist",
       "Community Musician",
       "Dejected Babel Member",
@@ -9941,6 +9965,7 @@
       "Nervous Musician",
       "Frightened Infected",
       "Nervous Infected",
+      "Bassoon",
       "Attendant",
       "Noble Attendant",
       "Onlooking Passerby A",
@@ -9958,6 +9983,7 @@
       "Nervous Musician",
       "Frightened Infected",
       "Nervous Infected",
+      "Bassoon",
       "Attendant",
       "Noble Attendant",
       "Onlooking Passerby A",
@@ -9978,6 +10004,7 @@
       "Emotional Afterglow Resident",
       "Tough Infected",
       "Cheerful Infected",
+      "Trombone",
       "Leonie",
       "Onlooking Passerby B",
       "Mayor",
@@ -9990,6 +10017,7 @@
       "Emotional Afterglow Resident",
       "Tough Infected",
       "Cheerful Infected",
+      "Trombone",
       "Leonie",
       "Onlooking Passerby B",
       "Mayor",
@@ -11031,6 +11059,7 @@
   },
   "avg_npc_697_1": {
     "speakerNames": [
+      "Letizia",
       "Court Clerk",
       "Rossati Mafioso",
       "Calm Technician",
@@ -11045,6 +11074,7 @@
       "Town 'Judge'"
     ],
     "searchNames": [
+      "Letizia",
       "Court Clerk",
       "Rossati Mafioso",
       "Calm Technician",
@@ -11058,7 +11088,7 @@
       "Town Judge",
       "Town 'Judge'"
     ],
-    "displayName": "Court Clerk"
+    "displayName": "Letizia"
   },
   "avg_npc_694_1": {
     "speakerNames": [
@@ -11194,6 +11224,7 @@
   },
   "avg_npc_696_1": {
     "speakerNames": [
+      "Niccolo",
       "Onsite Staff",
       "Terrified Waiter",
       "Clerk",
@@ -11207,6 +11238,7 @@
       "Mauro, Infected Citizen"
     ],
     "searchNames": [
+      "Niccolo",
       "Onsite Staff",
       "Terrified Waiter",
       "Clerk",
@@ -11219,7 +11251,7 @@
       "Pastry Shop Owner",
       "Mauro, Infected Citizen"
     ],
-    "displayName": "Onsite Staff"
+    "displayName": "Niccolo"
   },
   "avg_npc_692_1": {
     "speakerNames": [
@@ -11232,6 +11264,7 @@
   },
   "avg_npc_701_1": {
     "speakerNames": [
+      "Tommaso",
       "Energetic Technician",
       "Undercover Officer A",
       "Judge's Assistant",
@@ -11242,6 +11275,7 @@
       "Meticulous Man"
     ],
     "searchNames": [
+      "Tommaso",
       "Energetic Technician",
       "Undercover Officer A",
       "Judge's Assistant",
@@ -11251,10 +11285,12 @@
       "Sad Man",
       "Meticulous Man"
     ],
-    "displayName": "Energetic Technician"
+    "displayName": "Tommaso"
   },
   "avg_npc_700_1": {
     "speakerNames": [
+      "Bettina",
+      "Tosia",
       "Rubio's Daughter",
       "Shy Child",
       "Young Isidro",
@@ -11268,6 +11304,8 @@
       "Thin Girl"
     ],
     "searchNames": [
+      "Bettina",
+      "Tosia",
       "Rubio's Daughter",
       "Shy Child",
       "Young Isidro",
@@ -11280,7 +11318,7 @@
       "Selene",
       "Thin Girl"
     ],
-    "displayName": "Rubio's Daughter"
+    "displayName": "Bettina"
   },
   "avg_4014_lunacu_1": {
     "speakerNames": [
@@ -14843,6 +14881,7 @@
   },
   "avg_npc_1256_1": {
     "speakerNames": [
+      "Dazed Businessman",
       "Bejeweled Man",
       "Flustered Clerk",
       "Excited Merchant",
@@ -14850,13 +14889,14 @@
       "Factory Director"
     ],
     "searchNames": [
+      "Dazed Businessman",
       "Bejeweled Man",
       "Flustered Clerk",
       "Excited Merchant",
       "Merchant",
       "Factory Director"
     ],
-    "displayName": "Bejeweled Man"
+    "displayName": "Dazed Businessman"
   },
   "avg_npc_1494_1": {
     "speakerNames": [
@@ -15370,6 +15410,7 @@
   },
   "avg_npc_660_1": {
     "speakerNames": [
+      "Davide",
       "Enthusiastic Worker",
       "Happy Worker",
       "Emotional Worker",
@@ -15380,6 +15421,7 @@
       "Repair Shop Machinist"
     ],
     "searchNames": [
+      "Davide",
       "Enthusiastic Worker",
       "Happy Worker",
       "Emotional Worker",
@@ -15389,7 +15431,7 @@
       "Panicked Refugee",
       "Repair Shop Machinist"
     ],
-    "displayName": "Enthusiastic Worker"
+    "displayName": "Davide"
   },
   "avg_4040_rockr_1": {
     "speakerNames": [
@@ -15566,18 +15608,20 @@
   },
   "avg_npc_1550_1": {
     "speakerNames": [
+      "Ruggiero",
       "Dockworker",
       "Truck Driver A",
       "Truck Driver",
       "Truck Driver A&B"
     ],
     "searchNames": [
+      "Ruggiero",
       "Dockworker",
       "Truck Driver A",
       "Truck Driver",
       "Truck Driver A&B"
     ],
-    "displayName": "Dockworker"
+    "displayName": "Ruggiero"
   },
   "avg_npc_1542_1": {
     "speakerNames": [
@@ -15609,16 +15653,20 @@
   },
   "avg_npc_1561_1": {
     "speakerNames": [
+      "Sandro",
+      "Sam",
       "Truck Driver B",
       "Truck Driver",
       "Truck Driver A"
     ],
     "searchNames": [
+      "Sandro",
+      "Sam",
       "Truck Driver B",
       "Truck Driver",
       "Truck Driver A"
     ],
-    "displayName": "Truck Driver B"
+    "displayName": "Sandro"
   },
   "avg_npc_1553_1": {
     "speakerNames": [
@@ -15637,23 +15685,27 @@
   },
   "avg_npc_1541_1": {
     "speakerNames": [
-      "Leontuzzo"
+      "Leontuzzo",
+      "Lavinia"
     ],
     "searchNames": [
-      "Leontuzzo"
+      "Leontuzzo",
+      "Lavinia"
     ],
     "displayName": "Leontuzzo"
   },
   "avg_npc_1563_1": {
     "speakerNames": [
+      "Elio",
       "Chatty Grooming Specialist",
       "Antonio"
     ],
     "searchNames": [
+      "Elio",
       "Chatty Grooming Specialist",
       "Antonio"
     ],
-    "displayName": "Chatty Grooming Specialist"
+    "displayName": "Elio"
   },
   "avg_npc_1544_1": {
     "speakerNames": [
@@ -15666,16 +15718,20 @@
   },
   "avg_npc_1555_1": {
     "speakerNames": [
+      "Frustrated Mafioso",
+      "Calm Mafioso",
       "Mafioso",
       "Terrified Mafioso",
       "Nervous Mafioso"
     ],
     "searchNames": [
+      "Frustrated Mafioso",
+      "Calm Mafioso",
       "Mafioso",
       "Terrified Mafioso",
       "Nervous Mafioso"
     ],
-    "displayName": "Mafioso"
+    "displayName": "Frustrated Mafioso"
   },
   "avg_npc_1554_1": {
     "speakerNames": [
@@ -17996,10 +18052,12 @@
   },
   "char_283_midn_1": {
     "speakerNames": [
-      "Midnight"
+      "Midnight",
+      "Catapult & Spot & Midnight"
     ],
     "searchNames": [
-      "Midnight"
+      "Midnight",
+      "Catapult & Spot & Midnight"
     ],
     "displayName": "Midnight"
   },
@@ -19936,10 +19994,14 @@
   "avg_npc_976_1": {
     "speakerNames": [
       "Mischievous Child",
+      "Boy in Patient Gown",
+      "Elwin",
       "Boy"
     ],
     "searchNames": [
       "Mischievous Child",
+      "Boy in Patient Gown",
+      "Elwin",
       "Boy"
     ],
     "displayName": "Mischievous Child"
@@ -21019,6 +21081,7 @@
       "Eager Staff",
       "Sharp-Eyed Staff",
       "Diet Candidate",
+      "Nervous Worker",
       "Confused Resident",
       "Confused Resident & Perplexed Resident",
       "Angry Stall Owner"
@@ -21028,6 +21091,7 @@
       "Eager Staff",
       "Sharp-Eyed Staff",
       "Diet Candidate",
+      "Nervous Worker",
       "Confused Resident",
       "Confused Resident & Perplexed Resident",
       "Angry Stall Owner"
@@ -21085,11 +21149,13 @@
   "avg_npc_759_1": {
     "speakerNames": [
       "Angry Mother",
+      "Akiyo",
       "Sad Stall Owner",
       "??"
     ],
     "searchNames": [
       "Angry Mother",
+      "Akiyo",
       "Sad Stall Owner",
       "??"
     ],
@@ -22629,5 +22695,61 @@
       "Excited Tourist"
     ],
     "displayName": "Excited Tourist"
+  },
+  "avg_4037_demetr_1": {
+    "speakerNames": [
+      "Demetri"
+    ],
+    "searchNames": [
+      "Demetri"
+    ],
+    "displayName": "Demetri"
+  },
+  "avg_npc_2202_1": {
+    "speakerNames": [
+      "Passing Girl",
+      "Tosia"
+    ],
+    "searchNames": [
+      "Passing Girl",
+      "Tosia"
+    ],
+    "displayName": "Passing Girl"
+  },
+  "avg_npc_2201_1": {
+    "speakerNames": [
+      "Lupina"
+    ],
+    "searchNames": [
+      "Lupina"
+    ],
+    "displayName": "Lupina"
+  },
+  "avg_4031_liesel_1": {
+    "speakerNames": [
+      "Liesel"
+    ],
+    "searchNames": [
+      "Liesel"
+    ],
+    "displayName": "Liesel"
+  },
+  "avg_289_gyuki_1": {
+    "speakerNames": [
+      "Matoimaru"
+    ],
+    "searchNames": [
+      "Matoimaru"
+    ],
+    "displayName": "Matoimaru"
+  },
+  "avg_npc_757_1": {
+    "speakerNames": [
+      "Matoimaru's Foster Father"
+    ],
+    "searchNames": [
+      "Matoimaru's Foster Father"
+    ],
+    "displayName": "Matoimaru's Foster Father"
   }
 }

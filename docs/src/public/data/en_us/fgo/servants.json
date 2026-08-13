@@ -31751,7 +31751,9 @@
           "2": "https://static.atlasacademy.io/NA/CharaFigure/10001001/10001001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/10001002/10001002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "1000130": "https://static.atlasacademy.io/NA/CharaFigure/10001300/10001300_merged.png"
+        },
         "story": {
           "98112700": "https://static.atlasacademy.io/NA/CharaFigure/98112700/98112700_merged.png"
         }
@@ -31775,6 +31777,12 @@
           "faceY": 143,
           "scale": 1
         },
+        "10001300": {
+          "id": 10001300,
+          "faceX": 361,
+          "faceY": 143,
+          "scale": 1
+        },
         "98112700": {
           "id": 98112700,
           "faceX": 357,
@@ -31790,7 +31798,9 @@
           "2": "https://static.atlasacademy.io/NA/CharaFigure/10001001/10001001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/10001002/10001002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "1000130": "https://static.atlasacademy.io/NA/CharaFigure/10001300/10001300_merged.png"
+        },
         "story": {
           "98112700": "https://static.atlasacademy.io/NA/CharaFigure/98112700/98112700_merged.png"
         }
@@ -36003,6 +36013,106 @@
           "1": "https://static.atlasacademy.io/NA/CharaFigure/23006000/23006000_merged.png",
           "2": "https://static.atlasacademy.io/NA/CharaFigure/23006001/23006001_merged.png",
           "3": "https://static.atlasacademy.io/NA/CharaFigure/23006002/23006002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "2300700": {
+    "id": 2300700,
+    "collectionNo": 424,
+    "name": "Kishinami Hakuno",
+    "ruby": "Kishinami Hakuno",
+    "className": "moonCancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23007000/23007000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23007001/23007001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23007002/23007002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "23007000": {
+          "id": 23007000,
+          "faceX": 385,
+          "faceY": 151,
+          "scale": 1
+        },
+        "23007001": {
+          "id": 23007001,
+          "faceX": 385,
+          "faceY": 151,
+          "scale": 1
+        },
+        "23007002": {
+          "id": 23007002,
+          "faceX": 385,
+          "faceY": 151,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23007000/23007000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23007001/23007001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23007002/23007002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "2300800": {
+    "id": 2300800,
+    "collectionNo": 425,
+    "name": "Kishinami Hakuno",
+    "ruby": "Kishinami Hakuno",
+    "className": "moonCancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23008000/23008000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23008001/23008001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23008002/23008002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "23008000": {
+          "id": 23008000,
+          "faceX": 372,
+          "faceY": 158,
+          "scale": 1
+        },
+        "23008001": {
+          "id": 23008001,
+          "faceX": 372,
+          "faceY": 158,
+          "scale": 1
+        },
+        "23008002": {
+          "id": 23008002,
+          "faceX": 372,
+          "faceY": 158,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/23008000/23008000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/23008001/23008001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/23008002/23008002_merged.png"
         },
         "costume": {},
         "story": {}
