@@ -9583,6 +9583,56 @@
       }
     }
   },
+  "205600": {
+    "id": 205600,
+    "collectionNo": 480,
+    "name": "小野小町",
+    "ruby": "オノノコマチ",
+    "className": "archer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/2056000/2056000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/2056001/2056001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/2056002/2056002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "2056000": {
+          "id": 2056000,
+          "faceX": 700,
+          "faceY": 140,
+          "scale": 1
+        },
+        "2056001": {
+          "id": 2056001,
+          "faceX": 677,
+          "faceY": 181,
+          "scale": 1
+        },
+        "2056002": {
+          "id": 2056002,
+          "faceX": 677,
+          "faceY": 180,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/2056000/2056000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/2056001/2056001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/2056002/2056002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "300100": {
     "id": 300100,
     "collectionNo": 17,
@@ -18747,6 +18797,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/4058000/4058000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/4058001/4058001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/4058002/4058002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "405900": {
+    "id": 405900,
+    "collectionNo": 478,
+    "name": "リリス",
+    "ruby": "リリス",
+    "className": "rider",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/4059000/4059000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/4059001/4059001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/4059002/4059002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "4059000": {
+          "id": 4059000,
+          "faceX": 416,
+          "faceY": 163,
+          "scale": 1
+        },
+        "4059001": {
+          "id": 4059001,
+          "faceX": 921,
+          "faceY": 142,
+          "scale": 1
+        },
+        "4059002": {
+          "id": 4059002,
+          "faceX": 833,
+          "faceY": 163,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/4059000/4059000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/4059001/4059001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/4059002/4059002_merged.png"
         },
         "costume": {},
         "story": {}
@@ -37715,6 +37815,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/11022000/11022000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/11022001/11022001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/11022002/11022002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "1102300": {
+    "id": 1102300,
+    "collectionNo": 479,
+    "name": "キングプロテア・オルタ",
+    "ruby": "キングプロテア・オルタ",
+    "className": "avenger",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/11023000/11023000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/11023001/11023001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/11023002/11023002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "11023000": {
+          "id": 11023000,
+          "faceX": 963,
+          "faceY": 119,
+          "scale": 1
+        },
+        "11023001": {
+          "id": 11023001,
+          "faceX": 962,
+          "faceY": 116,
+          "scale": 1
+        },
+        "11023002": {
+          "id": 11023002,
+          "faceX": 941,
+          "faceY": 136,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/11023000/11023000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/11023001/11023001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/11023002/11023002_merged.png"
         },
         "costume": {},
         "story": {}
