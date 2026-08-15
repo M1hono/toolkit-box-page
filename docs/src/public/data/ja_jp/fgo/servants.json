@@ -40967,6 +40967,56 @@
       }
     }
   },
+  "2801300": {
+    "id": 2801300,
+    "collectionNo": 481,
+    "name": "ハベトロット",
+    "ruby": "ハベトロット",
+    "className": "pretender",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/28013000/28013000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/28013001/28013001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/28013002/28013002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "28013000": {
+          "id": 28013000,
+          "faceX": 383,
+          "faceY": 189,
+          "scale": 1
+        },
+        "28013001": {
+          "id": 28013001,
+          "faceX": 384,
+          "faceY": 189,
+          "scale": 1
+        },
+        "28013002": {
+          "id": 28013002,
+          "faceX": 384,
+          "faceY": 189,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/28013000/28013000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/28013001/28013001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/28013002/28013002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
   "3300100": {
     "id": 3300100,
     "collectionNo": 377,
