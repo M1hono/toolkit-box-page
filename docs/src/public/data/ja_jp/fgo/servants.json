@@ -40981,7 +40981,9 @@
           "2": "https://static.atlasacademy.io/JP/CharaFigure/28013001/28013001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/28013002/28013002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "2801330": "https://static.atlasacademy.io/JP/CharaFigure/28013300/28013300_merged.png"
+        },
         "story": {}
       },
       "faceCoordinates": {
@@ -40993,14 +40995,20 @@
         },
         "28013001": {
           "id": 28013001,
-          "faceX": 384,
+          "faceX": 383,
           "faceY": 189,
           "scale": 1
         },
         "28013002": {
           "id": 28013002,
-          "faceX": 384,
+          "faceX": 383,
           "faceY": 189,
+          "scale": 1
+        },
+        "28013300": {
+          "id": 28013300,
+          "faceX": 364,
+          "faceY": 185,
           "scale": 1
         }
       }
@@ -41012,7 +41020,9 @@
           "2": "https://static.atlasacademy.io/JP/CharaFigure/28013001/28013001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/28013002/28013002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "2801330": "https://static.atlasacademy.io/JP/CharaFigure/28013300/28013300_merged.png"
+        },
         "story": {}
       }
     }
