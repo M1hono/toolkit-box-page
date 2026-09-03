@@ -19151,6 +19151,66 @@
       }
     }
   },
+  "405700": {
+    "id": 405700,
+    "collectionNo": 452,
+    "name": "尼莫／诺亚",
+    "ruby": "尼莫／诺亚",
+    "className": "rider",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/4057000/4057000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/4057001/4057001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/4057002/4057002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098330900": "https://static.atlasacademy.io/CN/CharaFigure/1098330900/1098330900_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "4057000": {
+          "id": 4057000,
+          "faceX": 389,
+          "faceY": 154,
+          "scale": 1
+        },
+        "4057001": {
+          "id": 4057001,
+          "faceX": 389,
+          "faceY": 154,
+          "scale": 1
+        },
+        "4057002": {
+          "id": 4057002,
+          "faceX": 900,
+          "faceY": 141,
+          "scale": 1
+        },
+        "1098330900": {
+          "id": 1098330900,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/CN/CharaFigure/4057000/4057000_merged.png",
+          "2": "https://static.atlasacademy.io/CN/CharaFigure/4057001/4057001_merged.png",
+          "3": "https://static.atlasacademy.io/CN/CharaFigure/4057002/4057002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098330900": "https://static.atlasacademy.io/CN/CharaFigure/1098330900/1098330900_merged.png"
+        }
+      }
+    }
+  },
   "405800": {
     "id": 405800,
     "collectionNo": 446,
