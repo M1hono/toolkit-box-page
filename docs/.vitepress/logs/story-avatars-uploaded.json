@@ -882,5 +882,15 @@
     "status": "skipped",
     "timestamp": 1785550016816,
     "reason": "404"
+  },
+  "arknights/avatars/npc_013_amiyaun.png": {
+    "status": "uploaded",
+    "timestamp": 1788488245661,
+    "charId": "npc_013_amiyaun"
+  },
+  "arknights/avatars/avg_npc_1014_1.png": {
+    "status": "uploaded",
+    "timestamp": 1788488245722,
+    "charId": "avg_npc_1014_1"
   }
 }

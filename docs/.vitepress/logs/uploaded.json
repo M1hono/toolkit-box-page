@@ -91044,5 +91044,245 @@
     "status": "skipped",
     "timestamp": 1785550014287,
     "reason": "404"
+  },
+  "arknights/characters/avg_npc_2377_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488230826,
+    "variant": "avg_npc_2377_1#4$1"
+  },
+  "arknights/characters/avg_npc_2377_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488230851,
+    "variant": "avg_npc_2377_1#1$1"
+  },
+  "arknights/characters/avg_4217_makoto_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488230964,
+    "variant": "avg_4217_makoto_1#1$1"
+  },
+  "arknights/characters/avg_npc_2377_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488231730,
+    "variant": "avg_npc_2377_1#5$1"
+  },
+  "arknights/characters/avg_npc_2379_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232011,
+    "variant": "avg_npc_2379_1#4$1"
+  },
+  "arknights/characters/avg_4217_makoto_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232030,
+    "variant": "avg_4217_makoto_1#4$1"
+  },
+  "arknights/characters/avg_npc_2379_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232033,
+    "variant": "avg_npc_2379_1#5$1"
+  },
+  "arknights/characters/avg_npc_2379_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232216,
+    "variant": "avg_npc_2379_1#2$1"
+  },
+  "arknights/characters/avg_4217_makoto_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232475,
+    "variant": "avg_4217_makoto_1#5$1"
+  },
+  "arknights/characters/avg_4217_makoto_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232477,
+    "variant": "avg_4217_makoto_1#3$1"
+  },
+  "arknights/characters/avg_4217_makoto_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232531,
+    "variant": "avg_4217_makoto_1#2$1"
+  },
+  "arknights/characters/avg_npc_2377_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232556,
+    "variant": "avg_npc_2377_1#3$1"
+  },
+  "arknights/characters/avg_npc_2377_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232572,
+    "variant": "avg_npc_2377_1#2$1"
+  },
+  "arknights/characters/avg_npc_2379_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232719,
+    "variant": "avg_npc_2379_1#1$1"
+  },
+  "arknights/characters/avg_npc_2379_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488232994,
+    "variant": "avg_npc_2379_1#3$1"
+  },
+  "arknights/characters/avg_4220_kormr_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488234299,
+    "variant": "avg_4220_kormr_1#2$1"
+  },
+  "arknights/characters/avg_npc_2388_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488234468,
+    "variant": "avg_npc_2388_1#2$1"
+  },
+  "arknights/characters/avg_npc_2388_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488234988,
+    "variant": "avg_npc_2388_1#5$1"
+  },
+  "arknights/characters/avg_4220_kormr_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235077,
+    "variant": "avg_4220_kormr_1#1$1"
+  },
+  "arknights/characters/avg_4220_kormr_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235086,
+    "variant": "avg_4220_kormr_1#4$1"
+  },
+  "arknights/characters/avg_npc_2378_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235191,
+    "variant": "avg_npc_2378_1#4$1"
+  },
+  "arknights/characters/avg_npc_2378_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235191,
+    "variant": "avg_npc_2378_1#3$1"
+  },
+  "arknights/characters/avg_npc_2388_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235203,
+    "variant": "avg_npc_2388_1#1$1"
+  },
+  "arknights/characters/avg_npc_2388_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235606,
+    "variant": "avg_npc_2388_1#4$1"
+  },
+  "arknights/characters/avg_npc_2380_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235625,
+    "variant": "avg_npc_2380_1#1$1"
+  },
+  "arknights/characters/avg_npc_2378_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235798,
+    "variant": "avg_npc_2378_1#2$1"
+  },
+  "arknights/characters/avg_npc_2388_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235836,
+    "variant": "avg_npc_2388_1#3$1"
+  },
+  "arknights/characters/avg_4220_kormr_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235844,
+    "variant": "avg_4220_kormr_1#3$1"
+  },
+  "arknights/characters/avg_npc_2378_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488235849,
+    "variant": "avg_npc_2378_1#5$1"
+  },
+  "arknights/characters/avg_npc_2378_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488236010,
+    "variant": "avg_npc_2378_1#1$1"
+  },
+  "arknights/characters/avg_npc_2387_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488237229,
+    "variant": "avg_npc_2387_1#1$1"
+  },
+  "arknights/characters/avg_4218_aigis_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488237328,
+    "variant": "avg_4218_aigis_1#3$1"
+  },
+  "arknights/characters/avg_4218_aigis_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488237505,
+    "variant": "avg_4218_aigis_1#1$1"
+  },
+  "arknights/characters/avg_4219_yukari_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488237601,
+    "variant": "avg_4219_yukari_1#5$1"
+  },
+  "arknights/characters/avg_npc_2387_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488237808,
+    "variant": "avg_npc_2387_1#4$1"
+  },
+  "arknights/characters/avg_npc_2387_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238043,
+    "variant": "avg_npc_2387_1#5$1"
+  },
+  "arknights/characters/avg_npc_2387_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238056,
+    "variant": "avg_npc_2387_1#3$1"
+  },
+  "arknights/characters/avg_npc_2387_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238071,
+    "variant": "avg_npc_2387_1#2$1"
+  },
+  "arknights/characters/avg_4219_yukari_1%233%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238137,
+    "variant": "avg_4219_yukari_1#3$1"
+  },
+  "arknights/characters/avg_4219_yukari_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238587,
+    "variant": "avg_4219_yukari_1#2$1"
+  },
+  "arknights/characters/avg_4219_yukari_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238593,
+    "variant": "avg_4219_yukari_1#1$1"
+  },
+  "arknights/characters/avg_4218_aigis_1%232%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238732,
+    "variant": "avg_4218_aigis_1#2$1"
+  },
+  "arknights/characters/avg_4219_yukari_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238751,
+    "variant": "avg_4219_yukari_1#4$1"
+  },
+  "arknights/characters/avg_npc_2382_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488238883,
+    "variant": "avg_npc_2382_1#1$1"
+  },
+  "arknights/characters/avg_4220_kormr_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488239170,
+    "variant": "avg_4220_kormr_1#5$1"
+  },
+  "arknights/characters/avg_npc_2381_1%231%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488240414,
+    "variant": "avg_npc_2381_1#1$1"
+  },
+  "arknights/characters/avg_4218_aigis_1%234%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488240448,
+    "variant": "avg_4218_aigis_1#4$1"
+  },
+  "arknights/characters/avg_4218_aigis_1%235%241.png": {
+    "status": "uploaded",
+    "timestamp": 1788488241124,
+    "variant": "avg_4218_aigis_1#5$1"
   }
 }
