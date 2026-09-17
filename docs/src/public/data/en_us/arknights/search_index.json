@@ -329,12 +329,17 @@
     "avg_npc_049"
   ],
   "Taciturn Passerby": "char_003_kalts_1",
+  "Feline Researcher": "char_003_kalts_1",
   "Gummy": [
     "char_196_sunbr_1",
-    "char_196_sunbr_summer"
+    "char_196_sunbr_summer",
+    "avg_196_sunbr_1"
   ],
   "Lada": "char_196_sunbr_1",
-  "Dur-nar": "char_260_durnar_1",
+  "Dur-nar": [
+    "char_260_durnar_1",
+    "avg_260_durnar_1"
+  ],
   "Dur-nar/Dobermann": "char_260_durnar_1",
   "Gitano": [
     "char_109_fmout_1",
@@ -361,13 +366,16 @@
   ],
   "Zima": [
     "char_115_headbr_9",
-    "avg_115_headbr_1"
+    "avg_115_headbr_1",
+    "avg_1051_headb2_1"
   ],
   "Sonya?": "char_115_headbr_9",
   "Sonya": "char_115_headbr_9",
   "Istina": [
     "char_195_glassb_2",
-    "char_373_lionhd"
+    "char_373_lionhd",
+    "avg_194_leto_1",
+    "avg_npc_2156_1"
   ],
   "Istina & May": "char_195_glassb_2",
   "Anna": "char_195_glassb_2",
@@ -385,7 +393,9 @@
   "Natalya": "char_197_poca_1",
   "Rosa": [
     "char_197_poca_1",
-    "avg_405_absin_1"
+    "avg_405_absin_1",
+    "avg_npc_2165_1",
+    "avg_197_poca_1"
   ],
   "Matterhorn": [
     "char_197_poca_1",
@@ -918,6 +928,7 @@
     "avg_npc_092",
     "avg_npc_094"
   ],
+  "Aged Teacher": "avg_npc_092",
   "Frightened Woman": [
     "avg_npc_243",
     "avg_npc_032"
@@ -1008,6 +1019,11 @@
   "Eager Investor": "avg_npc_177",
   "High-status Magnate": "avg_npc_177",
   "Leisurely Tourist": "avg_npc_177",
+  "Impatient Noble": [
+    "avg_npc_177",
+    "avg_npc_1490_1",
+    "avg_npc_2172_1"
+  ],
   "Officer-in-Charge": "avg_npc_177",
   "Wildly Ambitious Baron": "avg_npc_177",
   "Obscured Merchant": "avg_npc_177",
@@ -1455,7 +1471,10 @@
   "Beautiful Noble": "avg_npc_175",
   "Kind-Faced Noble": "avg_npc_175",
   "Calm Councilor": "avg_npc_175",
-  "Noblewoman": "avg_npc_175",
+  "Noblewoman": [
+    "avg_npc_175",
+    "avg_npc_2173_1"
+  ],
   "Opinionated Patient": "avg_npc_175",
   "Self-Satisfied Noble Alumna": "avg_npc_175",
   "Female Designer": "avg_npc_175",
@@ -2814,7 +2833,10 @@
   "Food-Delivering Villager": "avg_npc_798_1",
   "Roadside Clinic Staff": "avg_npc_798_1",
   "Errand Runner": "avg_npc_798_1",
-  "Rescue Squad Leader": "avg_npc_798_1",
+  "Rescue Squad Leader": [
+    "avg_npc_798_1",
+    "avg_npc_1559_1"
+  ],
   "Jolly Gang Member": "avg_npc_798_1",
   "Mulberry": "avg_473_mberry_1",
   "Gu Ning-Ning": "avg_473_mberry_1",
@@ -3326,7 +3348,10 @@
   ],
   "Raymond": "avg_npc_081",
   "Uncle Pickett": "avg_npc_081",
-  "Haggard Worker": "avg_npc_081",
+  "Haggard Worker": [
+    "avg_npc_081",
+    "avg_npc_2175_1"
+  ],
   "Darrell": "avg_npc_081",
   "Old Harry": "avg_npc_081",
   "Eikthyrnir": "avg_npc_968_1",
@@ -4475,7 +4500,11 @@
   "Victorian Guard B": "avg_npc_248",
   "Adjutant Hill": "avg_npc_248",
   "'Adjutant Hill'": "avg_npc_248",
-  "Stern Officer": "avg_npc_248",
+  "Stern Officer": [
+    "avg_npc_248",
+    "avg_npc_1977_1",
+    "avg_npc_1976_1"
+  ],
   "Panicked Woman": "avg_npc_418_1",
   "Earl's Attendant": "avg_npc_418_1",
   "Exemplar Nurse": "avg_npc_418_1",
@@ -4810,7 +4839,10 @@
   "Nervous Musician": "avg_npc_496_1",
   "Frightened Infected": "avg_npc_496_1",
   "Bassoon": "avg_npc_496_1",
-  "Attendant": "avg_npc_496_1",
+  "Attendant": [
+    "avg_npc_496_1",
+    "avg_npc_1982_1"
+  ],
   "Onlooking Passerby A": "avg_npc_496_1",
   "Excited Leithanian Tourist": "avg_npc_496_1",
   "Babel Member": [
@@ -4851,7 +4883,8 @@
   "Disgruntled Old Man": "avg_npc_495_1",
   "Woman": [
     "avg_npc_487_1",
-    "avg_npc_093"
+    "avg_npc_093",
+    "avg_4208_wintim_1"
   ],
   "Golden-haired Woman": "avg_npc_487_1",
   "Ewigegnade": "avg_npc_487_1",
@@ -5266,6 +5299,7 @@
     "char_1502_crowns",
     "avg_1502_crosly_1"
   ],
+  "Lyudmila?": "char_1502_crowns",
   "Projekt Red": "char_144_red_7",
   "Fionn": "avg_npc_725_1",
   "Selmon": "avg_npc_724_1",
@@ -5663,6 +5697,7 @@
   "Stubborn Snowfield Rioter": "avg_npc_1044_1",
   "Hard-hearted Hoodlum": "avg_npc_1044_1",
   "Guileful Gangster": "avg_npc_1044_1",
+  "Nervous Assassin": "avg_npc_1044_1",
   "Young Man With Bruised Face": "avg_npc_1044_1",
   "Irritable Woman": [
     "avg_npc_1042_1",
@@ -5671,6 +5706,7 @@
   "Unhappy-looking Resident": "avg_npc_1042_1",
   "Furious Resident": "avg_npc_1042_1",
   "Perro": "avg_npc_1042_1",
+  "Relaxed Assassin": "avg_npc_1042_1",
   "Anxious Resident": [
     "avg_npc_1043_1",
     "avg_npc_1752_1"
@@ -5730,9 +5766,18 @@
   "Passing Student": "avg_npc_1132_1",
   "Payne": "avg_npc_1132_1",
   "Enraged Student": "avg_npc_1130_1",
-  "Motivated Student": "avg_npc_1129_1",
-  "Young Woman": "avg_npc_1129_1",
-  "Scornful Student": "avg_npc_1129_1",
+  "Motivated Student": [
+    "avg_npc_1129_1",
+    "avg_npc_2179_1"
+  ],
+  "Young Woman": [
+    "avg_npc_1129_1",
+    "avg_4208_wintim_1"
+  ],
+  "Scornful Student": [
+    "avg_npc_1129_1",
+    "avg_npc_2178_1"
+  ],
   "Britney": "avg_npc_1129_1",
   "Yulia": [
     "avg_npc_1127_1",
@@ -6210,7 +6255,6 @@
   "Gathering Staff": "avg_npc_1490_1",
   "Museum Receptionist": "avg_npc_1490_1",
   "Extremely Idle Citizen": "avg_npc_1490_1",
-  "Impatient Noble": "avg_npc_1490_1",
   "King's Brother": "avg_npc_1490_1",
   "New King": "avg_npc_1490_1",
   "Ajani": "avg_npc_1485_1",
@@ -6280,6 +6324,7 @@
   "Piston": "avg_npc_090",
   "Rhodes Island Sniper": "avg_npc_089",
   "Seasoned Rhodes Island Operator": "avg_npc_089",
+  "Rescue Squad Archer": "avg_npc_089",
   "Hank": "avg_npc_089",
   "Seanson": "avg_npc_089",
   "Operator Hoger": "avg_npc_089",
@@ -6317,7 +6362,10 @@
     "avg_npc_1589_1"
   ],
   "Davide": "avg_npc_660_1",
-  "Enthusiastic Worker": "avg_npc_660_1",
+  "Enthusiastic Worker": [
+    "avg_npc_660_1",
+    "avg_npc_1979_1"
+  ],
   "Happy Worker": "avg_npc_660_1",
   "Emotional Worker": "avg_npc_660_1",
   "Londinium Worker A": "avg_npc_660_1",
@@ -6433,6 +6481,7 @@
   "'Carnevale Participant A'": "avg_npc_1557_1",
   "Carnevale Participant B": "avg_npc_1557_1",
   "Excited Mafioso": "avg_npc_1557_1",
+  "Red/Lyudmila": "avg_1502_crosly_1",
   "'Carnevale Participant B'": "avg_npc_1556_1",
   "Fanatical Mafioso": "avg_npc_1556_1",
   "Panicking Clerk": "avg_npc_1562_1",
@@ -6601,7 +6650,10 @@
   "Judicial Officer A": "avg_npc_1631_1",
   "Tired Official": "avg_npc_1631_1",
   "Sky Mirror Pavilion Librarian": "avg_npc_1631_1",
-  "Cautious Student": "avg_npc_1628_1",
+  "Cautious Student": [
+    "avg_npc_1628_1",
+    "avg_npc_2178_1"
+  ],
   "Stern Professor": "avg_npc_1620_1",
   "Professor Jing": "avg_npc_1620_1",
   "Uptight Examiner": "avg_npc_1635_1",
@@ -7028,6 +7080,7 @@
   "'Beepy'": "avg_npc_1726_1",
   "Pained 'Beepy'": "avg_npc_1726_1",
   "Originium-Infested Machine": "avg_npc_1726_1",
+  "Anna's Friend": "avg_405_absin_1",
   "Friston-3": "avg_4093_frston_1",
   "Raidian": [
     "avg_npc_1730_1",
@@ -7052,6 +7105,7 @@
   "Kindly Voice": "avg_npc_1334_1",
   "Gentle but Stern Voice": "avg_npc_1334_1",
   "Frightened Child": "avg_npc_1456_1",
+  "Infected Child": "avg_npc_1456_1",
   "Timid Sick Child": "avg_npc_1456_1",
   "Frail Sarkaz": "avg_npc_1456_1",
   "Li'l Brick": "avg_npc_1456_1",
@@ -7373,7 +7427,10 @@
   "Pious Miner": "avg_npc_1969_1",
   "Skeptical Miner": "avg_npc_1969_1",
   "Infected Miner": "avg_npc_1969_1",
-  "Nikto": "avg_npc_1967_1",
+  "Nikto": [
+    "avg_npc_1967_1",
+    "avg_npc_2185_1"
+  ],
   "Hawley": "avg_npc_1971_1",
   "Twisted Figure": "avg_npc_1971_1",
   "Grand Duchess Elisabeth": "avg_npc_1962_1",
@@ -7386,9 +7443,12 @@
   "Mantra?": "avg_4204_mantra_1",
   "Ksenia?": "avg_4208_wintim_1",
   "Ksenia": "avg_4208_wintim_1",
+  "Snegurochka": "avg_4208_wintim_1",
   "Anxious Operator": "avg_npc_1560_1",
   "Worried Researcher": "avg_npc_1974_1",
   "Excited Researcher": "avg_npc_1975_1",
+  "Ursine Officer": "avg_npc_1977_1",
+  "Nervous Officer": "avg_npc_1977_1",
   "Solemn Ursine Officer": "avg_npc_1977_1",
   "Officer": "avg_npc_1977_1",
   "Impatient Guard": "avg_npc_1973_1",
@@ -7397,9 +7457,16 @@
   "Cold Soldier": "avg_npc_1978_1",
   "Angry Soldier": "avg_npc_1976_1",
   "Listener": "avg_npc_1976_1",
+  "Attentive Servant": "avg_npc_1982_1",
   "Respectful Servant": "avg_npc_1982_1",
   "New Visitor": "avg_npc_1982_1",
+  "Noble A": "avg_npc_1981_1",
+  "Noble Beneath Podium": "avg_npc_1981_1",
   "Jittery Noble": "avg_npc_1981_1",
+  "Jailed Worker": "avg_npc_1979_1",
+  "Ursine Worker": "avg_npc_1979_1",
+  "Excited Worker": "avg_npc_1979_1",
+  "Friendly Worker": "avg_npc_1979_1",
   "Worker?": "avg_npc_1979_1",
   "Ederson": "avg_npc_1796_1",
   "Old Cleric": "avg_npc_2014_1",
@@ -7553,5 +7620,99 @@
   "Lupina": "avg_npc_2201_1",
   "Liesel": "avg_4031_liesel_1",
   "Matoimaru": "avg_289_gyuki_1",
-  "Matoimaru's Foster Father": "avg_npc_757_1"
+  "Matoimaru's Foster Father": "avg_npc_757_1",
+  "Countess Vorontsova": "avg_npc_2173_1",
+  "Pavlovich": "avg_npc_2158_1",
+  "Stern Noble": "avg_npc_2171_1",
+  "Angry Noble": "avg_npc_2171_1",
+  "Hearing Committee Member": "avg_npc_2171_1",
+  "Whispering Noble B": "avg_npc_2171_1",
+  "Duke Treplev": "avg_npc_2171_1",
+  "Thinking Noble": "avg_npc_2171_1",
+  "Anxious Noble": "avg_npc_2171_1",
+  "Scathing Noble": "avg_npc_2171_1",
+  "Whispering Noble A": "avg_npc_2171_1",
+  "Arbiter": "avg_npc_2168_1",
+  "Vasily": "avg_npc_2162_1",
+  "A Certain Councilor": "avg_npc_2162_1",
+  "Olga": "avg_npc_2159_1",
+  "Antosha": [
+    "avg_1051_headb2_1",
+    "avg_npc_2157_1"
+  ],
+  "Ursine Police": "avg_npc_2170_1",
+  "Sergo": [
+    "avg_npc_2170_1",
+    "avg_npc_2176_1"
+  ],
+  "Aloof Girl": "avg_4224_turdus_1",
+  "Ukusik": "avg_4224_turdus_1",
+  "Jailed Student": "avg_npc_2184_1",
+  "Yura": "avg_npc_2184_1",
+  "Matvey": "avg_npc_2160_1",
+  "Resolute Girl": "avg_npc_2182_1",
+  "Worried Student": [
+    "avg_npc_2182_1",
+    "avg_npc_2178_1"
+  ],
+  "Resolute Student": "avg_npc_2182_1",
+  "Harsh Student": "avg_npc_2182_1",
+  "Hired Muscle": "avg_npc_2166_1",
+  "'Sixteen Warriors' Thug A": [
+    "avg_npc_2166_1",
+    "avg_npc_2167_1"
+  ],
+  "'Sixteen Warriors' Ruffian": "avg_npc_2166_1",
+  "'Sixteen Warriors' Thug": "avg_npc_2166_1",
+  "'Sixteen Warriors' Thug D": "avg_npc_2166_1",
+  "Calm Noble Student": "avg_npc_2187_1",
+  "Naum": "avg_npc_2187_1",
+  "Symposium Member": [
+    "avg_npc_2187_1",
+    "avg_npc_2179_1"
+  ],
+  "Vanguards Member": [
+    "avg_npc_2187_1",
+    "avg_npc_2177_1",
+    "avg_npc_2179_1"
+  ],
+  "'Pencil Stub'": "avg_npc_2178_1",
+  "Unbound Member": "avg_npc_2178_1",
+  "Disappointed Student": "avg_npc_2178_1",
+  "Faddey": "avg_npc_2177_1",
+  "Rescued Student B": "avg_npc_2177_1",
+  "Ursine Student A": "avg_npc_2177_1",
+  "Melancholy Youth": "avg_npc_2155_1",
+  "Fedya": "avg_npc_2155_1",
+  "Fyodor": "avg_npc_2155_1",
+  "Excited Student": [
+    "avg_npc_2183_1",
+    "avg_npc_2180_1"
+  ],
+  "Nika": "avg_npc_2183_1",
+  "Anxious Noble Student": "avg_npc_2176_1",
+  "Yeremey": "avg_npc_2176_1",
+  "Handsome Nobleman": "avg_npc_2176_1",
+  "Rania": "avg_npc_2176_1",
+  "Varvara": [
+    "avg_npc_2175_1",
+    "avg_npc_2181_1"
+  ],
+  "Ursine Professor": "avg_npc_2175_1",
+  "Anxious Student": "avg_npc_2181_1",
+  "'Council of Sixteen' Thug A": "avg_npc_2167_1",
+  "'Sixteen Warriors' Thug B": "avg_npc_2167_1",
+  "'Sixteen Warriors' Thug C": "avg_npc_2167_1",
+  "'Sixteen Warriors' Guard": "avg_npc_2167_1",
+  "Burly Ursus": "avg_npc_2161_1",
+  "Gromov": "avg_npc_2161_1",
+  "Ursine Student B": "avg_npc_2179_1",
+  "Brave Student": "avg_npc_2179_1",
+  "Leonid": "avg_npc_2179_1",
+  "Nervous Student": "avg_npc_2186_1",
+  "Shorty": "avg_npc_2186_1",
+  "Botani": "avg_4223_botany_1",
+  "Tishinna": "avg_4223_botany_1",
+  "Pavalo": "avg_npc_2174_1",
+  "Ursine Citizens": "avg_npc_2174_1"
 }

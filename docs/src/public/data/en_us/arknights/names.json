@@ -436,11 +436,13 @@
   "char_003_kalts_1": {
     "speakerNames": [
       "Kal'tsit",
-      "Taciturn Passerby"
+      "Taciturn Passerby",
+      "Feline Researcher"
     ],
     "searchNames": [
       "Kal'tsit",
-      "Taciturn Passerby"
+      "Taciturn Passerby",
+      "Feline Researcher"
     ],
     "displayName": "Kal'tsit"
   },
@@ -1185,7 +1187,8 @@
       "Old Villager",
       "Nervous Old Man",
       "Calm Old Man",
-      "Alsu"
+      "Alsu",
+      "Aged Teacher"
     ],
     "searchNames": [
       "Infected Citizen",
@@ -1197,7 +1200,8 @@
       "Old Villager",
       "Nervous Old Man",
       "Calm Old Man",
-      "Alsu"
+      "Alsu",
+      "Aged Teacher"
     ],
     "displayName": "Infected Citizen"
   },
@@ -1313,6 +1317,7 @@
       "Eager Investor",
       "High-status Magnate",
       "Leisurely Tourist",
+      "Impatient Noble",
       "Officer-in-Charge",
       "Wildly Ambitious Baron",
       "Obscured Merchant",
@@ -1351,6 +1356,7 @@
       "Eager Investor",
       "High-status Magnate",
       "Leisurely Tourist",
+      "Impatient Noble",
       "Officer-in-Charge",
       "Wildly Ambitious Baron",
       "Obscured Merchant",
@@ -9888,10 +9894,10 @@
       "Rhodes Island Medic",
       "Rhodes Island Medic Operator",
       "Medic Operator",
+      "Medical Department Operator",
       "Logistics Operator",
       "Meticulous Operator",
       "Dr. Li",
-      "Medical Department Operator",
       "Rhodes Island Operator"
     ],
     "searchNames": [
@@ -9901,10 +9907,10 @@
       "Rhodes Island Medic",
       "Rhodes Island Medic Operator",
       "Medic Operator",
+      "Medical Department Operator",
       "Logistics Operator",
       "Meticulous Operator",
       "Dr. Li",
-      "Medical Department Operator",
       "Rhodes Island Operator"
     ],
     "displayName": "Andante"
@@ -11400,11 +11406,13 @@
   "char_1502_crowns": {
     "speakerNames": [
       "Lyudmila",
-      "Crownslayer"
+      "Crownslayer",
+      "Lyudmila?"
     ],
     "searchNames": [
       "Lyudmila",
-      "Crownslayer"
+      "Crownslayer",
+      "Lyudmila?"
     ],
     "displayName": "Lyudmila"
   },
@@ -12818,6 +12826,7 @@
       "Miles",
       "Hoodlum A",
       "Hoodlum B",
+      "Nervous Assassin",
       "Young Man With Bruised Face"
     ],
     "searchNames": [
@@ -12834,6 +12843,7 @@
       "Miles",
       "Hoodlum A",
       "Hoodlum B",
+      "Nervous Assassin",
       "Young Man With Bruised Face"
     ],
     "displayName": "Sneaky Snowfield Bandit"
@@ -12845,7 +12855,8 @@
       "Unhappy-looking Resident",
       "Furious Resident",
       "Community Resident",
-      "Perro"
+      "Perro",
+      "Relaxed Assassin"
     ],
     "searchNames": [
       "Anxious Man",
@@ -12853,7 +12864,8 @@
       "Unhappy-looking Resident",
       "Furious Resident",
       "Community Resident",
-      "Perro"
+      "Perro",
+      "Relaxed Assassin"
     ],
     "displayName": "Anxious Man"
   },
@@ -13263,12 +13275,14 @@
     "speakerNames": [
       "Leto",
       "Arctosz",
-      "Feisty Burdenbeast"
+      "Feisty Burdenbeast",
+      "Istina"
     ],
     "searchNames": [
       "Leto",
       "Arctosz",
-      "Feisty Burdenbeast"
+      "Feisty Burdenbeast",
+      "Istina"
     ],
     "displayName": "Leto"
   },
@@ -15162,6 +15176,7 @@
       "Operator Shredder",
       "Rhodes Island Sniper",
       "Seasoned Rhodes Island Operator",
+      "Rescue Squad Archer",
       "Hank",
       "Rhodes Island Field Operator A",
       "Office Operator B",
@@ -15180,6 +15195,7 @@
       "Operator Shredder",
       "Rhodes Island Sniper",
       "Seasoned Rhodes Island Operator",
+      "Rescue Squad Archer",
       "Hank",
       "Rhodes Island Field Operator A",
       "Office Operator B",
@@ -15856,11 +15872,13 @@
   "avg_1502_crosly_1": {
     "speakerNames": [
       "Lyudmila",
-      "Crownslayer"
+      "Crownslayer",
+      "Red/Lyudmila"
     ],
     "searchNames": [
       "Lyudmila",
-      "Crownslayer"
+      "Crownslayer",
+      "Red/Lyudmila"
     ],
     "displayName": "Lyudmila"
   },
@@ -19034,10 +19052,12 @@
   "avg_405_absin_1": {
     "speakerNames": [
       "Absinthe",
+      "Anna's Friend",
       "Rosa"
     ],
     "searchNames": [
       "Absinthe",
+      "Anna's Friend",
       "Rosa"
     ],
     "displayName": "Absinthe"
@@ -19146,10 +19166,12 @@
   },
   "avg_npc_1559_1": {
     "speakerNames": [
-      "Reserve Guard Operator"
+      "Reserve Guard Operator",
+      "Rescue Squad Leader"
     ],
     "searchNames": [
-      "Reserve Guard Operator"
+      "Reserve Guard Operator",
+      "Rescue Squad Leader"
     ],
     "displayName": "Reserve Guard Operator"
   },
@@ -19271,6 +19293,7 @@
   "avg_npc_1456_1": {
     "speakerNames": [
       "Frightened Child",
+      "Infected Child",
       "Timid Sick Child",
       "Frail Sarkaz",
       "Li'l Brick",
@@ -19278,6 +19301,7 @@
     ],
     "searchNames": [
       "Frightened Child",
+      "Infected Child",
       "Timid Sick Child",
       "Frail Sarkaz",
       "Li'l Brick",
@@ -21585,11 +21609,17 @@
   "avg_4208_wintim_1": {
     "speakerNames": [
       "Ksenia?",
-      "Ksenia"
+      "Ksenia",
+      "Young Woman",
+      "Woman",
+      "Snegurochka"
     ],
     "searchNames": [
       "Ksenia?",
-      "Ksenia"
+      "Ksenia",
+      "Young Woman",
+      "Woman",
+      "Snegurochka"
     ],
     "displayName": "Ksenia?"
   },
@@ -21624,14 +21654,20 @@
   },
   "avg_npc_1977_1": {
     "speakerNames": [
+      "Ursine Officer",
+      "Nervous Officer",
+      "Stern Officer",
       "Solemn Ursine Officer",
       "Officer"
     ],
     "searchNames": [
+      "Ursine Officer",
+      "Nervous Officer",
+      "Stern Officer",
       "Solemn Ursine Officer",
       "Officer"
     ],
-    "displayName": "Solemn Ursine Officer"
+    "displayName": "Ursine Officer"
   },
   "avg_npc_1973_1": {
     "speakerNames": [
@@ -21684,34 +21720,44 @@
     "speakerNames": [
       "Soldier",
       "Angry Soldier",
+      "Stern Officer",
       "Listener"
     ],
     "searchNames": [
       "Soldier",
       "Angry Soldier",
+      "Stern Officer",
       "Listener"
     ],
     "displayName": "Soldier"
   },
   "avg_npc_1982_1": {
     "speakerNames": [
+      "Attentive Servant",
+      "Attendant",
       "Respectful Servant",
       "New Visitor"
     ],
     "searchNames": [
+      "Attentive Servant",
+      "Attendant",
       "Respectful Servant",
       "New Visitor"
     ],
-    "displayName": "Respectful Servant"
+    "displayName": "Attentive Servant"
   },
   "avg_npc_1981_1": {
     "speakerNames": [
+      "Noble A",
+      "Noble Beneath Podium",
       "Jittery Noble"
     ],
     "searchNames": [
+      "Noble A",
+      "Noble Beneath Podium",
       "Jittery Noble"
     ],
-    "displayName": "Jittery Noble"
+    "displayName": "Noble A"
   },
   "avg_npc_1984_1": {
     "speakerNames": [
@@ -21724,12 +21770,22 @@
   },
   "avg_npc_1979_1": {
     "speakerNames": [
+      "Jailed Worker",
+      "Enthusiastic Worker",
+      "Ursine Worker",
+      "Excited Worker",
+      "Friendly Worker",
       "Worker?"
     ],
     "searchNames": [
+      "Jailed Worker",
+      "Enthusiastic Worker",
+      "Ursine Worker",
+      "Excited Worker",
+      "Friendly Worker",
       "Worker?"
     ],
-    "displayName": "Worker?"
+    "displayName": "Jailed Worker"
   },
   "avg_npc_1796_1": {
     "speakerNames": [
@@ -22751,5 +22807,439 @@
       "Matoimaru's Foster Father"
     ],
     "displayName": "Matoimaru's Foster Father"
+  },
+  "avg_npc_2165_1": {
+    "speakerNames": [
+      "Rosa"
+    ],
+    "searchNames": [
+      "Rosa"
+    ],
+    "displayName": "Rosa"
+  },
+  "avg_npc_2173_1": {
+    "speakerNames": [
+      "Noblewoman",
+      "Countess Vorontsova"
+    ],
+    "searchNames": [
+      "Noblewoman",
+      "Countess Vorontsova"
+    ],
+    "displayName": "Noblewoman"
+  },
+  "avg_npc_2156_1": {
+    "speakerNames": [
+      "Istina"
+    ],
+    "searchNames": [
+      "Istina"
+    ],
+    "displayName": "Istina"
+  },
+  "avg_196_sunbr_1": {
+    "speakerNames": [
+      "Gummy"
+    ],
+    "searchNames": [
+      "Gummy"
+    ],
+    "displayName": "Gummy"
+  },
+  "avg_npc_2158_1": {
+    "speakerNames": [
+      "Pavlovich"
+    ],
+    "searchNames": [
+      "Pavlovich"
+    ],
+    "displayName": "Pavlovich"
+  },
+  "avg_npc_2171_1": {
+    "speakerNames": [
+      "Stern Noble",
+      "Angry Noble",
+      "Hearing Committee Member",
+      "Whispering Noble B",
+      "Duke Treplev",
+      "Thinking Noble",
+      "Anxious Noble",
+      "Scathing Noble",
+      "Whispering Noble A"
+    ],
+    "searchNames": [
+      "Stern Noble",
+      "Angry Noble",
+      "Hearing Committee Member",
+      "Whispering Noble B",
+      "Duke Treplev",
+      "Thinking Noble",
+      "Anxious Noble",
+      "Scathing Noble",
+      "Whispering Noble A"
+    ],
+    "displayName": "Stern Noble"
+  },
+  "avg_npc_2168_1": {
+    "speakerNames": [
+      "Arbiter"
+    ],
+    "searchNames": [
+      "Arbiter"
+    ],
+    "displayName": "Arbiter"
+  },
+  "avg_npc_2162_1": {
+    "speakerNames": [
+      "Vasily",
+      "A Certain Councilor"
+    ],
+    "searchNames": [
+      "Vasily",
+      "A Certain Councilor"
+    ],
+    "displayName": "Vasily"
+  },
+  "avg_npc_2159_1": {
+    "speakerNames": [
+      "Olga"
+    ],
+    "searchNames": [
+      "Olga"
+    ],
+    "displayName": "Olga"
+  },
+  "avg_1051_headb2_1": {
+    "speakerNames": [
+      "Zima",
+      "Antosha"
+    ],
+    "searchNames": [
+      "Zima",
+      "Antosha"
+    ],
+    "displayName": "Zima"
+  },
+  "avg_npc_2170_1": {
+    "speakerNames": [
+      "Ursine Police",
+      "Sergo"
+    ],
+    "searchNames": [
+      "Ursine Police",
+      "Sergo"
+    ],
+    "displayName": "Ursine Police"
+  },
+  "avg_4224_turdus_1": {
+    "speakerNames": [
+      "Aloof Girl",
+      "Ukusik"
+    ],
+    "searchNames": [
+      "Aloof Girl",
+      "Ukusik"
+    ],
+    "displayName": "Aloof Girl"
+  },
+  "avg_npc_2184_1": {
+    "speakerNames": [
+      "Jailed Student",
+      "Yura"
+    ],
+    "searchNames": [
+      "Jailed Student",
+      "Yura"
+    ],
+    "displayName": "Jailed Student"
+  },
+  "avg_npc_2157_1": {
+    "speakerNames": [
+      "Antosha"
+    ],
+    "searchNames": [
+      "Antosha"
+    ],
+    "displayName": "Antosha"
+  },
+  "avg_npc_2160_1": {
+    "speakerNames": [
+      "Matvey"
+    ],
+    "searchNames": [
+      "Matvey"
+    ],
+    "displayName": "Matvey"
+  },
+  "avg_npc_2182_1": {
+    "speakerNames": [
+      "Resolute Girl",
+      "Worried Student",
+      "Resolute Student",
+      "Harsh Student"
+    ],
+    "searchNames": [
+      "Resolute Girl",
+      "Worried Student",
+      "Resolute Student",
+      "Harsh Student"
+    ],
+    "displayName": "Resolute Girl"
+  },
+  "avg_npc_2166_1": {
+    "speakerNames": [
+      "Hired Muscle",
+      "'Sixteen Warriors' Thug A",
+      "'Sixteen Warriors' Ruffian",
+      "'Sixteen Warriors' Thug",
+      "'Sixteen Warriors' Thug D"
+    ],
+    "searchNames": [
+      "Hired Muscle",
+      "'Sixteen Warriors' Thug A",
+      "'Sixteen Warriors' Ruffian",
+      "'Sixteen Warriors' Thug",
+      "'Sixteen Warriors' Thug D"
+    ],
+    "displayName": "Hired Muscle"
+  },
+  "avg_npc_2187_1": {
+    "speakerNames": [
+      "Calm Noble Student",
+      "Naum",
+      "Symposium Member",
+      "Vanguards Member"
+    ],
+    "searchNames": [
+      "Calm Noble Student",
+      "Naum",
+      "Symposium Member",
+      "Vanguards Member"
+    ],
+    "displayName": "Calm Noble Student"
+  },
+  "avg_npc_2178_1": {
+    "speakerNames": [
+      "Worried Student",
+      "'Pencil Stub'",
+      "Unbound Member",
+      "Disappointed Student",
+      "Cautious Student",
+      "Scornful Student"
+    ],
+    "searchNames": [
+      "Worried Student",
+      "'Pencil Stub'",
+      "Unbound Member",
+      "Disappointed Student",
+      "Cautious Student",
+      "Scornful Student"
+    ],
+    "displayName": "Worried Student"
+  },
+  "avg_npc_2177_1": {
+    "speakerNames": [
+      "Faddey",
+      "Rescued Student B",
+      "Vanguards Member",
+      "Ursine Student A"
+    ],
+    "searchNames": [
+      "Faddey",
+      "Rescued Student B",
+      "Vanguards Member",
+      "Ursine Student A"
+    ],
+    "displayName": "Faddey"
+  },
+  "avg_npc_2155_1": {
+    "speakerNames": [
+      "Melancholy Youth",
+      "Fedya",
+      "Fyodor"
+    ],
+    "searchNames": [
+      "Melancholy Youth",
+      "Fedya",
+      "Fyodor"
+    ],
+    "displayName": "Melancholy Youth"
+  },
+  "avg_npc_2183_1": {
+    "speakerNames": [
+      "Excited Student",
+      "Nika"
+    ],
+    "searchNames": [
+      "Excited Student",
+      "Nika"
+    ],
+    "displayName": "Excited Student"
+  },
+  "avg_npc_2176_1": {
+    "speakerNames": [
+      "Anxious Noble Student",
+      "Yeremey",
+      "Handsome Nobleman",
+      "Sergo",
+      "Rania"
+    ],
+    "searchNames": [
+      "Anxious Noble Student",
+      "Yeremey",
+      "Handsome Nobleman",
+      "Sergo",
+      "Rania"
+    ],
+    "displayName": "Anxious Noble Student"
+  },
+  "avg_npc_2175_1": {
+    "speakerNames": [
+      "Haggard Worker",
+      "Varvara",
+      "Ursine Professor"
+    ],
+    "searchNames": [
+      "Haggard Worker",
+      "Varvara",
+      "Ursine Professor"
+    ],
+    "displayName": "Haggard Worker"
+  },
+  "avg_npc_2181_1": {
+    "speakerNames": [
+      "Varvara",
+      "Anxious Student"
+    ],
+    "searchNames": [
+      "Varvara",
+      "Anxious Student"
+    ],
+    "displayName": "Varvara"
+  },
+  "avg_npc_2167_1": {
+    "speakerNames": [
+      "'Council of Sixteen' Thug A",
+      "'Sixteen Warriors' Thug A",
+      "'Sixteen Warriors' Thug B",
+      "'Sixteen Warriors' Thug C",
+      "'Sixteen Warriors' Guard"
+    ],
+    "searchNames": [
+      "'Council of Sixteen' Thug A",
+      "'Sixteen Warriors' Thug A",
+      "'Sixteen Warriors' Thug B",
+      "'Sixteen Warriors' Thug C",
+      "'Sixteen Warriors' Guard"
+    ],
+    "displayName": "'Council of Sixteen' Thug A"
+  },
+  "avg_npc_2161_1": {
+    "speakerNames": [
+      "Burly Ursus",
+      "Gromov"
+    ],
+    "searchNames": [
+      "Burly Ursus",
+      "Gromov"
+    ],
+    "displayName": "Burly Ursus"
+  },
+  "avg_197_poca_1": {
+    "speakerNames": [
+      "Rosa"
+    ],
+    "searchNames": [
+      "Rosa"
+    ],
+    "displayName": "Rosa"
+  },
+  "avg_npc_2179_1": {
+    "speakerNames": [
+      "Ursine Student B",
+      "Brave Student",
+      "Vanguards Member",
+      "Symposium Member",
+      "Leonid",
+      "Motivated Student"
+    ],
+    "searchNames": [
+      "Ursine Student B",
+      "Brave Student",
+      "Vanguards Member",
+      "Symposium Member",
+      "Leonid",
+      "Motivated Student"
+    ],
+    "displayName": "Ursine Student B"
+  },
+  "avg_npc_2186_1": {
+    "speakerNames": [
+      "Nervous Student",
+      "Shorty"
+    ],
+    "searchNames": [
+      "Nervous Student",
+      "Shorty"
+    ],
+    "displayName": "Nervous Student"
+  },
+  "avg_4223_botany_1": {
+    "speakerNames": [
+      "Botani",
+      "Tishinna"
+    ],
+    "searchNames": [
+      "Botani",
+      "Tishinna"
+    ],
+    "displayName": "Botani"
+  },
+  "avg_npc_2174_1": {
+    "speakerNames": [
+      "Pavalo",
+      "Ursine Citizens"
+    ],
+    "searchNames": [
+      "Pavalo",
+      "Ursine Citizens"
+    ],
+    "displayName": "Pavalo"
+  },
+  "avg_260_durnar_1": {
+    "speakerNames": [
+      "Dur-nar"
+    ],
+    "searchNames": [
+      "Dur-nar"
+    ],
+    "displayName": "Dur-nar"
+  },
+  "avg_npc_2180_1": {
+    "speakerNames": [
+      "Excited Student"
+    ],
+    "searchNames": [
+      "Excited Student"
+    ],
+    "displayName": "Excited Student"
+  },
+  "avg_npc_2172_1": {
+    "speakerNames": [
+      "Impatient Noble"
+    ],
+    "searchNames": [
+      "Impatient Noble"
+    ],
+    "displayName": "Impatient Noble"
+  },
+  "avg_npc_2185_1": {
+    "speakerNames": [
+      "Nikto"
+    ],
+    "searchNames": [
+      "Nikto"
+    ],
+    "displayName": "Nikto"
   }
 }
