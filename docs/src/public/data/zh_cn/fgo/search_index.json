@@ -770,6 +770,20 @@
     ]
   },
   {
+    "id": 106400,
+    "name": "近藤勇",
+    "originalName": "近藤勇",
+    "ruby": "近藤勇",
+    "className": "saber",
+    "rarity": 5,
+    "searchTerms": [
+      "近藤勇",
+      "近藤勇",
+      "近藤勇",
+      "saber"
+    ]
+  },
+  {
     "id": 200100,
     "name": "卫宫",
     "originalName": "卫宫",
@@ -2194,6 +2208,20 @@
       "美游·艾德费尔特",
       "美游·艾德费尔特",
       "美游·艾德费尔特",
+      "lancer"
+    ]
+  },
+  {
+    "id": 306100,
+    "name": "原田左之助",
+    "originalName": "原田左之助",
+    "ruby": "原田左之助",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "原田左之助",
+      "原田左之助",
+      "原田左之助",
       "lancer"
     ]
   },
@@ -4200,6 +4228,20 @@
     ]
   },
   {
+    "id": 605100,
+    "name": "河上彦斋",
+    "originalName": "河上彦斋",
+    "ruby": "河上彦斋",
+    "className": "assassin",
+    "rarity": 5,
+    "searchTerms": [
+      "河上彦斋",
+      "河上彦斋",
+      "河上彦斋",
+      "assassin"
+    ]
+  },
+  {
     "id": 700100,
     "name": "赫拉克勒斯",
     "originalName": "赫拉克勒斯",
@@ -5610,6 +5652,20 @@
       "方巿",
       "方巿",
       "方巿",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1102100,
+    "name": "藤堂平助",
+    "originalName": "藤堂平助",
+    "ruby": "藤堂平助",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "藤堂平助",
+      "藤堂平助",
+      "藤堂平助",
       "avenger"
     ]
   },
