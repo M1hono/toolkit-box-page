@@ -44,7 +44,7 @@ jobs:
     # Data sync job
     sync-data:
         if: ${{ inputs.task_priority == 'story-only' || inputs.task_priority == 'arknights-only' || inputs.task_priority == 'fgo-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         timeout-minutes: 45
         outputs:
             data-updated: ${{ steps.check-changes.outputs.changed }}
@@ -145,7 +145,7 @@ jobs:
     config:
         if: ${{ inputs.task_priority == 'build-only' || inputs.task_priority == 'all' || github.event_name == 'push' || github.event_name == 'schedule' }}
         needs: [sync-data]
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         outputs:
             deployment-type: ${{ steps.config.outputs.deployment-type }}
         steps:
@@ -179,7 +179,7 @@ jobs:
     # Build the site
     build:
         needs: config
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - name: Checkout
               uses: actions/checkout@v4
@@ -212,7 +212,7 @@ jobs:
     deploy-github:
         if: needs.config.outputs.deployment-type == 'github-pages'
         needs: [config, build]
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         environment:
             name: github-pages
             url: ${{ steps.deployment.outputs.page_url }}
@@ -239,7 +239,7 @@ jobs:
     deploy-server:
         if: needs.config.outputs.deployment-type == 'server'
         needs: [config, build]
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - name: Download build artifact
               uses: actions/download-artifact@v4
@@ -274,7 +274,7 @@ jobs:
     deploy-custom:
         if: needs.config.outputs.deployment-type == 'custom'
         needs: [config, build]
-        runs-on: ubuntu-latest
+        runs-on: ubuntu-24.04
         steps:
             - name: Checkout
               uses: actions/checkout@v4
