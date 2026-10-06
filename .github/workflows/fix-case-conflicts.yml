@@ -17,6 +17,9 @@ on:
         required: false
         default: '{"example": "Example", "ponderjs": "PonderJs"}'
 
+permissions:
+  contents: write
+
 jobs:
   fix-case-conflicts:
     runs-on: ubuntu-24.04
