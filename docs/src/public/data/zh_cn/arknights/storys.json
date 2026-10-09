@@ -19711,5 +19711,179 @@
   ],
   "avg_npc_2381_1": [
     "activities/act54side/level_act54side_08_beg.txt"
+  ],
+  "avg_npc_2275_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_04_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt"
+  ],
+  "avg_npc_2267_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_01_end.txt",
+    "activities/act52side/level_act52side_02_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_beg.txt",
+    "activities/act52side/level_act52side_04_beg.txt",
+    "activities/act52side/level_act52side_04_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt",
+    "activities/act52side/level_act52side_st03.txt"
+  ],
+  "avg_npc_2269_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_npc_2271_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_01_end.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_beg.txt",
+    "activities/act52side/level_act52side_03_end.txt"
+  ],
+  "avg_4232_hbound_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_01_end.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_end.txt",
+    "activities/act52side/level_act52side_04_beg.txt",
+    "activities/act52side/level_act52side_05_beg.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt",
+    "activities/act52side/level_act52side_st03.txt"
+  ],
+  "avg_npc_2278_1": [
+    "activities/act52side/level_act52side_01_beg.txt"
+  ],
+  "avg_npc_2273_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_04_beg.txt",
+    "activities/act52side/level_act52side_05_beg.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_4231_clemnt_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_01_end.txt",
+    "activities/act52side/level_act52side_02_beg.txt",
+    "activities/act52side/level_act52side_03_beg.txt",
+    "activities/act52side/level_act52side_04_beg.txt",
+    "activities/act52side/level_act52side_05_beg.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_07_beg.txt",
+    "activities/act52side/level_act52side_07_end.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt",
+    "activities/act52side/level_act52side_st03.txt"
+  ],
+  "avg_npc_2272_1": [
+    "activities/act52side/level_act52side_01_beg.txt",
+    "activities/act52side/level_act52side_01_end.txt",
+    "activities/act52side/level_act52side_04_beg.txt",
+    "activities/act52side/level_act52side_04_end.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_npc_2270_1": [
+    "activities/act52side/level_act52side_01_end.txt",
+    "activities/act52side/level_act52side_02_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_beg.txt",
+    "activities/act52side/level_act52side_03_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_06_end.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_npc_2268_1": [
+    "activities/act52side/level_act52side_02_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_beg.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_07_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt"
+  ],
+  "avg_npc_2277_1": [
+    "activities/act52side/level_act52side_02_beg.txt",
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_beg.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_06_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_npc_2276_1": [
+    "activities/act52side/level_act52side_02_beg.txt",
+    "activities/act52side/level_act52side_04_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_07_beg.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_393_toledo_1": [
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_end.txt",
+    "activities/act52side/level_act52side_04_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_06_end.txt",
+    "activities/act52side/level_act52side_07_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_npc_2274_1": [
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_04_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st02.txt"
+  ],
+  "avg_npc_2266_1": [
+    "activities/act52side/level_act52side_02_end.txt",
+    "activities/act52side/level_act52side_03_end.txt",
+    "activities/act52side/level_act52side_05_end.txt",
+    "activities/act52side/level_act52side_06_beg.txt",
+    "activities/act52side/level_act52side_06_end.txt",
+    "activities/act52side/level_act52side_07_end.txt",
+    "activities/act52side/level_act52side_08_beg.txt",
+    "activities/act52side/level_act52side_08_end.txt",
+    "activities/act52side/level_act52side_st01.txt",
+    "activities/act52side/level_act52side_st03.txt"
+  ],
+  "avg_npc_2279_1": [
+    "activities/act52side/level_act52side_07_end.txt"
+  ],
+  "avg_npc_2280_1": [
+    "activities/act52side/level_act52side_07_end.txt"
+  ],
+  "avg_npc_1395_1": [
+    "obt/memory/story_udflow_1_1.txt"
   ]
 }
