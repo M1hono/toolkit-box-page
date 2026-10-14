@@ -398,8 +398,9 @@
       "Reunion Warrior",
       "Reunion Troops",
       "Terracotta",
-      "Uneasy Reunion Fighter",
-      "Reunion Member A"
+      "Reunion Member A",
+      "Reunion Member C",
+      "Uneasy Reunion Fighter"
     ],
     "searchNames": [
       "Reunion Member B",
@@ -408,8 +409,9 @@
       "Reunion Warrior",
       "Reunion Troops",
       "Terracotta",
-      "Uneasy Reunion Fighter",
-      "Reunion Member A"
+      "Reunion Member A",
+      "Reunion Member C",
+      "Uneasy Reunion Fighter"
     ],
     "displayName": "Reunion Member B"
   },
@@ -766,6 +768,7 @@
       "Reunion Member",
       "Reunion?",
       "Mays",
+      "Reunion Member B",
       "Ursus Caster"
     ],
     "searchNames": [
@@ -775,6 +778,7 @@
       "Reunion Member",
       "Reunion?",
       "Mays",
+      "Reunion Member B",
       "Ursus Caster"
     ],
     "displayName": "Reunion Caster"
@@ -1185,6 +1189,7 @@
       "Friendly Villager",
       "Surviving Villager",
       "Old Villager",
+      "Blind Elder",
       "Nervous Old Man",
       "Calm Old Man",
       "Alsu",
@@ -1198,6 +1203,7 @@
       "Friendly Villager",
       "Surviving Villager",
       "Old Villager",
+      "Blind Elder",
       "Nervous Old Man",
       "Calm Old Man",
       "Alsu",
@@ -1423,6 +1429,8 @@
       "Infected",
       "Reunion Soldier",
       "Reunion Warrior",
+      "Wary Infected",
+      "Valiya",
       "Soda Hawker",
       "Kevin",
       "Ah Wei"
@@ -1434,6 +1442,8 @@
       "Infected",
       "Reunion Soldier",
       "Reunion Warrior",
+      "Wary Infected",
+      "Valiya",
       "Soda Hawker",
       "Kevin",
       "Ah Wei"
@@ -2694,6 +2704,7 @@
       "Staff Worker",
       "Knight Scout",
       "Red Wine Intern Journalist",
+      "Kazimierzian Merchant",
       "Messenger",
       "Careless Social Worker",
       "Man in Reporter Garb",
@@ -2736,6 +2747,7 @@
       "Staff Worker",
       "Knight Scout",
       "Red Wine Intern Journalist",
+      "Kazimierzian Merchant",
       "Messenger",
       "Careless Social Worker",
       "Man in Reporter Garb",
@@ -3568,6 +3580,7 @@
       "Campaign Knight",
       "Campaign Knight A",
       "Campaign Knight B",
+      "Adeptus Messenger",
       "'Kazimierzian'",
       "Marsov"
     ],
@@ -3575,6 +3588,7 @@
       "Campaign Knight",
       "Campaign Knight A",
       "Campaign Knight B",
+      "Adeptus Messenger",
       "'Kazimierzian'",
       "Marsov"
     ],
@@ -4701,6 +4715,12 @@
       "Patrol Unit Captain",
       "Frightened Patrol Unit",
       "Soldier",
+      "Flustered Guard",
+      "Impatient Guard",
+      "Bodyguard",
+      "Impatient Soldier",
+      "Excited Voice",
+      "Nervous Soldier",
       "Gendarmerie"
     ],
     "searchNames": [
@@ -4715,6 +4735,12 @@
       "Patrol Unit Captain",
       "Frightened Patrol Unit",
       "Soldier",
+      "Flustered Guard",
+      "Impatient Guard",
+      "Bodyguard",
+      "Impatient Soldier",
+      "Excited Voice",
+      "Nervous Soldier",
       "Gendarmerie"
     ],
     "displayName": "'Soldier'"
@@ -4723,9 +4749,11 @@
     "speakerNames": [
       "An Infected Refugee",
       "Infected",
+      "Haggard Infected",
       "Sick Miner",
       "Despairing Infected",
       "Flustered Infected",
+      "Quiet Boy",
       "Infected Peddler",
       "Timid Resident",
       "Young Man",
@@ -4735,9 +4763,11 @@
     "searchNames": [
       "An Infected Refugee",
       "Infected",
+      "Haggard Infected",
       "Sick Miner",
       "Despairing Infected",
       "Flustered Infected",
+      "Quiet Boy",
       "Infected Peddler",
       "Timid Resident",
       "Young Man",
@@ -6279,10 +6309,12 @@
       "Reunion Member",
       "Senile Old Man",
       "Villager",
+      "Scornful 'Councilor'",
       "Worn-out Infected",
       "Stranger",
       "Muscular Man",
       "Shadow",
+      "Coachman",
       "Raymond",
       "Angry Youth",
       "Uncle Pickett",
@@ -6299,10 +6331,12 @@
       "Reunion Member",
       "Senile Old Man",
       "Villager",
+      "Scornful 'Councilor'",
       "Worn-out Infected",
       "Stranger",
       "Muscular Man",
       "Shadow",
+      "Coachman",
       "Raymond",
       "Angry Youth",
       "Uncle Pickett",
@@ -6465,6 +6499,7 @@
       "Julio",
       "Humble Secretary",
       "Millais",
+      "Bar Owner",
       "Rude Reporter",
       "Morgue Worker",
       "Impatient Man",
@@ -6488,6 +6523,7 @@
       "Julio",
       "Humble Secretary",
       "Millais",
+      "Bar Owner",
       "Rude Reporter",
       "Morgue Worker",
       "Impatient Man",
@@ -8707,14 +8743,16 @@
       "Grand Duke Vanya",
       "Royal Guard?",
       "'Emperors' Blade'",
-      "Black Snow"
+      "Black Snow",
+      "Emperor's Blade"
     ],
     "searchNames": [
       "'Emperor's Blade'",
       "Grand Duke Vanya",
       "Royal Guard?",
       "'Emperors' Blade'",
-      "Black Snow"
+      "Black Snow",
+      "Emperor's Blade"
     ],
     "displayName": "'Emperor's Blade'"
   },
@@ -9545,11 +9583,15 @@
   "avg_1037_amiya3_1": {
     "speakerNames": [
       "Amiya",
-      "Closure"
+      "Closure",
+      "Raidian",
+      "Civilight Eterna"
     ],
     "searchNames": [
       "Amiya",
-      "Closure"
+      "Closure",
+      "Raidian",
+      "Civilight Eterna"
     ],
     "displayName": "Amiya"
   },
@@ -9677,7 +9719,8 @@
       "Columbian Soldier B",
       "Maylander Foundation Agent",
       "Propeller Paradise Police",
-      "Propeller Paradise Police A"
+      "Propeller Paradise Police A",
+      "Columbian Patrol Officer"
     ],
     "searchNames": [
       "Columbian Military Officer",
@@ -9689,7 +9732,8 @@
       "Columbian Soldier B",
       "Maylander Foundation Agent",
       "Propeller Paradise Police",
-      "Propeller Paradise Police A"
+      "Propeller Paradise Police A",
+      "Columbian Patrol Officer"
     ],
     "displayName": "Columbian Military Officer"
   },
@@ -9926,6 +9970,7 @@
       "Dejected Babel Member",
       "Mummy",
       "Shopkeeper",
+      "Salma",
       "Thiem",
       "Jif & Thiem",
       "Leithanian Woman",
@@ -9943,6 +9988,7 @@
       "Dejected Babel Member",
       "Mummy",
       "Shopkeeper",
+      "Salma",
       "Thiem",
       "Jif & Thiem",
       "Leithanian Woman",
@@ -14030,6 +14076,7 @@
       "Timid Old Woman",
       "Old Lady",
       "Grandmother",
+      "Blind Elder",
       "Ursus Civilian",
       "Woman",
       "Sani",
@@ -14045,6 +14092,7 @@
       "Timid Old Woman",
       "Old Lady",
       "Grandmother",
+      "Blind Elder",
       "Ursus Civilian",
       "Woman",
       "Sani",
@@ -15873,11 +15921,13 @@
     "speakerNames": [
       "Lyudmila",
       "Crownslayer",
+      "Tulin",
       "Red/Lyudmila"
     ],
     "searchNames": [
       "Lyudmila",
       "Crownslayer",
+      "Tulin",
       "Red/Lyudmila"
     ],
     "displayName": "Lyudmila"
@@ -16431,12 +16481,12 @@
   },
   "avg_npc_041": {
     "speakerNames": [
-      "Jie Zhen"
+      "Xie Zhen"
     ],
     "searchNames": [
-      "Jie Zhen"
+      "Xie Zhen"
     ],
-    "displayName": "Jie Zhen"
+    "displayName": "Xie Zhen"
   },
   "avg_npc_1613_1": {
     "speakerNames": [
@@ -16645,12 +16695,12 @@
   },
   "avg_npc_1618_1": {
     "speakerNames": [
-      "Jie Zhen"
+      "Xie Zhen"
     ],
     "searchNames": [
-      "Jie Zhen"
+      "Xie Zhen"
     ],
-    "displayName": "Jie Zhen"
+    "displayName": "Xie Zhen"
   },
   "avg_npc_1634_1": {
     "speakerNames": [
@@ -17291,10 +17341,12 @@
   },
   "avg_4179_monstr_1": {
     "speakerNames": [
-      "Mon3tr"
+      "Mon3tr",
+      "Amiya/Mon3tr"
     ],
     "searchNames": [
-      "Mon3tr"
+      "Mon3tr",
+      "Amiya/Mon3tr"
     ],
     "displayName": "Mon3tr"
   },
@@ -17453,10 +17505,12 @@
   "avg_npc_415_1": {
     "speakerNames": [
       "Koshelna",
+      "Elegant Woman",
       "Hippogryph Teacher"
     ],
     "searchNames": [
       "Koshelna",
+      "Elegant Woman",
       "Hippogryph Teacher"
     ],
     "displayName": "Koshelna"
@@ -18305,10 +18359,12 @@
   },
   "char_500_noirc_1": {
     "speakerNames": [
-      "Noir Corne"
+      "Noir Corne",
+      "Yato"
     ],
     "searchNames": [
-      "Noir Corne"
+      "Noir Corne",
+      "Yato"
     ],
     "displayName": "Noir Corne"
   },
@@ -19263,12 +19319,14 @@
     "speakerNames": [
       "Banshee-Style Device",
       "Kindly Voice",
-      "Gentle but Stern Voice"
+      "Gentle but Stern Voice",
+      "PhonoR-0"
     ],
     "searchNames": [
       "Banshee-Style Device",
       "Kindly Voice",
-      "Gentle but Stern Voice"
+      "Gentle but Stern Voice",
+      "PhonoR-0"
     ],
     "displayName": "Banshee-Style Device"
   },
@@ -19311,12 +19369,14 @@
   },
   "avg_npc_1731_1": {
     "speakerNames": [
+      "Optimistic Infected",
       "Infected Worker"
     ],
     "searchNames": [
+      "Optimistic Infected",
       "Infected Worker"
     ],
-    "displayName": "Infected Worker"
+    "displayName": "Optimistic Infected"
   },
   "char_366_acdrop": {
     "speakerNames": [
@@ -20801,10 +20861,12 @@
   },
   "avg_502_yato_1": {
     "speakerNames": [
-      "Yato"
+      "Yato",
+      "Noir Corne"
     ],
     "searchNames": [
-      "Yato"
+      "Yato",
+      "Noir Corne"
     ],
     "displayName": "Yato"
   },
@@ -21172,27 +21234,37 @@
   },
   "avg_npc_759_1": {
     "speakerNames": [
+      "Anxious Villager",
+      "Frenetic Villager",
+      "Sad Villager",
       "Angry Mother",
       "Akiyo",
       "Sad Stall Owner",
       "??"
     ],
     "searchNames": [
+      "Anxious Villager",
+      "Frenetic Villager",
+      "Sad Villager",
       "Angry Mother",
       "Akiyo",
       "Sad Stall Owner",
       "??"
     ],
-    "displayName": "Angry Mother"
+    "displayName": "Anxious Villager"
   },
   "avg_npc_762_1": {
     "speakerNames": [
+      "Lost Child",
+      "Child Playing the Monster",
       "Excited Child"
     ],
     "searchNames": [
+      "Lost Child",
+      "Child Playing the Monster",
       "Excited Child"
     ],
-    "displayName": "Excited Child"
+    "displayName": "Lost Child"
   },
   "avg_npc_1919_1": {
     "speakerNames": [
@@ -21231,16 +21303,34 @@
   },
   "avg_npc_758_1": {
     "speakerNames": [
+      "Honest Villager",
+      "Starving Villager",
+      "Strong Villager",
+      "Nervous Villager",
+      "Despondent Villager",
+      "Panicking Villager",
+      "Angry Villager",
+      "Sad Villager",
+      "No Longer Angry Villager",
       "Auctioneer's Voice",
       "Friendly Stall Owner",
       "Suzuki"
     ],
     "searchNames": [
+      "Honest Villager",
+      "Starving Villager",
+      "Strong Villager",
+      "Nervous Villager",
+      "Despondent Villager",
+      "Panicking Villager",
+      "Angry Villager",
+      "Sad Villager",
+      "No Longer Angry Villager",
       "Auctioneer's Voice",
       "Friendly Stall Owner",
       "Suzuki"
     ],
-    "displayName": "Auctioneer's Voice"
+    "displayName": "Honest Villager"
   },
   "avg_4165_ctrail_1": {
     "speakerNames": [
@@ -21434,12 +21524,20 @@
       "Eloysius",
       "Imperial Guard?",
       "Raidian",
+      "Hellagur",
+      "Maid",
+      "Voice Outside the Door",
+      "Surprised Voice",
       "Silent Soldier"
     ],
     "searchNames": [
       "Eloysius",
       "Imperial Guard?",
       "Raidian",
+      "Hellagur",
+      "Maid",
+      "Voice Outside the Door",
+      "Surprised Voice",
       "Silent Soldier"
     ],
     "displayName": "Eloysius"
@@ -21518,8 +21616,14 @@
       "Pious Miner",
       "Miner",
       "Timid Miner",
+      "Tardy Worker",
+      "Returning Miner",
+      "Stupefied Miner",
+      "Exhausted Miner",
+      "Eager Miner",
       "Skeptical Miner",
-      "Infected Miner"
+      "Infected Miner",
+      "Ursine Worker"
     ],
     "searchNames": [
       "Excited Miner",
@@ -21536,8 +21640,14 @@
       "Pious Miner",
       "Miner",
       "Timid Miner",
+      "Tardy Worker",
+      "Returning Miner",
+      "Stupefied Miner",
+      "Exhausted Miner",
+      "Eager Miner",
       "Skeptical Miner",
-      "Infected Miner"
+      "Infected Miner",
+      "Ursine Worker"
     ],
     "displayName": "Excited Miner"
   },
@@ -21563,10 +21673,12 @@
   },
   "avg_npc_1962_1": {
     "speakerNames": [
-      "Grand Duchess Elisabeth"
+      "Grand Duchess Elisabeth",
+      "Elisaveta"
     ],
     "searchNames": [
-      "Grand Duchess Elisabeth"
+      "Grand Duchess Elisabeth",
+      "Elisaveta"
     ],
     "displayName": "Grand Duchess Elisabeth"
   },
@@ -21580,7 +21692,11 @@
       "Worried Miner",
       "Curious Miner",
       "Miner",
-      "Fearful Miner"
+      "Perplexed Miner",
+      "Angry Miner",
+      "Fearful Miner",
+      "Nimble Miner",
+      "The Pensive Youth"
     ],
     "searchNames": [
       "Anxious Miner",
@@ -21591,7 +21707,11 @@
       "Worried Miner",
       "Curious Miner",
       "Miner",
-      "Fearful Miner"
+      "Perplexed Miner",
+      "Angry Miner",
+      "Fearful Miner",
+      "Nimble Miner",
+      "The Pensive Youth"
     ],
     "displayName": "Anxious Miner"
   },
@@ -21636,19 +21756,33 @@
   },
   "avg_npc_1974_1": {
     "speakerNames": [
-      "Worried Researcher"
+      "Worried Researcher",
+      "Scared Scholar",
+      "Ursus Researcher",
+      "Curious Researcher",
+      "Researcher"
     ],
     "searchNames": [
-      "Worried Researcher"
+      "Worried Researcher",
+      "Scared Scholar",
+      "Ursus Researcher",
+      "Curious Researcher",
+      "Researcher"
     ],
     "displayName": "Worried Researcher"
   },
   "avg_npc_1975_1": {
     "speakerNames": [
-      "Excited Researcher"
+      "Excited Researcher",
+      "Proud Scholar",
+      "Gira",
+      "Timid Researcher"
     ],
     "searchNames": [
-      "Excited Researcher"
+      "Excited Researcher",
+      "Proud Scholar",
+      "Gira",
+      "Timid Researcher"
     ],
     "displayName": "Excited Researcher"
   },
@@ -21658,23 +21792,39 @@
       "Nervous Officer",
       "Stern Officer",
       "Solemn Ursine Officer",
-      "Officer"
+      "Despairing Officer",
+      "Officer",
+      "Proud Officer",
+      "Arrogant Officer",
+      "Anxious Officer",
+      "Gunnery Officer",
+      "Terrified Officer",
+      "Determined Officer"
     ],
     "searchNames": [
       "Ursine Officer",
       "Nervous Officer",
       "Stern Officer",
       "Solemn Ursine Officer",
-      "Officer"
+      "Despairing Officer",
+      "Officer",
+      "Proud Officer",
+      "Arrogant Officer",
+      "Anxious Officer",
+      "Gunnery Officer",
+      "Terrified Officer",
+      "Determined Officer"
     ],
     "displayName": "Ursine Officer"
   },
   "avg_npc_1973_1": {
     "speakerNames": [
-      "Impatient Guard"
+      "Impatient Guard",
+      "Messenger"
     ],
     "searchNames": [
-      "Impatient Guard"
+      "Impatient Guard",
+      "Messenger"
     ],
     "displayName": "Impatient Guard"
   },
@@ -21707,41 +21857,91 @@
   },
   "avg_npc_1978_1": {
     "speakerNames": [
+      "Soldier",
+      "Vigilant Guard",
+      "Guard to the Back",
+      "Silent Soldier",
+      "Enraged Officer",
       "Army Officer",
       "Cold Soldier"
     ],
     "searchNames": [
+      "Soldier",
+      "Vigilant Guard",
+      "Guard to the Back",
+      "Silent Soldier",
+      "Enraged Officer",
       "Army Officer",
       "Cold Soldier"
     ],
-    "displayName": "Army Officer"
+    "displayName": "Soldier"
   },
   "avg_npc_1976_1": {
     "speakerNames": [
+      "Crumbling Soldier",
+      "Army Soldier",
+      "Aloof Soldier",
+      "Tipsy Soldier",
+      "Nervous Guard",
+      "Excited Soldier",
+      "Honest Soldier",
+      "Taciturn Soldier",
+      "Nervous Soldier",
       "Soldier",
+      "Confused Soldier",
+      "Panicked Soldier",
       "Angry Soldier",
+      "Fourth Army Soldier",
+      "Ursine Soldier",
+      "Radioman",
       "Stern Officer",
       "Listener"
     ],
     "searchNames": [
+      "Crumbling Soldier",
+      "Army Soldier",
+      "Aloof Soldier",
+      "Tipsy Soldier",
+      "Nervous Guard",
+      "Excited Soldier",
+      "Honest Soldier",
+      "Taciturn Soldier",
+      "Nervous Soldier",
       "Soldier",
+      "Confused Soldier",
+      "Panicked Soldier",
       "Angry Soldier",
+      "Fourth Army Soldier",
+      "Ursine Soldier",
+      "Radioman",
       "Stern Officer",
       "Listener"
     ],
-    "displayName": "Soldier"
+    "displayName": "Crumbling Soldier"
   },
   "avg_npc_1982_1": {
     "speakerNames": [
       "Attentive Servant",
       "Attendant",
+      "Diligent Servant",
       "Respectful Servant",
+      "Servant",
+      "Polite Servant",
+      "Brave Servant",
+      "Solemn Official",
+      "Runner",
       "New Visitor"
     ],
     "searchNames": [
       "Attentive Servant",
       "Attendant",
+      "Diligent Servant",
       "Respectful Servant",
+      "Servant",
+      "Polite Servant",
+      "Brave Servant",
+      "Solemn Official",
+      "Runner",
       "New Visitor"
     ],
     "displayName": "Attentive Servant"
@@ -21750,12 +21950,14 @@
     "speakerNames": [
       "Noble A",
       "Noble Beneath Podium",
-      "Jittery Noble"
+      "Jittery Noble",
+      "Unhappy Noble"
     ],
     "searchNames": [
       "Noble A",
       "Noble Beneath Podium",
-      "Jittery Noble"
+      "Jittery Noble",
+      "Unhappy Noble"
     ],
     "displayName": "Noble A"
   },
@@ -21775,7 +21977,10 @@
       "Ursine Worker",
       "Excited Worker",
       "Friendly Worker",
-      "Worker?"
+      "Perplexed Worker",
+      "Pavel",
+      "Worker?",
+      "Mailman"
     ],
     "searchNames": [
       "Jailed Worker",
@@ -21783,7 +21988,10 @@
       "Ursine Worker",
       "Excited Worker",
       "Friendly Worker",
-      "Worker?"
+      "Perplexed Worker",
+      "Pavel",
+      "Worker?",
+      "Mailman"
     ],
     "displayName": "Jailed Worker"
   },
@@ -22801,12 +23009,16 @@
   },
   "avg_npc_757_1": {
     "speakerNames": [
+      "Strict Villager",
+      "Hiroshi Ritou",
       "Matoimaru's Foster Father"
     ],
     "searchNames": [
+      "Strict Villager",
+      "Hiroshi Ritou",
       "Matoimaru's Foster Father"
     ],
-    "displayName": "Matoimaru's Foster Father"
+    "displayName": "Strict Villager"
   },
   "avg_npc_2165_1": {
     "speakerNames": [
@@ -22820,11 +23032,13 @@
   "avg_npc_2173_1": {
     "speakerNames": [
       "Noblewoman",
-      "Countess Vorontsova"
+      "Countess Vorontsova",
+      "Young Noble"
     ],
     "searchNames": [
       "Noblewoman",
-      "Countess Vorontsova"
+      "Countess Vorontsova",
+      "Young Noble"
     ],
     "displayName": "Noblewoman"
   },
@@ -22865,7 +23079,9 @@
       "Thinking Noble",
       "Anxious Noble",
       "Scathing Noble",
-      "Whispering Noble A"
+      "Whispering Noble A",
+      "Concerned Noble",
+      "Reserved Noble"
     ],
     "searchNames": [
       "Stern Noble",
@@ -22876,7 +23092,9 @@
       "Thinking Noble",
       "Anxious Noble",
       "Scathing Noble",
-      "Whispering Noble A"
+      "Whispering Noble A",
+      "Concerned Noble",
+      "Reserved Noble"
     ],
     "displayName": "Stern Noble"
   },
@@ -22892,11 +23110,15 @@
   "avg_npc_2162_1": {
     "speakerNames": [
       "Vasily",
-      "A Certain Councilor"
+      "A Certain Councilor",
+      "Hasty Noble",
+      "Voice Behind the Door"
     ],
     "searchNames": [
       "Vasily",
-      "A Certain Councilor"
+      "A Certain Councilor",
+      "Hasty Noble",
+      "Voice Behind the Door"
     ],
     "displayName": "Vasily"
   },
@@ -22923,11 +23145,13 @@
   "avg_npc_2170_1": {
     "speakerNames": [
       "Ursine Police",
-      "Sergo"
+      "Sergo",
+      "Police Officer"
     ],
     "searchNames": [
       "Ursine Police",
-      "Sergo"
+      "Sergo",
+      "Police Officer"
     ],
     "displayName": "Ursine Police"
   },
@@ -23025,6 +23249,7 @@
       "Unbound Member",
       "Disappointed Student",
       "Cautious Student",
+      "Nervous Student",
       "Scornful Student"
     ],
     "searchNames": [
@@ -23033,6 +23258,7 @@
       "Unbound Member",
       "Disappointed Student",
       "Cautious Student",
+      "Nervous Student",
       "Scornful Student"
     ],
     "displayName": "Worried Student"
@@ -23042,13 +23268,15 @@
       "Faddey",
       "Rescued Student B",
       "Vanguards Member",
-      "Ursine Student A"
+      "Ursine Student A",
+      "Runaway Student"
     ],
     "searchNames": [
       "Faddey",
       "Rescued Student B",
       "Vanguards Member",
-      "Ursine Student A"
+      "Ursine Student A",
+      "Runaway Student"
     ],
     "displayName": "Faddey"
   },
@@ -23082,14 +23310,16 @@
       "Yeremey",
       "Handsome Nobleman",
       "Sergo",
-      "Rania"
+      "Rania",
+      "Wounded Student"
     ],
     "searchNames": [
       "Anxious Noble Student",
       "Yeremey",
       "Handsome Nobleman",
       "Sergo",
-      "Rania"
+      "Rania",
+      "Wounded Student"
     ],
     "displayName": "Anxious Noble Student"
   },
@@ -23097,12 +23327,16 @@
     "speakerNames": [
       "Haggard Worker",
       "Varvara",
-      "Ursine Professor"
+      "Ursine Professor",
+      "Lamenting Citizen",
+      "Excited 'Councilor'"
     ],
     "searchNames": [
       "Haggard Worker",
       "Varvara",
-      "Ursine Professor"
+      "Ursine Professor",
+      "Lamenting Citizen",
+      "Excited 'Councilor'"
     ],
     "displayName": "Haggard Worker"
   },
@@ -23198,11 +23432,15 @@
   "avg_npc_2174_1": {
     "speakerNames": [
       "Pavalo",
-      "Ursine Citizens"
+      "Ursine Citizens",
+      "Worried Citizen",
+      "Yevsey?"
     ],
     "searchNames": [
       "Pavalo",
-      "Ursine Citizens"
+      "Ursine Citizens",
+      "Worried Citizen",
+      "Yevsey?"
     ],
     "displayName": "Pavalo"
   },
@@ -23226,10 +23464,14 @@
   },
   "avg_npc_2172_1": {
     "speakerNames": [
-      "Impatient Noble"
+      "Impatient Noble",
+      "Dazed Woman",
+      "Quiet Boy"
     ],
     "searchNames": [
-      "Impatient Noble"
+      "Impatient Noble",
+      "Dazed Woman",
+      "Quiet Boy"
     ],
     "displayName": "Impatient Noble"
   },
@@ -23241,5 +23483,603 @@
       "Nikto"
     ],
     "displayName": "Nikto"
+  },
+  "avg_npc_751_1": {
+    "speakerNames": [
+      "Felyne Artisan",
+      "Strange Yellow Creature"
+    ],
+    "searchNames": [
+      "Felyne Artisan",
+      "Strange Yellow Creature"
+    ],
+    "displayName": "Felyne Artisan"
+  },
+  "avg_npc_752_1": {
+    "speakerNames": [
+      "Felyne Scholar",
+      "Felyne Artisan",
+      "Strange White Creature"
+    ],
+    "searchNames": [
+      "Felyne Scholar",
+      "Felyne Artisan",
+      "Strange White Creature"
+    ],
+    "displayName": "Felyne Scholar"
+  },
+  "avg_npc_753_1": {
+    "speakerNames": [
+      "Roka Village Headman",
+      "Ataru Takii"
+    ],
+    "searchNames": [
+      "Roka Village Headman",
+      "Ataru Takii"
+    ],
+    "displayName": "Roka Village Headman"
+  },
+  "avg_npc_755_1": {
+    "speakerNames": [
+      "Yoshitaka Kashiwau",
+      "Takii Kashiwau",
+      "、Yoshitaka Kashiwau ",
+      "Yoshitaka Kashiwau ",
+      " Yoshitaka Kashiwau",
+      "Aged Hunter"
+    ],
+    "searchNames": [
+      "Yoshitaka Kashiwau",
+      "Takii Kashiwau",
+      "、Yoshitaka Kashiwau ",
+      "Yoshitaka Kashiwau ",
+      " Yoshitaka Kashiwau",
+      "Aged Hunter"
+    ],
+    "displayName": "Yoshitaka Kashiwau"
+  },
+  "avg_npc_756_1": {
+    "speakerNames": [
+      "Kazuya",
+      "Yato",
+      "Child in Hunter Garb"
+    ],
+    "searchNames": [
+      "Kazuya",
+      "Yato",
+      "Child in Hunter Garb"
+    ],
+    "displayName": "Kazuya"
+  },
+  "avg_npc_760_1": {
+    "speakerNames": [
+      "Akira Kashiwau"
+    ],
+    "searchNames": [
+      "Akira Kashiwau"
+    ],
+    "displayName": "Akira Kashiwau"
+  },
+  "avg_1029_yato2_1": {
+    "speakerNames": [
+      "Yato"
+    ],
+    "searchNames": [
+      "Yato"
+    ],
+    "displayName": "Yato"
+  },
+  "avg_1030_noirc2_1": {
+    "speakerNames": [
+      "Noir Corne"
+    ],
+    "searchNames": [
+      "Noir Corne"
+    ],
+    "displayName": "Noir Corne"
+  },
+  "avg_npc_750_1": {
+    "speakerNames": [
+      "Palico"
+    ],
+    "searchNames": [
+      "Palico"
+    ],
+    "displayName": "Palico"
+  },
+  "avg_npc_761_1": {
+    "speakerNames": [
+      "Mirai Takii"
+    ],
+    "searchNames": [
+      "Mirai Takii"
+    ],
+    "displayName": "Mirai Takii"
+  },
+  "avg_npc_2236_1": {
+    "speakerNames": [
+      "Sullen Soldier",
+      "Evgeny"
+    ],
+    "searchNames": [
+      "Sullen Soldier",
+      "Evgeny"
+    ],
+    "displayName": "Sullen Soldier"
+  },
+  "avg_npc_2235_1": {
+    "speakerNames": [
+      "Hoarse Youth",
+      "Anatoliy",
+      "Flustered Officer",
+      "Svetlana"
+    ],
+    "searchNames": [
+      "Hoarse Youth",
+      "Anatoliy",
+      "Flustered Officer",
+      "Svetlana"
+    ],
+    "displayName": "Hoarse Youth"
+  },
+  "avg_npc_2231_1": {
+    "speakerNames": [
+      "Dignified Soldier",
+      "Svetlana"
+    ],
+    "searchNames": [
+      "Dignified Soldier",
+      "Svetlana"
+    ],
+    "displayName": "Dignified Soldier"
+  },
+  "avg_npc_2245_1": {
+    "speakerNames": [
+      "Cautus"
+    ],
+    "searchNames": [
+      "Cautus"
+    ],
+    "displayName": "Cautus"
+  },
+  "avg_npc_2169_1": {
+    "speakerNames": [
+      "Angry Servant",
+      "Silent Servant",
+      "Panicking Servant",
+      "Nervous Servant"
+    ],
+    "searchNames": [
+      "Angry Servant",
+      "Silent Servant",
+      "Panicking Servant",
+      "Nervous Servant"
+    ],
+    "displayName": "Angry Servant"
+  },
+  "avg_4228_closur_1": {
+    "speakerNames": [
+      "Closure",
+      "Mon3tr"
+    ],
+    "searchNames": [
+      "Closure",
+      "Mon3tr"
+    ],
+    "displayName": "Closure"
+  },
+  "avg_188_helage_1": {
+    "speakerNames": [
+      "Hellagur",
+      "Distant Voice",
+      "Solemn Soldier"
+    ],
+    "searchNames": [
+      "Hellagur",
+      "Distant Voice",
+      "Solemn Soldier"
+    ],
+    "displayName": "Hellagur"
+  },
+  "avg_npc_2246_1": {
+    "speakerNames": [
+      "Hierda",
+      "Anatoliy",
+      "Strange Patient",
+      "Serious Student",
+      "Cautus",
+      "Faint Voice"
+    ],
+    "searchNames": [
+      "Hierda",
+      "Anatoliy",
+      "Strange Patient",
+      "Serious Student",
+      "Cautus",
+      "Faint Voice"
+    ],
+    "displayName": "Hierda"
+  },
+  "avg_npc_2259_1": {
+    "speakerNames": [
+      "Surprised Vagrant"
+    ],
+    "searchNames": [
+      "Surprised Vagrant"
+    ],
+    "displayName": "Surprised Vagrant"
+  },
+  "avg_npc_2260_1": {
+    "speakerNames": [
+      "Friendly Vagrant",
+      "Frantic Infected",
+      "Borislav"
+    ],
+    "searchNames": [
+      "Friendly Vagrant",
+      "Frantic Infected",
+      "Borislav"
+    ],
+    "displayName": "Friendly Vagrant"
+  },
+  "avg_npc_2228_1": {
+    "speakerNames": [
+      "Friendly Worker",
+      "Concerned Resident",
+      "Busy Worker"
+    ],
+    "searchNames": [
+      "Friendly Worker",
+      "Concerned Resident",
+      "Busy Worker"
+    ],
+    "displayName": "Friendly Worker"
+  },
+  "avg_npc_2249_1": {
+    "speakerNames": [
+      "Cold Voice",
+      "Sirka",
+      "Prokhor?",
+      "Panicked Soldier",
+      "Young Voice",
+      "Low Voice",
+      "Anatoliy",
+      "Svetlana",
+      "Evgeny"
+    ],
+    "searchNames": [
+      "Cold Voice",
+      "Sirka",
+      "Prokhor?",
+      "Panicked Soldier",
+      "Young Voice",
+      "Low Voice",
+      "Anatoliy",
+      "Svetlana",
+      "Evgeny"
+    ],
+    "displayName": "Cold Voice"
+  },
+  "avg_4226_veen_1": {
+    "speakerNames": [
+      "Scioppa",
+      "Evgeny",
+      "Cold Voice",
+      "Intermittent Voice",
+      "Comms Voice"
+    ],
+    "searchNames": [
+      "Scioppa",
+      "Evgeny",
+      "Cold Voice",
+      "Intermittent Voice",
+      "Comms Voice"
+    ],
+    "displayName": "Scioppa"
+  },
+  "avg_npc_2232_1": {
+    "speakerNames": [
+      "Surprised Soldier",
+      "Composed Soldier",
+      "Deferential Soldier",
+      "Grumbling Soldier",
+      "Calm Youth",
+      "Tired Soldier",
+      "Driver"
+    ],
+    "searchNames": [
+      "Surprised Soldier",
+      "Composed Soldier",
+      "Deferential Soldier",
+      "Grumbling Soldier",
+      "Calm Youth",
+      "Tired Soldier",
+      "Driver"
+    ],
+    "displayName": "Surprised Soldier"
+  },
+  "avg_4225_tanya_1": {
+    "speakerNames": [
+      "Tonya",
+      "Stern Soldier"
+    ],
+    "searchNames": [
+      "Tonya",
+      "Stern Soldier"
+    ],
+    "displayName": "Tonya"
+  },
+  "avg_npc_2225_1": {
+    "speakerNames": [
+      "Anxious Miner",
+      "Calm Youth",
+      "Honest Soldier & Calm Youth",
+      "Tulin",
+      "'Tulin'",
+      "Milana",
+      "Ivan Tulin"
+    ],
+    "searchNames": [
+      "Anxious Miner",
+      "Calm Youth",
+      "Honest Soldier & Calm Youth",
+      "Tulin",
+      "'Tulin'",
+      "Milana",
+      "Ivan Tulin"
+    ],
+    "displayName": "Anxious Miner"
+  },
+  "avg_npc_2223_1": {
+    "speakerNames": [
+      "Serious Soldier",
+      "Guard",
+      "Cautious Soldier"
+    ],
+    "searchNames": [
+      "Serious Soldier",
+      "Guard",
+      "Cautious Soldier"
+    ],
+    "displayName": "Serious Soldier"
+  },
+  "avg_npc_2227_1": {
+    "speakerNames": [
+      "Enthusiastic Worker",
+      "Enthusiastic Resident",
+      "Familiar Man",
+      "Surprised Worker",
+      "Driver",
+      "Feeble Resident"
+    ],
+    "searchNames": [
+      "Enthusiastic Worker",
+      "Enthusiastic Resident",
+      "Familiar Man",
+      "Surprised Worker",
+      "Driver",
+      "Feeble Resident"
+    ],
+    "displayName": "Enthusiastic Worker"
+  },
+  "avg_npc_2248_1": {
+    "speakerNames": [
+      "Gentle 'Councilor'",
+      "Gentle Youth"
+    ],
+    "searchNames": [
+      "Gentle 'Councilor'",
+      "Gentle Youth"
+    ],
+    "displayName": "Gentle 'Councilor'"
+  },
+  "avg_npc_2238_1": {
+    "speakerNames": [
+      "Strange Creature"
+    ],
+    "searchNames": [
+      "Strange Creature"
+    ],
+    "displayName": "Strange Creature"
+  },
+  "avg_npc_2226_1": {
+    "speakerNames": [
+      "Strange Man",
+      "Strange Patient"
+    ],
+    "searchNames": [
+      "Strange Man",
+      "Strange Patient"
+    ],
+    "displayName": "Strange Man"
+  },
+  "avg_npc_2222_1": {
+    "speakerNames": [
+      "Nadezhda",
+      "Tonya"
+    ],
+    "searchNames": [
+      "Nadezhda",
+      "Tonya"
+    ],
+    "displayName": "Nadezhda"
+  },
+  "avg_npc_2247_1": {
+    "speakerNames": [
+      "Sirka",
+      "Talulah",
+      "Elegant Voice"
+    ],
+    "searchNames": [
+      "Sirka",
+      "Talulah",
+      "Elegant Voice"
+    ],
+    "displayName": "Sirka"
+  },
+  "avg_npc_2239_1": {
+    "speakerNames": [
+      "Rowdy Soldier",
+      "Confused Soldier"
+    ],
+    "searchNames": [
+      "Rowdy Soldier",
+      "Confused Soldier"
+    ],
+    "displayName": "Rowdy Soldier"
+  },
+  "avg_npc_2240_1": {
+    "speakerNames": [
+      "Rowdy Soldier",
+      "Composed Soldier",
+      "Cautious Soldier",
+      "Confused Soldier",
+      "Concerned Soldier",
+      "Diligent Soldier"
+    ],
+    "searchNames": [
+      "Rowdy Soldier",
+      "Composed Soldier",
+      "Cautious Soldier",
+      "Confused Soldier",
+      "Concerned Soldier",
+      "Diligent Soldier"
+    ],
+    "displayName": "Rowdy Soldier"
+  },
+  "avg_npc_2241_1": {
+    "speakerNames": [
+      "Excited Officer",
+      "Oleg",
+      "Evgeny",
+      "Scioppa"
+    ],
+    "searchNames": [
+      "Excited Officer",
+      "Oleg",
+      "Evgeny",
+      "Scioppa"
+    ],
+    "displayName": "Excited Officer"
+  },
+  "avg_npc_2229_1": {
+    "speakerNames": [
+      "Platon"
+    ],
+    "searchNames": [
+      "Platon"
+    ],
+    "displayName": "Platon"
+  },
+  "avg_npc_2230_1": {
+    "speakerNames": [
+      "Anastasia?",
+      "Anastasia"
+    ],
+    "searchNames": [
+      "Anastasia?",
+      "Anastasia"
+    ],
+    "displayName": "Anastasia?"
+  },
+  "avg_npc_2243_1": {
+    "speakerNames": [
+      "Lab Director",
+      "Alita",
+      "Worried Researcher"
+    ],
+    "searchNames": [
+      "Lab Director",
+      "Alita",
+      "Worried Researcher"
+    ],
+    "displayName": "Lab Director"
+  },
+  "avg_npc_2242_1": {
+    "speakerNames": [
+      "Haggard Man",
+      "Klim",
+      "Indistinct Voice"
+    ],
+    "searchNames": [
+      "Haggard Man",
+      "Klim",
+      "Indistinct Voice"
+    ],
+    "displayName": "Haggard Man"
+  },
+  "avg_npc_2258_1": {
+    "speakerNames": [
+      "Noisy Bird",
+      "Exhausted Bird"
+    ],
+    "searchNames": [
+      "Noisy Bird",
+      "Exhausted Bird"
+    ],
+    "displayName": "Noisy Bird"
+  },
+  "avg_npc_2244_1": {
+    "speakerNames": [
+      "Noisy 'Mini-House'"
+    ],
+    "searchNames": [
+      "Noisy 'Mini-House'"
+    ],
+    "displayName": "Noisy 'Mini-House'"
+  },
+  "avg_npc_2237_1": {
+    "speakerNames": [
+      "War Caster"
+    ],
+    "searchNames": [
+      "War Caster"
+    ],
+    "displayName": "War Caster"
+  },
+  "avg_npc_2224_1": {
+    "speakerNames": [
+      "Kal'tsit"
+    ],
+    "searchNames": [
+      "Kal'tsit"
+    ],
+    "displayName": "Kal'tsit"
+  },
+  "avg_1052_kalts2_1": {
+    "speakerNames": [
+      "Kal'tsit"
+    ],
+    "searchNames": [
+      "Kal'tsit"
+    ],
+    "displayName": "Kal'tsit"
+  },
+  "avg_npc_2233_1": {
+    "speakerNames": [
+      "Ursine Boy"
+    ],
+    "searchNames": [
+      "Ursine Boy"
+    ],
+    "displayName": "Ursine Boy"
+  },
+  "avg_npc_2234_1": {
+    "speakerNames": [
+      "Ursine Girl"
+    ],
+    "searchNames": [
+      "Ursine Girl"
+    ],
+    "displayName": "Ursine Girl"
+  },
+  "avg_394_hadiya_1": {
+    "speakerNames": [
+      "Hadiya"
+    ],
+    "searchNames": [
+      "Hadiya"
+    ],
+    "displayName": "Hadiya"
   }
 }

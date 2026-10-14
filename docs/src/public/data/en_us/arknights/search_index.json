@@ -302,9 +302,11 @@
   "Crippled Reunion Fighter": "char_1002_nsabr_2",
   "Reunion Member B": [
     "char_1002_nsabr_2",
-    "char_1002_nsabr_1"
+    "char_1002_nsabr_1",
+    "char_1011_wizard_1"
   ],
   "Reunion Troops": "char_1002_nsabr_1",
+  "Reunion Member C": "char_1002_nsabr_1",
   "Uneasy Reunion Fighter": "char_1002_nsabr_1",
   "Specter": [
     "char_143_ghost",
@@ -326,7 +328,9 @@
     "char_003_kaltsn09_1",
     "char_003_kaltsn08_1",
     "avg_003_kalts_1",
-    "avg_npc_049"
+    "avg_npc_049",
+    "avg_npc_2224_1",
+    "avg_1052_kalts2_1"
   ],
   "Taciturn Passerby": "char_003_kalts_1",
   "Feline Researcher": "char_003_kalts_1",
@@ -419,7 +423,8 @@
     "avg_npc_327_1",
     "char_015_lmg",
     "avg_npc_059",
-    "avg_npc_1065_1"
+    "avg_npc_1065_1",
+    "avg_npc_2223_1"
   ],
   "Operator Oliver": "char_013_riop",
   "Operator Shredder": [
@@ -665,7 +670,8 @@
   "Carl": "avg_npc_002",
   "Angry Miner": [
     "avg_npc_002",
-    "avg_npc_1969_1"
+    "avg_npc_1969_1",
+    "avg_npc_1970_1"
   ],
   "Luca": "avg_npc_002",
   "Diner B": "avg_npc_002",
@@ -683,7 +689,8 @@
   "Angry Villager": [
     "avg_npc_002",
     "avg_npc_797_1",
-    "avg_npc_140"
+    "avg_npc_140",
+    "avg_npc_758_1"
   ],
   "Bean the Infected": "avg_npc_329_1",
   "Pale Man": "avg_npc_329_1",
@@ -758,6 +765,7 @@
     "avg_npc_020",
     "avg_npc_491_1",
     "avg_npc_207",
+    "avg_npc_082",
     "avg_npc_284_1",
     "avg_npc_698_1",
     "avg_npc_699_1"
@@ -780,7 +788,10 @@
     "avg_npc_020",
     "avg_201_moeshd_1"
   ],
-  "Flustered Guard": "avg_npc_020",
+  "Flustered Guard": [
+    "avg_npc_020",
+    "avg_npc_082"
+  ],
   "Organizing Committee Member": "avg_npc_020",
   "Staff Worker": [
     "avg_npc_020",
@@ -922,6 +933,10 @@
   ],
   "Surviving Villager": "avg_npc_092",
   "Old Villager": "avg_npc_092",
+  "Blind Elder": [
+    "avg_npc_092",
+    "avg_npc_093"
+  ],
   "Nervous Old Man": "avg_npc_092",
   "Calm Old Man": "avg_npc_092",
   "Alsu": [
@@ -948,7 +963,10 @@
   "Calm Infected": "avg_npc_243",
   "Chloe": "avg_npc_243",
   "Panicked Merchant": "avg_npc_243",
-  "Maid": "avg_npc_243",
+  "Maid": [
+    "avg_npc_243",
+    "avg_npc_1966_1"
+  ],
   "Aunt Danka": "avg_npc_243",
   "Pasado": "avg_npc_243",
   "Apathetic Passerby": "avg_npc_243",
@@ -989,10 +1007,15 @@
   ],
   "Composed Soldier": [
     "avg_npc_241",
-    "avg_npc_419_1"
+    "avg_npc_419_1",
+    "avg_npc_2232_1",
+    "avg_npc_2240_1"
   ],
   "Angry NCO": "avg_npc_241",
-  "Crumbling Soldier": "avg_npc_241",
+  "Crumbling Soldier": [
+    "avg_npc_241",
+    "avg_npc_1976_1"
+  ],
   "Young Soldier": "avg_npc_241",
   "Victorian Soldier A": [
     "avg_npc_241",
@@ -1078,6 +1101,8 @@
     "avg_npc_496_1",
     "avg_npc_1722_1"
   ],
+  "Wary Infected": "avg_npc_080",
+  "Valiya": "avg_npc_080",
   "Soda Hawker": "avg_npc_080",
   "Kevin": "avg_npc_080",
   "Ah Wei": "avg_npc_080",
@@ -1089,7 +1114,9 @@
   "Elba": "avg_npc_333_1",
   "Cold Voice": [
     "avg_npc_333_1",
-    "avg_4147_mitm_1"
+    "avg_4147_mitm_1",
+    "avg_npc_2249_1",
+    "avg_4226_veen_1"
   ],
   "Wounded Infected": "avg_npc_333_1",
   "Messenger Member": "avg_npc_332_1",
@@ -1140,6 +1167,7 @@
   "Bar Owner": [
     "avg_npc_006",
     "avg_npc_194",
+    "avg_npc_523_1",
     "avg_npc_1000_1"
   ],
   "Old Worker": "avg_npc_006",
@@ -1320,7 +1348,8 @@
     "avg_4083_chimes_1",
     "avg_npc_417_1",
     "avg_npc_498_1",
-    "avg_180_amgoat_1"
+    "avg_180_amgoat_1",
+    "avg_npc_1973_1"
   ],
   "Food Stall Owner": [
     "avg_npc_021",
@@ -1527,7 +1556,8 @@
   ],
   "Anxious Villager": [
     "avg_npc_242",
-    "avg_npc_797_1"
+    "avg_npc_797_1",
+    "avg_npc_759_1"
   ],
   "Taran Citizen": "avg_npc_242",
   "Hot-Blooded Youth": "avg_npc_242",
@@ -1835,7 +1865,8 @@
   "Researcher": [
     "avg_npc_223",
     "avg_npc_530_1",
-    "avg_npc_529_1"
+    "avg_npc_529_1",
+    "avg_npc_1974_1"
   ],
   "City Hall Staffer": "avg_npc_223",
   "Indifferent Bank Employee": "avg_npc_223",
@@ -1853,6 +1884,7 @@
   ],
   "Knight Scout": "avg_npc_223",
   "Red Wine Intern Journalist": "avg_npc_223",
+  "Kazimierzian Merchant": "avg_npc_223",
   "Careless Social Worker": "avg_npc_223",
   "Man in Reporter Garb": "avg_npc_223",
   "Rafał": [
@@ -1863,7 +1895,8 @@
     "avg_npc_223",
     "avg_npc_523_1",
     "avg_4123_ela_1",
-    "avg_npc_1553_1"
+    "avg_npc_1553_1",
+    "avg_npc_2170_1"
   ],
   "Voice from the Phone": "avg_npc_223",
   "City Council Administrator": "avg_npc_223",
@@ -2059,7 +2092,10 @@
     "avg_npc_001",
     "avg_npc_418_1"
   ],
-  "Honest Villager": "avg_npc_001",
+  "Honest Villager": [
+    "avg_npc_001",
+    "avg_npc_758_1"
+  ],
   "Gavial": [
     "char_187_ccheal_1",
     "char_187_ccheal_summer_1",
@@ -2199,7 +2235,8 @@
   "Lana": "avg_npc_004",
   "Servant": [
     "avg_npc_004",
-    "avg_npc_269"
+    "avg_npc_269",
+    "avg_npc_1982_1"
   ],
   "Noble's Mercenary": "avg_npc_217",
   "A Staid Knight": "avg_npc_217",
@@ -2299,6 +2336,7 @@
   "Campaign Knight": "avg_npc_624_1",
   "Campaign Knight A": "avg_npc_624_1",
   "Campaign Knight B": "avg_npc_624_1",
+  "Adeptus Messenger": "avg_npc_624_1",
   "'Kazimierzian'": "avg_npc_624_1",
   "Marsov": "avg_npc_624_1",
   "Bald Marcin": [
@@ -2687,6 +2725,18 @@
     "avg_npc_082",
     "avg_npc_164",
     "avg_npc_1637_1",
+    "avg_npc_1978_1",
+    "avg_npc_1976_1"
+  ],
+  "Impatient Guard": [
+    "avg_npc_082",
+    "avg_npc_1973_1"
+  ],
+  "Impatient Soldier": "avg_npc_082",
+  "Excited Voice": "avg_npc_082",
+  "Nervous Soldier": [
+    "avg_npc_082",
+    "avg_npc_399_1",
     "avg_npc_1976_1"
   ],
   "Gendarmerie": [
@@ -2695,9 +2745,14 @@
     "avg_npc_1134_1"
   ],
   "An Infected Refugee": "avg_npc_094",
+  "Haggard Infected": "avg_npc_094",
   "Sick Miner": "avg_npc_094",
   "Despairing Infected": "avg_npc_094",
   "Flustered Infected": "avg_npc_094",
+  "Quiet Boy": [
+    "avg_npc_094",
+    "avg_npc_2172_1"
+  ],
   "Infected Peddler": "avg_npc_094",
   "Timid Resident": "avg_npc_094",
   "Young Man": "avg_npc_094",
@@ -2732,7 +2787,8 @@
   "Aggressive Villager": "avg_npc_797_1",
   "Nervous Villager": [
     "avg_npc_797_1",
-    "avg_npc_140"
+    "avg_npc_140",
+    "avg_npc_758_1"
   ],
   "Panicked Student": [
     "avg_npc_797_1",
@@ -2758,7 +2814,10 @@
   ],
   "Excavator": "avg_npc_140",
   "Passing Villager A": "avg_npc_140",
-  "Frenetic Villager": "avg_npc_140",
+  "Frenetic Villager": [
+    "avg_npc_140",
+    "avg_npc_759_1"
+  ],
   "Rough Villager": "avg_npc_140",
   "Vigilant Villager": "avg_npc_140",
   "Passionate Farmer": "avg_npc_140",
@@ -3331,6 +3390,7 @@
   ],
   "Ursus Farmer": "avg_npc_081",
   "Senile Old Man": "avg_npc_081",
+  "Scornful 'Councilor'": "avg_npc_081",
   "Worn-out Infected": [
     "avg_npc_081",
     "avg_npc_499_1"
@@ -3346,6 +3406,7 @@
     "avg_npc_1340_1",
     "avg_4134_cetsyr_1"
   ],
+  "Coachman": "avg_npc_081",
   "Raymond": "avg_npc_081",
   "Uncle Pickett": "avg_npc_081",
   "Haggard Worker": [
@@ -3433,7 +3494,9 @@
     "avg_npc_696_1",
     "avg_1031_slent2_1",
     "avg_4123_ela_1",
-    "avg_npc_970_1"
+    "avg_npc_970_1",
+    "avg_npc_2232_1",
+    "avg_npc_2227_1"
   ],
   "Deliveryman": "avg_npc_523_1",
   "Julio": "avg_npc_523_1",
@@ -3461,7 +3524,8 @@
   "Young Bodyguard": "avg_npc_305_1",
   "Strange Man": [
     "avg_npc_305_1",
-    "avg_npc_1639_1"
+    "avg_npc_1639_1",
+    "avg_npc_2226_1"
   ],
   "Triad": "avg_npc_305_1",
   "Fierce Man": "avg_npc_305_1",
@@ -3533,7 +3597,8 @@
   "Strange Creature": [
     "avg_npc_143",
     "avg_npc_1014_1",
-    "avg_npc_1586_1"
+    "avg_npc_1586_1",
+    "avg_npc_2238_1"
   ],
   "'Free'": "avg_npc_143",
   "Ink Spirits": "avg_npc_143",
@@ -3650,7 +3715,6 @@
   "Victorian Agent": "avg_npc_399_1",
   "Victorian Mercenary": "avg_npc_399_1",
   "Former Defense Forces Soldier": "avg_npc_399_1",
-  "Nervous Soldier": "avg_npc_399_1",
   "Unhappy Soldier": "avg_npc_399_1",
   "Terrified Soldier": "avg_npc_399_1",
   "Security Detail": "avg_npc_399_1",
@@ -4256,7 +4320,8 @@
   "Friendly Woman": "avg_npc_462_1",
   "Mon3tr": [
     "npc_10002",
-    "avg_4179_monstr_1"
+    "avg_4179_monstr_1",
+    "avg_4228_closur_1"
   ],
   "High Inquisitor": "avg_npc_183",
   "High Inquisitor Dario": "avg_npc_183",
@@ -4319,6 +4384,7 @@
   "Royal Guard?": "avg_npc_077",
   "'Emperors' Blade'": "avg_npc_077",
   "Black Snow": "avg_npc_077",
+  "Emperor's Blade": "avg_npc_077",
   "Witte": [
     "avg_npc_076",
     "avg_npc_1984_1"
@@ -4439,13 +4505,17 @@
     "avg_npc_1157_1",
     "avg_npc_414_1"
   ],
-  "Stern Soldier": "avg_npc_408_1",
+  "Stern Soldier": [
+    "avg_npc_408_1",
+    "avg_4225_tanya_1"
+  ],
   "Victorian Soldier?": "avg_npc_408_1",
   "Excited Soldier": [
     "avg_npc_408_1",
     "avg_npc_248",
     "avg_npc_414_1",
-    "avg_npc_409_1"
+    "avg_npc_409_1",
+    "avg_npc_1976_1"
   ],
   "Impetuous Soldier": "avg_npc_408_1",
   "Stressed Soldier": "avg_npc_408_1",
@@ -4486,7 +4556,8 @@
   "Talulah": [
     "char_011_talula_1",
     "avg_npc_078",
-    "avg_npc_1968_1"
+    "avg_npc_1968_1",
+    "avg_npc_2247_1"
   ],
   "Talulah?": "char_011_talula_1",
   "'Deathless Black Snake'": "char_011_talula_1",
@@ -4678,7 +4749,17 @@
     "char_007_closre_1",
     "avg_npc_1723_1",
     "avg_120_hibisc_1",
-    "avg_007_closre_1"
+    "avg_007_closre_1",
+    "avg_4228_closur_1"
+  ],
+  "Raidian": [
+    "avg_1037_amiya3_1",
+    "avg_npc_1730_1",
+    "avg_npc_1966_1"
+  ],
+  "Civilight Eterna": [
+    "avg_1037_amiya3_1",
+    "avg_4134_cetsyr_1"
   ],
   "Logos": [
     "avg_4133_logos_1",
@@ -4749,6 +4830,7 @@
   "Maylander Foundation Agent": "avg_npc_901_1",
   "Propeller Paradise Police": "avg_npc_901_1",
   "Propeller Paradise Police A": "avg_npc_901_1",
+  "Columbian Patrol Officer": "avg_npc_901_1",
   "Respectful Attendant": "avg_npc_498_1",
   "Drunken Infected": "avg_npc_498_1",
   "Skittish Infected": "avg_npc_498_1",
@@ -4792,7 +4874,8 @@
   "Ebenholz & Kreide": "avg_4046_ebnhlz_1",
   "Young Noble": [
     "avg_4046_ebnhlz_1",
-    "avg_npc_492_1"
+    "avg_npc_492_1",
+    "avg_npc_2173_1"
   ],
   "Ebenholz?": "avg_4046_ebnhlz_1",
   "Kreide": [
@@ -4826,6 +4909,7 @@
   "Community Musician": "avg_npc_499_1",
   "Dejected Babel Member": "avg_npc_499_1",
   "Mummy": "avg_npc_499_1",
+  "Salma": "avg_npc_499_1",
   "Thiem": "avg_npc_499_1",
   "Jif & Thiem": "avg_npc_499_1",
   "Leithanian Woman": "avg_npc_499_1",
@@ -4992,7 +5076,8 @@
   "Yumen Sentry B": "avg_npc_796_1",
   "Runner": [
     "avg_npc_796_1",
-    "avg_npc_1637_1"
+    "avg_npc_1637_1",
+    "avg_npc_1982_1"
   ],
   "Patrol Battalion Soldier B": "avg_npc_796_1",
   "Centurion": "avg_npc_796_1",
@@ -5806,7 +5891,8 @@
   "Lisburn": "avg_npc_1157_1",
   "Silent Soldier": [
     "avg_npc_1158_1",
-    "avg_npc_1966_1"
+    "avg_npc_1966_1",
+    "avg_npc_1978_1"
   ],
   "Lead Soldier": "avg_npc_1158_1",
   "Victorian Soldiers": "avg_npc_1158_1",
@@ -5995,10 +6081,16 @@
   "Harsh Officer": "avg_npc_1272_1",
   "Slacking Officer": "avg_npc_1272_1",
   "Cowardly Soldier": "avg_npc_1272_1",
-  "Tired Soldier": "avg_npc_1272_1",
+  "Tired Soldier": [
+    "avg_npc_1272_1",
+    "avg_npc_2232_1"
+  ],
   "Worn-Out Soldier": "avg_npc_1272_1",
   "Spooked Soldier": "avg_npc_1272_1",
-  "Grumbling Soldier": "avg_npc_1272_1",
+  "Grumbling Soldier": [
+    "avg_npc_1272_1",
+    "avg_npc_2232_1"
+  ],
   "Slick Soldier": "avg_npc_1272_1",
   "Snaptooth Boss": "avg_npc_1272_1",
   "Small Child": "avg_npc_240",
@@ -6069,7 +6161,10 @@
   "Sanguinarch of Vampires": "avg_npc_410_1",
   "Young Vampire?": "avg_npc_410_1",
   "Feranmut": "avg_npc_410_1",
-  "Lost Child": "avg_npc_1303_1",
+  "Lost Child": [
+    "avg_npc_1303_1",
+    "avg_npc_762_1"
+  ],
   "Sleepy Child": "avg_npc_1303_1",
   "Odda": [
     "avg_npc_1303_1",
@@ -6342,7 +6437,11 @@
   "Curious Operator C": "avg_npc_971_1",
   "Rhodes Island Engineering Operator": "avg_npc_971_1",
   "Ankhesena": "avg_344_beewax_1",
-  "Hellagur": "char_188_helage_1",
+  "Hellagur": [
+    "char_188_helage_1",
+    "avg_npc_1966_1",
+    "avg_188_helage_1"
+  ],
   "Duke of Gododdin": "avg_npc_1068_1",
   "Millscar": "avg_npc_1342_1",
   "Faint Radio Broadcast": "avg_npc_1342_1",
@@ -6364,7 +6463,8 @@
   "Davide": "avg_npc_660_1",
   "Enthusiastic Worker": [
     "avg_npc_660_1",
-    "avg_npc_1979_1"
+    "avg_npc_1979_1",
+    "avg_npc_2227_1"
   ],
   "Happy Worker": "avg_npc_660_1",
   "Emotional Worker": "avg_npc_660_1",
@@ -6420,7 +6520,10 @@
   ],
   "Ailshie": "avg_npc_658_1",
   "Cador": "avg_npc_862_1",
-  "Voice Outside the Door": "avg_npc_862_1",
+  "Voice Outside the Door": [
+    "avg_npc_862_1",
+    "avg_npc_1966_1"
+  ],
   "Ruggiero": "avg_npc_1550_1",
   "Dockworker": "avg_npc_1550_1",
   "Truck Driver A": [
@@ -6440,7 +6543,10 @@
   "Sam": "avg_npc_1561_1",
   "Truck Driver B": "avg_npc_1561_1",
   "Busy Cop": "avg_npc_1553_1",
-  "Anxious Officer": "avg_npc_1553_1",
+  "Anxious Officer": [
+    "avg_npc_1553_1",
+    "avg_npc_1977_1"
+  ],
   "Director": [
     "avg_npc_1553_1",
     "avg_npc_1557_1"
@@ -6481,6 +6587,10 @@
   "'Carnevale Participant A'": "avg_npc_1557_1",
   "Carnevale Participant B": "avg_npc_1557_1",
   "Excited Mafioso": "avg_npc_1557_1",
+  "Tulin": [
+    "avg_1502_crosly_1",
+    "avg_npc_2225_1"
+  ],
   "Red/Lyudmila": "avg_1502_crosly_1",
   "'Carnevale Participant B'": "avg_npc_1556_1",
   "Fanatical Mafioso": "avg_npc_1556_1",
@@ -6622,13 +6732,14 @@
   "Young Chef": "avg_2026_yu_1",
   "Yu": "avg_2026_yu_1",
   "Yu Cheng": "avg_npc_1617_1",
-  "Jie Zhen": [
+  "Xie Zhen": [
     "avg_npc_041",
     "avg_npc_1618_1"
   ],
   "Chen Che": "avg_npc_1613_1",
   "Elegant Woman": [
     "avg_4172_xingzh_1",
+    "avg_npc_415_1",
     "avg_npc_1258_1"
   ],
   "Xingzhu": "avg_4172_xingzh_1",
@@ -6815,6 +6926,7 @@
   ],
   "Fallen Angel B": "avg_npc_1806_1",
   "Fallen Angels": "avg_npc_1806_1",
+  "Amiya/Mon3tr": "avg_4179_monstr_1",
   "Gap-Toothed Girl": "avg_npc_1793_1",
   "Idida": "avg_npc_1793_1",
   "'Saint'": "avg_npc_1778_1",
@@ -6830,7 +6942,10 @@
   "Mysterious Elf": "avg_npc_1720_1",
   "Koshelna": "avg_npc_415_1",
   "Hippogryph Teacher": "avg_npc_415_1",
-  "Hierda": "avg_npc_1719_1",
+  "Hierda": [
+    "avg_npc_1719_1",
+    "avg_npc_2246_1"
+  ],
   "Confused Individual": "avg_npc_1719_1",
   "Greta": [
     "avg_npc_1834_1",
@@ -7001,10 +7116,17 @@
     "avg_123_fang_1",
     "char_366_acdrop"
   ],
-  "Noir Corne": "char_500_noirc_1",
+  "Noir Corne": [
+    "char_500_noirc_1",
+    "avg_502_yato_1",
+    "avg_1030_noirc2_1"
+  ],
   "Yato": [
+    "char_500_noirc_1",
     "avg_502_nblade_1",
-    "avg_502_yato_1"
+    "avg_502_yato_1",
+    "avg_npc_756_1",
+    "avg_1029_yato2_1"
   ],
   "Small Cautus": "avg_npc_051",
   "Firewatch": "char_158_milu",
@@ -7082,11 +7204,6 @@
   "Originium-Infested Machine": "avg_npc_1726_1",
   "Anna's Friend": "avg_405_absin_1",
   "Friston-3": "avg_4093_frston_1",
-  "Raidian": [
-    "avg_npc_1730_1",
-    "avg_npc_1966_1"
-  ],
-  "Civilight Eterna": "avg_4134_cetsyr_1",
   "Theresa's Phantom": "avg_4134_cetsyr_1",
   "Originium Entity": [
     "avg_npc_1727_1",
@@ -7104,12 +7221,14 @@
   "Banshee-Style Device": "avg_npc_1334_1",
   "Kindly Voice": "avg_npc_1334_1",
   "Gentle but Stern Voice": "avg_npc_1334_1",
+  "PhonoR-0": "avg_npc_1334_1",
   "Frightened Child": "avg_npc_1456_1",
   "Infected Child": "avg_npc_1456_1",
   "Timid Sick Child": "avg_npc_1456_1",
   "Frail Sarkaz": "avg_npc_1456_1",
   "Li'l Brick": "avg_npc_1456_1",
   "Gretel": "avg_npc_1456_1",
+  "Optimistic Infected": "avg_npc_1731_1",
   "Level-Headed Patient": "avg_npc_975_1",
   "Agitated Patient": "avg_npc_974_1",
   "Cardigan": "char_209_ardign",
@@ -7355,9 +7474,14 @@
   "Kami of Happy Returns": "avg_npc_1903_1",
   "Calm Passerby": "avg_npc_1912_1",
   "Riko": "avg_npc_1912_1",
+  "Sad Villager": [
+    "avg_npc_759_1",
+    "avg_npc_758_1"
+  ],
   "Angry Mother": "avg_npc_759_1",
   "Akiyo": "avg_npc_759_1",
   "Sad Stall Owner": "avg_npc_759_1",
+  "Child Playing the Monster": "avg_npc_762_1",
   "Excited Child": "avg_npc_762_1",
   "'Oni'": "avg_npc_1919_1",
   "Young Fan": "avg_npc_1910_1",
@@ -7365,6 +7489,11 @@
   "Police Operator": "avg_npc_1914_1",
   "Anxious Police Officer": "avg_npc_1914_1",
   "Target-Seeking Police Officer": "avg_npc_1914_1",
+  "Starving Villager": "avg_npc_758_1",
+  "Strong Villager": "avg_npc_758_1",
+  "Despondent Villager": "avg_npc_758_1",
+  "Panicking Villager": "avg_npc_758_1",
+  "No Longer Angry Villager": "avg_npc_758_1",
   "Auctioneer's Voice": "avg_npc_758_1",
   "Friendly Stall Owner": "avg_npc_758_1",
   "Suzuki": "avg_npc_758_1",
@@ -7395,6 +7524,7 @@
   "Aunt Wen": "avg_npc_1641_1",
   "Eloysius": "avg_npc_1966_1",
   "Imperial Guard?": "avg_npc_1966_1",
+  "Surprised Voice": "avg_npc_1966_1",
   "Far North Soldier": "avg_npc_1972_1",
   "Hesitant Soldier": "avg_npc_1972_1",
   "Young Miner": [
@@ -7420,13 +7550,23 @@
   "Miner Scout": "avg_npc_1969_1",
   "Anxious Miner": [
     "avg_npc_1969_1",
-    "avg_npc_1970_1"
+    "avg_npc_1970_1",
+    "avg_npc_2225_1"
   ],
   "Miner C & Miner D": "avg_npc_1969_1",
   "Staunch Miner": "avg_npc_1969_1",
   "Pious Miner": "avg_npc_1969_1",
+  "Tardy Worker": "avg_npc_1969_1",
+  "Returning Miner": "avg_npc_1969_1",
+  "Stupefied Miner": "avg_npc_1969_1",
+  "Exhausted Miner": "avg_npc_1969_1",
+  "Eager Miner": "avg_npc_1969_1",
   "Skeptical Miner": "avg_npc_1969_1",
   "Infected Miner": "avg_npc_1969_1",
+  "Ursine Worker": [
+    "avg_npc_1969_1",
+    "avg_npc_1979_1"
+  ],
   "Nikto": [
     "avg_npc_1967_1",
     "avg_npc_2185_1"
@@ -7434,40 +7574,89 @@
   "Hawley": "avg_npc_1971_1",
   "Twisted Figure": "avg_npc_1971_1",
   "Grand Duchess Elisabeth": "avg_npc_1962_1",
+  "Elisaveta": "avg_npc_1962_1",
   "Jolly Miner": "avg_npc_1970_1",
   "Calm Miner": "avg_npc_1970_1",
   "Dazed Miner": "avg_npc_1970_1",
   "Worried Miner": "avg_npc_1970_1",
   "Curious Miner": "avg_npc_1970_1",
+  "Perplexed Miner": "avg_npc_1970_1",
   "Fearful Miner": "avg_npc_1970_1",
+  "Nimble Miner": "avg_npc_1970_1",
+  "The Pensive Youth": "avg_npc_1970_1",
   "Mantra?": "avg_4204_mantra_1",
   "Ksenia?": "avg_4208_wintim_1",
   "Ksenia": "avg_4208_wintim_1",
   "Snegurochka": "avg_4208_wintim_1",
   "Anxious Operator": "avg_npc_1560_1",
-  "Worried Researcher": "avg_npc_1974_1",
+  "Worried Researcher": [
+    "avg_npc_1974_1",
+    "avg_npc_2243_1"
+  ],
+  "Scared Scholar": "avg_npc_1974_1",
+  "Ursus Researcher": "avg_npc_1974_1",
+  "Curious Researcher": "avg_npc_1974_1",
   "Excited Researcher": "avg_npc_1975_1",
+  "Proud Scholar": "avg_npc_1975_1",
+  "Gira": "avg_npc_1975_1",
+  "Timid Researcher": "avg_npc_1975_1",
   "Ursine Officer": "avg_npc_1977_1",
   "Nervous Officer": "avg_npc_1977_1",
   "Solemn Ursine Officer": "avg_npc_1977_1",
+  "Despairing Officer": "avg_npc_1977_1",
   "Officer": "avg_npc_1977_1",
-  "Impatient Guard": "avg_npc_1973_1",
+  "Proud Officer": "avg_npc_1977_1",
+  "Arrogant Officer": "avg_npc_1977_1",
+  "Gunnery Officer": "avg_npc_1977_1",
+  "Terrified Officer": "avg_npc_1977_1",
+  "Determined Officer": "avg_npc_1977_1",
   "Yurodstvo": "avg_npc_1965_1",
+  "Vigilant Guard": "avg_npc_1978_1",
+  "Guard to the Back": "avg_npc_1978_1",
+  "Enraged Officer": "avg_npc_1978_1",
   "Army Officer": "avg_npc_1978_1",
   "Cold Soldier": "avg_npc_1978_1",
+  "Army Soldier": "avg_npc_1976_1",
+  "Aloof Soldier": "avg_npc_1976_1",
+  "Tipsy Soldier": "avg_npc_1976_1",
+  "Nervous Guard": "avg_npc_1976_1",
+  "Honest Soldier": "avg_npc_1976_1",
+  "Taciturn Soldier": "avg_npc_1976_1",
+  "Confused Soldier": [
+    "avg_npc_1976_1",
+    "avg_npc_2239_1",
+    "avg_npc_2240_1"
+  ],
+  "Panicked Soldier": [
+    "avg_npc_1976_1",
+    "avg_npc_2249_1"
+  ],
   "Angry Soldier": "avg_npc_1976_1",
+  "Fourth Army Soldier": "avg_npc_1976_1",
+  "Ursine Soldier": "avg_npc_1976_1",
+  "Radioman": "avg_npc_1976_1",
   "Listener": "avg_npc_1976_1",
   "Attentive Servant": "avg_npc_1982_1",
+  "Diligent Servant": "avg_npc_1982_1",
   "Respectful Servant": "avg_npc_1982_1",
+  "Polite Servant": "avg_npc_1982_1",
+  "Brave Servant": "avg_npc_1982_1",
+  "Solemn Official": "avg_npc_1982_1",
   "New Visitor": "avg_npc_1982_1",
   "Noble A": "avg_npc_1981_1",
   "Noble Beneath Podium": "avg_npc_1981_1",
   "Jittery Noble": "avg_npc_1981_1",
+  "Unhappy Noble": "avg_npc_1981_1",
   "Jailed Worker": "avg_npc_1979_1",
-  "Ursine Worker": "avg_npc_1979_1",
   "Excited Worker": "avg_npc_1979_1",
-  "Friendly Worker": "avg_npc_1979_1",
+  "Friendly Worker": [
+    "avg_npc_1979_1",
+    "avg_npc_2228_1"
+  ],
+  "Perplexed Worker": "avg_npc_1979_1",
+  "Pavel": "avg_npc_1979_1",
   "Worker?": "avg_npc_1979_1",
+  "Mailman": "avg_npc_1979_1",
   "Ederson": "avg_npc_1796_1",
   "Old Cleric": "avg_npc_2014_1",
   "Excited Cleric": "avg_npc_2014_1",
@@ -7620,6 +7809,8 @@
   "Lupina": "avg_npc_2201_1",
   "Liesel": "avg_4031_liesel_1",
   "Matoimaru": "avg_289_gyuki_1",
+  "Strict Villager": "avg_npc_757_1",
+  "Hiroshi Ritou": "avg_npc_757_1",
   "Matoimaru's Foster Father": "avg_npc_757_1",
   "Countess Vorontsova": "avg_npc_2173_1",
   "Pavlovich": "avg_npc_2158_1",
@@ -7632,9 +7823,13 @@
   "Anxious Noble": "avg_npc_2171_1",
   "Scathing Noble": "avg_npc_2171_1",
   "Whispering Noble A": "avg_npc_2171_1",
+  "Concerned Noble": "avg_npc_2171_1",
+  "Reserved Noble": "avg_npc_2171_1",
   "Arbiter": "avg_npc_2168_1",
   "Vasily": "avg_npc_2162_1",
   "A Certain Councilor": "avg_npc_2162_1",
+  "Hasty Noble": "avg_npc_2162_1",
+  "Voice Behind the Door": "avg_npc_2162_1",
   "Olga": "avg_npc_2159_1",
   "Antosha": [
     "avg_1051_headb2_1",
@@ -7679,9 +7874,14 @@
   "'Pencil Stub'": "avg_npc_2178_1",
   "Unbound Member": "avg_npc_2178_1",
   "Disappointed Student": "avg_npc_2178_1",
+  "Nervous Student": [
+    "avg_npc_2178_1",
+    "avg_npc_2186_1"
+  ],
   "Faddey": "avg_npc_2177_1",
   "Rescued Student B": "avg_npc_2177_1",
   "Ursine Student A": "avg_npc_2177_1",
+  "Runaway Student": "avg_npc_2177_1",
   "Melancholy Youth": "avg_npc_2155_1",
   "Fedya": "avg_npc_2155_1",
   "Fyodor": "avg_npc_2155_1",
@@ -7694,11 +7894,14 @@
   "Yeremey": "avg_npc_2176_1",
   "Handsome Nobleman": "avg_npc_2176_1",
   "Rania": "avg_npc_2176_1",
+  "Wounded Student": "avg_npc_2176_1",
   "Varvara": [
     "avg_npc_2175_1",
     "avg_npc_2181_1"
   ],
   "Ursine Professor": "avg_npc_2175_1",
+  "Lamenting Citizen": "avg_npc_2175_1",
+  "Excited 'Councilor'": "avg_npc_2175_1",
   "Anxious Student": "avg_npc_2181_1",
   "'Council of Sixteen' Thug A": "avg_npc_2167_1",
   "'Sixteen Warriors' Thug B": "avg_npc_2167_1",
@@ -7709,10 +7912,137 @@
   "Ursine Student B": "avg_npc_2179_1",
   "Brave Student": "avg_npc_2179_1",
   "Leonid": "avg_npc_2179_1",
-  "Nervous Student": "avg_npc_2186_1",
   "Shorty": "avg_npc_2186_1",
   "Botani": "avg_4223_botany_1",
   "Tishinna": "avg_4223_botany_1",
   "Pavalo": "avg_npc_2174_1",
-  "Ursine Citizens": "avg_npc_2174_1"
+  "Ursine Citizens": "avg_npc_2174_1",
+  "Worried Citizen": "avg_npc_2174_1",
+  "Yevsey?": "avg_npc_2174_1",
+  "Dazed Woman": "avg_npc_2172_1",
+  "Felyne Artisan": [
+    "avg_npc_751_1",
+    "avg_npc_752_1"
+  ],
+  "Strange Yellow Creature": "avg_npc_751_1",
+  "Felyne Scholar": "avg_npc_752_1",
+  "Strange White Creature": "avg_npc_752_1",
+  "Roka Village Headman": "avg_npc_753_1",
+  "Ataru Takii": "avg_npc_753_1",
+  "Yoshitaka Kashiwau": "avg_npc_755_1",
+  "Takii Kashiwau": "avg_npc_755_1",
+  "、Yoshitaka Kashiwau ": "avg_npc_755_1",
+  "Yoshitaka Kashiwau ": "avg_npc_755_1",
+  " Yoshitaka Kashiwau": "avg_npc_755_1",
+  "Aged Hunter": "avg_npc_755_1",
+  "Kazuya": "avg_npc_756_1",
+  "Child in Hunter Garb": "avg_npc_756_1",
+  "Akira Kashiwau": "avg_npc_760_1",
+  "Palico": "avg_npc_750_1",
+  "Mirai Takii": "avg_npc_761_1",
+  "Sullen Soldier": "avg_npc_2236_1",
+  "Evgeny": [
+    "avg_npc_2236_1",
+    "avg_npc_2249_1",
+    "avg_4226_veen_1",
+    "avg_npc_2241_1"
+  ],
+  "Hoarse Youth": "avg_npc_2235_1",
+  "Anatoliy": [
+    "avg_npc_2235_1",
+    "avg_npc_2246_1",
+    "avg_npc_2249_1"
+  ],
+  "Flustered Officer": "avg_npc_2235_1",
+  "Svetlana": [
+    "avg_npc_2235_1",
+    "avg_npc_2231_1",
+    "avg_npc_2249_1"
+  ],
+  "Dignified Soldier": "avg_npc_2231_1",
+  "Cautus": [
+    "avg_npc_2245_1",
+    "avg_npc_2246_1"
+  ],
+  "Angry Servant": "avg_npc_2169_1",
+  "Silent Servant": "avg_npc_2169_1",
+  "Panicking Servant": "avg_npc_2169_1",
+  "Nervous Servant": "avg_npc_2169_1",
+  "Distant Voice": "avg_188_helage_1",
+  "Solemn Soldier": "avg_188_helage_1",
+  "Strange Patient": [
+    "avg_npc_2246_1",
+    "avg_npc_2226_1"
+  ],
+  "Serious Student": "avg_npc_2246_1",
+  "Faint Voice": "avg_npc_2246_1",
+  "Surprised Vagrant": "avg_npc_2259_1",
+  "Friendly Vagrant": "avg_npc_2260_1",
+  "Frantic Infected": "avg_npc_2260_1",
+  "Borislav": "avg_npc_2260_1",
+  "Concerned Resident": "avg_npc_2228_1",
+  "Busy Worker": "avg_npc_2228_1",
+  "Sirka": [
+    "avg_npc_2249_1",
+    "avg_npc_2247_1"
+  ],
+  "Prokhor?": "avg_npc_2249_1",
+  "Young Voice": "avg_npc_2249_1",
+  "Low Voice": "avg_npc_2249_1",
+  "Scioppa": [
+    "avg_4226_veen_1",
+    "avg_npc_2241_1"
+  ],
+  "Intermittent Voice": "avg_4226_veen_1",
+  "Comms Voice": "avg_4226_veen_1",
+  "Surprised Soldier": "avg_npc_2232_1",
+  "Deferential Soldier": "avg_npc_2232_1",
+  "Calm Youth": [
+    "avg_npc_2232_1",
+    "avg_npc_2225_1"
+  ],
+  "Tonya": [
+    "avg_4225_tanya_1",
+    "avg_npc_2222_1"
+  ],
+  "Honest Soldier & Calm Youth": "avg_npc_2225_1",
+  "'Tulin'": "avg_npc_2225_1",
+  "Milana": "avg_npc_2225_1",
+  "Ivan Tulin": "avg_npc_2225_1",
+  "Serious Soldier": "avg_npc_2223_1",
+  "Cautious Soldier": [
+    "avg_npc_2223_1",
+    "avg_npc_2240_1"
+  ],
+  "Enthusiastic Resident": "avg_npc_2227_1",
+  "Familiar Man": "avg_npc_2227_1",
+  "Surprised Worker": "avg_npc_2227_1",
+  "Feeble Resident": "avg_npc_2227_1",
+  "Gentle 'Councilor'": "avg_npc_2248_1",
+  "Gentle Youth": "avg_npc_2248_1",
+  "Nadezhda": "avg_npc_2222_1",
+  "Elegant Voice": "avg_npc_2247_1",
+  "Rowdy Soldier": [
+    "avg_npc_2239_1",
+    "avg_npc_2240_1"
+  ],
+  "Concerned Soldier": "avg_npc_2240_1",
+  "Diligent Soldier": "avg_npc_2240_1",
+  "Excited Officer": "avg_npc_2241_1",
+  "Oleg": "avg_npc_2241_1",
+  "Platon": "avg_npc_2229_1",
+  "Anastasia?": "avg_npc_2230_1",
+  "Anastasia": "avg_npc_2230_1",
+  "Lab Director": "avg_npc_2243_1",
+  "Alita": "avg_npc_2243_1",
+  "Haggard Man": "avg_npc_2242_1",
+  "Klim": "avg_npc_2242_1",
+  "Indistinct Voice": "avg_npc_2242_1",
+  "Noisy Bird": "avg_npc_2258_1",
+  "Exhausted Bird": "avg_npc_2258_1",
+  "Noisy 'Mini-House'": "avg_npc_2244_1",
+  "War Caster": "avg_npc_2237_1",
+  "Ursine Boy": "avg_npc_2233_1",
+  "Ursine Girl": "avg_npc_2234_1",
+  "Hadiya": "avg_394_hadiya_1"
 }
