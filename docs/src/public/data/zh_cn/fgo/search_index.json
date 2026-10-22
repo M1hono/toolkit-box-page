@@ -2226,6 +2226,20 @@
     ]
   },
   {
+    "id": 306200,
+    "name": "伊丽莎白·巴托里",
+    "originalName": "伊丽莎白·巴托里",
+    "ruby": "伊丽莎白·巴托里",
+    "className": "lancer",
+    "rarity": 5,
+    "searchTerms": [
+      "伊丽莎白·巴托里",
+      "伊丽莎白·巴托里",
+      "伊丽莎白·巴托里",
+      "lancer"
+    ]
+  },
+  {
     "id": 400100,
     "name": "歌果",
     "originalName": "歌果",
@@ -5666,6 +5680,20 @@
       "藤堂平助",
       "藤堂平助",
       "藤堂平助",
+      "avenger"
+    ]
+  },
+  {
+    "id": 1102200,
+    "name": "终结的伊丽莎白",
+    "originalName": "终结的伊丽莎白",
+    "ruby": "终结的伊丽莎白",
+    "className": "avenger",
+    "rarity": 4,
+    "searchTerms": [
+      "终结的伊丽莎白",
+      "终结的伊丽莎白",
+      "终结的伊丽莎白",
       "avenger"
     ]
   },
