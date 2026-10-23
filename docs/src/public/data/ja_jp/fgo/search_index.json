@@ -3040,6 +3040,20 @@
     ]
   },
   {
+    "id": 406000,
+    "name": "タマモアリア",
+    "originalName": "タマモアリア",
+    "ruby": "タマモアリア",
+    "className": "rider",
+    "rarity": 5,
+    "searchTerms": [
+      "タマモアリア",
+      "タマモアリア",
+      "タマモアリア",
+      "rider"
+    ]
+  },
+  {
     "id": 500100,
     "name": "メディア",
     "originalName": "メディア",
