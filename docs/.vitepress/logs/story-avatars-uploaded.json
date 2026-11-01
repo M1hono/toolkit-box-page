@@ -892,5 +892,55 @@
     "status": "uploaded",
     "timestamp": 1788488245722,
     "charId": "avg_npc_1014_1"
+  },
+  "arknights/avatars/avg_npc_415_01.png": {
+    "status": "skipped",
+    "timestamp": 1793504254076,
+    "reason": "404"
+  },
+  "arknights/avatars/avatar_npc_2175.png": {
+    "status": "skipped",
+    "timestamp": 1793504254092,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2230_03.png": {
+    "status": "skipped",
+    "timestamp": 1793504254094,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_415_03.png": {
+    "status": "skipped",
+    "timestamp": 1793504254095,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_415_02.png": {
+    "status": "skipped",
+    "timestamp": 1793504254096,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2230_02.png": {
+    "status": "skipped",
+    "timestamp": 1793504254115,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2230_04.png": {
+    "status": "skipped",
+    "timestamp": 1793504254124,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_415_04.png": {
+    "status": "skipped",
+    "timestamp": 1793504254125,
+    "reason": "404"
+  },
+  "arknights/avatars/avg_npc_2230_01.png": {
+    "status": "skipped",
+    "timestamp": 1793504254129,
+    "reason": "404"
+  },
+  "arknights/avatars/char_405_absin.png": {
+    "status": "uploaded",
+    "timestamp": 1793504255652,
+    "charId": "char_405_absin"
   }
 }

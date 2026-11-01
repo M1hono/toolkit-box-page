@@ -395,5 +395,10 @@
     "status": "skipped",
     "timestamp": 1791518152349,
     "reason": "404"
+  },
+  "arknights/banners/act55side.png": {
+    "status": "skipped",
+    "timestamp": 1793504256925,
+    "reason": "404"
   }
 }
