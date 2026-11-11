@@ -9223,7 +9223,9 @@
           "2": "https://static.atlasacademy.io/JP/CharaFigure/2047001/2047001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/2047002/2047002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "204730": "https://static.atlasacademy.io/JP/CharaFigure/2047300/2047300_merged.png"
+        },
         "story": {
           "1098222800": "https://static.atlasacademy.io/JP/CharaFigure/1098222800/1098222800_merged.png",
           "1098222810": "https://static.atlasacademy.io/JP/CharaFigure/1098222810/1098222810_merged.png",
@@ -9257,6 +9259,12 @@
           "id": 2047002,
           "faceX": 383,
           "faceY": 163,
+          "scale": 1
+        },
+        "2047300": {
+          "id": 2047300,
+          "faceX": 373,
+          "faceY": 151,
           "scale": 1
         },
         "1098222800": {
@@ -9346,7 +9354,9 @@
           "2": "https://static.atlasacademy.io/JP/CharaFigure/2047001/2047001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/2047002/2047002_merged.png"
         },
-        "costume": {},
+        "costume": {
+          "204730": "https://static.atlasacademy.io/JP/CharaFigure/2047300/2047300_merged.png"
+        },
         "story": {
           "1098222800": "https://static.atlasacademy.io/JP/CharaFigure/1098222800/1098222800_merged.png",
           "1098222810": "https://static.atlasacademy.io/JP/CharaFigure/1098222810/1098222810_merged.png",
@@ -20535,6 +20545,56 @@
           "1": "https://static.atlasacademy.io/JP/CharaFigure/4060000/4060000_merged.png",
           "2": "https://static.atlasacademy.io/JP/CharaFigure/4060001/4060001_merged.png",
           "3": "https://static.atlasacademy.io/JP/CharaFigure/4060002/4060002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      }
+    }
+  },
+  "406100": {
+    "id": 406100,
+    "collectionNo": 485,
+    "name": "雑賀孫一",
+    "ruby": "サイカマゴイチ",
+    "className": "rider",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/4061000/4061000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/4061001/4061001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/4061002/4061002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "4061000": {
+          "id": 4061000,
+          "faceX": 382,
+          "faceY": 139,
+          "scale": 1
+        },
+        "4061001": {
+          "id": 4061001,
+          "faceX": 355,
+          "faceY": 147,
+          "scale": 1
+        },
+        "4061002": {
+          "id": 4061002,
+          "faceX": 378,
+          "faceY": 130,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/4061000/4061000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/4061001/4061001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/4061002/4061002_merged.png"
         },
         "costume": {},
         "story": {}
@@ -33863,6 +33923,60 @@
       }
     }
   },
+  "705500": {
+    "id": 705500,
+    "collectionNo": 486,
+    "name": "松永久秀",
+    "ruby": "マツナガヒサヒデ",
+    "className": "berserker",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/7055000/7055000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/7055001/7055001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/7055002/7055002_merged.png"
+        },
+        "costume": {
+          "705530": "https://static.atlasacademy.io/JP/CharaFigure/7055300/7055300_merged.png"
+        },
+        "story": {}
+      },
+      "faceCoordinates": {
+        "7055000": {
+          "id": 7055000,
+          "faceX": 887,
+          "faceY": 172,
+          "scale": 1
+        },
+        "7055001": {
+          "id": 7055001,
+          "faceX": 887,
+          "faceY": 172,
+          "scale": 1
+        },
+        "7055002": {
+          "id": 7055002,
+          "faceX": 887,
+          "faceY": 172,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/7055000/7055000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/7055001/7055001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/7055002/7055002_merged.png"
+        },
+        "costume": {
+          "705530": "https://static.atlasacademy.io/JP/CharaFigure/7055300/7055300_merged.png"
+        },
+        "story": {}
+      }
+    }
+  },
   "800100": {
     "id": 800100,
     "collectionNo": 1,
@@ -45204,6 +45318,56 @@
           "1098364710": "https://static.atlasacademy.io/JP/CharaFigure/1098364710/1098364710_merged.png",
           "1098364800": "https://static.atlasacademy.io/JP/CharaFigure/1098364800/1098364800_merged.png"
         }
+      }
+    }
+  },
+  "2801400": {
+    "id": 2801400,
+    "collectionNo": 484,
+    "name": "卑弥呼＆壱与",
+    "ruby": "ヒミコアンドイヨ",
+    "className": "pretender",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/28014000/28014000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/28014001/28014001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/28014002/28014002_merged.png"
+        },
+        "costume": {},
+        "story": {}
+      },
+      "faceCoordinates": {
+        "28014000": {
+          "id": 28014000,
+          "faceX": 257,
+          "faceY": 190,
+          "scale": 1
+        },
+        "28014001": {
+          "id": 28014001,
+          "faceX": 229,
+          "faceY": 123,
+          "scale": 1
+        },
+        "28014002": {
+          "id": 28014002,
+          "faceX": 232,
+          "faceY": 102,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/28014000/28014000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/28014001/28014001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/28014002/28014002_merged.png"
+        },
+        "costume": {},
+        "story": {}
       }
     }
   },

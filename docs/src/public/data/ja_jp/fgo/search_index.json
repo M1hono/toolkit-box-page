@@ -3054,6 +3054,20 @@
     ]
   },
   {
+    "id": 406100,
+    "name": "雑賀孫一",
+    "originalName": "雑賀孫一",
+    "ruby": "サイカマゴイチ",
+    "className": "rider",
+    "rarity": 4,
+    "searchTerms": [
+      "雑賀孫一",
+      "雑賀孫一",
+      "サイカマゴイチ",
+      "rider"
+    ]
+  },
+  {
     "id": 500100,
     "name": "メディア",
     "originalName": "メディア",
@@ -5142,6 +5156,20 @@
     ]
   },
   {
+    "id": 705500,
+    "name": "松永久秀",
+    "originalName": "松永久秀",
+    "ruby": "マツナガヒサヒデ",
+    "className": "berserker",
+    "rarity": 4,
+    "searchTerms": [
+      "松永久秀",
+      "松永久秀",
+      "マツナガヒサヒデ",
+      "berserker"
+    ]
+  },
+  {
     "id": 800100,
     "name": "マシュ・キリエライト",
     "originalName": "マシュ・キリエライト",
@@ -6568,6 +6596,20 @@
       "ハベトロット",
       "ハベトロット",
       "ハベトロット",
+      "pretender"
+    ]
+  },
+  {
+    "id": 2801400,
+    "name": "卑弥呼＆壱与",
+    "originalName": "卑弥呼＆壱与",
+    "ruby": "ヒミコアンドイヨ",
+    "className": "pretender",
+    "rarity": 5,
+    "searchTerms": [
+      "卑弥呼＆壱与",
+      "卑弥呼＆壱与",
+      "ヒミコアンドイヨ",
       "pretender"
     ]
   },
