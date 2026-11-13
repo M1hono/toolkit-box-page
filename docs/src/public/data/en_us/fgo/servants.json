@@ -1034,6 +1034,30 @@
           "faceY": 165,
           "scale": 1
         },
+        "1098157410": {
+          "id": 1098157410,
+          "faceX": 392,
+          "faceY": 164,
+          "scale": 1
+        },
+        "1098157420": {
+          "id": 1098157420,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098157430": {
+          "id": 1098157430,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098157440": {
+          "id": 1098157440,
+          "faceX": 904,
+          "faceY": 164,
+          "scale": 1
+        },
         "1098262800": {
           "id": 1098262800,
           "faceX": 392,
@@ -6185,6 +6209,12 @@
           "faceY": 0,
           "scale": 1
         },
+        "1098226910": {
+          "id": 1098226910,
+          "faceX": 313,
+          "faceY": 164,
+          "scale": 1
+        },
         "1098241700": {
           "id": 1098241700,
           "faceX": 313,
@@ -9315,6 +9345,106 @@
         "story": {
           "1098282100": "https://static.atlasacademy.io/NA/CharaFigure/1098282100/1098282100_merged.png",
           "1098282110": "https://static.atlasacademy.io/NA/CharaFigure/1098282110/1098282110_merged.png"
+        }
+      }
+    }
+  },
+  "205300": {
+    "id": 205300,
+    "collectionNo": 427,
+    "name": "Tutankhamun",
+    "ruby": "Tutankhamun",
+    "className": "archer",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/2053000/2053000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/2053001/2053001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/2053002/2053002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098305600": "https://static.atlasacademy.io/NA/CharaFigure/1098305600/1098305600_merged.png",
+          "1098305610": "https://static.atlasacademy.io/NA/CharaFigure/1098305610/1098305610_merged.png",
+          "1098305620": "https://static.atlasacademy.io/NA/CharaFigure/1098305620/1098305620_merged.png",
+          "1098305640": "https://static.atlasacademy.io/NA/CharaFigure/1098305640/1098305640_merged.png",
+          "1098305650": "https://static.atlasacademy.io/NA/CharaFigure/1098305650/1098305650_merged.png",
+          "1098305700": "https://static.atlasacademy.io/NA/CharaFigure/1098305700/1098305700_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "2053000": {
+          "id": 2053000,
+          "faceX": 374,
+          "faceY": 165,
+          "scale": 1
+        },
+        "2053001": {
+          "id": 2053001,
+          "faceX": 374,
+          "faceY": 165,
+          "scale": 1
+        },
+        "2053002": {
+          "id": 2053002,
+          "faceX": 1004,
+          "faceY": 150,
+          "scale": 1
+        },
+        "1098305600": {
+          "id": 1098305600,
+          "faceX": 887,
+          "faceY": 230,
+          "scale": 1
+        },
+        "1098305610": {
+          "id": 1098305610,
+          "faceX": 887,
+          "faceY": 164,
+          "scale": 1
+        },
+        "1098305620": {
+          "id": 1098305620,
+          "faceX": 998,
+          "faceY": 618,
+          "scale": 1
+        },
+        "1098305640": {
+          "id": 1098305640,
+          "faceX": 1005,
+          "faceY": 150,
+          "scale": 1
+        },
+        "1098305650": {
+          "id": 1098305650,
+          "faceX": 1004,
+          "faceY": 150,
+          "scale": 1
+        },
+        "1098305700": {
+          "id": 1098305700,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/2053000/2053000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/2053001/2053001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/2053002/2053002_merged.png"
+        },
+        "costume": {},
+        "story": {
+          "1098305600": "https://static.atlasacademy.io/NA/CharaFigure/1098305600/1098305600_merged.png",
+          "1098305610": "https://static.atlasacademy.io/NA/CharaFigure/1098305610/1098305610_merged.png",
+          "1098305620": "https://static.atlasacademy.io/NA/CharaFigure/1098305620/1098305620_merged.png",
+          "1098305640": "https://static.atlasacademy.io/NA/CharaFigure/1098305640/1098305640_merged.png",
+          "1098305650": "https://static.atlasacademy.io/NA/CharaFigure/1098305650/1098305650_merged.png",
+          "1098305700": "https://static.atlasacademy.io/NA/CharaFigure/1098305700/1098305700_merged.png"
         }
       }
     }
@@ -13097,6 +13227,12 @@
           "faceX": 888,
           "faceY": 139,
           "scale": 1
+        },
+        "1098294010": {
+          "id": 1098294010,
+          "faceX": 379,
+          "faceY": 158,
+          "scale": 1
         }
       }
     },
@@ -13297,6 +13433,116 @@
         "story": {
           "1098307700": "https://static.atlasacademy.io/NA/CharaFigure/1098307700/1098307700_merged.png",
           "1098308800": "https://static.atlasacademy.io/NA/CharaFigure/1098308800/1098308800_merged.png"
+        }
+      }
+    }
+  },
+  "305600": {
+    "id": 305600,
+    "collectionNo": 428,
+    "name": "Van Gogh (Miner)",
+    "ruby": "Van Gogh (Miner)",
+    "className": "lancer",
+    "rarity": 4,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/3056000/3056000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/3056001/3056001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/3056002/3056002_merged.png"
+        },
+        "costume": {
+          "305630": "https://static.atlasacademy.io/NA/CharaFigure/3056300/3056300_merged.png"
+        },
+        "story": {
+          "1098305400": "https://static.atlasacademy.io/NA/CharaFigure/1098305400/1098305400_merged.png",
+          "1098305410": "https://static.atlasacademy.io/NA/CharaFigure/1098305410/1098305410_merged.png",
+          "1098305420": "https://static.atlasacademy.io/NA/CharaFigure/1098305420/1098305420_merged.png",
+          "1098305430": "https://static.atlasacademy.io/NA/CharaFigure/1098305430/1098305430_merged.png",
+          "1098305440": "https://static.atlasacademy.io/NA/CharaFigure/1098305440/1098305440_merged.png",
+          "1098305450": "https://static.atlasacademy.io/NA/CharaFigure/1098305450/1098305450_merged.png"
+        }
+      },
+      "faceCoordinates": {
+        "3056000": {
+          "id": 3056000,
+          "faceX": 911,
+          "faceY": 142,
+          "scale": 1
+        },
+        "3056001": {
+          "id": 3056001,
+          "faceX": 911,
+          "faceY": 142,
+          "scale": 1
+        },
+        "3056002": {
+          "id": 3056002,
+          "faceX": 911,
+          "faceY": 142,
+          "scale": 1
+        },
+        "3056300": {
+          "id": 3056300,
+          "faceX": 910,
+          "faceY": 143,
+          "scale": 1
+        },
+        "1098305400": {
+          "id": 1098305400,
+          "faceX": 911,
+          "faceY": 142,
+          "scale": 1
+        },
+        "1098305410": {
+          "id": 1098305410,
+          "faceX": 912,
+          "faceY": 142,
+          "scale": 1
+        },
+        "1098305420": {
+          "id": 1098305420,
+          "faceX": 911,
+          "faceY": 293,
+          "scale": 1
+        },
+        "1098305430": {
+          "id": 1098305430,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098305440": {
+          "id": 1098305440,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "1098305450": {
+          "id": 1098305450,
+          "faceX": 911,
+          "faceY": 294,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/NA/CharaFigure/3056000/3056000_merged.png",
+          "2": "https://static.atlasacademy.io/NA/CharaFigure/3056001/3056001_merged.png",
+          "3": "https://static.atlasacademy.io/NA/CharaFigure/3056002/3056002_merged.png"
+        },
+        "costume": {
+          "305630": "https://static.atlasacademy.io/NA/CharaFigure/3056300/3056300_merged.png"
+        },
+        "story": {
+          "1098305400": "https://static.atlasacademy.io/NA/CharaFigure/1098305400/1098305400_merged.png",
+          "1098305410": "https://static.atlasacademy.io/NA/CharaFigure/1098305410/1098305410_merged.png",
+          "1098305420": "https://static.atlasacademy.io/NA/CharaFigure/1098305420/1098305420_merged.png",
+          "1098305430": "https://static.atlasacademy.io/NA/CharaFigure/1098305430/1098305430_merged.png",
+          "1098305440": "https://static.atlasacademy.io/NA/CharaFigure/1098305440/1098305440_merged.png",
+          "1098305450": "https://static.atlasacademy.io/NA/CharaFigure/1098305450/1098305450_merged.png"
         }
       }
     }
@@ -15469,6 +15715,12 @@
           "faceX": 890,
           "faceY": 23,
           "scale": 1
+        },
+        "1098306200": {
+          "id": 1098306200,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
         }
       }
     },
@@ -16642,6 +16894,12 @@
           "id": 1098290210,
           "faceX": 399,
           "faceY": 169,
+          "scale": 1
+        },
+        "1098306900": {
+          "id": 1098306900,
+          "faceX": 843,
+          "faceY": 158,
           "scale": 1
         }
       }
@@ -35358,6 +35616,12 @@
           "faceY": 169,
           "scale": 1
         },
+        "1098196510": {
+          "id": 1098196510,
+          "faceX": 947,
+          "faceY": 169,
+          "scale": 1
+        },
         "1098222400": {
           "id": 1098222400,
           "faceX": 423,
@@ -37986,6 +38250,12 @@
           "id": 1098256000,
           "faceX": 395,
           "faceY": 165,
+          "scale": 1
+        },
+        "1098306800": {
+          "id": 1098306800,
+          "faceX": 940,
+          "faceY": 152,
           "scale": 1
         }
       }

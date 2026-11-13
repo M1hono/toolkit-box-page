@@ -1414,6 +1414,20 @@
     ]
   },
   {
+    "id": 205300,
+    "name": "Tutankhamun",
+    "originalName": "Tutankhamun",
+    "ruby": "Tutankhamun",
+    "className": "archer",
+    "rarity": 5,
+    "searchTerms": [
+      "tutankhamun",
+      "tutankhamun",
+      "tutankhamun",
+      "archer"
+    ]
+  },
+  {
     "id": 300100,
     "name": "Cú Chulainn",
     "originalName": "Cú Chulainn",
@@ -2068,6 +2082,20 @@
       "dobrynya nikitich (lancer)",
       "dobrynya nikitich (lancer)",
       "dobrynya nikitich (lancer)",
+      "lancer"
+    ]
+  },
+  {
+    "id": 305600,
+    "name": "Van Gogh (Miner)",
+    "originalName": "Van Gogh (Miner)",
+    "ruby": "Van Gogh (Miner)",
+    "className": "lancer",
+    "rarity": 4,
+    "searchTerms": [
+      "van gogh (miner)",
+      "van gogh (miner)",
+      "van gogh (miner)",
       "lancer"
     ]
   },
