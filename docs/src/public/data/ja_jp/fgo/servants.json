@@ -33960,6 +33960,12 @@
           "faceX": 887,
           "faceY": 172,
           "scale": 1
+        },
+        "7055300": {
+          "id": 7055300,
+          "faceX": 913,
+          "faceY": 158,
+          "scale": 1
         }
       }
     },
@@ -44052,6 +44058,66 @@
           "1098303610": "https://static.atlasacademy.io/JP/CharaFigure/1098303610/1098303610_merged.png",
           "1098303620": "https://static.atlasacademy.io/JP/CharaFigure/1098303620/1098303620_merged.png"
         }
+      }
+    }
+  },
+  "2501700": {
+    "id": 2501700,
+    "collectionNo": 487,
+    "name": "ダイナマイト利休",
+    "ruby": "ダイナマイトリキュウ",
+    "className": "foreigner",
+    "rarity": 5,
+    "imageData": {
+      "charaFigures": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/25017000/25017000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/25017001/25017001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/25017002/25017002_merged.png"
+        },
+        "costume": {
+          "2501730": "https://static.atlasacademy.io/JP/CharaFigure/25017300/25017300_merged.png"
+        },
+        "story": {}
+      },
+      "faceCoordinates": {
+        "25017000": {
+          "id": 25017000,
+          "faceX": 0,
+          "faceY": 0,
+          "scale": 1
+        },
+        "25017001": {
+          "id": 25017001,
+          "faceX": 221,
+          "faceY": 197,
+          "scale": 1
+        },
+        "25017002": {
+          "id": 25017002,
+          "faceX": 881,
+          "faceY": 153,
+          "scale": 1
+        },
+        "25017300": {
+          "id": 25017300,
+          "faceX": 891,
+          "faceY": 153,
+          "scale": 1
+        }
+      }
+    },
+    "extraAssets": {
+      "charaFigure": {
+        "ascension": {
+          "1": "https://static.atlasacademy.io/JP/CharaFigure/25017000/25017000_merged.png",
+          "2": "https://static.atlasacademy.io/JP/CharaFigure/25017001/25017001_merged.png",
+          "3": "https://static.atlasacademy.io/JP/CharaFigure/25017002/25017002_merged.png"
+        },
+        "costume": {
+          "2501730": "https://static.atlasacademy.io/JP/CharaFigure/25017300/25017300_merged.png"
+        },
+        "story": {}
       }
     }
   },

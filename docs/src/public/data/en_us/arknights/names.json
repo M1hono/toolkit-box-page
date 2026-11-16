@@ -3815,7 +3815,8 @@
       "Mayor's Bodyguard",
       "Toady Dossoles Police Officer",
       "Impatient Dossoles Police Officer",
-      "Candela's Subordinate"
+      "Candela's Subordinate",
+      "Security Guard"
     ],
     "searchNames": [
       "Casino Boss",
@@ -3823,7 +3824,8 @@
       "Mayor's Bodyguard",
       "Toady Dossoles Police Officer",
       "Impatient Dossoles Police Officer",
-      "Candela's Subordinate"
+      "Candela's Subordinate",
+      "Security Guard"
     ],
     "displayName": "Casino Boss"
   },
@@ -4912,6 +4914,8 @@
       "Proprietor",
       "Bewildered Mountain Dweller",
       "Old Wood",
+      "Mountain Farmer",
+      "Kroos?",
       "Stonemason",
       "Street Stall Owner",
       "Second Apprentice",
@@ -4948,6 +4952,8 @@
       "Proprietor",
       "Bewildered Mountain Dweller",
       "Old Wood",
+      "Mountain Farmer",
+      "Kroos?",
       "Stonemason",
       "Street Stall Owner",
       "Second Apprentice",
@@ -6663,6 +6669,8 @@
       "Panicked Passerby",
       "Umbrella Girl",
       "Busy Passerby",
+      "Ashen-faced Woman",
+      "Yin",
       "Dai Pai Dong Waiter"
     ],
     "searchNames": [
@@ -6675,6 +6683,8 @@
       "Panicked Passerby",
       "Umbrella Girl",
       "Busy Passerby",
+      "Ashen-faced Woman",
+      "Yin",
       "Dai Pai Dong Waiter"
     ],
     "displayName": "Snowsweeping Stranger"
@@ -6696,6 +6706,8 @@
       "Half-Drunk Martial Artist",
       "Sober Martial Artist",
       "Young Farmer",
+      "Bandit",
+      "Kroos?",
       "Lin Yühsia's Subordinate",
       "Tavern Assistant",
       "Tavern Owner",
@@ -6718,6 +6730,8 @@
       "Half-Drunk Martial Artist",
       "Sober Martial Artist",
       "Young Farmer",
+      "Bandit",
+      "Kroos?",
       "Lin Yühsia's Subordinate",
       "Tavern Assistant",
       "Tavern Owner",
@@ -7156,6 +7170,7 @@
       "Curious Operator A",
       "Curious Operator B",
       "HR Operator",
+      "Commissary Staff",
       "Fallon",
       "Flustered HR Operator",
       "Logistics Operator",
@@ -7172,6 +7187,7 @@
       "Curious Operator A",
       "Curious Operator B",
       "HR Operator",
+      "Commissary Staff",
       "Fallon",
       "Flustered HR Operator",
       "Logistics Operator",
@@ -9938,6 +9954,7 @@
       "Rhodes Island Medic",
       "Rhodes Island Medic Operator",
       "Medic Operator",
+      "Medical Operator",
       "Medical Department Operator",
       "Logistics Operator",
       "Meticulous Operator",
@@ -9951,6 +9968,7 @@
       "Rhodes Island Medic",
       "Rhodes Island Medic Operator",
       "Medic Operator",
+      "Medical Operator",
       "Medical Department Operator",
       "Logistics Operator",
       "Meticulous Operator",
@@ -12816,7 +12834,8 @@
       "Blacksteel Engineering Team Member",
       "Blacksteel Senior Operator",
       "Blacksteel Administrator",
-      "Engineering Supervisor"
+      "Engineering Supervisor",
+      "Blacksteel Scout"
     ],
     "searchNames": [
       "Blacksteel Mercenary",
@@ -12829,7 +12848,8 @@
       "Blacksteel Engineering Team Member",
       "Blacksteel Senior Operator",
       "Blacksteel Administrator",
-      "Engineering Supervisor"
+      "Engineering Supervisor",
+      "Blacksteel Scout"
     ],
     "displayName": "Blacksteel Mercenary"
   },
@@ -12945,13 +12965,15 @@
       "Blacksteel Intelligence Squad Member",
       "Bank President",
       "Blacksteel Senior Operator",
-      "Tila"
+      "Tila",
+      "Surfer"
     ],
     "searchNames": [
       "Blacksteel Intelligence Squad Member",
       "Bank President",
       "Blacksteel Senior Operator",
-      "Tila"
+      "Tila",
+      "Surfer"
     ],
     "displayName": "Blacksteel Intelligence Squad Member"
   },
@@ -15294,14 +15316,16 @@
     "speakerNames": [
       "Curious Operator C",
       "Rhodes Island Engineering Operator",
-      "Engineering Operator B",
-      "Engineering Operator"
+      "Engineering Operator",
+      "Beagle",
+      "Engineering Operator B"
     ],
     "searchNames": [
       "Curious Operator C",
       "Rhodes Island Engineering Operator",
-      "Engineering Operator B",
-      "Engineering Operator"
+      "Engineering Operator",
+      "Beagle",
+      "Engineering Operator B"
     ],
     "displayName": "Curious Operator C"
   },
@@ -15411,11 +15435,13 @@
     "speakerNames": [
       "Unperturbed Official",
       "Tired Staff",
+      "Manager",
       "Glorious Shield Spokesman"
     ],
     "searchNames": [
       "Unperturbed Official",
       "Tired Staff",
+      "Manager",
       "Glorious Shield Spokesman"
     ],
     "displayName": "Unperturbed Official"
@@ -15621,14 +15647,16 @@
       "Auctioneer",
       "Producer",
       "Factory Owner",
-      "Foreign Merchant"
+      "Foreign Merchant",
+      "Senior Manager"
     ],
     "searchNames": [
       "Adulating Noble",
       "Auctioneer",
       "Producer",
       "Factory Owner",
-      "Foreign Merchant"
+      "Foreign Merchant",
+      "Senior Manager"
     ],
     "displayName": "Adulating Noble"
   },
@@ -18103,10 +18131,12 @@
   "char_278_orchid_1": {
     "speakerNames": [
       "Orchid",
+      "Catapult",
       "Orchid."
     ],
     "searchNames": [
       "Orchid",
+      "Catapult",
       "Orchid."
     ],
     "displayName": "Orchid"
@@ -19223,10 +19253,12 @@
   "avg_npc_1559_1": {
     "speakerNames": [
       "Reserve Guard Operator",
+      "Reserve Operator",
       "Rescue Squad Leader"
     ],
     "searchNames": [
       "Reserve Guard Operator",
+      "Reserve Operator",
       "Rescue Squad Leader"
     ],
     "displayName": "Reserve Guard Operator"
@@ -24081,5 +24113,219 @@
       "Hadiya"
     ],
     "displayName": "Hadiya"
+  },
+  "avg_npc_2100_1": {
+    "speakerNames": [
+      "Hofukaru",
+      "Midnight & Hofukaru",
+      "'Hofukaru'"
+    ],
+    "searchNames": [
+      "Hofukaru",
+      "Midnight & Hofukaru",
+      "'Hofukaru'"
+    ],
+    "displayName": "Hofukaru"
+  },
+  "avg_npc_2109_1": {
+    "speakerNames": [
+      "Houei Commoner A",
+      "Houei Commoner B",
+      "Workshop Apprentice"
+    ],
+    "searchNames": [
+      "Houei Commoner A",
+      "Houei Commoner B",
+      "Workshop Apprentice"
+    ],
+    "displayName": "Houei Commoner A"
+  },
+  "avg_npc_2108_1": {
+    "speakerNames": [
+      "Houei Commoner A",
+      "Houei Commoner C",
+      "Houei Commoner"
+    ],
+    "searchNames": [
+      "Houei Commoner A",
+      "Houei Commoner C",
+      "Houei Commoner"
+    ],
+    "displayName": "Houei Commoner A"
+  },
+  "avg_npc_2107_1": {
+    "speakerNames": [
+      "Samurai",
+      "Samurai Attendants",
+      "Guard",
+      "Samurai Attendant",
+      "Samurai B",
+      "Samurai A",
+      "Injured Samurai"
+    ],
+    "searchNames": [
+      "Samurai",
+      "Samurai Attendants",
+      "Guard",
+      "Samurai Attendant",
+      "Samurai B",
+      "Samurai A",
+      "Injured Samurai"
+    ],
+    "displayName": "Samurai"
+  },
+  "avg_npc_2104_1": {
+    "speakerNames": [
+      "Escorchgot",
+      "Orchid",
+      "'Iju' Escorchgot"
+    ],
+    "searchNames": [
+      "Escorchgot",
+      "Orchid",
+      "'Iju' Escorchgot"
+    ],
+    "displayName": "Escorchgot"
+  },
+  "avg_npc_2102_1": {
+    "speakerNames": [
+      "Lord of Thunder"
+    ],
+    "searchNames": [
+      "Lord of Thunder"
+    ],
+    "displayName": "Lord of Thunder"
+  },
+  "avg_npc_2106_1": {
+    "speakerNames": [
+      "Lead Samurai",
+      "Encumbered Samurai",
+      "Samurai",
+      "Samurai Captain"
+    ],
+    "searchNames": [
+      "Lead Samurai",
+      "Encumbered Samurai",
+      "Samurai",
+      "Samurai Captain"
+    ],
+    "displayName": "Lead Samurai"
+  },
+  "avg_npc_2103_1": {
+    "speakerNames": [
+      "Suponosuke",
+      "Suponosuke, Scuffling",
+      "Midnight"
+    ],
+    "searchNames": [
+      "Suponosuke",
+      "Suponosuke, Scuffling",
+      "Midnight"
+    ],
+    "displayName": "Suponosuke"
+  },
+  "avg_4215_buddyc_1": {
+    "speakerNames": [
+      "Masamune"
+    ],
+    "searchNames": [
+      "Masamune"
+    ],
+    "displayName": "Masamune"
+  },
+  "avg_npc_2101_1": {
+    "speakerNames": [
+      "Midnight?",
+      "Midnight",
+      "Hofukaru & Midnight",
+      "Samurai Attendant"
+    ],
+    "searchNames": [
+      "Midnight?",
+      "Midnight",
+      "Hofukaru & Midnight",
+      "Samurai Attendant"
+    ],
+    "displayName": "Midnight?"
+  },
+  "avg_npc_2110_1": {
+    "speakerNames": [
+      "Royal Guard",
+      "Samurai"
+    ],
+    "searchNames": [
+      "Royal Guard",
+      "Samurai"
+    ],
+    "displayName": "Royal Guard"
+  },
+  "avg_4215_buddyd_1": {
+    "speakerNames": [
+      "Yoshitsune"
+    ],
+    "searchNames": [
+      "Yoshitsune"
+    ],
+    "displayName": "Yoshitsune"
+  },
+  "avg_1049_catap2_1": {
+    "speakerNames": [
+      "Catapult"
+    ],
+    "searchNames": [
+      "Catapult"
+    ],
+    "displayName": "Catapult"
+  },
+  "avg_1048_orchd2_1": {
+    "speakerNames": [
+      "Orchid",
+      "Catapult",
+      "Impatient Hunter",
+      "Calm Hunter"
+    ],
+    "searchNames": [
+      "Orchid",
+      "Catapult",
+      "Impatient Hunter",
+      "Calm Hunter"
+    ],
+    "displayName": "Orchid"
+  },
+  "avg_1049_catap2a_1": {
+    "speakerNames": [
+      "Catapult"
+    ],
+    "searchNames": [
+      "Catapult"
+    ],
+    "displayName": "Catapult"
+  },
+  "avg_npc_2111_1": {
+    "speakerNames": [
+      "Samurai"
+    ],
+    "searchNames": [
+      "Samurai"
+    ],
+    "displayName": "Samurai"
+  },
+  "avg_npc_2112_1": {
+    "speakerNames": [
+      "Wild Beasts"
+    ],
+    "searchNames": [
+      "Wild Beasts"
+    ],
+    "displayName": "Wild Beasts"
+  },
+  "avg_122_beagle_1": {
+    "speakerNames": [
+      "Beagle"
+    ],
+    "searchNames": [
+      "Beagle"
+    ],
+    "displayName": "Beagle"
   }
 }
